@@ -1,0 +1,175 @@
+{
+  "checks": [
+    {
+      "id": "D01",
+      "name": "control allocation matrix is well conditioned",
+      "status": "PASS",
+      "measured": "4x8, cond 50.0",
+      "expected": "4x8, cond < 200",
+      "detail": "8 rotors"
+    },
+    {
+      "id": "D02",
+      "name": "pure collective loads all 8 rotors equally",
+      "status": "PASS",
+      "measured": "spread 0.00e+00 N",
+      "expected": "< 1e-6 N",
+      "detail": "29.04 N per rotor at hover"
+    },
+    {
+      "id": "D03",
+      "name": "roll, pitch and yaw authority at hover",
+      "status": "PASS",
+      "measured": "roll 94.47, pitch 94.47, yaw 4.65 Nm",
+      "expected": "roll/pitch > 20, yaw > 1 Nm",
+      "detail": "measured by bisection against per-rotor limits"
+    },
+    {
+      "id": "D04",
+      "name": "yaw demand produces no roll or pitch coupling",
+      "status": "PASS",
+      "measured": "cross-coupling 7.10e-15 Nm",
+      "expected": "< 1e-6 Nm",
+      "detail": "the X8 property that motivates the layout"
+    },
+    {
+      "id": "T1a",
+      "name": "takeoff reaches 12 m and holds",
+      "status": "PASS",
+      "measured": "4.4 s, RMS 1.1 cm",
+      "expected": "< 10 cm RMS",
+      "detail": "peak climb 2.15 m/s"
+    },
+    {
+      "id": "T1b",
+      "name": "commanded descent tracks to 1 m",
+      "status": "PASS",
+      "measured": "1.006 m",
+      "expected": "1.00 +/- 0.15 m",
+      "detail": ""
+    },
+    {
+      "id": "T2",
+      "name": "position hold RMS error",
+      "status": "PASS",
+      "measured": "RMS 3.0 cm, max 6.1 cm",
+      "expected": "< 15 cm RMS",
+      "detail": "attitude RMS 0.00 deg, settle 2.5 s"
+    },
+    {
+      "id": "T3",
+      "name": "waypoint mission arrival accuracy",
+      "status": "PASS",
+      "measured": "max 10.5 cm over 5 waypoints",
+      "expected": "< 30 cm",
+      "detail": "70 s, 51.8 Wh"
+    },
+    {
+      "id": "T5",
+      "name": "recovers from lateral force and yaw torque",
+      "status": "PASS",
+      "measured": "peak 0.11 m, recovered in 0.0 s",
+      "expected": "returns inside 0.25 m",
+      "detail": "120 N lateral impulse + 12 Nm yaw"
+    },
+    {
+      "id": "D05",
+      "name": "motor saturation stays bounded",
+      "status": "PASS",
+      "measured": "83 events, peak 130% of limit",
+      "expected": "< 160%",
+      "detail": "clipped and counted, never silently ignored"
+    },
+    {
+      "id": "D06",
+      "name": "real-time factor on this host",
+      "status": "PASS",
+      "measured": "29.10x",
+      "expected": "> 0.05x (recorded)",
+      "detail": "162 s sim in 6 s wall, dt=4.17 ms"
+    }
+  ],
+  "metrics": {
+    "allocation_matrix": [
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.4066,
+        0.4066,
+        0.4066,
+        0.4066,
+        -0.4066,
+        -0.4066,
+        -0.4066,
+        -0.4066
+      ],
+      [
+        -0.4066,
+        -0.4066,
+        0.4066,
+        0.4066,
+        0.4066,
+        0.4066,
+        -0.4066,
+        -0.4066
+      ],
+      [
+        -0.02,
+        0.02,
+        0.02,
+        -0.02,
+        -0.02,
+        0.02,
+        0.02,
+        -0.02
+      ]
+    ],
+    "allocation_condition_number": 50.0,
+    "hover_thrust_per_rotor_N": 29.044,
+    "hover_thrust_total_N": 232.35,
+    "authority_Nm": {
+      "roll": 94.47,
+      "pitch": 94.47,
+      "yaw": 4.65
+    },
+    "takeoff_time_s": 4.4,
+    "takeoff_altitude_rms_error_m": 0.0108,
+    "max_climb_rate_mps": 2.147,
+    "position_hold_rms_error_m": 0.0302,
+    "position_hold_max_error_m": 0.0609,
+    "attitude_rms_error_deg": 0.0024,
+    "settling_time_s": 2.54,
+    "waypoint_errors_m": [
+      0.062,
+      0.0759,
+      0.087,
+      0.1054,
+      0.0913
+    ],
+    "waypoint_max_error_m": 0.1054,
+    "mission_time_s": 70.0,
+    "mission_energy_Wh": 51.76,
+    "disturbance_max_deviation_m": 0.115,
+    "disturbance_recovery_s": 0.0,
+    "disturbance_final_error_m": 0.0307,
+    "saturation_events": 83,
+    "max_saturation_ratio": 1.304,
+    "sim_time_s": 162.0,
+    "wall_time_s": 5.6,
+    "real_time_factor": 29.104,
+    "timestep_s": 0.004166666666666667
+  },
+  "run_id": "509ca116fbe4",
+  "summary": {
+    "pass": 11,
+    "fail": 0
+  }
+}

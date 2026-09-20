@@ -1,0 +1,23 @@
+  building CAD assembly (00_ZERO, arm at q=0) ...
+  assembly: 137 parts
+    arm_base_link      1 parts    1962 tri  hull  368
+    base_link        112 parts   88605 tri  hull  520
+    link_1             1 parts    1732 tri  hull  110
+    link_2             1 parts    6752 tri  hull  284
+    link_3             1 parts    6258 tri  hull  276
+    link_4             1 parts    3248 tri  hull  286
+    link_5             1 parts    3574 tri  hull  456
+    link_6             1 parts    5030 tri  hull  356
+    rotor_1_lower      2 parts   25402 tri  hull 2452
+    rotor_1_upper      2 parts   14976 tri  hull 2710
+    rotor_2_lower      2 parts   14778 tri  hull 2692
+    rotor_2_upper      2 parts   25618 tri  hull 2454
+    rotor_3_lower      2 parts   25278 tri  hull 2456
+    rotor_3_upper      2 parts   14726 tri  hull 2692
+    rotor_4_lower      2 parts   14552 tri  hull 2676
+    rotor_4_upper      2 parts   25426 tri  hull 2462
+    tool0              2 parts    2238 tri  hull  414
+  meshes  : 280,155 visual triangles across 17 links in 29.8s
+meshes   /home/claude/AVIAN/avian/description/meshes
+manifest /home/claude/AVIAN/avian/description/meshes/avian_mesh_manifest.json
+visual   280,155 triangles

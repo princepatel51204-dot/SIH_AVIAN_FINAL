@@ -1,0 +1,257 @@
+{
+  "body_frame": "+X forward, +Y left, +Z up (Z-up world)",
+  "optical_convention": "-Z of each frame is the optical axis",
+  "note": "reference frames only; no airframe is modelled",
+  "rig_world_position_m": [
+    2025.0,
+    24.0,
+    21.616
+  ],
+  "sensors": [
+    {
+      "avi_sensor_class": "DEPTH_CAMERA",
+      "avi_purpose": "close-range obstacle avoidance and spall geometry",
+      "avi_hfov_deg": 87.0,
+      "avi_vfov_deg": 58.0,
+      "avi_resolution_px": [
+        848,
+        480
+      ],
+      "avi_min_range_m": 0.3,
+      "avi_max_useful_range_m": 8.0,
+      "avi_depth_accuracy_pct": 2.0,
+      "avi_baseline_mm": 50.0,
+      "avi_notes": "stereo baseline sets the minimum range. Inside a 3.8 m girder bay the far wall is at the edge of the useful range and the near wall is inside the minimum",
+      "avi_kind": "sensor_frame",
+      "avi_object_type": "SENSOR_FRAME",
+      "avi_object_id": "AVI_SENSOR_DEPTH",
+      "avi_body_offset_m": [
+        0.2,
+        0.0,
+        0.04
+      ],
+      "avi_mount_pitch_deg": 0.0,
+      "avi_mount_yaw_deg": 0.0,
+      "name": "AVI_SENSOR_DEPTH",
+      "world_position_m": [
+        2025.2,
+        24.0,
+        21.656
+      ],
+      "optical_axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "avi_sensor_class": "IMU",
+      "avi_purpose": "body reference frame and inertial origin. Every other sensor offset is measured from here",
+      "avi_rate_hz": 400.0,
+      "avi_is_body_origin": true,
+      "avi_kind": "sensor_frame",
+      "avi_object_type": "SENSOR_FRAME",
+      "avi_object_id": "AVI_SENSOR_IMU",
+      "avi_body_offset_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "avi_mount_pitch_deg": 0.0,
+      "avi_mount_yaw_deg": 0.0,
+      "name": "AVI_SENSOR_IMU",
+      "world_position_m": [
+        2025.0,
+        24.0,
+        21.616
+      ],
+      "optical_axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "avi_sensor_class": "LIDAR",
+      "avi_purpose": "structural mapping, SLAM, clearance measurement",
+      "avi_hfov_deg": 360.0,
+      "avi_vfov_deg": 59.0,
+      "avi_channels": 32,
+      "avi_min_range_m": 0.1,
+      "avi_max_useful_range_m": 70.0,
+      "avi_range_accuracy_m": 0.03,
+      "avi_points_per_second": 640000,
+      "avi_notes": "will not see any crack in this model and is not supposed to. It sees spalls, the structure, and the absence of returns off water",
+      "avi_kind": "sensor_frame",
+      "avi_object_type": "SENSOR_FRAME",
+      "avi_object_id": "AVI_SENSOR_LIDAR",
+      "avi_body_offset_m": [
+        0.0,
+        0.0,
+        0.13
+      ],
+      "avi_mount_pitch_deg": 0.0,
+      "avi_mount_yaw_deg": 0.0,
+      "name": "AVI_SENSOR_LIDAR",
+      "world_position_m": [
+        2025.0,
+        24.0,
+        21.746
+      ],
+      "optical_axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "avi_sensor_class": "RGB_CAMERA",
+      "avi_purpose": "downward optical flow and deck-surface imagery",
+      "avi_hfov_deg": 82.0,
+      "avi_vfov_deg": 52.0,
+      "avi_resolution_px": [
+        1280,
+        800
+      ],
+      "avi_focal_length_mm": 16.0,
+      "avi_sensor_width_mm": 23.5,
+      "avi_min_range_m": 0.25,
+      "avi_max_useful_range_m": 25.0,
+      "avi_gsd_mm_at_1m": 1.4,
+      "avi_rolling_shutter": false,
+      "avi_notes": "global shutter for flow. Fails over open water and over the untextured deck soffit -- both present here",
+      "avi_kind": "sensor_frame",
+      "avi_object_type": "SENSOR_FRAME",
+      "avi_object_id": "AVI_SENSOR_RGB_DOWN",
+      "avi_body_offset_m": [
+        0.02,
+        0.0,
+        -0.11
+      ],
+      "avi_mount_pitch_deg": 90.0,
+      "avi_mount_yaw_deg": 0.0,
+      "name": "AVI_SENSOR_RGB_DOWN",
+      "world_position_m": [
+        2025.02,
+        24.0,
+        21.506
+      ],
+      "optical_axis_world": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "avi_sensor_class": "RGB_CAMERA",
+      "avi_purpose": "primary inspection imagery, forward standoff work",
+      "avi_hfov_deg": 69.0,
+      "avi_vfov_deg": 42.0,
+      "avi_resolution_px": [
+        1920,
+        1080
+      ],
+      "avi_focal_length_mm": 24.0,
+      "avi_sensor_width_mm": 23.5,
+      "avi_min_range_m": 0.35,
+      "avi_max_useful_range_m": 12.0,
+      "avi_gsd_mm_at_1m": 0.62,
+      "avi_rolling_shutter": true,
+      "avi_notes": "rolling shutter is a real constraint: image smear scales with angular rate, so this sensor is only trustworthy in a stabilised hover",
+      "avi_kind": "sensor_frame",
+      "avi_object_type": "SENSOR_FRAME",
+      "avi_object_id": "AVI_SENSOR_RGB_FRONT",
+      "avi_body_offset_m": [
+        0.22,
+        0.0,
+        -0.02
+      ],
+      "avi_mount_pitch_deg": 0.0,
+      "avi_mount_yaw_deg": 0.0,
+      "name": "AVI_SENSOR_RGB_FRONT",
+      "world_position_m": [
+        2025.22,
+        24.0,
+        21.596
+      ],
+      "optical_axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "avi_sensor_class": "RGB_CAMERA",
+      "avi_purpose": "lateral surface inspection while translating along a girder web or pier face",
+      "avi_hfov_deg": 69.0,
+      "avi_vfov_deg": 42.0,
+      "avi_resolution_px": [
+        1920,
+        1080
+      ],
+      "avi_focal_length_mm": 24.0,
+      "avi_sensor_width_mm": 23.5,
+      "avi_min_range_m": 0.35,
+      "avi_max_useful_range_m": 10.0,
+      "avi_gsd_mm_at_1m": 0.62,
+      "avi_optional": true,
+      "avi_kind": "sensor_frame",
+      "avi_object_type": "SENSOR_FRAME",
+      "avi_object_id": "AVI_SENSOR_RGB_SIDE",
+      "avi_body_offset_m": [
+        0.05,
+        -0.19,
+        -0.02
+      ],
+      "avi_mount_pitch_deg": 12.0,
+      "avi_mount_yaw_deg": -90.0,
+      "name": "AVI_SENSOR_RGB_SIDE",
+      "world_position_m": [
+        2025.05,
+        23.81,
+        21.596
+      ],
+      "optical_axis_world": [
+        0.9781,
+        -0.0,
+        -0.2079
+      ]
+    },
+    {
+      "avi_sensor_class": "THERMAL_CAMERA",
+      "avi_purpose": "delamination detection by thermal contrast -- the one modality that can find a defect this model renders as visually almost nothing",
+      "avi_hfov_deg": 57.0,
+      "avi_vfov_deg": 44.0,
+      "avi_resolution_px": [
+        640,
+        512
+      ],
+      "avi_min_range_m": 0.5,
+      "avi_max_useful_range_m": 15.0,
+      "avi_netd_mk": 50.0,
+      "avi_optional": true,
+      "avi_notes": "the scene carries no thermal emission model, so this frame is a mounting definition only",
+      "avi_kind": "sensor_frame",
+      "avi_object_type": "SENSOR_FRAME",
+      "avi_object_id": "AVI_SENSOR_THERMAL",
+      "avi_body_offset_m": [
+        0.2,
+        0.1,
+        -0.02
+      ],
+      "avi_mount_pitch_deg": 0.0,
+      "avi_mount_yaw_deg": 0.0,
+      "name": "AVI_SENSOR_THERMAL",
+      "world_position_m": [
+        2025.2,
+        24.1,
+        21.596
+      ],
+      "optical_axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  ]
+}

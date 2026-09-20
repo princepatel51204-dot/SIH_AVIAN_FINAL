@@ -1,0 +1,318 @@
+{
+  "note": "lighting and weather change illumination and surface response only. No scenario alters geometry, defects or ground truth. Weather is a surface-and-atmosphere approximation, not a volumetric simulation.",
+  "active": {
+    "lighting": "DAY_CLEAR",
+    "weather": "CLEAR",
+    "traffic": true,
+    "boats": true,
+    "pedestrians": true,
+    "dynamic_obstacles": false,
+    "gps_quality": "NORMAL",
+    "uav_count": 1,
+    "description": "the REV-A condition, preserved bit for bit",
+    "preset": "BASELINE"
+  },
+  "presets": {
+    "BASELINE": {
+      "lighting": "DAY_CLEAR",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": true,
+      "pedestrians": true,
+      "dynamic_obstacles": false,
+      "gps_quality": "NORMAL",
+      "uav_count": 1,
+      "description": "the REV-A condition, preserved bit for bit"
+    },
+    "DAY_INSPECTION": {
+      "lighting": "DAY_CLEAR",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": true,
+      "pedestrians": true,
+      "dynamic_obstacles": false,
+      "gps_quality": "NORMAL",
+      "uav_count": 1,
+      "description": "nominal single-aircraft daylight inspection"
+    },
+    "UNDERBRIDGE": {
+      "lighting": "UNDERBRIDGE",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": false,
+      "pedestrians": false,
+      "dynamic_obstacles": false,
+      "gps_quality": "DENIED",
+      "uav_count": 1,
+      "description": "confined under-deck work; GNSS denied by the slab"
+    },
+    "RIVER_INSPECTION": {
+      "lighting": "MORNING",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": true,
+      "pedestrians": false,
+      "dynamic_obstacles": false,
+      "gps_quality": "NORMAL",
+      "uav_count": 1,
+      "description": "river piers with low sun and specular water"
+    },
+    "NIGHT": {
+      "lighting": "NIGHT",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": false,
+      "pedestrians": false,
+      "dynamic_obstacles": false,
+      "gps_quality": "NORMAL",
+      "uav_count": 1,
+      "description": "onboard illumination only"
+    },
+    "LOW_VISIBILITY": {
+      "lighting": "DAY_OVERCAST",
+      "weather": "LIGHT_RAIN",
+      "traffic": true,
+      "boats": true,
+      "pedestrians": true,
+      "dynamic_obstacles": false,
+      "gps_quality": "MEDIUM",
+      "uav_count": 1,
+      "description": "flat light on wet concrete -- the hardest visual condition in the set"
+    },
+    "MULTI_UAV": {
+      "lighting": "DAY_CLEAR",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": true,
+      "pedestrians": true,
+      "dynamic_obstacles": false,
+      "gps_quality": "NORMAL",
+      "uav_count": 6,
+      "description": "six aircraft, one per sector, separation zones live"
+    },
+    "GPS_DENIED": {
+      "lighting": "DEEP_SHADOW",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": false,
+      "pedestrians": false,
+      "dynamic_obstacles": false,
+      "gps_quality": "DENIED",
+      "uav_count": 1,
+      "description": "shadowed and GNSS-denied together; visual-inertial odometry with nothing to fall back on"
+    },
+    "DYNAMIC_OBSTACLE": {
+      "lighting": "DAY_CLEAR",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": true,
+      "pedestrians": true,
+      "dynamic_obstacles": true,
+      "gps_quality": "NORMAL",
+      "uav_count": 1,
+      "description": "scaffolding, platform, crane and nets in the research zone; tests avoidance against structure that is not on the digital twin"
+    }
+  },
+  "lighting_scenarios": {
+    "DAY_CLEAR": {
+      "sun_elev": 52.0,
+      "sun_azim": 145.0,
+      "sun_strength": 6.0,
+      "sun_color": [
+        1.0,
+        0.965,
+        0.912
+      ],
+      "sun_angle": 0.526,
+      "sky_strength": 1.0,
+      "exposure": -1.1,
+      "dust": 0.9,
+      "ozone": 1.6,
+      "haze": [
+        0.55,
+        0.56,
+        0.58
+      ],
+      "description": "mid-morning clear sky. The REV-A baseline condition; hard shadows, genuinely dark bridge underside."
+    },
+    "DAY_OVERCAST": {
+      "sun_elev": 52.0,
+      "sun_azim": 145.0,
+      "sun_strength": 1.1,
+      "sun_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sun_angle": 12.0,
+      "sky_strength": 2.1,
+      "exposure": -1.0,
+      "dust": 3.6,
+      "ozone": 2.4,
+      "haze": [
+        0.62,
+        0.63,
+        0.65
+      ],
+      "description": "heavy cloud. Shadowless and low contrast -- the HARDEST condition for crack detection despite being the brightest underside, because a shallow crack is read from shading and there is none."
+    },
+    "MORNING": {
+      "sun_elev": 18.0,
+      "sun_azim": 95.0,
+      "sun_strength": 4.2,
+      "sun_color": [
+        1.0,
+        0.9,
+        0.76
+      ],
+      "sun_angle": 0.526,
+      "sky_strength": 1.0,
+      "exposure": -0.8,
+      "dust": 1.6,
+      "ozone": 1.8,
+      "haze": [
+        0.6,
+        0.57,
+        0.53
+      ],
+      "description": "low sun. Grazing incidence on vertical faces, which is the single best condition for surface relief and therefore for spalling."
+    },
+    "EVENING": {
+      "sun_elev": 11.0,
+      "sun_azim": 248.0,
+      "sun_strength": 3.2,
+      "sun_color": [
+        1.0,
+        0.79,
+        0.6
+      ],
+      "sun_angle": 0.526,
+      "sky_strength": 0.9,
+      "exposure": -0.6,
+      "dust": 2.4,
+      "ozone": 2.0,
+      "haze": [
+        0.58,
+        0.52,
+        0.47
+      ],
+      "description": "low sun from the opposite side. Illuminates the faces MORNING leaves dark; the pair together covers the structure."
+    },
+    "NIGHT": {
+      "sun_elev": -8.0,
+      "sun_azim": 250.0,
+      "sun_strength": 0.015,
+      "sun_color": [
+        0.55,
+        0.62,
+        0.85
+      ],
+      "sun_angle": 0.526,
+      "sky_strength": 0.045,
+      "exposure": 1.6,
+      "dust": 1.0,
+      "ozone": 1.4,
+      "haze": [
+        0.045,
+        0.05,
+        0.062
+      ],
+      "description": "no useful ambient. Inspection here depends entirely on the UAV's own light, which is exactly the point: it removes illumination as a free variable."
+    },
+    "UNDERBRIDGE": {
+      "sun_elev": 68.0,
+      "sun_azim": 145.0,
+      "sun_strength": 6.4,
+      "sun_color": [
+        1.0,
+        0.97,
+        0.93
+      ],
+      "sun_angle": 0.526,
+      "sky_strength": 1.05,
+      "exposure": -0.5,
+      "dust": 0.8,
+      "ozone": 1.6,
+      "haze": [
+        0.55,
+        0.56,
+        0.58
+      ],
+      "description": "high sun with the film opened up. Maximises the bright-outside / dark-inside ratio a real inspection camera has to survive at the edge of the deck."
+    },
+    "DEEP_SHADOW": {
+      "sun_elev": 34.0,
+      "sun_azim": 325.0,
+      "sun_strength": 5.2,
+      "sun_color": [
+        1.0,
+        0.96,
+        0.9
+      ],
+      "sun_angle": 0.526,
+      "sky_strength": 0.62,
+      "exposure": -1.6,
+      "dust": 0.7,
+      "ozone": 1.5,
+      "haze": [
+        0.42,
+        0.43,
+        0.46
+      ],
+      "description": "sun on the far side of the deck. Every inspection surface in the research zone is in shadow at once."
+    }
+  },
+  "weather_scenarios": {
+    "CLEAR": {
+      "wetness": 0.0,
+      "haze_gain": 1.0,
+      "sky_gain": 1.0,
+      "description": "dry surfaces, nominal atmosphere"
+    },
+    "CLOUDY": {
+      "wetness": 0.0,
+      "haze_gain": 1.15,
+      "sky_gain": 1.25,
+      "description": "increased ambient, softened contrast"
+    },
+    "LIGHT_RAIN": {
+      "wetness": 0.75,
+      "haze_gain": 1.35,
+      "sky_gain": 1.15,
+      "description": "wet concrete: lower roughness, darker albedo, specular sheen. No rain particles and no volumetric scattering."
+    },
+    "WET_SURFACE": {
+      "wetness": 0.95,
+      "haze_gain": 1.05,
+      "sky_gain": 1.0,
+      "description": "after rain, sky clearing, surfaces still wet -- the worst case for specular washout on a horizontal soffit"
+    },
+    "HAZY": {
+      "wetness": 0.0,
+      "haze_gain": 1.9,
+      "sky_gain": 1.1,
+      "description": "humid metropolitan haze; long-range contrast loss without any change close in"
+    },
+    "LOW_LIGHT": {
+      "wetness": 0.2,
+      "haze_gain": 1.2,
+      "sky_gain": 0.55,
+      "description": "dusk or heavy overcast; forces gain up and shutter down"
+    }
+  },
+  "switchable_collections": {
+    "traffic": [
+      "AVI_DYNAMIC_VEHICLES"
+    ],
+    "boats": [
+      "AVI_DYNAMIC_BOATS"
+    ],
+    "pedestrians": [
+      "AVI_DYNAMIC_PEDESTRIANS"
+    ],
+    "dynamic_obstacles": [
+      "AVI_DYNAMIC_OBSTACLES"
+    ]
+  },
+  "usage": "import scenarios; scenarios.apply('NIGHT')"
+}

@@ -1,0 +1,298 @@
+{
+  "checks": [
+    {
+      "id": "V01",
+      "check": "deck width matches specification",
+      "status": "PASS",
+      "measured": "24.00 m",
+      "limit": "24.00 +/- 1.00 m",
+      "detail": "1 BU = 1 m confirmed",
+      "offenders": []
+    },
+    {
+      "id": "V02",
+      "check": "corridor length matches specification",
+      "status": "PASS",
+      "measured": "4500.0 m",
+      "limit": "4500 +/- 25 m",
+      "detail": "deck runs x=0.0 to x=4500.0",
+      "offenders": []
+    },
+    {
+      "id": "V03",
+      "check": "no floating or sunken ground objects",
+      "status": "PASS",
+      "measured": "max |dz| 0.593 m over 7957 objects",
+      "limit": "0.60 m",
+      "detail": "all ground objects sit on terrain.height()",
+      "offenders": []
+    },
+    {
+      "id": "V04",
+      "check": "no city or road objects in the river",
+      "status": "PASS",
+      "measured": "0 objects over water",
+      "limit": "0",
+      "detail": "river corridor is clear of land objects",
+      "offenders": []
+    },
+    {
+      "id": "V05",
+      "check": "every pier footing meets the ground",
+      "status": "PASS",
+      "measured": "max gap 0.000 m over 92 footings",
+      "limit": "0.50 m",
+      "detail": "all footings founded",
+      "offenders": []
+    },
+    {
+      "id": "V06",
+      "check": "navigation channel free of piers",
+      "status": "PASS",
+      "measured": "90 m clear span",
+      "limit": "x in (2055, 2145) must be empty",
+      "detail": "main span 90 m, air draft 24.6 m",
+      "offenders": []
+    },
+    {
+      "id": "V07",
+      "check": "air draft over navigation channel",
+      "status": "PASS",
+      "measured": "24.58 m",
+      "limit": ">= 12.00 m",
+      "detail": "clears inland navigation",
+      "offenders": []
+    },
+    {
+      "id": "V08",
+      "check": "maximum longitudinal grade",
+      "status": "PASS",
+      "measured": "2.71 %",
+      "limit": "<= 4.00 %",
+      "detail": "within highway design limits",
+      "offenders": []
+    },
+    {
+      "id": "V09",
+      "check": "span to structural depth ratio",
+      "status": "PASS",
+      "measured": "15.6 - 22.0",
+      "limit": "<= 26.0",
+      "detail": "spans 25 - 90 m, depth 1.60 - 4.09 m",
+      "offenders": []
+    },
+    {
+      "id": "V10",
+      "check": "free-flight airspace clear of structure",
+      "status": "PASS",
+      "measured": "3 volumes tested against 2145 members",
+      "limit": "0 intersections",
+      "detail": "SAFE and RETURN volumes contain no structure",
+      "offenders": []
+    },
+    {
+      "id": "V11",
+      "check": "under-bridge volumes are flyable",
+      "status": "PASS",
+      "measured": "headroom 13.6 - 19.6 m",
+      "limit": ">= 3.0 m",
+      "detail": "6 under-deck volumes",
+      "offenders": []
+    },
+    {
+      "id": "V12",
+      "check": "defects sit on their recorded positions",
+      "status": "PASS",
+      "measured": "max offset 6.1 mm over 192 defects",
+      "limit": "50 mm",
+      "detail": "ground truth positions match the scene",
+      "offenders": []
+    },
+    {
+      "id": "V13",
+      "check": "all defects inside the research zone",
+      "status": "PASS",
+      "measured": "192/192 in zone",
+      "limit": "x in [1650, 2550]",
+      "detail": "high-detail damage is confined to the research zone",
+      "offenders": []
+    },
+    {
+      "id": "V14",
+      "check": "ground truth records are complete",
+      "status": "PASS",
+      "measured": "15 fields x 192 records",
+      "limit": "no missing fields",
+      "detail": "every defect is fully described",
+      "offenders": []
+    },
+    {
+      "id": "V15",
+      "check": "non-repairable cases are a useful minority",
+      "status": "PASS",
+      "measured": "36/192 = 18.8 %",
+      "limit": "10 - 35 %",
+      "detail": "6 distinct escalation reasons",
+      "offenders": []
+    },
+    {
+      "id": "V21",
+      "check": "the river surface is not occluded",
+      "status": "PASS",
+      "measured": "5/5 probes reach water",
+      "limit": "water or bridge structure first",
+      "detail": "the river renders as water",
+      "offenders": []
+    },
+    {
+      "id": "V16",
+      "check": "polygon budget",
+      "status": "PASS",
+      "measured": "384,200 triangles",
+      "limit": "< 6,000,000",
+      "detail": "13835 objects, 3400 unique meshes (4.1x instancing)",
+      "offenders": []
+    },
+    {
+      "id": "V17",
+      "check": "camera far clip covers the scene",
+      "status": "PASS",
+      "measured": "12 cameras",
+      "limit": "clip_end >= 2.5x range + 1 km",
+      "detail": "no camera clips the corridor",
+      "offenders": []
+    },
+    {
+      "id": "V18",
+      "check": "every sector carries defects",
+      "status": "PASS",
+      "measured": "29 - 39 per sector",
+      "limit": ">= 8",
+      "detail": "A:39, B:31, C:30, D:30, E:33, F:29",
+      "offenders": []
+    },
+    {
+      "id": "V19",
+      "check": "object names are unique",
+      "status": "PASS",
+      "measured": "13835 objects",
+      "limit": "no duplicates",
+      "detail": "every object is addressable by name",
+      "offenders": []
+    },
+    {
+      "id": "V20",
+      "check": "scene organisation is complete",
+      "status": "PASS",
+      "measured": "37 collections",
+      "limit": "10 roles required",
+      "detail": "collection tree as documented",
+      "offenders": []
+    },
+    {
+      "id": "V22",
+      "check": "ground truth matches the REV-A baseline",
+      "status": "PASS",
+      "measured": "192 baseline, 192 now, max drift 0.00 mm",
+      "limit": "0 missing, 0 added, drift <= 1 mm",
+      "detail": "every REV-A defect survived REV-B unchanged",
+      "offenders": []
+    },
+    {
+      "id": "V23",
+      "check": "mission markers complete and clear",
+      "status": "PASS",
+      "measured": "124 markers, 11/11 types",
+      "limit": "all types present, all clear of structure",
+      "detail": "every marker type present and sited in free air",
+      "offenders": []
+    },
+    {
+      "id": "V24",
+      "check": "every sector has its own mission markers",
+      "status": "PASS",
+      "measured": "A:19, B:19, C:19, D:19, E:19, F:19",
+      "limit": ">= 5 per sector",
+      "detail": "six aircraft can each be given a sector",
+      "offenders": []
+    },
+    {
+      "id": "V25",
+      "check": "sensor anchors defined with optics",
+      "status": "PASS",
+      "measured": "7 frames, 5 classes",
+      "limit": "5 sensor classes, FOV on every optical frame",
+      "detail": "the rig is fully specified",
+      "offenders": []
+    },
+    {
+      "id": "V26",
+      "check": "sensor visibility ground truth is complete",
+      "status": "PASS",
+      "measured": "192/192 complete, 4/4 difficulty levels used",
+      "limit": "all fields, >= 3 levels populated",
+      "detail": "LEVEL_1:51, LEVEL_2:54, LEVEL_3:23, LEVEL_4:64",
+      "offenders": []
+    },
+    {
+      "id": "V27",
+      "check": "REV-B airspace classes complete",
+      "status": "PASS",
+      "measured": "43 volumes, 8/8 classes",
+      "limit": "8 classes, operating envelope on every volume",
+      "detail": "each volume carries speed, clearance and risk",
+      "offenders": []
+    },
+    {
+      "id": "V28",
+      "check": "sixteen scenarios fully specified",
+      "status": "PASS",
+      "measured": "16 scenarios, 9 fields each",
+      "limit": ">= 16, no missing fields",
+      "detail": "every scenario carries its full operating context",
+      "offenders": []
+    },
+    {
+      "id": "V29",
+      "check": "mission graph is connected and costed",
+      "status": "PASS",
+      "measured": "124 nodes, 136 edges, 120 reachable from home",
+      "limit": "no dangling edges, all sectors reachable",
+      "detail": "every sector is reachable from a home node",
+      "offenders": []
+    },
+    {
+      "id": "V30",
+      "check": "dynamic content separated from structure",
+      "status": "PASS",
+      "measured": "4/4 collections present",
+      "limit": "all present, no structure inside",
+      "detail": "dynamic objects can be switched off without touching the asset",
+      "offenders": []
+    },
+    {
+      "id": "V31",
+      "check": "scenario controller configured",
+      "status": "PASS",
+      "measured": "9 presets, 7 lighting, 6 weather",
+      "limit": ">= 9 presets, >= 7 lighting, config on the scene",
+      "detail": "active preset: BASELINE",
+      "offenders": []
+    },
+    {
+      "id": "V32",
+      "check": "dataset generation is ready",
+      "status": "PASS",
+      "measured": "4 passes, 2405 indexed objects, 12 cameras",
+      "limit": ">= 4 passes, >= 192 indices, >= 12 cameras",
+      "detail": "combined/depth/normal/object-index enabled; every defect has a unique pass_index",
+      "offenders": []
+    }
+  ],
+  "summary": {
+    "pass": 32,
+    "fail": 0,
+    "skip": 0,
+    "total": 32
+  }
+}

@@ -1,0 +1,2114 @@
+{
+"DEFECT_CRACK_HAIRLINE_001": {
+"position_m": [
+2491.7351,
+10.1,
+19.541
+],
+"type": "CRACK_HAIRLINE",
+"severity": 4,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_002": {
+"position_m": [
+1758.1064,
+3.9707,
+8.931
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_HAIRLINE_003": {
+"position_m": [
+2214.6479,
+-1.9,
+24.248
+],
+"type": "CRACK_HAIRLINE",
+"severity": 4,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_004": {
+"position_m": [
+2516.5181,
+1.027,
+21.163
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_F",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_HAIRLINE_005": {
+"position_m": [
+2067.2959,
+10.1,
+24.254
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_006": {
+"position_m": [
+2095.594,
+-3.741,
+26.675
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_HAIRLINE_007": {
+"position_m": [
+1682.6309,
+-0.614,
+22.6215
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_HAIRLINE_008": {
+"position_m": [
+1759.5143,
+-3.355,
+10.795
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_HAIRLINE_009": {
+"position_m": [
+1699.9238,
+-5.6879,
+6.501
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_HAIRLINE_010": {
+"position_m": [
+2499.5095,
+5.5804,
+3.619
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_HAIRLINE_011": {
+"position_m": [
+2441.7324,
+5.2767,
+13.903
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_HAIRLINE_012": {
+"position_m": [
+2389.9258,
+10.1,
+20.162
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_013": {
+"position_m": [
+1935.3678,
+5.4311,
+-0.815
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_HAIRLINE_014": {
+"position_m": [
+2352.2334,
+1.363,
+22.003
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_E",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_HAIRLINE_015": {
+"position_m": [
+2187.7031,
+-10.074,
+23.4832
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_HAIRLINE_016": {
+"position_m": [
+1925.795,
+-10.1,
+23.067
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_017": {
+"position_m": [
+1942.076,
+-1.9,
+23.888
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_018": {
+"position_m": [
+2409.583,
+9.094,
+21.8671
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_F",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_HAIRLINE_019": {
+"position_m": [
+1667.967,
+5.748,
+19.472
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_CRACK_HAIRLINE_020": {
+"position_m": [
+1735.6802,
+2.1,
+20.048
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_HAIRLINE_021": {
+"position_m": [
+2485.1772,
+-2.065,
+18.5714
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_HAIRLINE_022": {
+"position_m": [
+1714.9418,
+3.91,
+21.869
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_HAIRLINE_023": {
+"position_m": [
+2387.377,
+-10.1,
+20.422
+],
+"type": "CRACK_HAIRLINE",
+"severity": 4,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_024": {
+"position_m": [
+2145.2585,
+6.059,
+11.542
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_HAIRLINE_025": {
+"position_m": [
+2151.1809,
+9.9,
+24.665
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_026": {
+"position_m": [
+2271.5081,
+9.9,
+22.644
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_027": {
+"position_m": [
+1714.6417,
+-3.339,
+21.725
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_HAIRLINE_028": {
+"position_m": [
+2367.0251,
+-5.098,
+22.163
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_HAIRLINE_029": {
+"position_m": [
+2119.4358,
+-0.34,
+25.706
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_HAIRLINE_030": {
+"position_m": [
+2292.425,
+0.992,
+24.071
+],
+"type": "CRACK_HAIRLINE",
+"severity": 4,
+"inspection_sector": "SECTOR_E",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_HAIRLINE_031": {
+"position_m": [
+1664.835,
+9.9,
+21.66
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_032": {
+"position_m": [
+2388.0481,
+11.6,
+23.005
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PARAPET"
+},
+"DEFECT_CRACK_HAIRLINE_033": {
+"position_m": [
+1821.9,
+11.6,
+24.335
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PARAPET"
+},
+"DEFECT_CRACK_HAIRLINE_034": {
+"position_m": [
+2176.7109,
+10.024,
+23.4832
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_HAIRLINE_035": {
+"position_m": [
+2501.3,
+4.032,
+17.334
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_CRACK_HAIRLINE_036": {
+"position_m": [
+2366.7253,
+5.36,
+21.707
+],
+"type": "CRACK_HAIRLINE",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_HAIRLINE_037": {
+"position_m": [
+2073.824,
+-11.6,
+27.174
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "PARAPET"
+},
+"DEFECT_CRACK_HAIRLINE_038": {
+"position_m": [
+2019.417,
+-0.49,
+26.3097
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_HAIRLINE_039": {
+"position_m": [
+2054.126,
+-3.1717,
+5.524
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_HAIRLINE_040": {
+"position_m": [
+2037.99,
+-5.936,
+23.6202
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_HAIRLINE_041": {
+"position_m": [
+2069.4651,
+-1.9,
+24.844
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_042": {
+"position_m": [
+1888.7729,
+-9.9,
+23.379
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_043": {
+"position_m": [
+2365.2529,
+-2.091,
+20.1857
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_HAIRLINE_044": {
+"position_m": [
+2198.6311,
+-5.9,
+24.618
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_HAIRLINE_045": {
+"position_m": [
+2307.8582,
+-0.167,
+23.288
+],
+"type": "CRACK_HAIRLINE",
+"severity": 2,
+"inspection_sector": "SECTOR_E",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_HAIRLINE_046": {
+"position_m": [
+1691.579,
+-2.047,
+21.0215
+],
+"type": "CRACK_HAIRLINE",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_LONGITUDINAL_001": {
+"position_m": [
+1752.0082,
+-5.9,
+21.259
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_002": {
+"position_m": [
+2004.142,
+-10.1,
+24.577
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_003": {
+"position_m": [
+2529.49,
+10.1,
+20.547
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_004": {
+"position_m": [
+1928.213,
+-1.9,
+23.599
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_005": {
+"position_m": [
+1770.4252,
+6.1,
+22.004
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_006": {
+"position_m": [
+1875.4449,
+11.6,
+24.938
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PARAPET"
+},
+"DEFECT_CRACK_LONGITUDINAL_007": {
+"position_m": [
+1986.27,
+2.1,
+24.142
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 3,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_008": {
+"position_m": [
+2327.948,
+9.9,
+21.634
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 4,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_009": {
+"position_m": [
+1666.2491,
+5.6173,
+7.584
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_LONGITUDINAL_010": {
+"position_m": [
+2500.9651,
+-3.7891,
+7.637
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_LONGITUDINAL_011": {
+"position_m": [
+2004.7349,
+-1.9,
+24.777
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 4,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_012": {
+"position_m": [
+2194.4526,
+6.1,
+24.773
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 2,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_013": {
+"position_m": [
+2315.8101,
+-11.6,
+24.616
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PARAPET"
+},
+"DEFECT_CRACK_LONGITUDINAL_014": {
+"position_m": [
+1767.3322,
+9.9,
+21.569
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 4,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_015": {
+"position_m": [
+2388.0481,
+-11.6,
+23.023
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PARAPET"
+},
+"DEFECT_CRACK_LONGITUDINAL_016": {
+"position_m": [
+1884.015,
+10.1,
+23.454
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_017": {
+"position_m": [
+1751.342,
+10.1,
+21.126
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_018": {
+"position_m": [
+1985.3541,
+-5.9,
+24.284
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_019": {
+"position_m": [
+1875.4449,
+-11.6,
+25.248
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 4,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PARAPET"
+},
+"DEFECT_CRACK_LONGITUDINAL_020": {
+"position_m": [
+1808.2341,
+-10.1,
+22.068
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_021": {
+"position_m": [
+2539.8352,
+-1.9,
+20.4771
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_LONGITUDINAL_022": {
+"position_m": [
+2432.3149,
+10.1,
+20.886
+],
+"type": "CRACK_LONGITUDINAL",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_TRANSVERSE_001": {
+"position_m": [
+2357.8359,
+1.901,
+20.1857
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_002": {
+"position_m": [
+1969.903,
+-8.304,
+25.6324
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_TRANSVERSE_003": {
+"position_m": [
+2520.509,
+-1.951,
+19.563
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 4,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_004": {
+"position_m": [
+2012.265,
+-10.032,
+23.6202
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 3,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_005": {
+"position_m": [
+2101.957,
+4.709,
+26.675
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_TRANSVERSE_006": {
+"position_m": [
+1977.0388,
+-2.031,
+22.943
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_007": {
+"position_m": [
+1848.828,
+-3.982,
+23.9114
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_TRANSVERSE_008": {
+"position_m": [
+2081.1809,
+2.002,
+22.5841
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_009": {
+"position_m": [
+1848.172,
+-2.028,
+21.222
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_010": {
+"position_m": [
+2405.99,
+3.281,
+21.8671
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 2,
+"inspection_sector": "SECTOR_F",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_TRANSVERSE_011": {
+"position_m": [
+2088.5129,
+-2.077,
+22.5841
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_012": {
+"position_m": [
+2346.2439,
+8.322,
+22.8751
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 2,
+"inspection_sector": "SECTOR_E",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_TRANSVERSE_013": {
+"position_m": [
+2300.9697,
+1.927,
+21.3816
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_014": {
+"position_m": [
+1790.744,
+-6.003,
+20.489
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_015": {
+"position_m": [
+1654.2902,
+-2.014,
+20.6306
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_016": {
+"position_m": [
+2175.3201,
+-4.951,
+26.1727
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_TRANSVERSE_017": {
+"position_m": [
+1960.4958,
+4.714,
+25.6324
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_TRANSVERSE_018": {
+"position_m": [
+1965.334,
+1.961,
+22.943
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_019": {
+"position_m": [
+2308.9919,
+-6.001,
+21.3816
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_TRANSVERSE_020": {
+"position_m": [
+2219.9551,
+-9.982,
+22.5521
+],
+"type": "CRACK_TRANSVERSE",
+"severity": 3,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_CRACK_DIAGONAL_001": {
+"position_m": [
+2536.3,
+-5.78,
+18.786
+],
+"type": "CRACK_DIAGONAL",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_CRACK_DIAGONAL_002": {
+"position_m": [
+2119.1357,
+-3.089,
+25.825
+],
+"type": "CRACK_DIAGONAL",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_DIAGONAL_003": {
+"position_m": [
+1744.2252,
+5.135,
+21.773
+],
+"type": "CRACK_DIAGONAL",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_DIAGONAL_004": {
+"position_m": [
+1966.1,
+4.305,
+24.787
+],
+"type": "CRACK_DIAGONAL",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_DIAGONAL_005": {
+"position_m": [
+1650.15,
+4.849,
+21.467
+],
+"type": "CRACK_DIAGONAL",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_DIAGONAL_006": {
+"position_m": [
+2277.9749,
+0.868,
+22.998
+],
+"type": "CRACK_DIAGONAL",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_DIAGONAL_007": {
+"position_m": [
+1981.1915,
+-1.601,
+24.886
+],
+"type": "CRACK_DIAGONAL",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_DIAGONAL_008": {
+"position_m": [
+1870.124,
+-5.9,
+22.564
+],
+"type": "CRACK_DIAGONAL",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_DIAGONAL_009": {
+"position_m": [
+2080.5642,
+-5.29,
+25.849
+],
+"type": "CRACK_DIAGONAL",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_DIAGONAL_010": {
+"position_m": [
+1833.2748,
+0.349,
+23.152
+],
+"type": "CRACK_DIAGONAL",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "DIAPHRAGM"
+},
+"DEFECT_CRACK_DIAGONAL_011": {
+"position_m": [
+1661.438,
+-10.1,
+21.367
+],
+"type": "CRACK_DIAGONAL",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_DIAGONAL_012": {
+"position_m": [
+2328.7991,
+6.1,
+21.491
+],
+"type": "CRACK_DIAGONAL",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_DIAGONAL_013": {
+"position_m": [
+2493.1211,
+9.9,
+19.752
+],
+"type": "CRACK_DIAGONAL",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_DIAGONAL_014": {
+"position_m": [
+1942.986,
+-5.9,
+24.452
+],
+"type": "CRACK_DIAGONAL",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_DIAGONAL_015": {
+"position_m": [
+2542.4609,
+10.1,
+20.422
+],
+"type": "CRACK_DIAGONAL",
+"severity": 4,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_DIAGONAL_016": {
+"position_m": [
+2210.624,
+2.1,
+23.611
+],
+"type": "CRACK_DIAGONAL",
+"severity": 2,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CRACK_NETWORK_001": {
+"position_m": [
+1760.16,
+-3.8383,
+4.085
+],
+"type": "CRACK_NETWORK",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_NETWORK_002": {
+"position_m": [
+1667.0712,
+-5.6243,
+2.509
+],
+"type": "CRACK_NETWORK",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_NETWORK_003": {
+"position_m": [
+1876.2,
+-3.334,
+20.518
+],
+"type": "CRACK_NETWORK",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_CRACK_NETWORK_004": {
+"position_m": [
+1938.228,
+4.2536,
+2.867
+],
+"type": "CRACK_NETWORK",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_NETWORK_005": {
+"position_m": [
+2498.854,
+4.8421,
+11.822
+],
+"type": "CRACK_NETWORK",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_NETWORK_006": {
+"position_m": [
+2264.1331,
+5.866,
+-1.556
+],
+"type": "CRACK_NETWORK",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_NETWORK_007": {
+"position_m": [
+2383.2529,
+4.4109,
+-1.348
+],
+"type": "CRACK_NETWORK",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_NETWORK_008": {
+"position_m": [
+1687.4161,
+7.008,
+22.6215
+],
+"type": "CRACK_NETWORK",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_NETWORK_009": {
+"position_m": [
+1790.618,
+4.25,
+23.1784
+],
+"type": "CRACK_NETWORK",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_NETWORK_010": {
+"position_m": [
+2205.7629,
+-4.4741,
+12.028
+],
+"type": "CRACK_NETWORK",
+"severity": 4,
+"inspection_sector": "SECTOR_D",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CRACK_NETWORK_011": {
+"position_m": [
+2102.0803,
+8.004,
+26.675
+],
+"type": "CRACK_NETWORK",
+"severity": 3,
+"inspection_sector": "SECTOR_D",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_CRACK_NETWORK_012": {
+"position_m": [
+1652.735,
+2.937,
+22.2306
+],
+"type": "CRACK_NETWORK",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_SPALL_001": {
+"position_m": [
+1910.53,
+-2.042,
+22.0918
+],
+"type": "SPALL",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_002": {
+"position_m": [
+1923.719,
+6.053,
+22.0918
+],
+"type": "SPALL",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_003": {
+"position_m": [
+1713.5031,
+-1.955,
+20.048
+],
+"type": "SPALL",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_004": {
+"position_m": [
+2039.118,
+2.091,
+23.6202
+],
+"type": "SPALL",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_005": {
+"position_m": [
+2295.946,
+6.002,
+21.3816
+],
+"type": "SPALL",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_006": {
+"position_m": [
+2324.0117,
+5.0139,
+-0.671
+],
+"type": "SPALL",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_SPALL_007": {
+"position_m": [
+1963.255,
+6.092,
+22.943
+],
+"type": "SPALL",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_008": {
+"position_m": [
+2380.4617,
+3.4705,
+7.053
+],
+"type": "SPALL",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_SPALL_009": {
+"position_m": [
+2171.2129,
+-6.064,
+23.4832
+],
+"type": "SPALL",
+"severity": 3,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_010": {
+"position_m": [
+2125.605,
+-10.094,
+22.5841
+],
+"type": "SPALL",
+"severity": 2,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_011": {
+"position_m": [
+1843.986,
+-7.265,
+23.9114
+],
+"type": "SPALL",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_SPALL_012": {
+"position_m": [
+2473.613,
+2.001,
+18.5714
+],
+"type": "SPALL",
+"severity": 3,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_013": {
+"position_m": [
+2471.491,
+5.96,
+18.5714
+],
+"type": "SPALL",
+"severity": 2,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_014": {
+"position_m": [
+1730.436,
+-10.024,
+20.048
+],
+"type": "SPALL",
+"severity": 4,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_SPALL_015": {
+"position_m": [
+1877.1544,
+-2.9547,
+-0.9761
+],
+"type": "SPALL",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_SPALL_016": {
+"position_m": [
+2203.3438,
+5.8541,
+-0.773
+],
+"type": "SPALL",
+"severity": 2,
+"inspection_sector": "SECTOR_D",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_SPALL_017": {
+"position_m": [
+1817.033,
+3.039,
+19.605
+],
+"type": "SPALL",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_SPALL_018": {
+"position_m": [
+1938.1455,
+5.0793,
+13.078
+],
+"type": "SPALL",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_DELAMINATION_001": {
+"position_m": [
+1856.4352,
+-10.046,
+21.222
+],
+"type": "DELAMINATION",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_DELAMINATION_002": {
+"position_m": [
+1852.0581,
+0.565,
+23.9114
+],
+"type": "DELAMINATION",
+"severity": 3,
+"inspection_sector": "SECTOR_B",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_DELAMINATION_003": {
+"position_m": [
+2027.682,
+-4.309,
+26.3097
+],
+"type": "DELAMINATION",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_DELAMINATION_004": {
+"position_m": [
+1654.9639,
+-3.685,
+22.2306
+],
+"type": "DELAMINATION",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_DELAMINATION_005": {
+"position_m": [
+1737.579,
+-6.044,
+20.048
+],
+"type": "DELAMINATION",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_DELAMINATION_006": {
+"position_m": [
+1729.1489,
+0.0051,
+22.7374
+],
+"type": "DELAMINATION",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_DELAMINATION_007": {
+"position_m": [
+1686.421,
+-5.996,
+21.0215
+],
+"type": "DELAMINATION",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_DELAMINATION_008": {
+"position_m": [
+2008.856,
+10.097,
+23.6202
+],
+"type": "DELAMINATION",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_BOTTOM_FLANGE"
+},
+"DEFECT_DELAMINATION_009": {
+"position_m": [
+1678.033,
+3.295,
+22.6215
+],
+"type": "DELAMINATION",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_DELAMINATION_010": {
+"position_m": [
+2468.3899,
+4.6339,
+21.2608
+],
+"type": "DELAMINATION",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "DECK_UNDERSIDE"
+},
+"DEFECT_REBAR_EXPOSED_001": {
+"position_m": [
+2535.7222,
+3.546,
+13.543
+],
+"type": "REBAR_EXPOSED",
+"severity": 3,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REBAR_EXPOSED_002": {
+"position_m": [
+2322.5823,
+-6.087,
+-1.165
+],
+"type": "REBAR_EXPOSED",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REBAR_EXPOSED_003": {
+"position_m": [
+2145.2349,
+2.9372,
+0.117
+],
+"type": "REBAR_EXPOSED",
+"severity": 3,
+"inspection_sector": "SECTOR_D",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REBAR_EXPOSED_004": {
+"position_m": [
+2380.488,
+5.556,
+0.565
+],
+"type": "REBAR_EXPOSED",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REBAR_EXPOSED_005": {
+"position_m": [
+2203.6006,
+3.015,
+0.211
+],
+"type": "REBAR_EXPOSED",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REBAR_EXPOSED_006": {
+"position_m": [
+1819.3718,
+-5.6961,
+-0.2781
+],
+"type": "REBAR_EXPOSED",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REBAR_EXPOSED_007": {
+"position_m": [
+2202.8145,
+-5.3265,
+-0.954
+],
+"type": "REBAR_EXPOSED",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REBAR_EXPOSED_008": {
+"position_m": [
+2500.3828,
+-3.3648,
+11.912
+],
+"type": "REBAR_EXPOSED",
+"severity": 3,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_CORROSION_STAIN_001": {
+"position_m": [
+2212.7241,
+10.1,
+23.647
+],
+"type": "CORROSION_STAIN",
+"severity": 2,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_002": {
+"position_m": [
+2312.2939,
+-10.1,
+22.657
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_003": {
+"position_m": [
+2135.042,
+9.9,
+25.212
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_004": {
+"position_m": [
+2134.533,
+2.1,
+25.072
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_005": {
+"position_m": [
+2530.364,
+-5.9,
+20.47
+],
+"type": "CORROSION_STAIN",
+"severity": 2,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_006": {
+"position_m": [
+2390.7749,
+-1.9,
+20.247
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_007": {
+"position_m": [
+2537.022,
+9.9,
+20.347
+],
+"type": "CORROSION_STAIN",
+"severity": 2,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_008": {
+"position_m": [
+2491.5171,
+2.1,
+19.649
+],
+"type": "CORROSION_STAIN",
+"severity": 2,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_009": {
+"position_m": [
+1828.4601,
+-1.9,
+22.7461
+],
+"type": "CORROSION_STAIN",
+"severity": 4,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_010": {
+"position_m": [
+2388.6082,
+-5.9,
+20.576
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_011": {
+"position_m": [
+2198.3723,
+10.1,
+24.501
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_012": {
+"position_m": [
+2254.29,
+-9.9,
+24.081
+],
+"type": "CORROSION_STAIN",
+"severity": 2,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_013": {
+"position_m": [
+1710.226,
+9.9,
+21.553
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_014": {
+"position_m": [
+2129.5308,
+-10.1,
+24.3191
+],
+"type": "CORROSION_STAIN",
+"severity": 2,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_015": {
+"position_m": [
+2197.4792,
+-9.9,
+24.807
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_016": {
+"position_m": [
+1671.4839,
+-1.9,
+21.854
+],
+"type": "CORROSION_STAIN",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_017": {
+"position_m": [
+1888.749,
+-10.1,
+23.83
+],
+"type": "CORROSION_STAIN",
+"severity": 4,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_018": {
+"position_m": [
+1887.576,
+6.1,
+23.709
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_019": {
+"position_m": [
+2528.21,
+-1.9,
+20.279
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_CORROSION_STAIN_020": {
+"position_m": [
+1867.462,
+10.1,
+22.224
+],
+"type": "CORROSION_STAIN",
+"severity": 1,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_JOINT_DETERIORATION_001": {
+"position_m": [
+2202.8669,
+4.369,
+22.292
+],
+"type": "JOINT_DETERIORATION",
+"severity": 3,
+"inspection_sector": "SECTOR_D",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_JOINT_DETERIORATION_002": {
+"position_m": [
+2264.6331,
+4.058,
+20.49
+],
+"type": "JOINT_DETERIORATION",
+"severity": 3,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_JOINT_DETERIORATION_003": {
+"position_m": [
+2146.3,
+0.562,
+21.356
+],
+"type": "JOINT_DETERIORATION",
+"severity": 3,
+"inspection_sector": "SECTOR_D",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_JOINT_DETERIORATION_004": {
+"position_m": [
+1997.1331,
+0.238,
+21.723
+],
+"type": "JOINT_DETERIORATION",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_JOINT_DETERIORATION_005": {
+"position_m": [
+2262.033,
+-5.644,
+20.391
+],
+"type": "JOINT_DETERIORATION",
+"severity": 2,
+"inspection_sector": "SECTOR_E",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_JOINT_DETERIORATION_006": {
+"position_m": [
+2533.7,
+-4.279,
+17.967
+],
+"type": "JOINT_DETERIORATION",
+"severity": 4,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_JOINT_DETERIORATION_007": {
+"position_m": [
+1698.7,
+5.137,
+20.206
+],
+"type": "JOINT_DETERIORATION",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_JOINT_DETERIORATION_008": {
+"position_m": [
+2439.533,
+6.027,
+17.433
+],
+"type": "JOINT_DETERIORATION",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_JOINT_DETERIORATION_009": {
+"position_m": [
+2056.3,
+-4.919,
+22.382
+],
+"type": "JOINT_DETERIORATION",
+"severity": 2,
+"inspection_sector": "SECTOR_C",
+"host_surface": "PIER_CAP"
+},
+"DEFECT_REPAIR_PATCH_001": {
+"position_m": [
+2048.4209,
+9.9,
+25.259
+],
+"type": "REPAIR_PATCH",
+"severity": 3,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_REPAIR_PATCH_002": {
+"position_m": [
+1662.171,
+-1.9,
+21.384
+],
+"type": "REPAIR_PATCH",
+"severity": 2,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_REPAIR_PATCH_003": {
+"position_m": [
+1823.6292,
+6.1,
+22.8991
+],
+"type": "REPAIR_PATCH",
+"severity": 2,
+"inspection_sector": "SECTOR_B",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_REPAIR_PATCH_004": {
+"position_m": [
+1663.2349,
+2.1,
+21.2441
+],
+"type": "REPAIR_PATCH",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_REPAIR_PATCH_005": {
+"position_m": [
+2270.6978,
+-10.1,
+22.8919
+],
+"type": "REPAIR_PATCH",
+"severity": 2,
+"inspection_sector": "SECTOR_E",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_REPAIR_PATCH_006": {
+"position_m": [
+2215.103,
+6.1,
+24.196
+],
+"type": "REPAIR_PATCH",
+"severity": 2,
+"inspection_sector": "SECTOR_D",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_REPAIR_PATCH_007": {
+"position_m": [
+1995.3107,
+-2.9926,
+-0.2739
+],
+"type": "REPAIR_PATCH",
+"severity": 1,
+"inspection_sector": "SECTOR_C",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REPAIR_PATCH_008": {
+"position_m": [
+1665.5243,
+-4.1381,
+16.837
+],
+"type": "REPAIR_PATCH",
+"severity": 1,
+"inspection_sector": "SECTOR_A",
+"host_surface": "PIER_COLUMN"
+},
+"DEFECT_REPAIR_PATCH_009": {
+"position_m": [
+1709.0631,
+6.1,
+21.676
+],
+"type": "REPAIR_PATCH",
+"severity": 3,
+"inspection_sector": "SECTOR_A",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_REPAIR_PATCH_010": {
+"position_m": [
+2433.697,
+-1.9,
+20.127
+],
+"type": "REPAIR_PATCH",
+"severity": 1,
+"inspection_sector": "SECTOR_F",
+"host_surface": "GIRDER_WEB"
+},
+"DEFECT_REPAIR_PATCH_011": {
+"position_m": [
+2045.6499,
+-5.9,
+24.91
+],
+"type": "REPAIR_PATCH",
+"severity": 3,
+"inspection_sector": "SECTOR_C",
+"host_surface": "GIRDER_WEB"
+}
+}

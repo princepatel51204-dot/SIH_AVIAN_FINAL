@@ -1,0 +1,275 @@
+{
+  "config": "01_FLIGHT",
+  "tolerance_mm": 0.4,
+  "angular_tolerance_rad": 0.3,
+  "source_parts": 137,
+  "links": {
+    "arm_base_link": {
+      "stl": "arm_base_link.stl",
+      "parts": 1,
+      "triangles": 1962,
+      "hull_triangles": 368,
+      "part_names": [
+        "arm_base_flange"
+      ],
+      "link_origin_mm": [
+        45.0,
+        0.0,
+        -95.0
+      ]
+    },
+    "base_link": {
+      "stl": "base_link.stl",
+      "parts": 112,
+      "triangles": 88605,
+      "hull_triangles": 520,
+      "part_names": [
+        "spine_rail_L",
+        "panel_side_L",
+        "spine_rail_R",
+        "panel_side_R",
+        "spine_cross_F",
+        "spine_cross_A",
+        "corner_node_FL",
+        "corner_node_FR",
+        "corner_node_AL",
+        "corner_node_AR",
+        "manipulator_hub",
+        "panel_top"
+      ],
+      "link_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "link_1": {
+      "stl": "link_1.stl",
+      "parts": 1,
+      "triangles": 1732,
+      "hull_triangles": 110,
+      "part_names": [
+        "arm_link_1"
+      ],
+      "link_origin_mm": [
+        45.0,
+        0.0,
+        -95.0
+      ]
+    },
+    "link_2": {
+      "stl": "link_2.stl",
+      "parts": 1,
+      "triangles": 6752,
+      "hull_triangles": 284,
+      "part_names": [
+        "arm_link_2"
+      ],
+      "link_origin_mm": [
+        45.0,
+        0.0,
+        -190.0
+      ]
+    },
+    "link_3": {
+      "stl": "link_3.stl",
+      "parts": 1,
+      "triangles": 6258,
+      "hull_triangles": 276,
+      "part_names": [
+        "arm_link_3"
+      ],
+      "link_origin_mm": [
+        45.0,
+        0.0,
+        -520.0
+      ]
+    },
+    "link_4": {
+      "stl": "link_4.stl",
+      "parts": 1,
+      "triangles": 3248,
+      "hull_triangles": 286,
+      "part_names": [
+        "arm_link_4"
+      ],
+      "link_origin_mm": [
+        45.0,
+        0.0,
+        -820.0
+      ]
+    },
+    "link_5": {
+      "stl": "link_5.stl",
+      "parts": 1,
+      "triangles": 3574,
+      "hull_triangles": 456,
+      "part_names": [
+        "arm_link_5"
+      ],
+      "link_origin_mm": [
+        45.0,
+        0.0,
+        -905.0
+      ]
+    },
+    "link_6": {
+      "stl": "link_6.stl",
+      "parts": 1,
+      "triangles": 5030,
+      "hull_triangles": 356,
+      "part_names": [
+        "arm_link_6"
+      ],
+      "link_origin_mm": [
+        45.0,
+        0.0,
+        -985.0
+      ]
+    },
+    "rotor_1_lower": {
+      "stl": "rotor_1_lower.stl",
+      "parts": 2,
+      "triangles": 25402,
+      "hull_triangles": 2452,
+      "part_names": [
+        "motor_1_lower",
+        "propeller_1_lower"
+      ],
+      "link_origin_mm": [
+        406.586,
+        406.586,
+        -62.0
+      ]
+    },
+    "rotor_1_upper": {
+      "stl": "rotor_1_upper.stl",
+      "parts": 2,
+      "triangles": 14976,
+      "hull_triangles": 2710,
+      "part_names": [
+        "motor_1_upper",
+        "propeller_1_upper"
+      ],
+      "link_origin_mm": [
+        406.586,
+        406.586,
+        62.0
+      ]
+    },
+    "rotor_2_lower": {
+      "stl": "rotor_2_lower.stl",
+      "parts": 2,
+      "triangles": 14778,
+      "hull_triangles": 2692,
+      "part_names": [
+        "motor_2_lower",
+        "propeller_2_lower"
+      ],
+      "link_origin_mm": [
+        -406.586,
+        406.586,
+        -62.0
+      ]
+    },
+    "rotor_2_upper": {
+      "stl": "rotor_2_upper.stl",
+      "parts": 2,
+      "triangles": 25618,
+      "hull_triangles": 2454,
+      "part_names": [
+        "motor_2_upper",
+        "propeller_2_upper"
+      ],
+      "link_origin_mm": [
+        -406.586,
+        406.586,
+        62.0
+      ]
+    },
+    "rotor_3_lower": {
+      "stl": "rotor_3_lower.stl",
+      "parts": 2,
+      "triangles": 25278,
+      "hull_triangles": 2456,
+      "part_names": [
+        "motor_3_lower",
+        "propeller_3_lower"
+      ],
+      "link_origin_mm": [
+        -406.586,
+        -406.586,
+        -62.0
+      ]
+    },
+    "rotor_3_upper": {
+      "stl": "rotor_3_upper.stl",
+      "parts": 2,
+      "triangles": 14726,
+      "hull_triangles": 2692,
+      "part_names": [
+        "motor_3_upper",
+        "propeller_3_upper"
+      ],
+      "link_origin_mm": [
+        -406.586,
+        -406.586,
+        62.0
+      ]
+    },
+    "rotor_4_lower": {
+      "stl": "rotor_4_lower.stl",
+      "parts": 2,
+      "triangles": 14552,
+      "hull_triangles": 2676,
+      "part_names": [
+        "motor_4_lower",
+        "propeller_4_lower"
+      ],
+      "link_origin_mm": [
+        406.586,
+        -406.586,
+        -62.0
+      ]
+    },
+    "rotor_4_upper": {
+      "stl": "rotor_4_upper.stl",
+      "parts": 2,
+      "triangles": 25426,
+      "hull_triangles": 2462,
+      "part_names": [
+        "motor_4_upper",
+        "propeller_4_upper"
+      ],
+      "link_origin_mm": [
+        406.586,
+        -406.586,
+        62.0
+      ]
+    },
+    "tool0": {
+      "stl": "tool0.stl",
+      "parts": 2,
+      "triangles": 2238,
+      "hull_triangles": 414,
+      "part_names": [
+        "ft_sensor",
+        "tool_changer_master"
+      ],
+      "link_origin_mm": [
+        45.0,
+        0.0,
+        -1045.0
+      ]
+    }
+  },
+  "total_visual_triangles": 280155,
+  "total_hull_triangles": 23664,
+  "unplaced_parts": 0,
+  "placement_failures": [],
+  "physics_representation": "primitive boxes and cylinders in avian.urdf",
+  "why_not_mesh_collision": "visual mesh is 280155 triangles per vehicle; six vehicles at 240 Hz narrow-phase on 2 CPU cores is not affordable",
+  "why_not_hull_collision": "the convex hull of a 4-arm rotor set is a solid disc that swallows the rotor plane and the manipulator workspace, so every inspection pose would register as a collision",
+  "units": "millimetres in the STL files, matching the CAD; the URDF scales them by 0.001",
+  "build_time_s": 29.8
+}

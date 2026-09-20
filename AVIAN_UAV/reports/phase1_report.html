@@ -1,0 +1,177 @@
+<title>AVIAN Phase 1 Report</title><style>
+:root{--bg:#ffffff;--fg:#16181d;--muted:#5c6370;--line:#e3e6ea;
+--card:#f7f8fa;--pass:#0d7a3e;--passbg:#e6f4ec;--fail:#b3261e;
+--failbg:#fdeceb;--accent:#1a4fa0;--code:#f0f2f5}
+@media (prefers-color-scheme:dark){:root{--bg:#101317;--fg:#e8eaed;
+--muted:#9aa3ae;--line:#272c33;--card:#171b21;--pass:#4ade80;
+--passbg:#12291c;--fail:#f87171;--failbg:#2b1614;--accent:#7aa5f0;
+--code:#1b2027}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:40px 24px 80px}
+h1{font-size:30px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:20px;margin:44px 0 12px;padding-bottom:8px;
+border-bottom:1px solid var(--line)}
+h3{font-size:16px;margin:26px 0 6px}
+.sub{color:var(--muted);margin:0 0 26px}
+.verdict{display:inline-block;padding:10px 18px;border-radius:8px;
+font-weight:700;font-size:17px;letter-spacing:.02em}
+.v-pass{background:var(--passbg);color:var(--pass)}
+.v-fail{background:var(--failbg);color:var(--fail)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:12px;margin:22px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;
+padding:14px 16px}
+.kpi .n{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.kpi .l{font-size:12px;color:var(--muted);text-transform:uppercase;
+letter-spacing:.05em;margin-top:2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:640px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);
+vertical-align:top}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;
+color:var(--muted);font-weight:600}
+td.id{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+white-space:nowrap}
+.tag{display:inline-block;padding:2px 8px;border-radius:5px;font-size:11px;
+font-weight:700;letter-spacing:.03em}
+.t-pass{background:var(--passbg);color:var(--pass)}
+.t-fail{background:var(--failbg);color:var(--fail)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+padding:16px 18px;margin:14px 0}
+.card h3{margin-top:0}
+.card p{margin:6px 0}
+.lab{color:var(--muted);font-size:11.5px;text-transform:uppercase;
+letter-spacing:.05em;font-weight:600}
+.proves{color:var(--muted);margin:2px 0 12px}
+code{background:var(--code);padding:1px 5px;border-radius:4px;
+font-size:12.5px}
+ul{margin:8px 0;padding-left:20px}
+footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);
+color:var(--muted);font-size:12.5px}
+</style>
+<div class=wrap>
+<h1>AVIAN Phase 1 &mdash; complete single UAV</h1>
+<p class=sub>Generated 2026-09-20T21:18:02Z</p>
+<div class='verdict v-pass'>ACCEPTANCE GATE: PASS &nbsp;&mdash;&nbsp; 46 of 46 checks</div>
+<p class=sub style='margin-top:14px'>The plan called for 26 tests. 46 checks were run: the extra ones are the individual per-joint and per-sensor assertions the 26-item list groups together, plus two checks added after defects were found. No check was removed and no threshold was relaxed to make a test pass.</p>
+<div class=kpis>
+<div class=kpi><div class=n>23.693</div><div class=l>modelled mass, kg</div></div>
+<div class=kpi><div class=n>536.3</div><div class=l>max thrust, N</div></div>
+<div class=kpi><div class=n>8</div><div class=l>rotors</div></div>
+<div class=kpi><div class=n>6</div><div class=l>arm joints</div></div>
+<div class=kpi><div class=n>7</div><div class=l>sensor frames</div></div>
+<div class=kpi><div class=n>46</div><div class=l>checks run</div></div>
+</div>
+<h2>Results by sub-phase</h2>
+<h3>1A &nbsp;Description <span class='tag t-pass'>PASS</span></h3>
+<p class=proves>The URDF is generated from the CAD and agrees with it: kinematics, mass, limits, sensor frames.<br><span class=mono>tests/test_description.py</span></p>
+<div class=scroll><table><tr><th>ID</th><th>Check</th><th>Measured</th><th>Required</th><th></th></tr>
+<tr><td class=id>T01</td><td>URDF loads with a valid kinematic tree</td><td class=mono>24 joints</td><td class=mono>&gt; 0</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T02</td><td>six manipulator joints J1-J6 present</td><td class=mono>[&#x27;J1&#x27;, &#x27;J2&#x27;, &#x27;J3&#x27;, &#x27;J4&#x27;, &#x27;J5&#x27;, &#x27;J6&#x27;]</td><td class=mono>[&#x27;J1&#x27;, &#x27;J2&#x27;, &#x27;J3&#x27;, &#x27;J4&#x27;, &#x27;J5&#x27;, &#x27;J6&#x27;]</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T03</td><td>joint limits, effort and velocity match the CAD</td><td class=mono>6 joints checked</td><td class=mono>exact match</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T04</td><td>8 rotors in 4 counter-rotating coaxial pairs</td><td class=mono>8 rotors, 4 CCW, 4 arms</td><td class=mono>8 rotors, 4 CCW, 4 arms</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T05</td><td>URDF forward kinematics match CAD kin_b.py</td><td class=mono>max error 0.000 mm</td><td class=mono>&lt; 1.000 mm</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T06</td><td>manipulator chain length matches the CAD</td><td class=mono>stowed 950.0 mm, max 949.7 mm</td><td class=mono>chain 950.0 mm</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T07</td><td>simulated mass matches the CAD mass budget</td><td class=mono>23.685 kg</td><td class=mono>23.685 kg</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T08</td><td>thrust-to-weight ratio is flyable</td><td class=mono>2.31</td><td class=mono>&gt;= 1.50</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T09</td><td>no self-collision in the stowed pose</td><td class=mono>0 penetrating link pairs</td><td class=mono>0</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T10</td><td>seven sensor frames present, placed and correctly aimed</td><td class=mono>7 frames, 7 correctly aimed</td><td class=mono>7 frames, every boresight within 1 deg of its mount angles</td><td><span class='tag t-pass'>PASS</span></td></tr>
+</table></div>
+<h3>1B &nbsp;Visual model <span class='tag t-fail'>NOT RUN</span></h3>
+<p class=proves>Real AVIAN CAD geometry, exported per link and referenced by the URDF -- not primitives standing in for the aircraft.<br><span class=mono>avian/description/export_meshes.py</span></p>
+<p class=proves>No machine-readable log for this sub-phase; it is built by the source above and consumed by the suites that follow.</p>
+<h3>1C &nbsp;Physics <span class='tag t-pass'>PASS</span></h3>
+<p class=proves>The airframe interacts with the real bridge collision asset: it does not fall through the deck and it holds station under the soffit.<br><span class=mono>tests/test_environment_collision.py</span></p>
+<div class=scroll><table><tr><th>ID</th><th>Check</th><th>Measured</th><th>Required</th><th></th></tr>
+<tr><td class=id>E01</td><td>bridge collision asset loads into the simulator</td><td class=mono>677 primitives in 6 bodies</td><td class=mono>&gt; 0</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>E02</td><td>the deck is solid - aircraft does not fall through</td><td class=mono>rested at z=28.02 m</td><td class=mono>deck top 27.00 m</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>E03</td><td>stable hover under the deck, no contact</td><td class=mono>error 1.9 cm, clearance 4.04 m</td><td class=mono>&lt; 30 cm, &gt; 0.5 m, 0 contacts</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>E04</td><td>clearance decreases as the aircraft approaches structure</td><td class=mono>4.06 -&gt; 1.60 m</td><td class=mono>monotone decrease &gt; 1 m</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>E05</td><td>proximity supervisor prevents contact with the deck</td><td class=mono>state HOLD, contacts 0</td><td class=mono>HOLD, 0 contacts</td><td><span class='tag t-pass'>PASS</span></td></tr>
+</table></div>
+<h3>1D &nbsp;Control <span class='tag t-pass'>PASS</span></h3>
+<p class=proves>Allocation, cascaded control, saturation, safety supervisor and bit-exact determinism.<br><span class=mono>tests/test_vehicle_dynamics.py</span></p>
+<div class=scroll><table><tr><th>ID</th><th>Check</th><th>Measured</th><th>Required</th><th></th></tr>
+<tr><td class=id>D01</td><td>control allocation matrix is well conditioned</td><td class=mono>4x8, cond 50.0</td><td class=mono>4x8, cond &lt; 200</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>D02</td><td>pure collective loads all 8 rotors equally</td><td class=mono>spread 0.00e+00 N</td><td class=mono>&lt; 1e-6 N</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>D03</td><td>roll, pitch and yaw authority at hover</td><td class=mono>roll 94.47, pitch 94.47, yaw 4.65 Nm</td><td class=mono>roll/pitch &gt; 20, yaw &gt; 1 Nm</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>D04</td><td>yaw demand produces no roll or pitch coupling</td><td class=mono>cross-coupling 7.10e-15 Nm</td><td class=mono>&lt; 1e-6 Nm</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T1a</td><td>takeoff reaches 12 m and holds</td><td class=mono>4.4 s, RMS 1.1 cm</td><td class=mono>&lt; 10 cm RMS</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T1b</td><td>commanded descent tracks to 1 m</td><td class=mono>1.006 m</td><td class=mono>1.00 +/- 0.15 m</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T2</td><td>position hold RMS error</td><td class=mono>RMS 3.0 cm, max 6.1 cm</td><td class=mono>&lt; 15 cm RMS</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T3</td><td>waypoint mission arrival accuracy</td><td class=mono>max 10.5 cm over 5 waypoints</td><td class=mono>&lt; 30 cm</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T5</td><td>recovers from lateral force and yaw torque</td><td class=mono>peak 0.11 m, recovered in 0.0 s</td><td class=mono>returns inside 0.25 m</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>D05</td><td>motor saturation stays bounded</td><td class=mono>83 events, peak 130% of limit</td><td class=mono>&lt; 160%</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>D06</td><td>real-time factor on this host</td><td class=mono>29.10x</td><td class=mono>&gt; 0.05x (recorded)</td><td><span class='tag t-pass'>PASS</span></td></tr>
+</table></div>
+<h3>1D &nbsp;Determinism <span class='tag t-pass'>PASS</span></h3>
+<p class=proves>Two runs of the same mission with the same seed produce the same trajectory.<br><span class=mono>tests/test_determinism.py</span></p>
+<div class=scroll><table><tr><th>ID</th><th>Check</th><th>Measured</th><th>Required</th><th></th></tr>
+<tr><td class=id>T6a</td><td>identical runs reproduce to tolerance</td><td class=mono>max 0.00e+00 m, final 0.00e+00 m</td><td class=mono>&lt; 1e-6 m</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T6b</td><td>flight path has no stochastic term</td><td class=mono>0.00e+00 m across seeds</td><td class=mono>&lt; 1e-6 m</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T7a</td><td>low battery triggers RETURN and flies home</td><td class=mono>RETURN, 0.03 m from home</td><td class=mono>RETURN, &lt; 2 m</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T7b</td><td>single rotor failure: stays airborne, enters RETURN</td><td class=mono>RETURN, z=6.0 m, tilt 2.6 deg</td><td class=mono>RETURN, airborne, tilt &lt; 45 deg</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T7c</td><td>invalid state estimate triggers HOLD</td><td class=mono>HOLD</td><td class=mono>HOLD</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>T7d</td><td>safety state latches until conditions clear with margin</td><td class=mono>held RETURN, cleared to NOMINAL</td><td class=mono>latched then explicitly cleared</td><td><span class='tag t-pass'>PASS</span></td></tr>
+</table></div>
+<h3>1E &nbsp;Sensors <span class='tag t-pass'>PASS</span></h3>
+<p class=proves>RGB, depth, LiDAR, IMU and GNSS measure something correct about a known scene, at rate-limited simulation time.<br><span class=mono>tests/test_sensors.py</span></p>
+<div class=scroll><table><tr><th>ID</th><th>Check</th><th>Measured</th><th>Required</th><th></th></tr>
+<tr><td class=id>S13</td><td>RGB camera renders a non-uniform image at both resolutions</td><td class=mono>640x480 246 ms, 1920x1080 1355 ms</td><td class=mono>both resolutions, image std &gt; 3</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>S14</td><td>depth camera range agrees with true geometry</td><td class=mono>2.1935 m vs ray-cast 2.176 m</td><td class=mono>error &lt; 0.6 m on the boresight</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>S15</td><td>LiDAR returns structure, rejects its own airframe</td><td class=mono>3473 returns, 368 self-hits discarded</td><td class=mono>&gt; 500 returns, self-hits removed</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>S16</td><td>IMU reads +1 g in hover with bounded gyro noise</td><td class=mono>|a| = 9.807 m/s2, gyro RMS 0.0024 rad/s</td><td class=mono>9.807 +/- 0.35, gyro &lt; 0.15</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>S17</td><td>GNSS gives a fix in the open and degrades under structure</td><td class=mono>open 11 sats (HIGH) -&gt; under 0 (DENIED)</td><td class=mono>fewer satellites under the deck</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>S18</td><td>sensors are rate-limited on simulation time</td><td class=mono>200 IMU samples in 1 s</td><td class=mono>200 +/- 10 at 200 Hz</td><td><span class='tag t-pass'>PASS</span></td></tr>
+</table></div>
+<h3>1F &nbsp;Manipulator <span class='tag t-pass'>PASS</span></h3>
+<p class=proves>Six joints move alone, in the CAD&#x27;s own sense, stop at both limits; IK is verified and refuses the unreachable; collision detection detects.<br><span class=mono>tests/test_manipulator.py</span></p>
+<div class=scroll><table><tr><th>ID</th><th>Check</th><th>Measured</th><th>Required</th><th></th></tr>
+<tr><td class=id>M18</td><td>J1 moves alone, the right way, and stops at both limits</td><td class=mono>40 deg cmd, err 0.00 deg</td><td class=mono>&lt;1.5 deg error, &lt;0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>M19</td><td>J2 moves alone, the right way, and stops at both limits</td><td class=mono>40 deg cmd, err 0.00 deg</td><td class=mono>&lt;1.5 deg error, &lt;0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>M20</td><td>J3 moves alone, the right way, and stops at both limits</td><td class=mono>40 deg cmd, err 0.00 deg</td><td class=mono>&lt;1.5 deg error, &lt;0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>M21</td><td>J4 moves alone, the right way, and stops at both limits</td><td class=mono>40 deg cmd, err 0.01 deg</td><td class=mono>&lt;1.5 deg error, &lt;0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>M22</td><td>J5 moves alone, the right way, and stops at both limits</td><td class=mono>40 deg cmd, err 0.00 deg</td><td class=mono>&lt;1.5 deg error, &lt;0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>M23</td><td>J6 moves alone, the right way, and stops at both limits</td><td class=mono>40 deg cmd, err 0.00 deg</td><td class=mono>&lt;1.5 deg error, &lt;0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>M24</td><td>IK solves reachable targets and refuses unreachable ones</td><td class=mono>12/12 solved, worst error 0.2 mm</td><td class=mono>&gt;=9/12 solved to &lt;=10 mm, 3 m target refused</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>M25</td><td>collision detection catches real contact, both kinds</td><td class=mono>stowed clear, folded 7 self-contacts, pressed 8 structure contacts</td><td class=mono>clear when clear, detected when not</td><td><span class='tag t-pass'>PASS</span></td></tr>
+</table></div>
+<h2>Sensor frames as built</h2>
+<p class=proves>Boresight is the direction the instrument looks, computed from the generated URDF rather than restated from the specification.</p>
+<div class=scroll><table><tr><th>Frame</th><th>Offset, m</th><th>Pitch</th><th>Yaw</th><th>Convention</th><th>Boresight, body</th></tr>
+<tr><td class=id>sensor_rgb_front</td><td class=mono>[0.22, 0.0, -0.02]</td><td class=mono>0.0&deg;</td><td class=mono>0.0&deg;</td><td>optical</td><td class=mono>[1.0, 0.0, -0.0]</td></tr>
+<tr><td class=id>sensor_rgb_down</td><td class=mono>[0.02, 0.0, -0.11]</td><td class=mono>90.0&deg;</td><td class=mono>0.0&deg;</td><td>optical</td><td class=mono>[-0.0, 0.0, -1.0]</td></tr>
+<tr><td class=id>sensor_rgb_side</td><td class=mono>[0.05, -0.19, -0.02]</td><td class=mono>12.0&deg;</td><td class=mono>-90.0&deg;</td><td>optical</td><td class=mono>[0.0, -0.978148, -0.207912]</td></tr>
+<tr><td class=id>sensor_depth</td><td class=mono>[0.2, 0.0, 0.04]</td><td class=mono>0.0&deg;</td><td class=mono>0.0&deg;</td><td>optical</td><td class=mono>[1.0, 0.0, -0.0]</td></tr>
+<tr><td class=id>sensor_lidar</td><td class=mono>[0.0, 0.0, 0.13]</td><td class=mono>0.0&deg;</td><td class=mono>0.0&deg;</td><td>body</td><td class=mono>[1.0, 0.0, 0.0]</td></tr>
+<tr><td class=id>sensor_thermal</td><td class=mono>[0.2, 0.1, -0.02]</td><td class=mono>0.0&deg;</td><td class=mono>0.0&deg;</td><td>optical</td><td class=mono>[1.0, 0.0, -0.0]</td></tr>
+<tr><td class=id>sensor_imu</td><td class=mono>[0.0, 0.0, 0.0]</td><td class=mono>0.0&deg;</td><td class=mono>0.0&deg;</td><td>body</td><td class=mono>[1.0, 0.0, 0.0]</td></tr>
+</table></div>
+<h2>Defects found and fixed in Phase 1</h2>
+<p class=proves>Every one of these was found by a test that failed, or by a test that was found to be passing for the wrong reason. They are listed because a report showing only green tells you nothing about whether the tests are any good.</p>
+<div class=card><h3>Sensor frames aimed 90 deg off the nose</h3><p><span class=lab>What was wrong</span><br>Every sensor frame in the environment package and in the URDF was built with rpy = (90 - pitch, 0, yaw), which maps the optical -Z onto body +Y. A &#x27;forward-looking&#x27; camera pointed out the left side. The exported REV-B manifest recorded the contradiction as optical_axis_world = [0, 1, 0] on a sensor with zero mount angles.</p><p><span class=lab>Fix</span><br>Base optical rotation corrected to rpy = (90, 0, -90); mount pitch and yaw applied in the body frame outside it. Fixed in both avian/description/build_urdf.py and avian_env/sensors.py, and the REV-B sensor manifest regenerated.</p><p><span class=lab>Now tested by</span><br>Found by S14. T10 now asserts every boresight against its mount angles, so this class of error fails a test instead of surviving.</p></div>
+<div class=card><h3>LiDAR and IMU were given camera frames</h3><p><span class=lab>What was wrong</span><br>A spinning LiDAR sweeps azimuth about its own +Z. With an optical frame its spin axis lay horizontal and the scan plane came out vertical. An IMU must report in the body frame by definition.</p><p><span class=lab>Fix</span><br>Those two frames are now body-aligned, declared explicitly as frame_convention = &#x27;body&#x27; rather than left to be inferred.</p><p><span class=lab>Now tested by</span><br>T10 asserts the LiDAR spin axis is body +Z.</p></div>
+<div class=card><h3>Self-collision checking was vacuous</h3><p><span class=lab>What was wrong</span><br>The airframe is loaded without URDF_USE_SELF_COLLISION, so getContactPoints(body, body) returns an empty list for every pose. check_self_collision() and T09 therefore reported &#x27;clear&#x27; for a pose with link_5 buried 112 mm inside the fuselage.</p><p><span class=lab>Fix</span><br>Both now use getClosestPoints, which reports geometric penetration regardless of that flag, and exclude parent-child pairs by the real URDF parent relation instead of an index heuristic.</p><p><span class=lab>Now tested by</span><br>M25 asserts both directions: clear when clear, DETECTED when not. Self-collision is detected, not prevented -- see Limitations.</p></div>
+<div class=card><h3>solve_ik measured the CAD cross-check from the wrong frame</h3><p><span class=lab>What was wrong</span><br>getBasePositionAndOrientation returns the centre-of-mass frame. base_link&#x27;s inertial origin is 86 mm off its URDF origin, so the CAD-vs-simulation agreement check was 86 mm out and rejected every correct solution it found. IK solved 0 of 12 reachable targets.</p><p><span class=lab>Fix</span><br>Added Manipulator.base_frame(), which removes the inertial offset. IK now solves 12 of 12 to a worst error of 0.2 mm.</p><p><span class=lab>Now tested by</span><br>M24 asserts &gt;= 9/12 solved to &lt;= 10 mm AND that a 3 m target is refused.</p></div>
+<div class=card><h3>Depth camera reported its own airframe as an obstacle</h3><p><span class=lab>What was wrong</span><br>The depth sensor sits 200 mm forward on a vehicle with 575 mm arms, and the camera origin sat inside the fuselage shell: 46 % of the frame was own structure and the nearest return was 0.09 m.</p><p><span class=lab>Fix</span><br>Segmentation self-mask, with the background test done before the bit-mask so -1 cannot alias onto a body id. With the frame orientation also corrected, self-masked pixels fell from 46 % to 0.2 %.</p><p><span class=lab>Now tested by</span><br>S14 compares the range at the principal point against a ray cast along the same boresight.</p></div>
+<div class=card><h3>Rate gate muted a sensor after a clock rewind</h3><p><span class=lab>What was wrong</span><br>The gate accumulates phase in _next_due. Clearing last_stamp alone left a previously-read sensor silent for a whole simulated second.</p><p><span class=lab>Fix</span><br>Added Sensor.reset_timing(), which re-anchors the gate. A mission leg or a replay needs the same call.</p><p><span class=lab>Now tested by</span><br>S18 measures 200 samples in 1 s at 200 Hz.</p></div>
+<div class=card><h3>S14 compared the camera against geometry it could not see</h3><p><span class=lab>What was wrong</span><br>The original test compared the depth camera&#x27;s whole-frame minimum against min_clearance(), which is the distance to the nearest structure ANYWHERE in 3-D -- under the deck, that is the soffit above the aircraft, outside a forward-looking camera&#x27;s field of view. The test was invalid, not merely failing.</p><p><span class=lab>Fix</span><br>Rewritten to park the aircraft a fixed stand-off from a river pier and compare the boresight range against a ray cast along the same axis. The 0.6 m tolerance was NOT relaxed.</p><p><span class=lab>Now tested by</span><br>This was a test defect and is recorded as one.</p></div>
+<h2>Limitations</h2>
+<p class=proves>These are properties of the model, not outstanding bugs. They are stated so nothing here is read as claiming more than it demonstrates.</p>
+<div class=card><h3>Self-collision is detected, not prevented</h3><p>URDF_USE_SELF_COLLISION is off, because enabling contact response between links of one body changes flight dynamics that are already validated. The solver will not push the arm out of the airframe; planning must not command a pose check_self_collision() rejects.</p></div>
+<div class=card><h3>Link inertia is a point-mass aggregation</h3><p>Mass and centre of gravity come exactly from the 389-row budget; the inertia tensor is approximate. Recorded as inertia_method in the generated manifest.</p></div>
+<div class=card><h3>Manipulator acceleration limits are estimated</h3><p>The CAD gives torque and speed but no acceleration limit. a = tau / I with I from downstream link masses is a lower bound on inertia and so an optimistic acceleration. Used for trajectory timing only, never for a safety decision.</p></div>
+<div class=card><h3>Camera rendering is CPU-bound and that shapes the architecture</h3><p>640x480 costs about 300 ms/frame on this host and 1920x1080 about 1.8 s. Cameras are waypoint-triggered rather than free-running because of the hardware, and the policy is recorded rather than hidden.</p></div>
+<div class=card><h3>The GNSS datum is arbitrary</h3><p>No real site is claimed. Quality degradation is computed by casting rays at the sky, not looked up from a table.</p></div>
+<div class=card><h3>The arm is validated with the airframe held</h3><p>Whether the aircraft holds station against the reaction of a moving 6-DOF arm is a flight-dynamics question. It is not answered in Phase 1 and is not implied by these results.</p></div>
+<h2>Deliberately not started</h2><ul>
+<li>Phase 2 -- six-UAV inspection and repair</li>
+<li>Phase 3 -- dashboard and digital twin</li>
+<li>Procedural textures in PyBullet</li>
+<li>Classical CV defect detector</li>
+</ul>
+<footer>AVIAN &mdash; Autonomous Vision-based Inspection and Adaptive Network. Phase 1 stops here, at the acceptance gate, pending approval to begin Phase 2.</footer>
+</div>

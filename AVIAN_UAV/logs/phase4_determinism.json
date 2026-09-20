@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "id": "T6a",
+      "name": "identical runs reproduce to tolerance",
+      "status": "PASS",
+      "measured": "max 0.00e+00 m, final 0.00e+00 m",
+      "expected": "< 1e-6 m",
+      "detail": "energy delta 0.00e+00 J over 7200 steps"
+    },
+    {
+      "id": "T6b",
+      "name": "flight path has no stochastic term",
+      "status": "PASS",
+      "measured": "0.00e+00 m across seeds",
+      "expected": "< 1e-6 m",
+      "detail": "seed 7 vs seed 99; noise enters later, at the sensor layer"
+    },
+    {
+      "id": "T7a",
+      "name": "low battery triggers RETURN and flies home",
+      "status": "PASS",
+      "measured": "RETURN, 0.03 m from home",
+      "expected": "RETURN, < 2 m",
+      "detail": "battery 15.0 % at or below the 20 % reserve"
+    },
+    {
+      "id": "T7b",
+      "name": "single rotor failure: stays airborne, enters RETURN",
+      "status": "PASS",
+      "measured": "RETURN, z=6.0 m, tilt 2.6 deg",
+      "expected": "RETURN, airborne, tilt < 45 deg",
+      "detail": "was z=12.0 m; X8 redundancy"
+    },
+    {
+      "id": "T7c",
+      "name": "invalid state estimate triggers HOLD",
+      "status": "PASS",
+      "measured": "HOLD",
+      "expected": "HOLD",
+      "detail": "state estimate invalid"
+    },
+    {
+      "id": "T7d",
+      "name": "safety state latches until conditions clear with margin",
+      "status": "PASS",
+      "measured": "held RETURN, cleared to NOMINAL",
+      "expected": "latched then explicitly cleared",
+      "detail": "4 recorded transitions"
+    }
+  ],
+  "metrics": {
+    "determinism_max_deviation_m": 0.0,
+    "determinism_final_deviation_m": 0.0,
+    "determinism_energy_delta_J": 0.0,
+    "seed_sensitivity_m": 0.0,
+    "low_battery_state": "RETURN",
+    "low_battery_distance_to_home_m": 0.03,
+    "motor_fail_state": "RETURN",
+    "motor_fail_altitude_m": 6.0,
+    "motor_fail_attitude_deg": [
+      -1.97,
+      2.64
+    ],
+    "sensor_invalid_state": "HOLD",
+    "latched_state_after_recovery": "RETURN",
+    "state_after_explicit_clear": "NOMINAL",
+    "wall_time_s": 6.2
+  },
+  "run_id": "509ca116fbe4",
+  "summary": {
+    "pass": 6,
+    "fail": 0
+  }
+}

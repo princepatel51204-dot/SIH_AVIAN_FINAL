@@ -1,0 +1,129 @@
+{
+  "bridge": {
+    "spans": 137,
+    "piers": 138,
+    "objects": 2055
+  },
+  "terrain": {
+    "rocks": 260,
+    "veg": 877
+  },
+  "roads": {
+    "objects": 1261,
+    "ramps": 2,
+    "lamps": 139
+  },
+  "city": {
+    "buildings": 680,
+    "highrise": 158,
+    "trees": 2048,
+    "lamps": 1024,
+    "vehicles": 318
+  },
+  "damage": {
+    "defects": 192,
+    "objects": 212,
+    "by_type": {
+      "CRACK_HAIRLINE": 46,
+      "CRACK_LONGITUDINAL": 22,
+      "CRACK_TRANSVERSE": 20,
+      "CRACK_DIAGONAL": 16,
+      "CRACK_NETWORK": 12,
+      "SPALL": 18,
+      "DELAMINATION": 10,
+      "REBAR_EXPOSED": 8,
+      "CORROSION_STAIN": 20,
+      "JOINT_DETERIORATION": 9,
+      "REPAIR_PATCH": 11
+    }
+  },
+  "zones_rev_a": {
+    "sectors": 6,
+    "airspace": {
+      "AVI_AIRSPACE_SAFE": 1,
+      "AVI_AIRSPACE_INSPECTION": 6,
+      "AVI_AIRSPACE_UNDERBRIDGE": 6,
+      "AVI_AIRSPACE_RIVER": 1,
+      "AVI_AIRSPACE_RESTRICTED": 17,
+      "AVI_AIRSPACE_RETURN": 2
+    },
+    "scenarios": 9,
+    "cameras": 7
+  },
+  "detail": {
+    "bridge_services": 1562,
+    "city_structures": 28
+  },
+  "dynamics": {
+    "boats": 17,
+    "pedestrians": 107,
+    "obstacles": 14
+  },
+  "airspace_rev_b": {
+    "TRANSIT_AIRSPACE": 1,
+    "DECK_INSPECTION_AIRSPACE": 6,
+    "UNDERSIDE_INSPECTION_AIRSPACE": 6,
+    "PIER_INSPECTION_AIRSPACE": 16,
+    "RIVER_INSPECTION_AIRSPACE": 1,
+    "CONFINED_INSPECTION_AIRSPACE": 6,
+    "EMERGENCY_RETURN_AIRSPACE": 2,
+    "MULTI_UAV_SEPARATION_ZONE": 5
+  },
+  "scenarios_rev_b": 16,
+  "sensors": 7,
+  "base_sites_cleared": 6,
+  "mission": {
+    "markers": 124,
+    "nodes": 124,
+    "edges": 136
+  },
+  "cameras_rev_b": 5,
+  "visibility": {
+    "difficulty": {
+      "LEVEL_1": 51,
+      "LEVEL_2": 54,
+      "LEVEL_3": 23,
+      "LEVEL_4": 64
+    },
+    "unobservable": 64,
+    "correlation_with_authored_prior": {
+      "n": 192,
+      "authored_mean": 0.475,
+      "measured_mean": 0.096,
+      "pearson_r": -0.057,
+      "mean_abs_error": 0.41
+    }
+  },
+  "indices": {
+    "defects": 192,
+    "structure": 2055,
+    "dynamic": 138
+  },
+  "scene": {
+    "revision": "REV_B",
+    "objects": 13835,
+    "unique_meshes": 3400,
+    "triangles_rendered": 384200,
+    "materials": 178,
+    "collections": 37,
+    "cameras": 12,
+    "active_scenario": {
+      "lighting": "DAY_CLEAR",
+      "weather": "CLEAR",
+      "traffic": true,
+      "boats": true,
+      "pedestrians": true,
+      "dynamic_obstacles": false,
+      "gps_quality": "NORMAL",
+      "uav_count": 1,
+      "description": "the REV-A condition, preserved bit for bit",
+      "preset": "BASELINE"
+    },
+    "validation": {
+      "pass": 32,
+      "fail": 0,
+      "skip": 0,
+      "total": 32
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "phase": 2,
+  "checks": [
+    {
+      "id": "T01",
+      "name": "URDF loads with a valid kinematic tree",
+      "status": "PASS",
+      "measured": "24 joints",
+      "expected": "> 0",
+      "detail": "14 revolute"
+    },
+    {
+      "id": "T02",
+      "name": "six manipulator joints J1-J6 present",
+      "status": "PASS",
+      "measured": "['J1', 'J2', 'J3', 'J4', 'J5', 'J6']",
+      "expected": "['J1', 'J2', 'J3', 'J4', 'J5', 'J6']",
+      "detail": ""
+    },
+    {
+      "id": "T03",
+      "name": "joint limits, effort and velocity match the CAD",
+      "status": "PASS",
+      "measured": "6 joints checked",
+      "expected": "exact match",
+      "detail": ""
+    },
+    {
+      "id": "T04",
+      "name": "8 rotors in 4 counter-rotating coaxial pairs",
+      "status": "PASS",
+      "measured": "8 rotors, 4 CCW, 4 arms",
+      "expected": "8 rotors, 4 CCW, 4 arms",
+      "detail": ""
+    },
+    {
+      "id": "T05",
+      "name": "URDF forward kinematics match CAD kin_b.py",
+      "status": "PASS",
+      "measured": "max error 0.000 mm",
+      "expected": "< 1.000 mm",
+      "detail": "6 configurations tested"
+    },
+    {
+      "id": "T06",
+      "name": "manipulator chain length matches the CAD",
+      "status": "PASS",
+      "measured": "stowed 950.0 mm, max 949.7 mm",
+      "expected": "chain 950.0 mm",
+      "detail": "vL0..vL5 summed; max reach sampled over J2/J3"
+    },
+    {
+      "id": "T07",
+      "name": "simulated mass matches the CAD mass budget",
+      "status": "PASS",
+      "measured": "23.685 kg",
+      "expected": "23.685 kg",
+      "detail": "config NOMINAL, 8 g of solver frames excluded"
+    },
+    {
+      "id": "T08",
+      "name": "thrust-to-weight ratio is flyable",
+      "status": "PASS",
+      "measured": "2.31",
+      "expected": ">= 1.50",
+      "detail": "536 N over 23.7 kg"
+    },
+    {
+      "id": "T09",
+      "name": "no self-collision in the stowed pose",
+      "status": "PASS",
+      "measured": "0 penetrating link pairs",
+      "expected": "0",
+      "detail": ""
+    },
+    {
+      "id": "T10",
+      "name": "seven sensor frames present, placed and correctly aimed",
+      "status": "PASS",
+      "measured": "7 frames, 7 correctly aimed",
+      "expected": "7 frames, every boresight within 1 deg of its mount angles",
+      "detail": ""
+    }
+  ],
+  "run_id": "509ca116fbe4",
+  "summary": {
+    "pass": 10,
+    "fail": 0,
+    "total": 10
+  }
+}

@@ -1,0 +1,1 @@
+NOTE: this is a representative subset. The full CAD render set (25 MB, 11 categories: overall, exploded, propulsion, manipulator, avionics, battery, landing_gear, liquid_service, tools, configurations, validation) ships with the full CAD documentation package, not with this simulation package.

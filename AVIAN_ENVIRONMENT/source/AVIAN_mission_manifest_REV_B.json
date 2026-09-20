@@ -1,0 +1,3141 @@
+{
+  "note": "environment-side mission graph. Costs are measured against real geometry; no route is chosen here.",
+  "marker_counts": {},
+  "node_count": 124,
+  "edge_count": 136,
+  "unconnected_nodes": [],
+  "total_edge_length_m": 11969.6,
+  "edge_types": [
+    "ABORT",
+    "CLIMB",
+    "DESCENT",
+    "GROUND",
+    "INSPECTION",
+    "RETURN",
+    "TRANSIT"
+  ],
+  "nodes": [
+    {
+      "id": "AVI_HOME_SOUTH",
+      "type": "UAV_SPAWN",
+      "sector": "SHARED",
+      "position_m": [
+        1530.0,
+        -95.0,
+        0.45
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_TAKEOFF_SOUTH",
+      "type": "TAKEOFF",
+      "sector": "SHARED",
+      "position_m": [
+        1530.0,
+        -95.0,
+        1.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_LANDING_SOUTH",
+      "type": "LANDING",
+      "sector": "SHARED",
+      "position_m": [
+        1544.0,
+        -95.0,
+        0.45
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_RTH_SOUTH",
+      "type": "RETURN_TO_HOME",
+      "sector": "SHARED",
+      "position_m": [
+        1530.0,
+        -95.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SERVICE_STATION_SOUTH",
+      "type": "SERVICE_STATION",
+      "sector": "SHARED",
+      "position_m": [
+        1514.0,
+        -95.0,
+        0.65
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_HOME_NORTH",
+      "type": "UAV_SPAWN",
+      "sector": "SHARED",
+      "position_m": [
+        2670.0,
+        95.0,
+        2.04
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_TAKEOFF_NORTH",
+      "type": "TAKEOFF",
+      "sector": "SHARED",
+      "position_m": [
+        2670.0,
+        95.0,
+        3.14
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_LANDING_NORTH",
+      "type": "LANDING",
+      "sector": "SHARED",
+      "position_m": [
+        2684.0,
+        95.0,
+        2.02
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_RTH_NORTH",
+      "type": "RETURN_TO_HOME",
+      "sector": "SHARED",
+      "position_m": [
+        2670.0,
+        95.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SERVICE_STATION_NORTH",
+      "type": "SERVICE_STATION",
+      "sector": "SHARED",
+      "position_m": [
+        2654.0,
+        95.0,
+        2.25
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_A_ENTRY",
+      "type": "SECTOR_ENTRY",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1656.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_A_EXIT",
+      "type": "SECTOR_EXIT",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1794.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_A_INSPECT_START",
+      "type": "INSPECTION_START",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1662.0,
+        -24.0,
+        24.03
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_A_INSPECT_END",
+      "type": "INSPECTION_END",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1788.0,
+        -24.0,
+        24.03
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_A_EMERG",
+      "type": "EMERGENCY_LANDING",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1725.0,
+        -67.0,
+        1.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_1_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1668.75,
+        -24.0,
+        30.82
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_1_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1668.75,
+        -15.2,
+        23.09
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_1_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1668.75,
+        0.0,
+        16.03
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_2_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1706.25,
+        -24.0,
+        31.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_2_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1706.25,
+        -15.2,
+        22.19
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_2_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1706.25,
+        0.0,
+        16.03
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_3_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1743.75,
+        -24.0,
+        31.13
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_3_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1743.75,
+        -15.2,
+        22.32
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_3_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1743.75,
+        0.0,
+        16.03
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_4_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1781.25,
+        -24.0,
+        31.43
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_4_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1781.25,
+        -15.2,
+        22.61
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_4_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1781.25,
+        0.0,
+        16.03
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_XFER_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1654.0,
+        -15.2,
+        22.9
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_A_XFER_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_A",
+      "position_m": [
+        1654.0,
+        -15.2,
+        16.03
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_B_ENTRY",
+      "type": "SECTOR_ENTRY",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1806.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_B_EXIT",
+      "type": "SECTOR_EXIT",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1944.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_B_INSPECT_START",
+      "type": "INSPECTION_START",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1812.0,
+        -24.0,
+        24.61
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_B_INSPECT_END",
+      "type": "INSPECTION_END",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1938.0,
+        -24.0,
+        24.61
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_B_EMERG",
+      "type": "EMERGENCY_LANDING",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1875.0,
+        -72.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_1_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1818.75,
+        -24.0,
+        31.85
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_1_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1818.75,
+        -15.2,
+        23.03
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_1_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1818.75,
+        0.0,
+        16.41
+      ],
+      "clearance_m": 2.27,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_2_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1856.25,
+        -24.0,
+        32.35
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_2_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1856.25,
+        -15.2,
+        23.54
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_2_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1856.25,
+        0.0,
+        17.61
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_3_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1893.75,
+        -24.0,
+        32.91
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_3_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1893.75,
+        -15.2,
+        24.09
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_3_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1893.75,
+        0.0,
+        17.61
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_4_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1931.25,
+        -24.0,
+        33.46
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_4_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1931.25,
+        -15.2,
+        24.65
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_4_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1931.25,
+        0.0,
+        17.61
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_XFER_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1804.0,
+        -15.2,
+        22.86
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_B_XFER_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_B",
+      "position_m": [
+        1804.0,
+        -15.2,
+        17.61
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_C_ENTRY",
+      "type": "SECTOR_ENTRY",
+      "sector": "SECTOR_C",
+      "position_m": [
+        1956.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_C_EXIT",
+      "type": "SECTOR_EXIT",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2094.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_C_INSPECT_START",
+      "type": "INSPECTION_START",
+      "sector": "SECTOR_C",
+      "position_m": [
+        1962.0,
+        -24.0,
+        26.58
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_C_INSPECT_END",
+      "type": "INSPECTION_END",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2088.0,
+        -24.0,
+        26.58
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_C_EMERG",
+      "type": "EMERGENCY_LANDING",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2025.0,
+        -72.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_1_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        1968.75,
+        -24.0,
+        33.99
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_1_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        1968.75,
+        -15.2,
+        25.18
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_1_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        1968.75,
+        0.0,
+        19.62
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_2_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2006.25,
+        -24.0,
+        34.44
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_2_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2006.25,
+        -15.2,
+        25.63
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_2_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2006.25,
+        0.0,
+        19.62
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_3_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2043.75,
+        -24.0,
+        34.78
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_3_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2043.75,
+        -15.2,
+        25.97
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_3_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2043.75,
+        0.0,
+        19.62
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_4_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2081.25,
+        -24.0,
+        34.97
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_4_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2081.25,
+        -15.2,
+        24.76
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_4_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        2081.25,
+        0.0,
+        19.62
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_XFER_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        1954.0,
+        -15.2,
+        24.98
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_C_XFER_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_C",
+      "position_m": [
+        1954.0,
+        -15.2,
+        19.62
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_D_ENTRY",
+      "type": "SECTOR_ENTRY",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2106.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_D_EXIT",
+      "type": "SECTOR_EXIT",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2244.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_D_INSPECT_START",
+      "type": "INSPECTION_START",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2112.0,
+        -24.0,
+        26.25
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_D_INSPECT_END",
+      "type": "INSPECTION_END",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2238.0,
+        -24.0,
+        26.25
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_D_EMERG",
+      "type": "EMERGENCY_LANDING",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2175.0,
+        -72.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_1_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2118.75,
+        -24.0,
+        34.96
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_1_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2118.75,
+        -15.2,
+        24.75
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_1_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2118.75,
+        0.0,
+        19.48
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_2_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2156.25,
+        -24.0,
+        34.7
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_2_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2156.25,
+        -15.2,
+        25.89
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_2_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2156.25,
+        0.0,
+        19.48
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_3_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2193.75,
+        -24.0,
+        34.24
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_3_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2193.75,
+        -15.2,
+        25.42
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_3_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2193.75,
+        0.0,
+        19.48
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_4_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2231.25,
+        -24.0,
+        33.61
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_4_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2231.25,
+        -15.2,
+        24.8
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_4_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2231.25,
+        0.0,
+        19.48
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_XFER_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2104.0,
+        -15.2,
+        24.78
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_D_XFER_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_D",
+      "position_m": [
+        2104.0,
+        -15.2,
+        19.48
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_E_ENTRY",
+      "type": "SECTOR_ENTRY",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2256.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_E_EXIT",
+      "type": "SECTOR_EXIT",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2394.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_E_INSPECT_START",
+      "type": "INSPECTION_START",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2262.0,
+        -24.0,
+        23.35
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_E_INSPECT_END",
+      "type": "INSPECTION_END",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2388.0,
+        -24.0,
+        23.35
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_E_EMERG",
+      "type": "EMERGENCY_LANDING",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2325.0,
+        -72.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_1_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2268.75,
+        -24.0,
+        32.89
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_1_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2268.75,
+        -15.2,
+        24.07
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_1_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2268.75,
+        0.0,
+        16.72
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_2_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2306.25,
+        -24.0,
+        32.12
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_2_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2306.25,
+        -15.2,
+        23.31
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_2_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2306.25,
+        0.0,
+        16.72
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_3_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2343.75,
+        -24.0,
+        31.36
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_3_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2343.75,
+        -15.2,
+        22.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_3_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2343.75,
+        -4.8,
+        16.72
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_4_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2381.25,
+        -24.0,
+        30.67
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_4_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2381.25,
+        -15.2,
+        21.85
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_4_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2381.25,
+        0.0,
+        14.92
+      ],
+      "clearance_m": 2.57,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_XFER_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2254.0,
+        -15.2,
+        24.37
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_E_XFER_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_E",
+      "position_m": [
+        2254.0,
+        -15.2,
+        16.72
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_F_ENTRY",
+      "type": "SECTOR_ENTRY",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2406.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_F_EXIT",
+      "type": "SECTOR_EXIT",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2544.0,
+        -24.0,
+        61.0
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_F_INSPECT_START",
+      "type": "INSPECTION_START",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2412.0,
+        -24.0,
+        22.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_F_INSPECT_END",
+      "type": "INSPECTION_END",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2538.0,
+        -24.0,
+        22.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_SECTOR_F_EMERG",
+      "type": "EMERGENCY_LANDING",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2475.0,
+        -67.0,
+        1.26
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_1_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2418.75,
+        -24.0,
+        30.09
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_1_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2418.75,
+        -15.2,
+        21.27
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_1_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2418.75,
+        0.0,
+        14.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_2_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2456.25,
+        -24.0,
+        29.68
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_2_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2456.25,
+        -15.2,
+        20.87
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_2_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2456.25,
+        0.0,
+        14.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_3_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2493.75,
+        -24.0,
+        29.5
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_3_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2493.75,
+        -15.2,
+        20.69
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_3_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2493.75,
+        0.0,
+        14.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_4_DECK",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2531.25,
+        -24.0,
+        29.46
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_4_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2531.25,
+        -15.2,
+        21.74
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_4_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2531.25,
+        0.0,
+        14.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_XFER_WEB",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2404.0,
+        -15.2,
+        21.48
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    },
+    {
+      "id": "AVI_WP_F_XFER_UNDER",
+      "type": "WAYPOINT_CANDIDATE",
+      "sector": "SECTOR_F",
+      "position_m": [
+        2404.0,
+        -15.2,
+        14.55
+      ],
+      "clearance_m": 3.0,
+      "safe": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "AVI_HOME_SOUTH",
+      "to": "AVI_TAKEOFF_SOUTH",
+      "edge_type": "GROUND",
+      "distance_m": 1.1,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 0.9,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_TAKEOFF_SOUTH",
+      "to": "AVI_RTH_SOUTH",
+      "edge_type": "CLIMB",
+      "distance_m": 59.45,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 14.9,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_RTH_SOUTH",
+      "to": "AVI_LANDING_SOUTH",
+      "edge_type": "RETURN",
+      "distance_m": 62.15,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 15.5,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_SERVICE_STATION_SOUTH",
+      "to": "AVI_HOME_SOUTH",
+      "edge_type": "GROUND",
+      "distance_m": 16.0,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 13.3,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_HOME_NORTH",
+      "to": "AVI_TAKEOFF_NORTH",
+      "edge_type": "GROUND",
+      "distance_m": 1.1,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 0.9,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_TAKEOFF_NORTH",
+      "to": "AVI_RTH_NORTH",
+      "edge_type": "CLIMB",
+      "distance_m": 57.86,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 14.5,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_RTH_NORTH",
+      "to": "AVI_LANDING_NORTH",
+      "edge_type": "RETURN",
+      "distance_m": 60.62,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 15.2,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_SERVICE_STATION_NORTH",
+      "to": "AVI_HOME_NORTH",
+      "edge_type": "GROUND",
+      "distance_m": 16.0,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 13.3,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_RTH_SOUTH",
+      "to": "AVI_SECTOR_A_ENTRY",
+      "edge_type": "TRANSIT",
+      "distance_m": 144.63,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 36.2,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_SECTOR_A_ENTRY",
+      "to": "AVI_SECTOR_A_INSPECT_START",
+      "edge_type": "DESCENT",
+      "distance_m": 37.45,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_SECTOR_A_INSPECT_START",
+      "to": "AVI_WP_A_1_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 9.57,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 8.0,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_1_DECK",
+      "to": "AVI_WP_A_2_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_2_DECK",
+      "to": "AVI_WP_A_3_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_3_DECK",
+      "to": "AVI_WP_A_4_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_4_DECK",
+      "to": "AVI_WP_A_XFER_WEB",
+      "edge_type": "DESCENT",
+      "distance_m": 127.84,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.5,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_XFER_WEB",
+      "to": "AVI_WP_A_1_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 14.75,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 12.3,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_1_WEB",
+      "to": "AVI_WP_A_2_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_2_WEB",
+      "to": "AVI_WP_A_3_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_3_WEB",
+      "to": "AVI_WP_A_4_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_4_WEB",
+      "to": "AVI_WP_A_XFER_UNDER",
+      "edge_type": "DESCENT",
+      "distance_m": 127.42,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.2,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_XFER_UNDER",
+      "to": "AVI_WP_A_1_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 21.18,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 17.7,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_1_UNDER",
+      "to": "AVI_WP_A_2_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_2_UNDER",
+      "to": "AVI_WP_A_3_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_3_UNDER",
+      "to": "AVI_WP_A_4_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_WP_A_4_UNDER",
+      "to": "AVI_SECTOR_A_INSPECT_END",
+      "edge_type": "INSPECTION",
+      "distance_m": 26.18,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 21.8,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_SECTOR_A_INSPECT_END",
+      "to": "AVI_SECTOR_A_EXIT",
+      "edge_type": "CLIMB",
+      "distance_m": 37.45,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 9.4,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_SECTOR_A_EXIT",
+      "to": "AVI_RTH_SOUTH",
+      "edge_type": "RETURN",
+      "distance_m": 273.38,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 68.3,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_SECTOR_A_INSPECT_START",
+      "to": "AVI_SECTOR_A_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 79.68,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 66.4,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_SECTOR_A_EXIT",
+      "to": "AVI_SECTOR_A_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 101.04,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 84.2,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_RTH_SOUTH",
+      "to": "AVI_SECTOR_A_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 205.93,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 171.6,
+      "sector": "SECTOR_A"
+    },
+    {
+      "from": "AVI_RTH_SOUTH",
+      "to": "AVI_SECTOR_B_ENTRY",
+      "edge_type": "TRANSIT",
+      "distance_m": 284.99,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 71.2,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_SECTOR_B_ENTRY",
+      "to": "AVI_SECTOR_B_INSPECT_START",
+      "edge_type": "DESCENT",
+      "distance_m": 36.88,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 30.7,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_SECTOR_B_INSPECT_START",
+      "to": "AVI_WP_B_1_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 9.9,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 8.2,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_1_DECK",
+      "to": "AVI_WP_B_2_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_2_DECK",
+      "to": "AVI_WP_B_3_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_3_DECK",
+      "to": "AVI_WP_B_4_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_4_DECK",
+      "to": "AVI_WP_B_XFER_WEB",
+      "edge_type": "DESCENT",
+      "distance_m": 127.99,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.7,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_XFER_WEB",
+      "to": "AVI_WP_B_1_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 14.75,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 12.3,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_1_WEB",
+      "to": "AVI_WP_B_2_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_2_WEB",
+      "to": "AVI_WP_B_3_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_3_WEB",
+      "to": "AVI_WP_B_4_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_4_WEB",
+      "to": "AVI_WP_B_XFER_UNDER",
+      "edge_type": "DESCENT",
+      "distance_m": 127.44,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.2,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_XFER_UNDER",
+      "to": "AVI_WP_B_1_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 21.21,
+      "min_clearance_m": 2.27,
+      "risk": 0.47,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 17.7,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_1_UNDER",
+      "to": "AVI_WP_B_2_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.52,
+      "min_clearance_m": 2.27,
+      "risk": 0.47,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_2_UNDER",
+      "to": "AVI_WP_B_3_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_3_UNDER",
+      "to": "AVI_WP_B_4_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_WP_B_4_UNDER",
+      "to": "AVI_SECTOR_B_INSPECT_END",
+      "edge_type": "INSPECTION",
+      "distance_m": 25.9,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 21.6,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_SECTOR_B_INSPECT_END",
+      "to": "AVI_SECTOR_B_EXIT",
+      "edge_type": "CLIMB",
+      "distance_m": 36.88,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 9.2,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_SECTOR_B_EXIT",
+      "to": "AVI_RTH_SOUTH",
+      "edge_type": "RETURN",
+      "distance_m": 420.04,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 105.0,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_SECTOR_B_INSPECT_START",
+      "to": "AVI_SECTOR_B_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 87.16,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 72.6,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_SECTOR_B_EXIT",
+      "to": "AVI_SECTOR_B_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 84.05,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 70.0,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_RTH_SOUTH",
+      "to": "AVI_SECTOR_B_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 345.77,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 288.1,
+      "sector": "SECTOR_B"
+    },
+    {
+      "from": "AVI_RTH_SOUTH",
+      "to": "AVI_SECTOR_C_ENTRY",
+      "edge_type": "TRANSIT",
+      "distance_m": 431.88,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 108.0,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_SECTOR_C_ENTRY",
+      "to": "AVI_SECTOR_C_INSPECT_START",
+      "edge_type": "DESCENT",
+      "distance_m": 34.94,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 29.1,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_SECTOR_C_INSPECT_START",
+      "to": "AVI_WP_C_1_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 10.02,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 8.4,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_1_DECK",
+      "to": "AVI_WP_C_2_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_2_DECK",
+      "to": "AVI_WP_C_3_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_3_DECK",
+      "to": "AVI_WP_C_4_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_4_DECK",
+      "to": "AVI_WP_C_XFER_WEB",
+      "edge_type": "DESCENT",
+      "distance_m": 127.94,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.6,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_XFER_WEB",
+      "to": "AVI_WP_C_1_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 14.75,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 12.3,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_1_WEB",
+      "to": "AVI_WP_C_2_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_2_WEB",
+      "to": "AVI_WP_C_3_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_3_WEB",
+      "to": "AVI_WP_C_4_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.52,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_4_WEB",
+      "to": "AVI_WP_C_XFER_UNDER",
+      "edge_type": "DESCENT",
+      "distance_m": 127.35,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.1,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_XFER_UNDER",
+      "to": "AVI_WP_C_1_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 21.18,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 17.7,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_1_UNDER",
+      "to": "AVI_WP_C_2_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_2_UNDER",
+      "to": "AVI_WP_C_3_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_WP_C_3_UNDER",
+      "to": "AVI_WP_C_4_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_SECTOR_C_INSPECT_END",
+      "to": "AVI_SECTOR_C_EXIT",
+      "edge_type": "CLIMB",
+      "distance_m": 34.94,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 8.7,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_SECTOR_C_EXIT",
+      "to": "AVI_RTH_SOUTH",
+      "edge_type": "RETURN",
+      "distance_m": 568.45,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 142.1,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_SECTOR_C_INSPECT_START",
+      "to": "AVI_SECTOR_C_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 86.36,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 72.0,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_SECTOR_C_EXIT",
+      "to": "AVI_SECTOR_C_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 84.05,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 70.0,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_RTH_SOUTH",
+      "to": "AVI_SECTOR_C_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 495.53,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 412.9,
+      "sector": "SECTOR_C"
+    },
+    {
+      "from": "AVI_RTH_NORTH",
+      "to": "AVI_SECTOR_D_ENTRY",
+      "edge_type": "TRANSIT",
+      "distance_m": 576.42,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 144.1,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_SECTOR_D_ENTRY",
+      "to": "AVI_SECTOR_D_INSPECT_START",
+      "edge_type": "DESCENT",
+      "distance_m": 35.26,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 29.4,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_SECTOR_D_INSPECT_START",
+      "to": "AVI_WP_D_1_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 11.02,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 9.2,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_1_DECK",
+      "to": "AVI_WP_D_2_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_2_DECK",
+      "to": "AVI_WP_D_3_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_3_DECK",
+      "to": "AVI_WP_D_4_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_4_DECK",
+      "to": "AVI_WP_D_XFER_WEB",
+      "edge_type": "DESCENT",
+      "distance_m": 127.86,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.5,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_XFER_WEB",
+      "to": "AVI_WP_D_1_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 14.75,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 12.3,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_1_WEB",
+      "to": "AVI_WP_D_2_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.52,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_2_WEB",
+      "to": "AVI_WP_D_3_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_3_WEB",
+      "to": "AVI_WP_D_4_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_4_WEB",
+      "to": "AVI_WP_D_XFER_UNDER",
+      "edge_type": "DESCENT",
+      "distance_m": 127.36,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.1,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_XFER_UNDER",
+      "to": "AVI_WP_D_1_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 21.18,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 17.7,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_1_UNDER",
+      "to": "AVI_WP_D_2_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_2_UNDER",
+      "to": "AVI_WP_D_3_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_3_UNDER",
+      "to": "AVI_WP_D_4_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_WP_D_4_UNDER",
+      "to": "AVI_SECTOR_D_INSPECT_END",
+      "edge_type": "INSPECTION",
+      "distance_m": 25.83,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 21.5,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_SECTOR_D_INSPECT_END",
+      "to": "AVI_SECTOR_D_EXIT",
+      "edge_type": "CLIMB",
+      "distance_m": 35.26,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 8.8,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_SECTOR_D_EXIT",
+      "to": "AVI_RTH_NORTH",
+      "edge_type": "RETURN",
+      "distance_m": 442.31,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 110.6,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_SECTOR_D_INSPECT_START",
+      "to": "AVI_SECTOR_D_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 86.49,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 72.1,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_SECTOR_D_EXIT",
+      "to": "AVI_SECTOR_D_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 84.05,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 70.0,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_RTH_NORTH",
+      "to": "AVI_SECTOR_D_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 522.41,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 435.3,
+      "sector": "SECTOR_D"
+    },
+    {
+      "from": "AVI_RTH_NORTH",
+      "to": "AVI_SECTOR_E_ENTRY",
+      "edge_type": "TRANSIT",
+      "distance_m": 430.76,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 107.7,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_SECTOR_E_ENTRY",
+      "to": "AVI_SECTOR_E_INSPECT_START",
+      "edge_type": "DESCENT",
+      "distance_m": 38.13,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.8,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_SECTOR_E_INSPECT_START",
+      "to": "AVI_WP_E_1_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 11.69,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 9.7,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_1_DECK",
+      "to": "AVI_WP_E_2_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_2_DECK",
+      "to": "AVI_WP_E_3_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_3_DECK",
+      "to": "AVI_WP_E_4_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_4_DECK",
+      "to": "AVI_WP_E_XFER_WEB",
+      "edge_type": "DESCENT",
+      "distance_m": 127.71,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.4,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_XFER_WEB",
+      "to": "AVI_WP_E_1_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 14.75,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 12.3,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_1_WEB",
+      "to": "AVI_WP_E_2_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_2_WEB",
+      "to": "AVI_WP_E_3_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_3_WEB",
+      "to": "AVI_WP_E_4_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_4_WEB",
+      "to": "AVI_WP_E_XFER_UNDER",
+      "edge_type": "DESCENT",
+      "distance_m": 127.35,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.1,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_1_UNDER",
+      "to": "AVI_WP_E_2_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_2_UNDER",
+      "to": "AVI_WP_E_3_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.81,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.5,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_WP_E_3_UNDER",
+      "to": "AVI_WP_E_4_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.85,
+      "min_clearance_m": 2.57,
+      "risk": 0.4,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.5,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_SECTOR_E_INSPECT_END",
+      "to": "AVI_SECTOR_E_EXIT",
+      "edge_type": "CLIMB",
+      "distance_m": 38.13,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 9.5,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_SECTOR_E_EXIT",
+      "to": "AVI_RTH_NORTH",
+      "edge_type": "RETURN",
+      "distance_m": 300.56,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 75.1,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_SECTOR_E_INSPECT_START",
+      "to": "AVI_SECTOR_E_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 87.7,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 73.1,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_SECTOR_E_EXIT",
+      "to": "AVI_SECTOR_E_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 84.05,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 70.0,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_RTH_NORTH",
+      "to": "AVI_SECTOR_E_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 383.29,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 319.4,
+      "sector": "SECTOR_E"
+    },
+    {
+      "from": "AVI_RTH_NORTH",
+      "to": "AVI_SECTOR_F_ENTRY",
+      "edge_type": "TRANSIT",
+      "distance_m": 289.58,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 72.4,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_SECTOR_F_ENTRY",
+      "to": "AVI_SECTOR_F_INSPECT_START",
+      "edge_type": "DESCENT",
+      "distance_m": 38.92,
+      "min_clearance_m": 3.0,
+      "risk": 0.3,
+      "over_water": true,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 32.4,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_SECTOR_F_INSPECT_START",
+      "to": "AVI_WP_F_1_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 10.12,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 8.4,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_1_DECK",
+      "to": "AVI_WP_F_2_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_2_DECK",
+      "to": "AVI_WP_F_3_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_3_DECK",
+      "to": "AVI_WP_F_4_DECK",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_4_DECK",
+      "to": "AVI_WP_F_XFER_WEB",
+      "edge_type": "DESCENT",
+      "distance_m": 127.8,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.5,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_XFER_WEB",
+      "to": "AVI_WP_F_1_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 14.75,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 12.3,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_1_WEB",
+      "to": "AVI_WP_F_2_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_2_WEB",
+      "to": "AVI_WP_F_3_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_3_WEB",
+      "to": "AVI_WP_F_4_WEB",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.51,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.3,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_4_WEB",
+      "to": "AVI_WP_F_XFER_UNDER",
+      "edge_type": "DESCENT",
+      "distance_m": 127.45,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 106.2,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_XFER_UNDER",
+      "to": "AVI_WP_F_1_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 21.18,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 17.7,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_1_UNDER",
+      "to": "AVI_WP_F_2_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_2_UNDER",
+      "to": "AVI_WP_F_3_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_3_UNDER",
+      "to": "AVI_WP_F_4_UNDER",
+      "edge_type": "INSPECTION",
+      "distance_m": 37.5,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 31.2,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_WP_F_4_UNDER",
+      "to": "AVI_SECTOR_F_INSPECT_END",
+      "edge_type": "INSPECTION",
+      "distance_m": 26.18,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 21.8,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_SECTOR_F_INSPECT_END",
+      "to": "AVI_SECTOR_F_EXIT",
+      "edge_type": "CLIMB",
+      "distance_m": 38.92,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 9.7,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_SECTOR_F_EXIT",
+      "to": "AVI_RTH_NORTH",
+      "edge_type": "RETURN",
+      "distance_m": 173.31,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 4.0,
+      "expected_time_s": 43.3,
+      "sector": "SHARED"
+    },
+    {
+      "from": "AVI_SECTOR_F_INSPECT_START",
+      "to": "AVI_SECTOR_F_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 79.19,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 66.0,
+      "sector": "SECTOR_F"
+    },
+    {
+      "from": "AVI_SECTOR_F_EXIT",
+      "to": "AVI_SECTOR_F_EMERG",
+      "edge_type": "ABORT",
+      "distance_m": 100.89,
+      "min_clearance_m": 3.0,
+      "risk": 0.0,
+      "over_water": false,
+      "assumed_speed_mps": 1.2,
+      "expected_time_s": 84.1,
+      "sector": "SECTOR_F"
+    }
+  ]
+}

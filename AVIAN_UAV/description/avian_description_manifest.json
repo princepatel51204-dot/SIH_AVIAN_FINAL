@@ -1,0 +1,491 @@
+{
+  "config": "NOMINAL",
+  "links": [
+    {
+      "name": "base_link",
+      "mass_kg": 18.657,
+      "cg_m": [
+        -0.01053,
+        0.00167,
+        -0.07126
+      ]
+    },
+    {
+      "name": "arm_base_link",
+      "mass_kg": 0.105
+    },
+    {
+      "name": "link_1",
+      "mass_kg": 0.325
+    },
+    {
+      "name": "link_2",
+      "mass_kg": 0.45
+    },
+    {
+      "name": "link_3",
+      "mass_kg": 0.36
+    },
+    {
+      "name": "link_4",
+      "mass_kg": 0.143
+    },
+    {
+      "name": "link_5",
+      "mass_kg": 0.127
+    },
+    {
+      "name": "link_6",
+      "mass_kg": 0.108
+    },
+    {
+      "name": "tool0",
+      "mass_kg": 0.45
+    }
+  ],
+  "joints": [
+    {
+      "name": "J1",
+      "parent": "arm_base_link",
+      "child": "link_1",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limit_deg": [
+        -180.0,
+        180.0
+      ],
+      "effort_Nm": 24.0,
+      "velocity_deg_s": 90.0,
+      "function": "base yaw"
+    },
+    {
+      "name": "J2",
+      "parent": "link_1",
+      "child": "link_2",
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "origin_m": [
+        0.0,
+        0.0,
+        -0.095
+      ],
+      "limit_deg": [
+        -115.0,
+        115.0
+      ],
+      "effort_Nm": 40.0,
+      "velocity_deg_s": 60.0,
+      "function": "shoulder pitch"
+    },
+    {
+      "name": "J3",
+      "parent": "link_2",
+      "child": "link_3",
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "origin_m": [
+        0.0,
+        0.0,
+        -0.33
+      ],
+      "limit_deg": [
+        -160.0,
+        160.0
+      ],
+      "effort_Nm": 25.0,
+      "velocity_deg_s": 70.0,
+      "function": "elbow pitch"
+    },
+    {
+      "name": "J4",
+      "parent": "link_3",
+      "child": "link_4",
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "origin_m": [
+        0.0,
+        0.0,
+        -0.3
+      ],
+      "limit_deg": [
+        -180.0,
+        180.0
+      ],
+      "effort_Nm": 8.0,
+      "velocity_deg_s": 150.0,
+      "function": "wrist roll"
+    },
+    {
+      "name": "J5",
+      "parent": "link_4",
+      "child": "link_5",
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "origin_m": [
+        0.0,
+        0.0,
+        -0.085
+      ],
+      "limit_deg": [
+        -120.0,
+        120.0
+      ],
+      "effort_Nm": 10.0,
+      "velocity_deg_s": 120.0,
+      "function": "wrist pitch"
+    },
+    {
+      "name": "J6",
+      "parent": "link_5",
+      "child": "link_6",
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "origin_m": [
+        0.0,
+        0.0,
+        -0.08
+      ],
+      "limit_deg": [
+        -180.0,
+        180.0
+      ],
+      "effort_Nm": 8.0,
+      "velocity_deg_s": 150.0,
+      "function": "wrist yaw"
+    }
+  ],
+  "rotors": [
+    {
+      "name": "rotor_1_upper",
+      "arm": 1,
+      "level": "upper",
+      "position_m": [
+        0.4066,
+        0.4066,
+        0.062
+      ],
+      "spin": "CCW",
+      "mass_kg": 0.37,
+      "max_thrust_N": 67.04
+    },
+    {
+      "name": "rotor_1_lower",
+      "arm": 1,
+      "level": "lower",
+      "position_m": [
+        0.4066,
+        0.4066,
+        -0.062
+      ],
+      "spin": "CW",
+      "mass_kg": 0.37,
+      "max_thrust_N": 67.04
+    },
+    {
+      "name": "rotor_2_upper",
+      "arm": 2,
+      "level": "upper",
+      "position_m": [
+        -0.4066,
+        0.4066,
+        0.062
+      ],
+      "spin": "CW",
+      "mass_kg": 0.37,
+      "max_thrust_N": 67.04
+    },
+    {
+      "name": "rotor_2_lower",
+      "arm": 2,
+      "level": "lower",
+      "position_m": [
+        -0.4066,
+        0.4066,
+        -0.062
+      ],
+      "spin": "CCW",
+      "mass_kg": 0.37,
+      "max_thrust_N": 67.04
+    },
+    {
+      "name": "rotor_3_upper",
+      "arm": 3,
+      "level": "upper",
+      "position_m": [
+        -0.4066,
+        -0.4066,
+        0.062
+      ],
+      "spin": "CCW",
+      "mass_kg": 0.37,
+      "max_thrust_N": 67.04
+    },
+    {
+      "name": "rotor_3_lower",
+      "arm": 3,
+      "level": "lower",
+      "position_m": [
+        -0.4066,
+        -0.4066,
+        -0.062
+      ],
+      "spin": "CW",
+      "mass_kg": 0.37,
+      "max_thrust_N": 67.04
+    },
+    {
+      "name": "rotor_4_upper",
+      "arm": 4,
+      "level": "upper",
+      "position_m": [
+        0.4066,
+        -0.4066,
+        0.062
+      ],
+      "spin": "CW",
+      "mass_kg": 0.37,
+      "max_thrust_N": 67.04
+    },
+    {
+      "name": "rotor_4_lower",
+      "arm": 4,
+      "level": "lower",
+      "position_m": [
+        0.4066,
+        -0.4066,
+        -0.062
+      ],
+      "spin": "CCW",
+      "mass_kg": 0.37,
+      "max_thrust_N": 67.04
+    }
+  ],
+  "sensors": [
+    {
+      "name": "sensor_rgb_front",
+      "offset_m": [
+        0.22,
+        0.0,
+        -0.02
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        1.570796,
+        -0.0,
+        -1.570796
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "frame_z_body": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_rgb_down",
+      "offset_m": [
+        0.02,
+        0.0,
+        -0.11
+      ],
+      "pitch_deg": 90.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        0.0,
+        0.0,
+        -1.570796
+      ],
+      "boresight_body": [
+        -0.0,
+        0.0,
+        -1.0
+      ],
+      "frame_z_body": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_rgb_side",
+      "offset_m": [
+        0.05,
+        -0.19,
+        -0.02
+      ],
+      "pitch_deg": 12.0,
+      "yaw_deg": -90.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        1.361357,
+        0.0,
+        -3.141593
+      ],
+      "boresight_body": [
+        0.0,
+        -0.978148,
+        -0.207912
+      ],
+      "frame_z_body": [
+        -0.0,
+        0.978148,
+        0.207912
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_depth",
+      "offset_m": [
+        0.2,
+        0.0,
+        0.04
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        1.570796,
+        -0.0,
+        -1.570796
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "frame_z_body": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_lidar",
+      "offset_m": [
+        0.0,
+        0.0,
+        0.13
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "body",
+      "rpy_rad": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "frame_z_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "convention_note": "body-aligned: +X forward, +Y left, +Z up"
+    },
+    {
+      "name": "sensor_thermal",
+      "offset_m": [
+        0.2,
+        0.1,
+        -0.02
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        1.570796,
+        -0.0,
+        -1.570796
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "frame_z_body": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_imu",
+      "offset_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "body",
+      "rpy_rad": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "frame_z_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "convention_note": "body-aligned: +X forward, +Y left, +Z up"
+    }
+  ],
+  "visual_meshes": 17,
+  "visual_source": "real CAD B-rep tessellation",
+  "frame_links": 8,
+  "mass_budget_total_kg": 23.685,
+  "frame_link_mass_kg": 0.008,
+  "urdf": "avian.urdf",
+  "total_modelled_mass_kg": 23.693,
+  "rotor_count": 8,
+  "arm_count": 4,
+  "diagonal_m": 1.1500000000000001,
+  "max_total_thrust_N": 536.3,
+  "inertia_method": "point-mass aggregation of the CAD mass budget with the parallel-axis theorem; exact in mass and CG, approximate in the inertia tensor",
+  "collision_method": "primitive boxes and cylinders; rotor discs have no collision geometry by design",
+  "source_cad": "/home/claude/avian"
+}

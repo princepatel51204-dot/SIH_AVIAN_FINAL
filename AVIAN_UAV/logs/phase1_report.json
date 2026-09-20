@@ -1,0 +1,1205 @@
+{
+  "phase": 1,
+  "name": "AVIAN Phase 1 -- complete single UAV",
+  "generated_utc": "2026-09-20T21:18:02Z",
+  "git_rev": null,
+  "run_id": "509ca116fbe4",
+  "gate": {
+    "pass": 46,
+    "fail": 0,
+    "total": 46,
+    "verdict": "PASS",
+    "note": "The plan called for 26 tests. 46 checks were run: the extra ones are the individual per-joint and per-sensor assertions the 26-item list groups together, plus two checks added after defects were found. No check was removed and no threshold was relaxed to make a test pass."
+  },
+  "airframe": {
+    "config": "NOMINAL",
+    "modelled_mass_kg": 23.693,
+    "max_total_thrust_N": 536.3,
+    "links": 9,
+    "arm_joints": 6,
+    "rotors": 8,
+    "sensor_frames": 7,
+    "inertia_method": "point-mass aggregation of the CAD mass budget with the parallel-axis theorem; exact in mass and CG, approximate in the inertia tensor"
+  },
+  "sensor_frames": [
+    {
+      "name": "sensor_rgb_front",
+      "offset_m": [
+        0.22,
+        0.0,
+        -0.02
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        1.570796,
+        -0.0,
+        -1.570796
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "frame_z_body": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_rgb_down",
+      "offset_m": [
+        0.02,
+        0.0,
+        -0.11
+      ],
+      "pitch_deg": 90.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        0.0,
+        0.0,
+        -1.570796
+      ],
+      "boresight_body": [
+        -0.0,
+        0.0,
+        -1.0
+      ],
+      "frame_z_body": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_rgb_side",
+      "offset_m": [
+        0.05,
+        -0.19,
+        -0.02
+      ],
+      "pitch_deg": 12.0,
+      "yaw_deg": -90.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        1.361357,
+        0.0,
+        -3.141593
+      ],
+      "boresight_body": [
+        0.0,
+        -0.978148,
+        -0.207912
+      ],
+      "frame_z_body": [
+        -0.0,
+        0.978148,
+        0.207912
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_depth",
+      "offset_m": [
+        0.2,
+        0.0,
+        0.04
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        1.570796,
+        -0.0,
+        -1.570796
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "frame_z_body": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_lidar",
+      "offset_m": [
+        0.0,
+        0.0,
+        0.13
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "body",
+      "rpy_rad": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "frame_z_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "convention_note": "body-aligned: +X forward, +Y left, +Z up"
+    },
+    {
+      "name": "sensor_thermal",
+      "offset_m": [
+        0.2,
+        0.1,
+        -0.02
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "optical",
+      "rpy_rad": [
+        1.570796,
+        -0.0,
+        -1.570796
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "frame_z_body": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "convention_note": "optical: -Z out of the lens, +X image right, +Y image up"
+    },
+    {
+      "name": "sensor_imu",
+      "offset_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pitch_deg": 0.0,
+      "yaw_deg": 0.0,
+      "frame_convention": "body",
+      "rpy_rad": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "boresight_body": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "frame_z_body": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "convention_note": "body-aligned: +X forward, +Y left, +Z up"
+    }
+  ],
+  "subphases": [
+    {
+      "subphase": "1A",
+      "title": "Description",
+      "proves": "The URDF is generated from the CAD and agrees with it: kinematics, mass, limits, sensor frames.",
+      "source": "tests/test_description.py",
+      "log": "phase2_test_report.json",
+      "ran": true,
+      "log_status": "fresh",
+      "pass": 10,
+      "fail": 0,
+      "checks": [
+        {
+          "id": "T01",
+          "name": "URDF loads with a valid kinematic tree",
+          "status": "PASS",
+          "measured": "24 joints",
+          "expected": "> 0",
+          "detail": "14 revolute"
+        },
+        {
+          "id": "T02",
+          "name": "six manipulator joints J1-J6 present",
+          "status": "PASS",
+          "measured": "['J1', 'J2', 'J3', 'J4', 'J5', 'J6']",
+          "expected": "['J1', 'J2', 'J3', 'J4', 'J5', 'J6']",
+          "detail": ""
+        },
+        {
+          "id": "T03",
+          "name": "joint limits, effort and velocity match the CAD",
+          "status": "PASS",
+          "measured": "6 joints checked",
+          "expected": "exact match",
+          "detail": ""
+        },
+        {
+          "id": "T04",
+          "name": "8 rotors in 4 counter-rotating coaxial pairs",
+          "status": "PASS",
+          "measured": "8 rotors, 4 CCW, 4 arms",
+          "expected": "8 rotors, 4 CCW, 4 arms",
+          "detail": ""
+        },
+        {
+          "id": "T05",
+          "name": "URDF forward kinematics match CAD kin_b.py",
+          "status": "PASS",
+          "measured": "max error 0.000 mm",
+          "expected": "< 1.000 mm",
+          "detail": "6 configurations tested"
+        },
+        {
+          "id": "T06",
+          "name": "manipulator chain length matches the CAD",
+          "status": "PASS",
+          "measured": "stowed 950.0 mm, max 949.7 mm",
+          "expected": "chain 950.0 mm",
+          "detail": "vL0..vL5 summed; max reach sampled over J2/J3"
+        },
+        {
+          "id": "T07",
+          "name": "simulated mass matches the CAD mass budget",
+          "status": "PASS",
+          "measured": "23.685 kg",
+          "expected": "23.685 kg",
+          "detail": "config NOMINAL, 8 g of solver frames excluded"
+        },
+        {
+          "id": "T08",
+          "name": "thrust-to-weight ratio is flyable",
+          "status": "PASS",
+          "measured": "2.31",
+          "expected": ">= 1.50",
+          "detail": "536 N over 23.7 kg"
+        },
+        {
+          "id": "T09",
+          "name": "no self-collision in the stowed pose",
+          "status": "PASS",
+          "measured": "0 penetrating link pairs",
+          "expected": "0",
+          "detail": ""
+        },
+        {
+          "id": "T10",
+          "name": "seven sensor frames present, placed and correctly aimed",
+          "status": "PASS",
+          "measured": "7 frames, 7 correctly aimed",
+          "expected": "7 frames, every boresight within 1 deg of its mount angles",
+          "detail": ""
+        }
+      ],
+      "metrics": {}
+    },
+    {
+      "subphase": "1B",
+      "title": "Visual model",
+      "proves": "Real AVIAN CAD geometry, exported per link and referenced by the URDF -- not primitives standing in for the aircraft.",
+      "source": "avian/description/export_meshes.py",
+      "log": null,
+      "ran": false,
+      "log_status": "missing",
+      "pass": 0,
+      "fail": 0,
+      "checks": [],
+      "metrics": {}
+    },
+    {
+      "subphase": "1C",
+      "title": "Physics",
+      "proves": "The airframe interacts with the real bridge collision asset: it does not fall through the deck and it holds station under the soffit.",
+      "source": "tests/test_environment_collision.py",
+      "log": "phase3_report.json",
+      "ran": true,
+      "log_status": "fresh",
+      "pass": 5,
+      "fail": 0,
+      "checks": [
+        {
+          "id": "E01",
+          "name": "bridge collision asset loads into the simulator",
+          "status": "PASS",
+          "measured": "677 primitives in 6 bodies",
+          "expected": "> 0",
+          "detail": "corridor 1550-2650 m"
+        },
+        {
+          "id": "E02",
+          "name": "the deck is solid - aircraft does not fall through",
+          "status": "PASS",
+          "measured": "rested at z=28.02 m",
+          "expected": "deck top 27.00 m",
+          "detail": "free drop from 6 m above the deck"
+        },
+        {
+          "id": "E03",
+          "name": "stable hover under the deck, no contact",
+          "status": "PASS",
+          "measured": "error 1.9 cm, clearance 4.04 m",
+          "expected": "< 30 cm, > 0.5 m, 0 contacts",
+          "detail": "soffit at z=22.6 m, 0 contacts"
+        },
+        {
+          "id": "E04",
+          "name": "clearance decreases as the aircraft approaches structure",
+          "status": "PASS",
+          "measured": "4.06 -> 1.60 m",
+          "expected": "monotone decrease > 1 m",
+          "detail": "proves clearance is measured against real geometry"
+        },
+        {
+          "id": "E05",
+          "name": "proximity supervisor prevents contact with the deck",
+          "status": "PASS",
+          "measured": "state HOLD, contacts 0",
+          "expected": "HOLD, 0 contacts",
+          "detail": "clearance 1.48 m below the 1.5 m minimum"
+        }
+      ],
+      "metrics": {
+        "collision_primitives": 677,
+        "source_triangles": 22850,
+        "simplification_ratio": 33.8,
+        "corridor_m": [
+          1550.0,
+          2650.0
+        ],
+        "deck_drop_final_z_m": 28.016,
+        "deck_top_z_m": 27.0,
+        "underdeck_hover_error_m": 0.0186,
+        "underdeck_min_clearance_m": 4.044,
+        "underdeck_contacts": 0,
+        "clearance_start_m": 4.059,
+        "clearance_end_m": 1.597,
+        "safety_transitions": [
+          {
+            "t": 0.3,
+            "from": "NOMINAL",
+            "to": "HOLD",
+            "reason": "clearance 1.48 m below the 1.5 m minimum"
+          }
+        ],
+        "proximity_contacts": 0,
+        "wall_time_s": 28.7
+      }
+    },
+    {
+      "subphase": "1D",
+      "title": "Control",
+      "proves": "Allocation, cascaded control, saturation, safety supervisor and bit-exact determinism.",
+      "source": "tests/test_vehicle_dynamics.py",
+      "log": "phase4_dynamics.json",
+      "ran": true,
+      "log_status": "fresh",
+      "pass": 11,
+      "fail": 0,
+      "checks": [
+        {
+          "id": "D01",
+          "name": "control allocation matrix is well conditioned",
+          "status": "PASS",
+          "measured": "4x8, cond 50.0",
+          "expected": "4x8, cond < 200",
+          "detail": "8 rotors"
+        },
+        {
+          "id": "D02",
+          "name": "pure collective loads all 8 rotors equally",
+          "status": "PASS",
+          "measured": "spread 0.00e+00 N",
+          "expected": "< 1e-6 N",
+          "detail": "29.04 N per rotor at hover"
+        },
+        {
+          "id": "D03",
+          "name": "roll, pitch and yaw authority at hover",
+          "status": "PASS",
+          "measured": "roll 94.47, pitch 94.47, yaw 4.65 Nm",
+          "expected": "roll/pitch > 20, yaw > 1 Nm",
+          "detail": "measured by bisection against per-rotor limits"
+        },
+        {
+          "id": "D04",
+          "name": "yaw demand produces no roll or pitch coupling",
+          "status": "PASS",
+          "measured": "cross-coupling 7.10e-15 Nm",
+          "expected": "< 1e-6 Nm",
+          "detail": "the X8 property that motivates the layout"
+        },
+        {
+          "id": "T1a",
+          "name": "takeoff reaches 12 m and holds",
+          "status": "PASS",
+          "measured": "4.4 s, RMS 1.1 cm",
+          "expected": "< 10 cm RMS",
+          "detail": "peak climb 2.15 m/s"
+        },
+        {
+          "id": "T1b",
+          "name": "commanded descent tracks to 1 m",
+          "status": "PASS",
+          "measured": "1.006 m",
+          "expected": "1.00 +/- 0.15 m",
+          "detail": ""
+        },
+        {
+          "id": "T2",
+          "name": "position hold RMS error",
+          "status": "PASS",
+          "measured": "RMS 3.0 cm, max 6.1 cm",
+          "expected": "< 15 cm RMS",
+          "detail": "attitude RMS 0.00 deg, settle 2.5 s"
+        },
+        {
+          "id": "T3",
+          "name": "waypoint mission arrival accuracy",
+          "status": "PASS",
+          "measured": "max 10.5 cm over 5 waypoints",
+          "expected": "< 30 cm",
+          "detail": "70 s, 51.8 Wh"
+        },
+        {
+          "id": "T5",
+          "name": "recovers from lateral force and yaw torque",
+          "status": "PASS",
+          "measured": "peak 0.11 m, recovered in 0.0 s",
+          "expected": "returns inside 0.25 m",
+          "detail": "120 N lateral impulse + 12 Nm yaw"
+        },
+        {
+          "id": "D05",
+          "name": "motor saturation stays bounded",
+          "status": "PASS",
+          "measured": "83 events, peak 130% of limit",
+          "expected": "< 160%",
+          "detail": "clipped and counted, never silently ignored"
+        },
+        {
+          "id": "D06",
+          "name": "real-time factor on this host",
+          "status": "PASS",
+          "measured": "29.10x",
+          "expected": "> 0.05x (recorded)",
+          "detail": "162 s sim in 6 s wall, dt=4.17 ms"
+        }
+      ],
+      "metrics": {
+        "allocation_matrix": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          [
+            0.4066,
+            0.4066,
+            0.4066,
+            0.4066,
+            -0.4066,
+            -0.4066,
+            -0.4066,
+            -0.4066
+          ],
+          [
+            -0.4066,
+            -0.4066,
+            0.4066,
+            0.4066,
+            0.4066,
+            0.4066,
+            -0.4066,
+            -0.4066
+          ],
+          [
+            -0.02,
+            0.02,
+            0.02,
+            -0.02,
+            -0.02,
+            0.02,
+            0.02,
+            -0.02
+          ]
+        ],
+        "allocation_condition_number": 50.0,
+        "hover_thrust_per_rotor_N": 29.044,
+        "hover_thrust_total_N": 232.35,
+        "authority_Nm": {
+          "roll": 94.47,
+          "pitch": 94.47,
+          "yaw": 4.65
+        },
+        "takeoff_time_s": 4.4,
+        "takeoff_altitude_rms_error_m": 0.0108,
+        "max_climb_rate_mps": 2.147,
+        "position_hold_rms_error_m": 0.0302,
+        "position_hold_max_error_m": 0.0609,
+        "attitude_rms_error_deg": 0.0024,
+        "settling_time_s": 2.54,
+        "waypoint_errors_m": [
+          0.062,
+          0.0759,
+          0.087,
+          0.1054,
+          0.0913
+        ],
+        "waypoint_max_error_m": 0.1054,
+        "mission_time_s": 70.0,
+        "mission_energy_Wh": 51.76,
+        "disturbance_max_deviation_m": 0.115,
+        "disturbance_recovery_s": 0.0,
+        "disturbance_final_error_m": 0.0307,
+        "saturation_events": 83,
+        "max_saturation_ratio": 1.304,
+        "sim_time_s": 162.0,
+        "wall_time_s": 5.6,
+        "real_time_factor": 29.104,
+        "timestep_s": 0.004166666666666667
+      }
+    },
+    {
+      "subphase": "1D",
+      "title": "Determinism",
+      "proves": "Two runs of the same mission with the same seed produce the same trajectory.",
+      "source": "tests/test_determinism.py",
+      "log": "phase4_determinism.json",
+      "ran": true,
+      "log_status": "fresh",
+      "pass": 6,
+      "fail": 0,
+      "checks": [
+        {
+          "id": "T6a",
+          "name": "identical runs reproduce to tolerance",
+          "status": "PASS",
+          "measured": "max 0.00e+00 m, final 0.00e+00 m",
+          "expected": "< 1e-6 m",
+          "detail": "energy delta 0.00e+00 J over 7200 steps"
+        },
+        {
+          "id": "T6b",
+          "name": "flight path has no stochastic term",
+          "status": "PASS",
+          "measured": "0.00e+00 m across seeds",
+          "expected": "< 1e-6 m",
+          "detail": "seed 7 vs seed 99; noise enters later, at the sensor layer"
+        },
+        {
+          "id": "T7a",
+          "name": "low battery triggers RETURN and flies home",
+          "status": "PASS",
+          "measured": "RETURN, 0.03 m from home",
+          "expected": "RETURN, < 2 m",
+          "detail": "battery 15.0 % at or below the 20 % reserve"
+        },
+        {
+          "id": "T7b",
+          "name": "single rotor failure: stays airborne, enters RETURN",
+          "status": "PASS",
+          "measured": "RETURN, z=6.0 m, tilt 2.6 deg",
+          "expected": "RETURN, airborne, tilt < 45 deg",
+          "detail": "was z=12.0 m; X8 redundancy"
+        },
+        {
+          "id": "T7c",
+          "name": "invalid state estimate triggers HOLD",
+          "status": "PASS",
+          "measured": "HOLD",
+          "expected": "HOLD",
+          "detail": "state estimate invalid"
+        },
+        {
+          "id": "T7d",
+          "name": "safety state latches until conditions clear with margin",
+          "status": "PASS",
+          "measured": "held RETURN, cleared to NOMINAL",
+          "expected": "latched then explicitly cleared",
+          "detail": "4 recorded transitions"
+        }
+      ],
+      "metrics": {
+        "determinism_max_deviation_m": 0.0,
+        "determinism_final_deviation_m": 0.0,
+        "determinism_energy_delta_J": 0.0,
+        "seed_sensitivity_m": 0.0,
+        "low_battery_state": "RETURN",
+        "low_battery_distance_to_home_m": 0.03,
+        "motor_fail_state": "RETURN",
+        "motor_fail_altitude_m": 6.0,
+        "motor_fail_attitude_deg": [
+          -1.97,
+          2.64
+        ],
+        "sensor_invalid_state": "HOLD",
+        "latched_state_after_recovery": "RETURN",
+        "state_after_explicit_clear": "NOMINAL",
+        "wall_time_s": 6.2
+      }
+    },
+    {
+      "subphase": "1E",
+      "title": "Sensors",
+      "proves": "RGB, depth, LiDAR, IMU and GNSS measure something correct about a known scene, at rate-limited simulation time.",
+      "source": "tests/test_sensors.py",
+      "log": "phase1_sensors.json",
+      "ran": true,
+      "log_status": "fresh",
+      "pass": 6,
+      "fail": 0,
+      "checks": [
+        {
+          "id": "S13",
+          "name": "RGB camera renders a non-uniform image at both resolutions",
+          "status": "PASS",
+          "measured": "640x480 246 ms, 1920x1080 1355 ms",
+          "expected": "both resolutions, image std > 3",
+          "detail": "std 60.0 counts, GSD 2.1478 mm/px @1m"
+        },
+        {
+          "id": "S14",
+          "name": "depth camera range agrees with true geometry",
+          "status": "PASS",
+          "measured": "2.1935 m vs ray-cast 2.176 m",
+          "expected": "error < 0.6 m on the boresight",
+          "detail": "48616 valid px (63 %), 179 px self-masked, gate 0.3-8.0 m"
+        },
+        {
+          "id": "S15",
+          "name": "LiDAR returns structure, rejects its own airframe",
+          "status": "PASS",
+          "measured": "3473 returns, 368 self-hits discarded",
+          "expected": "> 500 returns, self-hits removed",
+          "detail": "693 points above the aircraft (the deck), 102 ms, 8.0x decimated"
+        },
+        {
+          "id": "S16",
+          "name": "IMU reads +1 g in hover with bounded gyro noise",
+          "status": "PASS",
+          "measured": "|a| = 9.807 m/s2, gyro RMS 0.0024 rad/s",
+          "expected": "9.807 +/- 0.35, gyro < 0.15",
+          "detail": "specific force, so hover reads +g not 0"
+        },
+        {
+          "id": "S17",
+          "name": "GNSS gives a fix in the open and degrades under structure",
+          "status": "PASS",
+          "measured": "open 11 sats (HIGH) -> under 0 (DENIED)",
+          "expected": "fewer satellites under the deck",
+          "detail": "lat 22.29979592, lon 73.22038919 (arbitrary datum)"
+        },
+        {
+          "id": "S18",
+          "name": "sensors are rate-limited on simulation time",
+          "status": "PASS",
+          "measured": "200 IMU samples in 1 s",
+          "expected": "200 +/- 10 at 200 Hz",
+          "detail": "gating is on sim time, so determinism survives"
+        }
+      ],
+      "metrics": {
+        "rgb_loop_res": [
+          640,
+          480
+        ],
+        "rgb_capture_res": [
+          1920,
+          1080
+        ],
+        "rgb_loop_ms": 246.4,
+        "rgb_capture_ms": 1354.7,
+        "rgb_gsd_mm_at_1m": 2.1478,
+        "depth_boresight_measured_m": 2.1935,
+        "depth_boresight_raycast_m": 2.1757,
+        "depth_error_m": 0.0178,
+        "depth_valid_fraction": 0.633,
+        "depth_self_masked_px": 179,
+        "depth_optical_axis_world": [
+          0.9963,
+          0.0464,
+          0.0725
+        ],
+        "lidar_rays": 7200,
+        "lidar_returns": 3473,
+        "lidar_self_occluded": 368,
+        "lidar_ms": 101.8,
+        "lidar_decimation": 8.0,
+        "lidar_nearest_m": 2.3184,
+        "imu_mean_specific_force_z": 9.8067,
+        "imu_mean_magnitude_ms2": 9.8067,
+        "imu_gyro_rms_rad_s": 0.00243,
+        "gnss_open_sats": 11,
+        "gnss_open_quality": "HIGH",
+        "gnss_under_sats": 0,
+        "gnss_under_quality": "DENIED",
+        "gnss_datum": {
+          "lat": 22.3,
+          "lon": 73.2,
+          "alt_m": 32.0,
+          "note": "ARBITRARY reference; no real site is claimed"
+        },
+        "imu_samples_per_sim_second": 200,
+        "wall_time_s": 7.2
+      }
+    },
+    {
+      "subphase": "1F",
+      "title": "Manipulator",
+      "proves": "Six joints move alone, in the CAD's own sense, stop at both limits; IK is verified and refuses the unreachable; collision detection detects.",
+      "source": "tests/test_manipulator.py",
+      "log": "phase1_manipulator.json",
+      "ran": true,
+      "log_status": "fresh",
+      "pass": 8,
+      "fail": 0,
+      "checks": [
+        {
+          "id": "M18",
+          "name": "J1 moves alone, the right way, and stops at both limits",
+          "status": "PASS",
+          "measured": "40 deg cmd, err 0.00 deg",
+          "expected": "<1.5 deg error, <0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed",
+          "detail": "cross-talk 0.01 deg, axis cos +1.000, stops -157.5/180.0 deg, peak 90/90 deg/s, FK 0.008 mm"
+        },
+        {
+          "id": "M19",
+          "name": "J2 moves alone, the right way, and stops at both limits",
+          "status": "PASS",
+          "measured": "40 deg cmd, err 0.00 deg",
+          "expected": "<1.5 deg error, <0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed",
+          "detail": "cross-talk 0.00 deg, axis cos +1.000, stops -110.0/115.0 deg, peak 60/60 deg/s, FK 0.100 mm"
+        },
+        {
+          "id": "M20",
+          "name": "J3 moves alone, the right way, and stops at both limits",
+          "status": "PASS",
+          "measured": "40 deg cmd, err 0.00 deg",
+          "expected": "<1.5 deg error, <0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed",
+          "detail": "cross-talk 0.01 deg, axis cos +1.000, stops -102.5/160.0 deg, peak 70/70 deg/s, FK 0.042 mm"
+        },
+        {
+          "id": "M21",
+          "name": "J4 moves alone, the right way, and stops at both limits",
+          "status": "PASS",
+          "measured": "40 deg cmd, err 0.01 deg",
+          "expected": "<1.5 deg error, <0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed",
+          "detail": "cross-talk 0.00 deg, axis cos +1.000, stops -180.0/180.0 deg, peak 150/150 deg/s, FK 0.236 mm"
+        },
+        {
+          "id": "M22",
+          "name": "J5 moves alone, the right way, and stops at both limits",
+          "status": "PASS",
+          "measured": "40 deg cmd, err 0.00 deg",
+          "expected": "<1.5 deg error, <0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed",
+          "detail": "cross-talk 0.00 deg, axis cos +1.000, stops -120.0/120.0 deg, peak 120/120 deg/s, FK 0.095 mm"
+        },
+        {
+          "id": "M23",
+          "name": "J6 moves alone, the right way, and stops at both limits",
+          "status": "PASS",
+          "measured": "40 deg cmd, err 0.00 deg",
+          "expected": "<1.5 deg error, <0.5 deg cross-talk, rotation about the CAD axis, limits held, within speed",
+          "detail": "cross-talk 0.00 deg, axis cos +1.000, stops -180.0/180.0 deg, peak 150/150 deg/s, FK 0.011 mm"
+        },
+        {
+          "id": "M24",
+          "name": "IK solves reachable targets and refuses unreachable ones",
+          "status": "PASS",
+          "measured": "12/12 solved, worst error 0.2 mm",
+          "expected": ">=9/12 solved to <=10 mm, 3 m target refused",
+          "detail": "unreachable: target 3.075 m from the arm base exceeds the 0.950 m reach"
+        },
+        {
+          "id": "M25",
+          "name": "collision detection catches real contact, both kinds",
+          "status": "PASS",
+          "measured": "stowed clear, folded 7 self-contacts, pressed 8 structure contacts",
+          "expected": "clear when clear, detected when not",
+          "detail": "deepest self-penetration -112 mm; arm clearance 15.51 m hovering -> -0.269 m at the soffit"
+        }
+      ],
+      "metrics": {
+        "joints": {
+          "J1": {
+            "commanded_deg": 40.0,
+            "reached_error_deg": 0.0,
+            "cross_talk_deg": 0.01,
+            "rotation_axis_cos_vs_cad": 1.0,
+            "rotation_angle_error_deg": 0.011,
+            "cad_joint_axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "limit_deg": [
+              -180.0,
+              180.0
+            ],
+            "held_at_upper_deg": 180.0,
+            "held_at_lower_deg": -157.5,
+            "peak_rate_deg_s": 90.0,
+            "velocity_limit_deg_s": 90.0,
+            "cad_fk_error_mm": 0.0084,
+            "tip_travel_mm": 44.9
+          },
+          "J2": {
+            "commanded_deg": 40.0,
+            "reached_error_deg": 0.0,
+            "cross_talk_deg": 0.002,
+            "rotation_axis_cos_vs_cad": 1.0,
+            "rotation_angle_error_deg": 0.002,
+            "cad_joint_axis": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "limit_deg": [
+              -115.0,
+              115.0
+            ],
+            "held_at_upper_deg": 115.0,
+            "held_at_lower_deg": -110.0,
+            "peak_rate_deg_s": 60.0,
+            "velocity_limit_deg_s": 60.0,
+            "cad_fk_error_mm": 0.1003,
+            "tip_travel_mm": 574.7
+          },
+          "J3": {
+            "commanded_deg": 40.0,
+            "reached_error_deg": 0.0,
+            "cross_talk_deg": 0.01,
+            "rotation_axis_cos_vs_cad": 1.0,
+            "rotation_angle_error_deg": 0.302,
+            "cad_joint_axis": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "limit_deg": [
+              -160.0,
+              160.0
+            ],
+            "held_at_upper_deg": 160.0,
+            "held_at_lower_deg": -102.5,
+            "peak_rate_deg_s": 70.0,
+            "velocity_limit_deg_s": 70.0,
+            "cad_fk_error_mm": 0.0425,
+            "tip_travel_mm": 345.2
+          },
+          "J4": {
+            "commanded_deg": 40.0,
+            "reached_error_deg": 0.01,
+            "cross_talk_deg": 0.0,
+            "rotation_axis_cos_vs_cad": 1.0,
+            "rotation_angle_error_deg": 0.01,
+            "cad_joint_axis": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "limit_deg": [
+              -180.0,
+              180.0
+            ],
+            "held_at_upper_deg": 180.0,
+            "held_at_lower_deg": -180.0,
+            "peak_rate_deg_s": 150.1,
+            "velocity_limit_deg_s": 150.0,
+            "cad_fk_error_mm": 0.2356,
+            "tip_travel_mm": 2.7
+          },
+          "J5": {
+            "commanded_deg": 40.0,
+            "reached_error_deg": 0.0,
+            "cross_talk_deg": 0.001,
+            "rotation_axis_cos_vs_cad": 0.9999,
+            "rotation_angle_error_deg": 0.005,
+            "cad_joint_axis": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "limit_deg": [
+              -120.0,
+              120.0
+            ],
+            "held_at_upper_deg": 120.0,
+            "held_at_lower_deg": -120.0,
+            "peak_rate_deg_s": 120.0,
+            "velocity_limit_deg_s": 120.0,
+            "cad_fk_error_mm": 0.0949,
+            "tip_travel_mm": 85.5
+          },
+          "J6": {
+            "commanded_deg": 40.0,
+            "reached_error_deg": 0.0,
+            "cross_talk_deg": 0.001,
+            "rotation_axis_cos_vs_cad": 1.0,
+            "rotation_angle_error_deg": 0.0,
+            "cad_joint_axis": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "limit_deg": [
+              -180.0,
+              180.0
+            ],
+            "held_at_upper_deg": 180.0,
+            "held_at_lower_deg": -180.0,
+            "peak_rate_deg_s": 150.0,
+            "velocity_limit_deg_s": 150.0,
+            "cad_fk_error_mm": 0.0112,
+            "tip_travel_mm": 30.8
+          }
+        },
+        "reach_m": 0.95,
+        "acceleration_limits_rad_s2": [
+          33.37,
+          71.67,
+          139.6,
+          300.31,
+          1051.4,
+          4938.2
+        ],
+        "acceleration_limit_method": "tau / I, I from downstream link masses; ESTIMATE, timing only",
+        "ik_targets": 12,
+        "ik_solved": 12,
+        "ik_worst_position_error_m": 0.0002,
+        "ik_attempts": [
+          {
+            "target_world": [
+              2100.4005,
+              -25.5966,
+              16.1642
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 7e-05
+          },
+          {
+            "target_world": [
+              2100.4074,
+              -26.1642,
+              16.2864
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 0.0001
+          },
+          {
+            "target_world": [
+              2100.2747,
+              -25.807,
+              16.2846
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 1e-05
+          },
+          {
+            "target_world": [
+              2100.2678,
+              -26.1004,
+              15.9501
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 4e-05
+          },
+          {
+            "target_world": [
+              2100.3453,
+              -26.0342,
+              16.1064
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 4e-05
+          },
+          {
+            "target_world": [
+              2100.2991,
+              -25.5498,
+              16.1884
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 5e-05
+          },
+          {
+            "target_world": [
+              2100.1608,
+              -25.7908,
+              15.8709
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 0.00012
+          },
+          {
+            "target_world": [
+              2100.1115,
+              -25.9798,
+              16.0248
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 4e-05
+          },
+          {
+            "target_world": [
+              2100.2685,
+              -25.991,
+              16.1607
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 7e-05
+          },
+          {
+            "target_world": [
+              2100.5353,
+              -25.8594,
+              15.9129
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 0.00011
+          },
+          {
+            "target_world": [
+              2100.1084,
+              -26.0415,
+              15.8797
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 0.0002
+          },
+          {
+            "target_world": [
+              2100.1828,
+              -25.9352,
+              16.0357
+            ],
+            "solved": true,
+            "reason": "solved",
+            "position_error_m": 5e-05
+          }
+        ],
+        "ik_unreachable_refused": true,
+        "ik_unreachable_reason": "target 3.075 m from the arm base exceeds the 0.950 m reach",
+        "collision": {
+          "stowed_self_free": true,
+          "stowed_environment_free": true,
+          "folded_self_collision_detected": true,
+          "folded_contacts": 7,
+          "folded_deepest_penetration_m": -0.1118,
+          "self_collision_note": "DETECTED, not PREVENTED: the airframe is loaded without URDF_USE_SELF_COLLISION, so the solver will not push the arm out of the body. getClosestPoints is used, which reports penetration regardless of that flag.",
+          "arm_clearance_hovering_m": 15.506,
+          "arm_clearance_pressed_m": -0.2685,
+          "environment_collision_detected": true,
+          "environment_contacts": 8
+        },
+        "wall_time_s": 28.3
+      }
+    }
+  ],
+  "defects_found_and_fixed": [
+    {
+      "title": "Sensor frames aimed 90 deg off the nose",
+      "what_was_wrong": "Every sensor frame in the environment package and in the URDF was built with rpy = (90 - pitch, 0, yaw), which maps the optical -Z onto body +Y. A 'forward-looking' camera pointed out the left side. The exported REV-B manifest recorded the contradiction as optical_axis_world = [0, 1, 0] on a sensor with zero mount angles.",
+      "fix": "Base optical rotation corrected to rpy = (90, 0, -90); mount pitch and yaw applied in the body frame outside it. Fixed in both avian/description/build_urdf.py and avian_env/sensors.py, and the REV-B sensor manifest regenerated.",
+      "now_tested_by": "Found by S14. T10 now asserts every boresight against its mount angles, so this class of error fails a test instead of surviving."
+    },
+    {
+      "title": "LiDAR and IMU were given camera frames",
+      "what_was_wrong": "A spinning LiDAR sweeps azimuth about its own +Z. With an optical frame its spin axis lay horizontal and the scan plane came out vertical. An IMU must report in the body frame by definition.",
+      "fix": "Those two frames are now body-aligned, declared explicitly as frame_convention = 'body' rather than left to be inferred.",
+      "now_tested_by": "T10 asserts the LiDAR spin axis is body +Z."
+    },
+    {
+      "title": "Self-collision checking was vacuous",
+      "what_was_wrong": "The airframe is loaded without URDF_USE_SELF_COLLISION, so getContactPoints(body, body) returns an empty list for every pose. check_self_collision() and T09 therefore reported 'clear' for a pose with link_5 buried 112 mm inside the fuselage.",
+      "fix": "Both now use getClosestPoints, which reports geometric penetration regardless of that flag, and exclude parent-child pairs by the real URDF parent relation instead of an index heuristic.",
+      "now_tested_by": "M25 asserts both directions: clear when clear, DETECTED when not. Self-collision is detected, not prevented -- see Limitations."
+    },
+    {
+      "title": "solve_ik measured the CAD cross-check from the wrong frame",
+      "what_was_wrong": "getBasePositionAndOrientation returns the centre-of-mass frame. base_link's inertial origin is 86 mm off its URDF origin, so the CAD-vs-simulation agreement check was 86 mm out and rejected every correct solution it found. IK solved 0 of 12 reachable targets.",
+      "fix": "Added Manipulator.base_frame(), which removes the inertial offset. IK now solves 12 of 12 to a worst error of 0.2 mm.",
+      "now_tested_by": "M24 asserts >= 9/12 solved to <= 10 mm AND that a 3 m target is refused."
+    },
+    {
+      "title": "Depth camera reported its own airframe as an obstacle",
+      "what_was_wrong": "The depth sensor sits 200 mm forward on a vehicle with 575 mm arms, and the camera origin sat inside the fuselage shell: 46 % of the frame was own structure and the nearest return was 0.09 m.",
+      "fix": "Segmentation self-mask, with the background test done before the bit-mask so -1 cannot alias onto a body id. With the frame orientation also corrected, self-masked pixels fell from 46 % to 0.2 %.",
+      "now_tested_by": "S14 compares the range at the principal point against a ray cast along the same boresight."
+    },
+    {
+      "title": "Rate gate muted a sensor after a clock rewind",
+      "what_was_wrong": "The gate accumulates phase in _next_due. Clearing last_stamp alone left a previously-read sensor silent for a whole simulated second.",
+      "fix": "Added Sensor.reset_timing(), which re-anchors the gate. A mission leg or a replay needs the same call.",
+      "now_tested_by": "S18 measures 200 samples in 1 s at 200 Hz."
+    },
+    {
+      "title": "S14 compared the camera against geometry it could not see",
+      "what_was_wrong": "The original test compared the depth camera's whole-frame minimum against min_clearance(), which is the distance to the nearest structure ANYWHERE in 3-D -- under the deck, that is the soffit above the aircraft, outside a forward-looking camera's field of view. The test was invalid, not merely failing.",
+      "fix": "Rewritten to park the aircraft a fixed stand-off from a river pier and compare the boresight range against a ray cast along the same axis. The 0.6 m tolerance was NOT relaxed.",
+      "now_tested_by": "This was a test defect and is recorded as one."
+    }
+  ],
+  "limitations": [
+    {
+      "title": "Self-collision is detected, not prevented",
+      "detail": "URDF_USE_SELF_COLLISION is off, because enabling contact response between links of one body changes flight dynamics that are already validated. The solver will not push the arm out of the airframe; planning must not command a pose check_self_collision() rejects."
+    },
+    {
+      "title": "Link inertia is a point-mass aggregation",
+      "detail": "Mass and centre of gravity come exactly from the 389-row budget; the inertia tensor is approximate. Recorded as inertia_method in the generated manifest."
+    },
+    {
+      "title": "Manipulator acceleration limits are estimated",
+      "detail": "The CAD gives torque and speed but no acceleration limit. a = tau / I with I from downstream link masses is a lower bound on inertia and so an optimistic acceleration. Used for trajectory timing only, never for a safety decision."
+    },
+    {
+      "title": "Camera rendering is CPU-bound and that shapes the architecture",
+      "detail": "640x480 costs about 300 ms/frame on this host and 1920x1080 about 1.8 s. Cameras are waypoint-triggered rather than free-running because of the hardware, and the policy is recorded rather than hidden."
+    },
+    {
+      "title": "The GNSS datum is arbitrary",
+      "detail": "No real site is claimed. Quality degradation is computed by casting rays at the sky, not looked up from a table."
+    },
+    {
+      "title": "The arm is validated with the airframe held",
+      "detail": "Whether the aircraft holds station against the reaction of a moving 6-DOF arm is a flight-dynamics question. It is not answered in Phase 1 and is not implied by these results."
+    }
+  ],
+  "not_started": [
+    "Phase 2 -- six-UAV inspection and repair",
+    "Phase 3 -- dashboard and digital twin",
+    "Procedural textures in PyBullet",
+    "Classical CV defect detector"
+  ]
+}

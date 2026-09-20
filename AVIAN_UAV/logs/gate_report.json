@@ -1,0 +1,108 @@
+{
+  "run_id": "509ca116fbe4",
+  "phase1a_description": {
+    "returncode": 0,
+    "summary": "  10 pass, 0 fail of 10 checks",
+    "stdout_tail": [
+      "PHASE 2 - DESCRIPTION TESTS",
+      "  [PASS] T01  URDF loads with a valid kinematic tree       24 joints                    14 revolute",
+      "  [PASS] T02  six manipulator joints J1-J6 present         ['J1', 'J2', 'J3', 'J4', 'J5', 'J6'] ",
+      "  [PASS] T03  joint limits, effort and velocity match the CAD 6 joints checked             ",
+      "  [PASS] T04  8 rotors in 4 counter-rotating coaxial pairs 8 rotors, 4 CCW, 4 arms      ",
+      "  [PASS] T05  URDF forward kinematics match CAD kin_b.py   max error 0.000 mm           6 configurations tested",
+      "  [PASS] T06  manipulator chain length matches the CAD     stowed 950.0 mm, max 949.7 mm vL0..vL5 summed; max reach sampled over J2/J3",
+      "  [PASS] T07  simulated mass matches the CAD mass budget   23.685 kg                    config NOMINAL, 8 g of solver frames excluded",
+      "  [PASS] T08  thrust-to-weight ratio is flyable            2.31                         536 N over 23.7 kg",
+      "  [PASS] T09  no self-collision in the stowed pose         0 penetrating link pairs     ",
+      "  [PASS] T10  seven sensor frames present, placed and correctly aimed 7 frames, 7 correctly aimed  ",
+      "",
+      "  10 pass, 0 fail of 10 checks"
+    ]
+  },
+  "phase1c_environment": {
+    "returncode": 0,
+    "summary": "  5 pass, 0 fail of 5 checks",
+    "stdout_tail": [
+      "PHASE 3/4 - BRIDGE COLLISION IN SIMULATION",
+      "  [PASS] E01  bridge collision asset loads into the simulator 677 primitives in 6 bodies   corridor 1550-2650 m",
+      "  [PASS] E02  the deck is solid - aircraft does not fall through rested at z=28.02 m          free drop from 6 m above the deck",
+      "  [PASS] E03  stable hover under the deck, no contact      error 1.9 cm, clearance 4.04 m soffit at z=22.6 m, 0 contacts",
+      "  [PASS] E04  clearance decreases as the aircraft approaches structure 4.06 -> 1.60 m               proves clearance is measured against real geometry",
+      "  [PASS] E05  proximity supervisor prevents contact with the deck state HOLD, contacts 0       clearance 1.48 m below the 1.5 m minimum",
+      "",
+      "  5 pass, 0 fail of 5 checks"
+    ]
+  },
+  "phase1d_dynamics": {
+    "returncode": 0,
+    "summary": "  11 pass, 0 fail of 11 checks",
+    "stdout_tail": [
+      "PHASE 4 - VEHICLE DYNAMICS AND CONTROL",
+      "  [PASS] D01  control allocation matrix is well conditioned 4x8, cond 50.0                 8 rotors",
+      "  [PASS] D02  pure collective loads all 8 rotors equally spread 0.00e+00 N              29.04 N per rotor at hover",
+      "  [PASS] D03  roll, pitch and yaw authority at hover     roll 94.47, pitch 94.47, yaw 4.65 Nm measured by bisection against per-rotor limits",
+      "  [PASS] D04  yaw demand produces no roll or pitch coupling cross-coupling 7.10e-15 Nm     the X8 property that motivates the layout",
+      "  [PASS] T1a  takeoff reaches 12 m and holds             4.4 s, RMS 1.1 cm              peak climb 2.15 m/s",
+      "  [PASS] T1b  commanded descent tracks to 1 m            1.006 m                        ",
+      "  [PASS] T2   position hold RMS error                    RMS 3.0 cm, max 6.1 cm         attitude RMS 0.00 deg, settle 2.5 s",
+      "  [PASS] T3   waypoint mission arrival accuracy          max 10.5 cm over 5 waypoints   70 s, 51.8 Wh",
+      "  [PASS] T5   recovers from lateral force and yaw torque peak 0.11 m, recovered in 0.0 s 120 N lateral impulse + 12 Nm yaw",
+      "  [PASS] D05  motor saturation stays bounded             83 events, peak 130% of limit  clipped and counted, never silently ignored",
+      "  [PASS] D06  real-time factor on this host              29.10x                         162 s sim in 6 s wall, dt=4.17 ms",
+      "",
+      "  11 pass, 0 fail of 11 checks"
+    ]
+  },
+  "phase1d_determinism": {
+    "returncode": 0,
+    "summary": "  6 pass, 0 fail of 6 checks",
+    "stdout_tail": [
+      "PHASE 4 - DETERMINISM AND EMERGENCY BEHAVIOUR",
+      "  [PASS] T6a  identical runs reproduce to tolerance        max 0.00e+00 m, final 0.00e+00 m energy delta 0.00e+00 J over 7200 steps",
+      "  [PASS] T6b  flight path has no stochastic term           0.00e+00 m across seeds      seed 7 vs seed 99; noise enters later, at the sensor layer",
+      "  [PASS] T7a  low battery triggers RETURN and flies home   RETURN, 0.03 m from home     battery 15.0 % at or below the 20 % reserve",
+      "  [PASS] T7b  single rotor failure: stays airborne, enters RETURN RETURN, z=6.0 m, tilt 2.6 deg was z=12.0 m; X8 redundancy",
+      "  [PASS] T7c  invalid state estimate triggers HOLD         HOLD                         state estimate invalid",
+      "  [PASS] T7d  safety state latches until conditions clear with margin held RETURN, cleared to NOMINAL 4 recorded transitions",
+      "",
+      "  6 pass, 0 fail of 6 checks"
+    ]
+  },
+  "phase1e_sensors": {
+    "returncode": 0,
+    "summary": "  6 pass, 0 fail of 6 checks",
+    "stdout_tail": [
+      "PHASE 1E - SENSORS",
+      "  [PASS] S13  RGB camera renders a non-uniform image at both resolutions 640x480 246 ms, 1920x1080 1355 ms std 60.0 counts, GSD 2.1478 mm/px @1m",
+      "  [PASS] S14  depth camera range agrees with true geometry 2.1935 m vs ray-cast 2.176 m   48616 valid px (63 %), 179 px self-masked, gate 0.3-8.0 m",
+      "  [PASS] S15  LiDAR returns structure, rejects its own airframe 3473 returns, 368 self-hits discarded 693 points above the aircraft (the deck), 102 ms, 8.0x decimated",
+      "  [PASS] S16  IMU reads +1 g in hover with bounded gyro noise |a| = 9.807 m/s2, gyro RMS 0.0024 rad/s specific force, so hover reads +g not 0",
+      "  [PASS] S17  GNSS gives a fix in the open and degrades under structure open 11 sats (HIGH) -> under 0 (DENIED) lat 22.29979592, lon 73.22038919 (arbitrary datum)",
+      "  [PASS] S18  sensors are rate-limited on simulation time  200 IMU samples in 1 s         gating is on sim time, so determinism survives",
+      "",
+      "  6 pass, 0 fail of 6 checks"
+    ]
+  },
+  "phase1f_manipulator": {
+    "returncode": 0,
+    "summary": "  8 pass, 0 fail of 8 checks",
+    "stdout_tail": [
+      "PHASE 1F - MANIPULATOR",
+      "  [PASS] M18  J1 moves alone, the right way, and stops at both limits 40 deg cmd, err 0.00 deg         cross-talk 0.01 deg, axis cos +1.000, stops -157.5/180.0 deg, peak 90/90 deg/s, FK 0.008 mm",
+      "  [PASS] M19  J2 moves alone, the right way, and stops at both limits 40 deg cmd, err 0.00 deg         cross-talk 0.00 deg, axis cos +1.000, stops -110.0/115.0 deg, peak 60/60 deg/s, FK 0.100 mm",
+      "  [PASS] M20  J3 moves alone, the right way, and stops at both limits 40 deg cmd, err 0.00 deg         cross-talk 0.01 deg, axis cos +1.000, stops -102.5/160.0 deg, peak 70/70 deg/s, FK 0.042 mm",
+      "  [PASS] M21  J4 moves alone, the right way, and stops at both limits 40 deg cmd, err 0.01 deg         cross-talk 0.00 deg, axis cos +1.000, stops -180.0/180.0 deg, peak 150/150 deg/s, FK 0.236 mm",
+      "  [PASS] M22  J5 moves alone, the right way, and stops at both limits 40 deg cmd, err 0.00 deg         cross-talk 0.00 deg, axis cos +1.000, stops -120.0/120.0 deg, peak 120/120 deg/s, FK 0.095 mm",
+      "  [PASS] M23  J6 moves alone, the right way, and stops at both limits 40 deg cmd, err 0.00 deg         cross-talk 0.00 deg, axis cos +1.000, stops -180.0/180.0 deg, peak 150/150 deg/s, FK 0.011 mm",
+      "  [PASS] M24  IK solves reachable targets and refuses unreachable ones 12/12 solved, worst error 0.2 mm unreachable: target 3.075 m from the arm base exceeds the 0.950 m reach",
+      "  [PASS] M25  collision detection catches real contact, both kinds stowed clear, folded 7 self-contacts, pressed 8 structure contacts deepest self-penetration -112 mm; arm clearance 15.51 m hovering -> -0.269 m at the soffit",
+      "",
+      "  8 pass, 0 fail of 8 checks"
+    ]
+  },
+  "total": {
+    "pass": 46,
+    "fail": 0,
+    "wall_s": 79.2
+  }
+}

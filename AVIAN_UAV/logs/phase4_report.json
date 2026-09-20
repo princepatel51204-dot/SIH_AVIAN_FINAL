@@ -1,0 +1,149 @@
+{
+  "phase": "3+4",
+  "gate": "PASSED",
+  "bridge_collision": {
+    "primitives": 677,
+    "source_triangles": 22850,
+    "simplification_ratio": 33.8,
+    "corridor_m": [
+      1550.0,
+      2650.0
+    ],
+    "validation": 6
+  },
+  "avian_visual_mesh_triangles": 280155,
+  "avian_hull_triangles": 23664,
+  "avian_collision": "primitives: 1 body box + 4 arm cylinders + 8 arm-link cylinders + tool",
+  "mass_kg": 23.693,
+  "mass_budget_kg": 23.685,
+  "max_thrust_N": 536.3,
+  "thrust_to_weight": 2.308,
+  "dynamics": {
+    "allocation_matrix": [
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.4066,
+        0.4066,
+        0.4066,
+        0.4066,
+        -0.4066,
+        -0.4066,
+        -0.4066,
+        -0.4066
+      ],
+      [
+        -0.4066,
+        -0.4066,
+        0.4066,
+        0.4066,
+        0.4066,
+        0.4066,
+        -0.4066,
+        -0.4066
+      ],
+      [
+        -0.02,
+        0.02,
+        0.02,
+        -0.02,
+        -0.02,
+        0.02,
+        0.02,
+        -0.02
+      ]
+    ],
+    "allocation_condition_number": 50.0,
+    "hover_thrust_per_rotor_N": 29.044,
+    "hover_thrust_total_N": 232.35,
+    "authority_Nm": {
+      "roll": 94.47,
+      "pitch": 94.47,
+      "yaw": 4.65
+    },
+    "takeoff_time_s": 4.4,
+    "takeoff_altitude_rms_error_m": 0.0108,
+    "max_climb_rate_mps": 2.147,
+    "position_hold_rms_error_m": 0.0302,
+    "position_hold_max_error_m": 0.0609,
+    "attitude_rms_error_deg": 0.0024,
+    "settling_time_s": 2.54,
+    "waypoint_errors_m": [
+      0.062,
+      0.0759,
+      0.087,
+      0.1054,
+      0.0913
+    ],
+    "waypoint_max_error_m": 0.1054,
+    "mission_time_s": 70.0,
+    "mission_energy_Wh": 51.76,
+    "disturbance_max_deviation_m": 0.115,
+    "disturbance_recovery_s": 0.0,
+    "disturbance_final_error_m": 0.0307,
+    "saturation_events": 83,
+    "max_saturation_ratio": 1.304,
+    "sim_time_s": 162.0,
+    "wall_time_s": 11.2,
+    "real_time_factor": 14.422,
+    "timestep_s": 0.004166666666666667
+  },
+  "environment": {
+    "collision_primitives": 677,
+    "source_triangles": 22850,
+    "simplification_ratio": 33.8,
+    "corridor_m": [
+      1550.0,
+      2650.0
+    ],
+    "deck_drop_final_z_m": 28.016,
+    "deck_top_z_m": 27.0,
+    "underdeck_hover_error_m": 0.0186,
+    "underdeck_min_clearance_m": 4.044,
+    "underdeck_contacts": 0,
+    "clearance_start_m": 4.059,
+    "clearance_end_m": 1.597,
+    "safety_transitions": [
+      {
+        "t": 0.3,
+        "from": "NOMINAL",
+        "to": "HOLD",
+        "reason": "clearance 1.48 m below the 1.5 m minimum"
+      }
+    ],
+    "proximity_contacts": 0,
+    "wall_time_s": 43.9
+  },
+  "determinism": {
+    "determinism_max_deviation_m": 0.0,
+    "determinism_final_deviation_m": 0.0,
+    "determinism_energy_delta_J": 0.0,
+    "seed_sensitivity_m": 0.0,
+    "low_battery_state": "RETURN",
+    "low_battery_distance_to_home_m": 0.03,
+    "motor_fail_state": "RETURN",
+    "motor_fail_altitude_m": 6.0,
+    "motor_fail_attitude_deg": [
+      -1.97,
+      2.64
+    ],
+    "sensor_invalid_state": "HOLD",
+    "latched_state_after_recovery": "RETURN",
+    "state_after_explicit_clear": "NOMINAL",
+    "wall_time_s": 11.5
+  },
+  "center_of_gravity_m": [
+    -0.00636,
+    0.00263,
+    -0.13424
+  ],
+  "peak_memory_MB": 141.8
+}

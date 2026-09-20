@@ -1,0 +1,390 @@
+config,group,item,mass_kg,cg_x_mm,cg_y_mm,cg_z_mm,source,confidence
+MIN,02_PROPULSION,motor_1_upper,0.24,406.6,406.6,30.0,T-Motor U8 II KV100,VENDOR
+MIN,02_PROPULSION,motor_1_lower,0.24,406.6,406.6,-30.0,T-Motor U8 II KV100,VENDOR
+MIN,02_PROPULSION,propeller_1_upper,0.13,406.6,406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+MIN,02_PROPULSION,propeller_1_lower,0.13,406.6,406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+MIN,02_PROPULSION,coax_mount_1,0.311,406.6,406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+MIN,02_PROPULSION,esc_1_upper,0.082,226.3,226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+MIN,02_PROPULSION,esc_1_lower,0.082,226.3,226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+MIN,01_AIRFRAME,arm_tube_1,0.084,277.5,277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+MIN,01_AIRFRAME,arm_root_clamp_1,0.115,152.0,152.0,0,CNC AL7075 split clamp,ESTIMATED
+MIN,11_CABLE,arm_harness_1,0.048,277.5,277.5,-14,6 AWG + signal,ESTIMATED
+MIN,02_PROPULSION,motor_2_upper,0.24,-406.6,406.6,30.0,T-Motor U8 II KV100,VENDOR
+MIN,02_PROPULSION,motor_2_lower,0.24,-406.6,406.6,-30.0,T-Motor U8 II KV100,VENDOR
+MIN,02_PROPULSION,propeller_2_upper,0.13,-406.6,406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+MIN,02_PROPULSION,propeller_2_lower,0.13,-406.6,406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+MIN,02_PROPULSION,coax_mount_2,0.311,-406.6,406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+MIN,02_PROPULSION,esc_2_upper,0.082,-226.3,226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+MIN,02_PROPULSION,esc_2_lower,0.082,-226.3,226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+MIN,01_AIRFRAME,arm_tube_2,0.084,-277.5,277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+MIN,01_AIRFRAME,arm_root_clamp_2,0.115,-152.0,152.0,0,CNC AL7075 split clamp,ESTIMATED
+MIN,11_CABLE,arm_harness_2,0.048,-277.5,277.5,-14,6 AWG + signal,ESTIMATED
+MIN,02_PROPULSION,motor_3_upper,0.24,-406.6,-406.6,30.0,T-Motor U8 II KV100,VENDOR
+MIN,02_PROPULSION,motor_3_lower,0.24,-406.6,-406.6,-30.0,T-Motor U8 II KV100,VENDOR
+MIN,02_PROPULSION,propeller_3_upper,0.13,-406.6,-406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+MIN,02_PROPULSION,propeller_3_lower,0.13,-406.6,-406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+MIN,02_PROPULSION,coax_mount_3,0.311,-406.6,-406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+MIN,02_PROPULSION,esc_3_upper,0.082,-226.3,-226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+MIN,02_PROPULSION,esc_3_lower,0.082,-226.3,-226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+MIN,01_AIRFRAME,arm_tube_3,0.084,-277.5,-277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+MIN,01_AIRFRAME,arm_root_clamp_3,0.115,-152.0,-152.0,0,CNC AL7075 split clamp,ESTIMATED
+MIN,11_CABLE,arm_harness_3,0.048,-277.5,-277.5,-14,6 AWG + signal,ESTIMATED
+MIN,02_PROPULSION,motor_4_upper,0.24,406.6,-406.6,30.0,T-Motor U8 II KV100,VENDOR
+MIN,02_PROPULSION,motor_4_lower,0.24,406.6,-406.6,-30.0,T-Motor U8 II KV100,VENDOR
+MIN,02_PROPULSION,propeller_4_upper,0.13,406.6,-406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+MIN,02_PROPULSION,propeller_4_lower,0.13,406.6,-406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+MIN,02_PROPULSION,coax_mount_4,0.311,406.6,-406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+MIN,02_PROPULSION,esc_4_upper,0.082,226.3,-226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+MIN,02_PROPULSION,esc_4_lower,0.082,226.3,-226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+MIN,01_AIRFRAME,arm_tube_4,0.084,277.5,-277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+MIN,01_AIRFRAME,arm_root_clamp_4,0.115,152.0,-152.0,0,CNC AL7075 split clamp,ESTIMATED
+MIN,11_CABLE,arm_harness_4,0.048,277.5,-277.5,-14,6 AWG + signal,ESTIMATED
+MIN,01_AIRFRAME,spine_rail_L,0.42,0,105,0,"CF box 55x26x2.5, 510 long",CALCULATED
+MIN,01_AIRFRAME,spine_rail_R,0.42,0,-105,0,"CF box 55x26x2.5, 510 long",CALCULATED
+MIN,01_AIRFRAME,spine_cross_F,0.105,175,0,0,CF box cross member,CALCULATED
+MIN,01_AIRFRAME,spine_cross_A,0.105,-175,0,0,CF box cross member,CALCULATED
+MIN,01_AIRFRAME,corner_casting_11,0.086,175,105,0,CNC AL7075 node,ESTIMATED
+MIN,01_AIRFRAME,corner_casting_1-1,0.086,175,-105,0,CNC AL7075 node,ESTIMATED
+MIN,01_AIRFRAME,corner_casting_-11,0.086,-175,105,0,CNC AL7075 node,ESTIMATED
+MIN,01_AIRFRAME,corner_casting_-1-1,0.086,-175,-105,0,CNC AL7075 node,ESTIMATED
+MIN,01_AIRFRAME,manipulator_hub,0.385,45,0,-48,"CNC AL7075, sized on 34 Nm",CALCULATED
+MIN,01_AIRFRAME,panel_top_service,0.155,-40,0,116,"PA-CF printed, 6 x quarter-turn",ESTIMATED
+MIN,01_AIRFRAME,panel_lower_service,0.14,-20,0,-152,"CF sandwich, 6 x quarter-turn",ESTIMATED
+MIN,01_AIRFRAME,panel_side_L,0.088,0,132,-60,PA-CF printed,ESTIMATED
+MIN,01_AIRFRAME,panel_side_R,0.088,0,-132,-60,PA-CF printed,ESTIMATED
+MIN,01_AIRFRAME,fastener_allowance,0.165,0,0,-20,"A2 stainless, distributed",ESTIMATED
+MIN,10_LANDING_GEAR,lg_leg_11,0.132,150,220,-300,"CF 22/18 tube, splayed",CALCULATED
+MIN,10_LANDING_GEAR,lg_leg_1-1,0.132,150,-220,-300,"CF 22/18 tube, splayed",CALCULATED
+MIN,10_LANDING_GEAR,lg_leg_-11,0.132,-150,220,-300,"CF 22/18 tube, splayed",CALCULATED
+MIN,10_LANDING_GEAR,lg_leg_-1-1,0.132,-150,-220,-300,"CF 22/18 tube, splayed",CALCULATED
+MIN,10_LANDING_GEAR,lg_skid_L,0.148,0,340,-520,"CF 26/22 tube, 620 long",CALCULATED
+MIN,10_LANDING_GEAR,lg_damper_L,0.062,0,300,-430,elastomeric shock leg,ESTIMATED
+MIN,10_LANDING_GEAR,lg_skid_R,0.148,0,-340,-520,"CF 26/22 tube, 620 long",CALCULATED
+MIN,10_LANDING_GEAR,lg_damper_R,0.062,0,-300,-430,elastomeric shock leg,ESTIMATED
+MIN,10_LANDING_GEAR,lg_foot_11,0.03,250,340,-530,replaceable TPU foot,ESTIMATED
+MIN,10_LANDING_GEAR,lg_foot_1-1,0.03,250,-340,-530,replaceable TPU foot,ESTIMATED
+MIN,10_LANDING_GEAR,lg_foot_-11,0.03,-250,340,-530,replaceable TPU foot,ESTIMATED
+MIN,10_LANDING_GEAR,lg_foot_-1-1,0.03,-250,-340,-530,replaceable TPU foot,ESTIMATED
+MIN,04_AVIONICS,flight_controller,0.1,-40,-62,78,Holybro Pixhawk 6X class,VENDOR
+MIN,04_AVIONICS,fc_isolator_tray,0.045,-40,-62,62,4 x wire-rope isolator,ESTIMATED
+MIN,04_AVIONICS,companion_computer,0.3,-40,62,76,Jetson Orin NX + carrier,VENDOR
+MIN,04_AVIONICS,compute_cooling,0.085,-40,62,104,heatsink + 50 mm fan,ESTIMATED
+MIN,04_AVIONICS,power_distribution,0.15,-125,0,-28,"12S PDB, 4 ESC pairs",ESTIMATED
+MIN,04_AVIONICS,power_switch_relay,0.09,-165,0,-28,anti-spark + isolation relay,ESTIMATED
+MIN,04_AVIONICS,dcdc_converters,0.075,-125,-70,60,12S -> 19 V / 5 V,ESTIMATED
+MIN,04_AVIONICS,telemetry_radio,0.035,-160,55,62,900 MHz,ESTIMATED
+MIN,04_AVIONICS,rc_receiver,0.02,-160,-30,62,dual-band,ESTIMATED
+MIN,04_AVIONICS,antenna_1,0.02,-215,90,20,whip / patch,ESTIMATED
+MIN,04_AVIONICS,antenna_2,0.02,-215,-90,20,whip / patch,ESTIMATED
+MIN,04_AVIONICS,antenna_3,0.02,170,132,20,whip / patch,ESTIMATED
+MIN,04_AVIONICS,antenna_4,0.02,170,-132,20,whip / patch,ESTIMATED
+MIN,11_CABLE,wiring_harness_main,0.395,-45,0,-10,HV + signal looms,ESTIMATED
+MIN,11_CABLE,connectors_bulkheads,0.115,-60,0,-20,module-boundary connectors,ESTIMATED
+MIN,05_PERCEPTION,lidar,0.3,30,0,212,360 x 45 deg 3D LiDAR,VENDOR
+MIN,05_PERCEPTION,lidar_mast,0.078,30,0,150,CF mast + isolator,ESTIMATED
+MIN,05_PERCEPTION,rgb_gimbal,0.25,198,96,-88,"3-axis 4K, front-left boom",VENDOR
+MIN,05_PERCEPTION,gimbal_boom,0.058,150,96,-40,CF boom,CALCULATED
+MIN,05_PERCEPTION,depth_camera,0.075,216,0,16,stereo IR + RGB,VENDOR
+MIN,05_PERCEPTION,depth_bracket,0.036,200,0,10,AL bracket,ESTIMATED
+MIN,05_PERCEPTION,gnss_rtk_1,0.11,-150,125,182,"RTK antenna, 250 mm baseline",VENDOR
+MIN,05_PERCEPTION,gnss_mast_1,0.028,-150,125,120,CF mast,ESTIMATED
+MIN,05_PERCEPTION,gnss_rtk_2,0.11,-150,-125,182,"RTK antenna, 250 mm baseline",VENDOR
+MIN,05_PERCEPTION,gnss_mast_2,0.028,-150,-125,120,CF mast,ESTIMATED
+MIN,05_PERCEPTION,range_finder,0.03,-140,-72,-156,downward laser altimeter,VENDOR
+MIN,05_PERCEPTION,optical_flow,0.018,-140,72,-156,flow + ToF,VENDOR
+MIN,05_PERCEPTION,inspection_lamp,0.095,198,-96,-88,high-CRI LED cluster,ESTIMATED
+MIN,09_LIQUID,reservoir_shell,0.215,-72,0,-100,"blow-moulded HDPE, 1.15 L, baffled",CALCULATED
+MIN,09_LIQUID,reservoir_baffles,0.048,-72,0,-100,"3 x transverse, 65 % open",CALCULATED
+MIN,09_LIQUID,pump,0.285,-148,0,-92,"diaphragm, 0-6 bar, 1.2 L/min",VENDOR
+MIN,09_LIQUID,filter_40um,0.052,-118,58,-92,"inline 40 um, serviceable",VENDOR
+MIN,09_LIQUID,check_valve,0.024,-100,58,-92,0.2 bar cracking,VENDOR
+MIN,09_LIQUID,relief_bypass_valve,0.038,-118,-58,-92,6.5 bar bypass to tank,VENDOR
+MIN,09_LIQUID,pressure_sensor,0.026,-90,-58,-92,"0-10 bar, 4-20 mA",VENDOR
+MIN,09_LIQUID,quick_connect,0.032,-40,0,-128,"dry-break, tank side",VENDOR
+MIN,09_LIQUID,hose_body,0.045,0,0,-110,PTFE-lined,ESTIMATED
+MIN,09_LIQUID,hose_arm_routed,0.06,150,0,-280,"along links, service loops",ESTIMATED
+MIN,09_LIQUID,fluid_mount_bracket,0.125,-95,0,-128,CF tray + quarter-turn latches,ESTIMATED
+MIN,03_BATTERY,battery_cartridge_1,3.6,0.0,92,-102,12S 24 Ah LiPo (2 x 12 Ah parallel),ESTIMATED
+MIN,03_BATTERY,battery_cartridge_2,3.6,0.0,-92,-102,12S 24 Ah LiPo (2 x 12 Ah parallel),ESTIMATED
+MIN,03_BATTERY,battery_tray_rail,0.185,0,0,-132,"indexed rail, 3 detents",CALCULATED
+MIN,03_BATTERY,battery_latches,0.07,-100,0,-102,2 x quarter-turn + XT150,ESTIMATED
+MIN,15_SAFETY,emergency_stop,0.045,-205,0,-30,"HV isolation, external",ESTIMATED
+MIN,15_SAFETY,status_beacon_leds,0.055,0,0,128,nav + status,ESTIMATED
+MIN,15_SAFETY,arm_brake_release,0.035,45,0,-70,manual brake release,ESTIMATED
+MIN,04_AVIONICS,cooling_ducting,0.04,-40,0,96,intake + exhaust path,ESTIMATED
+MIN,06_MANIPULATOR,manip_J1_actuator,0.19,45.0,0.0,-137.8,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_link_1_structure,0.135,45.0,0.0,-137.8,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_J2_actuator,0.285,181.5,0.0,-165.9,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_link_2_structure,0.165,181.5,0.0,-165.9,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_J3_actuator,0.23,247.6,0.0,-182.1,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_link_3_structure,0.13,247.6,0.0,-182.1,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_J4_actuator,0.095,56.4,0.0,-259.4,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_link_4_structure,0.048,56.4,0.0,-259.4,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_J5_actuator,0.085,13.0,0.0,-312.9,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_link_5_structure,0.042,13.0,0.0,-312.9,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_J6_actuator,0.07,13.0,0.0,-383.9,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_link_6_structure,0.038,13.0,0.0,-383.9,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,manip_internal_wiring,0.105,370.0,0.0,-132.7,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,tool_ft_sensor,0.08,13.0,0.0,-428.9,sized on joint torque,CALCULATED
+MIN,06_MANIPULATOR,tool_changer,0.13,13.0,0.0,-446.9,sized on joint torque,CALCULATED
+NOMINAL,02_PROPULSION,motor_1_upper,0.24,406.6,406.6,30.0,T-Motor U8 II KV100,VENDOR
+NOMINAL,02_PROPULSION,motor_1_lower,0.24,406.6,406.6,-30.0,T-Motor U8 II KV100,VENDOR
+NOMINAL,02_PROPULSION,propeller_1_upper,0.13,406.6,406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+NOMINAL,02_PROPULSION,propeller_1_lower,0.13,406.6,406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+NOMINAL,02_PROPULSION,coax_mount_1,0.311,406.6,406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+NOMINAL,02_PROPULSION,esc_1_upper,0.082,226.3,226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+NOMINAL,02_PROPULSION,esc_1_lower,0.082,226.3,226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+NOMINAL,01_AIRFRAME,arm_tube_1,0.084,277.5,277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+NOMINAL,01_AIRFRAME,arm_root_clamp_1,0.115,152.0,152.0,0,CNC AL7075 split clamp,ESTIMATED
+NOMINAL,11_CABLE,arm_harness_1,0.048,277.5,277.5,-14,6 AWG + signal,ESTIMATED
+NOMINAL,02_PROPULSION,motor_2_upper,0.24,-406.6,406.6,30.0,T-Motor U8 II KV100,VENDOR
+NOMINAL,02_PROPULSION,motor_2_lower,0.24,-406.6,406.6,-30.0,T-Motor U8 II KV100,VENDOR
+NOMINAL,02_PROPULSION,propeller_2_upper,0.13,-406.6,406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+NOMINAL,02_PROPULSION,propeller_2_lower,0.13,-406.6,406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+NOMINAL,02_PROPULSION,coax_mount_2,0.311,-406.6,406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+NOMINAL,02_PROPULSION,esc_2_upper,0.082,-226.3,226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+NOMINAL,02_PROPULSION,esc_2_lower,0.082,-226.3,226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+NOMINAL,01_AIRFRAME,arm_tube_2,0.084,-277.5,277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+NOMINAL,01_AIRFRAME,arm_root_clamp_2,0.115,-152.0,152.0,0,CNC AL7075 split clamp,ESTIMATED
+NOMINAL,11_CABLE,arm_harness_2,0.048,-277.5,277.5,-14,6 AWG + signal,ESTIMATED
+NOMINAL,02_PROPULSION,motor_3_upper,0.24,-406.6,-406.6,30.0,T-Motor U8 II KV100,VENDOR
+NOMINAL,02_PROPULSION,motor_3_lower,0.24,-406.6,-406.6,-30.0,T-Motor U8 II KV100,VENDOR
+NOMINAL,02_PROPULSION,propeller_3_upper,0.13,-406.6,-406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+NOMINAL,02_PROPULSION,propeller_3_lower,0.13,-406.6,-406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+NOMINAL,02_PROPULSION,coax_mount_3,0.311,-406.6,-406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+NOMINAL,02_PROPULSION,esc_3_upper,0.082,-226.3,-226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+NOMINAL,02_PROPULSION,esc_3_lower,0.082,-226.3,-226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+NOMINAL,01_AIRFRAME,arm_tube_3,0.084,-277.5,-277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+NOMINAL,01_AIRFRAME,arm_root_clamp_3,0.115,-152.0,-152.0,0,CNC AL7075 split clamp,ESTIMATED
+NOMINAL,11_CABLE,arm_harness_3,0.048,-277.5,-277.5,-14,6 AWG + signal,ESTIMATED
+NOMINAL,02_PROPULSION,motor_4_upper,0.24,406.6,-406.6,30.0,T-Motor U8 II KV100,VENDOR
+NOMINAL,02_PROPULSION,motor_4_lower,0.24,406.6,-406.6,-30.0,T-Motor U8 II KV100,VENDOR
+NOMINAL,02_PROPULSION,propeller_4_upper,0.13,406.6,-406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+NOMINAL,02_PROPULSION,propeller_4_lower,0.13,406.6,-406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+NOMINAL,02_PROPULSION,coax_mount_4,0.311,406.6,-406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+NOMINAL,02_PROPULSION,esc_4_upper,0.082,226.3,-226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+NOMINAL,02_PROPULSION,esc_4_lower,0.082,226.3,-226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+NOMINAL,01_AIRFRAME,arm_tube_4,0.084,277.5,-277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+NOMINAL,01_AIRFRAME,arm_root_clamp_4,0.115,152.0,-152.0,0,CNC AL7075 split clamp,ESTIMATED
+NOMINAL,11_CABLE,arm_harness_4,0.048,277.5,-277.5,-14,6 AWG + signal,ESTIMATED
+NOMINAL,01_AIRFRAME,spine_rail_L,0.42,0,105,0,"CF box 55x26x2.5, 510 long",CALCULATED
+NOMINAL,01_AIRFRAME,spine_rail_R,0.42,0,-105,0,"CF box 55x26x2.5, 510 long",CALCULATED
+NOMINAL,01_AIRFRAME,spine_cross_F,0.105,175,0,0,CF box cross member,CALCULATED
+NOMINAL,01_AIRFRAME,spine_cross_A,0.105,-175,0,0,CF box cross member,CALCULATED
+NOMINAL,01_AIRFRAME,corner_casting_11,0.086,175,105,0,CNC AL7075 node,ESTIMATED
+NOMINAL,01_AIRFRAME,corner_casting_1-1,0.086,175,-105,0,CNC AL7075 node,ESTIMATED
+NOMINAL,01_AIRFRAME,corner_casting_-11,0.086,-175,105,0,CNC AL7075 node,ESTIMATED
+NOMINAL,01_AIRFRAME,corner_casting_-1-1,0.086,-175,-105,0,CNC AL7075 node,ESTIMATED
+NOMINAL,01_AIRFRAME,manipulator_hub,0.385,45,0,-48,"CNC AL7075, sized on 34 Nm",CALCULATED
+NOMINAL,01_AIRFRAME,panel_top_service,0.155,-40,0,116,"PA-CF printed, 6 x quarter-turn",ESTIMATED
+NOMINAL,01_AIRFRAME,panel_lower_service,0.14,-20,0,-152,"CF sandwich, 6 x quarter-turn",ESTIMATED
+NOMINAL,01_AIRFRAME,panel_side_L,0.088,0,132,-60,PA-CF printed,ESTIMATED
+NOMINAL,01_AIRFRAME,panel_side_R,0.088,0,-132,-60,PA-CF printed,ESTIMATED
+NOMINAL,01_AIRFRAME,fastener_allowance,0.165,0,0,-20,"A2 stainless, distributed",ESTIMATED
+NOMINAL,10_LANDING_GEAR,lg_leg_11,0.132,150,220,-300,"CF 22/18 tube, splayed",CALCULATED
+NOMINAL,10_LANDING_GEAR,lg_leg_1-1,0.132,150,-220,-300,"CF 22/18 tube, splayed",CALCULATED
+NOMINAL,10_LANDING_GEAR,lg_leg_-11,0.132,-150,220,-300,"CF 22/18 tube, splayed",CALCULATED
+NOMINAL,10_LANDING_GEAR,lg_leg_-1-1,0.132,-150,-220,-300,"CF 22/18 tube, splayed",CALCULATED
+NOMINAL,10_LANDING_GEAR,lg_skid_L,0.148,0,340,-520,"CF 26/22 tube, 620 long",CALCULATED
+NOMINAL,10_LANDING_GEAR,lg_damper_L,0.062,0,300,-430,elastomeric shock leg,ESTIMATED
+NOMINAL,10_LANDING_GEAR,lg_skid_R,0.148,0,-340,-520,"CF 26/22 tube, 620 long",CALCULATED
+NOMINAL,10_LANDING_GEAR,lg_damper_R,0.062,0,-300,-430,elastomeric shock leg,ESTIMATED
+NOMINAL,10_LANDING_GEAR,lg_foot_11,0.03,250,340,-530,replaceable TPU foot,ESTIMATED
+NOMINAL,10_LANDING_GEAR,lg_foot_1-1,0.03,250,-340,-530,replaceable TPU foot,ESTIMATED
+NOMINAL,10_LANDING_GEAR,lg_foot_-11,0.03,-250,340,-530,replaceable TPU foot,ESTIMATED
+NOMINAL,10_LANDING_GEAR,lg_foot_-1-1,0.03,-250,-340,-530,replaceable TPU foot,ESTIMATED
+NOMINAL,04_AVIONICS,flight_controller,0.1,-40,-62,78,Holybro Pixhawk 6X class,VENDOR
+NOMINAL,04_AVIONICS,fc_isolator_tray,0.045,-40,-62,62,4 x wire-rope isolator,ESTIMATED
+NOMINAL,04_AVIONICS,companion_computer,0.3,-40,62,76,Jetson Orin NX + carrier,VENDOR
+NOMINAL,04_AVIONICS,compute_cooling,0.085,-40,62,104,heatsink + 50 mm fan,ESTIMATED
+NOMINAL,04_AVIONICS,power_distribution,0.15,-125,0,-28,"12S PDB, 4 ESC pairs",ESTIMATED
+NOMINAL,04_AVIONICS,power_switch_relay,0.09,-165,0,-28,anti-spark + isolation relay,ESTIMATED
+NOMINAL,04_AVIONICS,dcdc_converters,0.075,-125,-70,60,12S -> 19 V / 5 V,ESTIMATED
+NOMINAL,04_AVIONICS,telemetry_radio,0.035,-160,55,62,900 MHz,ESTIMATED
+NOMINAL,04_AVIONICS,rc_receiver,0.02,-160,-30,62,dual-band,ESTIMATED
+NOMINAL,04_AVIONICS,antenna_1,0.02,-215,90,20,whip / patch,ESTIMATED
+NOMINAL,04_AVIONICS,antenna_2,0.02,-215,-90,20,whip / patch,ESTIMATED
+NOMINAL,04_AVIONICS,antenna_3,0.02,170,132,20,whip / patch,ESTIMATED
+NOMINAL,04_AVIONICS,antenna_4,0.02,170,-132,20,whip / patch,ESTIMATED
+NOMINAL,11_CABLE,wiring_harness_main,0.395,-45,0,-10,HV + signal looms,ESTIMATED
+NOMINAL,11_CABLE,connectors_bulkheads,0.115,-60,0,-20,module-boundary connectors,ESTIMATED
+NOMINAL,05_PERCEPTION,lidar,0.3,30,0,212,360 x 45 deg 3D LiDAR,VENDOR
+NOMINAL,05_PERCEPTION,lidar_mast,0.078,30,0,150,CF mast + isolator,ESTIMATED
+NOMINAL,05_PERCEPTION,rgb_gimbal,0.25,198,96,-88,"3-axis 4K, front-left boom",VENDOR
+NOMINAL,05_PERCEPTION,gimbal_boom,0.058,150,96,-40,CF boom,CALCULATED
+NOMINAL,05_PERCEPTION,depth_camera,0.075,216,0,16,stereo IR + RGB,VENDOR
+NOMINAL,05_PERCEPTION,depth_bracket,0.036,200,0,10,AL bracket,ESTIMATED
+NOMINAL,05_PERCEPTION,gnss_rtk_1,0.11,-150,125,182,"RTK antenna, 250 mm baseline",VENDOR
+NOMINAL,05_PERCEPTION,gnss_mast_1,0.028,-150,125,120,CF mast,ESTIMATED
+NOMINAL,05_PERCEPTION,gnss_rtk_2,0.11,-150,-125,182,"RTK antenna, 250 mm baseline",VENDOR
+NOMINAL,05_PERCEPTION,gnss_mast_2,0.028,-150,-125,120,CF mast,ESTIMATED
+NOMINAL,05_PERCEPTION,range_finder,0.03,-140,-72,-156,downward laser altimeter,VENDOR
+NOMINAL,05_PERCEPTION,optical_flow,0.018,-140,72,-156,flow + ToF,VENDOR
+NOMINAL,05_PERCEPTION,inspection_lamp,0.095,198,-96,-88,high-CRI LED cluster,ESTIMATED
+NOMINAL,09_LIQUID,reservoir_shell,0.215,-72,0,-100,"blow-moulded HDPE, 1.15 L, baffled",CALCULATED
+NOMINAL,09_LIQUID,reservoir_baffles,0.048,-72,0,-100,"3 x transverse, 65 % open",CALCULATED
+NOMINAL,09_LIQUID,pump,0.285,-148,0,-92,"diaphragm, 0-6 bar, 1.2 L/min",VENDOR
+NOMINAL,09_LIQUID,filter_40um,0.052,-118,58,-92,"inline 40 um, serviceable",VENDOR
+NOMINAL,09_LIQUID,check_valve,0.024,-100,58,-92,0.2 bar cracking,VENDOR
+NOMINAL,09_LIQUID,relief_bypass_valve,0.038,-118,-58,-92,6.5 bar bypass to tank,VENDOR
+NOMINAL,09_LIQUID,pressure_sensor,0.026,-90,-58,-92,"0-10 bar, 4-20 mA",VENDOR
+NOMINAL,09_LIQUID,quick_connect,0.032,-40,0,-128,"dry-break, tank side",VENDOR
+NOMINAL,09_LIQUID,hose_body,0.045,0,0,-110,PTFE-lined,ESTIMATED
+NOMINAL,09_LIQUID,hose_arm_routed,0.06,150,0,-280,"along links, service loops",ESTIMATED
+NOMINAL,09_LIQUID,fluid_mount_bracket,0.125,-95,0,-128,CF tray + quarter-turn latches,ESTIMATED
+NOMINAL,03_BATTERY,battery_cartridge_1,3.6,0.0,92,-102,12S 24 Ah LiPo (2 x 12 Ah parallel),ESTIMATED
+NOMINAL,03_BATTERY,battery_cartridge_2,3.6,0.0,-92,-102,12S 24 Ah LiPo (2 x 12 Ah parallel),ESTIMATED
+NOMINAL,03_BATTERY,battery_tray_rail,0.185,0,0,-132,"indexed rail, 3 detents",CALCULATED
+NOMINAL,03_BATTERY,battery_latches,0.07,-100,0,-102,2 x quarter-turn + XT150,ESTIMATED
+NOMINAL,15_SAFETY,emergency_stop,0.045,-205,0,-30,"HV isolation, external",ESTIMATED
+NOMINAL,15_SAFETY,status_beacon_leds,0.055,0,0,128,nav + status,ESTIMATED
+NOMINAL,15_SAFETY,arm_brake_release,0.035,45,0,-70,manual brake release,ESTIMATED
+NOMINAL,04_AVIONICS,cooling_ducting,0.04,-40,0,96,intake + exhaust path,ESTIMATED
+NOMINAL,09_LIQUID,fluid_charge,1.0,-72,0,-118,1.0 L service fluid,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_J1_actuator,0.19,45.0,0.0,-137.8,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_link_1_structure,0.135,45.0,0.0,-137.8,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_J2_actuator,0.285,181.5,0.0,-165.9,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_link_2_structure,0.165,181.5,0.0,-165.9,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_J3_actuator,0.23,247.6,0.0,-182.1,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_link_3_structure,0.13,247.6,0.0,-182.1,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_J4_actuator,0.095,56.4,0.0,-259.4,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_link_4_structure,0.048,56.4,0.0,-259.4,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_J5_actuator,0.085,13.0,0.0,-312.9,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_link_5_structure,0.042,13.0,0.0,-312.9,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_J6_actuator,0.07,13.0,0.0,-383.9,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_link_6_structure,0.038,13.0,0.0,-383.9,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,manip_internal_wiring,0.105,370.0,0.0,-132.7,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,tool_ft_sensor,0.08,13.0,0.0,-428.9,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,tool_changer,0.13,13.0,0.0,-446.9,sized on joint torque,CALCULATED
+NOMINAL,06_MANIPULATOR,tool_nozzle,0.24,13.0,0.0,-461.9,sized on joint torque,CALCULATED
+MAX,02_PROPULSION,motor_1_upper,0.24,406.6,406.6,30.0,T-Motor U8 II KV100,VENDOR
+MAX,02_PROPULSION,motor_1_lower,0.24,406.6,406.6,-30.0,T-Motor U8 II KV100,VENDOR
+MAX,02_PROPULSION,propeller_1_upper,0.13,406.6,406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+MAX,02_PROPULSION,propeller_1_lower,0.13,406.6,406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+MAX,02_PROPULSION,coax_mount_1,0.311,406.6,406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+MAX,02_PROPULSION,esc_1_upper,0.082,226.3,226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+MAX,02_PROPULSION,esc_1_lower,0.082,226.3,226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+MAX,01_AIRFRAME,arm_tube_1,0.084,277.5,277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+MAX,01_AIRFRAME,arm_root_clamp_1,0.115,152.0,152.0,0,CNC AL7075 split clamp,ESTIMATED
+MAX,11_CABLE,arm_harness_1,0.048,277.5,277.5,-14,6 AWG + signal,ESTIMATED
+MAX,02_PROPULSION,motor_2_upper,0.24,-406.6,406.6,30.0,T-Motor U8 II KV100,VENDOR
+MAX,02_PROPULSION,motor_2_lower,0.24,-406.6,406.6,-30.0,T-Motor U8 II KV100,VENDOR
+MAX,02_PROPULSION,propeller_2_upper,0.13,-406.6,406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+MAX,02_PROPULSION,propeller_2_lower,0.13,-406.6,406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+MAX,02_PROPULSION,coax_mount_2,0.311,-406.6,406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+MAX,02_PROPULSION,esc_2_upper,0.082,-226.3,226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+MAX,02_PROPULSION,esc_2_lower,0.082,-226.3,226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+MAX,01_AIRFRAME,arm_tube_2,0.084,-277.5,277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+MAX,01_AIRFRAME,arm_root_clamp_2,0.115,-152.0,152.0,0,CNC AL7075 split clamp,ESTIMATED
+MAX,11_CABLE,arm_harness_2,0.048,-277.5,277.5,-14,6 AWG + signal,ESTIMATED
+MAX,02_PROPULSION,motor_3_upper,0.24,-406.6,-406.6,30.0,T-Motor U8 II KV100,VENDOR
+MAX,02_PROPULSION,motor_3_lower,0.24,-406.6,-406.6,-30.0,T-Motor U8 II KV100,VENDOR
+MAX,02_PROPULSION,propeller_3_upper,0.13,-406.6,-406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+MAX,02_PROPULSION,propeller_3_lower,0.13,-406.6,-406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+MAX,02_PROPULSION,coax_mount_3,0.311,-406.6,-406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+MAX,02_PROPULSION,esc_3_upper,0.082,-226.3,-226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+MAX,02_PROPULSION,esc_3_lower,0.082,-226.3,-226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+MAX,01_AIRFRAME,arm_tube_3,0.084,-277.5,-277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+MAX,01_AIRFRAME,arm_root_clamp_3,0.115,-152.0,-152.0,0,CNC AL7075 split clamp,ESTIMATED
+MAX,11_CABLE,arm_harness_3,0.048,-277.5,-277.5,-14,6 AWG + signal,ESTIMATED
+MAX,02_PROPULSION,motor_4_upper,0.24,406.6,-406.6,30.0,T-Motor U8 II KV100,VENDOR
+MAX,02_PROPULSION,motor_4_lower,0.24,406.6,-406.6,-30.0,T-Motor U8 II KV100,VENDOR
+MAX,02_PROPULSION,propeller_4_upper,0.13,406.6,-406.6,62.0,T-Motor G28x9.2 CF,VENDOR
+MAX,02_PROPULSION,propeller_4_lower,0.13,406.6,-406.6,-62.0,T-Motor G28x9.2 CF,VENDOR
+MAX,02_PROPULSION,coax_mount_4,0.311,406.6,-406.6,0,X-U8II arm set less motors/ESCs,VENDOR
+MAX,02_PROPULSION,esc_4_upper,0.082,226.3,-226.3,22,T-Motor ALPHA 60A 12S,VENDOR
+MAX,02_PROPULSION,esc_4_lower,0.082,226.3,-226.3,-22,T-Motor ALPHA 60A 12S,VENDOR
+MAX,01_AIRFRAME,arm_tube_4,0.084,277.5,-277.5,0,"CF 25/21 tube, root-moment sized",CALCULATED
+MAX,01_AIRFRAME,arm_root_clamp_4,0.115,152.0,-152.0,0,CNC AL7075 split clamp,ESTIMATED
+MAX,11_CABLE,arm_harness_4,0.048,277.5,-277.5,-14,6 AWG + signal,ESTIMATED
+MAX,01_AIRFRAME,spine_rail_L,0.42,0,105,0,"CF box 55x26x2.5, 510 long",CALCULATED
+MAX,01_AIRFRAME,spine_rail_R,0.42,0,-105,0,"CF box 55x26x2.5, 510 long",CALCULATED
+MAX,01_AIRFRAME,spine_cross_F,0.105,175,0,0,CF box cross member,CALCULATED
+MAX,01_AIRFRAME,spine_cross_A,0.105,-175,0,0,CF box cross member,CALCULATED
+MAX,01_AIRFRAME,corner_casting_11,0.086,175,105,0,CNC AL7075 node,ESTIMATED
+MAX,01_AIRFRAME,corner_casting_1-1,0.086,175,-105,0,CNC AL7075 node,ESTIMATED
+MAX,01_AIRFRAME,corner_casting_-11,0.086,-175,105,0,CNC AL7075 node,ESTIMATED
+MAX,01_AIRFRAME,corner_casting_-1-1,0.086,-175,-105,0,CNC AL7075 node,ESTIMATED
+MAX,01_AIRFRAME,manipulator_hub,0.385,45,0,-48,"CNC AL7075, sized on 34 Nm",CALCULATED
+MAX,01_AIRFRAME,panel_top_service,0.155,-40,0,116,"PA-CF printed, 6 x quarter-turn",ESTIMATED
+MAX,01_AIRFRAME,panel_lower_service,0.14,-20,0,-152,"CF sandwich, 6 x quarter-turn",ESTIMATED
+MAX,01_AIRFRAME,panel_side_L,0.088,0,132,-60,PA-CF printed,ESTIMATED
+MAX,01_AIRFRAME,panel_side_R,0.088,0,-132,-60,PA-CF printed,ESTIMATED
+MAX,01_AIRFRAME,fastener_allowance,0.165,0,0,-20,"A2 stainless, distributed",ESTIMATED
+MAX,10_LANDING_GEAR,lg_leg_11,0.132,150,220,-300,"CF 22/18 tube, splayed",CALCULATED
+MAX,10_LANDING_GEAR,lg_leg_1-1,0.132,150,-220,-300,"CF 22/18 tube, splayed",CALCULATED
+MAX,10_LANDING_GEAR,lg_leg_-11,0.132,-150,220,-300,"CF 22/18 tube, splayed",CALCULATED
+MAX,10_LANDING_GEAR,lg_leg_-1-1,0.132,-150,-220,-300,"CF 22/18 tube, splayed",CALCULATED
+MAX,10_LANDING_GEAR,lg_skid_L,0.148,0,340,-520,"CF 26/22 tube, 620 long",CALCULATED
+MAX,10_LANDING_GEAR,lg_damper_L,0.062,0,300,-430,elastomeric shock leg,ESTIMATED
+MAX,10_LANDING_GEAR,lg_skid_R,0.148,0,-340,-520,"CF 26/22 tube, 620 long",CALCULATED
+MAX,10_LANDING_GEAR,lg_damper_R,0.062,0,-300,-430,elastomeric shock leg,ESTIMATED
+MAX,10_LANDING_GEAR,lg_foot_11,0.03,250,340,-530,replaceable TPU foot,ESTIMATED
+MAX,10_LANDING_GEAR,lg_foot_1-1,0.03,250,-340,-530,replaceable TPU foot,ESTIMATED
+MAX,10_LANDING_GEAR,lg_foot_-11,0.03,-250,340,-530,replaceable TPU foot,ESTIMATED
+MAX,10_LANDING_GEAR,lg_foot_-1-1,0.03,-250,-340,-530,replaceable TPU foot,ESTIMATED
+MAX,04_AVIONICS,flight_controller,0.1,-40,-62,78,Holybro Pixhawk 6X class,VENDOR
+MAX,04_AVIONICS,fc_isolator_tray,0.045,-40,-62,62,4 x wire-rope isolator,ESTIMATED
+MAX,04_AVIONICS,companion_computer,0.3,-40,62,76,Jetson Orin NX + carrier,VENDOR
+MAX,04_AVIONICS,compute_cooling,0.085,-40,62,104,heatsink + 50 mm fan,ESTIMATED
+MAX,04_AVIONICS,power_distribution,0.15,-125,0,-28,"12S PDB, 4 ESC pairs",ESTIMATED
+MAX,04_AVIONICS,power_switch_relay,0.09,-165,0,-28,anti-spark + isolation relay,ESTIMATED
+MAX,04_AVIONICS,dcdc_converters,0.075,-125,-70,60,12S -> 19 V / 5 V,ESTIMATED
+MAX,04_AVIONICS,telemetry_radio,0.035,-160,55,62,900 MHz,ESTIMATED
+MAX,04_AVIONICS,rc_receiver,0.02,-160,-30,62,dual-band,ESTIMATED
+MAX,04_AVIONICS,antenna_1,0.02,-215,90,20,whip / patch,ESTIMATED
+MAX,04_AVIONICS,antenna_2,0.02,-215,-90,20,whip / patch,ESTIMATED
+MAX,04_AVIONICS,antenna_3,0.02,170,132,20,whip / patch,ESTIMATED
+MAX,04_AVIONICS,antenna_4,0.02,170,-132,20,whip / patch,ESTIMATED
+MAX,11_CABLE,wiring_harness_main,0.395,-45,0,-10,HV + signal looms,ESTIMATED
+MAX,11_CABLE,connectors_bulkheads,0.115,-60,0,-20,module-boundary connectors,ESTIMATED
+MAX,05_PERCEPTION,lidar,0.3,30,0,212,360 x 45 deg 3D LiDAR,VENDOR
+MAX,05_PERCEPTION,lidar_mast,0.078,30,0,150,CF mast + isolator,ESTIMATED
+MAX,05_PERCEPTION,rgb_gimbal,0.25,198,96,-88,"3-axis 4K, front-left boom",VENDOR
+MAX,05_PERCEPTION,gimbal_boom,0.058,150,96,-40,CF boom,CALCULATED
+MAX,05_PERCEPTION,depth_camera,0.075,216,0,16,stereo IR + RGB,VENDOR
+MAX,05_PERCEPTION,depth_bracket,0.036,200,0,10,AL bracket,ESTIMATED
+MAX,05_PERCEPTION,gnss_rtk_1,0.11,-150,125,182,"RTK antenna, 250 mm baseline",VENDOR
+MAX,05_PERCEPTION,gnss_mast_1,0.028,-150,125,120,CF mast,ESTIMATED
+MAX,05_PERCEPTION,gnss_rtk_2,0.11,-150,-125,182,"RTK antenna, 250 mm baseline",VENDOR
+MAX,05_PERCEPTION,gnss_mast_2,0.028,-150,-125,120,CF mast,ESTIMATED
+MAX,05_PERCEPTION,range_finder,0.03,-140,-72,-156,downward laser altimeter,VENDOR
+MAX,05_PERCEPTION,optical_flow,0.018,-140,72,-156,flow + ToF,VENDOR
+MAX,05_PERCEPTION,inspection_lamp,0.095,198,-96,-88,high-CRI LED cluster,ESTIMATED
+MAX,09_LIQUID,reservoir_shell,0.215,-72,0,-100,"blow-moulded HDPE, 1.15 L, baffled",CALCULATED
+MAX,09_LIQUID,reservoir_baffles,0.048,-72,0,-100,"3 x transverse, 65 % open",CALCULATED
+MAX,09_LIQUID,pump,0.285,-148,0,-92,"diaphragm, 0-6 bar, 1.2 L/min",VENDOR
+MAX,09_LIQUID,filter_40um,0.052,-118,58,-92,"inline 40 um, serviceable",VENDOR
+MAX,09_LIQUID,check_valve,0.024,-100,58,-92,0.2 bar cracking,VENDOR
+MAX,09_LIQUID,relief_bypass_valve,0.038,-118,-58,-92,6.5 bar bypass to tank,VENDOR
+MAX,09_LIQUID,pressure_sensor,0.026,-90,-58,-92,"0-10 bar, 4-20 mA",VENDOR
+MAX,09_LIQUID,quick_connect,0.032,-40,0,-128,"dry-break, tank side",VENDOR
+MAX,09_LIQUID,hose_body,0.045,0,0,-110,PTFE-lined,ESTIMATED
+MAX,09_LIQUID,hose_arm_routed,0.06,150,0,-280,"along links, service loops",ESTIMATED
+MAX,09_LIQUID,fluid_mount_bracket,0.125,-95,0,-128,CF tray + quarter-turn latches,ESTIMATED
+MAX,03_BATTERY,battery_cartridge_1,3.6,0.0,92,-102,12S 24 Ah LiPo (2 x 12 Ah parallel),ESTIMATED
+MAX,03_BATTERY,battery_cartridge_2,3.6,0.0,-92,-102,12S 24 Ah LiPo (2 x 12 Ah parallel),ESTIMATED
+MAX,03_BATTERY,battery_tray_rail,0.185,0,0,-132,"indexed rail, 3 detents",CALCULATED
+MAX,03_BATTERY,battery_latches,0.07,-100,0,-102,2 x quarter-turn + XT150,ESTIMATED
+MAX,15_SAFETY,emergency_stop,0.045,-205,0,-30,"HV isolation, external",ESTIMATED
+MAX,15_SAFETY,status_beacon_leds,0.055,0,0,128,nav + status,ESTIMATED
+MAX,15_SAFETY,arm_brake_release,0.035,45,0,-70,manual brake release,ESTIMATED
+MAX,04_AVIONICS,cooling_ducting,0.04,-40,0,96,intake + exhaust path,ESTIMATED
+MAX,09_LIQUID,fluid_charge,1.0,-72,0,-118,1.0 L service fluid,CALCULATED
+MAX,06_MANIPULATOR,manip_J1_actuator,0.19,45.0,0.0,-137.8,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_link_1_structure,0.135,45.0,0.0,-137.8,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_J2_actuator,0.285,183.6,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_link_2_structure,0.165,183.6,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_J3_actuator,0.23,507.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_link_3_structure,0.13,507.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_J4_actuator,0.095,713.2,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_link_4_structure,0.048,713.2,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_J5_actuator,0.085,796.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_link_5_structure,0.042,796.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_J6_actuator,0.07,867.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_link_6_structure,0.038,867.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,manip_internal_wiring,0.105,375.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,tool_ft_sensor,0.08,912.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,tool_changer,0.13,930.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,tool_gripper,0.38,945.0,0.0,-190.0,sized on joint torque,CALCULATED
+MAX,06_MANIPULATOR,carried_object,0.62,945.0,0.0,-190.0,sized on joint torque,CALCULATED

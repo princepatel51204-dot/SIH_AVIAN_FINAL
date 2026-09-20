@@ -1,0 +1,537 @@
+<?xml version="1.0" ?>
+<robot name="avian">
+  <material name="avian_body">
+    <color rgba="0.16 0.17 0.19 1"/>
+  </material>
+  <material name="avian_arm">
+    <color rgba="0.62 0.63 0.66 1"/>
+  </material>
+  <material name="avian_rotor">
+    <color rgba="0.08 0.08 0.09 1"/>
+  </material>
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.010526 0.001674 -0.071259" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="18.657000"/>
+      <inertia ixx="0.701195901" iyy="0.621899722" izz="0.850011909" ixy="-0.003980921" ixz="0.010856172" iyz="-0.001836605"/>
+    </inertial>
+    <collision name="body">
+      <geometry>
+        <box size="0.19720 0.19720 0.18000"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.020000" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <collision name="arm_1">
+      <geometry>
+        <cylinder radius="0.01624" length="0.57500"/>
+      </geometry>
+      <origin xyz="0.203293 0.203293 0.000000" rpy="0.000000 1.570796 0.785398"/>
+    </collision>
+    <collision name="arm_2">
+      <geometry>
+        <cylinder radius="0.01624" length="0.57500"/>
+      </geometry>
+      <origin xyz="-0.203293 0.203293 0.000000" rpy="0.000000 1.570796 2.356194"/>
+    </collision>
+    <collision name="arm_3">
+      <geometry>
+        <cylinder radius="0.01624" length="0.57500"/>
+      </geometry>
+      <origin xyz="-0.203293 -0.203293 0.000000" rpy="0.000000 1.570796 3.926991"/>
+    </collision>
+    <collision name="arm_4">
+      <geometry>
+        <cylinder radius="0.01624" length="0.57500"/>
+      </geometry>
+      <origin xyz="0.203293 -0.203293 0.000000" rpy="0.000000 1.570796 5.497787"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_body"/>
+    </visual>
+  </link>
+  <link name="rotor_1_upper">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.370000"/>
+      <inertia ixx="0.011696751" iyy="0.011696751" izz="0.023393502" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/rotor_1_upper.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_rotor"/>
+    </visual>
+  </link>
+  <joint name="rotor_1_upper_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_1_upper"/>
+    <origin xyz="0.406586 0.406586 0.062000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_1_lower">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.370000"/>
+      <inertia ixx="0.011696751" iyy="0.011696751" izz="0.023393502" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/rotor_1_lower.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_rotor"/>
+    </visual>
+  </link>
+  <joint name="rotor_1_lower_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_1_lower"/>
+    <origin xyz="0.406586 0.406586 -0.062000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_2_upper">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.370000"/>
+      <inertia ixx="0.011696751" iyy="0.011696751" izz="0.023393502" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/rotor_2_upper.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_rotor"/>
+    </visual>
+  </link>
+  <joint name="rotor_2_upper_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_2_upper"/>
+    <origin xyz="-0.406586 0.406586 0.062000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_2_lower">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.370000"/>
+      <inertia ixx="0.011696751" iyy="0.011696751" izz="0.023393502" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/rotor_2_lower.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_rotor"/>
+    </visual>
+  </link>
+  <joint name="rotor_2_lower_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_2_lower"/>
+    <origin xyz="-0.406586 0.406586 -0.062000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_3_upper">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.370000"/>
+      <inertia ixx="0.011696751" iyy="0.011696751" izz="0.023393502" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/rotor_3_upper.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_rotor"/>
+    </visual>
+  </link>
+  <joint name="rotor_3_upper_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_3_upper"/>
+    <origin xyz="-0.406586 -0.406586 0.062000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_3_lower">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.370000"/>
+      <inertia ixx="0.011696751" iyy="0.011696751" izz="0.023393502" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/rotor_3_lower.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_rotor"/>
+    </visual>
+  </link>
+  <joint name="rotor_3_lower_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_3_lower"/>
+    <origin xyz="-0.406586 -0.406586 -0.062000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_4_upper">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.370000"/>
+      <inertia ixx="0.011696751" iyy="0.011696751" izz="0.023393502" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/rotor_4_upper.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_rotor"/>
+    </visual>
+  </link>
+  <joint name="rotor_4_upper_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_4_upper"/>
+    <origin xyz="0.406586 -0.406586 0.062000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_4_lower">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.370000"/>
+      <inertia ixx="0.011696751" iyy="0.011696751" izz="0.023393502" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/rotor_4_lower.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_rotor"/>
+    </visual>
+  </link>
+  <joint name="rotor_4_lower_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_4_lower"/>
+    <origin xyz="0.406586 -0.406586 -0.062000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="arm_base_link">
+    <inertial>
+      <origin xyz="0.325000 0.000000 -0.037700" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.105000"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <collision name="hub">
+      <geometry>
+        <cylinder radius="0.04800" length="0.07800"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/arm_base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="arm_base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="arm_base_link"/>
+    <origin xyz="0.045000 0.000000 -0.095000" rpy="0.000000 0.000000 0.000000"/>
+  </joint>
+  <link name="link_1">
+    <inertial>
+      <origin xyz="0.000000 0.000000 -0.042800" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.325000"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <collision name="body">
+      <geometry>
+        <cylinder radius="0.04800" length="0.29700"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.165000" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="J1" type="revolute">
+    <parent link="arm_base_link"/>
+    <child link="link_1"/>
+    <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit lower="-3.141593" upper="3.141593" effort="24.000" velocity="1.570796"/>
+    <dynamics damping="0.06" friction="0.02"/>
+  </joint>
+  <link name="link_2">
+    <inertial>
+      <origin xyz="0.136500 0.000000 0.024100" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.450000"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <collision name="body">
+      <geometry>
+        <cylinder radius="0.04100" length="0.27000"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.150000" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="J2" type="revolute">
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <origin xyz="0.000000 0.000000 -0.095000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0.0 -1.0 0.0"/>
+    <limit lower="-2.007129" upper="2.007129" effort="40.000" velocity="1.047198"/>
+    <dynamics damping="0.06" friction="0.02"/>
+  </joint>
+  <link name="link_3">
+    <inertial>
+      <origin xyz="0.202600 0.000000 0.337900" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.360000"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <collision name="body">
+      <geometry>
+        <cylinder radius="0.03500" length="0.07650"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.042500" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="J3" type="revolute">
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <origin xyz="0.000000 0.000000 -0.330000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0.0 -1.0 0.0"/>
+    <limit lower="-2.792527" upper="2.792527" effort="25.000" velocity="1.221730"/>
+    <dynamics damping="0.06" friction="0.02"/>
+  </joint>
+  <link name="link_4">
+    <inertial>
+      <origin xyz="0.011400 0.000000 0.560600" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.143000"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <collision name="body">
+      <geometry>
+        <cylinder radius="0.02800" length="0.07200"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.040000" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/link_4.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="J4" type="revolute">
+    <parent link="link_3"/>
+    <child link="link_4"/>
+    <origin xyz="0.000000 0.000000 -0.300000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0.0 0.0 -1.0"/>
+    <limit lower="-3.141593" upper="3.141593" effort="8.000" velocity="2.617994"/>
+    <dynamics damping="0.06" friction="0.02"/>
+  </joint>
+  <link name="link_5">
+    <inertial>
+      <origin xyz="-0.032000 0.000000 0.592100" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.127000"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <collision name="body">
+      <geometry>
+        <cylinder radius="0.02500" length="0.05400"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.030000" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/link_5.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="J5" type="revolute">
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <origin xyz="0.000000 0.000000 -0.085000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="0.0 -1.0 0.0"/>
+    <limit lower="-2.094395" upper="2.094395" effort="10.000" velocity="2.094395"/>
+    <dynamics damping="0.06" friction="0.02"/>
+  </joint>
+  <link name="link_6">
+    <inertial>
+      <origin xyz="-0.032000 0.000000 0.601100" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.108000"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <collision name="body">
+      <geometry>
+        <cylinder radius="0.02300" length="0.05400"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.030000" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/link_6.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="J6" type="revolute">
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <origin xyz="0.000000 0.000000 -0.080000" rpy="0.000000 0.000000 0.000000"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <limit lower="-3.141593" upper="3.141593" effort="8.000" velocity="2.617994"/>
+    <dynamics damping="0.06" friction="0.02"/>
+  </joint>
+  <link name="tool0">
+    <inertial>
+      <origin xyz="-0.032000 0.000000 0.593300" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.450000"/>
+      <inertia ixx="0.000069552" iyy="0.000069552" izz="0.000001000" ixy="0.000000000" ixz="0.000000000" iyz="0.000000000"/>
+    </inertial>
+    <collision name="tool">
+      <geometry>
+        <cylinder radius="0.01100" length="0.03800"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.019000" rpy="0.000000 0.000000 0.000000"/>
+    </collision>
+    <visual name="cad">
+      <geometry>
+        <mesh filename="meshes/tool0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="tool0_joint" type="fixed">
+    <parent link="link_6"/>
+    <child link="tool0"/>
+    <origin xyz="0.000000 0.000000 -0.060000" rpy="0.000000 0.000000 0.000000"/>
+  </joint>
+  <link name="nozzle_tip">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+    <visual name="tip">
+      <geometry>
+        <cylinder radius="0.00120" length="0.02600"/>
+      </geometry>
+      <origin xyz="0.000000 0.000000 -0.013000" rpy="0.000000 0.000000 0.000000"/>
+      <material name="avian_arm"/>
+    </visual>
+  </link>
+  <joint name="nozzle_tip_joint" type="fixed">
+    <parent link="tool0"/>
+    <child link="nozzle_tip"/>
+    <origin xyz="0.000000 0.000000 0.015000" rpy="0.000000 0.000000 0.000000"/>
+  </joint>
+  <link name="sensor_rgb_front">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="sensor_rgb_front_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sensor_rgb_front"/>
+    <origin xyz="0.220000 0.000000 -0.020000" rpy="1.570796 -0.000000 -1.570796"/>
+  </joint>
+  <link name="sensor_rgb_down">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="sensor_rgb_down_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sensor_rgb_down"/>
+    <origin xyz="0.020000 0.000000 -0.110000" rpy="0.000000 0.000000 -1.570796"/>
+  </joint>
+  <link name="sensor_rgb_side">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="sensor_rgb_side_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sensor_rgb_side"/>
+    <origin xyz="0.050000 -0.190000 -0.020000" rpy="1.361357 0.000000 -3.141593"/>
+  </joint>
+  <link name="sensor_depth">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="sensor_depth_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sensor_depth"/>
+    <origin xyz="0.200000 0.000000 0.040000" rpy="1.570796 -0.000000 -1.570796"/>
+  </joint>
+  <link name="sensor_lidar">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="sensor_lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sensor_lidar"/>
+    <origin xyz="0.000000 0.000000 0.130000" rpy="0.000000 -0.000000 0.000000"/>
+  </joint>
+  <link name="sensor_thermal">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="sensor_thermal_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sensor_thermal"/>
+    <origin xyz="0.200000 0.100000 -0.020000" rpy="1.570796 -0.000000 -1.570796"/>
+  </joint>
+  <link name="sensor_imu">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.000001000" iyy="0.000001000" izz="0.000001000" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="sensor_imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sensor_imu"/>
+    <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 -0.000000 0.000000"/>
+  </joint>
+</robot>

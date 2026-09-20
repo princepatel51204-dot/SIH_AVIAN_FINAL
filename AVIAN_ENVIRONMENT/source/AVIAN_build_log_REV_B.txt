@@ -1,0 +1,78 @@
+BUILD  (REV-B, upgrade of REV-A -- geometry generators unchanged)
+  materials: 33 procedural material definitions
+  piers   : 138
+  spans   : 137
+  joints  : 56
+  terrain : 190x100 grid
+  river   : 620 m wide, water z=-2.0, 260 rocks, 877 bank plants
+  roads   : 1261 objects, 13 cross streets, 32 longitudinal, 2 ramps, 139 lighting columns
+  city    : 680 buildings (158 high-rise), 2048 trees, 1024 street lights, 318 vehicles
+           (1.6 s)
+  sites   : 679 engineering-plausible candidate locations
+  carve   : 26 cavities cut into 24 members
+  damage  : 192 defects in 212 objects (19.6 s)
+  sun     : 52 deg elevation, 145 deg azimuth, 6.0 W/m2
+  sky     : Nishita, disc off, ambient 1.0
+  sectors : 6 x 150 m (1650 - 2550)
+  airspace: 33 volumes across 6 classes SAFE=1, INSPECTION=6, UNDERBRIDGE=6, RIVER=1, RESTRICTED=17, RETURN=2
+  scenarios: 9 difficult-inspection cases marked
+  cameras : 7 named views
+REV-B
+  services: 1562 bridge service and access objects (HIGH band)
+  cityvar : 28 parking, warehouse and utility structures
+  boats   : 17 river craft and floats
+  people  : 107 pedestrian proxies
+  obstacle: 14 temporary works objects (off by default)
+  airsp-B : 43 volumes across 8 REV-B classes TRANSIT=1, DECK=6, UNDERSIDE=6, PIER=16, RIVER=1, CONFINED=6, EMERGENCY=2, MULTI=5
+  scen-B  : 16 inspection scenarios with full metadata
+  sensors : 7 sensor frames on 1 rig root at x=2025
+  basesite: cleared 6 city objects from the two 48 m base areas
+  mission : 124 markers UAV_SPAWN=2, TAKEOFF=2, LANDING=2, EMERGENCY_LANDING=6, SECTOR_ENTRY=6, SECTOR_EXIT=6, INSPECTION_START=6, INSPECTION_END=6, RETURN_TO_HOME=2, WAYPOINT_CANDIDATE=84, SERVICE_STATION=2
+  graph   : 124 nodes, 136 traversable edges
+  cam-B   : 5 additional cameras (08-12)
+  visible : LEVEL_1=51, LEVEL_2=54, LEVEL_3=23, LEVEL_4=64; 64 observable by no modality
+           (144.9 s)
+  indices : 192 defect, 2055 structural, 138 dynamic instance IDs
+  passes  : 6 render passes enabled
+  scenario: BASELINE (lighting=DAY_CLEAR, weather=CLEAR, uav=1, gps=NORMAL); 53 materials retuned
+  total   : 224.7 s, 13835 objects
+  export  : ground truth 192; zones {'sectors': 6, 'airspace_rev_a': 33, 'airspace_rev_b': 43, 'scenarios': 25, 'cameras': 12}; mission {'nodes': 124, 'edges': 136}; sensors 7; scenarios {'presets': 9, 'lighting': 7, 'weather': 6}; dataset {'classes': 11, 'configs': 7}
+
+  VALIDATION  (REV-A V01-V21, then REV-B V22-V32)
+
+  VALIDATION
+  [PASS] V01  deck width matches specification       24.00 m                    1 BU = 1 m confirmed
+  [PASS] V02  corridor length matches specification  4500.0 m                   deck runs x=0.0 to x=4500.0
+  [PASS] V03  no floating or sunken ground objects   max |dz| 0.593 m over 7957 objects all ground objects sit on terrain.height()
+  [PASS] V04  no city or road objects in the river   0 objects over water       river corridor is clear of land objects
+  [PASS] V05  every pier footing meets the ground    max gap 0.000 m over 92 footings all footings founded
+  [PASS] V06  navigation channel free of piers       90 m clear span            main span 90 m, air draft 24.6 m
+  [PASS] V07  air draft over navigation channel      24.58 m                    clears inland navigation
+  [PASS] V08  maximum longitudinal grade             2.71 %                     within highway design limits
+  [PASS] V09  span to structural depth ratio         15.6 - 22.0                spans 25 - 90 m, depth 1.60 - 4.09 m
+  [PASS] V10  free-flight airspace clear of structure 3 volumes tested against 2145 members SAFE and RETURN volumes contain no structure
+  [PASS] V11  under-bridge volumes are flyable       headroom 13.6 - 19.6 m     6 under-deck volumes
+  [PASS] V12  defects sit on their recorded positions max offset 6.1 mm over 192 defects ground truth positions match the scene
+  [PASS] V13  all defects inside the research zone   192/192 in zone            high-detail damage is confined to the research zone
+  [PASS] V14  ground truth records are complete      15 fields x 192 records    every defect is fully described
+  [PASS] V15  non-repairable cases are a useful minority 36/192 = 18.8 %            6 distinct escalation reasons
+  [PASS] V21  the river surface is not occluded      5/5 probes reach water     the river renders as water
+  [PASS] V16  polygon budget                         384,200 triangles          13835 objects, 3400 unique meshes (4.1x instancing)
+  [PASS] V17  camera far clip covers the scene       12 cameras                 no camera clips the corridor
+  [PASS] V18  every sector carries defects           29 - 39 per sector         A:39, B:31, C:30, D:30, E:33, F:29
+  [PASS] V19  object names are unique                13835 objects              every object is addressable by name
+  [PASS] V20  scene organisation is complete         37 collections             collection tree as documented
+  21 pass, 0 fail, 0 skip of 21 checks
+  [PASS] V22  ground truth matches the REV-A baseline 192 baseline, 192 now, max drift 0.00 mm every REV-A defect survived REV-B unchanged
+  [PASS] V23  mission markers complete and clear     124 markers, 11/11 types   every marker type present and sited in free air
+  [PASS] V24  every sector has its own mission markers A:19, B:19, C:19, D:19, E:19, F:19 six aircraft can each be given a sector
+  [PASS] V25  sensor anchors defined with optics     7 frames, 5 classes        the rig is fully specified
+  [PASS] V26  sensor visibility ground truth is complete 192/192 complete, 4/4 difficulty levels used LEVEL_1:51, LEVEL_2:54, LEVEL_3:23, LEVEL_4:64
+  [PASS] V27  REV-B airspace classes complete        43 volumes, 8/8 classes    each volume carries speed, clearance and risk
+  [PASS] V28  sixteen scenarios fully specified      16 scenarios, 9 fields each every scenario carries its full operating context
+  [PASS] V29  mission graph is connected and costed  124 nodes, 136 edges, 120 reachable from home every sector is reachable from a home node
+  [PASS] V30  dynamic content separated from structure 4/4 collections present    dynamic objects can be switched off without touching the asset
+  [PASS] V31  scenario controller configured         9 presets, 7 lighting, 6 weather active preset: BASELINE
+  [PASS] V32  dataset generation is ready            4 passes, 2405 indexed objects, 12 cameras combined/depth/normal/object-index enabled; every defect has a unique pass_index
+  32 pass, 0 fail, 0 skip of 32 checks
+  saved   : AVIAN_Smart_Infrastructure_City_REV_B.blend (64.4 MB)

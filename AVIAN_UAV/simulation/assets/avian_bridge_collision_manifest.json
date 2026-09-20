@@ -1,0 +1,117 @@
+{
+  "source_environment": "AVIAN_Smart_Infrastructure_City_REV_B.blend",
+  "source_environment_path": "/home/claude/avian_env/AVIAN_Smart_Infrastructure_City_REV_B.blend",
+  "environment_revision": "REV_B",
+  "research_zone_m": [
+    1650.0,
+    2550.0
+  ],
+  "margin_m": 100.0,
+  "corridor_m": [
+    1550.0,
+    2650.0
+  ],
+  "corridor_length_m": 1100.0,
+  "coordinate_system": "identical to the REV-B environment: 1 unit = 1 m, Z up, right-handed, origin at the bridge deck start, +X along the corridor",
+  "units": "metres",
+  "collision_primitives": 677,
+  "primitive_types": {
+    "BOX": 633,
+    "CYLINDER": 44
+  },
+  "primitives_by_kind": {
+    "bearing": 88,
+    "deck_slab": 23,
+    "diaphragm": 95,
+    "drain": 62,
+    "expansion_joint": 5,
+    "girder": 138,
+    "ground": 1,
+    "parapet": 46,
+    "pier_cap": 22,
+    "pier_column": 44,
+    "pier_footing": 44,
+    "service_duct": 32,
+    "structure": 76,
+    "water": 1
+  },
+  "source_triangles_in_corridor": 22850,
+  "objects_seen_in_corridor": 4849,
+  "simplification_ratio": 33.8,
+  "method": "per-member oriented bounding volumes, conservative by construction (every primitive contains its source member)",
+  "include_services": false,
+  "excluded": {
+    "AVI": 25,
+    "secondary_detail": 1563,
+    "CITY": 635,
+    "DEFECT": 212,
+    "ENV": 1137,
+    "terrain_mesh": 2,
+    "other": 9,
+    "water_surface": 1,
+    "road_surface": 590
+  },
+  "exclusion_reasons": {
+    "DEFECT": "surface detail inside its host member, not an obstacle",
+    "secondary_detail": "cable trays, conduit, brackets, downpipes - real but sub-100 mm; enable with include_services=True",
+    "terrain_mesh": "replaced by a ground half-space primitive",
+    "water_surface": "replaced by a water half-space primitive",
+    "road_surface": "coincident with the deck slab already present",
+    "CITY": "outside the research-zone flight envelope"
+  },
+  "validation": {
+    "checks": [
+      {
+        "id": "C01",
+        "name": "every box primitive matches its source bbox",
+        "status": "PASS",
+        "measured": "max deviation 0.09 mm",
+        "expected": "< 2 mm",
+        "detail": "677 primitives cross-checked"
+      },
+      {
+        "id": "C02",
+        "name": "all structural primitives inside the corridor",
+        "status": "PASS",
+        "measured": "x = 1550 .. 2658",
+        "expected": "1550 .. 2650",
+        "detail": "60 m tolerance for members that straddle the boundary"
+      },
+      {
+        "id": "C03",
+        "name": "air draft preserved over the navigation channel",
+        "status": "PASS",
+        "measured": "24.58 m",
+        "expected": "24.58 m (source)",
+        "detail": "collision soffit vs authoritative soffit"
+      },
+      {
+        "id": "C04",
+        "name": "inspection bay between girders stays open",
+        "status": "PASS",
+        "measured": "3.20 m",
+        "expected": "3.20 m",
+        "detail": "box-fitting the I-section must not close the bay"
+      },
+      {
+        "id": "C05",
+        "name": "pier columns preserved with correct diameter",
+        "status": "PASS",
+        "measured": "44 columns, dia [2.4, 3.2]",
+        "expected": "2.4 / 3.2 m",
+        "detail": ""
+      },
+      {
+        "id": "C06",
+        "name": "under-deck volume preserved for all six sectors",
+        "status": "PASS",
+        "measured": "6 sectors, headroom 18.6-22.6 m",
+        "expected": "6 sectors, > 3 m",
+        "detail": ""
+      }
+    ],
+    "pass": 6,
+    "fail": 0
+  },
+  "build_time_s": 4.2
+}
