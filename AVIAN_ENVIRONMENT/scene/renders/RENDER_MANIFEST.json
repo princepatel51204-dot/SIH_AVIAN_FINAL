@@ -1,0 +1,83 @@
+{
+  "resolution": [
+    1280,
+    720
+  ],
+  "samples": 32,
+  "engine": "CYCLES/CPU",
+  "views": [
+    {
+      "view": 1,
+      "file": "VIEW_01_GLOBAL_CITY.png",
+      "camera": "CAMERA_01_GLOBAL_CITY",
+      "lighting": "daylight only",
+      "purpose": "whole city and corridor in context"
+    },
+    {
+      "view": 2,
+      "file": "VIEW_02_BRIDGE_FULL_LENGTH.png",
+      "camera": "CAMERA_02_BRIDGE_FULL_LENGTH",
+      "lighting": "daylight only",
+      "purpose": "the full 4.5 km corridor, all seven sections"
+    },
+    {
+      "view": 3,
+      "file": "VIEW_03_RIVER_CROSSING.png",
+      "camera": "CAMERA_03_RIVER_CROSSING",
+      "lighting": "daylight only",
+      "purpose": "90 m main span, river piers and air draft"
+    },
+    {
+      "view": 4,
+      "file": "VIEW_04_RESEARCH_ZONE.png",
+      "camera": "CAMERA_04_RESEARCH_ZONE",
+      "lighting": "daylight only",
+      "purpose": "the 900 m high-detail zone and its six sectors"
+    },
+    {
+      "view": 5,
+      "file": "VIEW_05_UNDERBRIDGE.png",
+      "camera": "CAMERA_05_UNDERBRIDGE",
+      "lighting": "daylight only",
+      "purpose": "under-deck inspection volume, naturally dark"
+    },
+    {
+      "view": 6,
+      "file": "VIEW_06_DEFECT_CLOSEUP.png",
+      "camera": "CAMERA_06_DEFECT_CLOSEUP",
+      "lighting": "daylight only",
+      "purpose": "inspection standoff on a real defect"
+    },
+    {
+      "view": 7,
+      "file": "VIEW_07_FULL_INFRASTRUCTURE.png",
+      "camera": "CAMERA_07_FULL_INFRASTRUCTURE",
+      "lighting": "daylight only",
+      "purpose": "corridor, river, city and horizon together"
+    },
+    {
+      "view": 8,
+      "file": "VIEW_08_DEFECT_GEOMETRY_CLOSEUP.png",
+      "camera": "VALIDATION_INSPECT_CAM",
+      "lighting": "daylight + UAV-style inspection lamp",
+      "purpose": "geometry-backed defect at inspection range: real depth, sensor-detectable",
+      "defect_id": "DEFECT_REBAR_EXPOSED_001",
+      "defect_type": "REBAR_EXPOSED",
+      "severity": 3,
+      "host_surface": "PIER_COLUMN",
+      "standoff_m": 1.5
+    },
+    {
+      "view": 9,
+      "file": "VIEW_09_DEFECT_CRACK_CLOSEUP.png",
+      "camera": "VALIDATION_INSPECT_CAM",
+      "lighting": "daylight + UAV-style inspection lamp",
+      "purpose": "shader-backed cracking at inspection range: sub-sensor width, camera-only",
+      "defect_id": "DEFECT_CRACK_DIAGONAL_003",
+      "defect_type": "CRACK_DIAGONAL",
+      "severity": 3,
+      "host_surface": "DIAPHRAGM",
+      "standoff_m": 1.1
+    }
+  ]
+}

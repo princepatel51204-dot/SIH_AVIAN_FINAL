@@ -4,7 +4,7 @@
       "id": "S13",
       "name": "RGB camera renders a non-uniform image at both resolutions",
       "status": "PASS",
-      "measured": "640x480 246 ms, 1920x1080 1355 ms",
+      "measured": "640x480 211 ms, 1920x1080 1160 ms",
       "expected": "both resolutions, image std > 3",
       "detail": "std 60.0 counts, GSD 2.1478 mm/px @1m"
     },
@@ -22,7 +22,7 @@
       "status": "PASS",
       "measured": "3473 returns, 368 self-hits discarded",
       "expected": "> 500 returns, self-hits removed",
-      "detail": "693 points above the aircraft (the deck), 102 ms, 8.0x decimated"
+      "detail": "693 points above the aircraft (the deck), 91 ms, 8.0x decimated"
     },
     {
       "id": "S16",
@@ -58,8 +58,8 @@
       1920,
       1080
     ],
-    "rgb_loop_ms": 246.4,
-    "rgb_capture_ms": 1354.7,
+    "rgb_loop_ms": 210.8,
+    "rgb_capture_ms": 1160.5,
     "rgb_gsd_mm_at_1m": 2.1478,
     "depth_boresight_measured_m": 2.1935,
     "depth_boresight_raycast_m": 2.1757,
@@ -74,7 +74,7 @@
     "lidar_rays": 7200,
     "lidar_returns": 3473,
     "lidar_self_occluded": 368,
-    "lidar_ms": 101.8,
+    "lidar_ms": 91.2,
     "lidar_decimation": 8.0,
     "lidar_nearest_m": 2.3184,
     "imu_mean_specific_force_z": 9.8067,
@@ -91,9 +91,9 @@
       "note": "ARBITRARY reference; no real site is claimed"
     },
     "imu_samples_per_sim_second": 200,
-    "wall_time_s": 7.2
+    "wall_time_s": 5.8
   },
-  "run_id": "509ca116fbe4",
+  "run_id": null,
   "summary": {
     "pass": 6,
     "fail": 0

@@ -2,3 +2,11 @@
 __pycache__/
 *.pyc
 *.blend1
+
+# The REV-C scene is a build output, not a source artifact: 65 MB per stage
+# of near-duplicate binary that would make each stage's diff unreviewable.
+# It regenerates deterministically (frozen SEED, V22 0.00 mm drift) in about
+# 3 minutes via build_scene_c.py. The renders and stats beside it ARE
+# tracked -- they are the gate evidence. REV-B's own .blend stays tracked
+# because it arrived as a delivered artifact rather than being generated here.
+AVIAN_ENVIRONMENT/scene/*.blend
