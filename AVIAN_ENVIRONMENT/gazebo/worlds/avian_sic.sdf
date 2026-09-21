@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <!-- AVIAN REV-C corridor, x in [1550, 2650] of the Blender model.
+     WORLD ORIGIN SHIFT: Blender x=2100 maps to Gazebo x=0. Add 2100 to a Gazebo x to recover Blender x.
+     Recorded in gazebo/avian_gazebo_manifest.json as world_origin_offset_m. -->
+  <world name="avian_sic">
+    <physics name="default" type="dart">
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin name="gz::sim::systems::physics" filename="gz-sim-physics-system"/>
+    <plugin name="gz::sim::systems::user_commands" filename="gz-sim-user-commands-system"/>
+    <plugin name="gz::sim::systems::scene_broadcaster" filename="gz-sim-scene-broadcaster-system"/>
+    <plugin name="gz::sim::systems::sensors" filename="gz-sim-sensors-system">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name="gz::sim::systems::contact" filename="gz-sim-contact-system"/>
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 300 0 0 0</pose>
+      <diffuse>0.9 0.88 0.85 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.3 -0.8</direction>
+    </light>
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>4000 4000</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>4000 4000</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.25 0.24 0.20 1</ambient>
+            <diffuse>0.45 0.43 0.36 1</diffuse>
+          </material>
+        </visual>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+    </model>
+    <include>
+      <uri>model://avian_bridge</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://avian_metro</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://avian_terrain</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://avian_defects</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose>0 -420 520 0 0.95 1.5708</pose>
+      </camera>
+      <!-- view: whole corridor from above -> <pose>0 -420 520 0 0.95 1.5708</pose> -->
+      <!-- view: river crossing from the water -> <pose>0 -260 18 0 0.12 1.5708</pose> -->
+      <!-- view: under the deck -> <pose>-40 0 12 0 0.18 0.0</pose> -->
+      <!-- view: inter-structure corridor -> <pose>-60 26 26 0 0.05 0.35</pose> -->
+    </gui>
+  </world>
+</sdf>

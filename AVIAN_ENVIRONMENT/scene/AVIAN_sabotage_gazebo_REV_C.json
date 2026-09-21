@@ -1,0 +1,42 @@
+{
+  "total": 5,
+  "proven": 5,
+  "unproven": [],
+  "rows": [
+    {
+      "check": "V44",
+      "sabotage": "corrupt the world XML",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V45",
+      "sabotage": "drop one model's collision geometry",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V46",
+      "sabotage": "collapse every pose to the world origin",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V47",
+      "sabotage": "remove a defect marker",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V50",
+      "sabotage": "put an absolute /home path in a model SDF",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    }
+  ]
+}

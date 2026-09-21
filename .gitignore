@@ -17,3 +17,6 @@ AVIAN_ENVIRONMENT/scene/*.blend
 # so committing it would only invite someone to trust a stale answer.
 AVIAN_ENVIRONMENT/scene/_handoff_phase_a.json
 AVIAN_ENVIRONMENT/scene/vis_cache/
+
+# shoot.sh scratch: generated camera worlds and raw frame dumps
+AVIAN_ENVIRONMENT/gazebo/.shoot/
