@@ -1,0 +1,30 @@
+{
+  "revision": "SIH_AVIAN_FINAL",
+  "generated_utc": "2026-09-21T13:14:49Z",
+  "world": "gazebo/worlds/sih_avian_final.sdf",
+  "world_origin_offset_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "origin_note": "no shift -- corridor is 0..360, already near origin",
+  "source_primitives": 401,
+  "exported_primitives": 401,
+  "skipped": 0,
+  "models": {
+    "avian_final_road": {
+      "members": 216,
+      "bytes": 151187
+    },
+    "avian_final_metro": {
+      "members": 183,
+      "bytes": 127433
+    },
+    "avian_final_terrain": {
+      "members": 2,
+      "bytes": 1594
+    }
+  },
+  "defect_models": 116,
+  "world_bytes": 2628
+}

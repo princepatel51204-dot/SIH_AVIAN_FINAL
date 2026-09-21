@@ -1,0 +1,3874 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="avian_final_metro">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <collision name="MB_BEARING_001_B1_collision">
+        <pose>0.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_001_B1_visual">
+        <pose>0.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_001_B2_collision">
+        <pose>0.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_001_B2_visual">
+        <pose>0.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_002_B1_collision">
+        <pose>30.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_002_B1_visual">
+        <pose>30.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_002_B2_collision">
+        <pose>30.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_002_B2_visual">
+        <pose>30.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_003_B1_collision">
+        <pose>60.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_003_B1_visual">
+        <pose>60.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_003_B2_collision">
+        <pose>60.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_003_B2_visual">
+        <pose>60.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_004_B1_collision">
+        <pose>90.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_004_B1_visual">
+        <pose>90.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_004_B2_collision">
+        <pose>90.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_004_B2_visual">
+        <pose>90.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_005_B1_collision">
+        <pose>135.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_005_B1_visual">
+        <pose>135.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_005_B2_collision">
+        <pose>135.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_005_B2_visual">
+        <pose>135.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_006_B1_collision">
+        <pose>225.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_006_B1_visual">
+        <pose>225.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_006_B2_collision">
+        <pose>225.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_006_B2_visual">
+        <pose>225.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_007_B1_collision">
+        <pose>255.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_007_B1_visual">
+        <pose>255.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_007_B2_collision">
+        <pose>255.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_007_B2_visual">
+        <pose>255.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_008_B1_collision">
+        <pose>285.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_008_B1_visual">
+        <pose>285.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_008_B2_collision">
+        <pose>285.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_008_B2_visual">
+        <pose>285.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_009_B1_collision">
+        <pose>315.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_009_B1_visual">
+        <pose>315.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_009_B2_collision">
+        <pose>315.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_009_B2_visual">
+        <pose>315.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_010_B1_collision">
+        <pose>345.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_010_B1_visual">
+        <pose>345.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_010_B2_collision">
+        <pose>345.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_010_B2_visual">
+        <pose>345.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_011_B1_collision">
+        <pose>360.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_011_B1_visual">
+        <pose>360.000000 30.600000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_BEARING_011_B2_collision">
+        <pose>360.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_BEARING_011_B2_visual">
+        <pose>360.000000 25.400000 16.675000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.700000 0.700000 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.064 0.064 0.068 1</ambient>
+          <diffuse>0.160 0.160 0.170 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_001_collision">
+        <pose>15.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_001_visual">
+        <pose>15.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_002_collision">
+        <pose>45.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_002_visual">
+        <pose>45.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_003_collision">
+        <pose>75.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_003_visual">
+        <pose>75.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_004_collision">
+        <pose>112.500000 28.000000 15.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_004_visual">
+        <pose>112.500000 28.000000 15.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_005_collision">
+        <pose>180.000000 28.000000 15.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_005_visual">
+        <pose>180.000000 28.000000 15.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_006_collision">
+        <pose>240.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_006_visual">
+        <pose>240.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_007_collision">
+        <pose>270.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_007_visual">
+        <pose>270.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_008_collision">
+        <pose>300.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_008_visual">
+        <pose>300.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_009_collision">
+        <pose>330.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_009_visual">
+        <pose>330.000000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_SOFFIT_010_collision">
+        <pose>352.500000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_SOFFIT_010_visual">
+        <pose>352.500000 28.000000 16.940000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 6.800000 0.280000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_001_collision">
+        <pose>15.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_001_visual">
+        <pose>15.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_002_collision">
+        <pose>45.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_002_visual">
+        <pose>45.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_003_collision">
+        <pose>75.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_003_visual">
+        <pose>75.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_004_collision">
+        <pose>112.500000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_004_visual">
+        <pose>112.500000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_005_collision">
+        <pose>180.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_005_visual">
+        <pose>180.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_006_collision">
+        <pose>240.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_006_visual">
+        <pose>240.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_007_collision">
+        <pose>270.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_007_visual">
+        <pose>270.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_008_collision">
+        <pose>300.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_008_visual">
+        <pose>300.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_009_collision">
+        <pose>330.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_009_visual">
+        <pose>330.000000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_DECK_TOP_010_collision">
+        <pose>352.500000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_DECK_TOP_010_visual">
+        <pose>352.500000 28.000000 18.850000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 8.600000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_001_collision">
+        <pose>15.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_001_visual">
+        <pose>15.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_002_collision">
+        <pose>45.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_002_visual">
+        <pose>45.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_003_collision">
+        <pose>75.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_003_visual">
+        <pose>75.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_004_collision">
+        <pose>112.500000 28.000000 15.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_004_visual">
+        <pose>112.500000 28.000000 15.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_005_collision">
+        <pose>180.000000 28.000000 15.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_005_visual">
+        <pose>180.000000 28.000000 15.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_006_collision">
+        <pose>240.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_006_visual">
+        <pose>240.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_007_collision">
+        <pose>270.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_007_visual">
+        <pose>270.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_008_collision">
+        <pose>300.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_008_visual">
+        <pose>300.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_009_collision">
+        <pose>330.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_009_visual">
+        <pose>330.000000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_HATCH_010_collision">
+        <pose>352.500000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_HATCH_010_visual">
+        <pose>352.500000 28.000000 16.840000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.900000 0.700000 0.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.112 0.112 0.120 1</ambient>
+          <diffuse>0.280 0.280 0.300 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_001_collision">
+        <pose>0.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_001_visual">
+        <pose>0.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_002_collision">
+        <pose>30.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_002_visual">
+        <pose>30.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_003_collision">
+        <pose>60.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_003_visual">
+        <pose>60.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_004_collision">
+        <pose>90.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_004_visual">
+        <pose>90.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_005_collision">
+        <pose>135.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_005_visual">
+        <pose>135.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_006_collision">
+        <pose>225.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_006_visual">
+        <pose>225.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_007_collision">
+        <pose>255.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_007_visual">
+        <pose>255.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_008_collision">
+        <pose>285.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_008_visual">
+        <pose>285.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_009_collision">
+        <pose>315.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_009_visual">
+        <pose>315.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_JOINT_010_collision">
+        <pose>345.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_JOINT_010_visual">
+        <pose>345.000000 28.000000 18.775000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.120000 8.600000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.100 1</ambient>
+          <diffuse>0.240 0.240 0.250 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_MAST_001_collision">
+        <pose>15.000000 31.100000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_MAST_001_visual">
+        <pose>15.000000 31.100000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.120 0.120 0.128 1</ambient>
+          <diffuse>0.300 0.300 0.320 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_MAST_002_collision">
+        <pose>75.000000 24.900000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_MAST_002_visual">
+        <pose>75.000000 24.900000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.120 0.120 0.128 1</ambient>
+          <diffuse>0.300 0.300 0.320 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_MAST_003_collision">
+        <pose>180.000000 31.100000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_MAST_003_visual">
+        <pose>180.000000 31.100000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.120 0.120 0.128 1</ambient>
+          <diffuse>0.300 0.300 0.320 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_MAST_004_collision">
+        <pose>270.000000 24.900000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_MAST_004_visual">
+        <pose>270.000000 24.900000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.120 0.120 0.128 1</ambient>
+          <diffuse>0.300 0.300 0.320 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_MAST_005_collision">
+        <pose>330.000000 31.100000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_MAST_005_visual">
+        <pose>330.000000 31.100000 22.350000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.280000 0.280000 6.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.120 0.120 0.128 1</ambient>
+          <diffuse>0.300 0.300 0.320 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_001_N_collision">
+        <pose>15.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_001_N_visual">
+        <pose>15.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_001_S_collision">
+        <pose>15.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_001_S_visual">
+        <pose>15.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_002_N_collision">
+        <pose>45.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_002_N_visual">
+        <pose>45.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_002_S_collision">
+        <pose>45.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_002_S_visual">
+        <pose>45.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_003_N_collision">
+        <pose>75.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_003_N_visual">
+        <pose>75.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_003_S_collision">
+        <pose>75.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_003_S_visual">
+        <pose>75.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_004_N_collision">
+        <pose>112.500000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_004_N_visual">
+        <pose>112.500000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_004_S_collision">
+        <pose>112.500000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_004_S_visual">
+        <pose>112.500000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_005_N_collision">
+        <pose>180.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_005_N_visual">
+        <pose>180.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_005_S_collision">
+        <pose>180.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_005_S_visual">
+        <pose>180.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_006_N_collision">
+        <pose>240.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_006_N_visual">
+        <pose>240.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_006_S_collision">
+        <pose>240.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_006_S_visual">
+        <pose>240.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_007_N_collision">
+        <pose>270.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_007_N_visual">
+        <pose>270.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_007_S_collision">
+        <pose>270.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_007_S_visual">
+        <pose>270.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_008_N_collision">
+        <pose>300.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_008_N_visual">
+        <pose>300.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_008_S_collision">
+        <pose>300.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_008_S_visual">
+        <pose>300.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_009_N_collision">
+        <pose>330.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_009_N_visual">
+        <pose>330.000000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_009_S_collision">
+        <pose>330.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_009_S_visual">
+        <pose>330.000000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_010_N_collision">
+        <pose>352.500000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_010_N_visual">
+        <pose>352.500000 32.180000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PARAPET_010_S_collision">
+        <pose>352.500000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PARAPET_010_S_visual">
+        <pose>352.500000 23.820000 19.550000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.240000 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.272 0.268 0.256 1</ambient>
+          <diffuse>0.680 0.670 0.640 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_001_collision">
+        <pose>0.000000 28.000000 8.036400 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.827200</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_001_visual">
+        <pose>0.000000 28.000000 8.036400 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.827200</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_002_collision">
+        <pose>30.000000 28.000000 8.050600 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.798800</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_002_visual">
+        <pose>30.000000 28.000000 8.050600 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.798800</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_003_collision">
+        <pose>60.000000 28.000000 8.064900 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.770200</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_003_visual">
+        <pose>60.000000 28.000000 8.064900 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.770200</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_004_collision">
+        <pose>90.000000 28.000000 8.070800 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.758400</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_004_visual">
+        <pose>90.000000 28.000000 8.070800 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.758400</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_005_collision">
+        <pose>135.000000 28.000000 8.077200 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.745600</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_005_visual">
+        <pose>135.000000 28.000000 8.077200 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.745600</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_006_collision">
+        <pose>225.000000 28.000000 8.068600 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.762800</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_006_visual">
+        <pose>225.000000 28.000000 8.068600 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.762800</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_007_collision">
+        <pose>255.000000 28.000000 8.068900 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.762200</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_007_visual">
+        <pose>255.000000 28.000000 8.068900 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.762200</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_008_collision">
+        <pose>285.000000 28.000000 8.079300 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.741400</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_008_visual">
+        <pose>285.000000 28.000000 8.079300 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.741400</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_009_collision">
+        <pose>315.000000 28.000000 8.070000 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.760000</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_009_visual">
+        <pose>315.000000 28.000000 8.070000 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.760000</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_010_collision">
+        <pose>345.000000 28.000000 8.018500 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.863000</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_010_visual">
+        <pose>345.000000 28.000000 8.018500 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.863000</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_COL_011_collision">
+        <pose>360.000000 28.000000 8.006700 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.886600</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_COL_011_visual">
+        <pose>360.000000 28.000000 8.006700 0 0 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>1.000000</radius>
+            <length>13.886600</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_001_collision">
+        <pose>0.000000 28.000000 0.522700 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_001_visual">
+        <pose>0.000000 28.000000 0.522700 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_002_collision">
+        <pose>30.000000 28.000000 0.551200 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_002_visual">
+        <pose>30.000000 28.000000 0.551200 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_003_collision">
+        <pose>60.000000 28.000000 0.579700 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_003_visual">
+        <pose>60.000000 28.000000 0.579700 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_004_collision">
+        <pose>90.000000 28.000000 0.591500 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_004_visual">
+        <pose>90.000000 28.000000 0.591500 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_005_collision">
+        <pose>135.000000 28.000000 0.604300 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_005_visual">
+        <pose>135.000000 28.000000 0.604300 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_006_collision">
+        <pose>225.000000 28.000000 0.587200 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_006_visual">
+        <pose>225.000000 28.000000 0.587200 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_007_collision">
+        <pose>255.000000 28.000000 0.587800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_007_visual">
+        <pose>255.000000 28.000000 0.587800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_008_collision">
+        <pose>285.000000 28.000000 0.608700 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_008_visual">
+        <pose>285.000000 28.000000 0.608700 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_009_collision">
+        <pose>315.000000 28.000000 0.590000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_009_visual">
+        <pose>315.000000 28.000000 0.590000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_010_collision">
+        <pose>345.000000 28.000000 0.486900 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_010_visual">
+        <pose>345.000000 28.000000 0.486900 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_FOOTING_011_collision">
+        <pose>360.000000 28.000000 0.463500 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_FOOTING_011_visual">
+        <pose>360.000000 28.000000 0.463500 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.000000 6.000000 1.200000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.176 0.172 0.164 1</ambient>
+          <diffuse>0.440 0.430 0.410 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_001_collision">
+        <pose>0.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_001_visual">
+        <pose>0.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_002_collision">
+        <pose>30.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_002_visual">
+        <pose>30.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_003_collision">
+        <pose>60.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_003_visual">
+        <pose>60.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_004_collision">
+        <pose>90.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_004_visual">
+        <pose>90.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_005_collision">
+        <pose>135.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_005_visual">
+        <pose>135.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_006_collision">
+        <pose>225.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_006_visual">
+        <pose>225.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_007_collision">
+        <pose>255.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_007_visual">
+        <pose>255.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_008_collision">
+        <pose>285.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_008_visual">
+        <pose>285.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_009_collision">
+        <pose>315.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_009_visual">
+        <pose>315.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_010_collision">
+        <pose>345.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_010_visual">
+        <pose>345.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_PIER_HEAD_011_collision">
+        <pose>360.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_PIER_HEAD_011_visual">
+        <pose>360.000000 28.000000 15.750000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>6.400000 2.600000 1.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.216 0.212 0.204 1</ambient>
+          <diffuse>0.540 0.530 0.510 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_001_R1_collision">
+        <pose>15.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_001_R1_visual">
+        <pose>15.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_001_R2_collision">
+        <pose>15.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_001_R2_visual">
+        <pose>15.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_002_R1_collision">
+        <pose>45.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_002_R1_visual">
+        <pose>45.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_002_R2_collision">
+        <pose>45.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_002_R2_visual">
+        <pose>45.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_003_R1_collision">
+        <pose>75.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_003_R1_visual">
+        <pose>75.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_003_R2_collision">
+        <pose>75.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_003_R2_visual">
+        <pose>75.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_004_R1_collision">
+        <pose>112.500000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_004_R1_visual">
+        <pose>112.500000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_004_R2_collision">
+        <pose>112.500000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_004_R2_visual">
+        <pose>112.500000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_005_R1_collision">
+        <pose>180.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_005_R1_visual">
+        <pose>180.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_005_R2_collision">
+        <pose>180.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_005_R2_visual">
+        <pose>180.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_006_R1_collision">
+        <pose>240.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_006_R1_visual">
+        <pose>240.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_006_R2_collision">
+        <pose>240.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_006_R2_visual">
+        <pose>240.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_007_R1_collision">
+        <pose>270.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_007_R1_visual">
+        <pose>270.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_007_R2_collision">
+        <pose>270.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_007_R2_visual">
+        <pose>270.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_008_R1_collision">
+        <pose>300.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_008_R1_visual">
+        <pose>300.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_008_R2_collision">
+        <pose>300.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_008_R2_visual">
+        <pose>300.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_009_R1_collision">
+        <pose>330.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_009_R1_visual">
+        <pose>330.000000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_009_R2_collision">
+        <pose>330.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_009_R2_visual">
+        <pose>330.000000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_010_R1_collision">
+        <pose>352.500000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_010_R1_visual">
+        <pose>352.500000 28.717500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_RAIL_010_R2_collision">
+        <pose>352.500000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_RAIL_010_R2_visual">
+        <pose>352.500000 27.282500 19.430000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.075000 0.160000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.168 0.168 0.180 1</ambient>
+          <diffuse>0.420 0.420 0.450 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_001_collision">
+        <pose>15.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_001_visual">
+        <pose>15.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_002_collision">
+        <pose>45.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_002_visual">
+        <pose>45.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_003_collision">
+        <pose>75.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_003_visual">
+        <pose>75.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_004_collision">
+        <pose>112.500000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_004_visual">
+        <pose>112.500000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_005_collision">
+        <pose>180.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_005_visual">
+        <pose>180.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_006_collision">
+        <pose>240.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_006_visual">
+        <pose>240.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_007_collision">
+        <pose>270.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_007_visual">
+        <pose>270.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_008_collision">
+        <pose>300.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_008_visual">
+        <pose>300.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_009_collision">
+        <pose>330.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_009_visual">
+        <pose>330.000000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRACKSLAB_010_collision">
+        <pose>352.500000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRACKSLAB_010_visual">
+        <pose>352.500000 28.000000 19.175000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 4.200000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.224 0.220 0.212 1</ambient>
+          <diffuse>0.560 0.550 0.530 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_CAR_1_collision">
+        <pose>157.500000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>22.000000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_CAR_1_visual">
+        <pose>157.500000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>22.000000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_CAR_2_collision">
+        <pose>180.000000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>22.000000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_CAR_2_visual">
+        <pose>180.000000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>22.000000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_CAR_3_collision">
+        <pose>202.500000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>22.000000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_CAR_3_visual">
+        <pose>202.500000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>22.000000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_001_collision">
+        <pose>15.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_001_visual">
+        <pose>15.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_002_collision">
+        <pose>45.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_002_visual">
+        <pose>45.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_003_collision">
+        <pose>75.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_003_visual">
+        <pose>75.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_004_collision">
+        <pose>112.500000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_004_visual">
+        <pose>112.500000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_005_collision">
+        <pose>180.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_005_visual">
+        <pose>180.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_006_collision">
+        <pose>240.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_006_visual">
+        <pose>240.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_007_collision">
+        <pose>270.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_007_visual">
+        <pose>270.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_008_collision">
+        <pose>300.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_008_visual">
+        <pose>300.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_009_collision">
+        <pose>330.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_009_visual">
+        <pose>330.000000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TROUGH_010_collision">
+        <pose>352.500000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TROUGH_010_visual">
+        <pose>352.500000 31.350000 19.225000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.550000 0.450000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.200 0.196 0.188 1</ambient>
+          <diffuse>0.500 0.490 0.470 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_001_W1_collision">
+        <pose>15.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_001_W1_visual">
+        <pose>15.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_001_W2_collision">
+        <pose>15.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_001_W2_visual">
+        <pose>15.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_002_W1_collision">
+        <pose>45.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_002_W1_visual">
+        <pose>45.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_002_W2_collision">
+        <pose>45.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_002_W2_visual">
+        <pose>45.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_003_W1_collision">
+        <pose>75.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_003_W1_visual">
+        <pose>75.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_003_W2_collision">
+        <pose>75.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_003_W2_visual">
+        <pose>75.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_004_W1_collision">
+        <pose>112.500000 30.600000 17.390000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.350000 2.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_004_W1_visual">
+        <pose>112.500000 30.600000 17.390000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.350000 2.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_004_W2_collision">
+        <pose>112.500000 25.400000 17.390000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.350000 2.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_004_W2_visual">
+        <pose>112.500000 25.400000 17.390000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>45.000000 0.350000 2.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_005_W1_collision">
+        <pose>180.000000 30.600000 17.390000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.350000 2.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_005_W1_visual">
+        <pose>180.000000 30.600000 17.390000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.350000 2.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_005_W2_collision">
+        <pose>180.000000 25.400000 17.390000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.350000 2.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_005_W2_visual">
+        <pose>180.000000 25.400000 17.390000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.350000 2.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_006_W1_collision">
+        <pose>240.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_006_W1_visual">
+        <pose>240.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_006_W2_collision">
+        <pose>240.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_006_W2_visual">
+        <pose>240.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_007_W1_collision">
+        <pose>270.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_007_W1_visual">
+        <pose>270.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_007_W2_collision">
+        <pose>270.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_007_W2_visual">
+        <pose>270.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_008_W1_collision">
+        <pose>300.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_008_W1_visual">
+        <pose>300.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_008_W2_collision">
+        <pose>300.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_008_W2_visual">
+        <pose>300.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_009_W1_collision">
+        <pose>330.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_009_W1_visual">
+        <pose>330.000000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_009_W2_collision">
+        <pose>330.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_009_W2_visual">
+        <pose>330.000000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>30.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_010_W1_collision">
+        <pose>352.500000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_010_W1_visual">
+        <pose>352.500000 30.600000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_WEB_010_W2_collision">
+        <pose>352.500000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_WEB_010_W2_visual">
+        <pose>352.500000 25.400000 17.890000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>15.000000 0.350000 1.620000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.232 0.228 0.220 1</ambient>
+          <diffuse>0.580 0.570 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

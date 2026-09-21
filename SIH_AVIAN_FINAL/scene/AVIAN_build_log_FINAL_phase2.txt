@@ -1,0 +1,54 @@
+== SIH_AVIAN_FINAL :: measure_final.py (phase 2: measure) ==
+  loaded  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/SIH_AVIAN_FINAL.blend
+  records : 96 road, 20 metro
+-- cameras --
+  cameras : 8 named views
+-- measured contrast (contrast_c.py, reused unchanged) --
+  contrast: 96 measured, 0 skipped, mean 0.1002, 27 contrast-limited (weather 1.00, threshold 0.05, 26.8 s)
+  contrast: 20 measured, 0 skipped, mean 0.1015, 9 contrast-limited (weather metro 1.00, threshold 0.05, 5.6 s)
+-- ground truth export --
+  exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_defect_ground_truth_FINAL.json
+  exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_metro_ground_truth_FINAL.json
+-- baseline --
+  baseline already frozen: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/BASELINE_FINAL_ground_truth.json
+-- validation (validate_final.py) --
+  [PASS] VF01 road deck width                        14.00 m                    BR_DECK_SLAB_001
+  [PASS] VF02 corridor length (deck extent)          360.00 m (0.00 .. 360.00)  
+  [PASS] VF03 span/depth ratio in a buildable range  45m/1=28.1, 90m/1=36.0     
+  [PASS] VF04 ground objects on terrain height       max |dz| 0.967 m over 51 objects ENV_RIPRAP_023
+  [PASS] VF05 no pier inside the navigation channel  0 offending piers          
+  [PASS] VF06 road bridge air draft over the channel 13.78 m                    
+  [PASS] VF07 metro air draft over the channel       17.80 m                    
+  [PASS] VF08 unique object names                    614 objects, 0 duplicate names 
+  [PASS] VF09 polygon budget                         31,466 triangles           generous vs REV-C's raised 15M ceiling -- this corridor is two orders of magnitude smaller
+  [PASS] VF10 camera far clip covers the corridor    8 cameras, 0 with clip_end<500m 
+  [PASS] VF10b all 8 named cameras exist              8 CAM_ objects             
+  [PASS] VF11 defects resolved to a real host surface 1/96 orphans (1.0%)        DEFECT_DELAMINATION_007
+  [PASS] VF12 road ground truth field completeness   43 common fields + 1 type-specific x 96 records 
+  [PASS] VF12b metro ground truth field completeness  47 common fields + 1 type-specific x 20 records 
+  [PASS] VF13 road defect count matches SPEC.md      96                         
+  [PASS] VF13b defect counts by type match SPEC.md    {'CRACK_HAIRLINE': 24, 'CRACK_LONGITUDINAL': 12, 'CRACK_TRANSVERSE': 10, 'CRACK_NETWORK': 8, 'SPALL': 12, 'DELAMINATION': 8, 'REBAR_EXPOSED': 6, 'CORROSION_STAIN': 10, 'JOINT_DETERIORATION': 6} 
+  [PASS] VF14 road and metro structures do not overlap 0 overlapping bbox pairs (216 BR_ x 183 MB_) 
+  [PASS] VF15 inter-structure corridor clear of structure 14.70 m clear (BR_ max y=9.00, MB_ min y=23.70) 
+  [PASS] VF16 every MB_ member carries avi_kind      183/183 classified         
+  [PASS] VF17 hero defect present and correctly tagged 1 tagged avi_hero=True     
+  [PASS] VF18 baseline drift (road defects)          0 added, 0 removed, 0.000 mm drift 
+  VALIDATE: 21 pass, 0 fail, 0 skip, 21 total
+-- sabotage (working rule 3.10) --
+  [OK ] VF01     shrink a deck slab's width                       PASS -> FAIL
+  [OK ] VF02     move the north abutment 500 m away               PASS -> FAIL
+  [OK ] VF03     collapse the main-span girder depth to 5 cm      PASS -> FAIL
+  [OK ] VF04     lift a riprap block 5 m off the ground           PASS -> FAIL
+  [OK ] VF05     move a pier into the navigation channel          PASS -> FAIL
+  [OK ] VF06_07  raise the river water 12 m above the deck        PASS -> FAIL
+  [OK ] VF09     report an impossible triangle count              PASS -> FAIL
+  [OK ] VF10     shrink a camera's far clip to 10 m               PASS -> FAIL
+  [OK ] VF11     blank 10 defects' surface_offset_mm              PASS -> FAIL
+  [OK ] VF12     remove a required field from a road defect record PASS -> FAIL
+  [OK ] VF13     delete a road defect record                      PASS -> FAIL
+  [OK ] VF14     move a metro pier onto a road pier               PASS -> FAIL
+  [OK ] VF15     push a metro pier into the inter-structure gap   PASS -> FAIL
+  [OK ] VF16     strip avi_kind off a metro pier column           PASS -> FAIL
+  [OK ] VF17     strip the avi_hero tag off the hero defect       PASS -> FAIL
+  [OK ] VF18     shift a defect 5 m off its baseline position     PASS -> FAIL
+  SABOTAGE: 16/16 proven capable of failing

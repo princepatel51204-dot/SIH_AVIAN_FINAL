@@ -20,3 +20,13 @@ AVIAN_ENVIRONMENT/scene/vis_cache/
 
 # shoot.sh scratch: generated camera worlds and raw frame dumps
 AVIAN_ENVIRONMENT/gazebo/.shoot/
+
+# SIH_AVIAN_FINAL -- same reasoning as AVIAN_ENVIRONMENT above: the .blend
+# is a build output (deterministic SEED, regenerates in ~3 s via
+# build_final.py + measure_final.py) and the handoff JSON is a derived
+# intermediate. Renders, ground truth, stats, collision asset and the
+# Gazebo world/models ARE tracked -- they are the gate evidence.
+SIH_AVIAN_FINAL/scene/*.blend
+SIH_AVIAN_FINAL/scene/*.blend1
+SIH_AVIAN_FINAL/scene/_handoff_final.json
+SIH_AVIAN_FINAL/gazebo/.shoot/

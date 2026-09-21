@@ -1,0 +1,264 @@
+"""SIH_AVIAN_FINAL -- sabotage harness for validate_final.py's checks.
+
+Same before/mutate/re-check/undo/assert shape as
+AVIAN_ENVIRONMENT/source/sabotage_c.py: every sabotage function mutates one
+thing and returns its own inverse, so `run()` can always put the scene back
+regardless of whether the check actually caught the mutation.
+"""
+from __future__ import annotations
+
+import bpy
+
+import params_final as PF
+import validate_final as VF
+
+
+def _find(prefix, contains=None):
+    for o in bpy.data.objects:
+        if o.name.startswith(prefix) and (contains is None or contains in o.name):
+            return o
+    return None
+
+
+def _touch():
+    """meshlib.box()/cylinder() bake position into VERTICES and leave
+    .location at world (0,0,0) -- so a .location/.scale change is a DELTA
+    on top of whatever the baked geometry already encodes, not an absolute
+    new position, and matrix_world does not reliably reflect a Python-side
+    transform edit until the view layer updates. Every transform-based
+    sabotage below calls this right after mutating."""
+    bpy.context.view_layer.update()
+
+
+def _move_to(ob, target_x=None, target_y=None):
+    """Shift ob by the DELTA needed to land its bbox centre at target_x/y,
+    computed from its CURRENT real-world position (via bounding box, not
+    .matrix_world.translation) -- robust regardless of what the object's
+    baked vertex offset already is. Returns an undo callable."""
+    b = VF._bb(ob)
+    cur_x, cur_y = (b[0] + b[1]) / 2.0, (b[2] + b[3]) / 2.0
+    old = ob.location.copy()
+    dx = 0.0 if target_x is None else target_x - cur_x
+    dy = 0.0 if target_y is None else target_y - cur_y
+    ob.location = (old.x + dx, old.y + dy, old.z)
+    _touch()
+    def undo():
+        ob.location = old
+        _touch()
+    return undo
+
+
+def _sab_VF01():
+    ob = _find("BR_DECK_SLAB_")
+    old = ob.scale.copy()
+    ob.scale = (old.x, old.y * 0.3, old.z)
+    _touch()
+    def undo():
+        ob.scale = old
+        _touch()
+    return undo
+
+
+def _sab_VF02():
+    # Matches VF02's own measurement (deck-slab extent): shift the last
+    # span's deck slab off the end of the corridor.
+    ob = _find("BR_DECK_SLAB_007") or _find("BR_DECK_SLAB_")
+    old = ob.location.copy()
+    ob.location = (old.x + 500.0, old.y, old.z)
+    _touch()
+    def undo():
+        ob.location = old
+        _touch()
+    return undo
+
+
+def _sab_VF03():
+    old = PF.GIRDER_DEPTH_MAIN
+    PF.GIRDER_DEPTH_MAIN = 0.05
+    def undo():
+        PF.GIRDER_DEPTH_MAIN = old
+    return undo
+
+
+def _sab_VF04():
+    # link_dup() objects DO carry a real .location (unlike box/cylinder),
+    # so this one is a plain absolute-value bump.
+    ob = _find("ENV_RIPRAP_001") or _find("ENV_BANKVEG_001")
+    old = ob.location.copy()
+    ob.location = (old.x, old.y, old.z + 5.0)
+    _touch()
+    def undo():
+        ob.location = old
+        _touch()
+    return undo
+
+
+def _sab_VF05():
+    ob = _find("BR_PIER_COL_004")
+    return _move_to(ob, target_x=180.0)
+
+
+def _sab_VF06_07():
+    old = PF.RIVER_WATER_Z
+    PF.RIVER_WATER_Z = 10.0
+    def undo():
+        PF.RIVER_WATER_Z = old
+    return undo
+
+
+# VF08 (unique object names) has no sabotage here: bpy.data.objects enforces
+# name uniqueness itself (a rename to an existing name is auto-suffixed
+# ".001"), so the condition VF08 checks for cannot actually occur in this
+# engine. Documented rather than faked -- see the gate report.
+
+
+def _sab_VF09():
+    import meshlib as ML
+    real = ML.scene_tris
+    ML.scene_tris = lambda: 999_999_999
+    def undo():
+        ML.scene_tris = real
+    return undo
+
+
+def _sab_VF10():
+    cams = [o for o in bpy.data.objects if o.name == "CAM_01_OVERVIEW"]
+    if not cams:
+        return lambda: None
+    cam = cams[0]
+    old = cam.data.clip_end
+    cam.data.clip_end = 10.0
+    return lambda: setattr(cam.data, "clip_end", old)
+
+
+def _sab_VF11(records):
+    olds = [rec.get("surface_offset_mm") for rec in records[:10]]
+    for rec in records[:10]:
+        rec["surface_offset_mm"] = -1.0
+    def undo():
+        for rec, old in zip(records[:10], olds):
+            rec["surface_offset_mm"] = old
+    return undo
+
+
+def _sab_VF12(records):
+    r = records[0]
+    key = "area_m2" if "area_m2" in r else list(r.keys())[-1]
+    old = r.pop(key)
+    def undo():
+        r[key] = old
+    return undo
+
+
+def _sab_VF13(records):
+    removed = records.pop()
+    def undo():
+        records.append(removed)
+    return undo
+
+
+def _sab_VF14():
+    # Land a metro pier's bbox centre exactly on a road pier's (135, 0).
+    ob = _find("MB_PIER_COL_")
+    return _move_to(ob, target_x=135.0, target_y=0.0)
+
+
+def _sab_VF15():
+    # Pull a metro pier down to y=10 -- inside the 16.5 m inter-structure
+    # gap (road edge at y=7, metro edge at y~23.7).
+    ob = _find("MB_PIER_COL_")
+    return _move_to(ob, target_y=10.0)
+
+
+def _sab_VF16():
+    ob = _find("MB_PIER_COL_")
+    had = "avi_kind" in ob.keys()
+    old = ob.get("avi_kind")
+    if had:
+        del ob["avi_kind"]
+    def undo():
+        if had:
+            ob["avi_kind"] = old
+    return undo
+
+
+def _sab_VF17(records):
+    hero = next(r for r in records if r.get("type") == "REBAR_EXPOSED"
+               and bpy.data.objects.get(r["defect_id"]) is not None
+               and bpy.data.objects[r["defect_id"]].get("avi_hero"))
+    ob = bpy.data.objects[hero["defect_id"]]
+    del ob["avi_hero"]
+    def undo():
+        ob["avi_hero"] = True
+    return undo
+
+
+def _sab_VF18(records):
+    r = records[5]
+    old = list(r["position_m"])
+    r["position_m"] = [old[0] + 5.0, old[1], old[2]]
+    def undo():
+        r["position_m"] = old
+    return undo
+
+
+def run(records, mrecords, baseline_path, log=print):
+    rows = []
+
+    def check():
+        R, summary = VF.run(records, mrecords, log=lambda *a: None,
+                            baseline_path=baseline_path)
+        return {r.id: r.status for r in R}
+
+    plan = [
+        ("VF01", "shrink a deck slab's width", lambda: _sab_VF01()),
+        ("VF02", "move the north abutment 500 m away", lambda: _sab_VF02()),
+        ("VF03", "collapse the main-span girder depth to 5 cm",
+         lambda: _sab_VF03()),
+        ("VF04", "lift a riprap block 5 m off the ground",
+         lambda: _sab_VF04()),
+        ("VF05", "move a pier into the navigation channel",
+         lambda: _sab_VF05()),
+        ("VF06_07", "raise the river water 12 m above the deck",
+         lambda: _sab_VF06_07()),
+        ("VF09", "report an impossible triangle count",
+         lambda: _sab_VF09()),
+        ("VF10", "shrink a camera's far clip to 10 m", lambda: _sab_VF10()),
+        ("VF11", "blank 10 defects' surface_offset_mm",
+         lambda: _sab_VF11(records)),
+        ("VF12", "remove a required field from a road defect record",
+         lambda: _sab_VF12(records)),
+        ("VF13", "delete a road defect record", lambda: _sab_VF13(records)),
+        ("VF14", "move a metro pier onto a road pier",
+         lambda: _sab_VF14()),
+        ("VF15", "push a metro pier into the inter-structure gap",
+         lambda: _sab_VF15()),
+        ("VF16", "strip avi_kind off a metro pier column",
+         lambda: _sab_VF16()),
+        ("VF17", "strip the avi_hero tag off the hero defect",
+         lambda: _sab_VF17(records)),
+    ]
+    if baseline_path:
+        plan.append(("VF18", "shift a defect 5 m off its baseline position",
+                    lambda: _sab_VF18(records)))
+
+    for check_id, desc, setup in plan:
+        before = check()
+        b = before.get(check_id, before.get(check_id.split("_")[0]))
+        undo = setup()
+        try:
+            after = check()
+            a = after.get(check_id, after.get(check_id.split("_")[0]))
+            proven = (b == "PASS" and a == "FAIL")
+            rows.append({"check": check_id, "sabotage": desc,
+                        "before": b, "after": a, "proven": proven})
+            log(f"  [{'OK ' if proven else 'BAD'}] {check_id:8} {desc:<48} "
+                f"{b} -> {a}")
+        finally:
+            undo()
+
+    proven_n = sum(1 for r in rows if r["proven"])
+    log(f"  SABOTAGE: {proven_n}/{len(rows)} proven capable of failing")
+    return {"total": len(rows), "proven": proven_n,
+           "unproven": [r["check"] for r in rows if not r["proven"]],
+           "rows": rows}

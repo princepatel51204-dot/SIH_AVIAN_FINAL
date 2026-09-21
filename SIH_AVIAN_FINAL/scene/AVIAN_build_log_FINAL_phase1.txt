@@ -1,0 +1,43 @@
+== SIH_AVIAN_FINAL :: build_final.py (phase 1: geometry) ==
+  seed    : 20260921
+-- materials --
+  materials_c: 4 facade shaders rebuilt (South Mumbai palette, daylight only, per-object variation)
+  weather : concrete strength 1.00 on 5 host materials (defect materials untouched)
+  weather : asphalt patch repairs and joint albedo applied
+  weather : water bank turbidity applied, flow direction applied
+-- lighting (low morning sun, BASELINE) --
+  sun     : 11 deg elevation, 100 deg azimuth, 5.0 W/m2
+  sky     : Nishita, disc off, ambient 1.0
+-- terrain / river / banks --
+  terrain : 120x60 grid, river 60 m wide (channel), water z=-2.0
+  terrain : 23 riprap, 8 debris, 17 bank trees, 3 distant silhouettes
+-- road bridge (bridge.py, reused unchanged) --
+  piers   : 8
+  spans   : 7
+  joints  : 6
+-- metro viaduct (metro.py, reused unchanged) --
+  metro   : 11 piers, 10 spans, 5 masts, 180 objects at y=28.0
+  metro   : deck z=19.0, max z=25.35 (ceiling 40.0), main span 90-135 soffit z=15.8, air draft 17.80 m
+-- road-bridge damage (damage.py, reused unchanged) --
+  sites   : 121 engineering-plausible candidate locations
+  carve   : 17 cavities cut into 14 members
+  snap    : 1 defects had no host surface beneath them
+  damage  : 95 road defects, 109 objects
+-- metro damage (metro_damage.py, reused unchanged) --
+  mdamage : 20 metro defects (+0 child objects) across 8 types (SEGMENTAL=3, EFFLORESCENCE=2, BEARING=2, INTERNAL=3, WEB=3, SOFFIT=3, PIER=2, PIER=2)
+-- hand-placed hero defect (SPEC S5.2) --
+  carve   : 1 cavities cut into 1 members
+  hero    : DEFECT_REBAR_EXPOSED_006 on BR_PIER_COL_004_1 z=6.00 area=1.3963 m2 (96 road defects total)
+-- measured visibility (visibility.py, reused unchanged) --
+  visible : LEVEL_1=21, LEVEL_2=25, LEVEL_3=16, LEVEL_4=34; 32 observable by no modality
+  visible : LEVEL_1=3, LEVEL_2=9, LEVEL_3=0, LEVEL_4=8; 6 observable by no modality
+-- traffic on the road deck (SPEC.md: ~16 vehicles) --
+  traffic : 16 vehicles (13 cars, 2 trucks, 1 bus)
+-- metro train, parked mid-span, static (SPEC.md) --
+  train   : 3 cars, 67.0 m overall, centred x=180
+-- triangle / object accounting --
+  objects : 606
+  triangles: 31466
+-- saving --
+  blend   : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/SIH_AVIAN_FINAL.blend
+  handoff : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/_handoff_final.json
