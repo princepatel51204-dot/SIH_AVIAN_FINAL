@@ -94,6 +94,11 @@ def run(records, mrecords, log=print, baseline_path=None):
     # objects (rocks/riprap/debris/veg) do carry a real .location, but
     # CITY_SILHOUETTE (built via box()) does not, so translation-based
     # measurement silently reads (0,0,0) for it.
+    # "CITY_SILHOUETTE_NN" (the building's own base, on the ground) is
+    # checked; "CITY_SILHOUETTE_NN_PARAPET" (its roof-line lip, tens of
+    # metres up) is a different object stacked on TOP of it and correctly
+    # has nothing to do with terrain height -- excluded explicitly rather
+    # than matched by the same prefix.
     ground_prefixes = ("ENV_ROCK", "ENV_RIPRAP", "ENV_DEBRIS", "ENV_BANKVEG",
                        "CITY_SILHOUETTE")
     max_dz = 0.0
@@ -101,6 +106,8 @@ def run(records, mrecords, log=print, baseline_path=None):
     n_checked = 0
     for o in bpy.data.objects:
         if not o.name.startswith(ground_prefixes) or o.type != "MESH":
+            continue
+        if o.name.endswith("_PARAPET"):
             continue
         b = _bb(o)
         cx, cy, zbot = (b[0] + b[1]) / 2.0, (b[2] + b[3]) / 2.0, b[4]
@@ -125,9 +132,18 @@ def run(records, mrecords, log=print, baseline_path=None):
                     f"{limit:.2f} m", worst or ""))
 
     # ---- VF05: no pier in the navigation channel ---------------------------
+    # Matched by PREFIX (BR_/MB_PIER_COL_), not substring: micro-detail's
+    # formwork/tie-hole/honeycomb additions are named "_MD_BR_PIER_COL_..."
+    # and a plain "PIER_COL" in o.name substring test catches them too --
+    # and because honeycombing scatters bumps around the column's
+    # circumference, some of their OWN bbox centres land a few cm to either
+    # side of the column's true x, which is enough to trip a channel check
+    # with a hard boundary at exactly x=135/225.
     offenders = []
     for o in bpy.data.objects:
-        if "PIER_COL" not in o.name or o.type != "MESH":
+        if not o.name.startswith(("BR_PIER_COL_", "MB_PIER_COL_")):
+            continue
+        if o.type != "MESH":
             continue
         b = _bb(o)
         cx = (b[0] + b[1]) / 2.0
@@ -189,11 +205,11 @@ def run(records, mrecords, log=print, baseline_path=None):
                     "PASS" if (cams and not bad_cams) else
                     ("SKIP" if not cams else "FAIL"),
                     f"{len(cams)} cameras, {len(bad_cams)} with clip_end<500m",
-                    ">= 500 m clip_end, 8 cameras present",
+                    ">= 500 m clip_end, 9 cameras present",
                     ", ".join(bad_cams)))
-    R.append(Result("VF10b", "all 8 named cameras exist",
-                    "PASS" if len(cams) == 8 else "FAIL",
-                    f"{len(cams)} CAM_ objects", "8"))
+    R.append(Result("VF10b", "all 9 named cameras exist",
+                    "PASS" if len(cams) == 9 else "FAIL",
+                    f"{len(cams)} CAM_ objects", "9"))
 
     # ---- VF11: defects resolved to a real host (orphan rate) ---------------
     orphans = [r["defect_id"] for r in records
@@ -320,6 +336,74 @@ def run(records, mrecords, log=print, baseline_path=None):
     else:
         R.append(Result("VF18", "baseline drift (road defects)", "SKIP",
                         "no baseline frozen yet"))
+
+    # ---- VF19-22: the drone base landing pads ------------------------------
+    pads = {o.name: o for o in bpy.data.objects
+           if o.name in ("AVI_BASE_SCANNER", "AVI_BASE_REPAIRER")}
+    R.append(Result("VF19", "both landing pads exist",
+                    "PASS" if len(pads) == 2 else "FAIL",
+                    f"{len(pads)} pad objects", "2",
+                    ", ".join(pads.keys())))
+
+    tag_bad = []
+    for role in ("SCANNER", "REPAIRER"):
+        ob = pads.get(f"AVI_BASE_{role}")
+        if ob is None:
+            tag_bad.append(f"AVI_BASE_{role} missing")
+            continue
+        if ob.get("avi_kind") != "landing_pad":
+            tag_bad.append(f"AVI_BASE_{role}.avi_kind={ob.get('avi_kind')!r}")
+        if ob.get("avi_base_role") != role:
+            tag_bad.append(f"AVI_BASE_{role}.avi_base_role="
+                          f"{ob.get('avi_base_role')!r}")
+        centre = ob.get("avi_pad_centre_m")
+        if not centre or len(list(centre)) != 3:
+            tag_bad.append(f"AVI_BASE_{role}.avi_pad_centre_m missing")
+        else:
+            b = _bb(ob)
+            real = ((b[0] + b[1]) / 2.0, (b[2] + b[3]) / 2.0, b[5])
+            if math.dist(list(centre), list(real)) > 0.05:
+                tag_bad.append(f"AVI_BASE_{role}.avi_pad_centre_m stale "
+                              f"({list(centre)} vs measured {list(real)})")
+    R.append(Result("VF20", "landing pads carry avi_kind/role/centre tags",
+                    "PASS" if not tag_bad else "FAIL",
+                    f"{2 - len({b.split('.')[0] for b in tag_bad})}/2 pads clean"
+                    if tag_bad else "2/2 pads clean",
+                    "avi_kind=landing_pad, avi_base_role set, centre accurate",
+                    "; ".join(tag_bad)))
+
+    max_pad_dz, worst_pad = 0.0, None
+    for ob in pads.values():
+        b = _bb(ob)
+        cx, cy = (b[0] + b[1]) / 2.0, (b[2] + b[3]) / 2.0
+        expect = TF.height(cx, cy)
+        dz = abs(b[4] - expect)
+        if dz > max_pad_dz:
+            max_pad_dz, worst_pad = dz, ob.name
+    R.append(Result("VF21", "landing pads sit on terrain height",
+                    "PASS" if (pads and max_pad_dz <= 0.05) else
+                    ("SKIP" if not pads else "FAIL"),
+                    f"max |dz| {max_pad_dz:.4f} m" if pads else "no pads",
+                    "<= 0.05 m (placed directly from terrain_final.height())",
+                    worst_pad or ""))
+
+    collision_path = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "scene", "collision", "avian_bridge_collision.json")
+    if os.path.exists(collision_path):
+        with open(collision_path) as f:
+            prims = json.load(f).get("primitives", [])
+        pad_prims = [p for p in prims if p.get("kind") == "landing_pad"
+                    or str(p.get("name", "")).startswith("AVI_BASE_")]
+        R.append(Result("VF22", "landing pads reach the collision export",
+                        "PASS" if len(pad_prims) >= 2 else "FAIL",
+                        f"{len(pad_prims)} landing_pad primitives "
+                        f"of {len(prims)} total", ">= 2 (one per pad)",
+                        "the trap: AVI_HOME_* would be excluded by name; "
+                        "these are classified by avi_kind=landing_pad"))
+    else:
+        R.append(Result("VF22", "landing pads reach the collision export",
+                        "SKIP", "collision asset not exported yet"))
 
     pass_n = sum(1 for r in R if r.status == "PASS")
     fail_n = sum(1 for r in R if r.status == "FAIL")

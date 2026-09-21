@@ -3176,16 +3176,625 @@
           <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
-      <collision name="MB_TRAIN_CAR_1_collision">
-        <pose>157.500000 28.000000 21.150000 0 0 0.000000</pose>
+      <collision name="MB_TRAIN_001_ACUNIT_03_collision">
+        <pose>154.360000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_ACUNIT_03_visual">
+        <pose>154.360000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_ACUNIT_07_collision">
+        <pose>162.440000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_ACUNIT_07_visual">
+        <pose>162.440000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_BODY_collision">
+        <pose>158.400000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.200000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_BODY_visual">
+        <pose>158.400000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.200000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_BOGIE_F_collision">
+        <pose>151.340000 28.000000 19.900000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_BOGIE_F_visual">
+        <pose>151.340000 28.000000 19.900000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_BOGIE_R_collision">
+        <pose>163.660000 28.000000 19.900000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_BOGIE_R_visual">
+        <pose>163.660000 28.000000 19.900000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_DOOR_N1_collision">
+        <pose>151.128000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_DOOR_N1_visual">
+        <pose>151.128000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_DOOR_N2_collision">
+        <pose>155.976000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_DOOR_N2_visual">
+        <pose>155.976000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_DOOR_N3_collision">
+        <pose>160.824000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_DOOR_N3_visual">
+        <pose>160.824000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_DOOR_N4_collision">
+        <pose>165.672000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_DOOR_N4_visual">
+        <pose>165.672000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_DOOR_S1_collision">
+        <pose>151.128000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_DOOR_S1_visual">
+        <pose>151.128000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_DOOR_S2_collision">
+        <pose>155.976000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_DOOR_S2_visual">
+        <pose>155.976000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_DOOR_S3_collision">
+        <pose>160.824000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_DOOR_S3_visual">
+        <pose>160.824000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_DOOR_S4_collision">
+        <pose>165.672000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_DOOR_S4_visual">
+        <pose>165.672000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_NOSE_F_collision">
+        <pose>147.400000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.800000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_NOSE_F_visual">
+        <pose>147.400000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.800000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_STRIPE_N_collision">
+        <pose>158.400000 29.470000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_STRIPE_N_visual">
+        <pose>158.400000 29.470000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_STRIPE_S_collision">
+        <pose>158.400000 26.530000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_STRIPE_S_visual">
+        <pose>158.400000 26.530000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WHEEL_F_1_collision">
+        <pose>152.190000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WHEEL_F_1_visual">
+        <pose>152.190000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WHEEL_F_2_collision">
+        <pose>152.190000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WHEEL_F_2_visual">
+        <pose>152.190000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WHEEL_F_3_collision">
+        <pose>150.490000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WHEEL_F_3_visual">
+        <pose>150.490000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WHEEL_F_4_collision">
+        <pose>150.490000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WHEEL_F_4_visual">
+        <pose>150.490000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WHEEL_R_1_collision">
+        <pose>164.510000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WHEEL_R_1_visual">
+        <pose>164.510000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WHEEL_R_2_collision">
+        <pose>164.510000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WHEEL_R_2_visual">
+        <pose>164.510000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WHEEL_R_3_collision">
+        <pose>162.810000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WHEEL_R_3_visual">
+        <pose>162.810000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WHEEL_R_4_collision">
+        <pose>162.810000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WHEEL_R_4_visual">
+        <pose>162.810000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WINDOW_N_collision">
+        <pose>158.400000 29.460000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WINDOW_N_visual">
+        <pose>158.400000 29.460000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WINDOW_S_collision">
+        <pose>158.400000 26.540000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WINDOW_S_visual">
+        <pose>158.400000 26.540000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_001_WINDSCREEN_F_collision">
+        <pose>147.550000 28.000000 21.870000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.500000 1.740000 1.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_001_WINDSCREEN_F_visual">
+        <pose>147.550000 28.000000 21.870000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.500000 1.740000 1.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_ACUNIT_03_collision">
+        <pose>175.600000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_ACUNIT_03_visual">
+        <pose>175.600000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_ACUNIT_07_collision">
+        <pose>184.400000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_ACUNIT_07_visual">
+        <pose>184.400000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_BODY_collision">
+        <pose>180.000000 28.000000 21.150000 0 0 0.000000</pose>
         <geometry>
           <box>
             <size>22.000000 2.900000 3.600000</size>
           </box>
         </geometry>
       </collision>
-      <visual name="MB_TRAIN_CAR_1_visual">
-        <pose>157.500000 28.000000 21.150000 0 0 0.000000</pose>
+      <visual name="MB_TRAIN_002_BODY_visual">
+        <pose>180.000000 28.000000 21.150000 0 0 0.000000</pose>
         <geometry>
           <box>
             <size>22.000000 2.900000 3.600000</size>
@@ -3197,19 +3806,19 @@
           <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
-      <collision name="MB_TRAIN_CAR_2_collision">
-        <pose>180.000000 28.000000 21.150000 0 0 0.000000</pose>
+      <collision name="MB_TRAIN_002_BOGIE_F_collision">
+        <pose>173.840000 28.000000 19.900000 0 0 0.000000</pose>
         <geometry>
           <box>
-            <size>22.000000 2.900000 3.600000</size>
+            <size>2.400000 2.200000 0.550000</size>
           </box>
         </geometry>
       </collision>
-      <visual name="MB_TRAIN_CAR_2_visual">
-        <pose>180.000000 28.000000 21.150000 0 0 0.000000</pose>
+      <visual name="MB_TRAIN_002_BOGIE_F_visual">
+        <pose>173.840000 28.000000 19.900000 0 0 0.000000</pose>
         <geometry>
           <box>
-            <size>22.000000 2.900000 3.600000</size>
+            <size>2.400000 2.200000 0.550000</size>
           </box>
         </geometry>
         <material>
@@ -3218,19 +3827,1090 @@
           <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
-      <collision name="MB_TRAIN_CAR_3_collision">
-        <pose>202.500000 28.000000 21.150000 0 0 0.000000</pose>
+      <collision name="MB_TRAIN_002_BOGIE_R_collision">
+        <pose>186.160000 28.000000 19.900000 0 0 0.000000</pose>
         <geometry>
           <box>
-            <size>22.000000 2.900000 3.600000</size>
+            <size>2.400000 2.200000 0.550000</size>
           </box>
         </geometry>
       </collision>
-      <visual name="MB_TRAIN_CAR_3_visual">
-        <pose>202.500000 28.000000 21.150000 0 0 0.000000</pose>
+      <visual name="MB_TRAIN_002_BOGIE_R_visual">
+        <pose>186.160000 28.000000 19.900000 0 0 0.000000</pose>
         <geometry>
           <box>
-            <size>22.000000 2.900000 3.600000</size>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_DOOR_N1_collision">
+        <pose>172.080000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_DOOR_N1_visual">
+        <pose>172.080000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_DOOR_N2_collision">
+        <pose>177.360000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_DOOR_N2_visual">
+        <pose>177.360000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_DOOR_N3_collision">
+        <pose>182.640000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_DOOR_N3_visual">
+        <pose>182.640000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_DOOR_N4_collision">
+        <pose>187.920000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_DOOR_N4_visual">
+        <pose>187.920000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_DOOR_S1_collision">
+        <pose>172.080000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_DOOR_S1_visual">
+        <pose>172.080000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_DOOR_S2_collision">
+        <pose>177.360000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_DOOR_S2_visual">
+        <pose>177.360000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_DOOR_S3_collision">
+        <pose>182.640000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_DOOR_S3_visual">
+        <pose>182.640000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_DOOR_S4_collision">
+        <pose>187.920000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_DOOR_S4_visual">
+        <pose>187.920000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_STRIPE_N_collision">
+        <pose>180.000000 29.470000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.800000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_STRIPE_N_visual">
+        <pose>180.000000 29.470000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.800000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_STRIPE_S_collision">
+        <pose>180.000000 26.530000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.800000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_STRIPE_S_visual">
+        <pose>180.000000 26.530000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.800000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WHEEL_F_1_collision">
+        <pose>174.690000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WHEEL_F_1_visual">
+        <pose>174.690000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WHEEL_F_2_collision">
+        <pose>174.690000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WHEEL_F_2_visual">
+        <pose>174.690000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WHEEL_F_3_collision">
+        <pose>172.990000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WHEEL_F_3_visual">
+        <pose>172.990000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WHEEL_F_4_collision">
+        <pose>172.990000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WHEEL_F_4_visual">
+        <pose>172.990000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WHEEL_R_1_collision">
+        <pose>187.010000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WHEEL_R_1_visual">
+        <pose>187.010000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WHEEL_R_2_collision">
+        <pose>187.010000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WHEEL_R_2_visual">
+        <pose>187.010000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WHEEL_R_3_collision">
+        <pose>185.310000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WHEEL_R_3_visual">
+        <pose>185.310000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WHEEL_R_4_collision">
+        <pose>185.310000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WHEEL_R_4_visual">
+        <pose>185.310000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WINDOW_N_collision">
+        <pose>180.000000 29.460000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.800000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WINDOW_N_visual">
+        <pose>180.000000 29.460000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.800000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_002_WINDOW_S_collision">
+        <pose>180.000000 26.540000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.800000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_002_WINDOW_S_visual">
+        <pose>180.000000 26.540000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.800000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_ACUNIT_03_collision">
+        <pose>197.560000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_ACUNIT_03_visual">
+        <pose>197.560000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_ACUNIT_07_collision">
+        <pose>205.640000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_ACUNIT_07_visual">
+        <pose>205.640000 28.000000 23.160000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.000000 1.600000 0.420000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_BODY_collision">
+        <pose>201.600000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.200000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_BODY_visual">
+        <pose>201.600000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>20.200000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_BOGIE_F_collision">
+        <pose>196.340000 28.000000 19.900000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_BOGIE_F_visual">
+        <pose>196.340000 28.000000 19.900000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_BOGIE_R_collision">
+        <pose>208.660000 28.000000 19.900000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_BOGIE_R_visual">
+        <pose>208.660000 28.000000 19.900000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.400000 2.200000 0.550000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_DOOR_N1_collision">
+        <pose>194.328000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_DOOR_N1_visual">
+        <pose>194.328000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_DOOR_N2_collision">
+        <pose>199.176000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_DOOR_N2_visual">
+        <pose>199.176000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_DOOR_N3_collision">
+        <pose>204.024000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_DOOR_N3_visual">
+        <pose>204.024000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_DOOR_N4_collision">
+        <pose>208.872000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_DOOR_N4_visual">
+        <pose>208.872000 29.465000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_DOOR_S1_collision">
+        <pose>194.328000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_DOOR_S1_visual">
+        <pose>194.328000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_DOOR_S2_collision">
+        <pose>199.176000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_DOOR_S2_visual">
+        <pose>199.176000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_DOOR_S3_collision">
+        <pose>204.024000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_DOOR_S3_visual">
+        <pose>204.024000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_DOOR_S4_collision">
+        <pose>208.872000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_DOOR_S4_visual">
+        <pose>208.872000 26.535000 20.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 2.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_NOSE_R_collision">
+        <pose>212.600000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.800000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_NOSE_R_visual">
+        <pose>212.600000 28.000000 21.150000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.800000 2.900000 3.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_STRIPE_N_collision">
+        <pose>201.600000 29.470000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_STRIPE_N_visual">
+        <pose>201.600000 29.470000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_STRIPE_S_collision">
+        <pose>201.600000 26.530000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_STRIPE_S_visual">
+        <pose>201.600000 26.530000 20.612000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.030000 0.350000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WHEEL_F_1_collision">
+        <pose>197.190000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WHEEL_F_1_visual">
+        <pose>197.190000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WHEEL_F_2_collision">
+        <pose>197.190000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WHEEL_F_2_visual">
+        <pose>197.190000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WHEEL_F_3_collision">
+        <pose>195.490000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WHEEL_F_3_visual">
+        <pose>195.490000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WHEEL_F_4_collision">
+        <pose>195.490000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WHEEL_F_4_visual">
+        <pose>195.490000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WHEEL_R_1_collision">
+        <pose>209.510000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WHEEL_R_1_visual">
+        <pose>209.510000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WHEEL_R_2_collision">
+        <pose>209.510000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WHEEL_R_2_visual">
+        <pose>209.510000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WHEEL_R_3_collision">
+        <pose>207.810000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WHEEL_R_3_visual">
+        <pose>207.810000 29.150000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WHEEL_R_4_collision">
+        <pose>207.810000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WHEEL_R_4_visual">
+        <pose>207.810000 26.850000 19.770000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.840000 0.150000 0.840000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WINDOW_N_collision">
+        <pose>201.600000 29.460000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WINDOW_N_visual">
+        <pose>201.600000 29.460000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WINDOW_S_collision">
+        <pose>201.600000 26.540000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WINDOW_S_visual">
+        <pose>201.600000 26.540000 21.412000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>19.000000 0.000200 1.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_003_WINDSCREEN_R_collision">
+        <pose>212.450000 28.000000 21.870000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.500000 1.740000 1.080000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_003_WINDSCREEN_R_visual">
+        <pose>212.450000 28.000000 21.870000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.500000 1.740000 1.080000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_PANTO_ARM_A_collision">
+        <pose>180.550000 28.000000 23.650000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.100000 1.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_PANTO_ARM_A_visual">
+        <pose>180.550000 28.000000 23.650000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.100000 1.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_PANTO_ARM_B_collision">
+        <pose>179.450000 28.000000 23.650000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.100000 1.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_PANTO_ARM_B_visual">
+        <pose>179.450000 28.000000 23.650000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.100000 1.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_PANTO_BASE_collision">
+        <pose>180.000000 28.000000 22.950000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.000000 0.100000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_PANTO_BASE_visual">
+        <pose>180.000000 28.000000 22.950000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.000000 0.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.220 0.220 1</ambient>
+          <diffuse>0.550 0.550 0.550 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="MB_TRAIN_PANTO_SHOE_collision">
+        <pose>180.000000 28.000000 24.300000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.400000 0.100000 0.060000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="MB_TRAIN_PANTO_SHOE_visual">
+        <pose>180.000000 28.000000 24.300000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.400000 0.100000 0.060000</size>
           </box>
         </geometry>
         <material>

@@ -202,8 +202,62 @@ def _sab_VF18(records):
     return undo
 
 
-def run(records, mrecords, baseline_path, log=print):
+def _sab_VF19():
+    # bpy.data.objects still lists an unlinked object (it's collection
+    # membership, not existence), so VF19's bpy.data.objects scan would not
+    # even notice an unlink -- renaming it out of the expected name is what
+    # actually makes it disappear from that check.
+    ob = _find("AVI_BASE_SCANNER")
+    old_name = ob.name
+    ob.name = "AVI_BASE_SCANNER_SABOTAGED"
+    def undo():
+        ob.name = old_name
+    return undo
+
+
+def _sab_VF20():
+    ob = _find("AVI_BASE_REPAIRER")
+    old = ob.get("avi_base_role")
+    ob["avi_base_role"] = "NEITHER"
+    def undo():
+        ob["avi_base_role"] = old
+    return undo
+
+
+def _sab_VF21():
+    ob = _find("AVI_BASE_SCANNER")
+    old = ob.location.copy()
+    ob.location = (old.x, old.y, old.z + 2.0)
+    _touch()
+    def undo():
+        ob.location = old
+        _touch()
+    return undo
+
+
+def _sab_VF22(collision_path):
+    import json
+    with open(collision_path) as f:
+        original = f.read()
+    data = json.loads(original)
+    data["primitives"] = [p for p in data["primitives"]
+                          if p.get("kind") != "landing_pad"
+                          and not str(p.get("name", "")).startswith("AVI_BASE_")]
+    with open(collision_path, "w") as f:
+        json.dump(data, f)
+    def undo():
+        with open(collision_path, "w") as f:
+            f.write(original)
+    return undo
+
+
+def run(records, mrecords, baseline_path, log=print, collision_path=None):
+    import os
     rows = []
+    if collision_path is None:
+        collision_path = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "scene", "collision", "avian_bridge_collision.json")
 
     def check():
         R, summary = VF.run(records, mrecords, log=lambda *a: None,
@@ -241,6 +295,18 @@ def run(records, mrecords, baseline_path, log=print):
     if baseline_path:
         plan.append(("VF18", "shift a defect 5 m off its baseline position",
                     lambda: _sab_VF18(records)))
+    plan += [
+        ("VF19", "rename a landing pad out from under its expected name",
+         lambda: _sab_VF19()),
+        ("VF20", "corrupt a landing pad's avi_base_role tag",
+         lambda: _sab_VF20()),
+        ("VF21", "lift a landing pad 2 m off the terrain",
+         lambda: _sab_VF21()),
+    ]
+    if os.path.exists(collision_path):
+        plan.append(("VF22", "strip landing_pad primitives from the "
+                    "exported collision JSON",
+                    lambda: _sab_VF22(collision_path)))
 
     for check_id, desc, setup in plan:
         before = check()

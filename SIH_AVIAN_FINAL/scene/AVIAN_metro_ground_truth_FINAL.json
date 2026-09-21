@@ -417,7 +417,7 @@
       "detection_difficulty_score": 0.17,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.43631,
+      "defect_background_contrast": 0.43683,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -789,7 +789,7 @@
       "detection_difficulty_score": 0.385,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.04456,
+      "defect_background_contrast": 0.04429,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": true
     },
@@ -1099,7 +1099,7 @@
       "detection_difficulty_score": 0.047,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.10973,
+      "defect_background_contrast": 0.14158,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -1161,7 +1161,7 @@
       "detection_difficulty_score": 0.097,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.20706,
+      "defect_background_contrast": 0.20678,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -1223,7 +1223,7 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.02692,
+      "defect_background_contrast": 0.02638,
       "expected_rgb_visibility_geometric": false,
       "contrast_limited": false
     },
@@ -1285,7 +1285,7 @@
       "detection_difficulty_score": 0.484,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.06939,
+      "defect_background_contrast": 0.06905,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     }

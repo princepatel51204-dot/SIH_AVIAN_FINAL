@@ -75,6 +75,7 @@ cat > "${world}" <<SDF
     <include><uri>model://avian_final_road</uri></include>
     <include><uri>model://avian_final_metro</uri></include>
     <include><uri>model://avian_final_terrain</uri></include>
+    <include><uri>model://avian_final_base</uri></include>
     <include><uri>model://avian_final_defects</uri></include>
     <model name="shot_cam">
       <static>true</static>

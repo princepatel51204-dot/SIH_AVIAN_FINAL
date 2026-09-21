@@ -2,12 +2,14 @@
 
 A compact 360 m inspection corridor — one road bridge, one parallel metro
 viaduct, one river, no city — built in Blender and exported to Gazebo, with
-96 measured, ground-truthed defects and a hand-placed hero shot. Replaces
-the 4.5 km REV-C scene for the demo/pitch use case where the whole structure
-needs to fit in one frame. See `SIH_AVIAN_FINAL_MASTER_PROMPT.md` for the
-brief and `concept/SPEC.md` for every source dimension.
+96 measured, ground-truthed defects, a hand-placed hero shot, real vehicle/
+train geometry, and a two-pad drone base. Replaces the 4.5 km REV-C scene for
+the demo/pitch use case where the whole structure needs to fit in one frame.
+See `SIH_AVIAN_FINAL_MASTER_PROMPT.md` for the brief and `concept/SPEC.md`
+for every source dimension.
 
-REV-C (`../AVIAN_ENVIRONMENT/`, `../AVIAN_UAV/`) is untouched by this work.
+REV-C (`../AVIAN_ENVIRONMENT/`) is untouched by this work. `AVIAN_UAV/` has
+exactly one additive line changed — see "The drone base" below.
 
 ## Build it
 
@@ -20,13 +22,16 @@ cd /home/prince/avian_rev_c/SIH_AVIAN_FINAL
 # Phase 1: geometry, materials, defects, measured visibility (~3 s)
 blender --background --python run_blender.py -- source/build_final.py
 
+# Collision asset (reuses AVIAN_UAV/simulation/export_bridge_collision.py
+# unchanged) -- run BEFORE phase 2 so VF22 (landing pads reach collision)
+# has a fresh file to check against
+blender --background --python run_blender.py -- source/collision_final.py
+
 # Phase 2: measured contrast, cameras, validation, sabotage, ground truth,
-# baseline freeze (~1 min; add --render for the 8 named camera PNGs, ~8 min)
+# baseline freeze (~45 s; add --render for the 9 named camera PNGs, ~10 min)
 blender --background --python run_blender.py -- source/measure_final.py --render
 
-# Collision asset (reuses AVIAN_UAV/simulation/export_bridge_collision.py
-# unchanged) and the Gazebo SDF world
-blender --background --python run_blender.py -- source/collision_final.py
+# Gazebo SDF world
 blender --background --python run_blender.py -- source/export_gazebo_final.py
 ```
 
@@ -61,15 +66,53 @@ the origin, so Gazebo coordinates equal Blender coordinates directly.
 | Road bridge | 360 m, 7 spans (45/45/45/**90**/45/45/45), 8 piers (twin Ø1.7 m columns), y=0, deck top 14.0–14.6 m (slight vertical curve, crest over the river) |
 | Metro viaduct | y=28, deck top z=19.0 (flat), single-cell box girder (2.2 m approach / 3.2 m over the main span), single Ø2.0 m piers with flared heads, 11 piers / 10 spans, 5 catenary masts, no station (locked decision) |
 | River | centre x=180, wetted channel 60 m + graded banks reaching grade exactly at x=135/225 (the piers flanking the main span) — bank-to-bank ≈90 m, matching SPEC.md |
+| Waterline staining | dark algal band + pale efflorescence bloom, on the 4 road + 2 metro pier columns nearest the river |
 | Inter-structure gap | 14.7 m clear between the road deck edge and the metro deck edge (VF15) |
-| Traffic | 16 vehicles (13 cars, 2 trucks, 1 bus) on the road deck |
-| Train | 3 cars × 22 m = 67 m, parked mid-span, static |
-| Defects | **96 road** (95 from the SPEC.md population + 1 hand-placed hero) + **20 metro** (`MDEFECT_*`, own namespace) |
-| Scene | 606 objects, 31,466 triangles, 112 materials |
-| Cameras | 8 named views (`CAM_01_OVERVIEW` … `CAM_08_DECK`), rendered to `renders/` |
-| Validation | **21/21 PASS** (`validate_final.py`) |
-| Sabotage | **16/16 proven** capable of failing (`sabotage_final.py`) |
-| Gazebo | 401 collision primitives, SDF world, `gz sdf -k` clean, loads and steps |
+| Traffic | 18 vehicles: 13 real-silhouette cars (bonnet/cabin/boot, raked windscreen, 4 wheels, glass), 2 trucks (cab + box body, 6 wheels), 1 bus (window band, 6 wheels), 2 auto-rickshaws |
+| Train | Real 3-car EMU, 22 m/car, raked cab noses on cars 1/3, window band + 4 door pairs/side, 2 bogies/car, roof AC units + a diamond pantograph, cream body with a Mumbai-Metro-blue stripe |
+| Drone base | Two 6×6 m landing pads (SCANNER, REPAIRER), 12 m apart, near the x=0 abutment — painted H + circle, kerb, corner markers, equipment cabin, mast + windsock, charging docks |
+| Micro-detail | Formwork lines + tie-hole patches + honeycombing on the 4 HIGH-band piers (both structures), chamfered pier-cap arrises, 204 parapet posts, crack-relief geometry cut into 7 cracks over 3 mm |
+| Defects | **96 road** (95 from the SPEC.md population + 1 hand-placed hero) + **20 metro** (`MDEFECT_*`, own namespace) — untouched by this pass, baseline drift 0.000 mm |
+| Scene | 1,514 objects, 60,206 triangles (31× under the 2,000,000 budget), 121 materials |
+| Cameras | 9 named views (`CAM_01_OVERVIEW` … `CAM_08_DECK`, `CAM_09_BASE`), rendered to `renders/` |
+| Validation | **25/25 PASS** (`validate_final.py`) |
+| Sabotage | **20/20 proven** capable of failing (`sabotage_final.py`) |
+| Gazebo | 483 collision primitives (incl. both landing pads), SDF world, `gz sdf -k` clean, loads and steps |
+
+## The drone base — and the collision trap
+
+Two 6×6 m pads, `AVI_BASE_SCANNER` and `AVI_BASE_REPAIRER`, on the flat bank
+south of the road bridge (x=20, y=−30/−18 — clear of the abutment/wing walls,
+clear of the river, 12 m apart). Each pad deck carries `avi_kind=
+"landing_pad"`, `avi_base_role="SCANNER"|"REPAIRER"`, and `avi_pad_centre_m`.
+
+**The trap the brief called out is real and was caught, not assumed away.**
+`export_bridge_collision.py`'s `EXCLUDE_PREFIXES` contains `"AVI_HOME"` — a
+pad named `AVI_HOME_*` would render, the SDF would parse, the world would
+load, and a UAV would fall straight through it on first spawn, because
+nothing in a visual check would ever catch a missing *collision* primitive.
+Two things make these pads land on solid ground instead of merely avoiding
+that one string by luck:
+
+1. `"landing_pad": "BOX"` was added to `STRUCTURAL_KINDS` in
+   `AVIAN_UAV/simulation/export_bridge_collision.py` (the one line changed
+   outside this project — purely additive, inert for REV-C, which has no
+   `landing_pad` objects). Classification now happens on `avi_kind`, not on
+   name prefix, which is the robust path.
+2. `export_gazebo_final.py`'s model groups originally only matched `BR_`/
+   `MB_`/`ENV` prefixes — a first pass had the pads correctly reaching the
+   *collision JSON* (VF22 passed) while silently **missing from the actual
+   Gazebo SDF world**, because none of those three groups matched
+   `AVI_BASE_`. Caught by eye (the base didn't appear in a screenshot),
+   fixed by adding a fourth `avian_final_base` group. This is exactly why
+   VF22 checks the collision JSON's primitive *count*, not a render: a
+   missing SDF group is a rendering gap; a missing collision primitive is
+   a physics gap, and the two failed independently of each other here.
+
+VF19–22 check, respectively: both pads exist, both carry correct tags,
+both sit exactly on `terrain_final.height()` (0.0000 m drift — placed
+directly from it, not just checked against it), and both reach the
+*exported* collision JSON by primitive count. All four are sabotage-tested.
 
 ## The hero defect
 
@@ -78,11 +121,22 @@ corroded rebars, hand-placed on the outboard face of `BR_PIER_COL_004_1`
 (the road pier at x=135, immediately flanking the main span) at z=6.0 m,
 tagged `avi_hero=True`. It occupies one of REBAR_EXPOSED's 6 slots in the
 96-defect population (the random target was set to 5, not 6, specifically
-to leave this one for the hand-placed hero) — see `build_final.py`'s
-"hand-placed hero defect" section and `params_final.py`'s DAMAGE comment.
-Framed by `CAM_06_HERO_DEFECT`, pulled back to ~3 m so the cavity's rim and
-its raked-light shadow are actually in frame (a dead-on close-up at 1.6 m
-showed only the cavity floor).
+to leave this one for the hand-placed hero). Framed by `CAM_06_HERO_DEFECT`,
+pulled back to ~3 m so the cavity's rim and its raked-light shadow are
+actually in frame (a dead-on close-up at 1.6 m showed only the cavity floor).
+
+## A bug this pass caught in its own first draft
+
+The metro train's body/window/door/bogie geometry is built in a local frame
+with Y=0 as the track centreline, meant to be shifted onto the real
+centreline (y=28) once, in `train_final.build()`. The first version of that
+function only applied the Z shift (onto the rail top) and forgot Y entirely
+— the whole train sat at y≈0, **on top of the road bridge**, not the metro
+deck 28 m away. `VF15` (inter-structure corridor clear of structure) caught
+it immediately: a re-run reported the metro's own bounding box reaching
+y=−1.49, deep in the road bridge's territory. Fixed by adding an explicit
+`centre_y` parameter; documented in `train_final.py` itself as a warning
+against forgetting it again.
 
 ## Assumptions made (working rule 5) — everything not fixed by SPEC.md
 
@@ -108,25 +162,33 @@ showed only the cavity floor).
   is disabled via monkeypatch rather than never called, since the reused
   module always calls it internally.
 - **2–3 distant building silhouettes** for scale on the horizon (locked
-  decision 3) — simple `CITY_`-prefixed boxes, excluded from collision by
-  prefix like REV-C's city detail.
+  decision 3) — dim, hazed via `_aerial()`, flat roof + parapet, excluded
+  from collision by the `CITY_` prefix like REV-C's own city detail.
 - **Ground-object height tolerance (VF04)**: 1.2 m, not REV-C's 0.60 m.
   REV-C's limit was tuned to ITS rock prototype's embedding depth; this
   scene's randomly-rotated riprap/debris props measure up to ~0.97 m at the
   bbox-bottom, so 1.2 m is set from that measurement with headroom, not
   copied.
+- **Drone base position**: x=20 (near the x=0 abutment but clear of its
+  wing walls), y=−30/−18 (south of the road bridge, clear of its edge by
+  ≥11 m). Not specified further by the brief.
+- **Train livery**: cream body, Mumbai-Metro-blue stripe — a specific,
+  named choice (materials_final.py's `TRAIN_BODY`/`TRAIN_STRIPE`), picked
+  to match the South Mumbai / coastal-metro city character `materials_c.py`
+  already establishes, and modelled on Mumbai Metro Line 1's real livery.
+- **Vehicle body colours**: 8 named colours (silver, white, red, dark blue,
+  black, taxi yellow, grey-green, maroon) via one material driven by
+  `Object Info → Random`, not 8 separate material datablocks.
+- **Micro-detail is additive, not a groove**: formwork lines are raised
+  rings (a proud line reads the same under a raking sun as a grooved one,
+  without a boolean), and every micro-detail object is prefixed `_MD_`
+  specifically so `damage.py`'s ray-cast host resolution skips it — without
+  that, a formwork ring or tie-hole patch sitting right next to a pier
+  column could get ray-cast-selected as a defect's host instead of the
+  column itself.
 
 ## What did NOT get built
 
-Scoped out under the time available, and worth flagging rather than
-silently omitting:
-
-- **Micro-detail (Checkpoint C)**: formwork lines, construction-joint
-  efflorescence banding, honeycombing, and >3 mm crack GEOMETRY (vs. decal)
-  were not added on top of what `materials.py`/`materials_c.py` already do
-  (weathering, grime-in-crevices via Pointiness, the crack decal shader
-  itself). The concrete/asphalt/water weathering from Checkpoint B **is**
-  applied (`materials_c.build_all`).
 - **Airspace volumes and mission sectors** (`zones_final.py` — SPEC.md's
   five airspace classes, `MSECTOR_*`/`INTER_STRUCTURE_CORRIDOR` markers):
   not built. `validate_final.py`'s VF15 checks the inter-structure gap
@@ -135,37 +197,49 @@ silently omitting:
   ("6 road sectors") and C08 (metro pier diameter hardcoded to REV-C's
   2.8 m) fail against this scene — **not defects in this build**, but
   REV-C-specific assumptions baked into that shared, reused file, which
-  was not edited (it is protected machinery both packages depend on).
-- **Vehicle/train collision**: `VEH_` and `MB_TRAIN_CAR_` objects are not
-  BR_/MB_-prefixed, so `export_bridge_collision.py` does not turn them into
-  obstacles. Decorative only, matching how REV-C excludes vegetation/city
-  detail from collision.
+  was not (and should not be) edited for this beyond the one additive
+  `STRUCTURAL_KINDS` entry the drone base needed.
+- **Vehicle/train collision**: `VEH_`/`MB_TRAIN_*` objects are not
+  BR_/MB_-prefixed and carry no `avi_kind` in `STRUCTURAL_KINDS`, so
+  `export_bridge_collision.py` does not turn them into obstacles.
+  Decorative only, matching how REV-C excludes vegetation/city detail.
+- **Construction-joint efflorescence bleed as its own geometry pass**: the
+  waterline staining and `materials_c.py`'s existing efflorescence-at-joints
+  shader layer cover this; no separate construction-joint object was added.
 
 ## Files
 
 ```
 source/
-  params_final.py       every dimension; bridge.py/damage.py-compatible
-                         contract (they run unmodified via monkeypatch)
-  terrain_final.py       river, banks, embankments, riprap, debris, trees
-  build_final.py          phase 1: geometry + materials + defects + hero
-  cameras_final.py        the 8 named cameras
-  measure_final.py        phase 2: contrast + validation + sabotage + export
-  validate_final.py       VF01-VF18, this scene's own limits
-  sabotage_final.py       proves every VF check can fail
-  collision_final.py      calls AVIAN_UAV's export_bridge_collision.py
-  export_gazebo_final.py  SDF world writer
-scene/                    build outputs (gitignored: *.blend, handoff JSON)
+  params_final.py         every dimension; bridge.py/damage.py-compatible
+                           contract (they run unmodified via monkeypatch)
+  terrain_final.py         river, banks, embankments, riprap, debris, trees,
+                           distant silhouettes
+  materials_final.py       vehicle body (random colour)/tyre/trim, rickshaw,
+                           train livery, waterline staining, silhouette
+  vehicles_final.py        real car/truck/bus/auto-rickshaw geometry
+  train_final.py           real 3-car EMU geometry
+  base_final.py            the two landing pads + base furniture
+  microdetail_final.py     formwork/tie-holes/honeycombing/chamfers/
+                           parapet posts/crack-relief geometry
+  build_final.py           phase 1: geometry + materials + defects + hero
+  cameras_final.py         the 9 named cameras
+  measure_final.py         phase 2: contrast + validation + sabotage + export
+  validate_final.py        VF01-VF22, this scene's own limits
+  sabotage_final.py        proves every VF check can fail
+  collision_final.py       calls AVIAN_UAV's export_bridge_collision.py
+  export_gazebo_final.py   SDF world writer
+scene/                     build outputs (gitignored: *.blend, handoff JSON)
   AVIAN_defect_ground_truth_FINAL.{json,csv}
   AVIAN_metro_ground_truth_FINAL.{json,csv}
   BASELINE_FINAL_ground_truth.json   frozen at first successful build
   AVIAN_scene_stats_FINAL.json
   collision/avian_bridge_collision.json
-renders/                  the 8 named camera views
+renders/                   the 9 named camera views
 gazebo/
   worlds/sih_avian_final.sdf
-  models/avian_final_{road,metro,terrain,defects}/
-  shoot_final.sh           headless screenshot
+  models/avian_final_{road,metro,terrain,base,defects}/
+  shoot_final.sh            headless screenshot
   screenshots/
-concept/                  the six source drawings + SPEC.md
+concept/                   the six source drawings + SPEC.md
 ```

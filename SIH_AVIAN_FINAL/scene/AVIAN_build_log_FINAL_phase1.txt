@@ -18,6 +18,16 @@
 -- metro viaduct (metro.py, reused unchanged) --
   metro   : 11 piers, 10 spans, 5 masts, 180 objects at y=28.0
   metro   : deck z=19.0, max z=25.35 (ceiling 40.0), main span 90-135 soffit z=15.8, air draft 17.80 m
+-- waterline staining (river-adjacent piers) --
+  stain   : waterline staining applied to 4 pier columns
+  stain   : waterline staining applied to 2 pier columns
+-- micro-detail: formwork, tie-holes, honeycombing, chamfers, parapet posts (HIGH band) --
+  detail  : 126 formwork lines, 96 tie-hole patches on 8 HIGH-band columns
+  detail  : 63 formwork lines, 36 tie-hole patches on 3 HIGH-band columns
+  detail  : 80 honeycomb/blowhole bumps near pier bases
+  detail  : 30 honeycomb/blowhole bumps near pier bases
+  detail  : 16 chamfer strips on 4 HIGH-band pier caps
+  detail  : 204 parapet posts at 3.5 m spacing
 -- road-bridge damage (damage.py, reused unchanged) --
   sites   : 121 engineering-plausible candidate locations
   carve   : 17 cavities cut into 14 members
@@ -28,16 +38,25 @@
 -- hand-placed hero defect (SPEC S5.2) --
   carve   : 1 cavities cut into 1 members
   hero    : DEFECT_REBAR_EXPOSED_006 on BR_PIER_COL_004_1 z=6.00 area=1.3963 m2 (96 road defects total)
+-- crack relief geometry, >3 mm (reuses damage.py's carve()) --
+  carve   : 4 cavities cut into 3 members
+  detail  : crack relief cut into 4 of 4 cracks over 3 mm
+  carve   : 3 cavities cut into 3 members
+  detail  : crack relief cut into 3 of 3 cracks over 3 mm
 -- measured visibility (visibility.py, reused unchanged) --
   visible : LEVEL_1=21, LEVEL_2=25, LEVEL_3=16, LEVEL_4=34; 32 observable by no modality
   visible : LEVEL_1=3, LEVEL_2=9, LEVEL_3=0, LEVEL_4=8; 6 observable by no modality
--- traffic on the road deck (SPEC.md: ~16 vehicles) --
-  traffic : 16 vehicles (13 cars, 2 trucks, 1 bus)
--- metro train, parked mid-span, static (SPEC.md) --
-  train   : 3 cars, 67.0 m overall, centred x=180
+-- traffic on the road deck: real car/truck/bus/rickshaw geometry --
+  traffic : 18 vehicles -> {'car': 13, 'truck': 2, 'bus': 1, 'rickshaw': 2}, 156 objects
+-- metro train: real 3-car EMU, parked mid-span, static --
+  train   : 3-car EMU, 67.0 m overall, centred x=180, livery cream/Mumbai Metro blue, 83 objects
+-- drone base: two landing pads, SCANNER + REPAIRER --
+  base    : pad SCANNER at (20.0, -30.0, -0.62), 15 objects
+  base    : pad REPAIRER at (20.0, -18.0, -0.18), 15 objects
+  base    : 34 total objects (2 pads, cabin, mast+windsock, docks)
 -- triangle / object accounting --
-  objects : 606
-  triangles: 31466
+  objects : 1514
+  triangles: 60206
 -- saving --
   blend   : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/SIH_AVIAN_FINAL.blend
   handoff : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/_handoff_final.json

@@ -43,6 +43,11 @@ import visibility as VIS
 import lighting as LT
 import terrain_final as TF
 import params_final as PF
+import materials_final as MATF
+import vehicles_final as VEHF
+import train_final as TRAINF
+import base_final as BASEF
+import microdetail_final as MDF
 
 T0 = time.time()
 LOG_LINES = []
@@ -165,8 +170,18 @@ def main():
     # bool.
     stats["materials_c"] = MATC.build_all(
         strength=PARAMS_C.CONCRETE_WEATHER_STRENGTH, log=log)
-    mats["bldg_far"] = MAT.simple("MAT_BLDG_FAR_SILHOUETTE",
-                                  (0.34, 0.36, 0.40), rough=0.75)
+    # Realism pass: silhouette routed through _aerial() (replaces the flat
+    # MAT.simple() call), vehicle body/tyre/trim, rickshaw, train livery.
+    mats["bldg_far"] = MATF.silhouette()
+    mats["vehicle_body"] = MATF.vehicle_body()
+    mats["vehicle_tyre"] = MATF.vehicle_tyre()
+    mats["vehicle_trim"] = MATF.vehicle_trim()
+    mats["rickshaw_body"] = MATF.rickshaw_body()
+    mats["rickshaw_hood"] = MATF.rickshaw_hood()
+    mats["train_body"] = MATF.train_body()
+    mats["train_stripe"] = MATF.train_stripe()
+    mats["train_roof"] = MATF.train_roof()
+    mats["train_bogie"] = MATF.train_bogie()
     stats["materials"] = len(bpy.data.materials)
 
     log("-- lighting (low morning sun, BASELINE) --")
@@ -182,6 +197,24 @@ def main():
     stats["metro"] = MB.build(colls, mats, log)
 
     bpy.context.view_layer.update()
+
+    log("-- waterline staining (river-adjacent piers) --")
+    # SPEC.md: "Waterline staining on every pier that meets water." Piers
+    # 004/005 (road) flank the main span at x=135/225; the metro's own
+    # piers nearest those x-values are the equivalent river-adjacent ones.
+    n_stain = MATF.apply_waterline_staining(
+        ("BR_PIER_COL_004", "BR_PIER_COL_005"), log=log)
+    metro_river_piers = tuple(
+        o.name for o in bpy.data.objects
+        if o.name.startswith("MB_PIER_COL_") and o.type == "MESH"
+        and min(v.co.x for v in o.data.vertices) < 226.0
+        and max(v.co.x for v in o.data.vertices) > 134.0)
+    n_stain += MATF.apply_waterline_staining(metro_river_piers, log=log)
+    stats["waterline_staining"] = n_stain
+
+    log("-- micro-detail: formwork, tie-holes, honeycombing, chamfers, "
+        "parapet posts (HIGH band) --")
+    stats["microdetail"] = MDF.build(colls, mats, PF, log=log)
 
     log("-- road-bridge damage (damage.py, reused unchanged) --")
     records, counts, n_obj = DMG.build(colls, mats, log)
@@ -292,6 +325,12 @@ def main():
         f"z={hero_rec['position_m'][2]:.2f} area={hero_rec['area_m2']} m2 "
         f"({len(records)} road defects total)")
 
+    bpy.context.view_layer.update()
+
+    log("-- crack relief geometry, >3 mm (reuses damage.py's carve()) --")
+    stats["crack_relief"] = MDF.crack_relief(records, DMG, log=log)
+    stats["metro_crack_relief"] = MDF.crack_relief(mrecords, DMG, log=log)
+
     log("-- measured visibility (visibility.py, reused unchanged) --")
     vis_summary = VIS.compute(records, log=log)
     stats["visibility"] = vis_summary
@@ -300,52 +339,21 @@ def main():
 
     bpy.context.view_layer.update()
 
-    log("-- traffic on the road deck (SPEC.md: ~16 vehicles) --")
+    log("-- traffic on the road deck: real car/truck/bus/rickshaw geometry --")
     # Added AFTER visibility.compute() deliberately: these sit on the deck
     # TOP while every defect host is on the deck underside, girder webs,
     # diaphragms or piers, so they cannot legitimately occlude a defect --
     # but there is no reason to let them anywhere near the ray-casts that
     # matter, so they are built last.
-    veh_rnd = random.Random(PF.SEED + 555)
-    veh_specs = (["car"] * 13) + ["truck", "truck", "bus"]
-    veh_rnd.shuffle(veh_specs)
-    VEH_DIMS = {"car": (4.4, 1.8, 1.5), "truck": (8.0, 2.4, 3.0),
-                "bus": (11.0, 2.5, 3.2)}
-    VEH_MAT = {"truck": "vehicle_c", "bus": "vehicle_d"}
-    car_mats = ["vehicle_a", "vehicle_b", "vehicle_c", "vehicle_d"]
-    lane_ys = (-5.25, -1.75, 1.75, 5.25)
-    xs = [20.0 + i * (PF.BRIDGE_LENGTH - 40.0) / max(1, len(veh_specs) - 1)
-          for i in range(len(veh_specs))]
-    veh_rnd.shuffle(xs)
-    n_veh = 0
-    for i, kind in enumerate(veh_specs):
-        x = max(3.0, min(PF.BRIDGE_LENGTH - 3.0, xs[i] + veh_rnd.uniform(-3, 3)))
-        lane = lane_ys[i % 4]
-        L, W, H = VEH_DIMS[kind]
-        z = PF.deck_top_z(x) + H / 2.0 + 0.02
-        matk = VEH_MAT.get(kind, car_mats[i % 4])
-        ob = ML.box(f"VEH_{kind.upper()}_{i+1:03d}", (L, W, H), (x, lane, z),
-                   colls["VEHICLES"], mats[matk])
-        ML.set_custom(ob, {"avi_kind": "vehicle", "avi_vehicle_type": kind})
-        n_veh += 1
-    stats["vehicles"] = n_veh
-    log(f"  traffic : {n_veh} vehicles ({veh_specs.count('car')} cars, "
-        f"{veh_specs.count('truck')} trucks, {veh_specs.count('bus')} bus)")
+    stats["vehicles"] = VEHF.build(colls, mats, PF, log=log)
 
-    log("-- metro train, parked mid-span, static (SPEC.md) --")
-    train_car_l, gap = 22.0, 0.5
-    total = 3 * train_car_l + 2 * gap
-    x0 = 180.0 - total / 2.0
+    log("-- metro train: real 3-car EMU, parked mid-span, static --")
     rail_top_z = MB.DECK_TOP_Z + MB.SLAB_TRACK_T
-    car_h, car_w = 3.6, 2.9
-    for i in range(3):
-        cx = x0 + i * (train_car_l + gap) + train_car_l / 2.0
-        ob = ML.box(f"MB_TRAIN_CAR_{i+1}", (train_car_l, car_w, car_h),
-                   (cx, MB.Y, rail_top_z + car_h / 2.0),
-                   colls["VEHICLES"], mats["steel"])
-        ML.set_custom(ob, {"avi_kind": "train_car", "avi_static": True})
-    stats["train"] = {"cars": 3, "length_m": total, "centre_x": 180.0}
-    log(f"  train   : 3 cars, {total:.1f} m overall, centred x=180")
+    stats["train"] = TRAINF.build(colls, mats, 180.0, MB.Y, rail_top_z,
+                                  log=log)
+
+    log("-- drone base: two landing pads, SCANNER + REPAIRER --")
+    stats["base"] = BASEF.build(colls, mats, TF.height, log=log)
 
     bpy.context.view_layer.update()
 

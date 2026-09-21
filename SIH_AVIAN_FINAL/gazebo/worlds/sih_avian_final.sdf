@@ -59,6 +59,10 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
     <include>
+      <uri>model://avian_final_base</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
       <uri>model://avian_final_defects</uri>
       <pose>0 0 0 0 0 0</pose>
     </include>

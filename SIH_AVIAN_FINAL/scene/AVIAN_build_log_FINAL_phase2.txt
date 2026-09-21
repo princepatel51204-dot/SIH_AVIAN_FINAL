@@ -2,10 +2,10 @@
   loaded  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/SIH_AVIAN_FINAL.blend
   records : 96 road, 20 metro
 -- cameras --
-  cameras : 8 named views
+  cameras : 9 named views
 -- measured contrast (contrast_c.py, reused unchanged) --
-  contrast: 96 measured, 0 skipped, mean 0.1002, 27 contrast-limited (weather 1.00, threshold 0.05, 26.8 s)
-  contrast: 20 measured, 0 skipped, mean 0.1015, 9 contrast-limited (weather metro 1.00, threshold 0.05, 5.6 s)
+  contrast: 96 measured, 0 skipped, mean 0.0968, 27 contrast-limited (weather 1.00, threshold 0.05, 34.6 s)
+  contrast: 20 measured, 0 skipped, mean 0.1031, 9 contrast-limited (weather metro 1.00, threshold 0.05, 7.0 s)
 -- ground truth export --
   exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_defect_ground_truth_FINAL.json
   exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_metro_ground_truth_FINAL.json
@@ -19,21 +19,25 @@
   [PASS] VF05 no pier inside the navigation channel  0 offending piers          
   [PASS] VF06 road bridge air draft over the channel 13.78 m                    
   [PASS] VF07 metro air draft over the channel       17.80 m                    
-  [PASS] VF08 unique object names                    614 objects, 0 duplicate names 
-  [PASS] VF09 polygon budget                         31,466 triangles           generous vs REV-C's raised 15M ceiling -- this corridor is two orders of magnitude smaller
-  [PASS] VF10 camera far clip covers the corridor    8 cameras, 0 with clip_end<500m 
-  [PASS] VF10b all 8 named cameras exist              8 CAM_ objects             
+  [PASS] VF08 unique object names                    1523 objects, 0 duplicate names 
+  [PASS] VF09 polygon budget                         60,206 triangles           generous vs REV-C's raised 15M ceiling -- this corridor is two orders of magnitude smaller
+  [PASS] VF10 camera far clip covers the corridor    9 cameras, 0 with clip_end<500m 
+  [PASS] VF10b all 9 named cameras exist              9 CAM_ objects             
   [PASS] VF11 defects resolved to a real host surface 1/96 orphans (1.0%)        DEFECT_DELAMINATION_007
   [PASS] VF12 road ground truth field completeness   43 common fields + 1 type-specific x 96 records 
   [PASS] VF12b metro ground truth field completeness  47 common fields + 1 type-specific x 20 records 
   [PASS] VF13 road defect count matches SPEC.md      96                         
   [PASS] VF13b defect counts by type match SPEC.md    {'CRACK_HAIRLINE': 24, 'CRACK_LONGITUDINAL': 12, 'CRACK_TRANSVERSE': 10, 'CRACK_NETWORK': 8, 'SPALL': 12, 'DELAMINATION': 8, 'REBAR_EXPOSED': 6, 'CORROSION_STAIN': 10, 'JOINT_DETERIORATION': 6} 
-  [PASS] VF14 road and metro structures do not overlap 0 overlapping bbox pairs (216 BR_ x 183 MB_) 
+  [PASS] VF14 road and metro structures do not overlap 0 overlapping bbox pairs (216 BR_ x 263 MB_) 
   [PASS] VF15 inter-structure corridor clear of structure 14.70 m clear (BR_ max y=9.00, MB_ min y=23.70) 
-  [PASS] VF16 every MB_ member carries avi_kind      183/183 classified         
+  [PASS] VF16 every MB_ member carries avi_kind      263/263 classified         
   [PASS] VF17 hero defect present and correctly tagged 1 tagged avi_hero=True     
   [PASS] VF18 baseline drift (road defects)          0 added, 0 removed, 0.000 mm drift 
-  VALIDATE: 21 pass, 0 fail, 0 skip, 21 total
+  [PASS] VF19 both landing pads exist                2 pad objects              AVI_BASE_REPAIRER, AVI_BASE_SCANNER
+  [PASS] VF20 landing pads carry avi_kind/role/centre tags 2/2 pads clean             
+  [PASS] VF21 landing pads sit on terrain height     max |dz| 0.0000 m          AVI_BASE_SCANNER
+  [PASS] VF22 landing pads reach the collision export 2 landing_pad primitives of 483 total the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad
+  VALIDATE: 25 pass, 0 fail, 0 skip, 25 total
 -- sabotage (working rule 3.10) --
   [OK ] VF01     shrink a deck slab's width                       PASS -> FAIL
   [OK ] VF02     move the north abutment 500 m away               PASS -> FAIL
@@ -51,4 +55,18 @@
   [OK ] VF16     strip avi_kind off a metro pier column           PASS -> FAIL
   [OK ] VF17     strip the avi_hero tag off the hero defect       PASS -> FAIL
   [OK ] VF18     shift a defect 5 m off its baseline position     PASS -> FAIL
-  SABOTAGE: 16/16 proven capable of failing
+  [OK ] VF19     rename a landing pad out from under its expected name PASS -> FAIL
+  [OK ] VF20     corrupt a landing pad's avi_base_role tag        PASS -> FAIL
+  [OK ] VF21     lift a landing pad 2 m off the terrain           PASS -> FAIL
+  [OK ] VF22     strip landing_pad primitives from the exported collision JSON PASS -> FAIL
+  SABOTAGE: 20/20 proven capable of failing
+-- rendering the 8 named cameras --
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_01_OVERVIEW.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_02_RIVER.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_03_UNDERDECK.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_04_INTER_STRUCTURE.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_05_PIER.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_06_HERO_DEFECT.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_07_METRO.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_08_DECK.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_09_BASE.png

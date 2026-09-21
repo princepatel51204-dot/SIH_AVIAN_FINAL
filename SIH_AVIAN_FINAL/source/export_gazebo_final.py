@@ -43,6 +43,7 @@ KIND_COLOUR = {
     "rail": (0.42, 0.42, 0.45), "track_slab": (0.56, 0.55, 0.53),
     "catenary_mast": (0.30, 0.30, 0.32), "cable_trough": (0.50, 0.49, 0.47),
     "access_hatch": (0.28, 0.28, 0.30),
+    "landing_pad": (0.60, 0.58, 0.42),
 }
 DEFAULT_COLOUR = (0.55, 0.55, 0.55)
 DEFECT_COLOUR = (0.85, 0.16, 0.10)
@@ -105,7 +106,14 @@ def export(log=print):
 
     groups = {"avian_final_road": ("BR_", "road bridge structure"),
               "avian_final_metro": ("MB_", "metro viaduct structure"),
-              "avian_final_terrain": ("ENV", "terrain and river")}
+              "avian_final_terrain": ("ENV", "terrain and river"),
+              # The landing pads: present in the collision JSON (kind=
+              # landing_pad) but invisible in the actual Gazebo WORLD
+              # without their own group here -- none of the three groups
+              # above match "AVI_BASE_", so the pads would silently vanish
+              # from the SDF a UAV actually flies in even though VF22
+              # (which reads the collision JSON, not the SDF) still passes.
+              "avian_final_base": ("AVI_BASE_", "drone base landing pads")}
     written = {}
     poses = {}
 

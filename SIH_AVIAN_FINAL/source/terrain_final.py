@@ -185,6 +185,9 @@ def build(colls, mats, log=print):
     # ---- 2-3 distant building silhouettes on the horizon, for scale --------
     # Locked pre-flight decision 3. Non-structural, CITY_-prefixed so the
     # collision exporter's EXCLUDE_PREFIXES keeps them out automatically.
+    # Realism pass: routed through materials_final.silhouette() (_aerial(),
+    # dim albedo) rather than a flat bright colour, and given a flat roof
+    # line with a parapet lip so they read as buildings, not slabs.
     n_city = 0
     sky_x = [PF.GROUND_X0 + 30.0, PF.GROUND_X0 + 55.0, PF.GROUND_X1 - 40.0]
     for i, x in enumerate(sky_x[:PF.DISTANT_SKYLINE_COUNT]):
@@ -195,6 +198,11 @@ def build(colls, mats, log=print):
         ob = ML.box(f"CITY_SILHOUETTE_{i+1:02d}", (w, w * 0.8, h),
                    (x, y, gz + h / 2.0), colls["TERRAIN"], mats["bldg_far"])
         ML.set_custom(ob, {"avi_kind": "distant_silhouette"})
+        parapet_h = h * 0.03 + 0.4
+        ML.box(f"CITY_SILHOUETTE_{i+1:02d}_PARAPET",
+              (w * 0.96, w * 0.8 * 0.96, parapet_h),
+              (x, y, gz + h + parapet_h / 2.0), colls["TERRAIN"],
+              mats["bldg_far"])
         n_city += 1
 
     log(f"  terrain : {PF.GROUND_RES_X}x{PF.GROUND_RES_Y} grid, "

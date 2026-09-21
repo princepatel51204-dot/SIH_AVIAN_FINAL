@@ -137,7 +137,7 @@ def main():
     MBD.export_ground_truth(mrecords, mgt_json, mgt_csv)
 
     if render:
-        log("-- rendering the 8 named cameras --")
+        log("-- rendering the 9 named cameras --")
         os.makedirs(RENDER_DIR, exist_ok=True)
 
         # ENVIRONMENT WORKAROUND (same as build_scene_c.py's phase_measure,

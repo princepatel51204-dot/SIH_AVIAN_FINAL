@@ -13,7 +13,7 @@
     "water_turbidity": true,
     "water_flow": true
   },
-  "materials": 34,
+  "materials": 43,
   "terrain": {
     "rocks": 23,
     "debris": 8,
@@ -38,6 +38,10 @@
       135.0
     ],
     "air_draft_m": 17.8
+  },
+  "waterline_staining": 6,
+  "microdetail": {
+    "objects": 651
   },
   "damage": {
     "defects": 95,
@@ -68,6 +72,14 @@
     }
   },
   "hero_defect": "DEFECT_REBAR_EXPOSED_006",
+  "crack_relief": {
+    "candidates": 4,
+    "cut": 4
+  },
+  "metro_crack_relief": {
+    "candidates": 3,
+    "cut": 3
+  },
   "visibility": {
     "difficulty": {
       "LEVEL_1": 21,
@@ -86,22 +98,46 @@
     },
     "unobservable": 6
   },
-  "vehicles": 16,
+  "vehicles": {
+    "vehicles": {
+      "car": 13,
+      "truck": 2,
+      "bus": 1,
+      "rickshaw": 2
+    },
+    "objects": 156
+  },
   "train": {
     "cars": 3,
     "length_m": 67.0,
-    "centre_x": 180.0
+    "centre_x": 180.0,
+    "objects": 83
+  },
+  "base": {
+    "objects": 34,
+    "pads": {
+      "SCANNER": [
+        20.0,
+        -30.0,
+        -0.37404944208036695
+      ],
+      "REPAIRER": [
+        20.0,
+        -18.0,
+        0.06696291193050286
+      ]
+    }
   },
   "scene": {
-    "objects": 606,
-    "triangles": 31466,
-    "materials": 112,
+    "objects": 1514,
+    "triangles": 60206,
+    "materials": 122,
     "collections": 19
   },
   "contrast": {
     "measured": 96,
     "skipped": 0,
-    "mean_contrast": 0.10021,
+    "mean_contrast": 0.09684,
     "contrast_limited": 27,
     "contrast_limited_ids": [
       "DEFECT_CRACK_HAIRLINE_005",
@@ -134,12 +170,12 @@
     ],
     "threshold_michelson": 0.05,
     "weather_strength": "1.00",
-    "wall_s": 26.8
+    "wall_s": 34.6
   },
   "metro_contrast": {
     "measured": 20,
     "skipped": 0,
-    "mean_contrast": 0.10151,
+    "mean_contrast": 0.10306,
     "contrast_limited": 9,
     "contrast_limited_ids": [
       "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_003",
@@ -154,14 +190,14 @@
     ],
     "threshold_michelson": 0.05,
     "weather_strength": "metro 1.00",
-    "wall_s": 5.6
+    "wall_s": 7.0
   },
   "baseline_frozen_this_run": false,
   "validation": {
-    "pass": 21,
+    "pass": 25,
     "fail": 0,
     "skip": 0,
-    "total": 21
+    "total": 25
   },
   "validation_detail": [
     {
@@ -231,7 +267,7 @@
       "id": "VF08",
       "check": "unique object names",
       "status": "PASS",
-      "measured": "614 objects, 0 duplicate names",
+      "measured": "1523 objects, 0 duplicate names",
       "limit": "0",
       "detail": "",
       "offenders": []
@@ -240,7 +276,7 @@
       "id": "VF09",
       "check": "polygon budget",
       "status": "PASS",
-      "measured": "31,466 triangles",
+      "measured": "60,206 triangles",
       "limit": "<= 2,000,000",
       "detail": "generous vs REV-C's raised 15M ceiling -- this corridor is two orders of magnitude smaller",
       "offenders": []
@@ -249,17 +285,17 @@
       "id": "VF10",
       "check": "camera far clip covers the corridor",
       "status": "PASS",
-      "measured": "8 cameras, 0 with clip_end<500m",
-      "limit": ">= 500 m clip_end, 8 cameras present",
+      "measured": "9 cameras, 0 with clip_end<500m",
+      "limit": ">= 500 m clip_end, 9 cameras present",
       "detail": "",
       "offenders": []
     },
     {
       "id": "VF10b",
-      "check": "all 8 named cameras exist",
+      "check": "all 9 named cameras exist",
       "status": "PASS",
-      "measured": "8 CAM_ objects",
-      "limit": "8",
+      "measured": "9 CAM_ objects",
+      "limit": "9",
       "detail": "",
       "offenders": []
     },
@@ -312,7 +348,7 @@
       "id": "VF14",
       "check": "road and metro structures do not overlap",
       "status": "PASS",
-      "measured": "0 overlapping bbox pairs (216 BR_ x 183 MB_)",
+      "measured": "0 overlapping bbox pairs (216 BR_ x 263 MB_)",
       "limit": "0",
       "detail": "",
       "offenders": []
@@ -330,7 +366,7 @@
       "id": "VF16",
       "check": "every MB_ member carries avi_kind",
       "status": "PASS",
-      "measured": "183/183 classified",
+      "measured": "263/263 classified",
       "limit": "100%",
       "detail": "",
       "offenders": []
@@ -352,11 +388,47 @@
       "limit": "0 added, 0 removed, <= 1.0 mm",
       "detail": "",
       "offenders": []
+    },
+    {
+      "id": "VF19",
+      "check": "both landing pads exist",
+      "status": "PASS",
+      "measured": "2 pad objects",
+      "limit": "2",
+      "detail": "AVI_BASE_REPAIRER, AVI_BASE_SCANNER",
+      "offenders": []
+    },
+    {
+      "id": "VF20",
+      "check": "landing pads carry avi_kind/role/centre tags",
+      "status": "PASS",
+      "measured": "2/2 pads clean",
+      "limit": "avi_kind=landing_pad, avi_base_role set, centre accurate",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF21",
+      "check": "landing pads sit on terrain height",
+      "status": "PASS",
+      "measured": "max |dz| 0.0000 m",
+      "limit": "<= 0.05 m (placed directly from terrain_final.height())",
+      "detail": "AVI_BASE_SCANNER",
+      "offenders": []
+    },
+    {
+      "id": "VF22",
+      "check": "landing pads reach the collision export",
+      "status": "PASS",
+      "measured": "2 landing_pad primitives of 483 total",
+      "limit": ">= 2 (one per pad)",
+      "detail": "the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad",
+      "offenders": []
     }
   ],
   "sabotage": {
-    "total": 16,
-    "proven": 16,
+    "total": 20,
+    "proven": 20,
     "unproven": [],
     "rows": [
       {
@@ -470,8 +542,47 @@
         "before": "PASS",
         "after": "FAIL",
         "proven": true
+      },
+      {
+        "check": "VF19",
+        "sabotage": "rename a landing pad out from under its expected name",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF20",
+        "sabotage": "corrupt a landing pad's avi_base_role tag",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF21",
+        "sabotage": "lift a landing pad 2 m off the terrain",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF22",
+        "sabotage": "strip landing_pad primitives from the exported collision JSON",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
       }
     ]
   },
-  "wall_s_phase2": 33.2
+  "renders": [
+    "CAM_01_OVERVIEW",
+    "CAM_02_RIVER",
+    "CAM_03_UNDERDECK",
+    "CAM_04_INTER_STRUCTURE",
+    "CAM_05_PIER",
+    "CAM_06_HERO_DEFECT",
+    "CAM_07_METRO",
+    "CAM_08_DECK",
+    "CAM_09_BASE"
+  ],
+  "wall_s_phase2": 412.4
 }

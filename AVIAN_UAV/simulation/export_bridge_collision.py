@@ -67,6 +67,12 @@ STRUCTURAL_KINDS = {
     "pier_footing": "BOX", "pier_column": "CYL", "pier_collar": "CYL",
     "bearing": "BOX", "joint_gap": "BOX", "joint_nose": "BOX",
     "median": "BOX", "wearing": "BOX",
+    # SIH_AVIAN_FINAL's drone-base landing pads. Purely additive: REV-C has
+    # no landing_pad objects, so this is inert for it. Without this, a pad
+    # is just geometry a UAV falls through -- classification here does not
+    # depend on a name prefix, which is what makes it robust regardless of
+    # what the pad object happens to be named.
+    "landing_pad": "BOX",
 }
 # Name prefixes used when an object carries no avi_kind.
 # MB_ is the REV-C metro viaduct. Required, not decorative:

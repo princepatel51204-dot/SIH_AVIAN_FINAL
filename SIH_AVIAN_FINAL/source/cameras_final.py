@@ -50,7 +50,12 @@ def build(coll, hero_pos=None, log=print):
 
     pier_y = -PF.PIER_COL_SPACING / 2.0
     cams.append(CB._cam(
-        "CAM_05_PIER", (135.0, pier_y - 4.0, 0.0), (135.0, pier_y, -1.0),
+        # This pier's exposed base sits at grade (the banks reach grade
+        # exactly at the piers flanking the main span, by design -- see
+        # params_final.py), so the waterline stain band (keyed to world Z
+        # near the river's water level) is mostly BELOW visible ground
+        # here; aimed low, at the band's top edge, rather than mid-column.
+        "CAM_05_PIER", (135.0, pier_y - 4.0, 0.6), (135.0, pier_y, -0.3),
         35.0, "river pier from 4 m, waterline staining visible", coll))
 
     if hero_pos is None:
@@ -73,6 +78,14 @@ def build(coll, hero_pos=None, log=print):
     cams.append(CB._cam(
         "CAM_08_DECK", (20.0, 3.5, 16.0), (340.0, -1.75, 14.3),
         24.0, "along the carriageway with traffic", coll))
+
+    import base_final as BF
+    y_s, y_r = BF.BASE_Y, BF.BASE_Y + BF.PAD_GAP_Y
+    base_mid = (BF.BASE_X, (y_s + y_r) / 2.0)
+    cams.append(CB._cam(
+        "CAM_09_BASE", (BF.BASE_X - 14.0, base_mid[1] - 10.0, 9.0),
+        (base_mid[0], base_mid[1], 0.0), 28.0,
+        "the drone base: both landing pads, cabin and mast", coll))
 
     log(f"  cameras : {len(cams)} named views")
     return cams
