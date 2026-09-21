@@ -18,6 +18,15 @@ import params as P
 import terrain as TR
 
 
+# V14 checks the ground truth carries every field it should. REV-A and
+# REV-B require the original 15; a later revision that adds fields to the
+# ground truth appends them here so V14 requires those too, instead of the
+# new fields going unchecked. REV-C's build_scene_c.py sets this to the
+# fields contrast_c adds. Left empty, every earlier build behaves exactly as
+# before.
+EXTRA_REQUIRED_FIELDS = []
+
+
 class Result:
     __slots__ = ("id", "name", "status", "measured", "limit", "detail",
                  "offenders")
@@ -296,7 +305,8 @@ def run(records, log=print):
     need = ["defect_id", "type", "severity", "position_m", "surface_normal",
             "host_surface", "host_object", "bridge_section",
             "inspection_sector", "occlusion", "repairable", "reason",
-            "representation", "area_m2", "width_mm"]
+            "representation", "area_m2", "width_mm"] + \
+        list(EXTRA_REQUIRED_FIELDS)
     miss = []
     for r in (records or [])[:400]:
         for k in need:

@@ -1,0 +1,48 @@
+BUILD  (REV-B, upgrade of REV-A -- geometry generators unchanged)
+  materials: 33 procedural material definitions
+  piers   : 138
+  spans   : 137
+  joints  : 56
+  terrain : 190x100 grid
+  river   : 620 m wide, water z=-2.0, 260 rocks, 877 bank plants
+  roads   : 1261 objects, 13 cross streets, 32 longitudinal, 2 ramps, 139 lighting columns
+  city    : 680 buildings (158 high-rise), 2048 trees, 1024 street lights, 318 vehicles
+           (1.3 s)
+  sites   : 679 engineering-plausible candidate locations
+  carve   : 26 cavities cut into 24 members
+  damage  : 192 defects in 212 objects (14.9 s)
+  sun     : 52 deg elevation, 145 deg azimuth, 6.0 W/m2
+  sky     : Nishita, disc off, ambient 1.0
+  sectors : 6 x 150 m (1650 - 2550)
+  airspace: 33 volumes across 6 classes SAFE=1, INSPECTION=6, UNDERBRIDGE=6, RIVER=1, RESTRICTED=17, RETURN=2
+  scenarios: 9 difficult-inspection cases marked
+  cameras : 7 named views
+REV-B
+  services: 1562 bridge service and access objects (HIGH band)
+  cityvar : 28 parking, warehouse and utility structures
+  boats   : 17 river craft and floats
+  people  : 107 pedestrian proxies
+  obstacle: 14 temporary works objects (off by default)
+  airsp-B : 43 volumes across 8 REV-B classes TRANSIT=1, DECK=6, UNDERSIDE=6, PIER=16, RIVER=1, CONFINED=6, EMERGENCY=2, MULTI=5
+  scen-B  : 16 inspection scenarios with full metadata
+  sensors : 7 sensor frames on 1 rig root at x=2025
+  basesite: cleared 6 city objects from the two 48 m base areas
+  mission : 124 markers UAV_SPAWN=2, TAKEOFF=2, LANDING=2, EMERGENCY_LANDING=6, SECTOR_ENTRY=6, SECTOR_EXIT=6, INSPECTION_START=6, INSPECTION_END=6, RETURN_TO_HOME=2, WAYPOINT_CANDIDATE=84, SERVICE_STATION=2
+  graph   : 124 nodes, 136 traversable edges
+  cam-B   : 5 additional cameras (08-12)
+  visible : LEVEL_1=51, LEVEL_2=54, LEVEL_3=23, LEVEL_4=64; 64 observable by no modality
+  visible : computed in 118.8 s and cached (gate run)
+           (118.9 s)
+  indices : 192 defect, 2055 structural, 138 dynamic instance IDs
+  passes  : 6 render passes enabled
+  scenario: BASELINE (lighting=DAY_CLEAR, weather=CLEAR, uav=1, gps=NORMAL); 53 materials retuned
+  total   : 183.6 s, 13835 objects
+
+REV-C Stage 1 (materials, colour, micro-detail)
+  materials_c: 4 facade shaders rebuilt (South Mumbai palette, daylight only, per-object variation)
+  weather : concrete strength 1.00 on 5 host materials (defect materials untouched)
+  weather : asphalt patch repairs and joint albedo applied
+  weather : water bank turbidity applied, flow direction applied
+  saved   : AVIAN_SIC_REV_C.blend (65.5 MB)
+  handoff : 192 records -> _handoff_phase_a.json
+  phase A : 184.1 s, 13835 objects

@@ -10,3 +10,10 @@ __pycache__/
 # tracked -- they are the gate evidence. REV-B's own .blend stays tracked
 # because it arrived as a delivered artifact rather than being generated here.
 AVIAN_ENVIRONMENT/scene/*.blend
+
+# Phase A -> Phase B handoff, and the visibility cache. Both are derived
+# intermediates that regenerate from a build; neither is gate evidence.
+# The cache is keyed on defect identity AND a scene-geometry fingerprint,
+# so committing it would only invite someone to trust a stale answer.
+AVIAN_ENVIRONMENT/scene/_handoff_phase_a.json
+AVIAN_ENVIRONMENT/scene/vis_cache/

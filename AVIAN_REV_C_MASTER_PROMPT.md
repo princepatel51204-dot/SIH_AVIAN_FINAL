@@ -168,9 +168,13 @@ Blender material complexity costs **dataset generation** (`dataset.py`, 4 passes
 and the validation renders. It does **not** cost the PyBullet flight loop, which
 uses the exported collision JSON.
 
-But 640×480 already costs ~300 ms/frame, and that is the binding constraint on
-Phase 2's 30-minute mission budget. **Report frame cost before and after every
-stage.** If Stage 1 more than doubles it, stop and report rather than continuing.
+**Two renderers, two costs — do not conflate them.** The UAV's RGB camera uses
+PyBullet `ER_TINY_RENDERER` against the collision-asset JSON (677 untextured
+primitives). Blender materials cannot affect it, and it is the number that
+binds Phase 2's 30-minute mission budget. Cycles cost is what materials
+actually pay, and it affects dataset generation and validation renders only.
+**Report Cycles cost per validation view before and after every stage.** If it
+more than doubles, stop and report.
 
 ### 2.7 Scene rename — `AVIAN_SIC_REV_C.blend`
 
@@ -302,7 +306,9 @@ build log.
 - **Concrete weathering driven by geometry**: runoff streaks below drains and
   joints, efflorescence at construction joints, dirt in ambient-occluded
   crevices via Geometry → Pointiness.
-- **Asphalt**: wheel-path polishing, patch repairs, albedo change near joints.
+- **Asphalt**: patch repairs, albedo change near joints. (Wheel-path polishing
+  was listed here in v2 and struck in v2.1 — `materials.py:505` already
+  implements it.)
 - **Water**: keep `MAT_RIVER`'s structure; add bank turbidity and flow direction.
 - **Do not touch** `crack_decal`, `spall_face`, `delamination_face`,
   `repair_patch`, `rebar` — ground-truth-bearing. Weather the concrete, asphalt

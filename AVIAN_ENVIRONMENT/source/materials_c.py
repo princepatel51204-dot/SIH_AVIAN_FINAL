@@ -28,6 +28,7 @@ from __future__ import annotations
 import bpy
 
 import materials as M
+import params_c as PC
 
 
 # ===========================================================================
@@ -141,20 +142,72 @@ def _facade(name, ramp_stops, floor_h, window_pitch):
     nt.links.new(banded.outputs[2], mottled.inputs[6])
     nt.links.new(r_patch.outputs["Color"], mottled.inputs[7])
 
-    # ---- window grid: Object-space bands on two axes, multiplied ---------
-    # An approximation, not UV-mapped geometry: box() carries no UVs, so
-    # this reads correctly on faces aligned with the axis it was tuned
-    # against and stretches on the perpendicular ones, same trade-off as
-    # concrete()'s own formwork-line trick. Real per-face windows are
-    # Stage 3 geometry (facade_c.py), gated to the HIGH LOD band only.
+    # ---- window grid: per-face horizontal axis, then bands --------------
+    # box() carries no UVs, so the horizontal "along the wall" coordinate
+    # has to be derived. Driving the vertical mullions straight off Object
+    # X was WRONG and visibly so: on a face whose normal IS X, that
+    # coordinate is constant across the whole face, so the mask stuck at 1
+    # -- no grid at all on two of the four faces, and the entire face
+    # washed with the glass tint. The REV-C facade diagnostic views caught
+    # it; none of the nine validation cameras gets close enough to a
+    # building to have shown it.
+    #
+    # So: pick the horizontal axis per face from the surface normal. A face
+    # normal to X runs along Y, and vice versa. Real recessed window
+    # geometry is still Stage 3 (facade_c.py, HIGH LOD band only); this
+    # only has to be right, not three-dimensional.
+    geo_n = nt.nodes.new("ShaderNodeNewGeometry")
+    geo_n.location = (-1860, -200)
+    # Geometry -> Normal is in WORLD space, and city.py rotates buildings by
+    # a random choice of 0 or 90 degrees. Comparing a world normal against
+    # OBJECT coordinates therefore picks the wrong axis on every rotated
+    # building -- which is not a subtle error: it removes the mullions
+    # entirely from the faces that had them. Transform to object space so
+    # the normal and the coordinate it selects are in the same frame.
+    n_obj = nt.nodes.new("ShaderNodeVectorTransform")
+    n_obj.location = (-1700, -200)
+    n_obj.vector_type = "NORMAL"
+    n_obj.convert_from = "WORLD"
+    n_obj.convert_to = "OBJECT"
+    nt.links.new(geo_n.outputs["Normal"], n_obj.inputs["Vector"])
+    sep_n = nt.nodes.new("ShaderNodeSeparateXYZ")
+    sep_n.location = (-1520, -200)
+    nt.links.new(n_obj.outputs["Vector"], sep_n.inputs["Vector"])
+    abs_nx = nt.nodes.new("ShaderNodeMath")
+    abs_nx.location = (-1360, -140)
+    abs_nx.operation = "ABSOLUTE"
+    nt.links.new(sep_n.outputs["X"], abs_nx.inputs[0])
+    abs_ny = nt.nodes.new("ShaderNodeMath")
+    abs_ny.location = (-1360, -260)
+    abs_ny.operation = "ABSOLUTE"
+    nt.links.new(sep_n.outputs["Y"], abs_ny.inputs[0])
+    face_sel = nt.nodes.new("ShaderNodeMath")
+    face_sel.location = (-1200, -200)
+    face_sel.operation = "GREATER_THAN"     # 1.0 on an X-normal face
+    nt.links.new(abs_nx.outputs[0], face_sel.inputs[0])
+    nt.links.new(abs_ny.outputs[0], face_sel.inputs[1])
+
+    sep_p = nt.nodes.new("ShaderNodeSeparateXYZ")
+    sep_p.location = (-1520, -380)
+    nt.links.new(tc.outputs["Object"], sep_p.inputs["Vector"])
+    u_mix = nt.nodes.new("ShaderNodeMix")
+    u_mix.data_type = "FLOAT"
+    u_mix.location = (-1200, -380)
+    nt.links.new(face_sel.outputs[0], u_mix.inputs[0])
+    nt.links.new(sep_p.outputs["X"], u_mix.inputs[2])   # Y-normal -> use X
+    nt.links.new(sep_p.outputs["Y"], u_mix.inputs[3])   # X-normal -> use Y
+    u_vec = nt.nodes.new("ShaderNodeCombineXYZ")
+    u_vec.location = (-1040, -380)
+    nt.links.new(u_mix.outputs[0], u_vec.inputs["X"])
+
     wx = nt.nodes.new("ShaderNodeTexWave")
-    wx.location = (-1250, -260)
+    wx.location = (-880, -260)
     wx.wave_type = "BANDS"
     wx.bands_direction = "X"
     wx.inputs["Scale"].default_value = 1.0 / window_pitch
     wx.inputs["Distortion"].default_value = 0.0
     wx.inputs["Detail"].default_value = 1.0
-    nt.links.new(tc.outputs["Object"], wx.inputs["Vector"])
+    nt.links.new(u_vec.outputs["Vector"], wx.inputs["Vector"])
     wz = nt.nodes.new("ShaderNodeTexWave")
     wz.location = (-1250, -440)
     wz.wave_type = "BANDS"
@@ -164,7 +217,7 @@ def _facade(name, ramp_stops, floor_h, window_pitch):
     wz.inputs["Detail"].default_value = 1.0
     nt.links.new(tc.outputs["Object"], wz.inputs["Vector"])
     r_wx = M._ramp(nt, [(0.30, (0, 0, 0, 1)), (0.42, (1, 1, 1, 1))],
-                   -1000, -260)
+                   -700, -260)
     nt.links.new(wx.outputs["Fac"], r_wx.inputs["Fac"])
     r_wz = M._ramp(nt, [(0.28, (0, 0, 0, 1)), (0.40, (1, 1, 1, 1))],
                    -1000, -440)
@@ -251,3 +304,342 @@ def build_city_materials(log=print):
     log(f"  materials_c: {len(_FACADE_RAMPS)} facade shaders rebuilt "
         f"(South Mumbai palette, daylight only, per-object variation)")
     return {"facade_materials": len(_FACADE_RAMPS)}
+
+
+# ===========================================================================
+# WEATHERING -- injected into the existing REV-A graphs, not rebuilt
+# ===========================================================================
+# concrete(), asphalt() and water() in materials.py are good shaders. These
+# functions splice extra layers into their existing node trees rather than
+# replacing them: find what currently feeds the Principled BSDF's Base
+# Colour, insert a layer, relink. That keeps every REV-A decision intact and
+# makes the REV-C addition a readable delta.
+#
+# HOST CONCRETE ONLY. MAT_DELAMINATION and MAT_REPAIR_PATCH are built by
+# concrete() too (materials.py delamination_face/repair_patch) and are
+# ground-truth-bearing, so they are excluded by name along with the crack,
+# spall and rebar materials.
+_CONCRETE_HOSTS = ("MAT_CONCRETE_DECK", "MAT_CONCRETE_GIRDER",
+                   "MAT_CONCRETE_PIER", "MAT_CONCRETE_PARAPET",
+                   "MAT_CONCRETE_LOD_LOW")
+_NEVER_TOUCH = ("MAT_DELAMINATION", "MAT_REPAIR_PATCH", "MAT_SPALL_FACE",
+                "MAT_SPALL_FACE_RUST", "MAT_REBAR_CORRODED")
+
+# The two weathering layers' strength multipliers are named nodes so a
+# sweep can retune them in place. Re-running weather_concrete() would splice
+# a second copy of the whole layer into the graph; set_concrete_weather()
+# just moves these two values, which is what CONCRETE_WEATHER_SWEEP needs.
+_GRIME_NODE = "REVC_GRIME_STRENGTH"
+_EFFL_NODE = "REVC_EFFL_STRENGTH"
+GRIME_BASE = 0.85                    # grime factor at strength 1.0
+EFFL_BASE = 0.45                     # efflorescence factor at strength 1.0
+
+GRIME_DARK = (0.055, 0.052, 0.046)   # crevice grime and soot
+EFFLORESCENCE = (0.72, 0.71, 0.68)   # pale leached-salt bloom at joints
+ASPHALT_PATCH = (0.048, 0.048, 0.050)  # fresher bitumen of a patch repair
+WATER_TURBID = (0.085, 0.072, 0.048)   # silt-loaded water near the banks
+
+
+def _bsdf_of(nt):
+    for n in nt.nodes:
+        if n.bl_idname == "ShaderNodeBsdfPrincipled":
+            return n
+    return None
+
+
+def _splice_base_colour(nt, make_layer):
+    """Insert a layer between whatever feeds Base Colour and the BSDF.
+
+    make_layer(nt, src_socket) must build nodes and return the socket that
+    should now feed Base Colour. Returns False if the material has no
+    Principled BSDF at all, in which case the caller leaves it alone.
+
+    Where Base Colour is a flat default rather than a linked socket -- which
+    is how MAT_RIVER carries its depth tint -- the existing default_value is
+    materialised into an RGB node first and that becomes the source. The
+    colour is preserved exactly; nothing is guessed.
+    """
+    bsdf = _bsdf_of(nt)
+    if bsdf is None:
+        return False
+    inp = bsdf.inputs["Base Color"]
+    if inp.is_linked:
+        src = inp.links[0].from_socket
+    else:
+        rgb = nt.nodes.new("ShaderNodeRGB")
+        rgb.location = (-1700, -500)
+        rgb.outputs[0].default_value = tuple(inp.default_value)
+        src = rgb.outputs[0]
+    out = make_layer(nt, src)
+    nt.links.new(out, inp)
+    return True
+
+
+def weather_concrete(strength=None, log=print):
+    """Geometry-driven weathering on the host concrete.
+
+    Two layers, both scaled by CONCRETE_WEATHER_STRENGTH:
+
+      1. crevice grime  -- Geometry -> Pointiness, so dirt collects where the
+         surface is concave: the re-entrant corners between web and flange,
+         behind bearings, under the deck edge. This is the layer the brief
+         asks for by name, and it is the one that costs defect contrast,
+         because it is mottled at the scale defects live at.
+      2. efflorescence  -- a pale leached bloom keyed to the same Z bands
+         concrete() already uses for formwork lines, so it appears along
+         construction joints rather than at random.
+
+    strength is a swept corpus parameter, not an aesthetic setting -- see
+    params_c.CONCRETE_WEATHER_STRENGTH.
+    """
+    s = PC.CONCRETE_WEATHER_STRENGTH if strength is None else float(strength)
+    s = max(0.0, min(1.0, s))
+    done = []
+    for name in _CONCRETE_HOSTS:
+        m = bpy.data.materials.get(name)
+        if m is None or name in _NEVER_TOUCH:
+            continue
+        nt = m.node_tree
+
+        def layer(nt, src, _s=s):
+            geo = nt.nodes.new("ShaderNodeNewGeometry")
+            geo.location = (-560, -900)
+            # Pointiness is 0.5 on a flat face, below 0.5 in a concavity.
+            # The ramp keeps only the concave side and fades it in.
+            r_point = M._ramp(nt, [(0.30, (1, 1, 1, 1)),
+                                   (0.50, (0, 0, 0, 1))], -380, -900)
+            nt.links.new(geo.outputs["Pointiness"], r_point.inputs["Fac"])
+            # break the crevice line up so it is not a clean wireframe
+            n_dirt = M._noise(nt, 18.0, 8.0, 0.62, 0.4, -560, -1080)
+            r_dirt = M._ramp(nt, [(0.35, (0.35, 0.35, 0.35, 1)),
+                                  (0.70, (1, 1, 1, 1))], -380, -1080)
+            nt.links.new(n_dirt.outputs["Fac"], r_dirt.inputs["Fac"])
+            g1 = nt.nodes.new("ShaderNodeMath")
+            g1.location = (-200, -940)
+            g1.operation = "MULTIPLY"
+            nt.links.new(r_point.outputs["Color"], g1.inputs[0])
+            nt.links.new(r_dirt.outputs["Color"], g1.inputs[1])
+            g2 = nt.nodes.new("ShaderNodeMath")
+            g2.location = (-40, -940)
+            g2.operation = "MULTIPLY"
+            g2.name = _GRIME_NODE
+            g2.inputs[1].default_value = GRIME_BASE * _s
+            nt.links.new(g1.outputs[0], g2.inputs[0])
+            mix_g = M._mix(nt, "MIX", 120, -700)
+            mix_g.inputs[7].default_value = (*GRIME_DARK, 1.0)
+            nt.links.new(g2.outputs[0], mix_g.inputs["Factor"])
+            nt.links.new(src, mix_g.inputs[6])
+
+            # efflorescence along construction joints
+            wave = nt.nodes.new("ShaderNodeTexWave")
+            wave.location = (-560, -1280)
+            wave.wave_type = "BANDS"
+            wave.bands_direction = "Z"
+            wave.inputs["Scale"].default_value = 0.22
+            wave.inputs["Distortion"].default_value = 1.6
+            wave.inputs["Detail"].default_value = 2.0
+            r_eff = M._ramp(nt, [(0.00, (1, 1, 1, 1)),
+                                 (0.08, (0, 0, 0, 1))], -380, -1280)
+            nt.links.new(wave.outputs["Fac"], r_eff.inputs["Fac"])
+            n_eff = M._noise(nt, 6.0, 6.0, 0.6, 0.8, -560, -1460)
+            r_eff2 = M._ramp(nt, [(0.48, (0, 0, 0, 1)),
+                                  (0.80, (1, 1, 1, 1))], -380, -1460)
+            nt.links.new(n_eff.outputs["Fac"], r_eff2.inputs["Fac"])
+            e1 = nt.nodes.new("ShaderNodeMath")
+            e1.location = (-200, -1340)
+            e1.operation = "MULTIPLY"
+            nt.links.new(r_eff.outputs["Color"], e1.inputs[0])
+            nt.links.new(r_eff2.outputs["Color"], e1.inputs[1])
+            e2 = nt.nodes.new("ShaderNodeMath")
+            e2.location = (-40, -1340)
+            e2.operation = "MULTIPLY"
+            e2.name = _EFFL_NODE
+            e2.inputs[1].default_value = EFFL_BASE * _s
+            nt.links.new(e1.outputs[0], e2.inputs[0])
+            mix_e = M._mix(nt, "MIX", 260, -700)
+            mix_e.inputs[7].default_value = (*EFFLORESCENCE, 1.0)
+            nt.links.new(e2.outputs[0], mix_e.inputs["Factor"])
+            nt.links.new(mix_g.outputs[2], mix_e.inputs[6])
+            return mix_e.outputs[2]
+
+        if _splice_base_colour(nt, layer):
+            done.append(name)
+    log(f"  weather : concrete strength {s:.2f} on {len(done)} host "
+        f"materials (defect materials untouched)")
+    return {"concrete_weather_strength": s, "materials": done}
+
+
+def set_concrete_weather(strength, log=None):
+    """Retune the weathering strength in place, for a sweep.
+
+    weather_concrete() must have run first. This only moves the two named
+    multiplier nodes, so it can be called repeatedly without stacking more
+    copies of the layer into the graph.
+    """
+    s = max(0.0, min(1.0, float(strength)))
+    n = 0
+    for name in _CONCRETE_HOSTS:
+        m = bpy.data.materials.get(name)
+        if m is None:
+            continue
+        for node_name, base in ((_GRIME_NODE, GRIME_BASE),
+                                (_EFFL_NODE, EFFL_BASE)):
+            node = m.node_tree.nodes.get(node_name)
+            if node is not None:
+                node.inputs[1].default_value = base * s
+                n += 1
+    if log:
+        log(f"  weather : concrete strength set to {s:.2f} "
+            f"({n} multiplier nodes)")
+    return s
+
+
+def weather_asphalt(log=print):
+    """Patch repairs and a joint-adjacent albedo shift on the wearing course.
+
+    Wheel-path polishing is NOT added here -- materials.py:505 already has
+    it (the master brief listed it as outstanding; struck in v2.1).
+    """
+    m = bpy.data.materials.get("MAT_ASPHALT")
+    if m is None:
+        return {}
+    nt = m.node_tree
+
+    def layer(nt, src):
+        # patch repairs: large irregular blotches of fresher, darker binder
+        n_patch = M._noise(nt, 0.9, 3.0, 0.5, 0.9, -700, -700)
+        r_patch = M._ramp(nt, [(0.52, (0, 0, 0, 1)), (0.58, (1, 1, 1, 1))],
+                          -500, -700)
+        nt.links.new(n_patch.outputs["Fac"], r_patch.inputs["Fac"])
+        mix_p = M._mix(nt, "MIX", -260, -600)
+        mix_p.inputs[7].default_value = (*ASPHALT_PATCH, 1.0)
+        nt.links.new(r_patch.outputs["Color"], mix_p.inputs["Factor"])
+        nt.links.new(src, mix_p.inputs[6])
+
+        # joints: a narrow lighter band where the wearing course meets a
+        # deck joint, where binder has been lost and aggregate shows
+        wave = nt.nodes.new("ShaderNodeTexWave")
+        wave.location = (-700, -900)
+        wave.wave_type = "BANDS"
+        wave.bands_direction = "X"
+        wave.inputs["Scale"].default_value = 0.04
+        wave.inputs["Distortion"].default_value = 0.4
+        wave.inputs["Detail"].default_value = 1.0
+        r_j = M._ramp(nt, [(0.00, (1, 1, 1, 1)), (0.05, (0, 0, 0, 1))],
+                      -500, -900)
+        nt.links.new(wave.outputs["Fac"], r_j.inputs["Fac"])
+        j = nt.nodes.new("ShaderNodeMath")
+        j.location = (-320, -900)
+        j.operation = "MULTIPLY"
+        j.inputs[1].default_value = 0.35
+        nt.links.new(r_j.outputs["Color"], j.inputs[0])
+        mix_j = M._mix(nt, "MIX", -100, -600)
+        mix_j.inputs[7].default_value = (0.115, 0.113, 0.110, 1.0)
+        nt.links.new(j.outputs[0], mix_j.inputs["Factor"])
+        nt.links.new(mix_p.outputs[2], mix_j.inputs[6])
+        return mix_j.outputs[2]
+
+    ok = _splice_base_colour(nt, layer)
+    log(f"  weather : asphalt patch repairs and joint albedo "
+        f"{'applied' if ok else 'SKIPPED (no linked base colour)'}")
+    return {"asphalt": bool(ok)}
+
+
+def weather_water(log=print):
+    """Bank turbidity and a flow direction on the river.
+
+    MAT_RIVER's structure is kept: the depth tint, the ripple layers and the
+    wind-lane roughness banding all stay. This adds silt near the banks,
+    where a real monsoon-fed river carries its load, and stretches the fine
+    ripple along the flow axis so the surface has a direction instead of
+    being isotropic.
+
+    The water grid is built in world coordinates with its object at the
+    origin, so Object-space coordinates here are world metres and the bank
+    distance can be taken directly against RIVER_CENTRE_X.
+    """
+    m = bpy.data.materials.get("MAT_RIVER")
+    if m is None:
+        return {}
+    nt = m.node_tree
+    half = PC.P.RIVER_WIDTH / 2.0
+
+    def layer(nt, src):
+        tc = None
+        for n in nt.nodes:
+            if n.bl_idname == "ShaderNodeTexCoord":
+                tc = n
+                break
+        if tc is None:
+            tc = M._tc(nt, -1500, -700)
+        sep = nt.nodes.new("ShaderNodeSeparateXYZ")
+        sep.location = (-1300, -700)
+        nt.links.new(tc.outputs["Object"], sep.inputs["Vector"])
+        dx = nt.nodes.new("ShaderNodeMath")
+        dx.location = (-1120, -700)
+        dx.operation = "SUBTRACT"
+        dx.inputs[1].default_value = PC.P.RIVER_CENTRE_X
+        nt.links.new(sep.outputs["X"], dx.inputs[0])
+        ax = nt.nodes.new("ShaderNodeMath")
+        ax.location = (-960, -700)
+        ax.operation = "ABSOLUTE"
+        nt.links.new(dx.outputs[0], ax.inputs[0])
+        nx = nt.nodes.new("ShaderNodeMath")
+        nx.location = (-800, -700)
+        nx.operation = "DIVIDE"
+        nx.inputs[1].default_value = max(half, 1.0)
+        nt.links.new(ax.outputs[0], nx.inputs[0])
+        # silt rises over the outer third of the channel
+        r_bank = M._ramp(nt, [(0.62, (0, 0, 0, 1)), (1.00, (1, 1, 1, 1))],
+                         -620, -700)
+        nt.links.new(nx.outputs[0], r_bank.inputs["Fac"])
+        # broken up so the bank line is not a clean gradient
+        n_silt = M._noise(nt, 0.08, 5.0, 0.6, 0.7, -620, -900)
+        r_silt = M._ramp(nt, [(0.35, (0.45, 0.45, 0.45, 1)),
+                              (0.70, (1, 1, 1, 1))], -440, -900)
+        nt.links.new(n_silt.outputs["Fac"], r_silt.inputs["Fac"])
+        b1 = nt.nodes.new("ShaderNodeMath")
+        b1.location = (-260, -760)
+        b1.operation = "MULTIPLY"
+        nt.links.new(r_bank.outputs["Color"], b1.inputs[0])
+        nt.links.new(r_silt.outputs["Color"], b1.inputs[1])
+        mix_b = M._mix(nt, "MIX", -80, -620)
+        mix_b.inputs[7].default_value = (*WATER_TURBID, 1.0)
+        nt.links.new(b1.outputs[0], mix_b.inputs["Factor"])
+        nt.links.new(src, mix_b.inputs[6])
+        return mix_b.outputs[2]
+
+    ok = _splice_base_colour(nt, layer)
+
+    # flow direction: stretch the finer ripple noise along Y, the axis the
+    # channel runs, so the surface reads as moving rather than stippled.
+    flowed = False
+    tc = next((n for n in nt.nodes
+               if n.bl_idname == "ShaderNodeTexCoord"), None)
+    if tc is not None:
+        for n in nt.nodes:
+            if n.bl_idname != "ShaderNodeTexNoise":
+                continue
+            sc = n.inputs["Scale"].default_value
+            if not (2.0 <= sc <= 6.0):      # the fine chop layer
+                continue
+            mp = M._map(nt, (1.0, 0.18, 1.0), -1340, -300)
+            nt.links.new(tc.outputs["Object"], mp.inputs["Vector"])
+            nt.links.new(mp.outputs["Vector"], n.inputs["Vector"])
+            flowed = True
+            break
+
+    log(f"  weather : water bank turbidity "
+        f"{'applied' if ok else 'SKIPPED'}, flow direction "
+        f"{'applied' if flowed else 'SKIPPED'}")
+    return {"water_turbidity": bool(ok), "water_flow": bool(flowed)}
+
+
+def build_all(strength=None, log=print):
+    """Every REV-C Stage 1 material change, in order."""
+    out = {}
+    out.update(build_city_materials(log))
+    out.update(weather_concrete(strength, log))
+    out.update(weather_asphalt(log))
+    out.update(weather_water(log))
+    return out
