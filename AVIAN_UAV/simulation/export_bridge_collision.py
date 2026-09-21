@@ -69,7 +69,12 @@ STRUCTURAL_KINDS = {
     "median": "BOX", "wearing": "BOX",
 }
 # Name prefixes used when an object carries no avi_kind.
-STRUCTURAL_PREFIXES = ("BR_",)
+# MB_ is the REV-C metro viaduct. Required, not decorative:
+# rails, catenary masts and station parts carry avi_kind values
+# that are not in STRUCTURAL_KINDS, so without the prefix they
+# fail is_struct and vanish from collision silently -- the UAV
+# would fly straight through them with no check firing.
+STRUCTURAL_PREFIXES = ("BR_", "MB_")
 
 SERVICE_PREFIXES = ("AVI_DET_",)
 EXCLUDE_PREFIXES = ("DEFECT_", "AVI_AIRSPACE", "AVI_TRANSIT", "AVI_DECK_",
@@ -80,21 +85,40 @@ EXCLUDE_PREFIXES = ("DEFECT_", "AVI_AIRSPACE", "AVI_TRANSIT", "AVI_DECK_",
                     "AVI_PED_", "AVI_BOAT", "AVI_FLOAT", "AVI_OBST")
 
 
+_COMMON = None
+
+
+def _common():
+    """Import the shared decomposition from avian_common/, once.
+
+    One definition, used by this exporter and by the environment's Gazebo
+    exporter. See avian_common/decompose.py for why it is reached by env var
+    rather than installed. Cached because _obb runs per object, ~14,000
+    times per export.
+    """
+    global _COMMON
+    if _COMMON is not None:
+        return _COMMON
+    import importlib.util
+    root = os.environ.get("AVIAN_COMMON_DIR") or os.path.join(
+        os.path.dirname(os.path.dirname(os.path.dirname(
+            os.path.abspath(__file__)))), "avian_common")
+    path = os.path.join(root, "decompose.py")
+    spec = importlib.util.spec_from_file_location("_avian_common", path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    _COMMON = mod
+    return mod
+
+
 def _obb(ob, mathutils):
     """Axis-aligned box in world space, plus the object's world Z rotation.
 
-    Every structural member in this model is either axis-aligned or rotated
-    about Z only (the corridor runs along X), so a yaw-only oriented box is
-    exact rather than a simplification.
+    Delegates to avian_common so the Gazebo exporter cannot disagree with
+    this one. The centre comes from matrix_world @ ob.bound_box, never from
+    matrix_world.translation, which meshlib leaves at (0,0,0).
     """
-    m = ob.matrix_world
-    pts = [m @ mathutils.Vector(c) for c in ob.bound_box]
-    lo = [min(p[i] for p in pts) for i in range(3)]
-    hi = [max(p[i] for p in pts) for i in range(3)]
-    centre = [(lo[i] + hi[i]) / 2.0 for i in range(3)]
-    half = [max(1e-4, (hi[i] - lo[i]) / 2.0) for i in range(3)]
-    yaw = m.to_euler("XYZ").z
-    return centre, half, yaw, lo, hi
+    return _common().obb(ob, mathutils)
 
 
 def export(blend=DEFAULT_BLEND, out_dir=None, margin_m=DEFAULT_MARGIN_M,
@@ -284,26 +308,52 @@ def export(blend=DEFAULT_BLEND, out_dir=None, margin_m=DEFAULT_MARGIN_M,
          f"{bay:.2f} m" if bay else "not measured", f"{want_bay:.2f} m",
          "box-fitting the I-section must not close the bay")
 
-    # V05 pier columns preserved as cylinders of the right radius
-    cols = [p for p in prims if p["kind"] == "pier_column"]
-    rr = sorted({round(p["radius"] * 2, 2) for p in cols})
-    vchk("C05", "pier columns preserved with correct diameter",
-         bool(cols) and all(
+    # C05 and C06 are ROAD BRIDGE checks. They were written when the scene
+    # held one structure, so "pier columns" and "six sectors" meant the road
+    # bridge's without having to say so. REV-C's metro viaduct adds a third
+    # column diameter (2.8 m) and six MSECTORs, which made both ambiguous
+    # rather than wrong: C05 read dia [2.4, 2.8, 3.2] and failed, C06
+    # counted 12 sectors and failed. Scoping them to the road bridge
+    # restores their original meaning exactly -- nothing is relaxed, road
+    # columns must still be 2.4/3.2 m and there must still be exactly six
+    # road sectors over 3 m. C07/C08 add the equivalent metro coverage, so
+    # the number of things checked goes up, not down.
+    road_cols = [p for p in prims if p["kind"] == "pier_column"
+                 and str(p.get("name", "")).startswith("BR_")]
+    rr = sorted({round(p["radius"] * 2, 2) for p in road_cols})
+    vchk("C05", "road pier columns preserved with correct diameter",
+         bool(road_cols) and all(
              abs(d - PP.PIER_COL_D) < 0.3 or abs(d - PP.PIER_COL_D_RIVER)
              < 0.3 for d in rr),
-         f"{len(cols)} columns, dia {rr}",
+         f"{len(road_cols)} columns, dia {rr}",
          f"{PP.PIER_COL_D} / {PP.PIER_COL_D_RIVER} m")
 
     # V06 under-deck headroom preserved
+    road_sectors = [s for s in sectors if s.get("avi_structure") != "METRO"]
     hs = []
-    for s in sectors:
+    for s in road_sectors:
         if not (X0 <= s["avi_chainage_start_m"] <= X1):
             continue
         hs.append(s["avi_soffit_z_m"] - max(0.0, water_z))
-    vchk("C06", "under-deck volume preserved for all six sectors",
-         len(sectors) == 6 and all(h > 3.0 for h in hs),
-         f"{len(sectors)} sectors, headroom "
+    vchk("C06", "under-deck volume preserved for all six road sectors",
+         len(road_sectors) == 6 and all(h > 3.0 for h in hs),
+         f"{len(road_sectors)} sectors, headroom "
          f"{min(hs):.1f}-{max(hs):.1f} m" if hs else "0", "6 sectors, > 3 m")
+
+    # ---- C07/C08 -- the metro viaduct, added in REV-C --------------------
+    metro_prims = [p for p in prims
+                   if str(p.get("name", "")).startswith("MB_")]
+    vchk("C07", "metro viaduct reaches the collision asset",
+         len(metro_prims) > 0,
+         f"{len(metro_prims)} MB_ primitives of {len(prims)} total",
+         "> 0 -- MB_ must be in STRUCTURAL_PREFIXES")
+
+    metro_cols = [p for p in prims if p["kind"] == "pier_column"
+                  and str(p.get("name", "")).startswith("MB_")]
+    mrr = sorted({round(p["radius"] * 2, 2) for p in metro_cols})
+    vchk("C08", "metro pier columns preserved as cylinders",
+         bool(metro_cols) and all(abs(d - 2.8) < 0.3 for d in mrr),
+         f"{len(metro_cols)} columns, dia {mrr}", "2.8 m")
 
     n_fail = sum(1 for c in checks if c["status"] == "FAIL")
 

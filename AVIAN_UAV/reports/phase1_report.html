@@ -54,7 +54,7 @@ color:var(--muted);font-size:12.5px}
 </style>
 <div class=wrap>
 <h1>AVIAN Phase 1 &mdash; complete single UAV</h1>
-<p class=sub>Generated 2026-09-20T21:18:02Z</p>
+<p class=sub>Generated 2026-09-21T03:44:34Z &middot; <span class=mono>d8bf821</span></p>
 <div class='verdict v-pass'>ACCEPTANCE GATE: PASS &nbsp;&mdash;&nbsp; 46 of 46 checks</div>
 <p class=sub style='margin-top:14px'>The plan called for 26 tests. 46 checks were run: the extra ones are the individual per-joint and per-sensor assertions the 26-item list groups together, plus two checks added after defects were found. No check was removed and no threshold was relaxed to make a test pass.</p>
 <div class=kpis>
@@ -105,7 +105,7 @@ color:var(--muted);font-size:12.5px}
 <tr><td class=id>T3</td><td>waypoint mission arrival accuracy</td><td class=mono>max 10.5 cm over 5 waypoints</td><td class=mono>&lt; 30 cm</td><td><span class='tag t-pass'>PASS</span></td></tr>
 <tr><td class=id>T5</td><td>recovers from lateral force and yaw torque</td><td class=mono>peak 0.11 m, recovered in 0.0 s</td><td class=mono>returns inside 0.25 m</td><td><span class='tag t-pass'>PASS</span></td></tr>
 <tr><td class=id>D05</td><td>motor saturation stays bounded</td><td class=mono>83 events, peak 130% of limit</td><td class=mono>&lt; 160%</td><td><span class='tag t-pass'>PASS</span></td></tr>
-<tr><td class=id>D06</td><td>real-time factor on this host</td><td class=mono>29.10x</td><td class=mono>&gt; 0.05x (recorded)</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>D06</td><td>real-time factor on this host</td><td class=mono>36.20x</td><td class=mono>&gt; 0.05x (recorded)</td><td><span class='tag t-pass'>PASS</span></td></tr>
 </table></div>
 <h3>1D &nbsp;Determinism <span class='tag t-pass'>PASS</span></h3>
 <p class=proves>Two runs of the same mission with the same seed produce the same trajectory.<br><span class=mono>tests/test_determinism.py</span></p>
@@ -120,7 +120,7 @@ color:var(--muted);font-size:12.5px}
 <h3>1E &nbsp;Sensors <span class='tag t-pass'>PASS</span></h3>
 <p class=proves>RGB, depth, LiDAR, IMU and GNSS measure something correct about a known scene, at rate-limited simulation time.<br><span class=mono>tests/test_sensors.py</span></p>
 <div class=scroll><table><tr><th>ID</th><th>Check</th><th>Measured</th><th>Required</th><th></th></tr>
-<tr><td class=id>S13</td><td>RGB camera renders a non-uniform image at both resolutions</td><td class=mono>640x480 246 ms, 1920x1080 1355 ms</td><td class=mono>both resolutions, image std &gt; 3</td><td><span class='tag t-pass'>PASS</span></td></tr>
+<tr><td class=id>S13</td><td>RGB camera renders a non-uniform image at both resolutions</td><td class=mono>640x480 208 ms, 1920x1080 1122 ms</td><td class=mono>both resolutions, image std &gt; 3</td><td><span class='tag t-pass'>PASS</span></td></tr>
 <tr><td class=id>S14</td><td>depth camera range agrees with true geometry</td><td class=mono>2.1935 m vs ray-cast 2.176 m</td><td class=mono>error &lt; 0.6 m on the boresight</td><td><span class='tag t-pass'>PASS</span></td></tr>
 <tr><td class=id>S15</td><td>LiDAR returns structure, rejects its own airframe</td><td class=mono>3473 returns, 368 self-hits discarded</td><td class=mono>&gt; 500 returns, self-hits removed</td><td><span class='tag t-pass'>PASS</span></td></tr>
 <tr><td class=id>S16</td><td>IMU reads +1 g in hover with bounded gyro noise</td><td class=mono>|a| = 9.807 m/s2, gyro RMS 0.0024 rad/s</td><td class=mono>9.807 +/- 0.35, gyro &lt; 0.15</td><td><span class='tag t-pass'>PASS</span></td></tr>

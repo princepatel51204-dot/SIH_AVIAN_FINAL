@@ -1,5 +1,5 @@
 {
-  "run_id": "509ca116fbe4",
+  "run_id": "5f149760fd1c",
   "phase1a_description": {
     "returncode": 0,
     "summary": "  10 pass, 0 fail of 10 checks",
@@ -48,7 +48,7 @@
       "  [PASS] T3   waypoint mission arrival accuracy          max 10.5 cm over 5 waypoints   70 s, 51.8 Wh",
       "  [PASS] T5   recovers from lateral force and yaw torque peak 0.11 m, recovered in 0.0 s 120 N lateral impulse + 12 Nm yaw",
       "  [PASS] D05  motor saturation stays bounded             83 events, peak 130% of limit  clipped and counted, never silently ignored",
-      "  [PASS] D06  real-time factor on this host              29.10x                         162 s sim in 6 s wall, dt=4.17 ms",
+      "  [PASS] D06  real-time factor on this host              36.20x                         162 s sim in 4 s wall, dt=4.17 ms",
       "",
       "  11 pass, 0 fail of 11 checks"
     ]
@@ -73,9 +73,9 @@
     "summary": "  6 pass, 0 fail of 6 checks",
     "stdout_tail": [
       "PHASE 1E - SENSORS",
-      "  [PASS] S13  RGB camera renders a non-uniform image at both resolutions 640x480 246 ms, 1920x1080 1355 ms std 60.0 counts, GSD 2.1478 mm/px @1m",
+      "  [PASS] S13  RGB camera renders a non-uniform image at both resolutions 640x480 208 ms, 1920x1080 1122 ms std 60.0 counts, GSD 2.1478 mm/px @1m",
       "  [PASS] S14  depth camera range agrees with true geometry 2.1935 m vs ray-cast 2.176 m   48616 valid px (63 %), 179 px self-masked, gate 0.3-8.0 m",
-      "  [PASS] S15  LiDAR returns structure, rejects its own airframe 3473 returns, 368 self-hits discarded 693 points above the aircraft (the deck), 102 ms, 8.0x decimated",
+      "  [PASS] S15  LiDAR returns structure, rejects its own airframe 3473 returns, 368 self-hits discarded 693 points above the aircraft (the deck), 87 ms, 8.0x decimated",
       "  [PASS] S16  IMU reads +1 g in hover with bounded gyro noise |a| = 9.807 m/s2, gyro RMS 0.0024 rad/s specific force, so hover reads +g not 0",
       "  [PASS] S17  GNSS gives a fix in the open and degrades under structure open 11 sats (HIGH) -> under 0 (DENIED) lat 22.29979592, lon 73.22038919 (arbitrary datum)",
       "  [PASS] S18  sensors are rate-limited on simulation time  200 IMU samples in 1 s         gating is on sim time, so determinism survives",
@@ -103,6 +103,6 @@
   "total": {
     "pass": 46,
     "fail": 0,
-    "wall_s": 79.2
+    "wall_s": 63.1
   }
 }

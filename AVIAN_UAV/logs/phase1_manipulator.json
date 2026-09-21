@@ -349,9 +349,9 @@
       "environment_collision_detected": true,
       "environment_contacts": 8
     },
-    "wall_time_s": 28.3
+    "wall_time_s": 22.8
   },
-  "run_id": "509ca116fbe4",
+  "run_id": "5f149760fd1c",
   "summary": {
     "pass": 8,
     "fail": 0

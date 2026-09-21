@@ -65,7 +65,7 @@
       }
     ],
     "proximity_contacts": 0,
-    "wall_time_s": 28.7
+    "wall_time_s": 22.1
   },
   "bridge_manifest": {
     "source_environment": "AVIAN_Smart_Infrastructure_City_REV_B.blend",
@@ -184,7 +184,7 @@
     },
     "build_time_s": 4.2
   },
-  "run_id": "509ca116fbe4",
+  "run_id": "5f149760fd1c",
   "summary": {
     "pass": 5,
     "fail": 0

@@ -1,11 +1,12 @@
-  loaded  : 192 records, scene AVIAN_SIC_REV_C.blend (13835 objects)
+  loaded  : 192 records, scene AVIAN_SIC_REV_C.blend (14656 objects)
 
 REV-C Stage 1b (measured contrast)
   weather : concrete strength set to 0.00 (10 multiplier nodes)
-  contrast: 192 measured, 0 skipped, mean 0.0798, 59 contrast-limited (weather 0.00, threshold 0.05, 223.1 s)
+  contrast: 192 measured, 0 skipped, mean 0.0761, 59 contrast-limited (weather 0.00, threshold 0.05, 252.5 s)
   weather : concrete strength set to 1.00 (10 multiplier nodes)
-  contrast: 192 measured, 0 skipped, mean 0.0822, 57 contrast-limited (weather 1.00, threshold 0.05, 215.2 s)
-  contrast: 8 of 192 defects change RGB classification between weather 0.00 and 1.00 (mean contrast 0.0798 -> 0.0822; contrast-limited 59 -> 57)
+  contrast: 192 measured, 0 skipped, mean 0.0785, 57 contrast-limited (weather 1.00, threshold 0.05, 235.9 s)
+  contrast: 60 measured, 0 skipped, mean 0.0910, 25 contrast-limited (weather metro 1.00, threshold 0.05, 72.6 s)
+  contrast: 8 of 192 defects change RGB classification between weather 0.00 and 1.00 (mean contrast 0.0761 -> 0.0785; contrast-limited 59 -> 57)
 
   VALIDATION  (REV-A V01-V21, then REV-B V22-V32)
   V14 field set extended by REV-C: +3 contrast fields (defect_background_contrast, contrast_limited, expected_rgb_visibility_geometric)
@@ -20,21 +21,21 @@ REV-C Stage 1b (measured contrast)
   [PASS] V07  air draft over navigation channel      24.58 m                    clears inland navigation
   [PASS] V08  maximum longitudinal grade             2.71 %                     within highway design limits
   [PASS] V09  span to structural depth ratio         15.6 - 22.0                spans 25 - 90 m, depth 1.60 - 4.09 m
-  [PASS] V10  free-flight airspace clear of structure 3 volumes tested against 2145 members SAFE and RETURN volumes contain no structure
+  [PASS] V10  free-flight airspace clear of structure 3 volumes tested against 2826 members SAFE and RETURN volumes contain no structure
   [PASS] V11  under-bridge volumes are flyable       headroom 13.6 - 19.6 m     6 under-deck volumes
   [PASS] V12  defects sit on their recorded positions max offset 6.1 mm over 192 defects ground truth positions match the scene
   [PASS] V13  all defects inside the research zone   192/192 in zone            high-detail damage is confined to the research zone
   [PASS] V14  ground truth records are complete      18 fields x 192 records    every defect is fully described
   [PASS] V15  non-repairable cases are a useful minority 36/192 = 18.8 %            6 distinct escalation reasons
   [PASS] V21  the river surface is not occluded      5/5 probes reach water     the river renders as water
-  [PASS] V16  polygon budget                         384,200 triangles          13835 objects, 3400 unique meshes (4.1x instancing)
+  [PASS] V16  polygon budget                         395,732 triangles          14656 objects, 4221 unique meshes (3.5x instancing)
   [PASS] V17  camera far clip covers the scene       12 cameras                 no camera clips the corridor
   [PASS] V18  every sector carries defects           29 - 39 per sector         A:39, B:31, C:30, D:30, E:33, F:29
-  [PASS] V19  object names are unique                13835 objects              every object is addressable by name
-  [PASS] V20  scene organisation is complete         37 collections             collection tree as documented
+  [PASS] V19  object names are unique                14656 objects              every object is addressable by name
+  [PASS] V20  scene organisation is complete         42 collections             collection tree as documented
   21 pass, 0 fail, 0 skip of 21 checks
   [PASS] V22  ground truth matches the REV-A baseline 192 baseline, 192 now, max drift 0.00 mm every REV-A defect survived REV-B unchanged
-  [PASS] V23  mission markers complete and clear     124 markers, 11/11 types   every marker type present and sited in free air
+  [PASS] V23  mission markers complete and clear     148 markers, 15/11 types   every marker type present and sited in free air
   [PASS] V24  every sector has its own mission markers A:19, B:19, C:19, D:19, E:19, F:19 six aircraft can each be given a sector
   [PASS] V25  sensor anchors defined with optics     7 frames, 5 classes        the rig is fully specified
   [PASS] V26  sensor visibility ground truth is complete 192/192 complete, 4/4 difficulty levels used LEVEL_1:51, LEVEL_2:54, LEVEL_3:23, LEVEL_4:64
@@ -43,24 +44,32 @@ REV-C Stage 1b (measured contrast)
   [PASS] V29  mission graph is connected and costed  124 nodes, 136 edges, 120 reachable from home every sector is reachable from a home node
   [PASS] V30  dynamic content separated from structure 4/4 collections present    dynamic objects can be switched off without touching the asset
   [PASS] V31  scenario controller configured         9 presets, 7 lighting, 6 weather active preset: BASELINE
-  [PASS] V32  dataset generation is ready            4 passes, 2405 indexed objects, 12 cameras combined/depth/normal/object-index enabled; every defect has a unique pass_index
-  32 pass, 0 fail, 0 skip of 32 checks
+  [PASS] V32  dataset generation is ready            4 passes, 2465 indexed objects, 12 cameras combined/depth/normal/object-index enabled; every defect has a unique pass_index
+
+  VALIDATION  (REV-C V33-V43, metro)
+  [PASS] V33  metro clears the navigation channel    air draft 29.00 m, 0 piers in channel main span 2055-2145 (90 m clear)
+  [PASS] V34  metro clears the road bridge and the ceiling 0 overlaps, min gap 21.00 m, max z 42.00 m ceiling is the SAFE_TRANSIT / TRANSIT floor at z=55
+  [PASS] V35  inter-structure corridor is flyable    6 volumes, min dimension 24.70 m between the road bridge and the metro viaduct
+  [PASS] V36  every MB_ member carries a valid avi_kind 461 in STRUCTURAL_KINDS, 216 metro-specific, 0 invalid of 677 metro-specific kinds classify via the MB_ prefix, which is why MB_ must be in STRUCTURAL_PREFIXES
+  [PASS] V37  MB_ reaches the collision exporter     1354 primitives            kinds: access_hatch, bearing, cable_trough, catenary_mast, deck_box, deck_slab
+  [PASS] V38  metro ground truth records are complete 48 fields x 60 records     same writer as the road bridge, so a field added to one cannot be missing from the other
+  [PASS] V39  metro defects have measured visibility+contrast 60/60 visibility, 60/60 contrast, 3/4 difficulty levels LEVEL_1:9, LEVEL_2:27, LEVEL_4:24
+  [PASS] V40  the original 192 defects are untouched 192 road defects, 60 metro, 0 id collisions separate namespace and separate list
+  [PASS] V43  metro sectors reachable in the mission graph 6 MSECTORs, 24 markers     A:4, B:4, C:4, D:4, E:4, F:4
+  9 pass, 0 fail, 0 skip of 9 REV-C checks
+
+  SABOTAGE  (working rule 3.10 -- every check observed failing)
+  [OK  ] V33  PASS -> FAIL   sabotage: move a pier into the navigation channel
+  [OK  ] V34  PASS -> FAIL   sabotage: raise a metro member through the 55 m ceiling
+  [OK  ] V35  PASS -> FAIL   sabotage: squash the inter-structure corridor below 3 m
+  [OK  ] V36  PASS -> FAIL   sabotage: strip avi_kind off a metro member
+  [OK  ] V37  PASS -> FAIL   sabotage: make the collision manifest report zero primitives
+  [OK  ] V38  PASS -> FAIL   sabotage: remove a required metro ground-truth field
+  [OK  ] V39  PASS -> FAIL   sabotage: blank a metro defect's measured visibility
+  [OK  ] V40  PASS -> FAIL   sabotage: add a 193rd road-bridge defect
+  [OK  ] V43  PASS -> FAIL   sabotage: orphan a metro sector's mission markers
+  9/9 checks observed failing under sabotage
+  41 pass, 0 fail, 0 skip of 41 checks
   export  : REV-C ground truth 192 defects, 46 fields/record
-
-  VALIDATION RENDERS
-  view 01  VIEW_01_GLOBAL_CITY.png                       13 s  whole city and corridor in context
-  view 02  VIEW_02_BRIDGE_FULL_LENGTH.png                15 s  the full 4.5 km corridor, all seven sections
-  view 03  VIEW_03_RIVER_CROSSING.png                    16 s  90 m main span, river piers and air draft
-  view 04  VIEW_04_RESEARCH_ZONE.png                     24 s  the 900 m high-detail zone and its six sectors
-  view 05  VIEW_05_UNDERBRIDGE.png                       24 s  under-deck inspection volume, naturally dark
-  view 06  VIEW_06_DEFECT_CLOSEUP.png                    46 s  inspection standoff on a real defect
-  view 07  VIEW_07_FULL_INFRASTRUCTURE.png               11 s  corridor, river, city and horizon together
-  view 08  VIEW_08_DEFECT_GEOMETRY_CLOSEUP.png           46 s  geometry-backed defect at inspection range: real depth, sensor-detectable
-  view 09  VIEW_09_DEFECT_CRACK_CLOSEUP.png              67 s  shader-backed cracking at inspection range: sub-sensor width, camera-only
-  9 of 9 validation views rendered into renders/
-
-  REV-C FACADE DIAGNOSTIC VIEWS
-  facade 01 FACADE_01_STREET_GROUP.png              26 s  several buildings: per-object hue and weathering variation
-  facade 02 FACADE_02_CLOSEUP.png                   29 s  window grid and mould streaking at standoff
-  2 facade diagnostic views into renders/
-  phase B : 755.4 s
+  export  : metro ground truth 60 defects, 48 fields/record
+  phase B : 563.5 s

@@ -85,7 +85,7 @@
       "id": "V10",
       "check": "free-flight airspace clear of structure",
       "status": "PASS",
-      "measured": "3 volumes tested against 2145 members",
+      "measured": "3 volumes tested against 2826 members",
       "limit": "0 intersections",
       "detail": "SAFE and RETURN volumes contain no structure",
       "offenders": []
@@ -148,9 +148,9 @@
       "id": "V16",
       "check": "polygon budget",
       "status": "PASS",
-      "measured": "384,200 triangles",
+      "measured": "395,732 triangles",
       "limit": "< 6,000,000",
-      "detail": "13835 objects, 3400 unique meshes (4.1x instancing)",
+      "detail": "14656 objects, 4221 unique meshes (3.5x instancing)",
       "offenders": []
     },
     {
@@ -175,7 +175,7 @@
       "id": "V19",
       "check": "object names are unique",
       "status": "PASS",
-      "measured": "13835 objects",
+      "measured": "14656 objects",
       "limit": "no duplicates",
       "detail": "every object is addressable by name",
       "offenders": []
@@ -184,7 +184,7 @@
       "id": "V20",
       "check": "scene organisation is complete",
       "status": "PASS",
-      "measured": "37 collections",
+      "measured": "42 collections",
       "limit": "10 roles required",
       "detail": "collection tree as documented",
       "offenders": []
@@ -202,7 +202,7 @@
       "id": "V23",
       "check": "mission markers complete and clear",
       "status": "PASS",
-      "measured": "124 markers, 11/11 types",
+      "measured": "148 markers, 15/11 types",
       "limit": "all types present, all clear of structure",
       "detail": "every marker type present and sited in free air",
       "offenders": []
@@ -283,16 +283,97 @@
       "id": "V32",
       "check": "dataset generation is ready",
       "status": "PASS",
-      "measured": "4 passes, 2405 indexed objects, 12 cameras",
+      "measured": "4 passes, 2465 indexed objects, 12 cameras",
       "limit": ">= 4 passes, >= 192 indices, >= 12 cameras",
       "detail": "combined/depth/normal/object-index enabled; every defect has a unique pass_index",
+      "offenders": []
+    },
+    {
+      "id": "V33",
+      "check": "metro clears the navigation channel",
+      "status": "PASS",
+      "measured": "air draft 29.00 m, 0 piers in channel",
+      "limit": ">= 12.0 m, 0 piers",
+      "detail": "main span 2055-2145 (90 m clear)",
+      "offenders": []
+    },
+    {
+      "id": "V34",
+      "check": "metro clears the road bridge and the ceiling",
+      "status": "PASS",
+      "measured": "0 overlaps, min gap 21.00 m, max z 42.00 m",
+      "limit": "0 overlaps, max z < 55.0 m",
+      "detail": "ceiling is the SAFE_TRANSIT / TRANSIT floor at z=55",
+      "offenders": []
+    },
+    {
+      "id": "V35",
+      "check": "inter-structure corridor is flyable",
+      "status": "PASS",
+      "measured": "6 volumes, min dimension 24.70 m",
+      "limit": ">= 3.0 m in every dimension",
+      "detail": "between the road bridge and the metro viaduct",
+      "offenders": []
+    },
+    {
+      "id": "V36",
+      "check": "every MB_ member carries a valid avi_kind",
+      "status": "PASS",
+      "measured": "461 in STRUCTURAL_KINDS, 216 metro-specific, 0 invalid of 677",
+      "limit": "0 invalid",
+      "detail": "metro-specific kinds classify via the MB_ prefix, which is why MB_ must be in STRUCTURAL_PREFIXES",
+      "offenders": []
+    },
+    {
+      "id": "V37",
+      "check": "MB_ reaches the collision exporter",
+      "status": "PASS",
+      "measured": "1354 primitives",
+      "limit": "> 677 (the REV-B count)",
+      "detail": "kinds: access_hatch, bearing, cable_trough, catenary_mast, deck_box, deck_slab",
+      "offenders": []
+    },
+    {
+      "id": "V38",
+      "check": "metro ground truth records are complete",
+      "status": "PASS",
+      "measured": "48 fields x 60 records",
+      "limit": "all 16 required fields present",
+      "detail": "same writer as the road bridge, so a field added to one cannot be missing from the other",
+      "offenders": []
+    },
+    {
+      "id": "V39",
+      "check": "metro defects have measured visibility+contrast",
+      "status": "PASS",
+      "measured": "60/60 visibility, 60/60 contrast, 3/4 difficulty levels",
+      "limit": "100 % both, >= 3 levels",
+      "detail": "LEVEL_1:9, LEVEL_2:27, LEVEL_4:24",
+      "offenders": []
+    },
+    {
+      "id": "V40",
+      "check": "the original 192 defects are untouched",
+      "status": "PASS",
+      "measured": "192 road defects, 60 metro, 0 id collisions",
+      "limit": "192, 0 collisions",
+      "detail": "separate namespace and separate list",
+      "offenders": []
+    },
+    {
+      "id": "V43",
+      "check": "metro sectors reachable in the mission graph",
+      "status": "PASS",
+      "measured": "6 MSECTORs, 24 markers",
+      "limit": "6 sectors, >= 2 markers each",
+      "detail": "A:4, B:4, C:4, D:4, E:4, F:4",
       "offenders": []
     }
   ],
   "summary": {
-    "pass": 32,
+    "pass": 41,
     "fail": 0,
     "skip": 0,
-    "total": 32
+    "total": 41
   }
 }

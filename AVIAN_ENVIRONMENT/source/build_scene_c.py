@@ -49,17 +49,26 @@ import bpy
 
 import build_scene_b as B2
 import contrast_c as CC
+import materials as M
 import materials_c as MC
+import metro as MB
+import metro_damage as MD
+import params as P
 import params_c as PC
 import validate as VD
 import validate_b as VDB
+import validate_c as VDC
 import viscache_c as VC
 import visibility as VIS
+import zones_c as ZC
 
 SOURCE_DIR = os.path.dirname(os.path.abspath(__file__))
 SCENE_DIR = os.path.join(os.path.dirname(SOURCE_DIR), "scene")
 BLEND = os.path.join(SCENE_DIR, "AVIAN_SIC_REV_C.blend")
 HANDOFF = os.path.join(SCENE_DIR, "_handoff_phase_a.json")
+COLLISION_DIR = os.path.join(SCENE_DIR, "collision")
+COLLISION_MANIFEST = os.path.join(
+    COLLISION_DIR, "avian_bridge_collision_manifest.json")
 LAUNCHER = os.path.join(os.path.dirname(SOURCE_DIR), "run_blender.py")
 
 
@@ -69,6 +78,27 @@ def _log_to(lines):
         lines.append(s)
         print(s, flush=True)
     return log
+
+
+def _metro_collections(colls):
+    """REV-C's own collections, added alongside REV-B's tree.
+
+    Separate collections rather than reusing the road bridge's, so the metro
+    can be switched off, exported, or counted on its own -- the same reason
+    REV-B split dynamic content out from structure.
+    """
+    root = colls["ROOT"]
+    for name, parent in (("AVIAN_METRO", root),
+                         ("AVIAN_METRO_DEFECTS", root),
+                         ("AVIAN_METRO_AIRSPACE", root),
+                         ("AVIAN_METRO_SECTORS", root),
+                         ("AVIAN_METRO_MISSION", root)):
+        if name in colls:
+            continue
+        c = bpy.data.collections.new(name)
+        parent.children.link(c)
+        colls[name] = c
+    return colls
 
 
 def _flags(argv):
@@ -109,6 +139,21 @@ def phase_geometry(argv, log):
         VIS.compute = _orig
     stats["visibility_cached"] = bool(f["vis_cache"])
 
+    # ---- Stage 2: the metro viaduct ------------------------------------
+    # Built BEFORE the materials pass so the metro's concrete picks up the
+    # same weathering, and before visibility would matter -- but AFTER
+    # B2.build(), so not one road-bridge object is touched. Every defect on
+    # the road bridge is anchored to its host by ray-cast, so perturbing a
+    # BR_ member by a centimetre would move its defects and break V22.
+    log("")
+    log("REV-C Stage 2 (metro viaduct)")
+    mats = M.build_library()
+    _metro_collections(colls)
+    stats["metro"] = MB.build(colls, mats, log)
+    mrecords, mcounts = MD.build(colls, mats, log)
+    stats["metro_defects"] = {"count": len(mrecords), "by_type": mcounts}
+    stats["metro_zones"] = ZC.build(colls, log)
+
     log("")
     log("REV-C Stage 1 (materials, colour, micro-detail)")
     s = PC.CONCRETE_WEATHER_STRENGTH if f["weather"] is None \
@@ -116,18 +161,70 @@ def phase_geometry(argv, log):
     stats["materials_c"] = MC.build_all(s, log)
     stats["weather_strength"] = s
 
+    # Metro defects get the same measured visibility the road bridge's do.
+    # A metro defect without it is a defect the planner cannot be honestly
+    # scored on, so it runs through the identical 61-direction hemisphere.
+    log("")
+    log("  metro visibility")
+    stats["metro_visibility"] = VIS.compute(mrecords, log=log)
+
     os.makedirs(SCENE_DIR, exist_ok=True)
     bpy.ops.wm.save_as_mainfile(filepath=BLEND)
     mb = os.path.getsize(BLEND) / 1e6
     log(f"  saved   : {os.path.basename(BLEND)} ({mb:.1f} MB)")
 
     with open(HANDOFF, "w") as fh:
-        json.dump({"records": records, "graph": graph, "cfg": cfg,
-                   "stats": stats}, fh)
-    log(f"  handoff : {len(records)} records -> "
-        f"{os.path.basename(HANDOFF)}")
+        json.dump({"records": records, "mrecords": mrecords,
+                   "graph": graph, "cfg": cfg, "stats": stats}, fh)
+    log(f"  handoff : {len(records)} road + {len(mrecords)} metro records "
+        f"-> {os.path.basename(HANDOFF)}")
     log(f"  phase A : {time.time()-t0:.1f} s, "
         f"{len(bpy.data.objects)} objects")
+
+
+# ===========================================================================
+# PHASE COLLISION -- re-export the PyBullet collision asset from REV-C
+# ===========================================================================
+def phase_collision(argv, log):
+    """Run the UAV package's collision exporter against the REV-C scene.
+
+    Its own process, because export() calls open_mainfile and would
+    otherwise destroy whatever scene the calling phase is holding. It is
+    also the one place MB_ has to show up: V37 reads the manifest this
+    writes and compares the primitive count against REV-B's 677.
+
+    Deliberately the UAV package's exporter, not a copy. Two decomposers
+    are two sources of the same numbers.
+    """
+    root = os.environ.get("AVIAN_UAV_DIR") or os.path.join(
+        os.path.dirname(os.path.dirname(SOURCE_DIR)), "AVIAN_UAV")
+    path = os.path.join(root, "simulation", "export_bridge_collision.py")
+    if not os.path.exists(path):
+        raise SystemExit(f"collision exporter not found at {path}")
+
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("_avian_colx", path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+
+    os.makedirs(COLLISION_DIR, exist_ok=True)
+    mod.export(blend=BLEND, out_dir=COLLISION_DIR, log=log)
+
+    # Read the count back off the manifest rather than trusting export()'s
+    # return value -- it does not return the count, and the first version of
+    # this line reported "0 primitives" while the exporter's own log said
+    # 1354. A number that can silently read zero needs to come from the
+    # artifact, not from a convenient-looking variable.
+    if not os.path.exists(COLLISION_MANIFEST):
+        raise SystemExit(f"collision export wrote no manifest at "
+                         f"{COLLISION_MANIFEST}")
+    with open(COLLISION_MANIFEST) as fh:
+        man = json.load(fh)
+    n = man.get("collision_primitives", 0)
+    if n <= 0:
+        raise SystemExit(f"collision export produced {n} primitives")
+    log(f"  collision: {n} primitives in the REV-C scene "
+        f"(REV-B road bridge alone was 677)")
 
 
 # ===========================================================================
@@ -144,6 +241,7 @@ def phase_measure(argv, log):
     with open(HANDOFF) as fh:
         blob = json.load(fh)
     records, graph, cfg = blob["records"], blob["graph"], blob["cfg"]
+    mrecords = blob.get("mrecords", [])
     stats = blob["stats"]
     strength = stats["weather_strength"]
 
@@ -175,6 +273,13 @@ def phase_measure(argv, log):
 
     dirty = CC.measure(records, strength_label=f"{strength:.2f}", log=log)
     stats["contrast"] = {"at_strength": dirty}
+
+    # The metro's defects get the same measurement, at the working strength.
+    # Not swept: the sweep exists to characterise the knob, and one
+    # characterisation of it is enough.
+    if mrecords:
+        stats["metro_contrast"] = CC.measure(
+            mrecords, strength_label=f"metro {strength:.2f}", log=log)
     if base is not None:
         flips = [r["defect_id"] for r in records
                  if base.get(r["defect_id"]) != r.get(
@@ -205,10 +310,20 @@ def phase_measure(argv, log):
     res_a, sum_a = VD.run(records, log)
     res_b, sum_b = VDB.run(records, log, mission_graph=graph,
                            scenario_cfg=cfg)
-    allres = res_a + res_b
-    summary = {"pass": sum_a["pass"] + sum_b["pass"],
-               "fail": sum_a["fail"] + sum_b["fail"],
-               "skip": sum_a["skip"] + sum_b["skip"],
+    log("")
+    log("  VALIDATION  (REV-C V33-V43, metro)")
+    res_c, sum_c = VDC.run(records, mrecords, log,
+                           collision_manifest=COLLISION_MANIFEST)
+
+    # Working rule 3.10: a green check is evidence of nothing until it has
+    # been observed going red. Break what each REV-C check guards and
+    # confirm it fails.
+    import sabotage_c as SAB
+    stats["sabotage"] = SAB.run(records, mrecords, COLLISION_MANIFEST, log)
+    allres = res_a + res_b + res_c
+    summary = {"pass": sum_a["pass"] + sum_b["pass"] + sum_c["pass"],
+               "fail": sum_a["fail"] + sum_b["fail"] + sum_c["fail"],
+               "skip": sum_a["skip"] + sum_b["skip"] + sum_c["skip"],
                "total": len(allres)}
     log(f"  {summary['pass']} pass, {summary['fail']} fail, "
         f"{summary['skip']} skip of {summary['total']} checks")
@@ -245,6 +360,15 @@ def phase_measure(argv, log):
     stats["ground_truth_rev_c"] = gt
     log(f"  export  : REV-C ground truth {gt['total_defects']} defects, "
         f"{len(records[0]) if records else 0} fields/record")
+
+    if mrecords:
+        mgt = MD.export_ground_truth(
+            mrecords,
+            os.path.join(SCENE_DIR, "AVIAN_metro_ground_truth_REV_C.json"),
+            os.path.join(SCENE_DIR, "AVIAN_metro_ground_truth_REV_C.csv"))
+        stats["metro_ground_truth"] = mgt
+        log(f"  export  : metro ground truth {mgt['total_defects']} "
+            f"defects, {len(mrecords[0])} fields/record")
 
     with open(os.path.join(SCENE_DIR, "AVIAN_scene_stats_REV_C.json"),
               "w") as fh:
@@ -289,25 +413,81 @@ def phase_measure(argv, log):
 # ===========================================================================
 # ORCHESTRATOR -- runs both phases, in sequence, and fails loudly
 # ===========================================================================
+DONE_MARKER = "REVC_PHASE_COMPLETE"
+DURATIONS = os.path.join(SCENE_DIR, "_phase_durations.json")
+
+
+def _durations(set_name=None, set_value=None):
+    """Last successful wall-time per phase, for the duration floor."""
+    d = {}
+    if os.path.exists(DURATIONS):
+        try:
+            with open(DURATIONS) as fh:
+                d = json.load(fh)
+        except (ValueError, OSError):
+            d = {}
+    if set_name is not None:
+        d[set_name] = round(float(set_value), 1)
+        try:
+            os.makedirs(SCENE_DIR, exist_ok=True)
+            with open(DURATIONS, "w") as fh:
+                json.dump(d, fh, indent=2)
+        except OSError:
+            pass
+    return d
+
+
 def _run_phase(name, argv):
     cmd = [bpy.app.binary_path, "--background", "--python", LAUNCHER, "--",
            os.path.join("source", "build_scene_c.py"), "--phase", name
            ] + [a for a in argv if a != "--phase"]
     print(f"\n=== REV-C phase {name} ===", flush=True)
     t0 = time.time()
-    proc = subprocess.run(cmd, cwd=os.path.dirname(SOURCE_DIR))
+    proc = subprocess.run(cmd, cwd=os.path.dirname(SOURCE_DIR),
+                          capture_output=True, text=True)
     dt = time.time() - t0
-    if proc.returncode != 0:
+    print(proc.stdout, end="", flush=True)
+    if proc.stderr.strip():
+        print(proc.stderr, end="", flush=True)
+
+    # Returncode alone is NOT sufficient. Blender in background mode exited
+    # 0 on an unhandled Python exception in this exact pipeline -- the
+    # collision phase died on a KeyError and still reported "OK in 4.6 s".
+    # Each phase therefore prints a marker as its last act, and its absence
+    # is a failure regardless of what the exit code claims. Same lesson as
+    # the stale phase1_report: a success signal that can be produced
+    # without the work happening is not a success signal.
+    ok = (proc.returncode == 0) and (DONE_MARKER in proc.stdout)
+    if not ok:
         raise SystemExit(
-            f"REV-C phase {name} FAILED with exit {proc.returncode} "
-            f"after {dt:.1f} s -- see the output above. "
-            f"(137 means the OOM reaper; 139/-11 means a segfault.)")
+            f"REV-C phase {name} FAILED after {dt:.1f} s "
+            f"(exit {proc.returncode}, marker "
+            f"{'present' if DONE_MARKER in proc.stdout else 'ABSENT'}). "
+            f"137 means the OOM reaper; 139/-11 means a segfault.")
+
+    # Duration floor. Both phase failures this project has seen announced
+    # themselves as implausibly fast before anything else gave them away:
+    # 4.6 s and 2.3 s for jobs that must open a 65 MB scene. So each phase
+    # remembers its own last good wall-time and a run far under it is called
+    # out. Deliberately a loud warning and not a hard failure: a phase can
+    # be legitimately fast (the collision export genuinely runs in ~2 s),
+    # and a floor that blocks real work would get switched off, which is
+    # worse than one that is read. The hard guards stay where they belong --
+    # on the artifacts, which is why phase_collision asserts the manifest
+    # exists and its count is non-zero.
+    prev = _durations().get(name)
+    if prev and dt < 0.25 * prev:
+        print(f"!!! phase {name} finished in {dt:.1f} s against a previous "
+              f"{prev:.1f} s -- SUSPECT. Verify its artifacts before "
+              f"trusting this run.", flush=True)
+    _durations(set_name=name, set_value=dt)
     print(f"=== phase {name} OK in {dt:.1f} s ===", flush=True)
 
 
 def orchestrate(argv):
     t0 = time.time()
     _run_phase("geometry", argv)
+    _run_phase("collision", argv)
     _run_phase("measure", argv)
     print(f"\nREV-C complete in {time.time()-t0:.1f} s "
           f"(both phases). Scene: {BLEND}", flush=True)
@@ -325,6 +505,9 @@ def main():
     if phase == "geometry":
         phase_geometry(argv, log)
         name = "AVIAN_build_log_REV_C_phase_a.txt"
+    elif phase == "collision":
+        phase_collision(argv, log)
+        name = "AVIAN_build_log_REV_C_collision.txt"
     elif phase == "measure":
         phase_measure(argv, log)
         name = "AVIAN_build_log_REV_C_phase_b.txt"
@@ -334,6 +517,9 @@ def main():
     os.makedirs(SCENE_DIR, exist_ok=True)
     with open(os.path.join(SCENE_DIR, name), "w") as fh:
         fh.write("\n".join(lines) + "\n")
+    # Last act of a phase that actually finished. _run_phase treats its
+    # absence as failure even when Blender exits 0.
+    print(DONE_MARKER, flush=True)
 
 
 if __name__ == "__main__":

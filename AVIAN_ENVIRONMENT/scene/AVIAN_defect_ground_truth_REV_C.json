@@ -171,7 +171,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 2,
       "class_index": 1,
-      "defect_background_contrast": 0.22871,
+      "defect_background_contrast": 0.20891,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -1431,7 +1431,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 23,
       "class_index": 1,
-      "defect_background_contrast": 0.12967,
+      "defect_background_contrast": 0.11746,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -1971,7 +1971,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 32,
       "class_index": 1,
-      "defect_background_contrast": 0.32182,
+      "defect_background_contrast": 0.11012,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -2031,7 +2031,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 33,
       "class_index": 1,
-      "defect_background_contrast": 0.37157,
+      "defect_background_contrast": 0.17368,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -3171,7 +3171,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 52,
       "class_index": 2,
-      "defect_background_contrast": 0.52601,
+      "defect_background_contrast": 0.31042,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -4011,7 +4011,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 66,
       "class_index": 2,
-      "defect_background_contrast": 0.05118,
+      "defect_background_contrast": 0.05088,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -5991,7 +5991,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 99,
       "class_index": 4,
-      "defect_background_contrast": 0.1429,
+      "defect_background_contrast": 0.13481,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -6411,7 +6411,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 106,
       "class_index": 5,
-      "defect_background_contrast": 0.00758,
+      "defect_background_contrast": 0.00678,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": true
     },
@@ -6891,7 +6891,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 114,
       "class_index": 5,
-      "defect_background_contrast": 0.13895,
+      "defect_background_contrast": 0.12508,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -9591,7 +9591,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 159,
       "class_index": 9,
-      "defect_background_contrast": 0.04251,
+      "defect_background_contrast": 0.03631,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": true
     },
@@ -10191,7 +10191,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 169,
       "class_index": 9,
-      "defect_background_contrast": 0.17525,
+      "defect_background_contrast": 0.15717,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -10491,7 +10491,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 174,
       "class_index": 10,
-      "defect_background_contrast": 0.02566,
+      "defect_background_contrast": 0.02184,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": true
     },
@@ -10611,7 +10611,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 176,
       "class_index": 10,
-      "defect_background_contrast": 0.15652,
+      "defect_background_contrast": 0.15581,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": false
     },
@@ -10791,7 +10791,7 @@
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
       "instance_id": 179,
       "class_index": 10,
-      "defect_background_contrast": 0.04838,
+      "defect_background_contrast": 0.04445,
       "expected_rgb_visibility_geometric": true,
       "contrast_limited": true
     },

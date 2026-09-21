@@ -1,0 +1,11 @@
+  corridor: x = 1550 .. 2650 m (1100 m = 900 m zone + 2 x 100 m)
+  [PASS] C01 every box primitive matches its source bbox max deviation 0.09 mm      1354 primitives cross-checked
+  [PASS] C02 all structural primitives inside the corridor x = 1550 .. 2658           60 m tolerance for members that straddle the boundary
+  [PASS] C03 air draft preserved over the navigation channel 24.58 m                    collision soffit vs authoritative soffit
+  [PASS] C04 inspection bay between girders stays open  3.20 m                     box-fitting the I-section must not close the bay
+  [PASS] C05 road pier columns preserved with correct diameter 44 columns, dia [2.4, 3.2] 
+  [PASS] C06 under-deck volume preserved for all six road sectors 6 sectors, headroom 18.6-22.6 m 
+  [PASS] C07 metro viaduct reaches the collision asset  677 MB_ primitives of 1354 total 
+  [PASS] C08 metro pier columns preserved as cylinders  39 columns, dia [2.8]      
+  export  : 1354 primitives from 32,846 source triangles (24.3:1)
+  collision: 1354 primitives in the REV-C scene (REV-B road bridge alone was 677)

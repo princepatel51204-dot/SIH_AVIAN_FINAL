@@ -7,10 +7,10 @@ BUILD  (REV-B, upgrade of REV-A -- geometry generators unchanged)
   river   : 620 m wide, water z=-2.0, 260 rocks, 877 bank plants
   roads   : 1261 objects, 13 cross streets, 32 longitudinal, 2 ramps, 139 lighting columns
   city    : 680 buildings (158 high-rise), 2048 trees, 1024 street lights, 318 vehicles
-           (1.3 s)
+           (1.4 s)
   sites   : 679 engineering-plausible candidate locations
   carve   : 26 cavities cut into 24 members
-  damage  : 192 defects in 212 objects (14.9 s)
+  damage  : 192 defects in 212 objects (14.7 s)
   sun     : 52 deg elevation, 145 deg azimuth, 6.0 W/m2
   sky     : Nishita, disc off, ambient 1.0
   sectors : 6 x 150 m (1650 - 2550)
@@ -31,18 +31,31 @@ REV-B
   graph   : 124 nodes, 136 traversable edges
   cam-B   : 5 additional cameras (08-12)
   visible : LEVEL_1=51, LEVEL_2=54, LEVEL_3=23, LEVEL_4=64; 64 observable by no modality
-  visible : computed in 118.8 s and cached (gate run)
-           (118.9 s)
+  visible : computed in 120.3 s and cached (gate run)
+           (120.4 s)
   indices : 192 defect, 2055 structural, 138 dynamic instance IDs
   passes  : 6 render passes enabled
   scenario: BASELINE (lighting=DAY_CLEAR, weather=CLEAR, uav=1, gps=NORMAL); 53 materials retuned
-  total   : 183.6 s, 13835 objects
+  total   : 185.6 s, 13835 objects
+
+REV-C Stage 2 (metro viaduct)
+  station : 9 members, x 2240-2320, roof z=42.0 (13.0 m under the ceiling)
+  metro   : 39 piers, 38 spans, 17 masts, 677 objects at y=45.0
+  metro   : deck z=32.0, max z=42.00 (ceiling 55.0), main span 2055-2145 soffit z=27.0, air draft 29.00 m
+  mdamage : 60 metro defects (+0 child objects) across 8 types (SEGMENTAL=9, EFFLORESCENCE=7, BEARING=6, INTERNAL=8, WEB=10, SOFFIT=8, PIER=6, PIER=6)
+  airsp-C : 54 volumes across 5 REV-C classes DECK=6, UNDERSIDE=6, PIER=30, INTERIOR=6, INTER_STRUCTURE_CORRIDOR=6
+  corridor: inter-structure gap y[14.0,38.7] = 24.70 m wide, z[12.0,40.0] = 28.0 m tall
+  msectors: 6 x 150 m (1650 - 2550) at y=45.0
+  mmarkers: MSECTOR_ENTRY=6, MSECTOR_EXIT=6, MINSPECTION_START=6, MINSPECTION_END=6
 
 REV-C Stage 1 (materials, colour, micro-detail)
   materials_c: 4 facade shaders rebuilt (South Mumbai palette, daylight only, per-object variation)
   weather : concrete strength 1.00 on 5 host materials (defect materials untouched)
   weather : asphalt patch repairs and joint albedo applied
   weather : water bank turbidity applied, flow direction applied
-  saved   : AVIAN_SIC_REV_C.blend (65.5 MB)
-  handoff : 192 records -> _handoff_phase_a.json
-  phase A : 184.1 s, 13835 objects
+
+  metro visibility
+  visible : LEVEL_1=9, LEVEL_2=27, LEVEL_3=0, LEVEL_4=24; 13 observable by no modality
+  saved   : AVIAN_SIC_REV_C.blend (74.8 MB)
+  handoff : 192 road + 60 metro records -> _handoff_phase_a.json
+  phase A : 216.4 s, 14656 objects

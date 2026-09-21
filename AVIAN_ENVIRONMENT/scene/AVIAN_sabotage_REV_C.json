@@ -1,0 +1,70 @@
+{
+  "total": 9,
+  "proven": 9,
+  "unproven": [],
+  "rows": [
+    {
+      "check": "V33",
+      "sabotage": "move a pier into the navigation channel",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V34",
+      "sabotage": "raise a metro member through the 55 m ceiling",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V35",
+      "sabotage": "squash the inter-structure corridor below 3 m",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V36",
+      "sabotage": "strip avi_kind off a metro member",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V37",
+      "sabotage": "make the collision manifest report zero primitives",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V38",
+      "sabotage": "remove a required metro ground-truth field",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V39",
+      "sabotage": "blank a metro defect's measured visibility",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V40",
+      "sabotage": "add a 193rd road-bridge defect",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    },
+    {
+      "check": "V43",
+      "sabotage": "orphan a metro sector's mission markers",
+      "before": "PASS",
+      "after": "FAIL",
+      "proven": true
+    }
+  ]
+}

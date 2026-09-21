@@ -224,8 +224,11 @@ def run(records, log=print):
     # The SAFE transit band and the RETURN corridors must contain no
     # structure at all. This is the check that makes the airspace definition
     # trustworthy rather than decorative.
+    # MB_ (the REV-C metro viaduct) is tested here too. Without it the metro
+    # could sit inside the SAFE or RETURN corridors and no check would fire,
+    # which is the same trap as leaving it out of STRUCTURAL_PREFIXES.
     struct = [o for o in meshes
-              if _in(o.name, "BR_") and not _in(o.name, "_MARK")]
+              if _in(o.name, "BR_", "MB_") and not _in(o.name, "_MARK")]
     sboxes = [_world_bbox(o) for o in struct]
     bad = []
     tested = 0

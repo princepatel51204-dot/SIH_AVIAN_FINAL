@@ -65,9 +65,9 @@
     "sensor_invalid_state": "HOLD",
     "latched_state_after_recovery": "RETURN",
     "state_after_explicit_clear": "NOMINAL",
-    "wall_time_s": 6.2
+    "wall_time_s": 5.1
   },
-  "run_id": "509ca116fbe4",
+  "run_id": "5f149760fd1c",
   "summary": {
     "pass": 6,
     "fail": 0

@@ -100,6 +100,53 @@
     "dynamic": 138
   },
   "visibility_cached": false,
+  "metro": {
+    "piers": 39,
+    "spans": 38,
+    "masts": 17,
+    "objects": 677,
+    "max_z": 42.0,
+    "deck_top_z": 32.0,
+    "centreline_y": 45.0,
+    "main_span": [
+      2055.0,
+      2145.0
+    ],
+    "air_draft_m": 29.0
+  },
+  "metro_defects": {
+    "count": 60,
+    "by_type": {
+      "SEGMENTAL_JOINT_LEAKAGE": 9,
+      "EFFLORESCENCE_JOINT": 7,
+      "BEARING_DISTRESS": 6,
+      "INTERNAL_SOFFIT_CRACK": 8,
+      "WEB_SHEAR_CRACK": 10,
+      "SOFFIT_TRANSVERSE_CRACK": 8,
+      "PIER_SPALL": 6,
+      "PIER_CORROSION_STAIN": 6
+    }
+  },
+  "metro_zones": {
+    "airspace": {
+      "volumes": 54,
+      "classes": {
+        "METRO_DECK_INSPECTION": 6,
+        "METRO_UNDERSIDE_INSPECTION": 6,
+        "METRO_PIER_INSPECTION": 30,
+        "METRO_INTERIOR": 6,
+        "INTER_STRUCTURE_CORRIDOR": 6
+      },
+      "corridor_width_m": 24.7
+    },
+    "sectors": 6,
+    "markers": {
+      "MSECTOR_ENTRY": 6,
+      "MSECTOR_EXIT": 6,
+      "MINSPECTION_START": 6,
+      "MINSPECTION_END": 6
+    }
+  },
   "materials_c": {
     "facade_materials": 4,
     "concrete_weather_strength": 1.0,
@@ -115,11 +162,20 @@
     "water_flow": true
   },
   "weather_strength": 1.0,
+  "metro_visibility": {
+    "difficulty": {
+      "LEVEL_1": 9,
+      "LEVEL_2": 27,
+      "LEVEL_3": 0,
+      "LEVEL_4": 24
+    },
+    "unobservable": 13
+  },
   "contrast": {
     "at_strength": {
       "measured": 192,
       "skipped": 0,
-      "mean_contrast": 0.08217,
+      "mean_contrast": 0.07845,
       "contrast_limited": 57,
       "contrast_limited_ids": [
         "DEFECT_CRACK_HAIRLINE_003",
@@ -182,12 +238,12 @@
       ],
       "threshold_michelson": 0.05,
       "weather_strength": "1.00",
-      "wall_s": 215.2
+      "wall_s": 235.9
     },
     "at_clean": {
       "measured": 192,
       "skipped": 0,
-      "mean_contrast": 0.07977,
+      "mean_contrast": 0.0761,
       "contrast_limited": 59,
       "contrast_limited_ids": [
         "DEFECT_CRACK_HAIRLINE_003",
@@ -252,7 +308,7 @@
       ],
       "threshold_michelson": 0.05,
       "weather_strength": "0.00",
-      "wall_s": 223.1
+      "wall_s": 252.5
     },
     "reclassified_vs_clean": {
       "count": 8,
@@ -270,14 +326,120 @@
       "dirty_strength": 1.0
     }
   },
+  "metro_contrast": {
+    "measured": 60,
+    "skipped": 0,
+    "mean_contrast": 0.09097,
+    "contrast_limited": 25,
+    "contrast_limited_ids": [
+      "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_002",
+      "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_003",
+      "MDEFECT_EFFLORESCENCE_JOINT_010",
+      "MDEFECT_EFFLORESCENCE_JOINT_011",
+      "MDEFECT_EFFLORESCENCE_JOINT_014",
+      "MDEFECT_EFFLORESCENCE_JOINT_015",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_023",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_024",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_025",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_026",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_029",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_030",
+      "MDEFECT_WEB_SHEAR_CRACK_035",
+      "MDEFECT_WEB_SHEAR_CRACK_038",
+      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_041",
+      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_042",
+      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_044",
+      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_046",
+      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_048",
+      "MDEFECT_PIER_SPALL_049",
+      "MDEFECT_PIER_SPALL_050",
+      "MDEFECT_PIER_SPALL_053",
+      "MDEFECT_PIER_SPALL_054",
+      "MDEFECT_PIER_CORROSION_STAIN_057",
+      "MDEFECT_PIER_CORROSION_STAIN_059"
+    ],
+    "threshold_michelson": 0.05,
+    "weather_strength": "metro 1.00",
+    "wall_s": 72.6
+  },
+  "sabotage": {
+    "total": 9,
+    "proven": 9,
+    "unproven": [],
+    "rows": [
+      {
+        "check": "V33",
+        "sabotage": "move a pier into the navigation channel",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "V34",
+        "sabotage": "raise a metro member through the 55 m ceiling",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "V35",
+        "sabotage": "squash the inter-structure corridor below 3 m",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "V36",
+        "sabotage": "strip avi_kind off a metro member",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "V37",
+        "sabotage": "make the collision manifest report zero primitives",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "V38",
+        "sabotage": "remove a required metro ground-truth field",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "V39",
+        "sabotage": "blank a metro defect's measured visibility",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "V40",
+        "sabotage": "add a 193rd road-bridge defect",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "V43",
+        "sabotage": "orphan a metro sector's mission markers",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      }
+    ]
+  },
   "scene": {
     "revision": "REV_C_STAGE_1B",
     "gate_valid": true,
-    "objects": 13835,
-    "unique_meshes": 3400,
-    "triangles_rendered": 384200,
-    "materials": 178,
-    "collections": 37,
+    "objects": 14656,
+    "unique_meshes": 4221,
+    "triangles_rendered": 395732,
+    "materials": 210,
+    "collections": 42,
     "cameras": 12,
     "active_scenario": {
       "lighting": "DAY_CLEAR",
@@ -292,10 +454,10 @@
       "preset": "BASELINE"
     },
     "validation": {
-      "pass": 32,
+      "pass": 41,
       "fail": 0,
       "skip": 0,
-      "total": 32
+      "total": 41
     }
   },
   "ground_truth_rev_c": {
@@ -323,5 +485,28 @@
     "non_repairable_escalation": 36,
     "geometry_backed": 47,
     "shader_backed": 145
+  },
+  "metro_ground_truth": {
+    "total_defects": 60,
+    "by_type": {
+      "SEGMENTAL_JOINT_LEAKAGE": 9,
+      "EFFLORESCENCE_JOINT": 7,
+      "BEARING_DISTRESS": 6,
+      "INTERNAL_SOFFIT_CRACK": 8,
+      "WEB_SHEAR_CRACK": 10,
+      "SOFFIT_TRANSVERSE_CRACK": 8,
+      "PIER_SPALL": 6,
+      "PIER_CORROSION_STAIN": 6
+    },
+    "by_severity": {
+      "1": 12,
+      "3": 22,
+      "4": 14,
+      "2": 12
+    },
+    "repairable": 43,
+    "non_repairable_escalation": 17,
+    "geometry_backed": 12,
+    "shader_backed": 48
   }
 }
