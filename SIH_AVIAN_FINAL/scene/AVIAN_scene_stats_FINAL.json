@@ -171,5 +171,873 @@
     "triangles_after_steel": 167044,
     "triangles_added_by_steel_pass": 144536
   },
-  "wall_s": 27.9
+  "contrast": {
+    "measured": 96,
+    "skipped": 0,
+    "mean_contrast": 0.13725,
+    "contrast_limited": 20,
+    "contrast_limited_ids": [
+      "DEFECT_CRACK_HAIRLINE_006",
+      "DEFECT_CRACK_HAIRLINE_016",
+      "DEFECT_CRACK_LONGITUDINAL_003",
+      "DEFECT_CRACK_LONGITUDINAL_004",
+      "DEFECT_CRACK_LONGITUDINAL_005",
+      "DEFECT_CRACK_LONGITUDINAL_010",
+      "DEFECT_CRACK_LONGITUDINAL_012",
+      "DEFECT_CRACK_TRANSVERSE_003",
+      "DEFECT_CRACK_TRANSVERSE_009",
+      "DEFECT_CRACK_TRANSVERSE_010",
+      "DEFECT_DELAMINATION_001",
+      "DEFECT_DELAMINATION_005",
+      "DEFECT_DELAMINATION_007",
+      "DEFECT_REBAR_EXPOSED_003",
+      "DEFECT_CORROSION_STAIN_002",
+      "DEFECT_CORROSION_STAIN_004",
+      "DEFECT_CORROSION_STAIN_006",
+      "DEFECT_CORROSION_STAIN_008",
+      "DEFECT_CORROSION_STAIN_010",
+      "DEFECT_JOINT_DETERIORATION_003"
+    ],
+    "threshold_michelson": 0.05,
+    "weather_strength": "1.00",
+    "wall_s": 89.0
+  },
+  "metro_contrast": {
+    "measured": 20,
+    "skipped": 0,
+    "mean_contrast": 0.09925,
+    "contrast_limited": 7,
+    "contrast_limited_ids": [
+      "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_003",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_008",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_009",
+      "MDEFECT_INTERNAL_SOFFIT_CRACK_010",
+      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_014",
+      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_015",
+      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_016"
+    ],
+    "threshold_michelson": 0.05,
+    "weather_strength": "metro 1.00",
+    "wall_s": 18.9
+  },
+  "steel_contrast": {
+    "measured": 76,
+    "skipped": 0,
+    "mean_contrast": 0.25836,
+    "contrast_limited": 11,
+    "contrast_limited_ids": [
+      "FAST_GUSSET_ST_GUSSET_S_TOP_05_04_MARK_NUT",
+      "SDEFECT_WELD_CRACK_01",
+      "SDEFECT_WELD_CRACK_02",
+      "SDEFECT_WELD_CRACK_03",
+      "SDEFECT_WELD_CRACK_04",
+      "SDEFECT_WELD_CRACK_05",
+      "SDEFECT_WELD_CRACK_06",
+      "SDEFECT_SECTION_LOSS_01",
+      "SDEFECT_SECTION_LOSS_02",
+      "SDEFECT_SECTION_LOSS_04",
+      "SDEFECT_SECTION_LOSS_05"
+    ],
+    "threshold_michelson": 0.05,
+    "weather_strength": "steel 1.00",
+    "wall_s": 69.6
+  },
+  "escalation": {
+    "road": {
+      "none": 26,
+      "below_contrast": 7,
+      "below_resolution": 63,
+      "occluded": 0,
+      "unreachable_angle": 0
+    },
+    "metro": {
+      "none": 5,
+      "below_contrast": 3,
+      "below_resolution": 11,
+      "occluded": 0,
+      "unreachable_angle": 1
+    },
+    "steel": {
+      "none": 42,
+      "below_contrast": 5,
+      "below_resolution": 6,
+      "occluded": 8,
+      "unreachable_angle": 15
+    }
+  },
+  "resolvability": {
+    "road": {
+      "overall": {
+        "identifiable_at_standoff": 26,
+        "requires_closer": 8,
+        "unidentifiable": 62
+      },
+      "by_type": {
+        "CRACK_HAIRLINE": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 2,
+          "unidentifiable": 22
+        },
+        "CRACK_LONGITUDINAL": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 3,
+          "unidentifiable": 9
+        },
+        "CRACK_TRANSVERSE": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 1,
+          "unidentifiable": 9
+        },
+        "CRACK_NETWORK": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 2,
+          "unidentifiable": 6
+        },
+        "SPALL": {
+          "identifiable_at_standoff": 12,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "DELAMINATION": {
+          "identifiable_at_standoff": 8,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "REBAR_EXPOSED": {
+          "identifiable_at_standoff": 6,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "CORROSION_STAIN": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 0,
+          "unidentifiable": 10
+        },
+        "JOINT_DETERIORATION": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 0,
+          "unidentifiable": 6
+        }
+      }
+    },
+    "metro": {
+      "overall": {
+        "identifiable_at_standoff": 4,
+        "requires_closer": 6,
+        "unidentifiable": 10
+      },
+      "by_type": {
+        "SEGMENTAL_JOINT_LEAKAGE": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 1,
+          "unidentifiable": 2
+        },
+        "EFFLORESCENCE_JOINT": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 1,
+          "unidentifiable": 1
+        },
+        "BEARING_DISTRESS": {
+          "identifiable_at_standoff": 2,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "INTERNAL_SOFFIT_CRACK": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 2,
+          "unidentifiable": 1
+        },
+        "WEB_SHEAR_CRACK": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 1,
+          "unidentifiable": 2
+        },
+        "SOFFIT_TRANSVERSE_CRACK": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 1,
+          "unidentifiable": 2
+        },
+        "PIER_SPALL": {
+          "identifiable_at_standoff": 2,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "PIER_CORROSION_STAIN": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 0,
+          "unidentifiable": 2
+        }
+      }
+    },
+    "steel": {
+      "overall": {
+        "identifiable_at_standoff": 48,
+        "requires_closer": 22,
+        "unidentifiable": 6
+      },
+      "by_type": {
+        "BOLT_LOOSE": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 18,
+          "unidentifiable": 0
+        },
+        "BOLT_MISSING": {
+          "identifiable_at_standoff": 8,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "BOLT_CORRODED": {
+          "identifiable_at_standoff": 10,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "JOINT_ANCHOR_LOOSE": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 4,
+          "unidentifiable": 0
+        },
+        "WELD_CRACK": {
+          "identifiable_at_standoff": 0,
+          "requires_closer": 0,
+          "unidentifiable": 6
+        },
+        "SECTION_LOSS": {
+          "identifiable_at_standoff": 6,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "COATING_FAILURE": {
+          "identifiable_at_standoff": 8,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "GUSSET_DISTORTION": {
+          "identifiable_at_standoff": 3,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "BEARING_SEIZED": {
+          "identifiable_at_standoff": 4,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "CONDUIT_DETACHED": {
+          "identifiable_at_standoff": 5,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        },
+        "HANDRAIL_LOOSE": {
+          "identifiable_at_standoff": 4,
+          "requires_closer": 0,
+          "unidentifiable": 0
+        }
+      }
+    }
+  },
+  "baseline_frozen_this_run": true,
+  "metro_baseline_frozen_this_run": true,
+  "steel_baseline_frozen_this_run": true,
+  "validation": {
+    "pass": 38,
+    "fail": 0,
+    "skip": 0,
+    "total": 38
+  },
+  "validation_detail": [
+    {
+      "id": "VF01",
+      "check": "road deck width",
+      "status": "PASS",
+      "measured": "14.00 m",
+      "limit": "14.0 m +/- 0.05",
+      "detail": "BR_DECK_SLAB_001",
+      "offenders": []
+    },
+    {
+      "id": "VF02",
+      "check": "corridor length (deck extent)",
+      "status": "PASS",
+      "measured": "360.00 m (0.00 .. 360.00)",
+      "limit": "360 m +/- 1.0",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF03",
+      "check": "span/depth ratio in a buildable range",
+      "status": "PASS",
+      "measured": "45m/1=28.1, 90m/1=36.0",
+      "limit": "12 - 45",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF04",
+      "check": "ground objects on terrain height",
+      "status": "PASS",
+      "measured": "max |dz| 0.967 m over 51 objects",
+      "limit": "1.20 m",
+      "detail": "ENV_RIPRAP_023",
+      "offenders": []
+    },
+    {
+      "id": "VF05",
+      "check": "no pier inside the navigation channel",
+      "status": "PASS",
+      "measured": "0 offending piers",
+      "limit": "0",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF06",
+      "check": "road bridge air draft over the channel",
+      "status": "PASS",
+      "measured": "13.78 m",
+      "limit": ">= 12.0 m",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF07",
+      "check": "metro air draft over the channel",
+      "status": "PASS",
+      "measured": "17.80 m",
+      "limit": ">= 12.0 m",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF08",
+      "check": "unique object names",
+      "status": "PASS",
+      "measured": "6514 objects, 0 duplicate names",
+      "limit": "0",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF09",
+      "check": "polygon budget",
+      "status": "PASS",
+      "measured": "167,044 triangles",
+      "limit": "<= 2,000,000",
+      "detail": "generous vs REV-C's raised 15M ceiling -- this corridor is two orders of magnitude smaller",
+      "offenders": []
+    },
+    {
+      "id": "VF10",
+      "check": "camera far clip covers the corridor",
+      "status": "PASS",
+      "measured": "12 cameras, 0 with clip_end<500m",
+      "limit": ">= 500 m clip_end, 12 cameras present",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF10b",
+      "check": "all 12 named cameras exist",
+      "status": "PASS",
+      "measured": "12 CAM_ objects",
+      "limit": "12",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF11",
+      "check": "defects resolved to a real host surface (excluding the truss span's expected girder/diaphragm orphans)",
+      "status": "PASS",
+      "measured": "0/96 unexplained orphans (0.0%), 17 expected (ex-girder site in the truss span)",
+      "limit": "<= 5% unexplained orphans",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF12",
+      "check": "road ground truth field completeness",
+      "status": "PASS",
+      "measured": "45 common fields + 1 type-specific x 96 records",
+      "limit": "identical common fields, exactly one of length_m/radius_m each",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF12b",
+      "check": "metro ground truth field completeness",
+      "status": "PASS",
+      "measured": "49 common fields + 1 type-specific x 20 records",
+      "limit": "identical common fields, exactly one of length_m/radius_m each",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF13",
+      "check": "road defect count matches SPEC.md",
+      "status": "PASS",
+      "measured": "96",
+      "limit": "96",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF13b",
+      "check": "defect counts by type match SPEC.md",
+      "status": "PASS",
+      "measured": "{'CRACK_HAIRLINE': 24, 'CRACK_LONGITUDINAL': 12, 'CRACK_TRANSVERSE': 10, 'CRACK_NETWORK': 8, 'SPALL': 12, 'DELAMINATION': 8, 'REBAR_EXPOSED': 6, 'CORROSION_STAIN': 10, 'JOINT_DETERIORATION': 6}",
+      "limit": "{'CRACK_HAIRLINE': 24, 'CRACK_LONGITUDINAL': 12, 'CRACK_TRANSVERSE': 10, 'CRACK_NETWORK': 8, 'SPALL': 12, 'DELAMINATION': 8, 'REBAR_EXPOSED': 6, 'CORROSION_STAIN': 10, 'JOINT_DETERIORATION': 6}",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF14",
+      "check": "road and metro structures do not overlap",
+      "status": "PASS",
+      "measured": "0 overlapping bbox pairs (193 BR_ x 263 MB_)",
+      "limit": "0",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF15",
+      "check": "inter-structure corridor clear of structure",
+      "status": "PASS",
+      "measured": "14.70 m clear (BR_ max y=9.00, MB_ min y=23.70)",
+      "limit": ">= 4.0 m",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF16",
+      "check": "every MB_ member carries avi_kind",
+      "status": "PASS",
+      "measured": "263/263 classified",
+      "limit": "100%",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF17",
+      "check": "hero defect present and correctly tagged",
+      "status": "PASS",
+      "measured": "1 tagged avi_hero=True",
+      "limit": "1, type REBAR_EXPOSED, host PIER_COLUMN",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF18",
+      "check": "baseline drift (road defects)",
+      "status": "PASS",
+      "measured": "0 added, 0 removed, 0.000 mm drift",
+      "limit": "0 added, 0 removed, <= 1.0 mm",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF19",
+      "check": "both landing pads exist",
+      "status": "PASS",
+      "measured": "2 pad objects",
+      "limit": "2",
+      "detail": "AVI_BASE_REPAIRER, AVI_BASE_SCANNER",
+      "offenders": []
+    },
+    {
+      "id": "VF20",
+      "check": "landing pads carry avi_kind/role/centre tags",
+      "status": "PASS",
+      "measured": "2/2 pads clean",
+      "limit": "avi_kind=landing_pad, avi_base_role set, centre accurate",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF21",
+      "check": "landing pads sit on terrain height",
+      "status": "PASS",
+      "measured": "max |dz| 0.0000 m",
+      "limit": "<= 0.05 m (placed directly from terrain_final.height())",
+      "detail": "AVI_BASE_SCANNER",
+      "offenders": []
+    },
+    {
+      "id": "VF22",
+      "check": "landing pads reach the collision export",
+      "status": "PASS",
+      "measured": "2 landing_pad primitives of 568 total",
+      "limit": ">= 2 (one per pad)",
+      "detail": "the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad",
+      "offenders": []
+    },
+    {
+      "id": "VF26",
+      "check": "every SDF visual carries a material block",
+      "status": "PASS",
+      "measured": "933/933 visuals have a <material>",
+      "limit": "100%",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF27",
+      "check": "world has more than one distinct colour",
+      "status": "PASS",
+      "measured": "32 distinct diffuse colours",
+      "limit": ">= 8",
+      "detail": "VF26 alone would pass even if every material resolved to the same fallback grey",
+      "offenders": []
+    },
+    {
+      "id": "VF28",
+      "check": "steel truss air draft over the channel",
+      "status": "PASS",
+      "measured": "13.55 m",
+      "limit": ">= 12.0 m",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF29",
+      "check": "every ST_ truss member carries a recognized avi_kind",
+      "status": "PASS",
+      "measured": "198/198 classified",
+      "limit": "100%",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF30",
+      "check": "fastener count >= 1,000 (SPEC S3.1 target 1,200)",
+      "status": "PASS",
+      "measured": "1200 bolts",
+      "limit": ">= 1000",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF31",
+      "check": "every torqued bolt carries both match-mark segments",
+      "status": "PASS",
+      "measured": "1192/1192 complete",
+      "limit": "100%",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF32",
+      "check": "loose bolts' match marks are visibly broken (nut segment measurably rotated)",
+      "status": "PASS",
+      "measured": "22/22 broken",
+      "limit": "100%, > 5 deg",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF33",
+      "check": "steel ground truth field completeness",
+      "status": "PASS",
+      "measured": "76/76 complete",
+      "limit": "all required fields present",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF34",
+      "check": "every steel defect has feature_size_mm and min_detect_range_m",
+      "status": "PASS",
+      "measured": "76/76 measured",
+      "limit": "100%",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF35",
+      "check": "min_detect_range_m has real spread across steel defect types (not a constant)",
+      "status": "PASS",
+      "measured": "min=0.064 m, max=40.441 m, spread=40.377 m",
+      "limit": ">= 1.0 m spread",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF36",
+      "check": "every structural member carries avi_condition/avi_age_years",
+      "status": "PASS",
+      "measured": "654/654 tagged",
+      "limit": "100%",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF37",
+      "check": "truss interior clear width flyable",
+      "status": "PASS",
+      "measured": "13.55 m",
+      "limit": ">= 3.0 m",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF38",
+      "check": "baseline drift (steel defects)",
+      "status": "PASS",
+      "measured": "0 added, 0 removed, 0.000 mm drift",
+      "limit": "0 added, 0 removed, <= 1.0 mm",
+      "detail": "",
+      "offenders": []
+    }
+  ],
+  "sabotage": {
+    "total": 33,
+    "proven": 33,
+    "unproven": [],
+    "rows": [
+      {
+        "check": "VF01",
+        "sabotage": "shrink a deck slab's width",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF02",
+        "sabotage": "move the north abutment 500 m away",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF03",
+        "sabotage": "collapse the main-span girder depth to 5 cm",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF04",
+        "sabotage": "lift a riprap block 5 m off the ground",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF05",
+        "sabotage": "move a pier into the navigation channel",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF06_07",
+        "sabotage": "raise the river water 12 m above the deck",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF09",
+        "sabotage": "report an impossible triangle count",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF10",
+        "sabotage": "shrink a camera's far clip to 10 m",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF11",
+        "sabotage": "blank 10 defects' surface_offset_mm",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF12",
+        "sabotage": "remove a required field from a road defect record",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF13",
+        "sabotage": "delete a road defect record",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF14",
+        "sabotage": "move a metro pier onto a road pier",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF15",
+        "sabotage": "push a metro pier into the inter-structure gap",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF16",
+        "sabotage": "strip avi_kind off a metro pier column",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF17",
+        "sabotage": "strip the avi_hero tag off the hero defect",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF18",
+        "sabotage": "shift a defect 5 m off its baseline position",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF19",
+        "sabotage": "rename a landing pad out from under its expected name",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF20",
+        "sabotage": "corrupt a landing pad's avi_base_role tag",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF21",
+        "sabotage": "lift a landing pad 2 m off the terrain",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF22",
+        "sabotage": "strip landing_pad primitives from the exported collision JSON",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF26",
+        "sabotage": "strip all <material> blocks from one exported model.sdf",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF27",
+        "sabotage": "force every exported <diffuse> to the same grey",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF28",
+        "sabotage": "raise the river water 12 m above the deck (same cause as VF06/07 -- the truss's own draft check)",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF29",
+        "sabotage": "strip avi_kind off a steel truss member",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF30",
+        "sabotage": "rename 250 bolts out of the FAST_ namespace",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF31",
+        "sabotage": "rename a bolt's plate-side match mark away",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF32",
+        "sabotage": "un-rotate a loose bolt's nut-side match mark",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF33",
+        "sabotage": "remove a required field from a steel defect record",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF34",
+        "sabotage": "strip feature_size_mm off a steel defect record",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF35",
+        "sabotage": "force every steel min_detect_range_m to the same value",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF36",
+        "sabotage": "strip avi_condition off a steel truss member",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF37",
+        "sabotage": "blow up the truss vertical member size",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF38",
+        "sabotage": "shift a steel defect 5 m off its baseline position",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      }
+    ]
+  },
+  "renders": [
+    "CAM_12_LOOSE_BOLT",
+    "CAM_01_OVERVIEW",
+    "CAM_02_RIVER",
+    "CAM_03_UNDERDECK",
+    "CAM_04_INTER_STRUCTURE",
+    "CAM_05_PIER",
+    "CAM_06_HERO_DEFECT",
+    "CAM_07_METRO",
+    "CAM_08_DECK",
+    "CAM_09_BASE",
+    "CAM_10_TRUSS",
+    "CAM_11_GUSSET"
+  ],
+  "wall_s_phase2": 822.3
 }

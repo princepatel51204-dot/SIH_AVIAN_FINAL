@@ -4,13 +4,13 @@
 -- cameras --
   cameras : 12 named views
 -- measured contrast (contrast_c.py, reused unchanged) --
-  contrast: 96 measured, 0 skipped, mean 0.1362, 20 contrast-limited (weather 1.00, threshold 0.05, 63.2 s)
-  contrast: 20 measured, 0 skipped, mean 0.0993, 7 contrast-limited (weather metro 1.00, threshold 0.05, 13.0 s)
-  contrast: 76 measured, 0 skipped, mean 0.2066, 8 contrast-limited (weather steel 1.00, threshold 0.05, 49.9 s)
+  contrast: 96 measured, 0 skipped, mean 0.1372, 20 contrast-limited (weather 1.00, threshold 0.05, 89.0 s)
+  contrast: 20 measured, 0 skipped, mean 0.0992, 7 contrast-limited (weather metro 1.00, threshold 0.05, 18.9 s)
+  contrast: 76 measured, 0 skipped, mean 0.2584, 11 contrast-limited (weather steel 1.00, threshold 0.05, 69.6 s)
 -- escalation_reason (resolvability_final.py, SPEC S5) --
   escalate (road): 70/96 escalated -> {'none': 26, 'below_contrast': 7, 'below_resolution': 63, 'occluded': 0, 'unreachable_angle': 0}
   escalate (metro): 15/20 escalated -> {'none': 5, 'below_contrast': 3, 'below_resolution': 11, 'occluded': 0, 'unreachable_angle': 1}
-  escalate (steel): 54/76 escalated -> {'none': 22, 'below_contrast': 4, 'below_resolution': 4, 'occluded': 20, 'unreachable_angle': 26}
+  escalate (steel): 34/76 escalated -> {'none': 42, 'below_contrast': 5, 'below_resolution': 6, 'occluded': 8, 'unreachable_angle': 15}
 -- resolvability breakdown (SPEC S5 -- the result) --
   resolv  : road      {'identifiable_at_standoff': 26, 'requires_closer': 8, 'unidentifiable': 62}
   resolv  : metro     {'identifiable_at_standoff': 4, 'requires_closer': 6, 'unidentifiable': 10}
@@ -60,8 +60,8 @@
   [PASS] VF20 landing pads carry avi_kind/role/centre tags 2/2 pads clean             
   [PASS] VF21 landing pads sit on terrain height     max |dz| 0.0000 m          AVI_BASE_SCANNER
   [PASS] VF22 landing pads reach the collision export 2 landing_pad primitives of 568 total the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad
-  [PASS] VF26 every SDF visual carries a material block 772/772 visuals have a <material> 
-  [PASS] VF27 world has more than one distinct colour 26 distinct diffuse colours VF26 alone would pass even if every material resolved to the same fallback grey
+  [PASS] VF26 every SDF visual carries a material block 933/933 visuals have a <material> 
+  [PASS] VF27 world has more than one distinct colour 32 distinct diffuse colours VF26 alone would pass even if every material resolved to the same fallback grey
   [PASS] VF28 steel truss air draft over the channel 13.55 m                    
   [PASS] VF29 every ST_ truss member carries a recognized avi_kind 198/198 classified         
   [PASS] VF30 fastener count >= 1,000 (SPEC S3.1 target 1,200) 1200 bolts                 
@@ -109,3 +109,16 @@
   [OK ] VF37     blow up the truss vertical member size           PASS -> FAIL
   [OK ] VF38     shift a steel defect 5 m off its baseline position PASS -> FAIL
   SABOTAGE: 33/33 proven capable of failing
+-- rendering the 12 named cameras (CAM_12 first) --
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_12_LOOSE_BOLT.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_01_OVERVIEW.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_02_RIVER.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_03_UNDERDECK.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_04_INTER_STRUCTURE.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_05_PIER.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_06_HERO_DEFECT.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_07_METRO.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_08_DECK.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_09_BASE.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_10_TRUSS.png
+  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_11_GUSSET.png

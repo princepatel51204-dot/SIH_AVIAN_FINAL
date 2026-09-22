@@ -110,11 +110,18 @@ def build(coll, hero_pos=None, loose_bolt=None, log=print):
         gy = sum(v.y for v in verts) / len(verts)
         gz = sum(v.z for v in verts) / len(verts)
     else:
-        gx, gy, gz = 180.0, -7.0, 21.0
+        gx, gy, gz = 180.0, -6.7, 21.0
+    # The gusset's bolted face looks INWARD (toward the corridor
+    # centreline, y=0) -- south truss gy<0 needs a camera at LARGER y
+    # (toward 0), north truss gy>0 needs SMALLER y. Getting this sign
+    # backwards (as a first version of this camera did) puts the eye on
+    # the truss's outward side, where the ray back to the plate crosses
+    # straight through the solid chord first.
+    g_sign = 1.0 if gy < 0 else -1.0
     cams.append(CB._cam(
-        "CAM_11_GUSSET", (gx - 0.3, gy - 2.6, gz + 0.4), (gx, gy, gz),
-        50.0, "a top-chord gusset plate close up, its full bolt pattern "
-        "and match marks legible", coll))
+        "CAM_11_GUSSET", (gx - 0.3, gy + g_sign * 2.6, gz + 0.4),
+        (gx, gy, gz), 50.0, "a top-chord gusset plate close up, its full "
+        "bolt pattern and match marks legible", coll))
 
     if loose_bolt is not None:
         (lx, ly, lz), (nx, ny, nz) = loose_bolt
