@@ -1,0 +1,2037 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="avian_final_vehicles">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <visual name="VEH_BUS_001_BODY_visual">
+        <pose>229.156769 1.750000 16.105252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>12.000000 2.500001 2.900000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.040 0.040 0.044 1</ambient>
+          <diffuse>0.100 0.100 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_ROOF_visual">
+        <pose>229.156769 1.750000 17.555252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>11.600006 2.400001 0.250000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.040 0.040 0.044 1</ambient>
+          <diffuse>0.100 0.100 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WHEEL_F_L_visual">
+        <pose>224.556770 0.620000 14.915252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599991 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WHEEL_F_R_visual">
+        <pose>224.556770 2.880000 14.915252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599991 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WHEEL_R1L_visual">
+        <pose>232.756767 0.620000 14.915252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599991 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WHEEL_R1R_visual">
+        <pose>232.756767 2.880000 14.915252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599991 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WHEEL_R2L_visual">
+        <pose>234.056770 0.620000 14.915252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599991 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WHEEL_R2R_visual">
+        <pose>234.056770 2.880000 14.915252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599991 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WINDOWBAND_L_visual">
+        <pose>229.156769 0.495000 16.830252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>11.200012 0.000200 0.549999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WINDOWBAND_R_visual">
+        <pose>229.156769 3.005000 16.830252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>11.200012 0.000200 0.549999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_BUS_001_WINDSCREEN_visual">
+        <pose>223.306763 1.749999 16.530252 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.000200 2.000000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_BODY_visual">
+        <pose>282.139191 -1.750000 15.281807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.360 0.360 0.352 1</ambient>
+          <diffuse>0.900 0.900 0.880 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_REARGLASS_visual">
+        <pose>281.039185 -1.750000 15.566807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_SIDE_L_visual">
+        <pose>281.939194 -0.905000 15.656807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_SIDE_R_visual">
+        <pose>281.939194 -2.595000 15.656807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_WHEEL_FL_visual">
+        <pose>283.439194 -0.970000 14.706807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_WHEEL_FR_visual">
+        <pose>283.439194 -2.530000 14.706807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_WHEEL_RL_visual">
+        <pose>280.839188 -0.970000 14.706807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_WHEEL_RR_visual">
+        <pose>280.839188 -2.530000 14.706807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_001_WINDSCREEN_visual">
+        <pose>282.889191 -1.750000 15.606807 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599976 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_BODY_visual">
+        <pose>246.589157 5.250000 15.392887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700001 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.360 0.360 0.352 1</ambient>
+          <diffuse>0.900 0.900 0.880 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_REARGLASS_visual">
+        <pose>247.689163 5.250000 15.677887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_SIDE_L_visual">
+        <pose>246.789154 4.405000 15.767887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_SIDE_R_visual">
+        <pose>246.789154 6.095000 15.767887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_WHEEL_FL_visual">
+        <pose>245.289154 4.470000 14.817887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_WHEEL_FR_visual">
+        <pose>245.289154 6.030000 14.817887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_WHEEL_RL_visual">
+        <pose>247.889160 4.470000 14.817887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_WHEEL_RR_visual">
+        <pose>247.889160 6.030000 14.817887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_002_WINDSCREEN_visual">
+        <pose>245.839157 5.250000 15.717887 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_BODY_visual">
+        <pose>169.543655 -5.250000 15.472976 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.288 0.292 0.300 1</ambient>
+          <diffuse>0.720 0.730 0.750 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_REARGLASS_visual">
+        <pose>168.443649 -5.250000 15.757975 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_SIDE_L_visual">
+        <pose>169.343658 -4.405000 15.847976 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_SIDE_R_visual">
+        <pose>169.343658 -6.095000 15.847976 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_WHEEL_FL_visual">
+        <pose>170.843658 -4.470000 14.897976 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_WHEEL_FR_visual">
+        <pose>170.843658 -6.030000 14.897976 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_WHEEL_RL_visual">
+        <pose>168.243652 -4.470000 14.897976 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_WHEEL_RR_visual">
+        <pose>168.243652 -6.030000 14.897976 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_003_WINDSCREEN_visual">
+        <pose>170.293655 -5.250000 15.797976 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_BODY_visual">
+        <pose>151.402466 1.750000 15.459855 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.320 0.240 0.016 1</ambient>
+          <diffuse>0.800 0.600 0.040 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_REARGLASS_visual">
+        <pose>152.502472 1.750000 15.744854 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_SIDE_L_visual">
+        <pose>151.602463 0.905000 15.834855 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_SIDE_R_visual">
+        <pose>151.602463 2.595000 15.834855 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_WHEEL_FL_visual">
+        <pose>150.102463 0.970000 14.884855 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_WHEEL_FR_visual">
+        <pose>150.102463 2.530000 14.884855 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_WHEEL_RL_visual">
+        <pose>152.702469 0.970000 14.884855 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_WHEEL_RR_visual">
+        <pose>152.702469 2.530000 14.884855 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_004_WINDSCREEN_visual">
+        <pose>150.652466 1.750000 15.784855 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_BODY_visual">
+        <pose>342.382477 5.250000 14.986703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700001 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.360 0.360 0.352 1</ambient>
+          <diffuse>0.900 0.900 0.880 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_REARGLASS_visual">
+        <pose>343.482483 5.250000 15.271703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_SIDE_L_visual">
+        <pose>342.582474 4.405000 15.361703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_SIDE_R_visual">
+        <pose>342.582474 6.095000 15.361703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_WHEEL_FL_visual">
+        <pose>341.082474 4.470000 14.411703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_WHEEL_FR_visual">
+        <pose>341.082474 6.030000 14.411703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_WHEEL_RL_visual">
+        <pose>343.682480 4.470000 14.411703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_WHEEL_RR_visual">
+        <pose>343.682480 6.030000 14.411703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_005_WINDSCREEN_visual">
+        <pose>341.632477 5.250000 15.311703 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599976 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_BODY_visual">
+        <pose>111.668137 -5.250000 15.388533 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>4.300003 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.120 0.024 0.040 1</ambient>
+          <diffuse>0.300 0.060 0.100 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_REARGLASS_visual">
+        <pose>110.568138 -5.250000 15.673532 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_SIDE_L_visual">
+        <pose>111.468136 -4.405000 15.763533 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.099998 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_SIDE_R_visual">
+        <pose>111.468136 -6.095000 15.763533 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.099998 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_WHEEL_FL_visual">
+        <pose>112.968136 -4.470000 14.813533 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_WHEEL_FR_visual">
+        <pose>112.968136 -6.030000 14.813533 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_WHEEL_RL_visual">
+        <pose>110.368137 -4.470000 14.813533 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_WHEEL_RR_visual">
+        <pose>110.368137 -6.030000 14.813533 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_006_WINDSCREEN_visual">
+        <pose>112.418137 -5.250000 15.713532 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_BODY_visual">
+        <pose>19.381025 -1.750000 14.997251 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>4.299999 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.080 0.112 0.080 1</ambient>
+          <diffuse>0.200 0.280 0.200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_REARGLASS_visual">
+        <pose>18.281025 -1.750000 15.282250 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_SIDE_L_visual">
+        <pose>19.181026 -0.905000 15.372251 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_SIDE_R_visual">
+        <pose>19.181026 -2.595000 15.372251 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100000 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_WHEEL_FL_visual">
+        <pose>20.681026 -0.970000 14.422251 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_WHEEL_FR_visual">
+        <pose>20.681026 -2.530000 14.422251 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_WHEEL_RL_visual">
+        <pose>18.081025 -0.970000 14.422251 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_WHEEL_RR_visual">
+        <pose>18.081025 -2.530000 14.422251 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600000 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_007_WINDSCREEN_visual">
+        <pose>20.131025 -1.750000 15.322250 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_BODY_visual">
+        <pose>131.796600 1.750000 15.431971 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700000 1.150001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.360 0.360 0.352 1</ambient>
+          <diffuse>0.900 0.900 0.880 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_REARGLASS_visual">
+        <pose>132.896606 1.750000 15.716970 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_SIDE_L_visual">
+        <pose>131.996597 0.905000 15.806971 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_SIDE_R_visual">
+        <pose>131.996597 2.595000 15.806971 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_WHEEL_FL_visual">
+        <pose>130.496597 0.970000 14.856971 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_WHEEL_FR_visual">
+        <pose>130.496597 2.530000 14.856971 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_WHEEL_RL_visual">
+        <pose>133.096603 0.970000 14.856971 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_WHEEL_RR_visual">
+        <pose>133.096603 2.530000 14.856971 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_008_WINDSCREEN_visual">
+        <pose>131.046600 1.750000 15.756971 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 1.600000 0.500001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_BODY_visual">
+        <pose>206.827377 -5.250000 15.461672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700000 1.150001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.120 0.024 0.040 1</ambient>
+          <diffuse>0.300 0.060 0.100 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_REARGLASS_visual">
+        <pose>205.727371 -5.250000 15.746672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_SIDE_L_visual">
+        <pose>206.627380 -4.405000 15.836672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_SIDE_R_visual">
+        <pose>206.627380 -6.095000 15.836672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_WHEEL_FL_visual">
+        <pose>208.127380 -4.470000 14.886672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_WHEEL_FR_visual">
+        <pose>208.127380 -6.030000 14.886672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_WHEEL_RL_visual">
+        <pose>205.527374 -4.470000 14.886672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_WHEEL_RR_visual">
+        <pose>205.527374 -6.030000 14.886672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_009_WINDSCREEN_visual">
+        <pose>207.577377 -5.250000 15.786672 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 1.600000 0.500001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_BODY_visual">
+        <pose>78.647232 -1.750000 15.284771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>4.300003 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.184 0.028 0.024 1</ambient>
+          <diffuse>0.460 0.070 0.060 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_REARGLASS_visual">
+        <pose>77.547234 -1.750000 15.569771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_SIDE_L_visual">
+        <pose>78.447231 -0.905000 15.659771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.099998 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_SIDE_R_visual">
+        <pose>78.447231 -2.595000 15.659771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.099998 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_WHEEL_FL_visual">
+        <pose>79.947231 -0.970000 14.709771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_WHEEL_FR_visual">
+        <pose>79.947231 -2.530000 14.709771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_WHEEL_RL_visual">
+        <pose>77.347233 -0.970000 14.709771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_WHEEL_RR_visual">
+        <pose>77.347233 -2.530000 14.709771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_010_WINDSCREEN_visual">
+        <pose>79.397232 -1.750000 15.609771 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_BODY_visual">
+        <pose>189.692978 1.750000 15.473260 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.080 0.112 0.080 1</ambient>
+          <diffuse>0.200 0.280 0.200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_REARGLASS_visual">
+        <pose>190.792984 1.750000 15.758259 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_SIDE_L_visual">
+        <pose>189.892975 0.905000 15.848260 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_SIDE_R_visual">
+        <pose>189.892975 2.595000 15.848260 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_WHEEL_FL_visual">
+        <pose>188.392975 0.970000 14.898260 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_WHEEL_FR_visual">
+        <pose>188.392975 2.530000 14.898260 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_WHEEL_RL_visual">
+        <pose>190.992981 0.970000 14.898260 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_WHEEL_RR_visual">
+        <pose>190.992981 2.530000 14.898260 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_011_WINDSCREEN_visual">
+        <pose>188.942978 1.750000 15.798260 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600006 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_BODY_visual">
+        <pose>262.563110 -5.250000 15.348765 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.288 0.292 0.300 1</ambient>
+          <diffuse>0.720 0.730 0.750 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_REARGLASS_visual">
+        <pose>261.463104 -5.250000 15.633765 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_SIDE_L_visual">
+        <pose>262.363113 -4.405000 15.723765 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_SIDE_R_visual">
+        <pose>262.363113 -6.095000 15.723765 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_WHEEL_FL_visual">
+        <pose>263.863113 -4.470000 14.773766 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_WHEEL_FR_visual">
+        <pose>263.863113 -6.030000 14.773766 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_WHEEL_RL_visual">
+        <pose>261.263107 -4.470000 14.773766 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_WHEEL_RR_visual">
+        <pose>261.263107 -6.030000 14.773766 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_012_WINDSCREEN_visual">
+        <pose>263.313110 -5.250000 15.673765 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599976 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_BODY_visual">
+        <pose>323.046875 -1.750000 15.096066 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>4.299988 1.700000 1.150000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.080 0.112 0.080 1</ambient>
+          <diffuse>0.200 0.280 0.200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_REARGLASS_visual">
+        <pose>321.946869 -1.750000 15.381066 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.500000 1.600000 0.520000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_SIDE_L_visual">
+        <pose>322.846878 -0.905000 15.471066 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_SIDE_R_visual">
+        <pose>322.846878 -2.595000 15.471066 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.100006 0.000200 0.299999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_WHEEL_FL_visual">
+        <pose>324.346878 -0.970000 14.521067 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_WHEEL_FR_visual">
+        <pose>324.346878 -2.530000 14.521067 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_WHEEL_RL_visual">
+        <pose>321.746872 -0.970000 14.521067 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_WHEEL_RR_visual">
+        <pose>321.746872 -2.530000 14.521067 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_CAR_013_WINDSCREEN_visual">
+        <pose>323.796875 -1.750000 15.421066 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599976 1.600000 0.500000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_001_BODY_visual">
+        <pose>302.806305 -5.250000 15.095829 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>2.250000 1.300000 1.150001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.328 0.248 0.020 1</ambient>
+          <diffuse>0.820 0.620 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_001_HOOD_visual">
+        <pose>302.481308 -5.250000 15.670828 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.899994 1.350000 0.060000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.012 0.012 0.014 1</ambient>
+          <diffuse>0.030 0.030 0.035 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_001_WHEEL_FRONT_visual">
+        <pose>303.731308 -5.250000 14.575829 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_001_WHEEL_RL_visual">
+        <pose>301.931320 -4.630000 14.575829 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_001_WHEEL_RR_visual">
+        <pose>301.931320 -5.870000 14.575829 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600006 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_002_BODY_visual">
+        <pose>55.813828 5.250000 15.089519 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>2.250000 1.300000 1.150001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.328 0.248 0.020 1</ambient>
+          <diffuse>0.820 0.620 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_002_HOOD_visual">
+        <pose>56.138828 5.250000 15.664519 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.900002 1.350000 0.060000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.012 0.012 0.014 1</ambient>
+          <diffuse>0.030 0.030 0.035 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_002_WHEEL_FRONT_visual">
+        <pose>54.888828 5.250000 14.569519 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_002_WHEEL_RL_visual">
+        <pose>56.688829 4.630000 14.569519 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600002 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_RICK_002_WHEEL_RR_visual">
+        <pose>56.688829 5.870000 14.569519 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.600002 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_BODY_visual">
+        <pose>39.370611 -1.750000 15.786885 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>5.600002 2.400000 2.100000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.040 0.040 0.044 1</ambient>
+          <diffuse>0.100 0.100 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_CAB_visual">
+        <pose>42.670610 -1.750000 15.586884 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.799999 2.200000 1.900000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.320 0.240 0.016 1</ambient>
+          <diffuse>0.800 0.600 0.040 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_WHEEL_F1L_visual">
+        <pose>42.370611 -0.700000 14.581885 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600002 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_WHEEL_F1R_visual">
+        <pose>42.370611 -2.800000 14.581885 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600002 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_WHEEL_R1L_visual">
+        <pose>38.770611 -0.700000 14.581885 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_WHEEL_R1R_visual">
+        <pose>38.770611 -2.800000 14.581885 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_WHEEL_R2L_visual">
+        <pose>37.370611 -0.700000 14.581885 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600002 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_WHEEL_R2R_visual">
+        <pose>37.370611 -2.800000 14.581885 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.600002 0.220000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_001_WINDSCREEN_visual">
+        <pose>41.670610 -1.750000 16.136885 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.299999 2.100000 0.700000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_BODY_visual">
+        <pose>97.087849 5.250000 16.020847 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>5.599998 2.400001 2.099999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.040 0.040 0.044 1</ambient>
+          <diffuse>0.100 0.100 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_CAB_visual">
+        <pose>93.787846 5.250000 15.820847 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>1.799995 2.200000 1.900001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.080 0.112 0.080 1</ambient>
+          <diffuse>0.200 0.280 0.200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_WHEEL_F1L_visual">
+        <pose>94.087849 4.200000 14.815847 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_WHEEL_F1R_visual">
+        <pose>94.087849 6.300000 14.815847 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_WHEEL_R1L_visual">
+        <pose>97.687847 4.200000 14.815847 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_WHEEL_R1R_visual">
+        <pose>97.687847 6.300000 14.815847 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_WHEEL_R2L_visual">
+        <pose>99.087849 4.200000 14.815847 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_WHEEL_R2R_visual">
+        <pose>99.087849 6.300000 14.815847 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.599998 0.220000 0.599999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.007 0.007 0.008 1</ambient>
+          <diffuse>0.018 0.018 0.020 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="VEH_TRUCK_002_WINDSCREEN_visual">
+        <pose>94.787846 5.250000 16.370848 0 0 -3.141593</pose>
+        <geometry>
+          <box>
+            <size>0.299995 2.100000 0.700001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

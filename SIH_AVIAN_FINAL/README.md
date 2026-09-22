@@ -28,11 +28,20 @@ blender --background --python run_blender.py -- source/build_final.py
 blender --background --python run_blender.py -- source/collision_final.py
 
 # Phase 2: measured contrast, cameras, validation, sabotage, ground truth,
-# baseline freeze (~45 s; add --render for the 9 named camera PNGs, ~10 min)
+# baseline freeze (~1 min; add --render for the 9 named camera PNGs, ~10 min)
 blender --background --python run_blender.py -- source/measure_final.py --render
 
-# Gazebo SDF world
+# Gazebo SDF world -- needs the ground truth JSON phase 2 just wrote (for
+# defect markers), so it runs AFTER measure_final.py, not before
 blender --background --python run_blender.py -- source/export_gazebo_final.py
+
+# Re-run phase 2 once more so VF26/VF27 (SDF material coverage / colour
+# variety) check against a fresh export instead of SKIPping -- there is a
+# real circular dependency here (the SDF needs ground truth, which
+# measure_final.py produces, so the very first measure_final.py pass can
+# only SKIP those two) and this is the acyclic way through it, not a bug
+# to fix later.
+blender --background --python run_blender.py -- source/measure_final.py
 ```
 
 Phases are split into two separate Blender processes on purpose: damage
@@ -75,9 +84,9 @@ the origin, so Gazebo coordinates equal Blender coordinates directly.
 | Defects | **96 road** (95 from the SPEC.md population + 1 hand-placed hero) + **20 metro** (`MDEFECT_*`, own namespace) — untouched by this pass, baseline drift 0.000 mm |
 | Scene | 1,514 objects, 60,206 triangles (31× under the 2,000,000 budget), 121 materials |
 | Cameras | 9 named views (`CAM_01_OVERVIEW` … `CAM_08_DECK`, `CAM_09_BASE`), rendered to `renders/` |
-| Validation | **25/25 PASS** (`validate_final.py`) |
-| Sabotage | **20/20 proven** capable of failing (`sabotage_final.py`) |
-| Gazebo | 483 collision primitives (incl. both landing pads), SDF world, `gz sdf -k` clean, loads and steps |
+| Validation | **27/27 PASS** (`validate_final.py`) |
+| Sabotage | **22/22 proven** capable of failing (`sabotage_final.py`) |
+| Gazebo | 483 collision primitives (incl. both landing pads) + 173 visual-only (vehicles, vegetation), 26 distinct flat colours resolved from real Blender materials, SDF world, `gz sdf -k` clean, loads and steps |
 
 ## The drone base — and the collision trap
 
@@ -113,6 +122,72 @@ VF19–22 check, respectively: both pads exist, both carry correct tags,
 both sit exactly on `terrain_final.height()` (0.0000 m drift — placed
 directly from it, not just checked against it), and both reach the
 *exported* collision JSON by primitive count. All four are sabotage-tested.
+
+## Gazebo materials — read from the live node graph, not a second table
+
+The first Gazebo export had `<material>` blocks (every visual had one), but
+their colour came from a per-`avi_kind` guess table, not from the actual
+Blender material — and vehicles/train/vegetation weren't in the collision
+export at all, so they were completely absent from the world. The result
+read as "everything is grey" even though materials existed technically.
+
+`export_gazebo_final.py` now resolves each visual's flat colour from the
+**real** Blender material at export time:
+
+1. Base Color unlinked → use its constant directly (`water()` sets one).
+2. Base Color linked → walk the node graph backward for the first authored
+   constant: a `ShaderNodeRGB`, a `ShaderNodeValToRGB` (stops averaged), or
+   an **unlinked colour socket on any node along the way** — `spall_face()`'s
+   rust tint, for instance, lives in a Mix node's unwired "B" input, not a
+   separate node, so the walk checks each node's own sockets before
+   recursing deeper, or it would find the wrong (aggregate/grit) colour
+   instead of the rust one.
+3. Nothing resolvable → mid-grey, logged by material name, once.
+
+This reads the graph `materials.py` actually built, every time — it cannot
+drift from a hand-typed second copy of the same numbers the way a parallel
+table would. Two real bugs surfaced while wiring this up, both now fixed:
+
+- The hero defect's marker was supposed to turn gold (`HERO_COLOUR`), but
+  the check read `avi_hero` off the **ground-truth JSON record**, which
+  never had that field — only the Blender *object*'s custom property does
+  (`ML.set_custom(hero_ob, {"avi_hero": True, ...})` in `build_final.py`).
+  Fixed to check the object; the hero now keeps its real rust colour and a
+  bigger marker radius (0.45 m vs 0.25 m) instead of a distinct paint colour
+  — "read as damage from across the river" means visible at range, not
+  differently coloured.
+- The collision exporter *synthesizes* simplified `ENV_GROUND_PLANE`/
+  `ENV_WATER_SURFACE` box primitives for the terrain and river (there is no
+  Blender object by those names — the real ones are `ENV_TERRAIN`/
+  `ENV_RIVER_WATER`), so name-based water detection silently never matched
+  and both fell to default grey. Fixed to also match by primitive `kind`.
+
+Water's colour (blue-green) and its `<transparency>0.35</transparency>` are
+the one deliberate override, not derived: `water()`'s real shader is
+realistically murky silt (see its own docstring), which is correct for a
+photoreal render and reads as mud in a flat-colour schematic. `<transparency>`
+also has no Blender-shader analogue to derive from. Both were also caught
+being placed as a **child of `<material>`** on the first pass — `gz sdf -k`
+tolerates it with a schema warning rather than a failure ("not defined in
+SDF... copying as children"), which only shows up if you read `gz`'s output
+rather than trusting "it loaded"; `<transparency>` is schema-correct as a
+sibling of `<material>`, a direct child of `<visual>`.
+
+Vehicles and vegetation reach the world through two new **visual-only**
+SDF groups (`avian_final_vehicles`, `avian_final_vegetation`) built straight
+from the live scene via `avian_common.decompose.obb()` — the same shared
+box-fitting the collision exporter uses, so there is still only one
+implementation of it. They carry no `<collision>`, matching the README's own
+"decorative, not obstacles" stance for traffic and trees.
+
+**VF26** checks every SDF visual carries a `<material>` block; **VF27**
+checks the world has ≥8 distinct diffuse colours. VF26 alone is the
+check-that-cannot-fail shape this project keeps finding — it would pass
+100% even if every material resolved to the same fallback grey, which is
+exactly what VF27 exists to catch. Both are sabotage-tested: forcing every
+material to fallback grey (VF27's sabotage) and stripping all `<material>`
+blocks from one exported file (VF26's) each flip PASS→FAIL and are restored
+byte-for-byte afterward.
 
 ## The hero defect
 
@@ -225,10 +300,11 @@ source/
   build_final.py           phase 1: geometry + materials + defects + hero
   cameras_final.py         the 9 named cameras
   measure_final.py         phase 2: contrast + validation + sabotage + export
-  validate_final.py        VF01-VF22, this scene's own limits
+  validate_final.py        VF01-VF27, this scene's own limits
   sabotage_final.py        proves every VF check can fail
   collision_final.py       calls AVIAN_UAV's export_bridge_collision.py
-  export_gazebo_final.py   SDF world writer
+  export_gazebo_final.py   SDF world writer; resolves flat colours from the
+                           live Blender material graph, not a lookup table
 scene/                     build outputs (gitignored: *.blend, handoff JSON)
   AVIAN_defect_ground_truth_FINAL.{json,csv}
   AVIAN_metro_ground_truth_FINAL.{json,csv}

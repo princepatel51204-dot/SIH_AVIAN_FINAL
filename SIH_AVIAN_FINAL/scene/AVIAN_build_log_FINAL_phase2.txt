@@ -4,8 +4,8 @@
 -- cameras --
   cameras : 9 named views
 -- measured contrast (contrast_c.py, reused unchanged) --
-  contrast: 96 measured, 0 skipped, mean 0.0968, 27 contrast-limited (weather 1.00, threshold 0.05, 34.6 s)
-  contrast: 20 measured, 0 skipped, mean 0.1031, 9 contrast-limited (weather metro 1.00, threshold 0.05, 7.0 s)
+  contrast: 96 measured, 0 skipped, mean 0.0968, 27 contrast-limited (weather 1.00, threshold 0.05, 57.7 s)
+  contrast: 20 measured, 0 skipped, mean 0.1031, 9 contrast-limited (weather metro 1.00, threshold 0.05, 11.5 s)
 -- ground truth export --
   exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_defect_ground_truth_FINAL.json
   exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_metro_ground_truth_FINAL.json
@@ -37,7 +37,9 @@
   [PASS] VF20 landing pads carry avi_kind/role/centre tags 2/2 pads clean             
   [PASS] VF21 landing pads sit on terrain height     max |dz| 0.0000 m          AVI_BASE_SCANNER
   [PASS] VF22 landing pads reach the collision export 2 landing_pad primitives of 483 total the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad
-  VALIDATE: 25 pass, 0 fail, 0 skip, 25 total
+  [PASS] VF26 every SDF visual carries a material block 772/772 visuals have a <material> 
+  [PASS] VF27 world has more than one distinct colour 26 distinct diffuse colours VF26 alone would pass even if every material resolved to the same fallback grey
+  VALIDATE: 27 pass, 0 fail, 0 skip, 27 total
 -- sabotage (working rule 3.10) --
   [OK ] VF01     shrink a deck slab's width                       PASS -> FAIL
   [OK ] VF02     move the north abutment 500 m away               PASS -> FAIL
@@ -59,14 +61,6 @@
   [OK ] VF20     corrupt a landing pad's avi_base_role tag        PASS -> FAIL
   [OK ] VF21     lift a landing pad 2 m off the terrain           PASS -> FAIL
   [OK ] VF22     strip landing_pad primitives from the exported collision JSON PASS -> FAIL
-  SABOTAGE: 20/20 proven capable of failing
--- rendering the 8 named cameras --
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_01_OVERVIEW.png
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_02_RIVER.png
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_03_UNDERDECK.png
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_04_INTER_STRUCTURE.png
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_05_PIER.png
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_06_HERO_DEFECT.png
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_07_METRO.png
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_08_DECK.png
-  render  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/renders/CAM_09_BASE.png
+  [OK ] VF26     strip all <material> blocks from one exported model.sdf PASS -> FAIL
+  [OK ] VF27     force every exported <diffuse> to the same grey  PASS -> FAIL
+  SABOTAGE: 22/22 proven capable of failing

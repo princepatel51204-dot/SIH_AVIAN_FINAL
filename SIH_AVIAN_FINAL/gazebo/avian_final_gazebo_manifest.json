@@ -1,6 +1,6 @@
 {
   "revision": "SIH_AVIAN_FINAL",
-  "generated_utc": "2026-09-21T16:02:47Z",
+  "generated_utc": "2026-09-22T02:42:11Z",
   "world": "gazebo/worlds/sih_avian_final.sdf",
   "world_origin_offset_m": [
     0.0,
@@ -9,8 +9,8 @@
   ],
   "origin_note": "no shift -- corridor is 0..360, already near origin",
   "source_primitives": 483,
-  "exported_primitives": 483,
-  "skipped": 0,
+  "exported_primitives": 656,
+  "skipped": -173,
   "models": {
     "avian_final_road": {
       "members": 216,
@@ -22,13 +22,25 @@
     },
     "avian_final_terrain": {
       "members": 2,
-      "bytes": 1594
+      "bytes": 1636
     },
     "avian_final_base": {
       "members": 2,
       "bytes": 1573
+    },
+    "avian_final_vehicles": {
+      "members": 156,
+      "bytes": 68301,
+      "visual_only": true
+    },
+    "avian_final_vegetation": {
+      "members": 17,
+      "bytes": 7531,
+      "visual_only": true
     }
   },
   "defect_models": 116,
-  "world_bytes": 2730
+  "world_bytes": 2944,
+  "distinct_diffuse_colours": 26,
+  "materials_unresolved": []
 }

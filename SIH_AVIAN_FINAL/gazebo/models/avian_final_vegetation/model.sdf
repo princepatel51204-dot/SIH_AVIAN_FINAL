@@ -1,0 +1,230 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="avian_final_vegetation">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <visual name="ENV_BANKVEG_001_visual">
+        <pose>224.906250 39.847330 1.750167 0 0 0.997149</pose>
+        <geometry>
+          <box>
+            <size>2.941101 2.835400 3.577826</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_002_visual">
+        <pose>216.692520 -20.015977 0.098535 0 0 1.973143</pose>
+        <geometry>
+          <box>
+            <size>2.831696 2.643892 2.479668</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_003_visual">
+        <pose>126.149040 11.129840 1.217423 0 0 2.876053</pose>
+        <geometry>
+          <box>
+            <size>2.298599 2.534032 2.403438</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_004_visual">
+        <pose>224.318336 33.325647 0.702309 0 0 -2.553648</pose>
+        <geometry>
+          <box>
+            <size>1.867111 1.931797 1.475609</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_005_visual">
+        <pose>133.374748 91.358280 -0.565844 0 0 -2.706906</pose>
+        <geometry>
+          <box>
+            <size>1.249039 1.329323 0.963629</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_006_visual">
+        <pose>230.956657 6.832373 1.754477 0 0 2.907476</pose>
+        <geometry>
+          <box>
+            <size>2.825150 3.137181 3.380666</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_007_visual">
+        <pose>132.084801 38.013411 1.910338 0 0 -2.712780</pose>
+        <geometry>
+          <box>
+            <size>2.750504 2.930630 3.786783</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_008_visual">
+        <pose>230.784950 90.314972 -0.028101 0 0 2.561922</pose>
+        <geometry>
+          <box>
+            <size>1.704941 1.766617 2.004538</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_009_visual">
+        <pose>130.026451 -26.814157 0.498508 0 0 1.321792</pose>
+        <geometry>
+          <box>
+            <size>2.060562 1.862062 1.889000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_010_visual">
+        <pose>218.667427 60.944433 0.995057 0 0 -0.778385</pose>
+        <geometry>
+          <box>
+            <size>3.053329 3.056973 3.620775</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_011_visual">
+        <pose>133.646248 72.061497 0.260892 0 0 0.211497</pose>
+        <geometry>
+          <box>
+            <size>1.251083 1.396782 1.014295</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_012_visual">
+        <pose>233.663162 58.635994 1.100863 0 0 -0.622923</pose>
+        <geometry>
+          <box>
+            <size>2.220917 2.283775 2.411221</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_013_visual">
+        <pose>142.992935 59.383856 -0.225372 0 0 -0.662067</pose>
+        <geometry>
+          <box>
+            <size>1.821747 1.860592 1.669376</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_014_visual">
+        <pose>223.589699 26.426512 1.903883 0 0 1.317176</pose>
+        <geometry>
+          <box>
+            <size>3.132126 2.833412 3.900318</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_015_visual">
+        <pose>138.376457 -29.890182 1.564832 0 0 -1.719176</pose>
+        <geometry>
+          <box>
+            <size>3.198074 2.819126 4.547978</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_016_visual">
+        <pose>229.603775 16.201023 0.891887 0 0 2.852748</pose>
+        <geometry>
+          <box>
+            <size>1.486847 1.630623 1.716336</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ENV_BANKVEG_017_visual">
+        <pose>128.645821 20.275531 1.550797 0 0 -2.592299</pose>
+        <geometry>
+          <box>
+            <size>3.521774 3.669027 3.071691</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.023 0.041 0.015 1</ambient>
+          <diffuse>0.058 0.102 0.038 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

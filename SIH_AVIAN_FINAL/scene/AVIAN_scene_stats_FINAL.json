@@ -170,7 +170,7 @@
     ],
     "threshold_michelson": 0.05,
     "weather_strength": "1.00",
-    "wall_s": 34.6
+    "wall_s": 57.7
   },
   "metro_contrast": {
     "measured": 20,
@@ -190,14 +190,14 @@
     ],
     "threshold_michelson": 0.05,
     "weather_strength": "metro 1.00",
-    "wall_s": 7.0
+    "wall_s": 11.5
   },
   "baseline_frozen_this_run": false,
   "validation": {
-    "pass": 25,
+    "pass": 27,
     "fail": 0,
     "skip": 0,
-    "total": 25
+    "total": 27
   },
   "validation_detail": [
     {
@@ -424,11 +424,29 @@
       "limit": ">= 2 (one per pad)",
       "detail": "the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad",
       "offenders": []
+    },
+    {
+      "id": "VF26",
+      "check": "every SDF visual carries a material block",
+      "status": "PASS",
+      "measured": "772/772 visuals have a <material>",
+      "limit": "100%",
+      "detail": "",
+      "offenders": []
+    },
+    {
+      "id": "VF27",
+      "check": "world has more than one distinct colour",
+      "status": "PASS",
+      "measured": "26 distinct diffuse colours",
+      "limit": ">= 8",
+      "detail": "VF26 alone would pass even if every material resolved to the same fallback grey",
+      "offenders": []
     }
   ],
   "sabotage": {
-    "total": 20,
-    "proven": 20,
+    "total": 22,
+    "proven": 22,
     "unproven": [],
     "rows": [
       {
@@ -570,19 +588,22 @@
         "before": "PASS",
         "after": "FAIL",
         "proven": true
+      },
+      {
+        "check": "VF26",
+        "sabotage": "strip all <material> blocks from one exported model.sdf",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VF27",
+        "sabotage": "force every exported <diffuse> to the same grey",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
       }
     ]
   },
-  "renders": [
-    "CAM_01_OVERVIEW",
-    "CAM_02_RIVER",
-    "CAM_03_UNDERDECK",
-    "CAM_04_INTER_STRUCTURE",
-    "CAM_05_PIER",
-    "CAM_06_HERO_DEFECT",
-    "CAM_07_METRO",
-    "CAM_08_DECK",
-    "CAM_09_BASE"
-  ],
-  "wall_s_phase2": 412.4
+  "wall_s_phase2": 71.4
 }

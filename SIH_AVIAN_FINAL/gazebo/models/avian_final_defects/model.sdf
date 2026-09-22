@@ -12,8 +12,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_002">
@@ -24,8 +25,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_003">
@@ -36,8 +38,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_004">
@@ -48,8 +51,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_005">
@@ -60,8 +64,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_006">
@@ -72,8 +77,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_007">
@@ -84,8 +90,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_008">
@@ -96,8 +103,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_009">
@@ -108,8 +116,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_010">
@@ -120,8 +129,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_011">
@@ -132,8 +142,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_012">
@@ -144,8 +155,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_013">
@@ -156,8 +168,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_014">
@@ -168,8 +181,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_015">
@@ -180,8 +194,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_016">
@@ -192,8 +207,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_017">
@@ -204,8 +220,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_018">
@@ -216,8 +233,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_019">
@@ -228,8 +246,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_020">
@@ -240,8 +259,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_021">
@@ -252,8 +272,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_022">
@@ -264,8 +285,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_023">
@@ -276,8 +298,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_024">
@@ -288,8 +311,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_001">
@@ -300,8 +324,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_002">
@@ -312,8 +337,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_003">
@@ -324,8 +350,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_004">
@@ -336,8 +363,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_005">
@@ -348,8 +376,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_006">
@@ -360,8 +389,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_007">
@@ -372,8 +402,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_008">
@@ -384,8 +415,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_009">
@@ -396,8 +428,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_010">
@@ -408,8 +441,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_011">
@@ -420,8 +454,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_012">
@@ -432,8 +467,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_001">
@@ -444,8 +480,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_002">
@@ -456,8 +493,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_003">
@@ -468,8 +506,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_004">
@@ -480,8 +519,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_005">
@@ -492,8 +532,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_006">
@@ -504,8 +545,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_007">
@@ -516,8 +558,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_008">
@@ -528,8 +571,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_009">
@@ -540,8 +584,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_TRANSVERSE_010">
@@ -552,8 +597,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_NETWORK_001">
@@ -564,8 +610,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_NETWORK_002">
@@ -576,8 +623,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_NETWORK_003">
@@ -588,8 +636,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_NETWORK_004">
@@ -600,8 +649,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_NETWORK_005">
@@ -612,8 +662,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_NETWORK_006">
@@ -624,8 +675,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_NETWORK_007">
@@ -636,8 +688,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CRACK_NETWORK_008">
@@ -648,8 +701,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_001">
@@ -660,8 +714,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_002">
@@ -672,8 +727,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_003">
@@ -684,8 +740,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_004">
@@ -696,8 +753,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_005">
@@ -708,8 +766,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_006">
@@ -720,8 +779,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_007">
@@ -732,8 +792,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_008">
@@ -744,8 +805,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_009">
@@ -756,8 +818,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_010">
@@ -768,8 +831,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_011">
@@ -780,8 +844,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_SPALL_012">
@@ -792,8 +857,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_001">
@@ -804,8 +870,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_002">
@@ -816,8 +883,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_003">
@@ -828,8 +896,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_004">
@@ -840,8 +909,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_005">
@@ -852,8 +922,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_006">
@@ -864,8 +935,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_007">
@@ -876,8 +948,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_008">
@@ -888,8 +961,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_REBAR_EXPOSED_001">
@@ -900,8 +974,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_REBAR_EXPOSED_002">
@@ -912,8 +987,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_REBAR_EXPOSED_003">
@@ -924,8 +1000,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_REBAR_EXPOSED_004">
@@ -936,8 +1013,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_REBAR_EXPOSED_005">
@@ -948,8 +1026,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_001">
@@ -960,8 +1039,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_002">
@@ -972,8 +1052,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_003">
@@ -984,8 +1065,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_004">
@@ -996,8 +1078,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_005">
@@ -1008,8 +1091,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_006">
@@ -1020,8 +1104,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_007">
@@ -1032,8 +1117,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_008">
@@ -1044,8 +1130,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_009">
@@ -1056,8 +1143,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_010">
@@ -1068,8 +1156,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_JOINT_DETERIORATION_001">
@@ -1080,8 +1169,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_JOINT_DETERIORATION_002">
@@ -1092,8 +1182,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_JOINT_DETERIORATION_003">
@@ -1104,8 +1195,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_JOINT_DETERIORATION_004">
@@ -1116,8 +1208,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_JOINT_DETERIORATION_005">
@@ -1128,8 +1221,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_JOINT_DETERIORATION_006">
@@ -1140,20 +1234,22 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="DEFECT_REBAR_EXPOSED_006">
         <pose>135.000000 -3.600000 6.000000 0 0 0</pose>
         <geometry>
           <sphere>
-            <radius>0.25</radius>
+            <radius>0.45</radius>
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_SEGMENTAL_JOINT_LEAKAGE_001">
@@ -1164,8 +1260,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_SEGMENTAL_JOINT_LEAKAGE_002">
@@ -1176,8 +1273,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_SEGMENTAL_JOINT_LEAKAGE_003">
@@ -1188,8 +1286,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_EFFLORESCENCE_JOINT_004">
@@ -1200,8 +1299,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_EFFLORESCENCE_JOINT_005">
@@ -1212,8 +1312,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_BEARING_DISTRESS_006">
@@ -1224,8 +1325,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_BEARING_DISTRESS_007">
@@ -1236,8 +1338,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_INTERNAL_SOFFIT_CRACK_008">
@@ -1248,8 +1351,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_INTERNAL_SOFFIT_CRACK_009">
@@ -1260,8 +1364,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_INTERNAL_SOFFIT_CRACK_010">
@@ -1272,8 +1377,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_WEB_SHEAR_CRACK_011">
@@ -1284,8 +1390,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_WEB_SHEAR_CRACK_012">
@@ -1296,8 +1403,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_WEB_SHEAR_CRACK_013">
@@ -1308,8 +1416,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_SOFFIT_TRANSVERSE_CRACK_014">
@@ -1320,8 +1429,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_SOFFIT_TRANSVERSE_CRACK_015">
@@ -1332,8 +1442,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_SOFFIT_TRANSVERSE_CRACK_016">
@@ -1344,8 +1455,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_PIER_SPALL_017">
@@ -1356,8 +1468,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_PIER_SPALL_018">
@@ -1368,8 +1481,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_PIER_CORROSION_STAIN_019">
@@ -1380,8 +1494,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
       <visual name="MDEFECT_PIER_CORROSION_STAIN_020">
@@ -1392,8 +1507,9 @@
           </sphere>
         </geometry>
         <material>
-          <ambient>0.340 0.064 0.040 1</ambient>
-          <diffuse>0.850 0.160 0.100 1</diffuse>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
     </link>

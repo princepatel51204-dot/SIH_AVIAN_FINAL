@@ -20,8 +20,8 @@
           </box>
         </geometry>
         <material>
-          <ambient>0.240 0.232 0.168 1</ambient>
-          <diffuse>0.600 0.580 0.420 1</diffuse>
+          <ambient>0.288 0.284 0.272 1</ambient>
+          <diffuse>0.720 0.710 0.680 1</diffuse>
           <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
@@ -41,8 +41,8 @@
           </box>
         </geometry>
         <material>
-          <ambient>0.240 0.232 0.168 1</ambient>
-          <diffuse>0.600 0.580 0.420 1</diffuse>
+          <ambient>0.288 0.284 0.272 1</ambient>
+          <diffuse>0.720 0.710 0.680 1</diffuse>
           <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>

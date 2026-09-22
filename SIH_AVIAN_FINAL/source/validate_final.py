@@ -405,6 +405,57 @@ def run(records, mrecords, log=print, baseline_path=None):
         R.append(Result("VF22", "landing pads reach the collision export",
                         "SKIP", "collision asset not exported yet"))
 
+    # ---- VF26/27: Gazebo SDF materials --------------------------------------
+    # export_gazebo_final.py resolves flat colours from each object's real
+    # Blender material (see its own docstring) instead of a per-avi_kind
+    # guess. VF26 alone is the check-that-cannot-fail shape this project
+    # keeps finding: it would pass 100% even if every material fell back to
+    # the same mid-grey. VF27 is the one that actually catches that -- a
+    # world with real variety has far more than one distinct diffuse colour.
+    gazebo_models_dir = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "gazebo", "models")
+    sdf_files = []
+    if os.path.isdir(gazebo_models_dir):
+        for name in sorted(os.listdir(gazebo_models_dir)):
+            p = os.path.join(gazebo_models_dir, name, "model.sdf")
+            if os.path.exists(p):
+                sdf_files.append(p)
+
+    if sdf_files:
+        import xml.etree.ElementTree as ETree
+        n_visual = 0
+        missing = []
+        diffuse_values = set()
+        for path in sdf_files:
+            tree = ETree.parse(path)
+            for visual in tree.getroot().iter("visual"):
+                n_visual += 1
+                mat = visual.find("material")
+                if mat is None:
+                    missing.append(visual.get("name"))
+                    continue
+                dif = mat.find("diffuse")
+                if dif is not None and dif.text:
+                    vals = tuple(round(float(x), 2)
+                                for x in dif.text.split()[:3])
+                    diffuse_values.add(vals)
+        R.append(Result("VF26", "every SDF visual carries a material block",
+                        "PASS" if not missing else "FAIL",
+                        f"{n_visual - len(missing)}/{n_visual} visuals have "
+                        f"a <material>", "100%", ", ".join(missing[:10])))
+        R.append(Result("VF27", "world has more than one distinct colour",
+                        "PASS" if len(diffuse_values) >= 8 else "FAIL",
+                        f"{len(diffuse_values)} distinct diffuse colours",
+                        ">= 8",
+                        "VF26 alone would pass even if every material "
+                        "resolved to the same fallback grey"))
+    else:
+        R.append(Result("VF26", "every SDF visual carries a material block",
+                        "SKIP", "gazebo/models not exported yet"))
+        R.append(Result("VF27", "world has more than one distinct colour",
+                        "SKIP", "gazebo/models not exported yet"))
+
     pass_n = sum(1 for r in R if r.status == "PASS")
     fail_n = sum(1 for r in R if r.status == "FAIL")
     skip_n = sum(1 for r in R if r.status == "SKIP")

@@ -251,6 +251,66 @@ def _sab_VF22(collision_path):
     return undo
 
 
+def _gazebo_models_dir():
+    import os
+    return os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "gazebo", "models")
+
+
+def _sdf_files():
+    import os
+    d = _gazebo_models_dir()
+    if not os.path.isdir(d):
+        return []
+    out = []
+    for name in sorted(os.listdir(d)):
+        p = os.path.join(d, name, "model.sdf")
+        if os.path.exists(p):
+            out.append(p)
+    return out
+
+
+def _sab_VF26(sdf_files):
+    """Strip every <material>...</material> block from ONE model.sdf --
+    plain text, not an XML-library round trip, so what gets restored on
+    undo is byte-identical to what was there, not a reserialized copy."""
+    import re
+    path = sdf_files[0]
+    with open(path) as f:
+        original = f.read()
+    stripped = re.sub(r"<material>.*?</material>\s*", "",
+                      original, flags=re.DOTALL)
+    with open(path, "w") as f:
+        f.write(stripped)
+    def undo():
+        with open(path, "w") as f:
+            f.write(original)
+    return undo
+
+
+def _sab_VF27(sdf_files):
+    """Force every <diffuse> value in every exported model to the SAME
+    colour -- the check-that-cannot-fail shape VF26 alone has: it would
+    still report every visual has A material block, just all the same
+    one."""
+    import re
+    originals = {}
+    for path in sdf_files:
+        with open(path) as f:
+            originals[path] = f.read()
+        forced = re.sub(r"<diffuse>[^<]*</diffuse>",
+                        "<diffuse>0.500 0.500 0.500 1</diffuse>",
+                        originals[path])
+        with open(path, "w") as f:
+            f.write(forced)
+    def undo():
+        for path, content in originals.items():
+            with open(path, "w") as f:
+                f.write(content)
+    return undo
+
+
 def run(records, mrecords, baseline_path, log=print, collision_path=None):
     import os
     rows = []
@@ -307,6 +367,13 @@ def run(records, mrecords, baseline_path, log=print, collision_path=None):
         plan.append(("VF22", "strip landing_pad primitives from the "
                     "exported collision JSON",
                     lambda: _sab_VF22(collision_path)))
+
+    sdf_files = _sdf_files()
+    if sdf_files:
+        plan.append(("VF26", "strip all <material> blocks from one "
+                    "exported model.sdf", lambda: _sab_VF26(sdf_files)))
+        plan.append(("VF27", "force every exported <diffuse> to the same "
+                    "grey", lambda: _sab_VF27(sdf_files)))
 
     for check_id, desc, setup in plan:
         before = check()
