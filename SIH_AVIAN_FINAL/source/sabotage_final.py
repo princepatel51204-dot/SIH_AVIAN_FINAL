@@ -311,7 +311,133 @@ def _sab_VF27(sdf_files):
     return undo
 
 
-def run(records, mrecords, baseline_path, log=print, collision_path=None):
+def _sab_VF29():
+    ob = _find("ST_")
+    for o in bpy.data.objects:
+        if o.name.startswith("ST_") and o.get("avi_kind") in (
+            "truss_chord", "truss_diagonal", "truss_vertical",
+            "gusset_plate", "floor_beam", "stringer", "bracing"):
+            ob = o
+            break
+    had = "avi_kind" in ob.keys()
+    old = ob.get("avi_kind")
+    if had:
+        del ob["avi_kind"]
+    def undo():
+        if had:
+            ob["avi_kind"] = old
+    return undo
+
+
+def _sab_VF30():
+    """Rename enough bolt objects out of the FAST_ namespace to drop the
+    scene-wide count below VF30's 1,000 floor -- undo restores every name."""
+    bolts = [o for o in bpy.data.objects
+            if o.name.startswith("FAST_")
+            and ((o.name.endswith("_NUT")
+                 and not o.name.endswith("_MARK_NUT"))
+                or o.name.endswith("_HOLE"))]
+    victims = bolts[:250]
+    renamed = []
+    for o in victims:
+        old = o.name
+        o.name = "SABOTAGED_" + old
+        renamed.append((o, old))
+    def undo():
+        for o, old in renamed:
+            o.name = old
+    return undo
+
+
+def _sab_VF31():
+    plate = _find("FAST_", contains="_MARK_PLATE")
+    old_name = plate.name
+    plate.name = old_name + "_SABOTAGED"
+    def undo():
+        plate.name = old_name
+    return undo
+
+
+def _sab_VF32(srecords):
+    loose = next((r for r in srecords
+                 if r["type"] in ("BOLT_LOOSE", "JOINT_ANCHOR_LOOSE")), None)
+    if loose is None:
+        return lambda: None
+    did = loose["defect_id"]
+    bolt_id = did[:-len("_MARK_NUT")] if did.endswith("_MARK_NUT") else did
+    nut_mark = bpy.data.objects.get(f"{bolt_id}_MARK_NUT")
+    plate_mark = bpy.data.objects.get(f"{bolt_id}_MARK_PLATE")
+    if nut_mark is None or plate_mark is None:
+        return lambda: None
+    old = nut_mark.rotation_euler.copy()
+    nut_mark.rotation_euler = plate_mark.rotation_euler.copy()
+    _touch()
+    def undo():
+        nut_mark.rotation_euler = old
+        _touch()
+    return undo
+
+
+def _sab_VF33(srecords):
+    r = srecords[0]
+    key = "host_surface" if "host_surface" in r else list(r.keys())[-1]
+    old = r.pop(key)
+    def undo():
+        r[key] = old
+    return undo
+
+
+def _sab_VF34(srecords):
+    r = srecords[0]
+    old = r.pop("feature_size_mm", None)
+    def undo():
+        if old is not None:
+            r["feature_size_mm"] = old
+    return undo
+
+
+def _sab_VF35(srecords):
+    olds = [(r, r.get("min_detect_range_m")) for r in srecords]
+    for r in srecords:
+        r["min_detect_range_m"] = 1.0
+    def undo():
+        for r, old in olds:
+            r["min_detect_range_m"] = old
+    return undo
+
+
+def _sab_VF36():
+    ob = _find("ST_")
+    had = "avi_condition" in ob.keys()
+    old = ob.get("avi_condition")
+    if had:
+        del ob["avi_condition"]
+    def undo():
+        if had:
+            ob["avi_condition"] = old
+    return undo
+
+
+def _sab_VF37():
+    old = tuple(PF.TRUSS_VERTICAL_SIZE)
+    PF.TRUSS_VERTICAL_SIZE = (12.0, 12.0)
+    def undo():
+        PF.TRUSS_VERTICAL_SIZE = old
+    return undo
+
+
+def _sab_VF38(srecords):
+    r = srecords[0]
+    old = list(r["position_m"])
+    r["position_m"] = [old[0] + 5.0, old[1], old[2]]
+    def undo():
+        r["position_m"] = old
+    return undo
+
+
+def run(records, mrecords, baseline_path, log=print, collision_path=None,
+       srecords=None, steel_baseline_path=None):
+    srecords = srecords or []
     import os
     rows = []
     if collision_path is None:
@@ -321,7 +447,8 @@ def run(records, mrecords, baseline_path, log=print, collision_path=None):
 
     def check():
         R, summary = VF.run(records, mrecords, log=lambda *a: None,
-                            baseline_path=baseline_path)
+                            baseline_path=baseline_path, srecords=srecords,
+                            steel_baseline_path=steel_baseline_path)
         return {r.id: r.status for r in R}
 
     plan = [
@@ -374,6 +501,34 @@ def run(records, mrecords, baseline_path, log=print, collision_path=None):
                     "exported model.sdf", lambda: _sab_VF26(sdf_files)))
         plan.append(("VF27", "force every exported <diffuse> to the same "
                     "grey", lambda: _sab_VF27(sdf_files)))
+
+    plan.append(("VF28", "raise the river water 12 m above the deck "
+                "(same cause as VF06/07 -- the truss's own draft check)",
+                lambda: _sab_VF06_07()))
+    if srecords:
+        plan += [
+            ("VF29", "strip avi_kind off a steel truss member",
+             lambda: _sab_VF29()),
+            ("VF30", "rename 250 bolts out of the FAST_ namespace",
+             lambda: _sab_VF30()),
+            ("VF31", "rename a bolt's plate-side match mark away",
+             lambda: _sab_VF31()),
+            ("VF32", "un-rotate a loose bolt's nut-side match mark",
+             lambda: _sab_VF32(srecords)),
+            ("VF33", "remove a required field from a steel defect record",
+             lambda: _sab_VF33(srecords)),
+            ("VF34", "strip feature_size_mm off a steel defect record",
+             lambda: _sab_VF34(srecords)),
+            ("VF35", "force every steel min_detect_range_m to the same "
+             "value", lambda: _sab_VF35(srecords)),
+            ("VF36", "strip avi_condition off a steel truss member",
+             lambda: _sab_VF36()),
+            ("VF37", "blow up the truss vertical member size",
+             lambda: _sab_VF37()),
+        ]
+        if steel_baseline_path:
+            plan.append(("VF38", "shift a steel defect 5 m off its "
+                        "baseline position", lambda: _sab_VF38(srecords)))
 
     for check_id, desc, setup in plan:
         before = check()

@@ -1,16 +1,39 @@
 == SIH_AVIAN_FINAL :: measure_final.py (phase 2: measure) ==
   loaded  : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/SIH_AVIAN_FINAL.blend
-  records : 96 road, 20 metro
+  records : 96 road, 20 metro, 76 steel
 -- cameras --
-  cameras : 9 named views
+  cameras : 12 named views
 -- measured contrast (contrast_c.py, reused unchanged) --
-  contrast: 96 measured, 0 skipped, mean 0.0968, 27 contrast-limited (weather 1.00, threshold 0.05, 57.7 s)
-  contrast: 20 measured, 0 skipped, mean 0.1031, 9 contrast-limited (weather metro 1.00, threshold 0.05, 11.5 s)
+  contrast: 96 measured, 0 skipped, mean 0.1362, 20 contrast-limited (weather 1.00, threshold 0.05, 63.2 s)
+  contrast: 20 measured, 0 skipped, mean 0.0993, 7 contrast-limited (weather metro 1.00, threshold 0.05, 13.0 s)
+  contrast: 76 measured, 0 skipped, mean 0.2066, 8 contrast-limited (weather steel 1.00, threshold 0.05, 49.9 s)
+-- escalation_reason (resolvability_final.py, SPEC S5) --
+  escalate (road): 70/96 escalated -> {'none': 26, 'below_contrast': 7, 'below_resolution': 63, 'occluded': 0, 'unreachable_angle': 0}
+  escalate (metro): 15/20 escalated -> {'none': 5, 'below_contrast': 3, 'below_resolution': 11, 'occluded': 0, 'unreachable_angle': 1}
+  escalate (steel): 54/76 escalated -> {'none': 22, 'below_contrast': 4, 'below_resolution': 4, 'occluded': 20, 'unreachable_angle': 26}
+-- resolvability breakdown (SPEC S5 -- the result) --
+  resolv  : road      {'identifiable_at_standoff': 26, 'requires_closer': 8, 'unidentifiable': 62}
+  resolv  : metro     {'identifiable_at_standoff': 4, 'requires_closer': 6, 'unidentifiable': 10}
+  resolv  : steel     {'identifiable_at_standoff': 48, 'requires_closer': 22, 'unidentifiable': 6}
+  resolv  :   BEARING_SEIZED       {'identifiable_at_standoff': 4, 'requires_closer': 0, 'unidentifiable': 0}
+  resolv  :   BOLT_CORRODED        {'identifiable_at_standoff': 10, 'requires_closer': 0, 'unidentifiable': 0}
+  resolv  :   BOLT_LOOSE           {'identifiable_at_standoff': 0, 'requires_closer': 18, 'unidentifiable': 0}
+  resolv  :   BOLT_MISSING         {'identifiable_at_standoff': 8, 'requires_closer': 0, 'unidentifiable': 0}
+  resolv  :   COATING_FAILURE      {'identifiable_at_standoff': 8, 'requires_closer': 0, 'unidentifiable': 0}
+  resolv  :   CONDUIT_DETACHED     {'identifiable_at_standoff': 5, 'requires_closer': 0, 'unidentifiable': 0}
+  resolv  :   GUSSET_DISTORTION    {'identifiable_at_standoff': 3, 'requires_closer': 0, 'unidentifiable': 0}
+  resolv  :   HANDRAIL_LOOSE       {'identifiable_at_standoff': 4, 'requires_closer': 0, 'unidentifiable': 0}
+  resolv  :   JOINT_ANCHOR_LOOSE   {'identifiable_at_standoff': 0, 'requires_closer': 4, 'unidentifiable': 0}
+  resolv  :   SECTION_LOSS         {'identifiable_at_standoff': 6, 'requires_closer': 0, 'unidentifiable': 0}
+  resolv  :   WELD_CRACK           {'identifiable_at_standoff': 0, 'requires_closer': 0, 'unidentifiable': 6}
 -- ground truth export --
   exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_defect_ground_truth_FINAL.json
   exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_metro_ground_truth_FINAL.json
--- baseline --
-  baseline already frozen: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/BASELINE_FINAL_ground_truth.json
+  exported: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/AVIAN_steel_ground_truth_FINAL.json
+-- baseline (concrete + metro + steel, SPEC S8) --
+  FROZEN new baseline: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/BASELINE_FINAL_ground_truth.json (96 defects)
+  FROZEN new baseline: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/BASELINE_FINAL_metro_ground_truth.json (20 defects)
+  FROZEN new baseline: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/BASELINE_FINAL_steel_ground_truth.json (76 defects)
 -- validation (validate_final.py) --
   [PASS] VF01 road deck width                        14.00 m                    BR_DECK_SLAB_001
   [PASS] VF02 corridor length (deck extent)          360.00 m (0.00 .. 360.00)  
@@ -19,16 +42,16 @@
   [PASS] VF05 no pier inside the navigation channel  0 offending piers          
   [PASS] VF06 road bridge air draft over the channel 13.78 m                    
   [PASS] VF07 metro air draft over the channel       17.80 m                    
-  [PASS] VF08 unique object names                    1523 objects, 0 duplicate names 
-  [PASS] VF09 polygon budget                         60,206 triangles           generous vs REV-C's raised 15M ceiling -- this corridor is two orders of magnitude smaller
-  [PASS] VF10 camera far clip covers the corridor    9 cameras, 0 with clip_end<500m 
-  [PASS] VF10b all 9 named cameras exist              9 CAM_ objects             
-  [PASS] VF11 defects resolved to a real host surface 1/96 orphans (1.0%)        DEFECT_DELAMINATION_007
-  [PASS] VF12 road ground truth field completeness   43 common fields + 1 type-specific x 96 records 
-  [PASS] VF12b metro ground truth field completeness  47 common fields + 1 type-specific x 20 records 
+  [PASS] VF08 unique object names                    6514 objects, 0 duplicate names 
+  [PASS] VF09 polygon budget                         167,044 triangles          generous vs REV-C's raised 15M ceiling -- this corridor is two orders of magnitude smaller
+  [PASS] VF10 camera far clip covers the corridor    12 cameras, 0 with clip_end<500m 
+  [PASS] VF10b all 12 named cameras exist             12 CAM_ objects            
+  [PASS] VF11 defects resolved to a real host surface (excluding the truss span's expected girder/diaphragm orphans) 0/96 unexplained orphans (0.0%), 17 expected (ex-girder site in the truss span) 
+  [PASS] VF12 road ground truth field completeness   45 common fields + 1 type-specific x 96 records 
+  [PASS] VF12b metro ground truth field completeness  49 common fields + 1 type-specific x 20 records 
   [PASS] VF13 road defect count matches SPEC.md      96                         
   [PASS] VF13b defect counts by type match SPEC.md    {'CRACK_HAIRLINE': 24, 'CRACK_LONGITUDINAL': 12, 'CRACK_TRANSVERSE': 10, 'CRACK_NETWORK': 8, 'SPALL': 12, 'DELAMINATION': 8, 'REBAR_EXPOSED': 6, 'CORROSION_STAIN': 10, 'JOINT_DETERIORATION': 6} 
-  [PASS] VF14 road and metro structures do not overlap 0 overlapping bbox pairs (216 BR_ x 263 MB_) 
+  [PASS] VF14 road and metro structures do not overlap 0 overlapping bbox pairs (193 BR_ x 263 MB_) 
   [PASS] VF15 inter-structure corridor clear of structure 14.70 m clear (BR_ max y=9.00, MB_ min y=23.70) 
   [PASS] VF16 every MB_ member carries avi_kind      263/263 classified         
   [PASS] VF17 hero defect present and correctly tagged 1 tagged avi_hero=True     
@@ -36,10 +59,21 @@
   [PASS] VF19 both landing pads exist                2 pad objects              AVI_BASE_REPAIRER, AVI_BASE_SCANNER
   [PASS] VF20 landing pads carry avi_kind/role/centre tags 2/2 pads clean             
   [PASS] VF21 landing pads sit on terrain height     max |dz| 0.0000 m          AVI_BASE_SCANNER
-  [PASS] VF22 landing pads reach the collision export 2 landing_pad primitives of 483 total the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad
+  [PASS] VF22 landing pads reach the collision export 2 landing_pad primitives of 568 total the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad
   [PASS] VF26 every SDF visual carries a material block 772/772 visuals have a <material> 
   [PASS] VF27 world has more than one distinct colour 26 distinct diffuse colours VF26 alone would pass even if every material resolved to the same fallback grey
-  VALIDATE: 27 pass, 0 fail, 0 skip, 27 total
+  [PASS] VF28 steel truss air draft over the channel 13.55 m                    
+  [PASS] VF29 every ST_ truss member carries a recognized avi_kind 198/198 classified         
+  [PASS] VF30 fastener count >= 1,000 (SPEC S3.1 target 1,200) 1200 bolts                 
+  [PASS] VF31 every torqued bolt carries both match-mark segments 1192/1192 complete         
+  [PASS] VF32 loose bolts' match marks are visibly broken (nut segment measurably rotated) 22/22 broken               
+  [PASS] VF33 steel ground truth field completeness  76/76 complete             
+  [PASS] VF34 every steel defect has feature_size_mm and min_detect_range_m 76/76 measured             
+  [PASS] VF35 min_detect_range_m has real spread across steel defect types (not a constant) min=0.064 m, max=40.441 m, spread=40.377 m 
+  [PASS] VF36 every structural member carries avi_condition/avi_age_years 654/654 tagged             
+  [PASS] VF37 truss interior clear width flyable     13.55 m                    
+  [PASS] VF38 baseline drift (steel defects)         0 added, 0 removed, 0.000 mm drift 
+  VALIDATE: 38 pass, 0 fail, 0 skip, 38 total
 -- sabotage (working rule 3.10) --
   [OK ] VF01     shrink a deck slab's width                       PASS -> FAIL
   [OK ] VF02     move the north abutment 500 m away               PASS -> FAIL
@@ -63,4 +97,15 @@
   [OK ] VF22     strip landing_pad primitives from the exported collision JSON PASS -> FAIL
   [OK ] VF26     strip all <material> blocks from one exported model.sdf PASS -> FAIL
   [OK ] VF27     force every exported <diffuse> to the same grey  PASS -> FAIL
-  SABOTAGE: 22/22 proven capable of failing
+  [OK ] VF28     raise the river water 12 m above the deck (same cause as VF06/07 -- the truss's own draft check) PASS -> FAIL
+  [OK ] VF29     strip avi_kind off a steel truss member          PASS -> FAIL
+  [OK ] VF30     rename 250 bolts out of the FAST_ namespace      PASS -> FAIL
+  [OK ] VF31     rename a bolt's plate-side match mark away       PASS -> FAIL
+  [OK ] VF32     un-rotate a loose bolt's nut-side match mark     PASS -> FAIL
+  [OK ] VF33     remove a required field from a steel defect record PASS -> FAIL
+  [OK ] VF34     strip feature_size_mm off a steel defect record  PASS -> FAIL
+  [OK ] VF35     force every steel min_detect_range_m to the same value PASS -> FAIL
+  [OK ] VF36     strip avi_condition off a steel truss member     PASS -> FAIL
+  [OK ] VF37     blow up the truss vertical member size           PASS -> FAIL
+  [OK ] VF38     shift a steel defect 5 m off its baseline position PASS -> FAIL
+  SABOTAGE: 33/33 proven capable of failing

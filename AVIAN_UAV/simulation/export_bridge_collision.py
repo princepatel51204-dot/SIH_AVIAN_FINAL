@@ -73,6 +73,12 @@ STRUCTURAL_KINDS = {
     # depend on a name prefix, which is what makes it robust regardless of
     # what the pad object happens to be named.
     "landing_pad": "BOX",
+    # SIH_AVIAN_FINAL detection pass: the bolted steel through-truss (ST_
+    # prefix -- not in STRUCTURAL_PREFIXES below, so classification here by
+    # avi_kind is the only thing that gets it into collision at all).
+    "truss_chord": "BOX", "truss_diagonal": "BOX", "truss_vertical": "BOX",
+    "gusset_plate": "BOX", "floor_beam": "BOX", "stringer": "BOX",
+    "bracing": "BOX",
 }
 # Name prefixes used when an object carries no avi_kind.
 # MB_ is the REV-C metro viaduct. Required, not decorative:

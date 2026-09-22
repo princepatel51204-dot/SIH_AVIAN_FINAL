@@ -1,0 +1,2277 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="avian_final_steel">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <collision name="ST_BRACING_TOP_00_A_collision">
+        <pose>140.625000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_00_A_visual">
+        <pose>140.625000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_00_B_collision">
+        <pose>140.625000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_00_B_visual">
+        <pose>140.625000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_01_A_collision">
+        <pose>151.875000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_01_A_visual">
+        <pose>151.875000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_01_B_collision">
+        <pose>151.875000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_01_B_visual">
+        <pose>151.875000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_02_A_collision">
+        <pose>163.125000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_02_A_visual">
+        <pose>163.125000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_02_B_collision">
+        <pose>163.125000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_02_B_visual">
+        <pose>163.125000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_03_A_collision">
+        <pose>174.375000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_03_A_visual">
+        <pose>174.375000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_03_B_collision">
+        <pose>174.375000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_03_B_visual">
+        <pose>174.375000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_04_A_collision">
+        <pose>185.625000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_04_A_visual">
+        <pose>185.625000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_04_B_collision">
+        <pose>185.625000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_04_B_visual">
+        <pose>185.625000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_05_A_collision">
+        <pose>196.875000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_05_A_visual">
+        <pose>196.875000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_05_B_collision">
+        <pose>196.875000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_05_B_visual">
+        <pose>196.875000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_06_A_collision">
+        <pose>208.125000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_06_A_visual">
+        <pose>208.125000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_06_B_collision">
+        <pose>208.125000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_06_B_visual">
+        <pose>208.125000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_07_A_collision">
+        <pose>219.375000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_07_A_visual">
+        <pose>219.375000 0.000000 21.000000 0 0 0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_BRACING_TOP_07_B_collision">
+        <pose>219.375000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_BRACING_TOP_07_B_visual">
+        <pose>219.375000 0.000000 21.000000 0 0 -0.893881</pose>
+        <geometry>
+          <box>
+            <size>11.483800 14.188000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_CHORD_BOT_N_collision">
+        <pose>180.000000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.600000 0.900000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_CHORD_BOT_N_visual">
+        <pose>180.000000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.600000 0.900000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_CHORD_BOT_S_collision">
+        <pose>180.000000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.600000 0.900000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_CHORD_BOT_S_visual">
+        <pose>180.000000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.600000 0.900000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_CHORD_TOP_N_collision">
+        <pose>180.000000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.600000 0.900000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_CHORD_TOP_N_visual">
+        <pose>180.000000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.600000 0.900000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_CHORD_TOP_S_collision">
+        <pose>180.000000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.600000 0.900000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_CHORD_TOP_S_visual">
+        <pose>180.000000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.600000 0.900000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_N_00_collision">
+        <pose>140.625000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_N_00_visual">
+        <pose>140.625000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_N_01_collision">
+        <pose>151.875000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_N_01_visual">
+        <pose>151.875000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_N_02_collision">
+        <pose>163.125000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_N_02_visual">
+        <pose>163.125000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_N_03_collision">
+        <pose>174.375000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_N_03_visual">
+        <pose>174.375000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_N_04_collision">
+        <pose>185.625000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_N_04_visual">
+        <pose>185.625000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_N_05_collision">
+        <pose>196.875000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_N_05_visual">
+        <pose>196.875000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_N_06_collision">
+        <pose>208.125000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_N_06_visual">
+        <pose>208.125000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_N_07_collision">
+        <pose>219.375000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_N_07_visual">
+        <pose>219.375000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_S_00_collision">
+        <pose>140.625000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_S_00_visual">
+        <pose>140.625000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_S_01_collision">
+        <pose>151.875000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_S_01_visual">
+        <pose>151.875000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_S_02_collision">
+        <pose>163.125000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_S_02_visual">
+        <pose>163.125000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_S_03_collision">
+        <pose>174.375000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_S_03_visual">
+        <pose>174.375000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_S_04_collision">
+        <pose>185.625000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_S_04_visual">
+        <pose>185.625000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_S_05_collision">
+        <pose>196.875000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_S_05_visual">
+        <pose>196.875000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_S_06_collision">
+        <pose>208.125000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_S_06_visual">
+        <pose>208.125000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_DIAGONAL_S_07_collision">
+        <pose>219.375000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_DIAGONAL_S_07_visual">
+        <pose>219.375000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>11.531000 0.450000 9.351400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_00_collision">
+        <pose>135.000000 0.000000 13.343800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.787600</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_00_visual">
+        <pose>135.000000 0.000000 13.343800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.787600</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_01_collision">
+        <pose>146.250000 0.000000 13.352000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.804000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_01_visual">
+        <pose>146.250000 0.000000 13.352000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.804000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_02_collision">
+        <pose>157.500000 0.000000 13.357800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.815600</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_02_visual">
+        <pose>157.500000 0.000000 13.357800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.815600</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_03_collision">
+        <pose>168.750000 0.000000 13.361300 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.822600</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_03_visual">
+        <pose>168.750000 0.000000 13.361300 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.822600</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_04_collision">
+        <pose>180.000000 0.000000 13.362500 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.825000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_04_visual">
+        <pose>180.000000 0.000000 13.362500 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.825000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_05_collision">
+        <pose>191.250000 0.000000 13.361300 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.822600</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_05_visual">
+        <pose>191.250000 0.000000 13.361300 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.822600</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_06_collision">
+        <pose>202.500000 0.000000 13.357800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.815600</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_06_visual">
+        <pose>202.500000 0.000000 13.357800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.815600</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_07_collision">
+        <pose>213.750000 0.000000 13.352000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.804000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_07_visual">
+        <pose>213.750000 0.000000 13.352000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.804000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_FLOORBEAM_08_collision">
+        <pose>225.000000 0.000000 13.343800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.787600</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_FLOORBEAM_08_visual">
+        <pose>225.000000 0.000000 13.343800 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.400000 14.000000 1.787600</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_00_collision">
+        <pose>135.000000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_00_visual">
+        <pose>135.000000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_01_collision">
+        <pose>146.250000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_01_visual">
+        <pose>146.250000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_02_collision">
+        <pose>157.500000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_02_visual">
+        <pose>157.500000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_03_collision">
+        <pose>169.126000 7.000000 4.119200 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.599400 1.600000 0.099600</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_03_visual">
+        <pose>169.126000 7.000000 4.119200 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.599400 1.600000 0.099600</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_04_collision">
+        <pose>180.000000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_04_visual">
+        <pose>180.000000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_05_collision">
+        <pose>191.250000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_05_visual">
+        <pose>191.250000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_06_collision">
+        <pose>202.500000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_06_visual">
+        <pose>202.500000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_07_collision">
+        <pose>213.750000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_07_visual">
+        <pose>213.750000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_BOT_08_collision">
+        <pose>225.000000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_BOT_08_visual">
+        <pose>225.000000 7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_00_collision">
+        <pose>135.000000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_00_visual">
+        <pose>135.000000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_01_collision">
+        <pose>146.250000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_01_visual">
+        <pose>146.250000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_02_collision">
+        <pose>157.500000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_02_visual">
+        <pose>157.500000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_03_collision">
+        <pose>168.750000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_03_visual">
+        <pose>168.750000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_04_collision">
+        <pose>180.000000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_04_visual">
+        <pose>180.000000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_05_collision">
+        <pose>191.250000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_05_visual">
+        <pose>191.250000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_06_collision">
+        <pose>202.500000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_06_visual">
+        <pose>202.500000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_07_collision">
+        <pose>213.750000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_07_visual">
+        <pose>213.750000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_N_TOP_08_collision">
+        <pose>225.000000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_N_TOP_08_visual">
+        <pose>225.000000 7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_00_collision">
+        <pose>135.000000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_00_visual">
+        <pose>135.000000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_01_collision">
+        <pose>146.250000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_01_visual">
+        <pose>146.250000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_02_collision">
+        <pose>157.500000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_02_visual">
+        <pose>157.500000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_03_collision">
+        <pose>168.750000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_03_visual">
+        <pose>168.750000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_04_collision">
+        <pose>180.000000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_04_visual">
+        <pose>180.000000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_05_collision">
+        <pose>191.250000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_05_visual">
+        <pose>191.250000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_06_collision">
+        <pose>202.500000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_06_visual">
+        <pose>202.500000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_07_collision">
+        <pose>213.992000 -7.000000 6.361600 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600200 1.600000 0.067200</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_07_visual">
+        <pose>213.992000 -7.000000 6.361600 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600200 1.600000 0.067200</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_BOT_08_collision">
+        <pose>225.000000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_BOT_08_visual">
+        <pose>225.000000 -7.000000 12.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_00_collision">
+        <pose>135.000000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_00_visual">
+        <pose>135.000000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_01_collision">
+        <pose>146.250000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_01_visual">
+        <pose>146.250000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_02_collision">
+        <pose>157.500000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_02_visual">
+        <pose>157.500000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_03_collision">
+        <pose>169.384900 -7.000000 15.044300 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.599800 1.600000 0.081400</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_03_visual">
+        <pose>169.384900 -7.000000 15.044300 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.599800 1.600000 0.081400</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_04_collision">
+        <pose>180.000000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_04_visual">
+        <pose>180.000000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_05_collision">
+        <pose>191.250000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_05_visual">
+        <pose>191.250000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_06_collision">
+        <pose>202.500000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_06_visual">
+        <pose>202.500000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_07_collision">
+        <pose>213.750000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_07_visual">
+        <pose>213.750000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_GUSSET_S_TOP_08_collision">
+        <pose>225.000000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_GUSSET_S_TOP_08_visual">
+        <pose>225.000000 -7.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>1.600000 1.600000 0.025000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_PORTAL_KNEE_135_A_collision">
+        <pose>135.000000 5.740000 19.920000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 1.448000 2.365800</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_PORTAL_KNEE_135_A_visual">
+        <pose>135.000000 5.740000 19.920000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 1.448000 2.365800</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_PORTAL_KNEE_135_B_collision">
+        <pose>135.000000 -5.740000 19.920000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 1.448000 2.365800</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_PORTAL_KNEE_135_B_visual">
+        <pose>135.000000 -5.740000 19.920000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 1.448000 2.365800</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_PORTAL_KNEE_225_A_collision">
+        <pose>225.000000 5.740000 19.920000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 1.448000 2.365800</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_PORTAL_KNEE_225_A_visual">
+        <pose>225.000000 5.740000 19.920000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 1.448000 2.365800</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_PORTAL_KNEE_225_B_collision">
+        <pose>225.000000 -5.740000 19.920000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 1.448000 2.365800</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_PORTAL_KNEE_225_B_visual">
+        <pose>225.000000 -5.740000 19.920000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 1.448000 2.365800</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_PORTAL_STRUT_135_collision">
+        <pose>135.000000 0.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 14.300000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_PORTAL_STRUT_135_visual">
+        <pose>135.000000 0.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 14.300000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_PORTAL_STRUT_225_collision">
+        <pose>225.000000 0.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 14.300000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_PORTAL_STRUT_225_visual">
+        <pose>225.000000 0.000000 21.000000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.300000 14.300000 0.300000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_STRINGER_00_collision">
+        <pose>180.000000 -3.500000 13.975000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.300000 0.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_STRINGER_00_visual">
+        <pose>180.000000 -3.500000 13.975000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.300000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_STRINGER_01_collision">
+        <pose>180.000000 0.000000 13.975000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.300000 0.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_STRINGER_01_visual">
+        <pose>180.000000 0.000000 13.975000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.300000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_STRINGER_02_collision">
+        <pose>180.000000 3.500000 13.975000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.300000 0.600000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_STRINGER_02_visual">
+        <pose>180.000000 3.500000 13.975000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>90.000000 0.300000 0.600000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_00_collision">
+        <pose>135.000000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_00_visual">
+        <pose>135.000000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_01_collision">
+        <pose>146.250000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_01_visual">
+        <pose>146.250000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_02_collision">
+        <pose>157.500000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_02_visual">
+        <pose>157.500000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_03_collision">
+        <pose>168.750000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_03_visual">
+        <pose>168.750000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_04_collision">
+        <pose>180.000000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_04_visual">
+        <pose>180.000000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_05_collision">
+        <pose>191.250000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_05_visual">
+        <pose>191.250000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_06_collision">
+        <pose>202.500000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_06_visual">
+        <pose>202.500000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_07_collision">
+        <pose>213.750000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_07_visual">
+        <pose>213.750000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_N_08_collision">
+        <pose>225.000000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_N_08_visual">
+        <pose>225.000000 7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_00_collision">
+        <pose>135.000000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_00_visual">
+        <pose>135.000000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_01_collision">
+        <pose>146.250000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_01_visual">
+        <pose>146.250000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_02_collision">
+        <pose>157.500000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_02_visual">
+        <pose>157.500000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_03_collision">
+        <pose>168.750000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_03_visual">
+        <pose>168.750000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_04_collision">
+        <pose>180.000000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_04_visual">
+        <pose>180.000000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_05_collision">
+        <pose>191.250000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_05_visual">
+        <pose>191.250000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_06_collision">
+        <pose>202.500000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_06_visual">
+        <pose>202.500000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_07_collision">
+        <pose>213.750000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_07_visual">
+        <pose>213.750000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="ST_VERTICAL_S_08_collision">
+        <pose>225.000000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ST_VERTICAL_S_08_visual">
+        <pose>225.000000 -7.000000 16.500000 0 0 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.450000 0.450000 9.000000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.160 0.164 0.172 1</ambient>
+          <diffuse>0.400 0.410 0.430 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

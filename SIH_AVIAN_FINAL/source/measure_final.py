@@ -36,6 +36,7 @@ import cameras_final as CF
 import validate_final as VDF
 import sabotage_final as SBF
 import params_final as PF
+import resolvability_final as RESF
 
 # damage.py's export_ground_truth() reads P.RESEARCH_X0/X1/SECTOR_NAMES/
 # REPAIR_ENVELOPE for the ground-truth file's metadata. This is a SEPARATE
@@ -58,6 +59,10 @@ SCENE_DIR = os.path.join(ROOT, "scene")
 BLEND_PATH = os.path.join(SCENE_DIR, "SIH_AVIAN_FINAL.blend")
 HANDOFF_PATH = os.path.join(SCENE_DIR, "_handoff_final.json")
 BASELINE_PATH = os.path.join(SCENE_DIR, "BASELINE_FINAL_ground_truth.json")
+BASELINE_METRO_PATH = os.path.join(
+    SCENE_DIR, "BASELINE_FINAL_metro_ground_truth.json")
+BASELINE_STEEL_PATH = os.path.join(
+    SCENE_DIR, "BASELINE_FINAL_steel_ground_truth.json")
 RENDER_DIR = os.path.join(ROOT, "renders")
 
 
@@ -70,9 +75,11 @@ def main():
         handoff = json.load(f)
     records = handoff["records"]
     mrecords = handoff["mrecords"]
+    srecords = handoff["srecords"]
     stats = handoff["stats"]
     log(f"  loaded  : {BLEND_PATH}")
-    log(f"  records : {len(records)} road, {len(mrecords)} metro")
+    log(f"  records : {len(records)} road, {len(mrecords)} metro, "
+        f"{len(srecords)} steel")
 
     log("-- cameras --")
     # Idempotent: measure_final.py can be re-run against the same .blend
@@ -89,7 +96,13 @@ def main():
                and bpy.data.objects.get(r["defect_id"]) is not None
                and bpy.data.objects[r["defect_id"]].get("avi_hero")), None)
     hero_pos = tuple(hero["position_m"]) if hero else None
-    CF.build(cam_coll, hero_pos=hero_pos, log=log)
+    loose_certifiable = next(
+        (r for r in srecords if r["type"] == "BOLT_LOOSE"
+         and r.get("intended_difficulty_band") == "CERTIFIABLE"), None)
+    loose_bolt = ((tuple(loose_certifiable["position_m"]),
+                  tuple(loose_certifiable["surface_normal"]))
+                 if loose_certifiable else None)
+    CF.build(cam_coll, hero_pos=hero_pos, loose_bolt=loose_bolt, log=log)
 
     log("-- measured contrast (contrast_c.py, reused unchanged) --")
     contrast_summary = CC.measure(records, strength_label="1.00", log=log)
@@ -97,6 +110,31 @@ def main():
     mcontrast_summary = CC.measure(mrecords, strength_label="metro 1.00",
                                    log=log)
     stats["metro_contrast"] = mcontrast_summary
+    scontrast_summary = CC.measure(srecords, strength_label="steel 1.00",
+                                   log=log)
+    stats["steel_contrast"] = scontrast_summary
+
+    log("-- escalation_reason (resolvability_final.py, SPEC S5) --")
+    # Must run AFTER contrast_c.measure() above -- escalation_reason folds
+    # in contrast_limited, which only exists once contrast has actually
+    # been measured, so it cannot be finished in build_final.py (phase 1).
+    esc_road = RESF.add_escalation(records, PF, log=log, label="road")
+    esc_metro = RESF.add_escalation(mrecords, PF, log=log, label="metro")
+    esc_steel = RESF.add_escalation(srecords, PF, log=log, label="steel")
+    stats["escalation"] = {"road": esc_road, "metro": esc_metro,
+                           "steel": esc_steel}
+
+    log("-- resolvability breakdown (SPEC S5 -- the result) --")
+    resolv_road = RESF.resolvability_breakdown(records, PF)
+    resolv_metro = RESF.resolvability_breakdown(mrecords, PF)
+    resolv_steel = RESF.resolvability_breakdown(srecords, PF)
+    stats["resolvability"] = {"road": resolv_road, "metro": resolv_metro,
+                              "steel": resolv_steel}
+    log(f"  resolv  : road      {resolv_road['overall']}")
+    log(f"  resolv  : metro     {resolv_metro['overall']}")
+    log(f"  resolv  : steel     {resolv_steel['overall']}")
+    for t, b in sorted(resolv_steel["by_type"].items()):
+        log(f"  resolv  :   {t:<20} {b}")
 
     log("-- ground truth export --")
     gt_json = os.path.join(SCENE_DIR, "AVIAN_defect_ground_truth_FINAL.json")
@@ -105,39 +143,56 @@ def main():
     mgt_json = os.path.join(SCENE_DIR, "AVIAN_metro_ground_truth_FINAL.json")
     mgt_csv = os.path.join(SCENE_DIR, "AVIAN_metro_ground_truth_FINAL.csv")
     MBD.export_ground_truth(mrecords, mgt_json, mgt_csv)
+    sgt_json = os.path.join(SCENE_DIR, "AVIAN_steel_ground_truth_FINAL.json")
+    sgt_csv = os.path.join(SCENE_DIR, "AVIAN_steel_ground_truth_FINAL.csv")
+    DMG.export_ground_truth(srecords, sgt_json, sgt_csv)
     log(f"  exported: {gt_json}")
     log(f"  exported: {mgt_json}")
+    log(f"  exported: {sgt_json}")
 
-    log("-- baseline --")
-    if not os.path.exists(BASELINE_PATH):
-        with open(gt_json) as f:
-            gt = json.load(f)
-        with open(BASELINE_PATH, "w") as f:
-            json.dump(gt, f, indent=2)
-        log(f"  FROZEN new baseline: {BASELINE_PATH} ({len(records)} defects)")
-        stats["baseline_frozen_this_run"] = True
-    else:
-        log(f"  baseline already frozen: {BASELINE_PATH}")
-        stats["baseline_frozen_this_run"] = False
+    log("-- baseline (concrete + metro + steel, SPEC S8) --")
+    def _freeze(path, src_json, label, n):
+        if not os.path.exists(path):
+            with open(src_json) as f:
+                gt = json.load(f)
+            with open(path, "w") as f:
+                json.dump(gt, f, indent=2)
+            log(f"  FROZEN new baseline: {path} ({n} defects)")
+            return True
+        log(f"  baseline already frozen: {path}")
+        return False
+
+    stats["baseline_frozen_this_run"] = _freeze(
+        BASELINE_PATH, gt_json, "road", len(records))
+    stats["metro_baseline_frozen_this_run"] = _freeze(
+        BASELINE_METRO_PATH, mgt_json, "metro", len(mrecords))
+    stats["steel_baseline_frozen_this_run"] = _freeze(
+        BASELINE_STEEL_PATH, sgt_json, "steel", len(srecords))
 
     log("-- validation (validate_final.py) --")
     results, vsummary = VDF.run(records, mrecords, log=log,
-                                baseline_path=BASELINE_PATH)
+                                baseline_path=BASELINE_PATH,
+                                srecords=srecords,
+                                steel_baseline_path=BASELINE_STEEL_PATH)
     stats["validation"] = vsummary
     stats["validation_detail"] = [r.as_dict() for r in results]
 
     log("-- sabotage (working rule 3.10) --")
-    sabotage_report = SBF.run(records, mrecords, BASELINE_PATH, log=log)
+    sabotage_report = SBF.run(records, mrecords, BASELINE_PATH, log=log,
+                              srecords=srecords,
+                              steel_baseline_path=BASELINE_STEEL_PATH)
     stats["sabotage"] = sabotage_report
 
-    # sabotage mutates `records`/`mrecords` transiently but always restores
-    # them (finally: undo()) -- re-export so the files on disk reflect the
-    # final, un-sabotaged state, not whatever the last mutation left behind.
+    # sabotage mutates `records`/`mrecords`/`srecords` transiently but
+    # always restores them (finally: undo()) -- re-export so the files on
+    # disk reflect the final, un-sabotaged state, not whatever the last
+    # mutation left behind.
     DMG.export_ground_truth(records, gt_json, gt_csv)
     MBD.export_ground_truth(mrecords, mgt_json, mgt_csv)
+    DMG.export_ground_truth(srecords, sgt_json, sgt_csv)
 
     if render:
-        log("-- rendering the 9 named cameras --")
+        log("-- rendering the 12 named cameras (CAM_12 first) --")
         os.makedirs(RENDER_DIR, exist_ok=True)
 
         # ENVIRONMENT WORKAROUND (same as build_scene_c.py's phase_measure,
@@ -163,6 +218,9 @@ def main():
         cams = [o for o in bpy.data.objects if o.type == "CAMERA"
                and o.name.startswith("CAM_")]
         cams.sort(key=lambda o: o.name)
+        # Gate requirement: CAM_12_LOOSE_BOLT is the premise-demonstrating
+        # shot and is shown/rendered first, ahead of the rest.
+        cams.sort(key=lambda o: 0 if o.name == "CAM_12_LOOSE_BOLT" else 1)
         for cam in cams:
             scene.camera = cam
             out = os.path.join(RENDER_DIR, f"{cam.name}.png")

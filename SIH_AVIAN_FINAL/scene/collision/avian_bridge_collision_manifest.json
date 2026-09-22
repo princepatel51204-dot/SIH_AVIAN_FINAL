@@ -14,24 +14,27 @@
   "corridor_length_m": 380.0,
   "coordinate_system": "identical to the REV-B environment: 1 unit = 1 m, Z up, right-handed, origin at the bridge deck start, +X along the corridor",
   "units": "metres",
-  "collision_primitives": 483,
+  "collision_primitives": 568,
   "primitive_types": {
-    "BOX": 456,
+    "BOX": 541,
     "CYLINDER": 27
   },
   "primitives_by_kind": {
     "abutment": 2,
     "access_hatch": 10,
     "bearing": 62,
+    "bracing": 22,
     "cable_trough": 10,
     "catenary_mast": 5,
     "deck_box": 40,
     "deck_slab": 7,
-    "diaphragm": 32,
-    "drain": 16,
+    "diaphragm": 24,
+    "drain": 8,
     "expansion_joint": 2,
-    "girder": 35,
+    "floor_beam": 9,
+    "girder": 30,
     "ground": 1,
+    "gusset_plate": 36,
     "joint_gap": 10,
     "landing_pad": 2,
     "parapet": 34,
@@ -39,19 +42,23 @@
     "pier_column": 27,
     "pier_footing": 27,
     "rail": 20,
-    "service_duct": 6,
+    "service_duct": 4,
+    "stringer": 3,
     "structure": 22,
     "track_slab": 10,
     "train_car": 83,
+    "truss_chord": 4,
+    "truss_diagonal": 16,
+    "truss_vertical": 18,
     "water": 1
   },
-  "source_triangles_in_corridor": 11338,
-  "objects_seen_in_corridor": 1495,
-  "simplification_ratio": 23.5,
+  "source_triangles_in_corridor": 11404,
+  "objects_seen_in_corridor": 6479,
+  "simplification_ratio": 20.1,
   "method": "per-member oriented bounding volumes, conservative by construction (every primitive contains its source member)",
   "include_services": false,
   "excluded": {
-    "other": 879,
+    "other": 5778,
     "CITY": 2,
     "DEFECT": 113,
     "ENV": 17,
@@ -72,9 +79,9 @@
         "id": "C01",
         "name": "every box primitive matches its source bbox",
         "status": "PASS",
-        "measured": "max deviation 0.05 mm",
+        "measured": "max deviation 0.10 mm",
         "expected": "< 2 mm",
-        "detail": "483 primitives cross-checked"
+        "detail": "568 primitives cross-checked"
       },
       {
         "id": "C02",
@@ -87,16 +94,16 @@
       {
         "id": "C03",
         "name": "air draft preserved over the navigation channel",
-        "status": "PASS",
-        "measured": "13.78 m",
+        "status": "FAIL",
+        "measured": "17.80 m",
         "expected": "13.78 m (source)",
         "detail": "collision soffit vs authoritative soffit"
       },
       {
         "id": "C04",
         "name": "inspection bay between girders stays open",
-        "status": "PASS",
-        "measured": "1.95 m",
+        "status": "FAIL",
+        "measured": "not measured",
         "expected": "1.95 m",
         "detail": "box-fitting the I-section must not close the bay"
       },
@@ -120,7 +127,7 @@
         "id": "C07",
         "name": "metro viaduct reaches the collision asset",
         "status": "PASS",
-        "measured": "263 MB_ primitives of 483 total",
+        "measured": "263 MB_ primitives of 568 total",
         "expected": "> 0 -- MB_ must be in STRUCTURAL_PREFIXES",
         "detail": ""
       },
@@ -133,8 +140,8 @@
         "detail": ""
       }
     ],
-    "pass": 6,
-    "fail": 2
+    "pass": 4,
+    "fail": 4
   },
-  "build_time_s": 0.1
+  "build_time_s": 0.5
 }

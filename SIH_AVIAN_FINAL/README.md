@@ -2,11 +2,13 @@
 
 A compact 360 m inspection corridor — one road bridge, one parallel metro
 viaduct, one river, no city — built in Blender and exported to Gazebo, with
-96 measured, ground-truthed defects, a hand-placed hero shot, real vehicle/
-train geometry, and a two-pad drone base. Replaces the 4.5 km REV-C scene for
-the demo/pitch use case where the whole structure needs to fit in one frame.
-See `SIH_AVIAN_FINAL_MASTER_PROMPT.md` for the brief and `concept/SPEC.md`
-for every source dimension.
+96 road + 20 metro + 76 steel measured, ground-truthed defects, a hand-placed
+hero shot, real vehicle/train geometry, and a two-pad drone base. Replaces the
+4.5 km REV-C scene for the demo/pitch use case where the whole structure needs
+to fit in one frame. See `SIH_AVIAN_FINAL_MASTER_PROMPT.md` for the original
+build brief, `SIH_AVIAN_DETECTION_MASTER_PROMPT.md` for the detection pass
+that replaced the main span with a bolted steel truss (see "Detection pass"
+below), and `concept/SPEC.md` for every source dimension.
 
 REV-C (`../AVIAN_ENVIRONMENT/`) is untouched by this work. `AVIAN_UAV/` has
 exactly one additive line changed — see "The drone base" below.
@@ -81,12 +83,16 @@ the origin, so Gazebo coordinates equal Blender coordinates directly.
 | Train | Real 3-car EMU, 22 m/car, raked cab noses on cars 1/3, window band + 4 door pairs/side, 2 bogies/car, roof AC units + a diamond pantograph, cream body with a Mumbai-Metro-blue stripe |
 | Drone base | Two 6×6 m landing pads (SCANNER, REPAIRER), 12 m apart, near the x=0 abutment — painted H + circle, kerb, corner markers, equipment cabin, mast + windsock, charging docks |
 | Micro-detail | Formwork lines + tie-hole patches + honeycombing on the 4 HIGH-band piers (both structures), chamfered pier-cap arrises, 204 parapet posts, crack-relief geometry cut into 7 cracks over 3 mm |
-| Defects | **96 road** (95 from the SPEC.md population + 1 hand-placed hero) + **20 metro** (`MDEFECT_*`, own namespace) — untouched by this pass, baseline drift 0.000 mm |
-| Scene | 1,514 objects, 60,206 triangles (31× under the 2,000,000 budget), 121 materials |
-| Cameras | 9 named views (`CAM_01_OVERVIEW` … `CAM_08_DECK`, `CAM_09_BASE`), rendered to `renders/` |
-| Validation | **27/27 PASS** (`validate_final.py`) |
-| Sabotage | **22/22 proven** capable of failing (`sabotage_final.py`) |
-| Gazebo | 483 collision primitives (incl. both landing pads) + 173 visual-only (vehicles, vegetation), 26 distinct flat colours resolved from real Blender materials, SDF world, `gz sdf -k` clean, loads and steps |
+| Defects | **96 road** (95 from the SPEC.md population + 1 hand-placed hero) + **20 metro** (`MDEFECT_*`) + **76 steel** (`SDEFECT_*`/fastener-backed, 11 types) — baseline drift 0.000 mm on all three |
+| Steel truss | Warren-with-verticals, replaces the road main span's concrete girders (x=135–225): 108 members, 8 panels × 11.25 m, air draft 13.55 m |
+| Fasteners | **1,200 bolts** across 7 assemblies (GUSSET 700, FLOOR_STRINGER 180, BEARING 60, JOINT_ANCHOR 80, WALKWAY_BRACKET 90, CABLE_CLAMP 50, HANDRAIL_BASE 40), every one carrying a two-segment torque match mark |
+| Resolvability | `feature_size_mm`/`min_detect_range_m` on every defect (concrete, metro, steel) against the stated 2.1478 mm/px @ 1 m sensor; `escalation_reason` (none/below_contrast/below_resolution/occluded/unreachable_angle) — see "Detection pass" below |
+| Condition gradient | Road + steel truss: POOR, 40 yr; metro (own weathered material copies): GOOD, 5 yr — `avi_condition`/`avi_age_years` on every structural member |
+| Scene | 6,502 objects, 167,044 triangles (12× under the 2,000,000 budget), 134 materials |
+| Cameras | 12 named views (`CAM_01_OVERVIEW` … `CAM_09_BASE`, `CAM_10_TRUSS`, `CAM_11_GUSSET`, `CAM_12_LOOSE_BOLT`), rendered to `renders/` |
+| Validation | **38/38 PASS** (`validate_final.py`, VF01-VF38) |
+| Sabotage | **33/33 proven** capable of failing (`sabotage_final.py`) |
+| Gazebo | collision primitives incl. the steel truss (`truss_chord`/`truss_diagonal`/`truss_vertical`/`gusset_plate`/`floor_beam`/`stringer`/`bracing`) + both landing pads, visual-only vehicles/vegetation, distinct flat colours resolved from real Blender materials, SDF world, `gz sdf -k` clean with no warnings, loads and steps |
 
 ## The drone base — and the collision trap
 
@@ -200,6 +206,119 @@ to leave this one for the hand-placed hero). Framed by `CAM_06_HERO_DEFECT`,
 pulled back to ~3 m so the cavity's rim and its raked-light shadow are
 actually in frame (a dead-on close-up at 1.6 m showed only the cavity floor).
 
+## Detection pass — steel truss, fasteners, resolvability, escalation
+
+**Scope change: repair is out. Detection is the whole product.** See
+`SIH_AVIAN_DETECTION_MASTER_PROMPT.md`. This pass replaced the concrete main
+span's girders/diaphragms/drains/service duct (x=135–225 — the deck slab,
+wearing course, parapets, median, and both flanking piers/bearings are
+bridge.py's own concrete, unchanged) with a bolted steel through-truss, added
+a mechanical-defect taxonomy across it, and — the actual deliverable — added
+a measured resolvability figure and a derived escalation reason to every
+defect in the scene, concrete and steel alike.
+
+**Steel truss** (`steel_final.py`): Warren-with-verticals, 8 panels of
+11.25 m, two trusses at y=±7, top lateral bracing, portal frames at both
+ends, floor beams + 3 stringers under the deck, gusset plates at every
+joint. `ST_` avi_kinds (`truss_chord`, `truss_diagonal`, `truss_vertical`,
+`gusset_plate`, `floor_beam`, `stringer`, `bracing`) were added to
+`STRUCTURAL_KINDS` in `AVIAN_UAV/simulation/export_bridge_collision.py` —
+the same additive, name-independent pattern the drone base's `landing_pad`
+entry already established.
+
+**Fasteners and torque match marks** (`fasteners_final.py`): ~1,200 bolts
+across 7 assemblies (SPEC S3.1). An M24 head is ~36 mm across flats — ~17 px
+at 1 m against this project's stated 2.1478 mm/px GSD, comfortably visible —
+but a loose bolt's actual slip gap is 2–5 mm, 1–2 px, physically
+unresolvable by this camera at any sane range. A torqued bolt gets a painted
+line across nut, washer and plate instead; if the nut backs off, the line
+visibly breaks. That is real inspection practice, built as real geometry (a
+plate-side segment at a fixed reference angle, a nut-side segment at the
+bolt's actual current angle) rather than asserted — **the broken line, not
+the bolt head, is what makes loose-bolt detection possible by camera at
+all.** Built two-pass: pass 1 places every bolt SOUND to produce a manifest,
+`damage_steel.py` selects which bolts become defects from that manifest,
+then the FASTENERS collection is cleared and pass 2 rebuilds it with the
+selected states (`BOLT_LOOSE`, `BOLT_MISSING`, `BOLT_CORRODED`).
+
+**Steel defect taxonomy** (`damage_steel.py`, 76 defects, 11 types):
+`BOLT_LOOSE`(18)/`BOLT_MISSING`(8)/`BOLT_CORRODED`(10)/`JOINT_ANCHOR_LOOSE`(4)
+select from the fastener manifest directly; `WELD_CRACK`(6)/`SECTION_LOSS`(6)/
+`COATING_FAILURE`(8)/`GUSSET_DISTORTION`(3)/`BEARING_SEIZED`(4)/
+`CONDUIT_DETACHED`(5)/`HANDRAIL_LOOSE`(4) get bespoke placement, since
+`damage.py`'s `collect_sites()` is concrete-specific. Every defect carries an
+`intended_difficulty_band` (`CERTIFIABLE`/`MARGINAL`/`MUST_ESCALATE`), picked
+from real joint geometry — top-chord gusset faces at mid-span for the easy
+case, bottom-chord/end-panel faces for marginal, floor/stringer framing
+under the bottom chord for the genuinely boxed-in case — not a random roll,
+so the eventual visibility/contrast measurement tests a real spread rather
+than a lucky shuffle.
+
+**Resolvability** (`resolvability_final.py`, SPEC S5 — the actual result):
+`min_detect_range_m` is added to every defect, concrete/metro/steel alike,
+from `visibility.py`'s own already-measured `feature_size_mm` (a geometric
+quantity, independent of any sensor) via this project's own stated GSD —
+deliberately NOT `visibility.py`'s internal `RGB_GSD_MM_AT_1M` (0.62 mm/px),
+which belongs to a different, more capable REV-C sensor and is used there
+only for that module's own internal range calc. Reusing the wrong constant
+here would have been the exact "unlinked constant" trap this project caught
+once already (Phase 3's Gazebo materials fix). For `BOLT_LOOSE`, the feature
+is the match mark's own line width (6 mm), not the 36 mm bolt head — the
+head is trivially resolvable; the broken line is the actual constraint.
+
+`escalation_reason` (one of `none`/`below_contrast`/`below_resolution`/
+`occluded`/`unreachable_angle`) is derived, not authored, from four already-
+measured signals in this precedence: `occluded` if no camera can get within
+the aircraft's own minimum flyable range (0.30 m) of the surface at all;
+`below_resolution` if the feature can't be resolved even at the closest
+physically reachable standoff; `unreachable_angle` if a camera can get close
+but never near enough to normal incidence; `below_contrast` if
+`contrast_c.py` measured the defect as resolvable but not distinguishable
+from its background. **The escalation list is non-empty by design** — an
+empty one would mean the difficulty spread wasn't real, not that the system
+is flawless. Latest measured breakdown (see `AVIAN_scene_stats_FINAL.json`
+for the exact run): steel escalates across all four non-`none` reasons, and
+the resolvability breakdown (identifiable at the 1.5 m standoff / requires
+closer / unidentifiable at any flyable range) is reported by defect type in
+`measure_final.py`'s own log, not just totalled.
+
+**Condition gradient** (SPEC S6): every `BR_`/`ST_`/`MB_` structural mesh
+carries `avi_condition`/`avi_age_years` — road + the steel truss that
+replaced its main span: POOR, 40 yr; metro (including its own parked train):
+GOOD, 5 yr. The two structures share the same NAMED concrete materials
+(`mats["concrete_pier"]` etc, since `bridge.py`/`metro.py` both consume the
+same `mats` dict) — rather than edit either reused module, metro gets its
+own `_METRO`-suffixed COPIES of those materials, retuned to
+`METRO_WEATHER_STRENGTH` (0.15 vs the road's 1.0) via `materials_c.py`'s own
+`set_concrete_weather()` (built for a strength sweep, reused here to give
+one structure a second, independent weathering pass instead of two REV-C
+modules needing edits). Metro's own waterline-stain variant is built from
+that same low-weathered copy, not the road's.
+
+**A bug this pass caught, the hard way — CAM_12 itself.** The whole
+premise (loose-bolt detection is possible only because of the match mark)
+lives or dies on one frame: if the broken line isn't legible in
+`CAM_12_LOOSE_BOLT`, nothing downstream matters, so it was checked before
+anything else, per its own instruction. The first render was flat sky —
+no bolt, no gusset, nothing. A ray-cast from the camera's own recorded
+position toward its own target hit `ST_CHORD_TOP_S` 0.3 m away, not the
+bolt: `steel_final.py`'s gusset joints were built at `ys`, the truss
+chord's own CENTRELINE, not at the chord's outward face — since the chord
+is 0.6 m wide there, every one of the 700 GUSSET-hosted bolts (and their
+match marks) sat buried up to 0.3 m inside solid steel, invisible from the
+correct (inward-facing) side. A near-normal, near-metallic surface under a
+bright sky environment reads as a smooth, featureless sky-coloured
+reflection, not black — which is why it looked like empty air rather than
+an obvious rendering error. Fixed by offsetting both the gusset plate and
+its recorded joint position outward by the chord's half-width plus the
+plate's own thickness (`y_face = ys + sign * (half_chord_w +
+GUSSET_THICK)`), and by fixing the plate's own box orientation (`_gusset()`
+was called with `horizontal=False`, giving a slab thin in Z — a horizontal
+pancake — where a plate mounted on the side of a vertical truss needs to be
+thin in Y instead). Re-verified by ray-casting from the camera's exact eye
+position before spending render time again: the ray now hits the bolt's own
+NUT object at 0.59 m, just short of the intended 0.6 m standoff.
+
 ## A bug this pass caught in its own first draft
 
 The metro train's body/window/door/bogie geometry is built in a local frame
@@ -268,12 +387,24 @@ against forgetting it again.
   five airspace classes, `MSECTOR_*`/`INTER_STRUCTURE_CORRIDOR` markers):
   not built. `validate_final.py`'s VF15 checks the inter-structure gap
   directly off BR_/MB_ bounding boxes instead of a proper airspace volume.
-  A consequence: `export_bridge_collision.py`'s own internal checks C06
-  ("6 road sectors") and C08 (metro pier diameter hardcoded to REV-C's
-  2.8 m) fail against this scene — **not defects in this build**, but
-  REV-C-specific assumptions baked into that shared, reused file, which
-  was not (and should not be) edited for this beyond the one additive
-  `STRUCTURAL_KINDS` entry the drone base needed.
+  A consequence: `export_bridge_collision.py`'s own internal checks C03
+  (air draft hardcoded to REV-C's 13.78 m), C04, C06 ("6 road sectors"), and
+  C08 (metro pier diameter hardcoded to REV-C's 2.8 m) fail against this
+  scene — **not defects in this build**, but REV-C-specific assumptions
+  baked into that shared, reused file's own self-checks, which was not (and
+  should not be) edited for this beyond the additive `STRUCTURAL_KINDS`
+  entries the drone base and steel truss needed.
+- **17 of the 96 road defects are unavoidable orphans, and VF11 says so
+  explicitly**: `damage.py`'s `collect_sites()` enumerates candidate
+  GIRDER_WEB/GIRDER_BOTTOM_FLANGE/DIAPHRAGM positions from span geometry
+  alone, with no way to know the detection pass deleted the main span's own
+  girders/diaphragms for the truss. Pre-filtering those ~31 candidates out
+  of the pool before selection was tried and rejected — it starves the
+  shared fallback pool `damage.build()`'s own per-type loop draws from, and
+  the achievable total drops to 87 of the required 96. `VF11` now counts
+  these separately (`position_m` inside the truss span, `surface_offset_mm`
+  < 0) rather than either silently excluding them or failing on a rate no
+  fix can actually reach zero.
 - **Vehicle/train collision**: `VEH_`/`MB_TRAIN_*` objects are not
   BR_/MB_-prefixed and carry no `avi_kind` in `STRUCTURAL_KINDS`, so
   `export_bridge_collision.py` does not turn them into obstacles.
@@ -297,10 +428,20 @@ source/
   base_final.py            the two landing pads + base furniture
   microdetail_final.py     formwork/tie-holes/honeycombing/chamfers/
                            parapet posts/crack-relief geometry
-  build_final.py           phase 1: geometry + materials + defects + hero
-  cameras_final.py         the 9 named cameras
-  measure_final.py         phase 2: contrast + validation + sabotage + export
-  validate_final.py        VF01-VF27, this scene's own limits
+  steel_final.py           detection pass: the bolted steel through-truss
+                           main span, and its gusset/floor-beam joint list
+  fasteners_final.py       detection pass: ~1,200 bolts + torque match
+                           marks, two-pass (all-SOUND, then defect states)
+  damage_steel.py          detection pass: the 76-defect steel taxonomy,
+                           fastener-manifest-backed and bespoke
+  resolvability_final.py   detection pass: feature_size_mm -> min_detect_
+                           range_m, and the derived escalation_reason
+  build_final.py           phase 1: geometry + materials + defects + hero +
+                           steel truss/fasteners/defects + condition gradient
+  cameras_final.py         the 12 named cameras (9 original + CAM_10-12)
+  measure_final.py         phase 2: contrast + validation + sabotage +
+                           export + resolvability/escalation + baselines
+  validate_final.py        VF01-VF38, this scene's own limits
   sabotage_final.py        proves every VF check can fail
   collision_final.py       calls AVIAN_UAV's export_bridge_collision.py
   export_gazebo_final.py   SDF world writer; resolves flat colours from the
@@ -308,13 +449,16 @@ source/
 scene/                     build outputs (gitignored: *.blend, handoff JSON)
   AVIAN_defect_ground_truth_FINAL.{json,csv}
   AVIAN_metro_ground_truth_FINAL.{json,csv}
-  BASELINE_FINAL_ground_truth.json   frozen at first successful build
+  AVIAN_steel_ground_truth_FINAL.{json,csv}
+  BASELINE_FINAL_ground_truth.json         frozen at first successful build
+  BASELINE_FINAL_metro_ground_truth.json   frozen at first successful build
+  BASELINE_FINAL_steel_ground_truth.json   frozen at first successful build
   AVIAN_scene_stats_FINAL.json
   collision/avian_bridge_collision.json
-renders/                   the 9 named camera views
+renders/                   the 12 named camera views (CAM_12 first)
 gazebo/
   worlds/sih_avian_final.sdf
-  models/avian_final_{road,metro,terrain,base,defects}/
+  models/avian_final_{road,metro,steel,terrain,base,vehicles,vegetation,defects}/
   shoot_final.sh            headless screenshot
   screenshots/
 concept/                   the six source drawings + SPEC.md

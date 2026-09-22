@@ -103,9 +103,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0256,
       "defect_background_contrast": 0.00834,
       "expected_rgb_visibility_geometric": false,
       "contrast_limited": false,
+      "escalation_reason": "below_resolution",
       "area_m2": 0.3028
     },
     {
@@ -162,9 +164,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0279,
       "defect_background_contrast": 0.00042,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_003",
@@ -220,9 +224,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0278,
       "defect_background_contrast": 0.01856,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_004",
@@ -278,9 +284,11 @@
       "detection_difficulty_score": 0.385,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.356,
       "defect_background_contrast": 0.07759,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_005",
@@ -322,7 +330,7 @@
       "feature_size_mm": 0.247,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 0.4,
-      "expected_rgb_visibility": false,
+      "expected_rgb_visibility": true,
       "expected_rgb_max_range_m": 0.4,
       "rgb_width_measurable": false,
       "required_gsd_mm": 0.247,
@@ -336,9 +344,11 @@
       "detection_difficulty_score": 0.446,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.03601,
+      "min_detect_range_m": 0.0383,
+      "defect_background_contrast": 0.06364,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_006",
@@ -394,9 +404,11 @@
       "detection_difficulty_score": 0.545,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.1824,
       "defect_background_contrast": 0.04302,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_007",
@@ -452,16 +464,18 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0135,
       "defect_background_contrast": 0.01831,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_008",
       "type": "CRACK_HAIRLINE",
       "severity": 1,
       "position_m": [
-        199.1357,
+        199.126,
         -3.935,
         13.161
       ],
@@ -471,7 +485,7 @@
         0.0
       ],
       "host_surface": "DIAPHRAGM",
-      "host_object": "BR_DIAPHRAGM_004_6",
+      "host_object": "BR_DIAPHRAGM_003_6 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_B",
       "occlusion": 0.85,
@@ -483,16 +497,16 @@
       "reason": "within surface-repair envelope",
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
-      "surface_offset_mm": 6.0,
-      "visible_fraction": 1.0,
-      "occlusion_measured": 0.0,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 0.9508,
+      "occlusion_measured": 0.0492,
       "recommended_view_direction": [
         -0.9918,
         0.1278,
         0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 8.49,
+      "best_view_clear_m": 7.72,
       "feature_size_mm": 0.149,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 0.24,
@@ -510,9 +524,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.01279,
+      "min_detect_range_m": 0.0231,
+      "defect_background_contrast": 0.54232,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_009",
@@ -568,16 +584,18 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.011,
       "defect_background_contrast": 0.04816,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_010",
       "type": "CRACK_HAIRLINE",
       "severity": 1,
       "position_m": [
-        147.7071,
+        147.697,
         2.722,
         13.297
       ],
@@ -587,7 +605,7 @@
         0.0
       ],
       "host_surface": "DIAPHRAGM",
-      "host_object": "BR_DIAPHRAGM_004_2",
+      "host_object": "BR_DIAPHRAGM_003_2 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_A",
       "occlusion": 0.85,
@@ -599,16 +617,16 @@
       "reason": "within surface-repair envelope",
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
-      "surface_offset_mm": 6.0,
-      "visible_fraction": 0.082,
-      "occlusion_measured": 0.918,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 0.9344,
+      "occlusion_measured": 0.0656,
       "recommended_view_direction": [
         -0.9918,
         0.1278,
         0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 1.0,
+      "best_view_clear_m": 1.24,
       "feature_size_mm": 0.095,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 0.15,
@@ -626,16 +644,18 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.00196,
+      "min_detect_range_m": 0.0147,
+      "defect_background_contrast": 0.0,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_011",
       "type": "CRACK_HAIRLINE",
       "severity": 1,
       "position_m": [
-        160.8643,
+        160.874,
         1.464,
         13.572
       ],
@@ -645,7 +665,7 @@
         0.0
       ],
       "host_surface": "DIAPHRAGM",
-      "host_object": "BR_DIAPHRAGM_004_3",
+      "host_object": "BR_DIAPHRAGM_003_3 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_B",
       "occlusion": 0.85,
@@ -657,7 +677,7 @@
       "reason": "within surface-repair envelope",
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
-      "surface_offset_mm": 6.0,
+      "surface_offset_mm": -1.0,
       "visible_fraction": 0.8361,
       "occlusion_measured": 0.1639,
       "recommended_view_direction": [
@@ -666,7 +686,7 @@
         0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 10.68,
+      "best_view_clear_m": 7.72,
       "feature_size_mm": 0.075,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 0.12,
@@ -684,9 +704,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.00206,
+      "min_detect_range_m": 0.0116,
+      "defect_background_contrast": 0.63747,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_012",
@@ -716,20 +738,20 @@
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
       "surface_offset_mm": 6.0,
-      "visible_fraction": 0.5574,
-      "occlusion_measured": 0.4426,
+      "visible_fraction": 1.0,
+      "occlusion_measured": 0.0,
       "recommended_view_direction": [
-        -0.1016,
-        0.7552,
-        0.6475
+        0.0,
+        0.1278,
+        0.9918
       ],
-      "recommended_view_obliquity_deg": 49.6,
-      "best_view_clear_m": 3.51,
+      "recommended_view_obliquity_deg": 7.3,
+      "best_view_clear_m": 2.84,
       "feature_size_mm": 0.118,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 0.12,
+      "max_useful_range_m": 0.19,
       "expected_rgb_visibility": false,
-      "expected_rgb_max_range_m": 0.12,
+      "expected_rgb_max_range_m": 0.19,
       "rgb_width_measurable": false,
       "required_gsd_mm": 0.118,
       "rgb_limited_by": "sensor minimum focus range",
@@ -742,9 +764,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.04944,
+      "min_detect_range_m": 0.0183,
+      "defect_background_contrast": 0.25616,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_013",
@@ -800,9 +824,11 @@
       "detection_difficulty_score": 0.526,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.2437,
       "defect_background_contrast": 0.1069,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_014",
@@ -810,16 +836,16 @@
       "severity": 1,
       "position_m": [
         212.436,
-        -2.65,
+        -2.64,
         13.34
       ],
       "surface_normal": [
-        -0.0,
+        0.0,
         1.0,
-        -0.0
+        0.0
       ],
       "host_surface": "GIRDER_WEB",
-      "host_object": "BR_GIRDER_004_G2",
+      "host_object": "BR_GIRDER_003_G2 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_C",
       "occlusion": 0.75,
@@ -831,16 +857,16 @@
       "reason": "within surface-repair envelope",
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
-      "surface_offset_mm": 6.0,
-      "visible_fraction": 0.541,
-      "occlusion_measured": 0.459,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 0.9672,
+      "occlusion_measured": 0.0328,
       "recommended_view_direction": [
         0.1278,
         0.9918,
-        -0.0
+        0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 2.55,
+      "best_view_clear_m": 8.72,
       "feature_size_mm": 0.117,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 0.19,
@@ -858,9 +884,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.00849,
+      "min_detect_range_m": 0.0182,
+      "defect_background_contrast": 0.16941,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_015",
@@ -916,9 +944,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.04851,
+      "min_detect_range_m": 0.0293,
+      "defect_background_contrast": 0.04863,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_016",
@@ -974,9 +1004,11 @@
       "detection_difficulty_score": 0.516,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0431,
       "defect_background_contrast": 0.00761,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_017",
@@ -1032,9 +1064,11 @@
       "detection_difficulty_score": 0.379,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0958,
       "defect_background_contrast": 0.08201,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_018",
@@ -1090,9 +1124,11 @@
       "detection_difficulty_score": 0.381,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.06226,
+      "min_detect_range_m": 0.041,
+      "defect_background_contrast": 0.06246,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_019",
@@ -1148,9 +1184,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.24194,
+      "min_detect_range_m": 0.0239,
+      "defect_background_contrast": 0.23265,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_020",
@@ -1206,9 +1244,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0228,
       "defect_background_contrast": 0.00472,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_021",
@@ -1264,9 +1304,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0253,
       "defect_background_contrast": 0.01174,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_022",
@@ -1322,9 +1364,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0216,
       "defect_background_contrast": 0.00851,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_023",
@@ -1380,9 +1424,11 @@
       "detection_difficulty_score": 0.73,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.3133,
       "defect_background_contrast": 0.2412,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_HAIRLINE_024",
@@ -1438,9 +1484,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0182,
       "defect_background_contrast": 0.16735,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_001",
@@ -1496,9 +1544,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0216,
       "defect_background_contrast": 0.0108,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_002",
@@ -1506,16 +1556,16 @@
       "severity": 2,
       "position_m": [
         149.556,
-        -5.6,
+        -5.61,
         13.252
       ],
       "surface_normal": [
-        -0.0,
+        0.0,
         -1.0,
-        -0.0
+        0.0
       ],
       "host_surface": "GIRDER_WEB",
-      "host_object": "BR_GIRDER_004_G1",
+      "host_object": "BR_GIRDER_003_G1 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_A",
       "occlusion": 0.35,
@@ -1527,9 +1577,9 @@
       "reason": "within surface-repair envelope",
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
-      "surface_offset_mm": 6.0,
-      "visible_fraction": 0.8361,
-      "occlusion_measured": 0.1639,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 1.0,
+      "occlusion_measured": 0.0,
       "recommended_view_direction": [
         -0.1278,
         -0.9918,
@@ -1540,7 +1590,7 @@
       "feature_size_mm": 0.419,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 0.67,
-      "expected_rgb_visibility": false,
+      "expected_rgb_visibility": true,
       "expected_rgb_max_range_m": 0.67,
       "rgb_width_measurable": false,
       "required_gsd_mm": 0.419,
@@ -1550,13 +1600,15 @@
       "expected_lidar_visibility": false,
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.22,
-      "detection_difficulty": "LEVEL_3",
-      "detection_difficulty_score": 0.546,
+      "detection_difficulty": "LEVEL_2",
+      "detection_difficulty_score": 0.505,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.046,
+      "min_detect_range_m": 0.065,
+      "defect_background_contrast": 0.17474,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_003",
@@ -1612,9 +1664,11 @@
       "detection_difficulty_score": 0.546,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.3821,
       "defect_background_contrast": 0.03322,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_contrast"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_004",
@@ -1670,9 +1724,11 @@
       "detection_difficulty_score": 0.509,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.1712,
       "defect_background_contrast": 0.02859,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_005",
@@ -1728,9 +1784,11 @@
       "detection_difficulty_score": 0.42,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 1.2276,
       "defect_background_contrast": 0.02873,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_contrast"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_006",
@@ -1786,9 +1844,11 @@
       "detection_difficulty_score": 0.406,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.19087,
+      "min_detect_range_m": 0.0549,
+      "defect_background_contrast": 0.23231,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_007",
@@ -1844,9 +1904,11 @@
       "detection_difficulty_score": 0.438,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.9529,
       "defect_background_contrast": 0.20071,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_008",
@@ -1902,9 +1964,11 @@
       "detection_difficulty_score": 0.637,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.20384,
+      "min_detect_range_m": 0.0368,
+      "defect_background_contrast": 0.10332,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_009",
@@ -1960,9 +2024,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0281,
       "defect_background_contrast": 0.00327,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_010",
@@ -2018,9 +2084,11 @@
       "detection_difficulty_score": 0.576,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0349,
       "defect_background_contrast": 0.01902,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_011",
@@ -2076,9 +2144,11 @@
       "detection_difficulty_score": 0.324,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.2457,
       "defect_background_contrast": 0.33546,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_LONGITUDINAL_012",
@@ -2134,9 +2204,11 @@
       "detection_difficulty_score": 0.562,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0774,
       "defect_background_contrast": 0.01144,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_001",
@@ -2166,20 +2238,20 @@
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
       "surface_offset_mm": 6.0,
-      "visible_fraction": 0.8033,
-      "occlusion_measured": 0.1967,
+      "visible_fraction": 0.0656,
+      "occlusion_measured": 0.9344,
       "recommended_view_direction": [
-        0.0,
-        -0.1278,
-        -0.9918
+        -0.8714,
+        -0.1498,
+        -0.4672
       ],
-      "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 16.39,
+      "recommended_view_obliquity_deg": 62.1,
+      "best_view_clear_m": 1.0,
       "feature_size_mm": 0.18,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 0.29,
+      "max_useful_range_m": 0.14,
       "expected_rgb_visibility": false,
-      "expected_rgb_max_range_m": 0.29,
+      "expected_rgb_max_range_m": 0.14,
       "rgb_width_measurable": false,
       "required_gsd_mm": 0.18,
       "rgb_limited_by": "sensor minimum focus range",
@@ -2189,12 +2261,14 @@
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.12,
       "detection_difficulty": "LEVEL_4",
-      "detection_difficulty_score": 0.88,
+      "detection_difficulty_score": 0.926,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.0407,
+      "min_detect_range_m": 0.0279,
+      "defect_background_contrast": 0.705,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_002",
@@ -2250,9 +2324,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0253,
       "defect_background_contrast": 0.00329,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_003",
@@ -2308,9 +2384,11 @@
       "detection_difficulty_score": 0.516,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0494,
       "defect_background_contrast": 0.01144,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_004",
@@ -2322,12 +2400,12 @@
         11.775
       ],
       "surface_normal": [
-        -0.0,
-        -0.0,
+        0.0,
+        0.0,
         -1.0
       ],
       "host_surface": "GIRDER_BOTTOM_FLANGE",
-      "host_object": "BR_GIRDER_004_G3",
+      "host_object": "BR_GIRDER_003_G3 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_B",
       "occlusion": 0.45,
@@ -2339,7 +2417,7 @@
       "reason": "within surface-repair envelope",
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
-      "surface_offset_mm": 6.0,
+      "surface_offset_mm": -1.0,
       "visible_fraction": 1.0,
       "occlusion_measured": 0.0,
       "recommended_view_direction": [
@@ -2352,7 +2430,7 @@
       "feature_size_mm": 1.531,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 2.45,
-      "expected_rgb_visibility": false,
+      "expected_rgb_visibility": true,
       "expected_rgb_max_range_m": 2.45,
       "rgb_width_measurable": true,
       "required_gsd_mm": 1.531,
@@ -2366,9 +2444,11 @@
       "detection_difficulty_score": 0.459,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.0268,
+      "min_detect_range_m": 0.2376,
+      "defect_background_contrast": 0.07781,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_005",
@@ -2424,9 +2504,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0099,
       "defect_background_contrast": 0.01301,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_006",
@@ -2482,9 +2564,11 @@
       "detection_difficulty_score": 0.83,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0323,
       "defect_background_contrast": 0.01663,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_007",
@@ -2514,8 +2598,8 @@
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
       "surface_offset_mm": 6.0,
-      "visible_fraction": 0.9672,
-      "occlusion_measured": 0.0328,
+      "visible_fraction": 1.0,
+      "occlusion_measured": 0.0,
       "recommended_view_direction": [
         0.0,
         -0.1278,
@@ -2540,9 +2624,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0149,
       "defect_background_contrast": 0.00619,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_008",
@@ -2572,8 +2658,8 @@
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
       "surface_offset_mm": 6.0,
-      "visible_fraction": 0.8033,
-      "occlusion_measured": 0.1967,
+      "visible_fraction": 1.0,
+      "occlusion_measured": 0.0,
       "recommended_view_direction": [
         0.0,
         -0.1278,
@@ -2598,9 +2684,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.02291,
+      "min_detect_range_m": 0.0255,
+      "defect_background_contrast": 0.02234,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_009",
@@ -2656,9 +2744,11 @@
       "detection_difficulty_score": 0.516,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0445,
       "defect_background_contrast": 0.01473,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_TRANSVERSE_010",
@@ -2714,9 +2804,11 @@
       "detection_difficulty_score": 0.454,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.3874,
       "defect_background_contrast": 0.00606,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_contrast"
     },
     {
       "defect_id": "DEFECT_CRACK_NETWORK_001",
@@ -2772,9 +2864,11 @@
       "detection_difficulty_score": 0.379,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0968,
       "defect_background_contrast": 0.16618,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_NETWORK_002",
@@ -2830,9 +2924,11 @@
       "detection_difficulty_score": 0.412,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.812,
       "defect_background_contrast": 0.05458,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_CRACK_NETWORK_003",
@@ -2862,8 +2958,8 @@
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
       "surface_offset_mm": 6.0,
-      "visible_fraction": 0.6885,
-      "occlusion_measured": 0.3115,
+      "visible_fraction": 0.623,
+      "occlusion_measured": 0.377,
       "recommended_view_direction": [
         0.0,
         -0.1278,
@@ -2874,7 +2970,7 @@
       "feature_size_mm": 0.705,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 1.13,
-      "expected_rgb_visibility": false,
+      "expected_rgb_visibility": true,
       "expected_rgb_max_range_m": 1.13,
       "rgb_width_measurable": true,
       "required_gsd_mm": 0.705,
@@ -2885,12 +2981,14 @@
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.12,
       "detection_difficulty": "LEVEL_3",
-      "detection_difficulty_score": 0.607,
+      "detection_difficulty_score": 0.624,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.00741,
+      "min_detect_range_m": 0.1094,
+      "defect_background_contrast": 0.15047,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_NETWORK_004",
@@ -2946,9 +3044,11 @@
       "detection_difficulty_score": 0.259,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.18806,
+      "min_detect_range_m": 0.6518,
+      "defect_background_contrast": 0.18849,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_CRACK_NETWORK_005",
@@ -3004,9 +3104,11 @@
       "detection_difficulty_score": 0.38,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.1243,
+      "min_detect_range_m": 0.0813,
+      "defect_background_contrast": 0.12446,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_NETWORK_006",
@@ -3062,9 +3164,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0284,
       "defect_background_contrast": 0.0004,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_NETWORK_007",
@@ -3120,9 +3224,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0175,
       "defect_background_contrast": 0.00313,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CRACK_NETWORK_008",
@@ -3178,9 +3284,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.029,
       "defect_background_contrast": 0.01282,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_SPALL_001",
@@ -3192,12 +3300,12 @@
         11.775
       ],
       "surface_normal": [
-        -0.0,
-        -0.0,
+        0.0,
+        0.0,
         -1.0
       ],
       "host_surface": "GIRDER_BOTTOM_FLANGE",
-      "host_object": "BR_GIRDER_004_G4",
+      "host_object": "BR_GIRDER_003_G4 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_B",
       "occlusion": 0.45,
@@ -3209,7 +3317,7 @@
       "repairable": true,
       "reason": "within surface-repair envelope",
       "representation": "GEOMETRY",
-      "surface_offset_mm": 2.0,
+      "surface_offset_mm": -1.0,
       "visible_fraction": 1.0,
       "occlusion_measured": 0.0,
       "recommended_view_direction": [
@@ -3236,9 +3344,11 @@
       "detection_difficulty_score": 0.178,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.25758,
+      "min_detect_range_m": 64.2518,
+      "defect_background_contrast": 0.15471,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_002",
@@ -3250,12 +3360,12 @@
         11.775
       ],
       "surface_normal": [
-        -0.0,
-        -0.0,
+        0.0,
+        0.0,
         -1.0
       ],
       "host_surface": "GIRDER_BOTTOM_FLANGE",
-      "host_object": "BR_GIRDER_004_G1",
+      "host_object": "BR_GIRDER_003_G1 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_B",
       "occlusion": 0.45,
@@ -3267,7 +3377,7 @@
       "repairable": true,
       "reason": "within surface-repair envelope",
       "representation": "GEOMETRY",
-      "surface_offset_mm": 2.0,
+      "surface_offset_mm": -1.0,
       "visible_fraction": 1.0,
       "occlusion_measured": 0.0,
       "recommended_view_direction": [
@@ -3294,9 +3404,11 @@
       "detection_difficulty_score": 0.128,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.32565,
+      "min_detect_range_m": 64.2518,
+      "defect_background_contrast": 0.33945,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_003",
@@ -3352,9 +3464,11 @@
       "detection_difficulty_score": 0.128,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 64.2518,
       "defect_background_contrast": 0.33636,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_004",
@@ -3410,9 +3524,11 @@
       "detection_difficulty_score": 0.228,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 59.2855,
       "defect_background_contrast": 0.32314,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_005",
@@ -3468,9 +3584,11 @@
       "detection_difficulty_score": 0.228,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 46.8697,
       "defect_background_contrast": 0.32034,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_006",
@@ -3482,12 +3600,12 @@
         11.775
       ],
       "surface_normal": [
-        -0.0,
-        -0.0,
+        0.0,
+        0.0,
         -1.0
       ],
       "host_surface": "GIRDER_BOTTOM_FLANGE",
-      "host_object": "BR_GIRDER_004_G5",
+      "host_object": "BR_GIRDER_003_G5 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_B",
       "occlusion": 0.45,
@@ -3499,7 +3617,7 @@
       "repairable": true,
       "reason": "within surface-repair envelope",
       "representation": "GEOMETRY",
-      "surface_offset_mm": 2.0,
+      "surface_offset_mm": -1.0,
       "visible_fraction": 1.0,
       "occlusion_measured": 0.0,
       "recommended_view_direction": [
@@ -3526,9 +3644,11 @@
       "detection_difficulty_score": 0.178,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.20535,
+      "min_detect_range_m": 64.2518,
+      "defect_background_contrast": 0.17344,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_007",
@@ -3584,9 +3704,11 @@
       "detection_difficulty_score": 0.128,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 64.2518,
       "defect_background_contrast": 0.35672,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_008",
@@ -3642,9 +3764,11 @@
       "detection_difficulty_score": 0.228,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 50.284,
       "defect_background_contrast": 0.32783,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_009",
@@ -3700,9 +3824,11 @@
       "detection_difficulty_score": 0.166,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 59.2855,
       "defect_background_contrast": 0.28383,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_010",
@@ -3732,35 +3858,37 @@
       "reason": "within surface-repair envelope",
       "representation": "GEOMETRY",
       "surface_offset_mm": 2.0,
-      "visible_fraction": 0.9836,
-      "occlusion_measured": 0.0164,
+      "visible_fraction": 1.0,
+      "occlusion_measured": 0.0,
       "recommended_view_direction": [
         0.9918,
         -0.1278,
         0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 8.64,
+      "best_view_clear_m": 20.7,
       "feature_size_mm": 318.0,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 8.64,
+      "max_useful_range_m": 12.0,
       "expected_rgb_visibility": true,
-      "expected_rgb_max_range_m": 8.64,
+      "expected_rgb_max_range_m": 12.0,
       "rgb_width_measurable": true,
       "required_gsd_mm": 318.0,
-      "rgb_limited_by": "available clear standoff",
+      "rgb_limited_by": "sensor maximum useful range",
       "expected_depth_visibility": true,
       "expected_depth_max_range_m": 0.53,
       "expected_lidar_visibility": false,
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.45,
       "detection_difficulty": "LEVEL_1",
-      "detection_difficulty_score": 0.162,
+      "detection_difficulty_score": 0.158,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.2315,
+      "min_detect_range_m": 49.3528,
+      "defect_background_contrast": 0.11606,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_011",
@@ -3816,9 +3944,11 @@
       "detection_difficulty_score": 0.0,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.23658,
+      "min_detect_range_m": 63.3206,
+      "defect_background_contrast": 0.2364,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_SPALL_012",
@@ -3874,9 +4004,11 @@
       "detection_difficulty_score": 0.305,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 59.9063,
       "defect_background_contrast": 0.30391,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_DELAMINATION_001",
@@ -3888,12 +4020,12 @@
         11.775
       ],
       "surface_normal": [
-        -0.0,
-        -0.0,
+        0.0,
+        0.0,
         -1.0
       ],
       "host_surface": "GIRDER_BOTTOM_FLANGE",
-      "host_object": "BR_GIRDER_004_G2",
+      "host_object": "BR_GIRDER_003_G2 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_B",
       "occlusion": 0.45,
@@ -3905,7 +4037,7 @@
       "repairable": false,
       "reason": "delamination extent cannot be bounded from the surface",
       "representation": "GEOMETRY",
-      "surface_offset_mm": 2.0,
+      "surface_offset_mm": -1.0,
       "visible_fraction": 1.0,
       "occlusion_measured": 0.0,
       "recommended_view_direction": [
@@ -3932,9 +4064,11 @@
       "detection_difficulty_score": 0.228,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.04798,
+      "min_detect_range_m": 57.7335,
+      "defect_background_contrast": 0.04316,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_contrast"
     },
     {
       "defect_id": "DEFECT_DELAMINATION_002",
@@ -3990,16 +4124,18 @@
       "detection_difficulty_score": 0.342,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 44.6969,
       "defect_background_contrast": 0.08331,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_DELAMINATION_003",
       "type": "DELAMINATION",
       "severity": 1,
       "position_m": [
-        212.2929,
+        212.303,
         -4.155,
         13.03
       ],
@@ -4009,7 +4145,7 @@
         0.0
       ],
       "host_surface": "DIAPHRAGM",
-      "host_object": "BR_DIAPHRAGM_004_7",
+      "host_object": "BR_DIAPHRAGM_003_7 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_C",
       "occlusion": 0.85,
@@ -4021,21 +4157,21 @@
       "repairable": false,
       "reason": "delamination extent cannot be bounded from the surface",
       "representation": "GEOMETRY",
-      "surface_offset_mm": 2.0,
-      "visible_fraction": 1.0,
-      "occlusion_measured": 0.0,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 0.9836,
+      "occlusion_measured": 0.0164,
       "recommended_view_direction": [
         0.9918,
         -0.1278,
         0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 9.74,
+      "best_view_clear_m": 1.24,
       "feature_size_mm": 232.0,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 9.74,
-      "expected_rgb_visibility": false,
-      "expected_rgb_max_range_m": 9.74,
+      "max_useful_range_m": 1.24,
+      "expected_rgb_visibility": true,
+      "expected_rgb_max_range_m": 1.24,
       "rgb_width_measurable": true,
       "required_gsd_mm": 232.0,
       "rgb_limited_by": "available clear standoff",
@@ -4045,19 +4181,21 @@
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.08,
       "detection_difficulty": "LEVEL_1",
-      "detection_difficulty_score": 0.254,
+      "detection_difficulty_score": 0.258,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.00746,
+      "min_detect_range_m": 36.0058,
+      "defect_background_contrast": 0.40563,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_DELAMINATION_004",
       "type": "DELAMINATION",
       "severity": 2,
       "position_m": [
-        211.9929,
+        211.983,
         -1.32,
         13.098
       ],
@@ -4067,7 +4205,7 @@
         0.0
       ],
       "host_surface": "DIAPHRAGM",
-      "host_object": "BR_DIAPHRAGM_004_7",
+      "host_object": "BR_DIAPHRAGM_003_7 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_C",
       "occlusion": 0.85,
@@ -4079,7 +4217,7 @@
       "repairable": false,
       "reason": "delamination extent cannot be bounded from the surface",
       "representation": "GEOMETRY",
-      "surface_offset_mm": 2.0,
+      "surface_offset_mm": -1.0,
       "visible_fraction": 1.0,
       "occlusion_measured": 0.0,
       "recommended_view_direction": [
@@ -4088,12 +4226,12 @@
         0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 9.55,
+      "best_view_clear_m": 9.34,
       "feature_size_mm": 628.0,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 9.55,
-      "expected_rgb_visibility": false,
-      "expected_rgb_max_range_m": 9.55,
+      "max_useful_range_m": 9.34,
+      "expected_rgb_visibility": true,
+      "expected_rgb_max_range_m": 9.34,
       "rgb_width_measurable": true,
       "required_gsd_mm": 628.0,
       "rgb_limited_by": "available clear standoff",
@@ -4106,9 +4244,11 @@
       "detection_difficulty_score": 0.204,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.02857,
+      "min_detect_range_m": 97.4641,
+      "defect_background_contrast": 0.45102,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_DELAMINATION_005",
@@ -4164,9 +4304,11 @@
       "detection_difficulty_score": 0.366,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 80.3923,
       "defect_background_contrast": 0.02175,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_contrast"
     },
     {
       "defect_id": "DEFECT_DELAMINATION_006",
@@ -4222,9 +4364,11 @@
       "detection_difficulty_score": 0.262,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 42.8345,
       "defect_background_contrast": 0.06834,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_DELAMINATION_007",
@@ -4254,20 +4398,20 @@
       "reason": "delamination extent cannot be bounded from the surface",
       "representation": "GEOMETRY",
       "surface_offset_mm": -1.0,
-      "visible_fraction": 0.1311,
-      "occlusion_measured": 0.8689,
+      "visible_fraction": 1.0,
+      "occlusion_measured": 0.0,
       "recommended_view_direction": [
         -0.9918,
         0.1278,
         0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 1.53,
+      "best_view_clear_m": 2.86,
       "feature_size_mm": 814.0,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 1.53,
+      "max_useful_range_m": 2.86,
       "expected_rgb_visibility": false,
-      "expected_rgb_max_range_m": 1.53,
+      "expected_rgb_max_range_m": 2.86,
       "rgb_width_measurable": true,
       "required_gsd_mm": 814.0,
       "rgb_limited_by": "available clear standoff",
@@ -4276,13 +4420,15 @@
       "expected_lidar_visibility": false,
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.08,
-      "detection_difficulty": "LEVEL_2",
-      "detection_difficulty_score": 0.321,
+      "detection_difficulty": "LEVEL_1",
+      "detection_difficulty_score": 0.104,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.00082,
+      "min_detect_range_m": 126.3308,
+      "defect_background_contrast": 0.0,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_contrast"
     },
     {
       "defect_id": "DEFECT_DELAMINATION_008",
@@ -4338,9 +4484,11 @@
       "detection_difficulty_score": 0.303,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 36.937,
       "defect_background_contrast": 0.05991,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_REBAR_EXPOSED_001",
@@ -4396,9 +4544,11 @@
       "detection_difficulty_score": 0.254,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 82.2547,
       "defect_background_contrast": 0.22562,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_REBAR_EXPOSED_002",
@@ -4406,16 +4556,16 @@
       "severity": 1,
       "position_m": [
         146.846,
-        5.6,
+        5.61,
         12.872
       ],
       "surface_normal": [
-        -0.0,
+        0.0,
         1.0,
-        -0.0
+        0.0
       ],
       "host_surface": "GIRDER_WEB",
-      "host_object": "BR_GIRDER_004_G5",
+      "host_object": "BR_GIRDER_003_G5 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_A",
       "occlusion": 0.35,
@@ -4427,13 +4577,13 @@
       "repairable": false,
       "reason": "exposed reinforcement requires structural assessment",
       "representation": "GEOMETRY",
-      "surface_offset_mm": 2.0,
-      "visible_fraction": 0.918,
-      "occlusion_measured": 0.082,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 0.7377,
+      "occlusion_measured": 0.2623,
       "recommended_view_direction": [
         0.1278,
         0.9918,
-        -0.0
+        0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
       "best_view_clear_m": 25.0,
@@ -4451,12 +4601,14 @@
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.22,
       "detection_difficulty": "LEVEL_1",
-      "detection_difficulty_score": 0.238,
+      "detection_difficulty_score": 0.283,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.34566,
+      "min_detect_range_m": 58.3543,
+      "defect_background_contrast": 0.53098,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_REBAR_EXPOSED_003",
@@ -4512,9 +4664,11 @@
       "detection_difficulty_score": 0.493,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 34.1435,
       "defect_background_contrast": 0.02989,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_contrast"
     },
     {
       "defect_id": "DEFECT_REBAR_EXPOSED_004",
@@ -4544,8 +4698,8 @@
       "reason": "exposed reinforcement requires structural assessment",
       "representation": "GEOMETRY",
       "surface_offset_mm": 2.0,
-      "visible_fraction": 0.377,
-      "occlusion_measured": 0.623,
+      "visible_fraction": 0.2623,
+      "occlusion_measured": 0.7377,
       "recommended_view_direction": [
         -0.2207,
         -0.8374,
@@ -4567,12 +4721,14 @@
       "expected_lidar_max_range_m": 25.0,
       "illumination_prior": 0.06,
       "detection_difficulty": "LEVEL_2",
-      "detection_difficulty_score": 0.42,
+      "detection_difficulty_score": 0.449,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.14183,
+      "min_detect_range_m": 68.9077,
+      "defect_background_contrast": 0.05226,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_REBAR_EXPOSED_005",
@@ -4580,16 +4736,16 @@
       "severity": 1,
       "position_m": [
         145.824,
-        5.4,
+        5.39,
         13.313
       ],
       "surface_normal": [
-        -0.0,
+        0.0,
         -1.0,
-        -0.0
+        0.0
       ],
       "host_surface": "GIRDER_WEB",
-      "host_object": "BR_GIRDER_004_G5",
+      "host_object": "BR_GIRDER_003_G5 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_A",
       "occlusion": 0.35,
@@ -4601,36 +4757,38 @@
       "repairable": false,
       "reason": "exposed reinforcement requires structural assessment",
       "representation": "GEOMETRY",
-      "surface_offset_mm": 2.0,
-      "visible_fraction": 0.918,
-      "occlusion_measured": 0.082,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 0.623,
+      "occlusion_measured": 0.377,
       "recommended_view_direction": [
         -0.1278,
         -0.9918,
         0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 2.55,
+      "best_view_clear_m": 25.0,
       "feature_size_mm": 258.0,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 2.55,
+      "max_useful_range_m": 12.0,
       "expected_rgb_visibility": true,
-      "expected_rgb_max_range_m": 2.55,
+      "expected_rgb_max_range_m": 12.0,
       "rgb_width_measurable": true,
       "required_gsd_mm": 258.0,
-      "rgb_limited_by": "available clear standoff",
+      "rgb_limited_by": "sensor maximum useful range",
       "expected_depth_visibility": true,
       "expected_depth_max_range_m": 0.47,
       "expected_lidar_visibility": false,
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.22,
-      "detection_difficulty": "LEVEL_1",
-      "detection_difficulty_score": 0.238,
+      "detection_difficulty": "LEVEL_2",
+      "detection_difficulty_score": 0.312,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.33221,
+      "min_detect_range_m": 40.041,
+      "defect_background_contrast": 0.25195,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_001",
@@ -4686,9 +4844,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0087,
       "defect_background_contrast": 0.03334,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_002",
@@ -4744,9 +4904,11 @@
       "detection_difficulty_score": 0.522,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.1502,
       "defect_background_contrast": 0.02002,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_003",
@@ -4802,9 +4964,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0137,
       "defect_background_contrast": 0.13639,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_004",
@@ -4860,9 +5024,11 @@
       "detection_difficulty_score": 0.569,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.1051,
       "defect_background_contrast": 0.00017,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_005",
@@ -4918,9 +5084,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0087,
       "defect_background_contrast": 0.01468,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_006",
@@ -4976,9 +5144,11 @@
       "detection_difficulty_score": 0.509,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.1637,
       "defect_background_contrast": 0.00718,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_007",
@@ -5008,20 +5178,20 @@
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
       "surface_offset_mm": 6.0,
-      "visible_fraction": 0.0492,
-      "occlusion_measured": 0.9508,
+      "visible_fraction": 0.7213,
+      "occlusion_measured": 0.2787,
       "recommended_view_direction": [
-        0.2823,
-        0.0248,
-        0.959
+        0.0,
+        0.1278,
+        0.9918
       ],
-      "recommended_view_obliquity_deg": 16.5,
-      "best_view_clear_m": 2.0,
+      "recommended_view_obliquity_deg": 7.3,
+      "best_view_clear_m": 1.93,
       "feature_size_mm": 0.066,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 0.1,
+      "max_useful_range_m": 0.11,
       "expected_rgb_visibility": false,
-      "expected_rgb_max_range_m": 0.1,
+      "expected_rgb_max_range_m": 0.11,
       "rgb_width_measurable": false,
       "required_gsd_mm": 0.066,
       "rgb_limited_by": "sensor minimum focus range",
@@ -5034,9 +5204,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.01844,
+      "min_detect_range_m": 0.0102,
+      "defect_background_contrast": 0.09011,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_008",
@@ -5044,16 +5216,16 @@
       "severity": 2,
       "position_m": [
         145.805,
-        2.85,
+        2.86,
         12.729
       ],
       "surface_normal": [
-        -0.0,
+        0.0,
         1.0,
-        -0.0
+        0.0
       ],
       "host_surface": "GIRDER_WEB",
-      "host_object": "BR_GIRDER_004_G4",
+      "host_object": "BR_GIRDER_003_G4 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_A",
       "occlusion": 0.75,
@@ -5065,16 +5237,16 @@
       "reason": "within surface-repair envelope",
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
-      "surface_offset_mm": 6.0,
-      "visible_fraction": 0.918,
-      "occlusion_measured": 0.082,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 0.6885,
+      "occlusion_measured": 0.3115,
       "recommended_view_direction": [
         0.1278,
         0.9918,
-        -0.0
+        0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 2.55,
+      "best_view_clear_m": 1.92,
       "feature_size_mm": 0.532,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 0.85,
@@ -5089,12 +5261,14 @@
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.22,
       "detection_difficulty": "LEVEL_3",
-      "detection_difficulty_score": 0.525,
+      "detection_difficulty_score": 0.582,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.01117,
+      "min_detect_range_m": 0.0826,
+      "defect_background_contrast": 0.02008,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_009",
@@ -5102,16 +5276,16 @@
       "severity": 2,
       "position_m": [
         211.797,
-        5.6,
+        5.61,
         12.708
       ],
       "surface_normal": [
-        -0.0,
+        0.0,
         1.0,
-        -0.0
+        0.0
       ],
       "host_surface": "GIRDER_WEB",
-      "host_object": "BR_GIRDER_004_G5",
+      "host_object": "BR_GIRDER_003_G5 (UNVERIFIED)",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_C",
       "occlusion": 0.35,
@@ -5123,20 +5297,20 @@
       "reason": "within surface-repair envelope",
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
-      "surface_offset_mm": 6.0,
-      "visible_fraction": 0.918,
-      "occlusion_measured": 0.082,
+      "surface_offset_mm": -1.0,
+      "visible_fraction": 1.0,
+      "occlusion_measured": 0.0,
       "recommended_view_direction": [
         0.1278,
         0.9918,
-        -0.0
+        0.0
       ],
       "recommended_view_obliquity_deg": 7.3,
       "best_view_clear_m": 25.0,
       "feature_size_mm": 0.288,
       "min_inspection_range_m": 0.35,
       "max_useful_range_m": 0.46,
-      "expected_rgb_visibility": false,
+      "expected_rgb_visibility": true,
       "expected_rgb_max_range_m": 0.46,
       "rgb_width_measurable": false,
       "required_gsd_mm": 0.288,
@@ -5146,13 +5320,15 @@
       "expected_lidar_visibility": false,
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.22,
-      "detection_difficulty": "LEVEL_3",
-      "detection_difficulty_score": 0.526,
+      "detection_difficulty": "LEVEL_2",
+      "detection_difficulty_score": 0.506,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.04257,
+      "min_detect_range_m": 0.0447,
+      "defect_background_contrast": 0.24676,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_CORROSION_STAIN_010",
@@ -5208,9 +5384,11 @@
       "detection_difficulty_score": 0.582,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.088,
       "defect_background_contrast": 0.01245,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_JOINT_DETERIORATION_001",
@@ -5266,9 +5444,11 @@
       "detection_difficulty_score": 0.766,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0826,
       "defect_background_contrast": 0.07622,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_JOINT_DETERIORATION_002",
@@ -5324,9 +5504,11 @@
       "detection_difficulty_score": 0.713,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.2011,
+      "min_detect_range_m": 0.2804,
+      "defect_background_contrast": 0.20218,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_JOINT_DETERIORATION_003",
@@ -5382,9 +5564,11 @@
       "detection_difficulty_score": 0.706,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.1403,
       "defect_background_contrast": 0.02375,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": true
+      "contrast_limited": true,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_JOINT_DETERIORATION_004",
@@ -5393,7 +5577,7 @@
       "position_m": [
         225.08,
         5.5,
-        11.4375
+        11.4425
       ],
       "surface_normal": [
         0.0,
@@ -5401,7 +5585,7 @@
         1.0
       ],
       "host_surface": "BEARING_SEAT",
-      "host_object": "BR_BEARING_005_G5",
+      "host_object": "SDEFECT_BEARING_SEIZED_04",
       "bridge_section": "SECTION_02_RIVER_CROSSING",
       "inspection_sector": "SECTOR_C",
       "occlusion": 0.7,
@@ -5414,20 +5598,20 @@
       "depth_mm": 0.0,
       "representation": "SHADER_DECAL",
       "surface_offset_mm": 6.0,
-      "visible_fraction": 0.7705,
-      "occlusion_measured": 0.2295,
+      "visible_fraction": 0.9836,
+      "occlusion_measured": 0.0164,
       "recommended_view_direction": [
-        0.0,
-        0.1278,
-        0.9918
+        -0.1489,
+        -0.1625,
+        0.9754
       ],
-      "recommended_view_obliquity_deg": 7.3,
-      "best_view_clear_m": 1.14,
+      "recommended_view_obliquity_deg": 12.7,
+      "best_view_clear_m": 1.01,
       "feature_size_mm": 0.892,
       "min_inspection_range_m": 0.35,
-      "max_useful_range_m": 1.14,
+      "max_useful_range_m": 1.01,
       "expected_rgb_visibility": true,
-      "expected_rgb_max_range_m": 1.14,
+      "expected_rgb_max_range_m": 1.01,
       "rgb_width_measurable": true,
       "required_gsd_mm": 0.892,
       "rgb_limited_by": "available clear standoff",
@@ -5436,13 +5620,15 @@
       "expected_lidar_visibility": false,
       "expected_lidar_max_range_m": 0.0,
       "illumination_prior": 0.06,
-      "detection_difficulty": "LEVEL_3",
-      "detection_difficulty_score": 0.551,
+      "detection_difficulty": "LEVEL_2",
+      "detection_difficulty_score": 0.509,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.09275,
+      "min_detect_range_m": 0.1384,
+      "defect_background_contrast": 0.61246,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_JOINT_DETERIORATION_005",
@@ -5498,9 +5684,11 @@
       "detection_difficulty_score": 0.288,
       "recommended_sensor": "RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.219,
       "defect_background_contrast": 0.46135,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_JOINT_DETERIORATION_006",
@@ -5556,9 +5744,11 @@
       "detection_difficulty_score": 0.88,
       "recommended_sensor": "NONE",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
+      "min_detect_range_m": 0.0295,
       "defect_background_contrast": 0.00818,
       "expected_rgb_visibility_geometric": false,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "below_resolution"
     },
     {
       "defect_id": "DEFECT_REBAR_EXPOSED_006",
@@ -5614,9 +5804,11 @@
       "detection_difficulty_score": 0.0,
       "recommended_sensor": "DEPTH+RGB",
       "visibility_method": "61-direction hemisphere ray-cast to 25 m; a direction counts as open at 1.0 m clear. Illumination is a per-surface prior, NOT ray-traced.",
-      "defect_background_contrast": 0.09633,
+      "min_detect_range_m": 207.0336,
+      "defect_background_contrast": 0.09846,
       "expected_rgb_visibility_geometric": true,
-      "contrast_limited": false
+      "contrast_limited": false,
+      "escalation_reason": "none"
     }
   ]
 }

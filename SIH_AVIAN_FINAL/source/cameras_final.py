@@ -1,4 +1,5 @@
-"""SIH_AVIAN_FINAL -- the eight named pitch cameras (SPEC.md S6).
+"""SIH_AVIAN_FINAL -- the twelve named pitch cameras (SPEC.md S6, CAM_10-12
+added for the detection pass, SPEC S9).
 
 Reuses cameras_b.py's `_cam` helper unchanged (it takes explicit eye/target
 coordinates and has no REV-C-specific dependency), with this scene's own
@@ -10,6 +11,8 @@ metro.py at all.
 """
 from __future__ import annotations
 
+import bpy
+
 import cameras_b as CB
 import params_final as PF
 
@@ -18,10 +21,12 @@ METRO_DECK_TOP_Z = 19.0
 METRO_SOFFIT_APPROACH_Z = METRO_DECK_TOP_Z - 2.2   # 16.8, matches SPEC.md
 
 
-def build(coll, hero_pos=None, log=print):
-    """Build all 8 cameras. `hero_pos` is the hero defect's actual
+def build(coll, hero_pos=None, loose_bolt=None, log=print):
+    """Build all 12 cameras. `hero_pos` is the hero defect's actual
     post-ray-snap world position (x,y,z), read from the ground truth --
-    more accurate than recomputing the design position by hand."""
+    more accurate than recomputing the design position by hand.
+    `loose_bolt` is (position, normal) for a CERTIFIABLE-band BOLT_LOOSE
+    defect, for CAM_12's money shot."""
     cams = []
 
     # Off-centre in X on purpose: a dead-centre eye reads as a front
@@ -86,6 +91,46 @@ def build(coll, hero_pos=None, log=print):
         "CAM_09_BASE", (BF.BASE_X - 14.0, base_mid[1] - 10.0, 9.0),
         (base_mid[0], base_mid[1], 0.0), 28.0,
         "the drone base: both landing pads, cabin and mast", coll))
+
+    # ---- detection pass: the steel truss ---------------------------------
+    cams.append(CB._cam(
+        "CAM_10_TRUSS", (140.0, -55.0, 32.0), (180.0, 0.0, 16.5),
+        20.0, "the whole 90 m Warren truss main span, three-quarter from "
+        "the riverbank", coll))
+
+    gusset_ob = None
+    for name in (f"ST_GUSSET_S_TOP_{i:02d}" for i in (4, 3, 5, 2, 6)):
+        gusset_ob = bpy.data.objects.get(name)
+        if gusset_ob is not None:
+            break
+    if gusset_ob is not None:
+        verts = [gusset_ob.matrix_world @ v.co
+                for v in gusset_ob.data.vertices]
+        gx = sum(v.x for v in verts) / len(verts)
+        gy = sum(v.y for v in verts) / len(verts)
+        gz = sum(v.z for v in verts) / len(verts)
+    else:
+        gx, gy, gz = 180.0, -7.0, 21.0
+    cams.append(CB._cam(
+        "CAM_11_GUSSET", (gx - 0.3, gy - 2.6, gz + 0.4), (gx, gy, gz),
+        50.0, "a top-chord gusset plate close up, its full bolt pattern "
+        "and match marks legible", coll))
+
+    if loose_bolt is not None:
+        (lx, ly, lz), (nx, ny, nz) = loose_bolt
+    else:
+        lx, ly, lz = gx, gy, gz
+        nx, ny, nz = 0.0, 1.0, 0.0
+    # 0.6 m standoff, near-normal to the bolted face -- the gate's explicit
+    # test is whether the broken match-mark line reads clearly in THIS
+    # frame; everything else in the environment exists to make this shot
+    # possible, so it gets the tightest, most direct framing of any camera
+    # here.
+    eye = (lx + nx * 0.6, ly + ny * 0.6, lz + nz * 0.6)
+    cams.append(CB._cam(
+        "CAM_12_LOOSE_BOLT", eye, (lx, ly, lz), 85.0,
+        "money shot: a single loose bolt's broken torque match-mark line, "
+        "0.6 m standoff, near-normal", coll))
 
     log(f"  cameras : {len(cams)} named views")
     return cams

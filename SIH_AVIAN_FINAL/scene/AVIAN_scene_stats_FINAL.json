@@ -13,7 +13,7 @@
     "water_turbidity": true,
     "water_flow": true
   },
-  "materials": 43,
+  "materials": 50,
   "terrain": {
     "rocks": 23,
     "debris": 8,
@@ -24,6 +24,23 @@
     "spans": 7,
     "piers": 8,
     "objects": 216
+  },
+  "main_span_removed": 23,
+  "steel": {
+    "members": 108,
+    "panels": 8,
+    "air_draft_m": 13.55
+  },
+  "fasteners_pass1": {
+    "count": 1200,
+    "objects": 4894
+  },
+  "fasteners": {
+    "count": 1200,
+    "objects": 4870
+  },
+  "steel_damage": {
+    "defects": 76
   },
   "metro": {
     "piers": 11,
@@ -83,8 +100,8 @@
   "visibility": {
     "difficulty": {
       "LEVEL_1": 21,
-      "LEVEL_2": 25,
-      "LEVEL_3": 16,
+      "LEVEL_2": 28,
+      "LEVEL_3": 13,
       "LEVEL_4": 34
     },
     "unobservable": 32
@@ -97,6 +114,15 @@
       "LEVEL_4": 8
     },
     "unobservable": 6
+  },
+  "steel_visibility": {
+    "difficulty": {
+      "LEVEL_1": 11,
+      "LEVEL_2": 30,
+      "LEVEL_3": 16,
+      "LEVEL_4": 19
+    },
+    "unobservable": 8
   },
   "vehicles": {
     "vehicles": {
@@ -128,482 +154,22 @@
       ]
     }
   },
+  "condition_gradient": {
+    "road_and_steel_members": 391,
+    "road_condition": "POOR",
+    "road_age_years": 40,
+    "metro_members": 263,
+    "metro_condition": "GOOD",
+    "metro_age_years": 5
+  },
   "scene": {
-    "objects": 1514,
-    "triangles": 60206,
-    "materials": 122,
-    "collections": 19
+    "objects": 6502,
+    "triangles": 167044,
+    "materials": 134,
+    "collections": 21,
+    "triangles_before_steel": 22508,
+    "triangles_after_steel": 167044,
+    "triangles_added_by_steel_pass": 144536
   },
-  "contrast": {
-    "measured": 96,
-    "skipped": 0,
-    "mean_contrast": 0.09684,
-    "contrast_limited": 27,
-    "contrast_limited_ids": [
-      "DEFECT_CRACK_HAIRLINE_005",
-      "DEFECT_CRACK_HAIRLINE_006",
-      "DEFECT_CRACK_HAIRLINE_016",
-      "DEFECT_CRACK_LONGITUDINAL_002",
-      "DEFECT_CRACK_LONGITUDINAL_003",
-      "DEFECT_CRACK_LONGITUDINAL_004",
-      "DEFECT_CRACK_LONGITUDINAL_005",
-      "DEFECT_CRACK_LONGITUDINAL_010",
-      "DEFECT_CRACK_LONGITUDINAL_012",
-      "DEFECT_CRACK_TRANSVERSE_003",
-      "DEFECT_CRACK_TRANSVERSE_004",
-      "DEFECT_CRACK_TRANSVERSE_009",
-      "DEFECT_CRACK_TRANSVERSE_010",
-      "DEFECT_CRACK_NETWORK_003",
-      "DEFECT_DELAMINATION_001",
-      "DEFECT_DELAMINATION_003",
-      "DEFECT_DELAMINATION_004",
-      "DEFECT_DELAMINATION_005",
-      "DEFECT_DELAMINATION_007",
-      "DEFECT_REBAR_EXPOSED_003",
-      "DEFECT_CORROSION_STAIN_002",
-      "DEFECT_CORROSION_STAIN_004",
-      "DEFECT_CORROSION_STAIN_006",
-      "DEFECT_CORROSION_STAIN_008",
-      "DEFECT_CORROSION_STAIN_009",
-      "DEFECT_CORROSION_STAIN_010",
-      "DEFECT_JOINT_DETERIORATION_003"
-    ],
-    "threshold_michelson": 0.05,
-    "weather_strength": "1.00",
-    "wall_s": 57.7
-  },
-  "metro_contrast": {
-    "measured": 20,
-    "skipped": 0,
-    "mean_contrast": 0.10306,
-    "contrast_limited": 9,
-    "contrast_limited_ids": [
-      "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_003",
-      "MDEFECT_EFFLORESCENCE_JOINT_005",
-      "MDEFECT_INTERNAL_SOFFIT_CRACK_008",
-      "MDEFECT_INTERNAL_SOFFIT_CRACK_009",
-      "MDEFECT_INTERNAL_SOFFIT_CRACK_010",
-      "MDEFECT_WEB_SHEAR_CRACK_012",
-      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_014",
-      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_015",
-      "MDEFECT_SOFFIT_TRANSVERSE_CRACK_016"
-    ],
-    "threshold_michelson": 0.05,
-    "weather_strength": "metro 1.00",
-    "wall_s": 11.5
-  },
-  "baseline_frozen_this_run": false,
-  "validation": {
-    "pass": 27,
-    "fail": 0,
-    "skip": 0,
-    "total": 27
-  },
-  "validation_detail": [
-    {
-      "id": "VF01",
-      "check": "road deck width",
-      "status": "PASS",
-      "measured": "14.00 m",
-      "limit": "14.0 m +/- 0.05",
-      "detail": "BR_DECK_SLAB_001",
-      "offenders": []
-    },
-    {
-      "id": "VF02",
-      "check": "corridor length (deck extent)",
-      "status": "PASS",
-      "measured": "360.00 m (0.00 .. 360.00)",
-      "limit": "360 m +/- 1.0",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF03",
-      "check": "span/depth ratio in a buildable range",
-      "status": "PASS",
-      "measured": "45m/1=28.1, 90m/1=36.0",
-      "limit": "12 - 45",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF04",
-      "check": "ground objects on terrain height",
-      "status": "PASS",
-      "measured": "max |dz| 0.967 m over 51 objects",
-      "limit": "1.20 m",
-      "detail": "ENV_RIPRAP_023",
-      "offenders": []
-    },
-    {
-      "id": "VF05",
-      "check": "no pier inside the navigation channel",
-      "status": "PASS",
-      "measured": "0 offending piers",
-      "limit": "0",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF06",
-      "check": "road bridge air draft over the channel",
-      "status": "PASS",
-      "measured": "13.78 m",
-      "limit": ">= 12.0 m",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF07",
-      "check": "metro air draft over the channel",
-      "status": "PASS",
-      "measured": "17.80 m",
-      "limit": ">= 12.0 m",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF08",
-      "check": "unique object names",
-      "status": "PASS",
-      "measured": "1523 objects, 0 duplicate names",
-      "limit": "0",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF09",
-      "check": "polygon budget",
-      "status": "PASS",
-      "measured": "60,206 triangles",
-      "limit": "<= 2,000,000",
-      "detail": "generous vs REV-C's raised 15M ceiling -- this corridor is two orders of magnitude smaller",
-      "offenders": []
-    },
-    {
-      "id": "VF10",
-      "check": "camera far clip covers the corridor",
-      "status": "PASS",
-      "measured": "9 cameras, 0 with clip_end<500m",
-      "limit": ">= 500 m clip_end, 9 cameras present",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF10b",
-      "check": "all 9 named cameras exist",
-      "status": "PASS",
-      "measured": "9 CAM_ objects",
-      "limit": "9",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF11",
-      "check": "defects resolved to a real host surface",
-      "status": "PASS",
-      "measured": "1/96 orphans (1.0%)",
-      "limit": "<= 5% orphans",
-      "detail": "DEFECT_DELAMINATION_007",
-      "offenders": []
-    },
-    {
-      "id": "VF12",
-      "check": "road ground truth field completeness",
-      "status": "PASS",
-      "measured": "43 common fields + 1 type-specific x 96 records",
-      "limit": "identical common fields, exactly one of length_m/radius_m each",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF12b",
-      "check": "metro ground truth field completeness",
-      "status": "PASS",
-      "measured": "47 common fields + 1 type-specific x 20 records",
-      "limit": "identical common fields, exactly one of length_m/radius_m each",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF13",
-      "check": "road defect count matches SPEC.md",
-      "status": "PASS",
-      "measured": "96",
-      "limit": "96",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF13b",
-      "check": "defect counts by type match SPEC.md",
-      "status": "PASS",
-      "measured": "{'CRACK_HAIRLINE': 24, 'CRACK_LONGITUDINAL': 12, 'CRACK_TRANSVERSE': 10, 'CRACK_NETWORK': 8, 'SPALL': 12, 'DELAMINATION': 8, 'REBAR_EXPOSED': 6, 'CORROSION_STAIN': 10, 'JOINT_DETERIORATION': 6}",
-      "limit": "{'CRACK_HAIRLINE': 24, 'CRACK_LONGITUDINAL': 12, 'CRACK_TRANSVERSE': 10, 'CRACK_NETWORK': 8, 'SPALL': 12, 'DELAMINATION': 8, 'REBAR_EXPOSED': 6, 'CORROSION_STAIN': 10, 'JOINT_DETERIORATION': 6}",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF14",
-      "check": "road and metro structures do not overlap",
-      "status": "PASS",
-      "measured": "0 overlapping bbox pairs (216 BR_ x 263 MB_)",
-      "limit": "0",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF15",
-      "check": "inter-structure corridor clear of structure",
-      "status": "PASS",
-      "measured": "14.70 m clear (BR_ max y=9.00, MB_ min y=23.70)",
-      "limit": ">= 4.0 m",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF16",
-      "check": "every MB_ member carries avi_kind",
-      "status": "PASS",
-      "measured": "263/263 classified",
-      "limit": "100%",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF17",
-      "check": "hero defect present and correctly tagged",
-      "status": "PASS",
-      "measured": "1 tagged avi_hero=True",
-      "limit": "1, type REBAR_EXPOSED, host PIER_COLUMN",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF18",
-      "check": "baseline drift (road defects)",
-      "status": "PASS",
-      "measured": "0 added, 0 removed, 0.000 mm drift",
-      "limit": "0 added, 0 removed, <= 1.0 mm",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF19",
-      "check": "both landing pads exist",
-      "status": "PASS",
-      "measured": "2 pad objects",
-      "limit": "2",
-      "detail": "AVI_BASE_REPAIRER, AVI_BASE_SCANNER",
-      "offenders": []
-    },
-    {
-      "id": "VF20",
-      "check": "landing pads carry avi_kind/role/centre tags",
-      "status": "PASS",
-      "measured": "2/2 pads clean",
-      "limit": "avi_kind=landing_pad, avi_base_role set, centre accurate",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF21",
-      "check": "landing pads sit on terrain height",
-      "status": "PASS",
-      "measured": "max |dz| 0.0000 m",
-      "limit": "<= 0.05 m (placed directly from terrain_final.height())",
-      "detail": "AVI_BASE_SCANNER",
-      "offenders": []
-    },
-    {
-      "id": "VF22",
-      "check": "landing pads reach the collision export",
-      "status": "PASS",
-      "measured": "2 landing_pad primitives of 483 total",
-      "limit": ">= 2 (one per pad)",
-      "detail": "the trap: AVI_HOME_* would be excluded by name; these are classified by avi_kind=landing_pad",
-      "offenders": []
-    },
-    {
-      "id": "VF26",
-      "check": "every SDF visual carries a material block",
-      "status": "PASS",
-      "measured": "772/772 visuals have a <material>",
-      "limit": "100%",
-      "detail": "",
-      "offenders": []
-    },
-    {
-      "id": "VF27",
-      "check": "world has more than one distinct colour",
-      "status": "PASS",
-      "measured": "26 distinct diffuse colours",
-      "limit": ">= 8",
-      "detail": "VF26 alone would pass even if every material resolved to the same fallback grey",
-      "offenders": []
-    }
-  ],
-  "sabotage": {
-    "total": 22,
-    "proven": 22,
-    "unproven": [],
-    "rows": [
-      {
-        "check": "VF01",
-        "sabotage": "shrink a deck slab's width",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF02",
-        "sabotage": "move the north abutment 500 m away",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF03",
-        "sabotage": "collapse the main-span girder depth to 5 cm",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF04",
-        "sabotage": "lift a riprap block 5 m off the ground",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF05",
-        "sabotage": "move a pier into the navigation channel",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF06_07",
-        "sabotage": "raise the river water 12 m above the deck",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF09",
-        "sabotage": "report an impossible triangle count",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF10",
-        "sabotage": "shrink a camera's far clip to 10 m",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF11",
-        "sabotage": "blank 10 defects' surface_offset_mm",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF12",
-        "sabotage": "remove a required field from a road defect record",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF13",
-        "sabotage": "delete a road defect record",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF14",
-        "sabotage": "move a metro pier onto a road pier",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF15",
-        "sabotage": "push a metro pier into the inter-structure gap",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF16",
-        "sabotage": "strip avi_kind off a metro pier column",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF17",
-        "sabotage": "strip the avi_hero tag off the hero defect",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF18",
-        "sabotage": "shift a defect 5 m off its baseline position",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF19",
-        "sabotage": "rename a landing pad out from under its expected name",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF20",
-        "sabotage": "corrupt a landing pad's avi_base_role tag",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF21",
-        "sabotage": "lift a landing pad 2 m off the terrain",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF22",
-        "sabotage": "strip landing_pad primitives from the exported collision JSON",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF26",
-        "sabotage": "strip all <material> blocks from one exported model.sdf",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      },
-      {
-        "check": "VF27",
-        "sabotage": "force every exported <diffuse> to the same grey",
-        "before": "PASS",
-        "after": "FAIL",
-        "proven": true
-      }
-    ]
-  },
-  "wall_s_phase2": 71.4
+  "wall_s": 27.9
 }

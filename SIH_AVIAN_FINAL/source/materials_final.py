@@ -115,7 +115,8 @@ def train_bogie(name="MAT_TRAIN_BOGIE"):
 # piers only (x=135, x=225 -- both structures). SPEC.md: "Waterline staining
 # on every pier that meets water".
 # ===========================================================================
-def waterline_stain(name="MAT_CONCRETE_PIER_WATERLINE", water_z=-2.0):
+def waterline_stain(name="MAT_CONCRETE_PIER_WATERLINE", water_z=-2.0,
+                    base_name="MAT_CONCRETE_PIER"):
     """A dedicated variant of MAT_CONCRETE_PIER for the river-adjacent piers.
 
     Object-space Z on these columns IS world Z (meshlib bakes the centre
@@ -124,11 +125,16 @@ def waterline_stain(name="MAT_CONCRETE_PIER_WATERLINE", water_z=-2.0):
     Dark algae right at the waterline, a pale efflorescence bloom just
     above it (the classic tide-line bleach ring), fading back to plain
     concrete by ~2 m above the water.
+
+    `base_name` lets the condition gradient (detection pass, SPEC S6) build
+    a SEPARATE metro variant from METRO's own low-weathered concrete copy
+    rather than the road's, so a GOOD-condition metro pier does not inherit
+    the road's POOR-condition staining intensity.
     """
     existing = bpy.data.materials.get(name)
     if existing is not None:
         return existing
-    base = bpy.data.materials.get("MAT_CONCRETE_PIER")
+    base = bpy.data.materials.get(base_name)
     if base is None:
         return None
     mat = base.copy()
@@ -206,12 +212,20 @@ def waterline_stain(name="MAT_CONCRETE_PIER_WATERLINE", water_z=-2.0):
     return mat
 
 
-def apply_waterline_staining(pier_name_prefixes, log=print):
-    """Swap MAT_CONCRETE_PIER_WATERLINE onto every mesh whose name starts
-    with one of the given prefixes (the river-adjacent pier columns)."""
-    mat = waterline_stain()
+def apply_waterline_staining(pier_name_prefixes, log=print,
+                             name="MAT_CONCRETE_PIER_WATERLINE",
+                             base_name="MAT_CONCRETE_PIER"):
+    """Swap a waterline-stain variant onto every mesh whose name starts with
+    one of the given prefixes (the river-adjacent pier columns).
+
+    `base_name`/`name` let the condition gradient (SPEC S6) build a SEPARATE
+    metro stain from metro's own low-weathered `_METRO` pier material copy,
+    so a GOOD-condition metro pier's waterline band is not the road's
+    POOR-condition intensity."""
+    mat = waterline_stain(name=name, base_name=base_name)
     if mat is None:
-        log("  stain   : SKIPPED, MAT_CONCRETE_PIER_WATERLINE could not be built")
+        log(f"  stain   : SKIPPED, {name} could not be built "
+            f"(base {base_name} missing)")
         return 0
     n = 0
     for ob in bpy.data.objects:
@@ -220,11 +234,71 @@ def apply_waterline_staining(pier_name_prefixes, log=print):
         if not ob.data.materials:
             continue
         for i in range(len(ob.data.materials)):
-            if ob.data.materials[i] and ob.data.materials[i].name == "MAT_CONCRETE_PIER":
+            if ob.data.materials[i] and ob.data.materials[i].name == base_name:
                 ob.data.materials[i] = mat
         n += 1
-    log(f"  stain   : waterline staining applied to {n} pier columns")
+    log(f"  stain   : waterline staining ({name}) applied to {n} pier columns")
     return n
+
+
+# ===========================================================================
+# DETECTION PASS -- steel truss structural / gusset / bolt materials
+# ===========================================================================
+def steel_struct(name="MAT_STEEL_STRUCT"):
+    """Primary structural steel -- chords, verticals, diagonals, bracing,
+    floor beams, stringers. A shade lighter than MAT_STEEL_DARK (used for
+    small fittings) so the truss itself reads distinctly in-frame."""
+    return MAT.steel(name, (0.40, 0.41, 0.43), 0.48)
+
+
+def steel_gusset(name="MAT_STEEL_GUSSET"):
+    """Gusset plates -- flat mild steel, slightly rougher (mill-finish, not
+    the primary members' shop-painted surface)."""
+    return MAT.steel(name, (0.36, 0.37, 0.38), 0.58)
+
+
+def steel_bolt(name="MAT_STEEL_BOLT"):
+    """Bolt heads and washers -- darker, more specular than the structure
+    they fasten, so a torqued nut reads as its own component in a close-up
+    render (needed for CAM_11_GUSSET / CAM_12_LOOSE_BOLT to be legible)."""
+    return MAT.steel(name, (0.24, 0.24, 0.26), 0.35)
+
+
+def weld_crack_mat(name="MAT_WELD_CRACK"):
+    """Near-black hairline decal -- WELD_CRACK's own material, distinct
+    from the general-purpose dark steel used elsewhere so a weld crack
+    reads as a genuine break in the seam rather than a shadow."""
+    return _flat(name, (0.02, 0.018, 0.018), 0.65)
+
+
+def rust_patch_mat(name="MAT_STEEL_RUST_PATCH"):
+    """SECTION_LOSS / BEARING_SEIZED decal -- heavier corrosion than
+    COATING_FAILURE's early-stage tint."""
+    return _flat(name, (0.30, 0.14, 0.05), 0.85)
+
+
+def coating_failure_mat(name="MAT_STEEL_COATING_FAILURE"):
+    """COATING_FAILURE decal -- lighter, early-stage rust bloom through a
+    failed paint film, not yet the heavier scale of SECTION_LOSS."""
+    return _flat(name, (0.46, 0.29, 0.11), 0.70)
+
+
+def steel_bolt_corroded(name="MAT_STEEL_BOLT_CORRODED"):
+    """BOLT_CORRODED defects: rust-brown, low metallic, rough -- applied as
+    a per-OBJECT material-slot override on specific nut/washer instances
+    (they share a linked-duplicate mesh with every sound bolt, so a DATA-
+    level material change would recolour all ~1,200 of them)."""
+    m, fresh = MAT._new(name)
+    if not fresh:
+        return m
+    nt = m.node_tree
+    b = MAT._bsdf(nt, -200, 0)
+    b.inputs["Base Color"].default_value = (0.32, 0.16, 0.07, 1.0)
+    b.inputs["Roughness"].default_value = 0.85
+    b.inputs["Metallic"].default_value = 0.15
+    o = MAT._out(nt)
+    nt.links.new(b.outputs["BSDF"], o.inputs["Surface"])
+    return m
 
 
 # ===========================================================================

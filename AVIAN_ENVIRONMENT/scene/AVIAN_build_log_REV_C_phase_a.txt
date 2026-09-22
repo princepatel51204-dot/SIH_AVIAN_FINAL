@@ -7,10 +7,10 @@ BUILD  (REV-B, upgrade of REV-A -- geometry generators unchanged)
   river   : 620 m wide, water z=-2.0, 260 rocks, 877 bank plants
   roads   : 1261 objects, 13 cross streets, 32 longitudinal, 2 ramps, 139 lighting columns
   city    : 680 buildings (158 high-rise), 2048 trees, 1024 street lights, 318 vehicles
-           (1.4 s)
+           (1.6 s)
   sites   : 679 engineering-plausible candidate locations
   carve   : 26 cavities cut into 24 members
-  damage  : 192 defects in 212 objects (14.7 s)
+  damage  : 192 defects in 212 objects (18.3 s)
   sun     : 52 deg elevation, 145 deg azimuth, 6.0 W/m2
   sky     : Nishita, disc off, ambient 1.0
   sectors : 6 x 150 m (1650 - 2550)
@@ -31,12 +31,12 @@ REV-B
   graph   : 124 nodes, 136 traversable edges
   cam-B   : 5 additional cameras (08-12)
   visible : LEVEL_1=51, LEVEL_2=54, LEVEL_3=23, LEVEL_4=64; 64 observable by no modality
-  visible : computed in 120.3 s and cached (gate run)
-           (120.4 s)
+  visible : computed in 319.5 s and cached (gate run)
+           (319.6 s)
   indices : 192 defect, 2055 structural, 138 dynamic instance IDs
   passes  : 6 render passes enabled
   scenario: BASELINE (lighting=DAY_CLEAR, weather=CLEAR, uav=1, gps=NORMAL); 53 materials retuned
-  total   : 185.6 s, 13835 objects
+  total   : 407.8 s, 13835 objects
 
 REV-C Stage 2 (metro viaduct)
   station : 9 members, x 2240-2320, roof z=42.0 (13.0 m under the ceiling)
@@ -58,4 +58,4 @@ REV-C Stage 1 (materials, colour, micro-detail)
   visible : LEVEL_1=9, LEVEL_2=27, LEVEL_3=0, LEVEL_4=24; 13 observable by no modality
   saved   : AVIAN_SIC_REV_C.blend (74.8 MB)
   handoff : 192 road + 60 metro records -> _handoff_phase_a.json
-  phase A : 216.4 s, 14656 objects
+  phase A : 504.1 s, 14656 objects

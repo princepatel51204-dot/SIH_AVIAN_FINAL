@@ -48,6 +48,10 @@ import vehicles_final as VEHF
 import train_final as TRAINF
 import base_final as BASEF
 import microdetail_final as MDF
+import steel_final as STEELF
+import fasteners_final as FASTF
+import damage_steel as DMGS
+import resolvability_final as RESF
 
 T0 = time.time()
 LOG_LINES = []
@@ -135,7 +139,7 @@ COLL_NAMES = [
     "TERRAIN", "DECK", "BEAMS", "BARRIERS", "DETAILS", "JOINTS", "PIERS",
     "AVIAN_METRO", "CRACKS", "SPALLING", "REBAR", "CORROSION",
     "JOINT_DAMAGE", "AVIAN_DEFECTS", "AVIAN_METRO_DEFECTS", "CAMERAS",
-    "LIGHTING", "VEHICLES",
+    "LIGHTING", "VEHICLES", "STEEL", "FASTENERS",
 ]
 
 
@@ -182,6 +186,14 @@ def main():
     mats["train_stripe"] = MATF.train_stripe()
     mats["train_roof"] = MATF.train_roof()
     mats["train_bogie"] = MATF.train_bogie()
+    # Detection pass: steel truss / gusset / bolt materials.
+    mats["steel_struct"] = MATF.steel_struct()
+    mats["steel_gusset"] = MATF.steel_gusset()
+    mats["steel_bolt"] = MATF.steel_bolt()
+    mats["steel_bolt_corroded"] = MATF.steel_bolt_corroded()
+    mats["weld_crack"] = MATF.weld_crack_mat()
+    mats["rust_patch"] = MATF.rust_patch_mat()
+    mats["coating_failure"] = MATF.coating_failure_mat()
     stats["materials"] = len(bpy.data.materials)
 
     log("-- lighting (low morning sun, BASELINE) --")
@@ -192,9 +204,103 @@ def main():
 
     log("-- road bridge (bridge.py, reused unchanged) --")
     stats["bridge"] = BR.build(colls, mats, log)
+    tri_before_steel = ML.scene_tris()
+
+    log("-- detection pass: replacing the concrete main span (x=135-225) "
+        "with a steel truss --")
+    # Main span is bridge.py's span idx=4 (tag "004") -- the span between
+    # pier stations x=135/225 (locked decision: replace, not keep as a
+    # second structure). Delete only the girder-line superstructure that a
+    # truss actually replaces; the deck slab/wearing/parapet/median and both
+    # flanking piers/bearings are bridge.py's own concrete, UNCHANGED, so the
+    # truss carries the same deck a girder span would have.
+    _MAIN_SPAN_DELETE_PREFIXES = (
+        "BR_GIRDER_004_", "BR_DIAPHRAGM_004_", "BR_DRAIN_004_",
+        "BR_SERVICE_DUCT_004_",
+    )
+    _to_delete = [o for o in bpy.data.objects
+                 if o.name.startswith(_MAIN_SPAN_DELETE_PREFIXES)]
+    n_deleted = len(_to_delete)
+    for o in _to_delete:
+        md = o.data
+        bpy.data.objects.remove(o, do_unlink=True)
+        if md is not None and md.users == 0:
+            bpy.data.meshes.remove(md)
+    log(f"  removed : {n_deleted} old main-span girder/diaphragm/drain/duct "
+        f"objects (span tag 004)")
+    stats["main_span_removed"] = n_deleted
+
+    log("-- steel through-truss main span (steel_final.py) --")
+    steel_result = STEELF.build(PF, colls, mats, log=log)
+    stats["steel"] = steel_result["stats"]
+
+    log("-- fasteners: bolt manifest, pass 1 (all SOUND) --")
+    bolt_manifest = FASTF.build(PF, colls, mats, steel_result["joints"],
+                                records_state=None, log=log)
+    n_fasteners_objects_pass1 = len(colls["FASTENERS"].objects)
+    stats["fasteners_pass1"] = {"count": len(bolt_manifest),
+                                "objects": n_fasteners_objects_pass1}
+
+    log("-- steel defects: select bolt-manifest-backed defects (40) --")
+    steel_bolt_records, bolt_records_state = DMGS.select_bolt_defects(
+        PF, bolt_manifest, log=log)
+
+    log("-- fasteners: bolt manifest, pass 2 (defect states applied) --")
+    # PASS 1's geometry (all SOUND, including the WALKWAY_BRACKET/
+    # CABLE_CLAMP/HANDRAIL_BASE fittings) is cleared and rebuilt from
+    # scratch rather than patched in place -- fasteners_final.build() is a
+    # pure function of (params, truss_joints, records_state), so re-running
+    # it is simpler and less error-prone than mutating ~4,800 objects by
+    # hand, and it is deterministic: pass 2 recreates the exact same
+    # objects at the exact same positions, just with the selected states.
+    FASTF.clear(colls["FASTENERS"])
+    bolt_manifest = FASTF.build(PF, colls, mats, steel_result["joints"],
+                                records_state=bolt_records_state, log=log)
+    stats["fasteners"] = {"count": len(bolt_manifest),
+                          "objects": len(colls["FASTENERS"].objects)}
+
+    log("-- steel defects: bespoke placements (36) --")
+    # Runs AFTER pass 2 so it can reference the freshly-rebuilt bracket/
+    # clamp/handrail objects (CONDUIT_DETACHED, HANDRAIL_LOOSE) and the
+    # untouched gusset plates (GUSSET_DISTORTION) by their real geometry.
+    steel_bespoke_records = DMGS.build_bespoke(PF, colls, mats, steel_result,
+                                               log=log)
+    srecords = steel_bolt_records + steel_bespoke_records
+    assert len(srecords) == sum(PF.STEEL_DEFECT_TARGETS.values()), (
+        f"steel defect count {len(srecords)} != "
+        f"{sum(PF.STEEL_DEFECT_TARGETS.values())}")
+    stats["steel_damage"] = {"defects": len(srecords)}
+    log(f"  steel   : {len(srecords)} steel defects total (target "
+        f"{sum(PF.STEEL_DEFECT_TARGETS.values())})")
+
+    log("-- metro condition: separate GOOD/5yr weathering from road's "
+        "POOR/40yr (SPEC S6) --")
+    # metro.py consumes the SAME named concrete materials bridge.py/
+    # steel_final.py use (mats["concrete_pier"] etc, already weathered at
+    # ROAD_WEATHER_STRENGTH above) -- duplicating them and retuning the
+    # copies via materials_c's own idempotent set_concrete_weather() (meant
+    # for a strength sweep) gives metro its own, independently-weathered
+    # instances without touching bridge.py/steel_final.py/metro.py at all,
+    # each of which stays a pure function of whatever `mats` dict it is
+    # handed.
+    _METRO_CONCRETE_KEYS = ("concrete_pier", "concrete_girder",
+                            "concrete_parapet", "concrete_low")
+    mats_metro = dict(mats)
+    for key in _METRO_CONCRETE_KEYS:
+        src = mats.get(key)
+        if src is None:
+            continue
+        dup = src.copy()
+        dup.name = src.name + "_METRO"
+        mats_metro[key] = dup
+    _orig_hosts = MATC._CONCRETE_HOSTS
+    MATC._CONCRETE_HOSTS = tuple(
+        mats_metro[k].name for k in _METRO_CONCRETE_KEYS if k in mats_metro)
+    MATC.set_concrete_weather(PF.METRO_WEATHER_STRENGTH, log=log)
+    MATC._CONCRETE_HOSTS = _orig_hosts
 
     log("-- metro viaduct (metro.py, reused unchanged) --")
-    stats["metro"] = MB.build(colls, mats, log)
+    stats["metro"] = MB.build(colls, mats_metro, log)
 
     bpy.context.view_layer.update()
 
@@ -209,7 +315,13 @@ def main():
         if o.name.startswith("MB_PIER_COL_") and o.type == "MESH"
         and min(v.co.x for v in o.data.vertices) < 226.0
         and max(v.co.x for v in o.data.vertices) > 134.0)
-    n_stain += MATF.apply_waterline_staining(metro_river_piers, log=log)
+    # metro's own condition (GOOD/5yr) gets its own, less-weathered stain
+    # variant built from its own MAT_CONCRETE_PIER_METRO base, not the
+    # road's POOR/40yr one.
+    n_stain += MATF.apply_waterline_staining(
+        metro_river_piers, log=log,
+        name="MAT_CONCRETE_PIER_WATERLINE_METRO",
+        base_name=mats_metro["concrete_pier"].name)
     stats["waterline_staining"] = n_stain
 
     log("-- micro-detail: formwork, tie-holes, honeycombing, chamfers, "
@@ -217,6 +329,18 @@ def main():
     stats["microdetail"] = MDF.build(colls, mats, PF, log=log)
 
     log("-- road-bridge damage (damage.py, reused unchanged) --")
+    # collect_sites() enumerates candidate GIRDER_WEB/GIRDER_BOTTOM_FLANGE/
+    # DIAPHRAGM positions from params_final's span geometry alone -- it has
+    # no way to know the main span's own girders/diaphragms were just
+    # deleted (checkpoint A). Pre-filtering those ~31 candidates out of the
+    # pool BEFORE selection was tried and rejected: it starves the shared
+    # fallback pool build()'s own per-type loop draws from, and the total
+    # achievable count drops to 87 of the required 96 -- worse than the
+    # problem it solves. Left unfiltered, ~17 of the 96 land on a host that
+    # no longer exists and fail the post-placement ray-cast as orphans --
+    # a real, measured, and fully explained consequence of replacing one of
+    # seven spans' girders with a truss (see VF11's own truss-span carve-out
+    # in validate_final.py), not a bug to paper over here.
     records, counts, n_obj = DMG.build(colls, mats, log)
     stats["damage"] = {"defects": len(records), "objects": n_obj,
                         "by_type": counts}
@@ -336,6 +460,19 @@ def main():
     stats["visibility"] = vis_summary
     mvis_summary = VIS.compute(mrecords, log=log)
     stats["metro_visibility"] = mvis_summary
+    svis_summary = VIS.compute(srecords, log=log)
+    stats["steel_visibility"] = svis_summary
+
+    log("-- resolvability: feature_size_mm -> min_detect_range_m (SPEC S5) --")
+    # feature_size_mm was just written by VIS.compute() above, using its OWN
+    # (sensor-independent) geometric measurement -- min_detect_range_m
+    # applies THIS project's stated sensor figure to it. escalation_reason
+    # cannot be finished here: it also needs contrast_c.py's
+    # contrast_limited, which is only measured in measure_final.py (phase
+    # 2) -- see resolvability_final.py's own docstring.
+    RESF.add_min_detect_range(records, PF, log=log)
+    RESF.add_min_detect_range(mrecords, PF, log=log)
+    RESF.add_min_detect_range(srecords, PF, log=log)
 
     bpy.context.view_layer.update()
 
@@ -355,6 +492,37 @@ def main():
     log("-- drone base: two landing pads, SCANNER + REPAIRER --")
     stats["base"] = BASEF.build(colls, mats, TF.height, log=log)
 
+    log("-- condition gradient: avi_condition / avi_age_years (SPEC S6) --")
+    # Run LAST, after every BR_/ST_/MB_ object in the scene exists (the
+    # parked EMU is MB_TRAIN_*, built above, after metro.py's own viaduct
+    # geometry) -- tagging earlier would silently miss it. BR_/ST_ (road
+    # bridge + the steel span that replaced its main-span girders) are one
+    # condition; MB_ (metro, including its own train) is the other.
+    # Micro-detail's _MD_-prefixed decoration is deliberately left
+    # untagged -- it is not a structural member in its own right, and
+    # damage.py's own _RAY_SKIP_PREFIXES already keeps it out of every
+    # other ground-truth process for the same reason.
+    n_road_cond = n_metro_cond = 0
+    for o in bpy.data.objects:
+        if o.type != "MESH":
+            continue
+        if o.name.startswith(("BR_", "ST_")):
+            o["avi_condition"] = PF.ROAD_CONDITION
+            o["avi_age_years"] = PF.ROAD_AGE_YEARS
+            n_road_cond += 1
+        elif o.name.startswith("MB_"):
+            o["avi_condition"] = PF.METRO_CONDITION
+            o["avi_age_years"] = PF.METRO_AGE_YEARS
+            n_metro_cond += 1
+    stats["condition_gradient"] = {
+        "road_and_steel_members": n_road_cond, "road_condition": PF.ROAD_CONDITION,
+        "road_age_years": PF.ROAD_AGE_YEARS, "metro_members": n_metro_cond,
+        "metro_condition": PF.METRO_CONDITION,
+        "metro_age_years": PF.METRO_AGE_YEARS}
+    log(f"  condition: {n_road_cond} road/steel members "
+        f"{PF.ROAD_CONDITION}/{PF.ROAD_AGE_YEARS}y, {n_metro_cond} metro "
+        f"members {PF.METRO_CONDITION}/{PF.METRO_AGE_YEARS}y")
+
     bpy.context.view_layer.update()
 
     log("-- triangle / object accounting --")
@@ -362,9 +530,13 @@ def main():
     n_tri = ML.scene_tris()
     stats["scene"] = {"objects": n_obj_total, "triangles": n_tri,
                       "materials": len(bpy.data.materials),
-                      "collections": len(bpy.data.collections)}
+                      "collections": len(bpy.data.collections),
+                      "triangles_before_steel": tri_before_steel,
+                      "triangles_after_steel": n_tri,
+                      "triangles_added_by_steel_pass": n_tri - tri_before_steel}
     log(f"  objects : {n_obj_total}")
-    log(f"  triangles: {n_tri}")
+    log(f"  triangles: {n_tri} ({tri_before_steel} before the steel/"
+        f"fastener/defect pass, +{n_tri - tri_before_steel})")
 
     log("-- saving --")
     scene_dir = os.path.join(ROOT, "scene")
@@ -376,6 +548,7 @@ def main():
     handoff = {
         "records": records,
         "mrecords": mrecords,
+        "srecords": srecords,
         "stats": stats,
         "blend_path": blend_path,
     }

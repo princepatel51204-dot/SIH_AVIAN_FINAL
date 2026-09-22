@@ -327,6 +327,7 @@ def export(log=print):
 
     groups = {"avian_final_road": ("BR_", "road bridge structure"),
               "avian_final_metro": ("MB_", "metro viaduct structure"),
+              "avian_final_steel": ("ST_", "steel through-truss main span"),
               "avian_final_terrain": ("ENV", "terrain and river"),
               "avian_final_base": ("AVI_BASE_", "drone base landing pads")}
     written = {}
@@ -461,7 +462,8 @@ def _export_defects(log, poses, warnings, distinct_colours):
 
     n = 0
     for fn in ("AVIAN_defect_ground_truth_FINAL.json",
-               "AVIAN_metro_ground_truth_FINAL.json"):
+               "AVIAN_metro_ground_truth_FINAL.json",
+               "AVIAN_steel_ground_truth_FINAL.json"):
         path = os.path.join(SCENE_DIR, fn)
         if not os.path.exists(path):
             continue

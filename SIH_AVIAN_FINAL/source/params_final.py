@@ -342,6 +342,145 @@ def ground_z(x: float, y: float) -> float:
     return 0.0
 
 
+# ===========================================================================
+# DETECTION PASS -- see SIH_AVIAN_DETECTION_MASTER_PROMPT.md
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# 14. STEEL THROUGH-TRUSS -- replaces the concrete main span's girders
+# (x=135..225). Locked decision 1: Warren truss with verticals -- most
+# gusseted joints of the options considered, which is the point of the pass.
+# Piers at x=135/225 and the deck slab/wearing/parapet/median for this span
+# are UNCHANGED (still bridge.py's own concrete) -- only the superstructure
+# below the deck (girders, diaphragms, drains, service duct) is replaced.
+# ---------------------------------------------------------------------------
+TRUSS_X0, TRUSS_X1 = 135.0, 225.0
+TRUSS_PANEL_COUNT = 8
+TRUSS_PANEL_L = (TRUSS_X1 - TRUSS_X0) / TRUSS_PANEL_COUNT   # 11.25 m exactly
+TRUSS_Y = DECK_WIDTH / 2.0            # 7.0 m -- trusses at the deck edges
+TRUSS_DEPTH = 9.0                     # m, bottom to top chord centreline
+
+# ASSUMPTION: bottom chord held FLAT (not following the vertical curve) --
+# the curve's total rise across the whole 90 m main span is under 4 cm
+# (deck_top_z ranges 14.5625..14.6 within x=135..225), negligible next to a
+# 0.9 m chord section, so a flat chord avoids a compounding curved-truss
+# geometry problem for a sub-5 cm gain in fidelity. The deck itself keeps
+# following the real curve unmodified (bridge.py's own geometry, untouched)
+# -- floor beam depth absorbs the (tiny, smoothly varying) difference.
+TRUSS_BOTTOM_CHORD_Z = 12.0            # m, centreline, flat
+TRUSS_TOP_CHORD_Z = TRUSS_BOTTOM_CHORD_Z + TRUSS_DEPTH   # 21.0 m
+
+TRUSS_CHORD_SIZE = (0.60, 0.90)        # m (width, depth) -- built-up box
+TRUSS_DIAGONAL_SIZE = (0.45, 0.45)
+TRUSS_VERTICAL_SIZE = (0.45, 0.45)
+TRUSS_BRACING_SIZE = (0.30, 0.30)      # top lateral bracing + portal frames
+GUSSET_THICK = 0.025
+GUSSET_SIZE = (1.6, 1.6)               # m (along chord, across joint)
+
+FLOOR_BEAM_SIZE = (0.40, 1.0)          # m (width along x, depth) -- spans
+                                        # y=-7..+7 between the two trusses
+STRINGER_COUNT = 3
+STRINGER_SIZE = (0.30, 0.60)           # m (width, depth)
+
+
+def truss_panel_points():
+    return [TRUSS_X0 + i * TRUSS_PANEL_L for i in range(TRUSS_PANEL_COUNT + 1)]
+
+
+def truss_air_draft():
+    """Measured, not assumed -- reported at the gate."""
+    return (TRUSS_BOTTOM_CHORD_Z - TRUSS_CHORD_SIZE[1] / 2.0) - RIVER_WATER_Z
+
+
+# ---------------------------------------------------------------------------
+# 15. FASTENERS -- ~1,200 bolts across 7 assembly types (SPEC S3.1).
+# ---------------------------------------------------------------------------
+BOLT_DIA_MM = 24.0                     # M24
+BOLT_HEAD_ACROSS_FLATS_MM = 36.0       # ~17 px at 1 m, 2.1478 mm/px GSD
+BOLT_HEAD_H = 0.018
+BOLT_WASHER_R = 0.024
+BOLT_WASHER_T = 0.004
+BOLT_THREAD_R = 0.012
+BOLT_THREAD_PROJECT = 0.025
+MATCH_MARK_LEN = 0.05
+MATCH_MARK_W = 0.006
+MATCH_MARK_T = 0.0015
+
+FASTENER_ASSEMBLY_TARGETS = {
+    "GUSSET": 700,
+    "FLOOR_STRINGER": 180,
+    "BEARING": 60,
+    "JOINT_ANCHOR": 80,
+    "WALKWAY_BRACKET": 90,
+    "CABLE_CLAMP": 50,
+    "HANDRAIL_BASE": 40,
+}
+assert sum(FASTENER_ASSEMBLY_TARGETS.values()) == 1200
+
+# ---------------------------------------------------------------------------
+# 16. STEEL DEFECTS -- SDEFECT_*, own namespace, own export, own baseline
+# contribution (SPEC S4). ~76 mechanical defects among ~1,200 fasteners.
+# ---------------------------------------------------------------------------
+STEEL_DEFECT_TARGETS = {
+    "BOLT_LOOSE": 18,
+    "BOLT_MISSING": 8,
+    "BOLT_CORRODED": 10,
+    "WELD_CRACK": 6,
+    "SECTION_LOSS": 6,
+    "COATING_FAILURE": 8,
+    "GUSSET_DISTORTION": 3,
+    "BEARING_SEIZED": 4,
+    "JOINT_ANCHOR_LOOSE": 4,
+    "CONDUIT_DETACHED": 5,
+    "HANDRAIL_LOOSE": 4,
+}
+assert sum(STEEL_DEFECT_TARGETS.values()) == 76
+BOLT_LOOSE_ANGLE_RANGE_DEG = (15.0, 60.0)   # SPEC S3.2: nut rotated 15-60 deg
+
+# ---------------------------------------------------------------------------
+# 17. CONDITION GRADIENT (SPEC S6) -- old road, new metro.
+# ---------------------------------------------------------------------------
+ROAD_CONDITION = "POOR"
+ROAD_AGE_YEARS = 40
+ROAD_WEATHER_STRENGTH = 1.0            # materials_c's own existing sweep max
+METRO_CONDITION = "GOOD"
+METRO_AGE_YEARS = 5
+METRO_WEATHER_STRENGTH = 0.15          # clean concrete, intact coatings
+
+# ---------------------------------------------------------------------------
+# 18. RESOLVABILITY -- the detection-side measurement (SPEC S5), the
+# headline result of this pass.
+# ---------------------------------------------------------------------------
+GSD_MM_PER_PX_AT_1M = 2.1478            # stated sensor constant, scales
+                                         # linearly with range
+# A linear feature (a crack, a broken match-mark line) has to span several
+# pixels to be reliably DISTINGUISHED from single-pixel sensor noise -- not
+# merely "visible" but "identifiable". 3 px is a common, defensible minimum
+# for a thin linear feature (above the bare 2-px Nyquist floor, which is a
+# detection threshold, not an identification one) -- used identically for
+# every defect type so the comparison across types is apples-to-apples, and
+# stated here rather than buried inside a formula.
+PX_TO_IDENTIFY = 3.0
+UNDERSIDE_INSPECTION_STANDOFF_M = 1.5   # SPEC.md's airspace table, this pass
+# ASSUMPTION: the closest range this aircraft can safely hold station at --
+# rotor wash and collision margin, not a sensor limit. Not given by SPEC; a
+# defect whose threshold range is below this is unidentifiable at ANY range
+# the aircraft can actually fly, not merely "needs to get closer".
+MIN_FLYABLE_RANGE_M = 0.30
+
+
+def min_detect_range_m(feature_size_mm: float) -> float:
+    """The range at which feature_size_mm drops to exactly PX_TO_IDENTIFY
+    pixels across -- beyond it the feature is sub-threshold, since GSD
+    coarsens linearly with range. (Named min_detect_range_m per the brief:
+    it is the range the aircraft must stay CLOSER than to identify the
+    defect, i.e. the upper bound of the identifiable envelope, not a lower
+    one -- getting closer never hurts resolution here.)"""
+    if feature_size_mm <= 0.0:
+        return 0.0
+    return feature_size_mm / (PX_TO_IDENTIFY * GSD_MM_PER_PX_AT_1M)
+
+
 if __name__ == "__main__":
     ps = pier_stations()
     print(f"corridor            {BRIDGE_LENGTH:.0f} m")

@@ -55,6 +55,10 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
     <include>
+      <uri>model://avian_final_steel</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
       <uri>model://avian_final_terrain</uri>
       <pose>0 0 0 0 0 0</pose>
     </include>

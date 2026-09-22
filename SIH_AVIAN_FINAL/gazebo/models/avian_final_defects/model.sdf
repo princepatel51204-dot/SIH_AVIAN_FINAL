@@ -96,7 +96,7 @@
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_008">
-        <pose>199.135700 -3.935000 13.161000 0 0 0</pose>
+        <pose>199.126000 -3.935000 13.161000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -122,7 +122,7 @@
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_010">
-        <pose>147.707100 2.722000 13.297000 0 0 0</pose>
+        <pose>147.697000 2.722000 13.297000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -135,7 +135,7 @@
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_011">
-        <pose>160.864300 1.464000 13.572000 0 0 0</pose>
+        <pose>160.874000 1.464000 13.572000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -174,7 +174,7 @@
         </material>
       </visual>
       <visual name="DEFECT_CRACK_HAIRLINE_014">
-        <pose>212.436000 -2.650000 13.340000 0 0 0</pose>
+        <pose>212.436000 -2.640000 13.340000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -330,7 +330,7 @@
         </material>
       </visual>
       <visual name="DEFECT_CRACK_LONGITUDINAL_002">
-        <pose>149.556000 -5.600000 13.252000 0 0 0</pose>
+        <pose>149.556000 -5.610000 13.252000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -889,7 +889,7 @@
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_003">
-        <pose>212.292900 -4.155000 13.030000 0 0 0</pose>
+        <pose>212.303000 -4.155000 13.030000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -902,7 +902,7 @@
         </material>
       </visual>
       <visual name="DEFECT_DELAMINATION_004">
-        <pose>211.992900 -1.320000 13.098000 0 0 0</pose>
+        <pose>211.983000 -1.320000 13.098000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -980,7 +980,7 @@
         </material>
       </visual>
       <visual name="DEFECT_REBAR_EXPOSED_002">
-        <pose>146.846000 5.600000 12.872000 0 0 0</pose>
+        <pose>146.846000 5.610000 12.872000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -1019,7 +1019,7 @@
         </material>
       </visual>
       <visual name="DEFECT_REBAR_EXPOSED_005">
-        <pose>145.824000 5.400000 13.313000 0 0 0</pose>
+        <pose>145.824000 5.390000 13.313000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -1123,7 +1123,7 @@
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_008">
-        <pose>145.805000 2.850000 12.729000 0 0 0</pose>
+        <pose>145.805000 2.860000 12.729000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -1136,7 +1136,7 @@
         </material>
       </visual>
       <visual name="DEFECT_CORROSION_STAIN_009">
-        <pose>211.797000 5.600000 12.708000 0 0 0</pose>
+        <pose>211.797000 5.610000 12.708000 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -1201,7 +1201,7 @@
         </material>
       </visual>
       <visual name="DEFECT_JOINT_DETERIORATION_004">
-        <pose>225.080000 5.500000 11.437500 0 0 0</pose>
+        <pose>225.080000 5.500000 11.442500 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.25</radius>
@@ -1509,6 +1509,994 @@
         <material>
           <ambient>0.042 0.039 0.037 1</ambient>
           <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_02_MARK_NUT">
+        <pose>180.070000 -7.000000 21.280000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_TOP_03_16_MARK_NUT">
+        <pose>168.540000 7.000000 21.280000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_05_14_MARK_NUT">
+        <pose>191.320000 -7.000000 20.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_05_10_MARK_NUT">
+        <pose>191.320000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_TOP_03_07_MARK_NUT">
+        <pose>168.960000 7.000000 20.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_05_04_MARK_NUT">
+        <pose>191.040000 -7.000000 21.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_11_MARK_NUT">
+        <pose>180.210000 7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_BOT_04_06_MARK_NUT">
+        <pose>180.070000 -7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_BOT_03_09_MARK_NUT">
+        <pose>168.680000 -7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_12_MARK_NUT">
+        <pose>179.790000 7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_03_16_MARK_NUT">
+        <pose>168.540000 7.000000 12.280000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_04_MARK_NUT">
+        <pose>179.790000 7.000000 11.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_N_03_MARK_NUT">
+        <pose>168.750000 7.000000 13.428000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_05_S_03_MARK_NUT">
+        <pose>191.250000 -7.000000 13.428000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT">
+        <pose>151.925000 -0.050000 13.975000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_04_MARK_NUT">
+        <pose>180.140000 7.000000 13.295800 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_N_03_MARK_NUT">
+        <pose>146.250000 7.000000 13.418600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT">
+        <pose>134.860000 7.000000 13.410400 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_05_HOLE">
+        <pose>179.930000 -7.000000 21.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE">
+        <pose>168.820000 -7.000000 21.280000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_09_HOLE">
+        <pose>179.930000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_03_07_HOLE">
+        <pose>168.960000 7.000000 11.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_05_HOLE">
+        <pose>179.930000 7.000000 11.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_BOT_03_04_HOLE">
+        <pose>168.540000 -7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE">
+        <pose>140.575000 -3.450000 13.975000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_STRINGER_00_J03_02_HOLE">
+        <pose>174.325000 -3.450000 13.975000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_18_NUT">
+        <pose>180.070000 -7.000000 20.720000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_TOP_04_00_NUT">
+        <pose>179.790000 7.000000 20.720000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_16_NUT">
+        <pose>179.790000 -7.000000 20.720000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT">
+        <pose>180.210000 7.000000 21.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_13_NUT">
+        <pose>179.930000 7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_03_06_NUT">
+        <pose>168.820000 7.000000 11.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_03_12_NUT">
+        <pose>168.540000 7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_S_00_NUT">
+        <pose>168.890000 -7.000000 13.294700 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_01_NUT">
+        <pose>179.860000 7.000000 13.429200 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_S_01_NUT">
+        <pose>146.390000 -7.000000 13.418600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT">
+        <pose>135.000000 7.200000 14.572500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_1_13_MARK_NUT">
+        <pose>315.000000 8.100000 14.272500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_06_MARK_NUT">
+        <pose>135.000000 6.000000 14.572500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_-1_18_MARK_NUT">
+        <pose>315.000000 1.200000 14.272500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_01">
+        <pose>180.750000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_02">
+        <pose>192.000000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_03">
+        <pose>192.000000 7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_04">
+        <pose>192.000000 -7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_05">
+        <pose>158.250000 7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_06">
+        <pose>147.000000 -7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_01">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_02">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_03">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_04">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_05">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_06">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_01">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_02">
+        <pose>180.000000 -6.700000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_03">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_04">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_05">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_06">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_07">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_08">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ST_GUSSET_S_TOP_03">
+        <pose>168.750000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ST_GUSSET_N_BOT_03">
+        <pose>168.750000 7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ST_GUSSET_S_BOT_07">
+        <pose>213.750000 -7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_BEARING_SEIZED_01">
+        <pose>135.000000 5.500000 12.337500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_BEARING_SEIZED_02">
+        <pose>135.000000 0.000000 12.337500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_BEARING_SEIZED_03">
+        <pose>225.000000 -5.500000 11.437500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_BEARING_SEIZED_04">
+        <pose>225.000000 5.500000 11.437500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_01">
+        <pose>81.000000 7.270000 13.923200 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_02">
+        <pose>117.000000 7.270000 14.053000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_03">
+        <pose>189.000000 7.270000 14.136000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_04">
+        <pose>207.000000 7.270000 14.121400 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_05">
+        <pose>333.000000 7.270000 13.668100 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_HANDRAIL_LOOSE_01">
+        <pose>355.500000 6.800000 14.127900 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_HANDRAIL_LOOSE_02">
+        <pose>184.500000 6.800000 14.692300 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_HANDRAIL_LOOSE_03">
+        <pose>112.500000 6.800000 14.615500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_HANDRAIL_LOOSE_04">
+        <pose>139.500000 6.800000 14.667200 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
           <specular>0.1 0.1 0.1 1</specular>
         </material>
       </visual>
