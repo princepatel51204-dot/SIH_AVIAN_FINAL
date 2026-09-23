@@ -56,3 +56,8 @@ SIH_AVIAN_FINAL/detection/renders/
 # coverage_mission.json + coverage_mission_flight_log.json (seed 20260925,
 # both tracked). Both trained model weights (v1 and v2) stay tracked.
 SIH_AVIAN_FINAL/detection/renders_zoom/
+
+# Phase 2 Section 3 step 1: zoom tiles for ALL 82 settled waypoints
+# (still rendering as of this commit) -- same reasoning, regenerates via
+# render_zoom_tiles_all_final.py from the same tracked mission files.
+SIH_AVIAN_FINAL/detection/renders_zoom_all/
