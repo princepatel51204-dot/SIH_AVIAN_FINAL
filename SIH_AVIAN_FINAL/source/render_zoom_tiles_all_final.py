@@ -109,8 +109,16 @@ def main():
             RZT._set_camera_pose(cam, cam_pos, direction)
             tile_id = f"{wid}_T{ih:02d}{iv:02d}"
             out_path = os.path.join(ZOOM_RENDER_DIR, f"{tile_id}.png")
-            scene.render.filepath = out_path
-            bpy.ops.render.render(write_still=True)
+            # Resumable: the first attempt was killed by its own timeout
+            # at 6,148/~7,200 tiles across 70/82 waypoints. Tile ids are
+            # deterministic (same seed, same geometry), so a file that's
+            # already on disk from that run is skipped rather than
+            # re-rendered -- only the metadata is regenerated (cheap, no
+            # bpy.ops.render.render call) so the manifest still ends up
+            # covering all 82 waypoints in one pass.
+            if not os.path.exists(out_path):
+                scene.render.filepath = out_path
+                bpy.ops.render.render(write_still=True)
             manifest.append({
                 "waypoint_id": wid, "tile_id": tile_id,
                 "achieved_position_m": list(cam_pos),
