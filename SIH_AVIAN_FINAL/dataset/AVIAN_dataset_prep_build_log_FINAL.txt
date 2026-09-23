@@ -1,0 +1,10 @@
+== SIH_AVIAN_FINAL :: dataset_final.py (Phase 2 step 1, prep) ==
+  sensor  : hfov=69.0 deg, LOOP=(640, 480) (2.1478 mm/px @1m), CAPTURE=(1920, 1080) (0.7159 mm/px @1m)
+  indices : 192/192 defects assigned an instance id
+  negatives: 300 SOUND_BOLT sampled (target 300)
+  negatives: 83 SOUND_CONCRETE sampled (target 120)
+  negatives: 40 SOUND_WELD sampled (target 40)
+  negatives: 5 SOUND_COATING sampled (target 40)
+  negatives: 6 SOUND_BEARING sampled (target 20)
+  negatives: 434 total -> /home/prince/avian_rev_c/SIH_AVIAN_FINAL/dataset/AVIAN_dataset_negatives_FINAL.json
+  saved   : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/scene/SIH_AVIAN_FINAL.blend (instance ids persisted on defect objects)

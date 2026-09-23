@@ -1,0 +1,86 @@
+{
+  "frames": 798,
+  "positives": 364,
+  "negatives": 434,
+  "render_wall_s": 4702.3,
+  "s_per_frame": 5.893,
+  "validation": {
+    "pass": 4,
+    "fail": 4,
+    "skip": 0,
+    "total": 8
+  },
+  "sabotage": {
+    "total": 8,
+    "proven": 3,
+    "unproven": [
+      "VD01",
+      "VD03",
+      "VD06",
+      "VD04",
+      "VD05"
+    ],
+    "rows": [
+      {
+        "check": "VD01",
+        "sabotage": "mark a positive frame's mask as not containing its own instance",
+        "before": "FAIL",
+        "after": "FAIL",
+        "proven": false
+      },
+      {
+        "check": "VD02",
+        "sabotage": "triple one frame's achieved GSD",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VD03",
+        "sabotage": "push one frame's measured standoff 5 m off commanded",
+        "before": "FAIL",
+        "after": "FAIL",
+        "proven": false
+      },
+      {
+        "check": "VD06",
+        "sabotage": "null out a required manifest field",
+        "before": "FAIL",
+        "after": "FAIL",
+        "proven": false
+      },
+      {
+        "check": "VD07",
+        "sabotage": "remove a positive frame (defect never rendered)",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VD08",
+        "sabotage": "force every positive frame's rendered contrast to the same value",
+        "before": "PASS",
+        "after": "FAIL",
+        "proven": true
+      },
+      {
+        "check": "VD04",
+        "sabotage": "point a negative's mask at a positive's (defect-bearing) mask",
+        "before": "FAIL",
+        "after": "FAIL",
+        "proven": false
+      },
+      {
+        "check": "VD05",
+        "sabotage": "delete 280 of 300 SOUND_BOLT negatives",
+        "before": "PASS",
+        "after": "PASS",
+        "proven": false
+      }
+    ]
+  },
+  "manifest_json": "dataset/AVIAN_dataset_manifest_FINAL.json",
+  "manifest_csv": "dataset/AVIAN_dataset_manifest_FINAL.csv",
+  "gate_collage": "dataset/samples/gate_collage.png",
+  "wall_s": 4798.4
+}

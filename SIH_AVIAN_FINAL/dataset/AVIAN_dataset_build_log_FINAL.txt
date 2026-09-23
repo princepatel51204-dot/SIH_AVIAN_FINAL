@@ -1,0 +1,29 @@
+== SIH_AVIAN_FINAL :: dataset_render_final.py (Phase 2 step 1, render) ==
+  sensor  : hfov=69.0 deg, LOOP=(640, 480) (2.1478 mm/px @1m), CAPTURE=(1920, 1080) (0.7159 mm/px @1m)
+  indices : 192/192 instance ids recovered from the saved scene
+  render  : 364 positive frames (12 with a CAPTURE-resolution companion, capped at 12), 32/192 unreachable at 1.5 m survey standoff (skipped)
+  render  : 434 negative frames
+  render  : 798 frames in 4702.3 s (5.89 s/frame)
+  manifest: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/dataset/AVIAN_dataset_manifest_FINAL.json
+  manifest: /home/prince/avian_rev_c/SIH_AVIAN_FINAL/dataset/AVIAN_dataset_manifest_FINAL.csv
+-- validation (VD01-08) --
+  [FAIL] VD01 every positive frame's mask contains its own instance id (non-empty) 286/364 masks OK           dataset/images/POS_055_MDR_LOOP_0001.png, dataset/images/POS_055_MDR_CAPTURE_0001.png, dataset/images/POS_056_MDR_LOOP_0001.png, dataset/images/POS_057_MDR_LOOP_0001.png, dataset/images/POS_058_MDR_LOOP_0001.png
+  [PASS] VD02 achieved GSD matches the sensor (within 1% of 2.1478 mm/px @ 1m at LOOP res, 0.7159 at CAPTURE res) 798/798 within 1%          
+  [FAIL] VD03 achieved standoff matches requested (depth pass vs commanded) 593/798 within 5%          dataset/images/POS_008_MDR_LOOP_0001.png, dataset/images/POS_008_SURVEY_LOOP_0001.png, dataset/images/POS_009_MDR_LOOP_0001.png, dataset/images/POS_009_SURVEY_LOOP_0001.png, dataset/images/POS_010_MDR_LOOP_0001.png
+  [FAIL] VD04 negatives contain no defect instance   313/434 clean              dataset/images/NEG_SOUND_BOLT_0015_0001.png, dataset/images/NEG_SOUND_BOLT_0018_0001.png, dataset/images/NEG_SOUND_BOLT_0024_0001.png, dataset/images/NEG_SOUND_BOLT_0027_0001.png, dataset/images/NEG_SOUND_BOLT_0036_0001.png
+  [PASS] VD05 class balance: >=3 negatives per matched defect TYPE, in every negative category {"SOUND_BOLT": {"negatives": 300, "matched_types": 3, "ratio": 100.0}, "SOUND_CONCRETE": {"negatives": 83, "matched_types": 17, "ratio": 4.88}, "SOUND_WELD": {"negatives": 40, "matched_types": 1, "ratio": 40.0}, "SOUND_COATING": {"negatives": 5, "matched_types": 1, "ratio": 5.0}, "SOUND_BEARING": {"negatives": 6, "matched_types": 1, "ratio": 6.0}} 
+  [FAIL] VD06 manifest complete (no nulls except the documented negative-only fields) 798 rows, 9 missing values dataset/images/POS_014_MDR_LOOP_0001.png:view_obliquity_deg, dataset/images/POS_014_SURVEY_LOOP_0001.png:view_obliquity_deg, dataset/images/POS_026_MDR_LOOP_0001.png:view_obliquity_deg, dataset/images/POS_026_SURVEY_LOOP_0001.png:view_obliquity_deg, dataset/images/POS_087_MDR_LOOP_0001.png:view_obliquity_deg
+  [PASS] VD07 every defect appears at least once     192/192 defects rendered   
+  [PASS] VD08 survey-standoff contrast differs measurably from min-detect-range contrast (not degenerate) 160 matched pairs, mean |diff| 0.0918 
+  VALIDATE: 4 pass, 4 fail, 0 skip, 8 total
+-- sabotage (working rule 3.10) --
+  [BAD] VD01     mark a positive frame's mask as not containing its own instance FAIL -> FAIL
+  [OK ] VD02     triple one frame's achieved GSD                            PASS -> FAIL
+  [BAD] VD03     push one frame's measured standoff 5 m off commanded       FAIL -> FAIL
+  [BAD] VD06     null out a required manifest field                         FAIL -> FAIL
+  [OK ] VD07     remove a positive frame (defect never rendered)            PASS -> FAIL
+  [OK ] VD08     force every positive frame's rendered contrast to the same value PASS -> FAIL
+  [BAD] VD04     point a negative's mask at a positive's (defect-bearing) mask FAIL -> FAIL
+  [BAD] VD05     delete 280 of 300 SOUND_BOLT negatives                     PASS -> PASS
+  SABOTAGE: 3/8 proven capable of failing
+  gate    : 6-frame sample collage -> /home/prince/avian_rev_c/SIH_AVIAN_FINAL/dataset/samples/gate_collage.png

@@ -1,0 +1,10 @@
+== SIH_AVIAN_FINAL :: coverage_final.py (Stage 2 planner) ==
+  patches : 5924 surface samples across 481/568 inspectable primitives (standoff 8.000 m, footprint 11.00x6.14 m, step 7.70x4.30 m)
+  viewpts : 2306/5924 candidates clear (107 below grade, 1112 hull-embedded, 2399 no line of sight)
+  overlap : avg 9.07 patches/candidate (grid-diagonal radius 8.99 m)
+  cover   : 150 viewpoints selected (capped), covering 2035/5924 patches (34.4%)
+  order   : nearest-clear-neighbour, 150 waypoints (8 could not find a clear transit path)
+  mission : 150 waypoints, 34.4% structural coverage (2035/5924 patches)
+  flight  : 2238.8 m, ~945 s, ~698.8 Wh estimated (of 1040 Wh usable)
+  uncovered by kind: {'track_slab': 136, 'pier_footing': 146, 'cable_trough': 136, 'deck_slab': 196, 'rail': 272, 'diaphragm': 156, 'girder': 420, 'structure': 343, 'bracing': 88, 'pier_cap': 67, 'bearing': 372, 'parapet': 468, 'gusset_plate': 216, 'deck_box': 562, 'truss_chord': 56, 'access_hatch': 60, 'drain': 48, 'stringer': 42, 'service_duct': 56, 'expansion_joint': 13, 'abutment': 2, 'truss_diagonal': 32, 'floor_beam': 2}
+  saved   : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/mission/coverage_mission.json

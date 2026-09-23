@@ -1,0 +1,4485 @@
+{
+  "generated_utc": "2026-09-23T05:17:56Z",
+  "base_position_m": [
+    20.0,
+    -30.0,
+    1.626
+  ],
+  "cluster_radius_m": 0.5,
+  "ordering_method": "nearest_neighbour",
+  "sensor": {
+    "hfov_deg": null,
+    "loop_res": null
+  },
+  "n_defects_total": 192,
+  "n_waypoints": 104,
+  "n_defects_covered": 120,
+  "n_defects_uncovered": 72,
+  "uncovered_defects": [
+    {
+      "defect_id": "DEFECT_CRACK_HAIRLINE_001",
+      "type": "CRACK_HAIRLINE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.036 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_HAIRLINE_002",
+      "type": "CRACK_HAIRLINE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.039 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_HAIRLINE_003",
+      "type": "CRACK_HAIRLINE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.039 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_HAIRLINE_021",
+      "type": "CRACK_HAIRLINE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.035 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_HAIRLINE_023",
+      "type": "CRACK_HAIRLINE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.337 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_HAIRLINE_024",
+      "type": "CRACK_HAIRLINE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.025 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_LONGITUDINAL_008",
+      "type": "CRACK_LONGITUDINAL",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.018 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_LONGITUDINAL_009",
+      "type": "CRACK_LONGITUDINAL",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.039 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_LONGITUDINAL_010",
+      "type": "CRACK_LONGITUDINAL",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.049 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CRACK_TRANSVERSE_001",
+      "type": "CRACK_TRANSVERSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.099 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_001",
+      "type": "SPALL",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -1.932 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_002",
+      "type": "SPALL",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -1.932 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_003",
+      "type": "SPALL",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.08 m, grade=0.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_004",
+      "type": "SPALL",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.13 m, grade=0.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_005",
+      "type": "SPALL",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.07 m, grade=0.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_006",
+      "type": "SPALL",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -1.932 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_007",
+      "type": "SPALL",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.07 m, grade=0.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_008",
+      "type": "SPALL",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.13 m, grade=0.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_010",
+      "type": "SPALL",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.006 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_SPALL_012",
+      "type": "SPALL",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.08 m, grade=0.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "DEFECT_DELAMINATION_001",
+      "type": "DELAMINATION",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -1.932 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_DELAMINATION_002",
+      "type": "DELAMINATION",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.14 m, grade=0.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "DEFECT_DELAMINATION_006",
+      "type": "DELAMINATION",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.294 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_DELAMINATION_008",
+      "type": "DELAMINATION",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.294 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CORROSION_STAIN_003",
+      "type": "CORROSION_STAIN",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.018 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_CORROSION_STAIN_005",
+      "type": "CORROSION_STAIN",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.010 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "SDEFECT_BEARING_SEIZED_01",
+      "type": "BEARING_SEIZED",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.042 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "DEFECT_JOINT_DETERIORATION_006",
+      "type": "JOINT_DETERIORATION",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.041 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_001",
+      "type": "SEGMENTAL_JOINT_LEAKAGE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.044 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_002",
+      "type": "SEGMENTAL_JOINT_LEAKAGE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.043 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_003",
+      "type": "SEGMENTAL_JOINT_LEAKAGE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.064 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "MDEFECT_EFFLORESCENCE_JOINT_004",
+      "type": "EFFLORESCENCE_JOINT",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.135 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "MDEFECT_EFFLORESCENCE_JOINT_005",
+      "type": "EFFLORESCENCE_JOINT",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.070 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "MDEFECT_BEARING_DISTRESS_007",
+      "type": "BEARING_DISTRESS",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.070 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_03_07_MARK_NUT",
+      "type": "BOLT_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.017 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_GUSSET_ST_GUSSET_S_BOT_04_06_MARK_NUT",
+      "type": "BOLT_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.014 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_N_03_MARK_NUT",
+      "type": "BOLT_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.109 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_05_S_03_MARK_NUT",
+      "type": "BOLT_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.109 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT",
+      "type": "BOLT_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.091 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_04_MARK_NUT",
+      "type": "BOLT_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.127 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_01_NUT",
+      "type": "BOLT_CORRODED",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.127 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_N_03_MARK_NUT",
+      "type": "BOLT_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.134 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT",
+      "type": "BOLT_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.082 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE",
+      "type": "BOLT_MISSING",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.019 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_00_J03_02_HOLE",
+      "type": "BOLT_MISSING",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.019 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT",
+      "type": "BOLT_CORRODED",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.037 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_S_00_NUT",
+      "type": "BOLT_CORRODED",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.127 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_S_01_NUT",
+      "type": "BOLT_CORRODED",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.111 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT",
+      "type": "JOINT_ANCHOR_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.008 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "SDEFECT_SECTION_LOSS_01",
+      "type": "SECTION_LOSS",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_SECTION_LOSS_02",
+      "type": "SECTION_LOSS",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_SECTION_LOSS_03",
+      "type": "SECTION_LOSS",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_SECTION_LOSS_04",
+      "type": "SECTION_LOSS",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_SECTION_LOSS_05",
+      "type": "SECTION_LOSS",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_SECTION_LOSS_06",
+      "type": "SECTION_LOSS",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_COATING_FAILURE_01",
+      "type": "COATING_FAILURE",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_COATING_FAILURE_03",
+      "type": "COATING_FAILURE",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_COATING_FAILURE_04",
+      "type": "COATING_FAILURE",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_COATING_FAILURE_05",
+      "type": "COATING_FAILURE",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_COATING_FAILURE_06",
+      "type": "COATING_FAILURE",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_COATING_FAILURE_07",
+      "type": "COATING_FAILURE",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_COATING_FAILURE_08",
+      "type": "COATING_FAILURE",
+      "reason": "waypoint sits at or below the terrain's own grade there (waypoint z=0.78 m, grade=6.00 m, needs +0.5 m clearance)"
+    },
+    {
+      "defect_id": "SDEFECT_BEARING_SEIZED_02",
+      "type": "BEARING_SEIZED",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.040 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "SDEFECT_CONDUIT_DETACHED_01",
+      "type": "CONDUIT_DETACHED",
+      "reason": "waypoint has no clear line of sight to its own seed defect (embedded in or blocked by structure, ray reached 0.16 m of 0.30 m needed)"
+    },
+    {
+      "defect_id": "SDEFECT_CONDUIT_DETACHED_02",
+      "type": "CONDUIT_DETACHED",
+      "reason": "waypoint has no clear line of sight to its own seed defect (embedded in or blocked by structure, ray reached 0.16 m of 0.30 m needed)"
+    },
+    {
+      "defect_id": "SDEFECT_CONDUIT_DETACHED_03",
+      "type": "CONDUIT_DETACHED",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.047 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "SDEFECT_CONDUIT_DETACHED_04",
+      "type": "CONDUIT_DETACHED",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance 0.047 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "SDEFECT_CONDUIT_DETACHED_05",
+      "type": "CONDUIT_DETACHED",
+      "reason": "waypoint has no clear line of sight to its own seed defect (embedded in or blocked by structure, ray reached 0.16 m of 0.30 m needed)"
+    },
+    {
+      "defect_id": "SDEFECT_HANDRAIL_LOOSE_01",
+      "type": "HANDRAIL_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.039 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "SDEFECT_HANDRAIL_LOOSE_02",
+      "type": "HANDRAIL_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.008 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "SDEFECT_HANDRAIL_LOOSE_03",
+      "type": "HANDRAIL_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.008 m, needs +0.05 m)"
+    },
+    {
+      "defect_id": "SDEFECT_HANDRAIL_LOOSE_04",
+      "type": "HANDRAIL_LOOSE",
+      "reason": "waypoint is inside or touching the PyBullet collision hull (clearance -0.008 m, needs +0.05 m)"
+    }
+  ],
+  "total_distance_m": 2141.477,
+  "estimated_time_s": 803.9,
+  "estimated_energy_Wh": 594.45,
+  "energy_estimate_method": "takeoff 4.4 s + cruise (distance / 4.0 m/s) + 104 x 2.54 s settle, at 2662 W average power -- sourced from AVIAN_UAV/logs/phase4_dynamics.json's own logged 70 s/51.76 Wh test mission, not invented. Stage B's real PyBullet flight measures the actual number.",
+  "battery_Wh_nominal": 1300.0,
+  "battery_reserve_pct": 20.0,
+  "battery_Wh_usable": 1040.0,
+  "waypoints": [
+    {
+      "waypoint_id": "WP_001",
+      "position_m": [
+        90.6904,
+        -30.3454,
+        13.196
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 71.632,
+      "cumulative_distance_m": 71.632,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_001",
+          "type": "REBAR_EXPOSED",
+          "feature_size_mm": 530.0,
+          "min_detect_range_m": 82.2547,
+          "defect_background_contrast": 0.22562,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            93.879,
+            -5.6,
+            13.196
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_002",
+      "position_m": [
+        95.5136,
+        -6.9684,
+        9.6869
+      ],
+      "heading_rad": 0.1651,
+      "heading_deg": 9.46,
+      "leg_distance_m": 24.126,
+      "cumulative_distance_m": 95.758,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_DELAMINATION_005",
+          "type": "DELAMINATION",
+          "feature_size_mm": 518.0,
+          "min_detect_range_m": 80.3923,
+          "defect_background_contrast": 0.02175,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            119.85,
+            -2.914,
+            13.402
+          ],
+          "view_direction": [
+            -0.9754,
+            -0.1625,
+            -0.1489
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_003",
+      "position_m": [
+        91.1162,
+        -2.5283,
+        4.656
+      ],
+      "heading_rad": -3.1127,
+      "heading_deg": -178.34,
+      "leg_distance_m": 8.023,
+      "cumulative_distance_m": 103.78,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_001",
+          "type": "CRACK_NETWORK",
+          "feature_size_mm": 0.624,
+          "min_detect_range_m": 0.0968,
+          "defect_background_contrast": 0.16618,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            90.8163,
+            -2.537,
+            4.656
+          ],
+          "view_direction": [
+            0.9996,
+            0.0289,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_004",
+      "position_m": [
+        90.9392,
+        2.0886,
+        8.923
+      ],
+      "heading_rad": 2.5422,
+      "heading_deg": 145.66,
+      "leg_distance_m": 6.289,
+      "cumulative_distance_m": 110.07,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_018",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.264,
+          "min_detect_range_m": 0.041,
+          "defect_background_contrast": 0.06246,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            90.6915,
+            2.2578,
+            8.923
+          ],
+          "view_direction": [
+            0.8257,
+            -0.5641,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_005",
+      "position_m": [
+        90.8861,
+        3.472,
+        9.062
+      ],
+      "heading_rad": -2.4843,
+      "heading_deg": -142.34,
+      "leg_distance_m": 1.391,
+      "cumulative_distance_m": 111.461,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_001",
+          "type": "CORROSION_STAIN",
+          "feature_size_mm": 0.056,
+          "min_detect_range_m": 0.0087,
+          "defect_background_contrast": 0.03334,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            90.6486,
+            3.2887,
+            9.062
+          ],
+          "view_direction": [
+            0.7917,
+            0.611,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_006",
+      "position_m": [
+        97.8622,
+        3.2979,
+        6.377
+      ],
+      "heading_rad": 1.8741,
+      "heading_deg": 107.38,
+      "leg_distance_m": 7.477,
+      "cumulative_distance_m": 118.938,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_PIER_SPALL_018",
+          "type": "PIER_SPALL",
+          "feature_size_mm": 878.0,
+          "min_detect_range_m": 136.2635,
+          "defect_background_contrast": 0.20678,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 3,
+          "position_m": [
+            90.41,
+            27.109,
+            6.377
+          ],
+          "view_direction": [
+            0.2987,
+            -0.9544,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_007",
+      "position_m": [
+        96.684,
+        0.457,
+        13.3
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 7.575,
+      "cumulative_distance_m": 126.513,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_012",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 0.499,
+          "min_detect_range_m": 0.0774,
+          "defect_background_contrast": 0.01144,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            96.638,
+            0.1,
+            13.3
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_008",
+      "position_m": [
+        96.3679,
+        -1.4325,
+        13.236
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 1.917,
+      "cumulative_distance_m": 128.43,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_005",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 7.91,
+          "min_detect_range_m": 1.2276,
+          "defect_background_contrast": 0.02873,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 4,
+          "position_m": [
+            96.211,
+            -2.65,
+            13.236
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_009",
+      "position_m": [
+        115.6454,
+        -1.1566,
+        11.895
+      ],
+      "heading_rad": 3.0134,
+      "heading_deg": 172.66,
+      "leg_distance_m": 19.326,
+      "cumulative_distance_m": 147.756,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_SPALL_009",
+          "type": "SPALL",
+          "feature_size_mm": 382.0,
+          "min_detect_range_m": 59.2855,
+          "defect_background_contrast": 0.28383,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            90.9,
+            2.032,
+            11.895
+          ],
+          "view_direction": [
+            0.9918,
+            -0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_010",
+      "position_m": [
+        115.871,
+        -0.5413,
+        13.8931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 2.103,
+      "cumulative_distance_m": 149.859,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_005",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 0.064,
+          "min_detect_range_m": 0.0099,
+          "defect_background_contrast": 0.01301,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            115.871,
+            -0.503,
+            14.1906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_011",
+      "position_m": [
+        112.528,
+        1.3792,
+        13.3853
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 3.889,
+      "cumulative_distance_m": 153.748,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_002",
+          "type": "CRACK_NETWORK",
+          "feature_size_mm": 5.232,
+          "min_detect_range_m": 0.812,
+          "defect_background_contrast": 0.05458,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 4,
+          "position_m": [
+            112.528,
+            1.483,
+            14.1906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_012",
+      "position_m": [
+        107.887,
+        3.4167,
+        13.8931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 5.094,
+      "cumulative_distance_m": 158.842,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_002",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 0.163,
+          "min_detect_range_m": 0.0253,
+          "defect_background_contrast": 0.00329,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            107.887,
+            3.455,
+            14.1906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_013",
+      "position_m": [
+        106.549,
+        5.4297,
+        12.2931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 2.899,
+      "cumulative_distance_m": 161.74,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_006",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 0.208,
+          "min_detect_range_m": 0.0323,
+          "defect_background_contrast": 0.01663,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            106.549,
+            5.468,
+            12.5906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_014",
+      "position_m": [
+        90.3435,
+        5.7266,
+        12.4193
+      ],
+      "heading_rad": -1.4371,
+      "heading_deg": -82.34,
+      "leg_distance_m": 16.209,
+      "cumulative_distance_m": 177.949,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_001",
+          "type": "JOINT_DETERIORATION",
+          "feature_size_mm": 0.532,
+          "min_detect_range_m": 0.0826,
+          "defect_background_contrast": 0.07622,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            90.374,
+            5.5,
+            12.225
+          ],
+          "view_direction": [
+            -0.1016,
+            0.7552,
+            0.6475
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_015",
+      "position_m": [
+        90.1695,
+        -5.2734,
+        12.4193
+      ],
+      "heading_rad": -1.4371,
+      "heading_deg": -82.34,
+      "leg_distance_m": 11.001,
+      "cumulative_distance_m": 188.95,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_002",
+          "type": "JOINT_DETERIORATION",
+          "feature_size_mm": 1.807,
+          "min_detect_range_m": 0.2804,
+          "defect_background_contrast": 0.20218,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            90.2,
+            -5.5,
+            12.225
+          ],
+          "view_direction": [
+            -0.1016,
+            0.7552,
+            0.6475
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_016",
+      "position_m": [
+        121.089,
+        -5.4715,
+        12.2064
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 30.921,
+      "cumulative_distance_m": 219.871,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_010",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 2.496,
+          "min_detect_range_m": 0.3874,
+          "defect_background_contrast": 0.00606,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            121.089,
+            -5.422,
+            12.5906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_017",
+      "position_m": [
+        133.8025,
+        -2.6277,
+        11.638
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 13.04,
+      "cumulative_distance_m": 232.911,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_007",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.087,
+          "min_detect_range_m": 0.0135,
+          "defect_background_contrast": 0.01831,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            134.1,
+            -2.666,
+            11.638
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_018",
+      "position_m": [
+        130.0728,
+        -1.7049,
+        13.41
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 4.231,
+      "cumulative_distance_m": 237.142,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_007",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 6.14,
+          "min_detect_range_m": 0.9529,
+          "defect_background_contrast": 0.20071,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 4,
+          "position_m": [
+            129.951,
+            -2.65,
+            13.41
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_019",
+      "position_m": [
+        133.9875,
+        3.2675,
+        2.119
+      ],
+      "heading_rad": -0.5993,
+      "heading_deg": -34.34,
+      "leg_distance_m": 12.944,
+      "cumulative_distance_m": 250.086,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_011",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 1.583,
+          "min_detect_range_m": 0.2457,
+          "defect_background_contrast": 0.33546,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            134.2352,
+            3.0983,
+            2.119
+          ],
+          "view_direction": [
+            -0.8257,
+            0.5641,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_020",
+      "position_m": [
+        127.116,
+        0.457,
+        13.157
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 13.302,
+      "cumulative_distance_m": 263.388,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_002",
+          "type": "CORROSION_STAIN",
+          "feature_size_mm": 0.968,
+          "min_detect_range_m": 0.1502,
+          "defect_background_contrast": 0.02002,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            127.07,
+            0.1,
+            13.157
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_021",
+      "position_m": [
+        126.84,
+        5.043,
+        13.271
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 4.596,
+      "cumulative_distance_m": 267.984,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_004",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 1.103,
+          "min_detect_range_m": 0.1712,
+          "defect_background_contrast": 0.02859,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            126.886,
+            5.4,
+            13.271
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_022",
+      "position_m": [
+        130.9608,
+        5.979,
+        13.424
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 4.229,
+      "cumulative_distance_m": 272.213,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_003",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 2.462,
+          "min_detect_range_m": 0.3821,
+          "defect_background_contrast": 0.03322,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            130.912,
+            5.6,
+            13.424
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_023",
+      "position_m": [
+        133.8178,
+        27.5123,
+        4.641
+      ],
+      "heading_rad": 0.2931,
+      "heading_deg": 16.79,
+      "leg_distance_m": 23.431,
+      "cumulative_distance_m": 295.643,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_PIER_CORROSION_STAIN_019",
+          "type": "PIER_CORROSION_STAIN",
+          "feature_size_mm": 0.052,
+          "min_detect_range_m": 0.0081,
+          "defect_background_contrast": 0.02657,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 1,
+          "position_m": [
+            134.105,
+            27.599,
+            4.641
+          ],
+          "view_direction": [
+            -0.9574,
+            -0.2889,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_024",
+      "position_m": [
+        136.1037,
+        2.4495,
+        6.865
+      ],
+      "heading_rad": 2.8563,
+      "heading_deg": 163.66,
+      "leg_distance_m": 25.265,
+      "cumulative_distance_m": 320.908,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_015",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.189,
+          "min_detect_range_m": 0.0293,
+          "defect_background_contrast": 0.04863,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            135.8158,
+            2.5339,
+            6.865
+          ],
+          "view_direction": [
+            0.9596,
+            -0.2814,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_025",
+      "position_m": [
+        145.8433,
+        3.1575,
+        12.729
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 11.391,
+      "cumulative_distance_m": 332.299,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_008",
+          "type": "CORROSION_STAIN",
+          "feature_size_mm": 0.532,
+          "min_detect_range_m": 0.0826,
+          "defect_background_contrast": 0.02008,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            145.805,
+            2.86,
+            12.729
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_026",
+      "position_m": [
+        135.482,
+        5.5383,
+        12.635
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 10.632,
+      "cumulative_distance_m": 342.931,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_007",
+          "type": "CORROSION_STAIN",
+          "feature_size_mm": 0.066,
+          "min_detect_range_m": 0.0102,
+          "defect_background_contrast": 0.09011,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            135.482,
+            5.5,
+            12.3375
+          ],
+          "view_direction": [
+            0.0,
+            0.1278,
+            0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_027",
+      "position_m": [
+        147.0383,
+        -6.3775,
+        12.0
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 16.611,
+      "cumulative_distance_m": 359.542,
+      "defects_covered": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_06",
+          "type": "WELD_CRACK",
+          "feature_size_mm": 0.57,
+          "min_detect_range_m": 0.0885,
+          "defect_background_contrast": 0.01928,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            147.0,
+            -6.675,
+            12.0
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_028",
+      "position_m": [
+        149.5177,
+        -5.9075,
+        13.252
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 2.817,
+      "cumulative_distance_m": 362.359,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_002",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 0.419,
+          "min_detect_range_m": 0.065,
+          "defect_background_contrast": 0.17474,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            149.556,
+            -5.61,
+            13.252
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_029",
+      "position_m": [
+        147.3995,
+        2.7603,
+        13.297
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 8.923,
+      "cumulative_distance_m": 371.282,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_010",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.095,
+          "min_detect_range_m": 0.0147,
+          "defect_background_contrast": 0.0,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            147.697,
+            2.722,
+            13.297
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_030",
+      "position_m": [
+        158.2117,
+        6.3775,
+        12.0
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 11.475,
+      "cumulative_distance_m": 382.757,
+      "defects_covered": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_05",
+          "type": "WELD_CRACK",
+          "feature_size_mm": 1.11,
+          "min_detect_range_m": 0.1723,
+          "defect_background_contrast": 0.02001,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            158.25,
+            6.675,
+            12.0
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_031",
+      "position_m": [
+        161.1715,
+        1.4257,
+        13.572
+      ],
+      "heading_rad": 3.0134,
+      "heading_deg": 172.66,
+      "leg_distance_m": 5.979,
+      "cumulative_distance_m": 388.736,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_011",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.075,
+          "min_detect_range_m": 0.0116,
+          "defect_background_contrast": 0.63747,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            160.874,
+            1.464,
+            13.572
+          ],
+          "view_direction": [
+            0.9918,
+            -0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_032",
+      "position_m": [
+        162.513,
+        -0.0013,
+        11.4775
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 2.868,
+      "cumulative_distance_m": 391.604,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_004",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 1.531,
+          "min_detect_range_m": 0.2376,
+          "defect_background_contrast": 0.07781,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            162.513,
+            0.037,
+            11.775
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_033",
+      "position_m": [
+        168.246,
+        1.1337,
+        11.86
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 5.857,
+      "cumulative_distance_m": 397.46,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_07_HOLE",
+          "type": "BOLT_MISSING",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.35805,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            168.96,
+            6.675,
+            11.86
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_06_NUT",
+          "type": "BOLT_CORRODED",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.69857,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 2,
+          "position_m": [
+            168.82,
+            6.675,
+            11.86
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_034",
+      "position_m": [
+        168.421,
+        5.7514,
+        12.28
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 4.64,
+      "cumulative_distance_m": 402.1,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_16_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.32964,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            168.54,
+            6.675,
+            12.28
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_12_NUT",
+          "type": "BOLT_CORRODED",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.69857,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 2,
+          "position_m": [
+            168.54,
+            6.675,
+            12.14
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "ST_GUSSET_N_BOT_03",
+          "type": "GUSSET_DISTORTION",
+          "feature_size_mm": 74.6,
+          "min_detect_range_m": 11.5777,
+          "defect_background_contrast": 0.22256,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            168.75,
+            6.675,
+            12.0
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_035",
+      "position_m": [
+        176.228,
+        1.4317,
+        13.9775
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 9.082,
+      "cumulative_distance_m": 411.183,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_007",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 0.096,
+          "min_detect_range_m": 0.0149,
+          "defect_background_contrast": 0.00619,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            176.228,
+            1.47,
+            14.275
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_036",
+      "position_m": [
+        180.091,
+        5.7514,
+        12.0
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 6.123,
+      "cumulative_distance_m": 417.306,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_11_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.37551,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            180.21,
+            6.675,
+            12.0
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_12_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.34658,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            179.79,
+            6.675,
+            12.14
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_04_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.36724,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            179.79,
+            6.675,
+            11.86
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_05_HOLE",
+          "type": "BOLT_MISSING",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.3191,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            179.93,
+            6.675,
+            11.86
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_13_NUT",
+          "type": "BOLT_CORRODED",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.72315,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 2,
+          "position_m": [
+            179.93,
+            6.675,
+            12.14
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_037",
+      "position_m": [
+        191.9617,
+        6.3775,
+        12.0
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 11.887,
+      "cumulative_distance_m": 429.193,
+      "defects_covered": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_03",
+          "type": "WELD_CRACK",
+          "feature_size_mm": 0.41,
+          "min_detect_range_m": 0.0636,
+          "defect_background_contrast": 0.02073,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            192.0,
+            6.675,
+            12.0
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_038",
+      "position_m": [
+        198.8285,
+        -3.8967,
+        13.161
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 12.412,
+      "cumulative_distance_m": 441.605,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_008",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.149,
+          "min_detect_range_m": 0.0231,
+          "defect_background_contrast": 0.54232,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            199.126,
+            -3.935,
+            13.161
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_039",
+      "position_m": [
+        192.0383,
+        -6.3775,
+        12.0
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 7.322,
+      "cumulative_distance_m": 448.927,
+      "defects_covered": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_04",
+          "type": "WELD_CRACK",
+          "feature_size_mm": 0.6,
+          "min_detect_range_m": 0.0931,
+          "defect_background_contrast": 0.01776,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            192.0,
+            -6.675,
+            12.0
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_040",
+      "position_m": [
+        180.909,
+        -0.5713,
+        13.9775
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 12.708,
+      "cumulative_distance_m": 461.635,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_003",
+          "type": "CRACK_NETWORK",
+          "feature_size_mm": 0.705,
+          "min_detect_range_m": 0.1094,
+          "defect_background_contrast": 0.15047,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            180.909,
+            -0.533,
+            14.275
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_041",
+      "position_m": [
+        179.1621,
+        -1.2253,
+        19.8881
+      ],
+      "heading_rad": -1.4057,
+      "heading_deg": -80.54,
+      "leg_distance_m": 6.198,
+      "cumulative_distance_m": 467.833,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_04_18_NUT",
+          "type": "BOLT_CORRODED",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.72056,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 2,
+          "position_m": [
+            180.07,
+            -6.675,
+            20.72
+          ],
+          "view_direction": [
+            -0.1625,
+            0.9754,
+            -0.1489
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_04_16_NUT",
+          "type": "BOLT_CORRODED",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.72057,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 2,
+          "position_m": [
+            179.79,
+            -6.675,
+            20.72
+          ],
+          "view_direction": [
+            -0.1625,
+            0.9754,
+            -0.1489
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_042",
+      "position_m": [
+        179.076,
+        1.1337,
+        20.72
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 2.503,
+      "cumulative_distance_m": 470.335,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_04_00_NUT",
+          "type": "BOLT_CORRODED",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.72316,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 2,
+          "position_m": [
+            179.79,
+            6.675,
+            20.72
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_043",
+      "position_m": [
+        175.6987,
+        6.3025,
+        14.827
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 8.535,
+      "cumulative_distance_m": 478.871,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_006",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 0.354,
+          "min_detect_range_m": 0.0549,
+          "defect_background_contrast": 0.23231,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            175.737,
+            6.6,
+            14.827
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_044",
+      "position_m": [
+        168.421,
+        5.7514,
+        21.28
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 9.742,
+      "cumulative_distance_m": 488.613,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_03_16_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.37873,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            168.54,
+            6.675,
+            21.28
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_045",
+      "position_m": [
+        169.534,
+        -1.1337,
+        21.28
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 6.975,
+      "cumulative_distance_m": 495.587,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE",
+          "type": "BOLT_MISSING",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.35805,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            168.82,
+            -6.675,
+            21.28
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "ST_GUSSET_S_TOP_03",
+          "type": "GUSSET_DISTORTION",
+          "feature_size_mm": 56.3,
+          "min_detect_range_m": 8.7376,
+          "defect_background_contrast": 0.15476,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            168.75,
+            -6.675,
+            21.0
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_046",
+      "position_m": [
+        174.672,
+        -4.7093,
+        13.9775
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 9.618,
+      "cumulative_distance_m": 505.206,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_008",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 0.164,
+          "min_detect_range_m": 0.0255,
+          "defect_background_contrast": 0.02234,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            174.672,
+            -4.671,
+            14.275
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_047",
+      "position_m": [
+        168.5287,
+        -5.7667,
+        11.8613
+      ],
+      "heading_rad": -1.4057,
+      "heading_deg": -80.54,
+      "leg_distance_m": 6.583,
+      "cumulative_distance_m": 511.789,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_BOT_03_09_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.39791,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            168.68,
+            -6.675,
+            12.0
+          ],
+          "view_direction": [
+            -0.1625,
+            0.9754,
+            -0.1489
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_BOT_03_04_HOLE",
+          "type": "BOLT_MISSING",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.3191,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            168.54,
+            -6.675,
+            12.14
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_048",
+      "position_m": [
+        157.767,
+        -5.2359,
+        13.261
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 10.865,
+      "cumulative_distance_m": 522.654,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_DELAMINATION_007",
+          "type": "DELAMINATION",
+          "feature_size_mm": 814.0,
+          "min_detect_range_m": 126.3308,
+          "defect_background_contrast": 0.0,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 4,
+          "position_m": [
+            160.554,
+            -5.595,
+            13.261
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_049",
+      "position_m": [
+        156.404,
+        -17.0983,
+        7.555
+      ],
+      "heading_rad": 2.5422,
+      "heading_deg": 145.66,
+      "leg_distance_m": 13.234,
+      "cumulative_distance_m": 535.888,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_SPALL_011",
+          "type": "SPALL",
+          "feature_size_mm": 408.0,
+          "min_detect_range_m": 63.3206,
+          "defect_background_contrast": 0.2364,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            135.8027,
+            -3.0239,
+            7.555
+          ],
+          "view_direction": [
+            0.8257,
+            -0.5641,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_050",
+      "position_m": [
+        142.6354,
+        -19.3554,
+        13.313
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 15.094,
+      "cumulative_distance_m": 550.982,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_005",
+          "type": "REBAR_EXPOSED",
+          "feature_size_mm": 258.0,
+          "min_detect_range_m": 40.041,
+          "defect_background_contrast": 0.25195,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            145.824,
+            5.39,
+            13.313
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_051",
+      "position_m": [
+        135.721,
+        -28.5396,
+        6.0
+      ],
+      "heading_rad": 1.5997,
+      "heading_deg": 91.66,
+      "leg_distance_m": 13.625,
+      "cumulative_distance_m": 564.606,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_006",
+          "type": "REBAR_EXPOSED",
+          "feature_size_mm": 1334.0,
+          "min_detect_range_m": 207.0336,
+          "defect_background_contrast": 0.09846,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 4,
+          "position_m": [
+            135.0,
+            -3.6,
+            6.0
+          ],
+          "view_direction": [
+            0.0289,
+            -0.9996,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_052",
+      "position_m": [
+        129.0134,
+        -26.3937,
+        24.8128
+      ],
+      "heading_rad": 1.3131,
+      "heading_deg": 75.24,
+      "leg_distance_m": 20.088,
+      "cumulative_distance_m": 584.694,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_004",
+          "type": "REBAR_EXPOSED",
+          "feature_size_mm": 444.0,
+          "min_detect_range_m": 68.9077,
+          "defect_background_contrast": 0.05226,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            134.52,
+            -5.5,
+            12.3375
+          ],
+          "view_direction": [
+            -0.2207,
+            -0.8374,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_053",
+      "position_m": [
+        135.7651,
+        -3.593,
+        5.777
+      ],
+      "heading_rad": 2.2281,
+      "heading_deg": 127.66,
+      "leg_distance_m": 30.46,
+      "cumulative_distance_m": 615.154,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_009",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.071,
+          "min_detect_range_m": 0.011,
+          "defect_background_contrast": 0.04816,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            135.5818,
+            -3.3555,
+            5.777
+          ],
+          "view_direction": [
+            0.611,
+            -0.7917,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_054",
+      "position_m": [
+        150.0346,
+        30.3554,
+        12.872
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 37.503,
+      "cumulative_distance_m": 652.657,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_002",
+          "type": "REBAR_EXPOSED",
+          "feature_size_mm": 376.0,
+          "min_detect_range_m": 58.3543,
+          "defect_background_contrast": 0.53098,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            146.846,
+            5.61,
+            12.872
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_055",
+      "position_m": [
+        154.974,
+        44.5236,
+        5.705
+      ],
+      "heading_rad": -2.4553,
+      "heading_deg": -140.68,
+      "leg_distance_m": 16.628,
+      "cumulative_distance_m": 669.285,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_PIER_SPALL_017",
+          "type": "PIER_SPALL",
+          "feature_size_mm": 888.0,
+          "min_detect_range_m": 137.8154,
+          "defect_background_contrast": 0.14158,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 4,
+          "position_m": [
+            135.673,
+            28.713,
+            5.705
+          ],
+          "view_direction": [
+            0.7736,
+            0.6337,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_056",
+      "position_m": [
+        167.846,
+        26.3087,
+        15.5025
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 24.361,
+      "cumulative_distance_m": 693.646,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_SOFFIT_TRANSVERSE_CRACK_016",
+          "type": "SOFFIT_TRANSVERSE_CRACK",
+          "feature_size_mm": 1.662,
+          "min_detect_range_m": 0.2579,
+          "defect_background_contrast": 0.00021,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 3,
+          "position_m": [
+            167.846,
+            26.347,
+            15.8
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_057",
+      "position_m": [
+        164.438,
+        27.5588,
+        18.326
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 4.599,
+      "cumulative_distance_m": 698.245,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_INTERNAL_SOFFIT_CRACK_010",
+          "type": "INTERNAL_SOFFIT_CRACK",
+          "feature_size_mm": 2.43,
+          "min_detect_range_m": 0.3771,
+          "defect_background_contrast": 0.00443,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 3,
+          "position_m": [
+            164.438,
+            27.607,
+            18.7
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_058",
+      "position_m": [
+        185.3857,
+        24.9275,
+        17.24
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 21.14,
+      "cumulative_distance_m": 719.385,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_WEB_SHEAR_CRACK_013",
+          "type": "WEB_SHEAR_CRACK",
+          "feature_size_mm": 0.122,
+          "min_detect_range_m": 0.0189,
+          "defect_background_contrast": 0.00311,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 1,
+          "position_m": [
+            185.424,
+            25.225,
+            17.24
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_059",
+      "position_m": [
+        202.7692,
+        -0.1327,
+        13.098
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 30.779,
+      "cumulative_distance_m": 750.165,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_DELAMINATION_004",
+          "type": "DELAMINATION",
+          "feature_size_mm": 628.0,
+          "min_detect_range_m": 97.4641,
+          "defect_background_contrast": 0.45102,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            211.983,
+            -1.32,
+            13.098
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_060",
+      "position_m": [
+        212.4743,
+        -2.3425,
+        13.34
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 9.956,
+      "cumulative_distance_m": 760.121,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_014",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.117,
+          "min_detect_range_m": 0.0182,
+          "defect_background_contrast": 0.16941,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            212.436,
+            -2.64,
+            13.34
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_061",
+      "position_m": [
+        213.4832,
+        -4.3071,
+        13.03
+      ],
+      "heading_rad": 3.0134,
+      "heading_deg": 172.66,
+      "leg_distance_m": 2.23,
+      "cumulative_distance_m": 762.351,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_DELAMINATION_003",
+          "type": "DELAMINATION",
+          "feature_size_mm": 232.0,
+          "min_detect_range_m": 36.0058,
+          "defect_background_contrast": 0.40563,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            212.303,
+            -4.155,
+            13.03
+          ],
+          "view_direction": [
+            0.9918,
+            -0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_062",
+      "position_m": [
+        211.8353,
+        5.9075,
+        12.708
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 10.352,
+      "cumulative_distance_m": 772.703,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_009",
+          "type": "CORROSION_STAIN",
+          "feature_size_mm": 0.288,
+          "min_detect_range_m": 0.0447,
+          "defect_background_contrast": 0.24676,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            211.797,
+            5.61,
+            12.708
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_063",
+      "position_m": [
+        214.587,
+        -0.1794,
+        12.0
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 6.717,
+      "cumulative_distance_m": 779.42,
+      "defects_covered": [
+        {
+          "defect_id": "ST_GUSSET_S_BOT_07",
+          "type": "GUSSET_DISTORTION",
+          "feature_size_mm": 42.2,
+          "min_detect_range_m": 6.5493,
+          "defect_background_contrast": 0.05178,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            213.75,
+            -6.675,
+            12.0
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_064",
+      "position_m": [
+        223.8025,
+        2.4753,
+        10.666
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 9.683,
+      "cumulative_distance_m": 789.103,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_007",
+          "type": "CRACK_NETWORK",
+          "feature_size_mm": 0.113,
+          "min_detect_range_m": 0.0175,
+          "defect_background_contrast": 0.00313,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            224.1,
+            2.437,
+            10.666
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_065",
+      "position_m": [
+        226.1975,
+        2.7837,
+        10.608
+      ],
+      "heading_rad": 3.0134,
+      "heading_deg": 172.66,
+      "leg_distance_m": 2.416,
+      "cumulative_distance_m": 791.518,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_005",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.247,
+          "min_detect_range_m": 0.0383,
+          "defect_background_contrast": 0.06364,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            225.9,
+            2.822,
+            10.608
+          ],
+          "view_direction": [
+            0.9918,
+            -0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_066",
+      "position_m": [
+        225.9713,
+        3.3483,
+        2.931
+      ],
+      "heading_rad": -2.7985,
+      "heading_deg": -160.34,
+      "leg_distance_m": 7.701,
+      "cumulative_distance_m": 799.22,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_008",
+          "type": "CRACK_NETWORK",
+          "feature_size_mm": 0.187,
+          "min_detect_range_m": 0.029,
+          "defect_background_contrast": 0.01282,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            225.6888,
+            3.2474,
+            2.931
+          ],
+          "view_direction": [
+            0.9417,
+            0.3364,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_067",
+      "position_m": [
+        234.219,
+        5.043,
+        13.609
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 13.598,
+      "cumulative_distance_m": 812.818,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_010",
+          "type": "CORROSION_STAIN",
+          "feature_size_mm": 0.567,
+          "min_detect_range_m": 0.088,
+          "defect_background_contrast": 0.01245,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            234.265,
+            5.4,
+            13.609
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_068",
+      "position_m": [
+        237.405,
+        2.7547,
+        12.2931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 4.137,
+      "cumulative_distance_m": 816.955,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_016",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.278,
+          "min_detect_range_m": 0.0431,
+          "defect_background_contrast": 0.00761,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            237.405,
+            2.793,
+            12.5906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_069",
+      "position_m": [
+        225.0353,
+        5.4512,
+        11.7351
+      ],
+      "heading_rad": 0.829,
+      "heading_deg": 47.5,
+      "leg_distance_m": 12.672,
+      "cumulative_distance_m": 829.628,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_004",
+          "type": "JOINT_DETERIORATION",
+          "feature_size_mm": 0.892,
+          "min_detect_range_m": 0.1384,
+          "defect_background_contrast": 0.61246,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            225.08,
+            5.5,
+            11.4425
+          ],
+          "view_direction": [
+            -0.1489,
+            -0.1625,
+            0.9754
+          ]
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_04",
+          "type": "BEARING_SEIZED",
+          "feature_size_mm": 173.205,
+          "min_detect_range_m": 26.881,
+          "defect_background_contrast": 0.24287,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            225.0,
+            5.5,
+            11.4375
+          ],
+          "view_direction": [
+            -0.1489,
+            -0.1625,
+            0.9754
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_070",
+      "position_m": [
+        224.528,
+        -5.4617,
+        11.735
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 10.925,
+      "cumulative_distance_m": 840.553,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_012",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.118,
+          "min_detect_range_m": 0.0183,
+          "defect_background_contrast": 0.25616,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            224.528,
+            -5.5,
+            11.4375
+          ],
+          "view_direction": [
+            0.0,
+            0.1278,
+            0.9918
+          ]
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_03",
+          "type": "BEARING_SEIZED",
+          "feature_size_mm": 173.205,
+          "min_detect_range_m": 26.881,
+          "defect_background_contrast": 0.17427,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            225.0,
+            -5.5,
+            11.4375
+          ],
+          "view_direction": [
+            -0.1489,
+            -0.1625,
+            0.9754
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_071",
+      "position_m": [
+        256.396,
+        -0.0963,
+        12.2931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 32.321,
+      "cumulative_distance_m": 872.874,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_003",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 0.318,
+          "min_detect_range_m": 0.0494,
+          "defect_background_contrast": 0.01144,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            256.396,
+            -0.058,
+            12.5906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_072",
+      "position_m": [
+        260.703,
+        -2.7503,
+        12.2931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 5.059,
+      "cumulative_distance_m": 877.933,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_009",
+          "type": "CRACK_TRANSVERSE",
+          "feature_size_mm": 0.287,
+          "min_detect_range_m": 0.0445,
+          "defect_background_contrast": 0.01473,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            260.703,
+            -2.712,
+            12.5906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_073",
+      "position_m": [
+        268.7469,
+        -3.5165,
+        11.622
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 8.108,
+      "cumulative_distance_m": 886.041,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_004",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 2.294,
+          "min_detect_range_m": 0.356,
+          "defect_background_contrast": 0.07759,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            269.1,
+            -3.562,
+            11.622
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_074",
+      "position_m": [
+        265.654,
+        -2.293,
+        13.25
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 3.703,
+      "cumulative_distance_m": 889.744,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_006",
+          "type": "CORROSION_STAIN",
+          "feature_size_mm": 1.055,
+          "min_detect_range_m": 0.1637,
+          "defect_background_contrast": 0.00718,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            265.608,
+            -2.65,
+            13.25
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_075",
+      "position_m": [
+        269.5264,
+        -1.7152,
+        8.256
+      ],
+      "heading_rad": -1.2277,
+      "heading_deg": -70.34,
+      "leg_distance_m": 6.346,
+      "cumulative_distance_m": 896.09,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_017",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.617,
+          "min_detect_range_m": 0.0958,
+          "defect_background_contrast": 0.08201,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            269.6273,
+            -1.9977,
+            8.256
+          ],
+          "view_direction": [
+            -0.3364,
+            0.9417,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_076",
+      "position_m": [
+        242.831,
+        -1.2003,
+        13.8931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 27.289,
+      "cumulative_distance_m": 923.379,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_006",
+          "type": "CRACK_NETWORK",
+          "feature_size_mm": 0.183,
+          "min_detect_range_m": 0.0284,
+          "defect_background_contrast": 0.0004,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            242.831,
+            -1.162,
+            14.1906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_077",
+      "position_m": [
+        225.809,
+        -3.5491,
+        6.704
+      ],
+      "heading_rad": 2.2281,
+      "heading_deg": 127.66,
+      "leg_distance_m": 18.627,
+      "cumulative_distance_m": 942.005,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_005",
+          "type": "CRACK_NETWORK",
+          "feature_size_mm": 0.524,
+          "min_detect_range_m": 0.0813,
+          "defect_background_contrast": 0.12446,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            225.6257,
+            -3.3116,
+            6.704
+          ],
+          "view_direction": [
+            0.611,
+            -0.7917,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_078",
+      "position_m": [
+        224.191,
+        -4.0056,
+        3.266
+      ],
+      "heading_rad": 0.9714,
+      "heading_deg": 55.66,
+      "leg_distance_m": 3.827,
+      "cumulative_distance_m": 945.832,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_004",
+          "type": "CRACK_NETWORK",
+          "feature_size_mm": 4.2,
+          "min_detect_range_m": 0.6518,
+          "defect_background_contrast": 0.18849,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 4,
+          "position_m": [
+            224.5587,
+            -3.4674,
+            3.266
+          ],
+          "view_direction": [
+            -0.5641,
+            -0.8257,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_079",
+      "position_m": [
+        251.072,
+        -3.2093,
+        13.8931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 28.916,
+      "cumulative_distance_m": 974.749,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_022",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.139,
+          "min_detect_range_m": 0.0216,
+          "defect_background_contrast": 0.00851,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            251.072,
+            -3.171,
+            14.1906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_080",
+      "position_m": [
+        252.634,
+        1.5937,
+        13.8931
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 5.051,
+      "cumulative_distance_m": 979.799,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_020",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.147,
+          "min_detect_range_m": 0.0228,
+          "defect_background_contrast": 0.00472,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            252.634,
+            1.632,
+            14.1906
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_081",
+      "position_m": [
+        254.5525,
+        0.9473,
+        13.362
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 2.093,
+      "cumulative_distance_m": 981.892,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_006",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 1.175,
+          "min_detect_range_m": 0.1824,
+          "defect_background_contrast": 0.04302,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            254.85,
+            0.909,
+            13.362
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_082",
+      "position_m": [
+        225.0493,
+        1.6065,
+        8.519
+      ],
+      "heading_rad": 1.5997,
+      "heading_deg": 91.66,
+      "leg_distance_m": 29.905,
+      "cumulative_distance_m": 1011.798,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_001",
+          "type": "CRACK_LONGITUDINAL",
+          "feature_size_mm": 0.139,
+          "min_detect_range_m": 0.0216,
+          "defect_background_contrast": 0.0108,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            225.0406,
+            1.9064,
+            8.519
+          ],
+          "view_direction": [
+            0.0289,
+            -0.9996,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_083",
+      "position_m": [
+        261.387,
+        0.457,
+        13.416
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 36.684,
+      "cumulative_distance_m": 1048.482,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_004",
+          "type": "CORROSION_STAIN",
+          "feature_size_mm": 0.677,
+          "min_detect_range_m": 0.1051,
+          "defect_background_contrast": 0.00017,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 2,
+          "position_m": [
+            261.341,
+            0.1,
+            13.416
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_084",
+      "position_m": [
+        269.6285,
+        5.7266,
+        12.4193
+      ],
+      "heading_rad": -1.4371,
+      "heading_deg": -82.34,
+      "leg_distance_m": 9.833,
+      "cumulative_distance_m": 1058.315,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_003",
+          "type": "JOINT_DETERIORATION",
+          "feature_size_mm": 0.904,
+          "min_detect_range_m": 0.1403,
+          "defect_background_contrast": 0.02375,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            269.659,
+            5.5,
+            12.225
+          ],
+          "view_direction": [
+            -0.1016,
+            0.7552,
+            0.6475
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_085",
+      "position_m": [
+        261.0507,
+        24.9275,
+        17.79
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 21.705,
+      "cumulative_distance_m": 1080.019,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_WEB_SHEAR_CRACK_011",
+          "type": "WEB_SHEAR_CRACK",
+          "feature_size_mm": 0.159,
+          "min_detect_range_m": 0.0247,
+          "defect_background_contrast": 0.0031,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 1,
+          "position_m": [
+            261.089,
+            25.225,
+            17.79
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_086",
+      "position_m": [
+        241.2851,
+        24.077,
+        17.79
+      ],
+      "heading_rad": 1.4426,
+      "heading_deg": 82.66,
+      "leg_distance_m": 19.784,
+      "cumulative_distance_m": 1099.803,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_WEB_SHEAR_CRACK_012",
+          "type": "WEB_SHEAR_CRACK",
+          "feature_size_mm": 7.458,
+          "min_detect_range_m": 1.1575,
+          "defect_background_contrast": 0.06616,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 4,
+          "position_m": [
+            241.433,
+            25.225,
+            17.79
+          ],
+          "view_direction": [
+            -0.1278,
+            -0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_087",
+      "position_m": [
+        239.9563,
+        -6.3025,
+        15.254
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 30.514,
+      "cumulative_distance_m": 1130.317,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_005",
+          "type": "JOINT_DETERIORATION",
+          "feature_size_mm": 1.411,
+          "min_detect_range_m": 0.219,
+          "defect_background_contrast": 0.46135,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            239.918,
+            -6.6,
+            15.254
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_088",
+      "position_m": [
+        271.404,
+        28.9917,
+        16.5025
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 47.288,
+      "cumulative_distance_m": 1177.606,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_SOFFIT_TRANSVERSE_CRACK_014",
+          "type": "SOFFIT_TRANSVERSE_CRACK",
+          "feature_size_mm": 1.532,
+          "min_detect_range_m": 0.2378,
+          "defect_background_contrast": 0.00372,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 3,
+          "position_m": [
+            271.404,
+            29.03,
+            16.8
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_089",
+      "position_m": [
+        244.274,
+        30.0212,
+        15.9712
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 27.155,
+      "cumulative_distance_m": 1204.76,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_SOFFIT_TRANSVERSE_CRACK_015",
+          "type": "SOFFIT_TRANSVERSE_CRACK",
+          "feature_size_mm": 5.385,
+          "min_detect_range_m": 0.8357,
+          "defect_background_contrast": 0.03133,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 4,
+          "position_m": [
+            244.274,
+            30.128,
+            16.8
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_090",
+      "position_m": [
+        228.1886,
+        55.6954,
+        16.675
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 30.305,
+      "cumulative_distance_m": 1235.066,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_BEARING_DISTRESS_006",
+          "type": "BEARING_DISTRESS",
+          "feature_size_mm": 810.0,
+          "min_detect_range_m": 125.71,
+          "defect_background_contrast": 0.42904,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 3,
+          "position_m": [
+            225.0,
+            30.95,
+            16.675
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_091",
+      "position_m": [
+        314.8613,
+        7.9487,
+        15.1808
+      ],
+      "heading_rad": 0.829,
+      "heading_deg": 47.5,
+      "leg_distance_m": 98.965,
+      "cumulative_distance_m": 1334.031,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_1_13_MARK_NUT",
+          "type": "JOINT_ANCHOR_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.32727,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            315.0,
+            8.1,
+            14.2725
+          ],
+          "view_direction": [
+            -0.1489,
+            -0.1625,
+            0.9754
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_092",
+      "position_m": [
+        276.0127,
+        -24.8288,
+        26.746
+      ],
+      "heading_rad": 1.8797,
+      "heading_deg": 107.7,
+      "leg_distance_m": 52.128,
+      "cumulative_distance_m": 1386.159,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_003",
+          "type": "REBAR_EXPOSED",
+          "feature_size_mm": 220.0,
+          "min_detect_range_m": 34.1435,
+          "defect_background_contrast": 0.02989,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            269.845,
+            -5.5,
+            12.225
+          ],
+          "view_direction": [
+            0.2472,
+            -0.7747,
+            0.582
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_093",
+      "position_m": [
+        315.3874,
+        0.3826,
+        14.4938
+      ],
+      "heading_rad": 2.0134,
+      "heading_deg": 115.36,
+      "leg_distance_m": 48.333,
+      "cumulative_distance_m": 1434.492,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_-1_18_MARK_NUT",
+          "type": "JOINT_ANCHOR_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.18289,
+          "contrast_limited": false,
+          "escalation_reason": "unreachable_angle",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            315.0,
+            1.2,
+            14.2725
+          ],
+          "view_direction": [
+            0.416,
+            -0.8778,
+            0.2377
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_094",
+      "position_m": [
+        134.8613,
+        5.8487,
+        15.4808
+      ],
+      "heading_rad": 0.829,
+      "heading_deg": 47.5,
+      "leg_distance_m": 180.611,
+      "cumulative_distance_m": 1615.104,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_06_MARK_NUT",
+          "type": "JOINT_ANCHOR_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.09625,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            135.0,
+            6.0,
+            14.5725
+          ],
+          "view_direction": [
+            -0.1489,
+            -0.1625,
+            0.9754
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_095",
+      "position_m": [
+        104.5525,
+        -4.1627,
+        13.527
+      ],
+      "heading_rad": -0.1282,
+      "heading_deg": -7.34,
+      "leg_distance_m": 31.979,
+      "cumulative_distance_m": 1647.083,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_013",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 1.57,
+          "min_detect_range_m": 0.2437,
+          "defect_background_contrast": 0.1069,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 3,
+          "position_m": [
+            104.85,
+            -4.201,
+            13.527
+          ],
+          "view_direction": [
+            -0.9918,
+            0.1278,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_096",
+      "position_m": [
+        89.6979,
+        26.7568,
+        7.05
+      ],
+      "heading_rad": 1.2341,
+      "heading_deg": 70.71,
+      "leg_distance_m": 34.909,
+      "cumulative_distance_m": 1681.992,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_PIER_CORROSION_STAIN_020",
+          "type": "PIER_CORROSION_STAIN",
+          "feature_size_mm": 0.511,
+          "min_detect_range_m": 0.0793,
+          "defect_background_contrast": 0.06905,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 2,
+          "position_m": [
+            89.797,
+            27.04,
+            7.05
+          ],
+          "view_direction": [
+            -0.3304,
+            -0.9438,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_097",
+      "position_m": [
+        175.7753,
+        -6.3025,
+        15.428
+      ],
+      "heading_rad": -1.6989,
+      "heading_deg": -97.34,
+      "leg_distance_m": 92.587,
+      "cumulative_distance_m": 1774.579,
+      "defects_covered": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_019",
+          "type": "CRACK_HAIRLINE",
+          "feature_size_mm": 0.154,
+          "min_detect_range_m": 0.0239,
+          "defect_background_contrast": 0.23265,
+          "contrast_limited": false,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "ROAD",
+          "severity": 1,
+          "position_m": [
+            175.737,
+            -6.6,
+            15.428
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_098",
+      "position_m": [
+        179.9187,
+        -5.7667,
+        21.1413
+      ],
+      "heading_rad": -1.4057,
+      "heading_deg": -80.54,
+      "leg_distance_m": 7.078,
+      "cumulative_distance_m": 1781.657,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_04_02_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.41615,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            180.07,
+            -6.675,
+            21.28
+          ],
+          "view_direction": [
+            -0.1625,
+            0.9754,
+            -0.1489
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_04_05_HOLE",
+          "type": "BOLT_MISSING",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.23155,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            179.93,
+            -6.675,
+            21.14
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_04_09_HOLE",
+          "type": "BOLT_MISSING",
+          "feature_size_mm": 36.0,
+          "min_detect_range_m": 5.5871,
+          "defect_background_contrast": 0.236,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            179.93,
+            -6.675,
+            21.0
+          ],
+          "view_direction": [
+            0.1278,
+            0.9918,
+            0.0
+          ]
+        },
+        {
+          "defect_id": "SDEFECT_COATING_FAILURE_02",
+          "type": "COATING_FAILURE",
+          "feature_size_mm": 218.403,
+          "min_detect_range_m": 33.8956,
+          "defect_background_contrast": 0.02129,
+          "contrast_limited": false,
+          "escalation_reason": "occluded",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 1,
+          "position_m": [
+            180.0,
+            -6.7,
+            21.0
+          ],
+          "view_direction": [
+            0.5666,
+            0.041,
+            -0.8229
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_099",
+      "position_m": [
+        180.855,
+        -6.402,
+        21.0668
+      ],
+      "heading_rad": -1.9381,
+      "heading_deg": -111.05,
+      "leg_distance_m": 1.134,
+      "cumulative_distance_m": 1782.791,
+      "defects_covered": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_01",
+          "type": "WELD_CRACK",
+          "feature_size_mm": 0.41,
+          "min_detect_range_m": 0.0636,
+          "defect_background_contrast": 0.02152,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            180.75,
+            -6.675,
+            21.0
+          ],
+          "view_direction": [
+            0.3501,
+            0.9098,
+            0.2227
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_100",
+      "position_m": [
+        190.3878,
+        -6.0109,
+        21.113
+      ],
+      "heading_rad": -0.7944,
+      "heading_deg": -45.51,
+      "leg_distance_m": 9.541,
+      "cumulative_distance_m": 1792.332,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_05_04_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.01176,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            191.04,
+            -6.675,
+            21.14
+          ],
+          "view_direction": [
+            -0.7004,
+            0.7131,
+            -0.029
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_101",
+      "position_m": [
+        191.3431,
+        -5.782,
+        21.1229
+      ],
+      "heading_rad": -1.5967,
+      "heading_deg": -91.48,
+      "leg_distance_m": 0.982,
+      "cumulative_distance_m": 1793.314,
+      "defects_covered": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_05_14_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.34859,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            191.32,
+            -6.675,
+            20.86
+          ],
+          "view_direction": [
+            0.0248,
+            0.959,
+            0.2823
+          ]
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_05_10_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "feature_size_mm": 6.0,
+          "min_detect_range_m": 0.9312,
+          "defect_background_contrast": 0.41152,
+          "contrast_limited": false,
+          "escalation_reason": "none",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 3,
+          "position_m": [
+            191.32,
+            -6.675,
+            21.0
+          ],
+          "view_direction": [
+            -0.1625,
+            0.9754,
+            -0.1489
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_102",
+      "position_m": [
+        192.105,
+        -6.402,
+        21.0668
+      ],
+      "heading_rad": -1.9381,
+      "heading_deg": -111.05,
+      "leg_distance_m": 0.984,
+      "cumulative_distance_m": 1794.298,
+      "defects_covered": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_02",
+          "type": "WELD_CRACK",
+          "feature_size_mm": 0.82,
+          "min_detect_range_m": 0.1273,
+          "defect_background_contrast": 0.01989,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "POOR",
+          "host_structure": "TRUSS",
+          "severity": 4,
+          "position_m": [
+            192.0,
+            -6.675,
+            21.0
+          ],
+          "view_direction": [
+            0.3501,
+            0.9098,
+            0.2227
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_103",
+      "position_m": [
+        244.684,
+        29.8192,
+        17.9488
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 63.924,
+      "cumulative_distance_m": 1858.222,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_INTERNAL_SOFFIT_CRACK_009",
+          "type": "INTERNAL_SOFFIT_CRACK",
+          "feature_size_mm": 4.88,
+          "min_detect_range_m": 0.7574,
+          "defect_background_contrast": 0.00259,
+          "contrast_limited": true,
+          "escalation_reason": "below_contrast",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 4,
+          "position_m": [
+            244.684,
+            29.916,
+            18.7
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "WP_104",
+      "position_m": [
+        270.437,
+        26.5697,
+        18.4025
+      ],
+      "heading_rad": 1.5708,
+      "heading_deg": 90.0,
+      "leg_distance_m": 25.961,
+      "cumulative_distance_m": 1884.183,
+      "defects_covered": [
+        {
+          "defect_id": "MDEFECT_INTERNAL_SOFFIT_CRACK_008",
+          "type": "INTERNAL_SOFFIT_CRACK",
+          "feature_size_mm": 0.761,
+          "min_detect_range_m": 0.1181,
+          "defect_background_contrast": 0.00196,
+          "contrast_limited": true,
+          "escalation_reason": "below_resolution",
+          "avi_condition": "GOOD",
+          "host_structure": "METRO",
+          "severity": 2,
+          "position_m": [
+            270.437,
+            26.608,
+            18.7
+          ],
+          "view_direction": [
+            0.0,
+            -0.1278,
+            -0.9918
+          ]
+        }
+      ]
+    }
+  ]
+}

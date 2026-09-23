@@ -30,3 +30,16 @@ SIH_AVIAN_FINAL/scene/*.blend
 SIH_AVIAN_FINAL/scene/*.blend1
 SIH_AVIAN_FINAL/scene/_handoff_final.json
 SIH_AVIAN_FINAL/gazebo/.shoot/
+
+# Detection dataset raw render dump (798 frames' images/depth/normals/masks,
+# 2.4 GB) -- same reasoning as the .blend exclusions above: a deterministic
+# build output of dataset_render_final.py, not a source artifact, and at
+# this size it would make the repo unreviewable rather than just noisy.
+# The manifest/stats/negatives JSON+CSV and the build logs beside it ARE
+# tracked -- they are the gate evidence (VD01-08 results, per-frame
+# metadata), not the frames themselves.
+SIH_AVIAN_FINAL/dataset/images/
+SIH_AVIAN_FINAL/dataset/depth/
+SIH_AVIAN_FINAL/dataset/normals/
+SIH_AVIAN_FINAL/dataset/masks/
+SIH_AVIAN_FINAL/dataset/samples/

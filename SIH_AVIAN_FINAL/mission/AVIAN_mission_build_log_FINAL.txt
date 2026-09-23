@@ -1,0 +1,9 @@
+== SIH_AVIAN_FINAL :: mission_final.py (two-panel Stage A) ==
+  defects : 192 candidates from ground truth
+  cluster : 192 candidates -> 163 clusters (radius 0.5 m)
+  filter  : 104/163 clusters flyable (8 below grade, 48 collision-hull embedded), 120 defects covered, 72 uncovered
+  order   : nearest-clear-neighbour, 104 waypoints (21 could not find a clear transit path)
+  mission : 104 waypoints, 120/192 defects covered, 72 uncovered
+  flight  : 2141.5 m, ~804 s, ~594.5 Wh estimated (of 1040 Wh usable)
+  uncovered by type: {'CRACK_HAIRLINE': 6, 'CRACK_LONGITUDINAL': 3, 'CRACK_TRANSVERSE': 1, 'SPALL': 10, 'DELAMINATION': 4, 'CORROSION_STAIN': 2, 'BEARING_SEIZED': 2, 'JOINT_DETERIORATION': 1, 'SEGMENTAL_JOINT_LEAKAGE': 3, 'EFFLORESCENCE_JOINT': 2, 'BEARING_DISTRESS': 1, 'BOLT_LOOSE': 8, 'BOLT_CORRODED': 4, 'BOLT_MISSING': 2, 'JOINT_ANCHOR_LOOSE': 1, 'SECTION_LOSS': 6, 'COATING_FAILURE': 7, 'CONDUIT_DETACHED': 5, 'HANDRAIL_LOOSE': 4}
+  saved   : /home/prince/avian_rev_c/SIH_AVIAN_FINAL/mission/mission.json
