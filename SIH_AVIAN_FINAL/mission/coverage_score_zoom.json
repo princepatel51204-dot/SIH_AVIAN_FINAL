@@ -1,0 +1,79 @@
+{
+  "v1": {
+    "model": "v1",
+    "model_label": "v1 (_320, Section 1 HEADLINE, test mAP@0.5=0.342)",
+    "n_tiles": 1167,
+    "n_waypoints": 16,
+    "tp": 1,
+    "fp": 326,
+    "fn": 17,
+    "precision": 0.0031,
+    "recall": 0.0556,
+    "n_scoreable_defects": 73,
+    "n_defects_considered_in_scope": 10,
+    "n_defects_found_at_least_once": 1,
+    "per_family": {
+      "CRACK": {
+        "tp": 0,
+        "fp": 309,
+        "fn": 0
+      },
+      "SPALL_DELAM": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 5
+      },
+      "OTHER": {
+        "tp": 0,
+        "fp": 12,
+        "fn": 2
+      },
+      "CORROSION_COATING": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 0
+      },
+      "FASTENER": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10
+      }
+    }
+  },
+  "v2": {
+    "model": "v2",
+    "model_label": "v2 (full-res, test mAP@0.5=0.182 -- reported in full, NOT the headline)",
+    "n_tiles": 1167,
+    "n_waypoints": 16,
+    "tp": 2,
+    "fp": 11,
+    "fn": 16,
+    "precision": 0.1538,
+    "recall": 0.1111,
+    "n_scoreable_defects": 73,
+    "n_defects_considered_in_scope": 10,
+    "n_defects_found_at_least_once": 2,
+    "per_family": {
+      "SPALL_DELAM": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 4
+      },
+      "OTHER": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "CRACK": {
+        "tp": 0,
+        "fp": 10,
+        "fn": 0
+      },
+      "FASTENER": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10
+      }
+    }
+  }
+}

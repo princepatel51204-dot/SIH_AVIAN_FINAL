@@ -50,3 +50,9 @@ SIH_AVIAN_FINAL/dataset/samples/
 # The trained detector weights are NOT excluded here: unlike these
 # renders, they are the actual handover artifact, not an intermediate.
 SIH_AVIAN_FINAL/detection/renders/
+
+# Phase 2 Section 2 zoom-tile renders (1,167 PNGs) -- same reasoning:
+# regenerates deterministically via render_zoom_tiles_final.py from
+# coverage_mission.json + coverage_mission_flight_log.json (seed 20260925,
+# both tracked). Both trained model weights (v1 and v2) stay tracked.
+SIH_AVIAN_FINAL/detection/renders_zoom/

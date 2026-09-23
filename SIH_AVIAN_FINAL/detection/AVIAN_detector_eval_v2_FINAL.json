@@ -1,5 +1,5 @@
 {
-  "epochs": 1,
+  "epochs": 15,
   "batch_size": 2,
   "lr": 0.004,
   "min_size": 480,
@@ -22,7 +22,7 @@
         "precision": 0.0,
         "recall": 0.0,
         "tp": 0,
-        "fp": 0,
+        "fp": 1,
         "fn": 15
       },
       "SPALL_DELAM": {
@@ -72,12 +72,12 @@
         6
       ],
       [
+        1,
         0,
         0,
         0,
         0,
-        0,
-        5
+        4
       ],
       [
         0,
@@ -114,28 +114,28 @@
     ]
   },
   "test": {
-    "mAP@0.5": 0.05,
+    "mAP@0.5": 0.18166666666666664,
     "per_family_ap": {
-      "CRACK": 0.0,
-      "SPALL_DELAM": 0.25,
+      "CRACK": 0.2,
+      "SPALL_DELAM": 0.375,
       "CORROSION_COATING": 0.0,
       "FASTENER": 0.0,
-      "OTHER": 0.0
+      "OTHER": 0.3333333333333333
     },
     "per_family_prf": {
       "CRACK": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "tp": 0,
+        "precision": 1.0,
+        "recall": 0.25,
+        "tp": 5,
         "fp": 0,
-        "fn": 20
+        "fn": 15
       },
       "SPALL_DELAM": {
         "precision": 1.0,
-        "recall": 0.25,
-        "tp": 2,
+        "recall": 0.375,
+        "tp": 3,
         "fp": 0,
-        "fn": 6
+        "fn": 5
       },
       "CORROSION_COATING": {
         "precision": 0.0,
@@ -152,29 +152,29 @@
         "fn": 8
       },
       "OTHER": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "tp": 0,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "tp": 1,
         "fp": 0,
-        "fn": 3
+        "fn": 2
       }
     },
     "confusion_matrix": [
       [
+        5,
         0,
         0,
         0,
         0,
-        0,
-        20
+        15
       ],
       [
         0,
-        2,
+        3,
         0,
         0,
         0,
-        6
+        5
       ],
       [
         0,
@@ -197,8 +197,8 @@
         0,
         0,
         0,
-        0,
-        3
+        1,
+        2
       ],
       [
         0,
@@ -523,17 +523,17 @@
       ],
       "pred_boxes": [
         [
-          218.59030151367188,
-          136.45419311523438,
-          412.8243713378906,
-          352.493896484375
+          219.57614135742188,
+          126.12382507324219,
+          408.0379943847656,
+          335.048095703125
         ]
       ],
       "pred_labels": [
         "SPALL_DELAM"
       ],
       "pred_scores": [
-        0.5892817974090576
+        0.998458981513977
       ]
     },
     {
@@ -566,9 +566,20 @@
       "gt_labels": [
         "CORROSION_COATING"
       ],
-      "pred_boxes": [],
-      "pred_labels": [],
-      "pred_scores": []
+      "pred_boxes": [
+        [
+          242.53607177734375,
+          187.90110778808594,
+          380.35736083984375,
+          293.2982482910156
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5727038979530334
+      ]
     },
     {
       "image_path": "dataset/images/POS_090_MDR_LOOP_0001.png",
@@ -1410,9 +1421,20 @@
       "gt_labels": [
         "CRACK"
       ],
-      "pred_boxes": [],
-      "pred_labels": [],
-      "pred_scores": []
+      "pred_boxes": [
+        [
+          265.25390625,
+          214.23281860351562,
+          371.34820556640625,
+          264.3359680175781
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.527297854423523
+      ]
     },
     {
       "image_path": "dataset/images/POS_014_MDR_LOOP_0001.png",
@@ -1546,9 +1568,20 @@
       "gt_labels": [
         "CRACK"
       ],
-      "pred_boxes": [],
-      "pred_labels": [],
-      "pred_scores": []
+      "pred_boxes": [
+        [
+          248.05706787109375,
+          168.88320922851562,
+          375.05322265625,
+          309.9498291015625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6223877668380737
+      ]
     },
     {
       "image_path": "dataset/images/POS_041_MDR_LOOP_0001.png",
@@ -1580,9 +1613,20 @@
       "gt_labels": [
         "CRACK"
       ],
-      "pred_boxes": [],
-      "pred_labels": [],
-      "pred_scores": []
+      "pred_boxes": [
+        [
+          243.72439575195312,
+          171.81735229492188,
+          407.1289367675781,
+          276.229736328125
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.508117139339447
+      ]
     },
     {
       "image_path": "dataset/images/POS_048_MDR_LOOP_0001.png",
@@ -1614,9 +1658,20 @@
       "gt_labels": [
         "CRACK"
       ],
-      "pred_boxes": [],
-      "pred_labels": [],
-      "pred_scores": []
+      "pred_boxes": [
+        [
+          4.84356689453125,
+          62.83160400390625,
+          608.1973876953125,
+          405.79248046875
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6347655057907104
+      ]
     },
     {
       "image_path": "dataset/images/POS_057_SURVEY_LOOP_0001.png",
@@ -1633,17 +1688,17 @@
       ],
       "pred_boxes": [
         [
-          250.12979125976562,
-          164.42691040039062,
-          393.9009704589844,
-          328.77532958984375
+          240.10394287109375,
+          157.9603271484375,
+          386.6986083984375,
+          311.0309143066406
         ]
       ],
       "pred_labels": [
         "SPALL_DELAM"
       ],
       "pred_scores": [
-        0.7472162246704102
+        0.9896951913833618
       ]
     },
     {
@@ -1729,17 +1784,17 @@
       ],
       "pred_boxes": [
         [
-          276.74713134765625,
-          189.64242553710938,
-          376.89141845703125,
-          307.7395324707031
+          273.54693603515625,
+          188.1763458251953,
+          369.55908203125,
+          280.5287170410156
         ]
       ],
       "pred_labels": [
         "SPALL_DELAM"
       ],
       "pred_scores": [
-        0.767344057559967
+        0.9123873710632324
       ]
     },
     {
@@ -1789,9 +1844,20 @@
       "gt_labels": [
         "OTHER"
       ],
-      "pred_boxes": [],
-      "pred_labels": [],
-      "pred_scores": []
+      "pred_boxes": [
+        [
+          109.75761413574219,
+          48.81109619140625,
+          541.3305053710938,
+          480.0
+        ]
+      ],
+      "pred_labels": [
+        "OTHER"
+      ],
+      "pred_scores": [
+        0.7095135450363159
+      ]
     },
     {
       "image_path": "dataset/images/POS_091_SURVEY_LOOP_0001.png",
@@ -1891,9 +1957,20 @@
       "gt_labels": [
         "CRACK"
       ],
-      "pred_boxes": [],
-      "pred_labels": [],
-      "pred_scores": []
+      "pred_boxes": [
+        [
+          232.0646209716797,
+          61.33392333984375,
+          436.3258056640625,
+          419.7146301269531
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7498598694801331
+      ]
     },
     {
       "image_path": "dataset/images/POS_113_MDR_LOOP_0001.png",
@@ -1925,9 +2002,20 @@
       "gt_labels": [
         "SPALL_DELAM"
       ],
-      "pred_boxes": [],
-      "pred_labels": [],
-      "pred_scores": []
+      "pred_boxes": [
+        [
+          141.8804473876953,
+          86.02288818359375,
+          464.08203125,
+          386.4231872558594
+        ]
+      ],
+      "pred_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_scores": [
+        0.8242715001106262
+      ]
     },
     {
       "image_path": "dataset/images/POS_120_MDR_LOOP_0001.png",
