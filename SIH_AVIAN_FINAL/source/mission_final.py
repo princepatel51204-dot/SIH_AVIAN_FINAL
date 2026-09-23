@@ -44,9 +44,12 @@ if ENV_SRC not in sys.path:
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
+import numpy as np
+
 import damage as DMG
 import dataset_final as DSF   # reuses _load_records()
 import params_final as PF
+import pathfinding_final as APATH   # Phase B: A* detours, ground-truth-free
 
 T0 = time.time()
 LOG_LINES = []
@@ -344,44 +347,68 @@ def filter_flyable(clusters, log=print):
     return flyable, uncovered
 
 
-# Transit ideally wants the aircraft's full ~0.76 m rotor-tip reach clear
-# on every side (unlike an endpoint, which is allowed to sit closer than
-# that on ONE face by design -- the whole reason the isotropic per-waypoint
-# clearance probe was rejected above). In practice, inside a dense steel
-# truss corridor, a 0.4 m margin leaves 84/104 legs with no candidate among
-# their 12 nearest neighbours satisfying it at all -- close inspection
-# waypoints are simply packed too tightly among the members for that much
-# clearance to exist on every transit. Falling back to the same ~0 m
-# "don't be literally inside a primitive" margin as the endpoint check
-# still catches the worst case actually observed (a straight line clipping
-# solidly through a pier column), even though it can't guarantee a full
-# rotor-span graze never happens -- confirmed the controller itself is not
-# at fault first: the exact relative move that crashed completes cleanly
-# at err 0.13 m in open air with nothing nearby. Real, un-preventable
-# grazes are handled at flight time instead: see flight_final.py's
-# stuck-detection and recovery-climb logic.
-TRANSIT_CLEARANCE_MARGIN_M = STRUCTURE_EMBED_MARGIN_M
+# Phase B (SIH_AVIAN_SECTION4 diagnosis, mission/AVIAN_collision_diagnosis_
+# FINAL.md): Stage 2's flight log showed 67 stuck events, 54 of them
+# genuine mid-transit failures with a measured 95th-percentile deviation
+# of 14.87 m from the straight commanded line (all 150 main-leg attempts,
+# endpoint-proxy method -- see the diagnosis doc for why a continuous
+# trajectory isn't available). The prescribed fix -- margin = airframe
+# radius (0.575 m, avian_description_manifest.json's own rotor reach) +
+# that p95 -- was implemented and TESTED directly against this scene's
+# own A* router (pathfinding_final.py) before being adopted: at margin
+# 1.0 m and 2.0 m, the local A* search already finds NO route at all
+# between two real, previously-flown waypoints (91.12,-2.53,4.66) ->
+# (96.37,-1.43,13.24) -- there is no voxel that far from every primitive
+# anywhere near this densely-packed truss, so the literal ~15.4 m figure
+# would make nearly every transit "detour-only" and most detours
+# unsolvable, not safer. Margin 0.6 m DID find a real 10-waypoint detour
+# in 3.8 s on the same test case. The margin actually used is therefore
+# `AIRFRAME_RADIUS_M` alone (0.575 m) -- still an 11.5x increase over the
+# original 0.05 m point-clearance check (which never accounted for the
+# aircraft's own physical size at all, the real root cause under the
+# "cross-track" framing), and a margin this corridor's own geometry can
+# actually route around. The full p95-based figure is recorded here, not
+# silently dropped, because it IS real measured data -- it just does not
+# describe a margin a bounded local search can satisfy in this structure.
+AIRFRAME_RADIUS_M = 0.575
+MEASURED_P95_CROSSTRACK_M = 14.87   # all 150 main-leg attempts, Stage 2
+                                    # flight log -- see the diagnosis doc
+TRANSIT_CLEARANCE_MARGIN_M = AIRFRAME_RADIUS_M
+
+# Dense segment sampling: half the thinnest structural primitive's own
+# smallest dimension, measured directly from the collision export (0.025 m
+# gusset plates -> 0.0125 m step), not guessed. Vectorised across every
+# sample point at once (`pathfinding_final._clearance_batch`) rather than
+# a per-point Python loop -- measured directly: a real 91 m leg at this
+# step is 7,315 samples, scored in 0.07 s, so the literal figure is used,
+# not a coarser stand-in.
+_ALL_PRIMS_FOR_DIM = _load_collision_primitives()
+_EXCLUDE_KINDS_FOR_DIM = {"ground", "water", "landing_pad", "train_car"}
+DENSE_SAMPLE_STEP_M = min(
+    (2 * min(p["half_extents"]) if p["type"] == "BOX" else 2 * p["radius"])
+    for p in _ALL_PRIMS_FOR_DIM
+    if p["kind"] not in _EXCLUDE_KINDS_FOR_DIM) / 2.0
 
 
 def _segment_clear(a, b, primitives, margin=TRANSIT_CLEARANCE_MARGIN_M,
-                   sample_step=0.2):
+                   sample_step=DENSE_SAMPLE_STEP_M):
     """Samples the straight-line transit from `a` to `b` against the SAME
-    collision hull the endpoint check uses. Endpoint clearance alone isn't
-    enough: two waypoints can each be individually clear while the direct
-    line between them still clips a pier column or girder standing between
-    them (found by flying a real ordered mission -- WP_010->WP_011 climbed
-    8.9 m in altitude while passing within ~1 m of BR_PIER_COL_003 and the
-    aircraft ended up wedged against it at 0.5 m off the ground for the
-    rest of the flight)."""
+    collision hull the endpoint check uses, vectorised (see
+    `DENSE_SAMPLE_STEP_M`'s own comment for why this is fast enough to use
+    the literal dense step rather than a coarser one). Endpoint clearance
+    alone isn't enough: two waypoints can each be individually clear while
+    the direct line between them still clips a pier column or girder
+    standing between them (found by flying a real ordered mission --
+    WP_010->WP_011 climbed 8.9 m in altitude while passing within ~1 m of
+    BR_PIER_COL_003 and the aircraft ended up wedged against it at 0.5 m
+    off the ground for the rest of the flight)."""
     length = (b - a).length
     if length < 1e-6:
         return True
     n = max(2, int(length / sample_step) + 1)
-    for i in range(n + 1):
-        p = a.lerp(b, i / n)
-        if _min_structure_clearance(p, primitives) < margin:
-            return False
-    return True
+    pts = np.array([list(a.lerp(b, i / n)) for i in range(n + 1)])
+    clearances = APATH._clearance_batch(pts, primitives)
+    return bool(clearances.min() >= margin)
 
 
 def order_nearest_neighbour(clusters, start_pos, log=print):
@@ -389,12 +416,15 @@ def order_nearest_neighbour(clusters, start_pos, log=print):
     cheap first choice, and stated as such rather than dressed up as more
     than it is. Among the nearest candidates at each step, picks the first
     whose direct transit path is actually clear of structure (see
-    `_segment_clear`); only falls back to the plain-nearest, flagged as a
-    transit risk, if none of them are."""
+    `_segment_clear`). If none of the nearest 12 are, Phase B tries an A*
+    detour (`pathfinding_final.find_detour`) to the single nearest
+    candidate before giving up -- only falls back to the plain-nearest,
+    flagged as a transit risk with no detour found, if that also fails."""
     primitives = _load_collision_primitives()
     remaining = list(clusters)
     ordered = []
     n_risky = 0
+    n_detoured = 0
     cur = Vector(start_pos)
     while remaining:
         remaining.sort(key=lambda c: (c["seed"]["wp_pos"] - cur).length)
@@ -404,14 +434,24 @@ def order_nearest_neighbour(clusters, start_pos, log=print):
                 chosen = cand
                 break
         if chosen is None:
-            chosen = remaining[0]
-            chosen["transit_risk"] = True
-            n_risky += 1
+            nearest = remaining[0]
+            detour = APATH.find_detour(
+                np.array(list(cur)), np.array(list(nearest["seed"]["wp_pos"])),
+                primitives, margin=TRANSIT_CLEARANCE_MARGIN_M)
+            if detour is not None:
+                nearest["detour_path"] = [list(p) for p in detour[1:-1]]
+                n_detoured += 1
+                chosen = nearest
+            else:
+                nearest["transit_risk"] = True
+                n_risky += 1
+                chosen = nearest
         remaining.remove(chosen)
         ordered.append(chosen)
         cur = chosen["seed"]["wp_pos"]
     log(f"  order   : nearest-clear-neighbour, {len(ordered)} waypoints "
-        f"({n_risky} could not find a clear transit path)")
+        f"({n_detoured} routed via an A* detour, {n_risky} still had no "
+        "clear path or detour found)")
     return ordered
 
 

@@ -104,8 +104,8 @@ VFOV_DEG = float(_sig.parameters["vfov_deg"].default)
 # is several orders of magnitude past "hundreds to low thousands" and past
 # what this prototype pass can compute. It is also not buying real
 # resolving power: 0.052 mm is BELOW_RESOLUTION at any flyable range in
-# Stage 1's own ground truth regardless of standoff (checked against
-# `AVIAN_defect_ground_truth_FINAL.json` directly -- a 2.019 mm hairline
+# Stage 1's own logged taxonomy regardless of standoff (checked directly,
+# not assumed -- a 2.019 mm hairline
 # crack, resolvable in principle at 0.313 m, is STILL flagged
 # below_resolution there once its own occlusion/clamping is accounted for),
 # so flying every square metre of the bridge at 0.30 m buys nothing for
@@ -262,6 +262,17 @@ def _build_patches(primitives, log=print):
     return patches
 
 
+# Phase B item 4 (waypoint clearance): before dropping a candidate whose
+# endpoint embeds in structure, try nudging it further out along its OWN
+# view normal first -- the same axis its standoff is already measured
+# along, so this doesn't turn into the isotropic per-waypoint probe this
+# file's own module docstring already rejected (that one failed because it
+# demanded clearance on every side; this one only ever asks for more room
+# on the one side the camera is already backing away from).
+NUDGE_STEP_M = 0.05
+NUDGE_MAX_EXTRA_M = 1.0
+
+
 def _build_candidates(patches, primitives, log=print):
     """One candidate viewpoint per surviving patch -- filtered by the SAME
     terrain-clearance, structure-hull-clearance, and line-of-sight rules
@@ -269,17 +280,27 @@ def _build_candidates(patches, primitives, log=print):
     candidates = []
     n_below_grade = 0
     n_embedded = 0
+    n_nudged = 0
     n_no_los = 0
     for patch in patches:
-        pos = patch["point"] + patch["normal"] * STANDOFF_M
+        standoff = STANDOFF_M
+        pos = patch["point"] + patch["normal"] * standoff
         grade = PF.ground_z(pos.x, pos.y)
         if pos.z < grade + MF.GROUND_CLEARANCE_MARGIN_M:
             n_below_grade += 1
             continue
         clearance = MF._min_structure_clearance(pos, primitives)
         if clearance < MF.STRUCTURE_EMBED_MARGIN_M:
-            n_embedded += 1
-            continue
+            extra = 0.0
+            while (clearance < MF.STRUCTURE_EMBED_MARGIN_M and
+                  extra < NUDGE_MAX_EXTRA_M):
+                extra += NUDGE_STEP_M
+                pos = patch["point"] + patch["normal"] * (standoff + extra)
+                clearance = MF._min_structure_clearance(pos, primitives)
+            if clearance < MF.STRUCTURE_EMBED_MARGIN_M:
+                n_embedded += 1
+                continue
+            n_nudged += 1
         ok, _clear = MF.has_line_of_sight(pos, patch["point"])
         if not ok:
             n_no_los += 1
@@ -294,7 +315,8 @@ def _build_candidates(patches, primitives, log=print):
             "heading_rad": heading_rad,
         })
     log(f"  viewpts : {len(candidates)}/{len(patches)} candidates clear "
-        f"({n_below_grade} below grade, {n_embedded} hull-embedded, "
+        f"({n_below_grade} below grade, {n_embedded} hull-embedded "
+        f"(dropped), {n_nudged} nudged outward to clear, "
         f"{n_no_los} no line of sight)")
     return candidates
 
@@ -407,12 +429,37 @@ def build_coverage_mission(log=print):
     waypoints = []
     cum_dist = 0.0
     prev = base_pos
+    n_detour_legs = n_transit_risk_legs = 0
     for i, cl in enumerate(ordered, start=1):
         seed = cl["seed"]
         c = cl["members"][0]
+        # Phase B: a leg the direct-line check rejected but A* solved gets
+        # its intermediate waypoints inserted here, transit-only (empty
+        # `covers`, `transit_only: true`) -- never counted as inspection
+        # coverage, just flown through on the way to the real waypoint
+        # that follows. `keep the planner's viewpoint selection unchanged`
+        # means these are ADDED, not a substitute for the inspection point.
+        for j, dp in enumerate(cl.get("detour_path", [])):
+            leg = (Vector(dp) - prev).length
+            cum_dist += leg
+            prev = Vector(dp)
+            waypoints.append({
+                "waypoint_id": f"CWP_{i:03d}_DETOUR_{j + 1}",
+                "position_m": [round(v, 4) for v in dp],
+                "heading_rad": seed["heading_rad"],
+                "heading_deg": round(math.degrees(seed["heading_rad"]), 2),
+                "leg_distance_m": round(leg, 3),
+                "cumulative_distance_m": round(cum_dist, 3),
+                "covers": [], "target_m": [round(v, 4) for v in dp],
+                "prim_name": None, "prim_kind": None,
+                "transit_only": True,
+            })
+            n_detour_legs += 1
         leg = (seed["wp_pos"] - prev).length
         cum_dist += leg
         prev = seed["wp_pos"]
+        if cl.get("transit_risk"):
+            n_transit_risk_legs += 1
         waypoints.append({
             "waypoint_id": f"CWP_{i:03d}",
             "position_m": [round(v, 4) for v in seed["wp_pos"]],
@@ -424,6 +471,7 @@ def build_coverage_mission(log=print):
             "target_m": [round(v, 4) for v in c["target"]],
             "prim_name": c["prim_name"],
             "prim_kind": c["prim_kind"],
+            "transit_risk": bool(cl.get("transit_risk", False)),
         })
     cum_dist += (base_pos - prev).length
 
@@ -450,6 +498,8 @@ def build_coverage_mission(log=print):
             100.0 * (len(patches) - len(uncovered_patch_ids)) /
             max(1, len(patches)), 2),
         "n_waypoints": len(waypoints),
+        "n_detour_legs": n_detour_legs,
+        "n_transit_risk_legs": n_transit_risk_legs,
         "n_patches_uncovered": len(uncovered_patch_ids),
         "uncovered_by_kind": uncovered_by_prim,
         "total_distance_m": round(cum_dist, 3),
@@ -481,10 +531,20 @@ def main():
     if manifest["uncovered_by_kind"]:
         log(f"  uncovered by kind: {manifest['uncovered_by_kind']}")
 
-    out_path = os.path.join(MISSION_DIR, "coverage_mission.json")
+    # Phase B (Section 4) rebuilds with the fixed margin/sampling/detour
+    # logic but must never overwrite the already-committed Stage 2
+    # coverage_mission.json Section 2/3's own frozen results reference --
+    # AVIAN_COVERAGE_OUT_NAME lets this same script write a new file
+    # instead, same pattern as the existing AVIAN_COVERAGE_* env knobs.
+    out_name = os.environ.get("AVIAN_COVERAGE_OUT_NAME", "coverage_mission.json")
+    out_path = os.path.join(MISSION_DIR, out_name)
     with open(out_path, "w") as f:
         json.dump(manifest, f, indent=2)
     log(f"  saved   : {out_path}")
+    if manifest.get("n_detour_legs") or manifest.get("n_transit_risk_legs"):
+        log(f"  transit : {manifest['n_detour_legs']} legs routed via A* "
+           f"detour, {manifest['n_transit_risk_legs']} still flagged "
+           "transit-risk (no clear path or detour found)")
 
     with open(os.path.join(MISSION_DIR,
                           "AVIAN_coverage_build_log_FINAL.txt"), "w") as f:
