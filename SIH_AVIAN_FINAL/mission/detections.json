@@ -1,0 +1,2196 @@
+{
+  "generated_utc": "2026-09-23T11:53:39Z",
+  "mission_file": "coverage_mission.json",
+  "detector": "detect_stub_final.detect (STUB -- peeks at ground truth internally to fake perception, not a real model; see that module's own docstring)",
+  "n_waypoints_detected_at": 82,
+  "detections": [
+    {
+      "waypoint_id": "CWP_001",
+      "achieved_position_m": [
+        30.0408,
+        -3.544,
+        4.496
+      ],
+      "target_m": [
+        30.0,
+        -3.6667,
+        12.4956
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_002",
+      "achieved_position_m": [
+        14.9943,
+        -3.6653,
+        4.5041
+      ],
+      "target_m": [
+        15.0,
+        -3.6667,
+        12.4956
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "achieved_position_m": [
+        45.0861,
+        0.1076,
+        2.6391
+      ],
+      "target_m": [
+        45.0,
+        0.0,
+        10.6375
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_008",
+      "achieved_position_m": [
+        60.1238,
+        -3.6954,
+        4.7211
+      ],
+      "target_m": [
+        60.0,
+        -3.6667,
+        12.7206
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_009",
+      "achieved_position_m": [
+        75.084,
+        -3.6661,
+        4.7298
+      ],
+      "target_m": [
+        75.0,
+        -3.6667,
+        12.7206
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_010",
+      "achieved_position_m": [
+        90.1237,
+        0.031,
+        2.8264
+      ],
+      "target_m": [
+        90.0,
+        0.0,
+        10.825
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_018",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.775,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_009",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_001",
+          "type": "CORROSION_STAIN",
+          "confidence": 0.6,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_001",
+          "type": "JOINT_DETERIORATION",
+          "confidence": 0.857,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_002",
+          "type": "JOINT_DETERIORATION",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_011",
+      "achieved_position_m": [
+        98.7933,
+        -2.8703,
+        1.9553
+      ],
+      "target_m": [
+        90.85,
+        -2.75,
+        1.9542
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_001",
+          "type": "CRACK_NETWORK",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_012",
+      "achieved_position_m": [
+        98.819,
+        2.8773,
+        1.9558
+      ],
+      "target_m": [
+        90.85,
+        2.75,
+        1.9542
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_013",
+      "achieved_position_m": [
+        105.0918,
+        -3.7626,
+        4.8715
+      ],
+      "target_m": [
+        105.0,
+        -3.6667,
+        12.8706
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_013",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_005",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_007",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_014",
+      "achieved_position_m": [
+        120.0831,
+        -3.666,
+        4.8798
+      ],
+      "target_m": [
+        120.0,
+        -3.6667,
+        12.8706
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_005",
+          "type": "CRACK_TRANSVERSE",
+          "confidence": 0.478,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_010",
+          "type": "CRACK_TRANSVERSE",
+          "confidence": 0.436,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_012",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_DELAMINATION_005",
+          "type": "DELAMINATION",
+          "confidence": 0.53,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_015",
+      "achieved_position_m": [
+        126.8924,
+        -7.0539,
+        13.4901
+      ],
+      "target_m": [
+        134.775,
+        -7.0,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_007",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.51,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_010",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_004",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.714,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_016",
+      "achieved_position_m": [
+        135.0993,
+        0.0831,
+        2.9461
+      ],
+      "target_m": [
+        135.0,
+        0.0,
+        10.9375
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_007",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.51,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_015",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.692,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_007",
+          "type": "CRACK_LONGITUDINAL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_010",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_011",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_004",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.714,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_007",
+          "type": "CORROSION_STAIN",
+          "confidence": 0.941,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_01",
+          "type": "BEARING_SEIZED",
+          "confidence": 0.929,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_02",
+          "type": "BEARING_SEIZED",
+          "confidence": 0.865,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_018",
+      "achieved_position_m": [
+        146.3418,
+        0.0009,
+        4.4566
+      ],
+      "target_m": [
+        146.25,
+        0.0,
+        12.45
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_010",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.4,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_002",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_005",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_008",
+          "type": "CORROSION_STAIN",
+          "confidence": 0.52,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE",
+          "type": "BOLT_MISSING",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_019",
+      "achieved_position_m": [
+        143.7763,
+        2.8609,
+        5.5598
+      ],
+      "target_m": [
+        135.85,
+        2.75,
+        5.5588
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_015",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.692,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_011",
+          "type": "CRACK_LONGITUDINAL",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_020",
+      "achieved_position_m": [
+        143.1697,
+        -3.6288,
+        13.3347
+      ],
+      "target_m": [
+        135.2,
+        -3.5,
+        13.3438
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_007",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.51,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_010",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_004",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.714,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE",
+          "type": "BOLT_MISSING",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_02",
+          "type": "BEARING_SEIZED",
+          "confidence": 0.865,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_021",
+      "achieved_position_m": [
+        157.5867,
+        0.1008,
+        4.4511
+      ],
+      "target_m": [
+        157.5,
+        0.0,
+        12.45
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_011",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_004",
+          "type": "CRACK_TRANSVERSE",
+          "confidence": 0.867,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "achieved_position_m": [
+        168.8413,
+        0.0008,
+        4.4614
+      ],
+      "target_m": [
+        168.75,
+        0.0,
+        12.45
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_SPALL_001",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_00_J03_02_HOLE",
+          "type": "BOLT_MISSING",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_023",
+      "achieved_position_m": [
+        180.0934,
+        0.0011,
+        4.4616
+      ],
+      "target_m": [
+        180.0,
+        0.0,
+        12.45
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_001",
+          "type": "CRACK_TRANSVERSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_007",
+          "type": "CRACK_TRANSVERSE",
+          "confidence": 0.437,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_003",
+          "type": "CRACK_NETWORK",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_STRINGER_00_J03_02_HOLE",
+          "type": "BOLT_MISSING",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "achieved_position_m": [
+        191.3443,
+        0.0011,
+        4.4616
+      ],
+      "target_m": [
+        191.25,
+        0.0,
+        12.45
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_DELAMINATION_001",
+          "type": "DELAMINATION",
+          "confidence": 0.659,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_025",
+      "achieved_position_m": [
+        202.5943,
+        0.0011,
+        4.4616
+      ],
+      "target_m": [
+        202.5,
+        0.0,
+        12.45
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_008",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "achieved_position_m": [
+        213.8443,
+        0.0011,
+        4.4616
+      ],
+      "target_m": [
+        213.75,
+        0.0,
+        12.45
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_014",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_DELAMINATION_003",
+          "type": "DELAMINATION",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_DELAMINATION_004",
+          "type": "DELAMINATION",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "achieved_position_m": [
+        216.897,
+        -3.5926,
+        13.3265
+      ],
+      "target_m": [
+        224.8,
+        -3.5,
+        13.3438
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_012",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_03",
+          "type": "BEARING_SEIZED",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "achieved_position_m": [
+        225.1176,
+        0.051,
+        2.0488
+      ],
+      "target_m": [
+        225.0,
+        0.0,
+        10.0375
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_005",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.782,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_012",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_001",
+          "type": "CRACK_LONGITUDINAL",
+          "confidence": 0.465,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_007",
+          "type": "CRACK_NETWORK",
+          "confidence": 0.419,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_004",
+          "type": "JOINT_DETERIORATION",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_03",
+          "type": "BEARING_SEIZED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_04",
+          "type": "BEARING_SEIZED",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_031",
+      "achieved_position_m": [
+        240.1236,
+        -3.6954,
+        4.8705
+      ],
+      "target_m": [
+        240.0,
+        -3.6667,
+        12.8706
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_006",
+          "type": "CRACK_NETWORK",
+          "confidence": 0.402,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_SPALL_004",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_DELAMINATION_006",
+          "type": "DELAMINATION",
+          "confidence": 0.81,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_DELAMINATION_008",
+          "type": "DELAMINATION",
+          "confidence": 0.759,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_005",
+          "type": "JOINT_DETERIORATION",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "achieved_position_m": [
+        255.085,
+        -3.6645,
+        4.8798
+      ],
+      "target_m": [
+        255.0,
+        -3.6667,
+        12.8706
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_006",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.658,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_020",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.428,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_022",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.451,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_TRANSVERSE_003",
+          "type": "CRACK_TRANSVERSE",
+          "confidence": 0.469,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "achieved_position_m": [
+        270.1237,
+        0.0311,
+        2.8264
+      ],
+      "target_m": [
+        270.0,
+        0.0,
+        10.825
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_004",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.866,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_017",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.892,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_003",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.579,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_006",
+          "type": "CORROSION_STAIN",
+          "confidence": 0.443,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_003",
+          "type": "JOINT_DETERIORATION",
+          "confidence": 0.542,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_035",
+      "achieved_position_m": [
+        278.7939,
+        -2.8706,
+        1.9553
+      ],
+      "target_m": [
+        270.85,
+        -2.75,
+        1.9542
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_017",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.892,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_036",
+      "achieved_position_m": [
+        278.819,
+        2.8773,
+        1.9558
+      ],
+      "target_m": [
+        270.85,
+        2.75,
+        1.9542
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_037",
+      "achieved_position_m": [
+        285.0918,
+        -3.7625,
+        4.7215
+      ],
+      "target_m": [
+        285.0,
+        -3.6667,
+        12.7206
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_038",
+      "achieved_position_m": [
+        300.0831,
+        -3.666,
+        4.7298
+      ],
+      "target_m": [
+        300.0,
+        -3.6667,
+        12.7206
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_039",
+      "achieved_position_m": [
+        315.1238,
+        0.031,
+        2.6389
+      ],
+      "target_m": [
+        315.0,
+        0.0,
+        10.6375
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_-1_18_MARK_NUT",
+          "type": "JOINT_ANCHOR_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_043",
+      "achieved_position_m": [
+        345.0715,
+        -3.661,
+        4.4983
+      ],
+      "target_m": [
+        345.0,
+        -3.6667,
+        12.4956
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "achieved_position_m": [
+        345.5225,
+        6.1303,
+        7.0002
+      ],
+      "target_m": [
+        353.5,
+        6.0,
+        7.0
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_064",
+      "achieved_position_m": [
+        234.1194,
+        28.032,
+        8.0697
+      ],
+      "target_m": [
+        226.0,
+        28.0,
+        8.0686
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_065",
+      "achieved_position_m": [
+        233.2189,
+        6.8684,
+        13.4993
+      ],
+      "target_m": [
+        225.225,
+        7.0,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_HAIRLINE_005",
+          "type": "CRACK_HAIRLINE",
+          "confidence": 0.782,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_CRACK_NETWORK_007",
+          "type": "CRACK_NETWORK",
+          "confidence": 0.419,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_JOINT_DETERIORATION_004",
+          "type": "JOINT_DETERIORATION",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_04",
+          "type": "BEARING_SEIZED",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "achieved_position_m": [
+        213.6157,
+        15.2212,
+        13.5016
+      ],
+      "target_m": [
+        213.75,
+        7.225,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_009",
+          "type": "CORROSION_STAIN",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_068",
+      "achieved_position_m": [
+        205.1104,
+        15.2072,
+        16.4995
+      ],
+      "target_m": [
+        205.2422,
+        7.225,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "SDEFECT_CONDUIT_DETACHED_04",
+          "type": "CONDUIT_DETACHED",
+          "confidence": 0.539,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_069",
+      "achieved_position_m": [
+        202.4304,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        202.5,
+        7.225,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "SDEFECT_CONDUIT_DETACHED_04",
+          "type": "CONDUIT_DETACHED",
+          "confidence": 0.539,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_070",
+      "achieved_position_m": [
+        193.8607,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        193.9922,
+        7.225,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_03",
+          "type": "WELD_CRACK",
+          "confidence": 0.524,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "achieved_position_m": [
+        191.1804,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        191.25,
+        7.225,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_03",
+          "type": "WELD_CRACK",
+          "confidence": 0.524,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_CONDUIT_DETACHED_03",
+          "type": "CONDUIT_DETACHED",
+          "confidence": 0.944,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_072",
+      "achieved_position_m": [
+        182.6107,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        182.7422,
+        7.225,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_11_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_12_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_04_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_04_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_05_HOLE",
+          "type": "BOLT_MISSING",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_04_00_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_13_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_01_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_HANDRAIL_LOOSE_02",
+          "type": "HANDRAIL_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_073",
+      "achieved_position_m": [
+        179.9304,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        180.0,
+        7.225,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_006",
+          "type": "CRACK_LONGITUDINAL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_11_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_12_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_04_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_04_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_05_HOLE",
+          "type": "BOLT_MISSING",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_04_13_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_01_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_HANDRAIL_LOOSE_02",
+          "type": "HANDRAIL_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "achieved_position_m": [
+        171.3607,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        171.4922,
+        7.225,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_006",
+          "type": "CRACK_LONGITUDINAL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_03_16_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_03_07_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_16_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_N_03_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_07_HOLE",
+          "type": "BOLT_MISSING",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_06_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_12_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "ST_GUSSET_N_BOT_03",
+          "type": "GUSSET_DISTORTION",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_075",
+      "achieved_position_m": [
+        168.6804,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        168.75,
+        7.225,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_16_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_N_03_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_07_HOLE",
+          "type": "BOLT_MISSING",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_06_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_BOT_03_12_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "ST_GUSSET_N_BOT_03",
+          "type": "GUSSET_DISTORTION",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_076",
+      "achieved_position_m": [
+        160.1107,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        160.2422,
+        7.225,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_05",
+          "type": "WELD_CRACK",
+          "confidence": 0.52,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_077",
+      "achieved_position_m": [
+        157.4304,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        157.5,
+        7.225,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_SPALL_006",
+          "type": "SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_05",
+          "type": "WELD_CRACK",
+          "confidence": 0.52,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_078",
+      "achieved_position_m": [
+        148.8607,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        148.9922,
+        7.225,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_002",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_005",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_N_03_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_079",
+      "achieved_position_m": [
+        146.1804,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        146.25,
+        7.225,
+        13.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_002",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "DEFECT_REBAR_EXPOSED_005",
+          "type": "REBAR_EXPOSED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_N_03_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "achieved_position_m": [
+        137.6107,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        137.7422,
+        7.225,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CORROSION_STAIN_007",
+          "type": "CORROSION_STAIN",
+          "confidence": 0.941,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT",
+          "type": "JOINT_ANCHOR_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_06_MARK_NUT",
+          "type": "JOINT_ANCHOR_LOOSE",
+          "confidence": 0.978,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_BEARING_SEIZED_01",
+          "type": "BEARING_SEIZED",
+          "confidence": 0.929,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_HANDRAIL_LOOSE_04",
+          "type": "HANDRAIL_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "achieved_position_m": [
+        -8.9554,
+        -2.6659,
+        8.676
+      ],
+      "target_m": [
+        -0.85,
+        -2.75,
+        8.6758
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "achieved_position_m": [
+        -8.8212,
+        -2.9922,
+        11.0629
+      ],
+      "target_m": [
+        -0.9,
+        -3.0,
+        11.075
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_101",
+      "achieved_position_m": [
+        -8.0656,
+        25.9815,
+        18.7742
+      ],
+      "target_m": [
+        -0.06,
+        25.85,
+        18.775
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_104",
+      "achieved_position_m": [
+        138.9557,
+        2.282,
+        29.151
+      ],
+      "target_m": [
+        138.8267,
+        2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "achieved_position_m": [
+        138.7829,
+        -2.3595,
+        29.1515
+      ],
+      "target_m": [
+        138.8267,
+        -2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_106",
+      "achieved_position_m": [
+        150.1267,
+        -2.2388,
+        29.1565
+      ],
+      "target_m": [
+        150.0767,
+        -2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_107",
+      "achieved_position_m": [
+        150.0327,
+        2.3592,
+        29.1516
+      ],
+      "target_m": [
+        150.0767,
+        2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_108",
+      "achieved_position_m": [
+        161.3767,
+        2.2372,
+        29.1565
+      ],
+      "target_m": [
+        161.3267,
+        2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "achieved_position_m": [
+        161.2835,
+        -2.3594,
+        29.1516
+      ],
+      "target_m": [
+        161.3267,
+        -2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_110",
+      "achieved_position_m": [
+        172.6267,
+        -2.2388,
+        29.1565
+      ],
+      "target_m": [
+        172.5767,
+        -2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_111",
+      "achieved_position_m": [
+        172.5327,
+        2.3592,
+        29.1516
+      ],
+      "target_m": [
+        172.5767,
+        2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_N_TOP_03_07_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_112",
+      "achieved_position_m": [
+        183.8767,
+        2.2372,
+        29.1565
+      ],
+      "target_m": [
+        183.8267,
+        2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "achieved_position_m": [
+        183.7835,
+        -2.3594,
+        29.1516
+      ],
+      "target_m": [
+        183.8267,
+        -2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_04_18_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_01",
+          "type": "WELD_CRACK",
+          "confidence": 0.529,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "achieved_position_m": [
+        195.1267,
+        -2.2388,
+        29.1565
+      ],
+      "target_m": [
+        195.0767,
+        -2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "FAST_GUSSET_ST_GUSSET_S_TOP_05_14_MARK_NUT",
+          "type": "BOLT_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_02",
+          "type": "WELD_CRACK",
+          "confidence": 0.519,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_115",
+      "achieved_position_m": [
+        195.0327,
+        2.3592,
+        29.1516
+      ],
+      "target_m": [
+        195.0767,
+        2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_116",
+      "achieved_position_m": [
+        206.3767,
+        2.2372,
+        29.1565
+      ],
+      "target_m": [
+        206.3267,
+        2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_117",
+      "achieved_position_m": [
+        206.2835,
+        -2.3594,
+        29.1516
+      ],
+      "target_m": [
+        206.3267,
+        -2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_118",
+      "achieved_position_m": [
+        217.6267,
+        -2.2388,
+        29.1565
+      ],
+      "target_m": [
+        217.5767,
+        -2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "achieved_position_m": [
+        217.5327,
+        2.3592,
+        29.1516
+      ],
+      "target_m": [
+        217.5767,
+        2.2379,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_120",
+      "achieved_position_m": [
+        225.0987,
+        -0.0527,
+        29.1506
+      ],
+      "target_m": [
+        225.0,
+        0.0,
+        21.15
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_121",
+      "achieved_position_m": [
+        264.1154,
+        28.0719,
+        8.0722
+      ],
+      "target_m": [
+        256.0,
+        28.0,
+        8.0689
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "achieved_position_m": [
+        315.1194,
+        -4.4618,
+        22.2727
+      ],
+      "target_m": [
+        315.0,
+        -4.4,
+        14.2725
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_-1_18_MARK_NUT",
+          "type": "JOINT_ANCHOR_LOOSE",
+          "confidence": 0.98,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_124",
+      "achieved_position_m": [
+        359.8663,
+        -0.0101,
+        19.7787
+      ],
+      "target_m": [
+        360.0,
+        0.0,
+        11.775
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_125",
+      "achieved_position_m": [
+        368.9751,
+        -2.8043,
+        8.7058
+      ],
+      "target_m": [
+        360.85,
+        -2.75,
+        8.6758
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_126",
+      "achieved_position_m": [
+        368.4008,
+        -6.0959,
+        7.0039
+      ],
+      "target_m": [
+        360.5,
+        -6.0,
+        7.0
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "achieved_position_m": [
+        368.8405,
+        2.8831,
+        8.6763
+      ],
+      "target_m": [
+        360.85,
+        2.75,
+        8.6758
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_128",
+      "achieved_position_m": [
+        369.0026,
+        28.1311,
+        8.0076
+      ],
+      "target_m": [
+        361.0,
+        28.0,
+        8.0067
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_142",
+      "achieved_position_m": [
+        160.361,
+        1.2473,
+        16.5009
+      ],
+      "target_m": [
+        160.2422,
+        -6.775,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_DELAMINATION_007",
+          "type": "DELAMINATION",
+          "confidence": 0.4,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_143",
+      "achieved_position_m": [
+        157.447,
+        1.139,
+        16.5029
+      ],
+      "target_m": [
+        157.5,
+        -6.775,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_DELAMINATION_007",
+          "type": "DELAMINATION",
+          "confidence": 0.4,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_144",
+      "achieved_position_m": [
+        148.8638,
+        1.1993,
+        16.5013
+      ],
+      "target_m": [
+        148.9922,
+        -6.775,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_002",
+          "type": "CRACK_LONGITUDINAL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_S_01_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_06",
+          "type": "WELD_CRACK",
+          "confidence": 0.516,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_145",
+      "achieved_position_m": [
+        146.2088,
+        1.1393,
+        16.5033
+      ],
+      "target_m": [
+        146.25,
+        -6.775,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "DEFECT_CRACK_LONGITUDINAL_002",
+          "type": "CRACK_LONGITUDINAL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_S_01_NUT",
+          "type": "BOLT_CORRODED",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "SDEFECT_WELD_CRACK_06",
+          "type": "WELD_CRACK",
+          "confidence": 0.516,
+          "bbox": null
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_146",
+      "achieved_position_m": [
+        137.6138,
+        1.1993,
+        16.5013
+      ],
+      "target_m": [
+        137.7422,
+        -6.775,
+        16.5
+      ],
+      "standoff_m": 8.0,
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_149",
+      "achieved_position_m": [
+        99.1098,
+        28.0741,
+        8.0714
+      ],
+      "target_m": [
+        91.0,
+        28.0,
+        8.0708
+      ],
+      "standoff_m": 8.0,
+      "detections": [
+        {
+          "defect_id": "MDEFECT_PIER_SPALL_018",
+          "type": "PIER_SPALL",
+          "confidence": 0.98,
+          "bbox": null
+        },
+        {
+          "defect_id": "MDEFECT_PIER_CORROSION_STAIN_020",
+          "type": "PIER_CORROSION_STAIN",
+          "confidence": 0.814,
+          "bbox": null
+        }
+      ]
+    }
+  ]
+}

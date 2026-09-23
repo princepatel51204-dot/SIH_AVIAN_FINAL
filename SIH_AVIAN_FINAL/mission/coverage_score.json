@@ -1,0 +1,15 @@
+{
+  "n_coverage_waypoints": 150,
+  "n_settled": 82,
+  "planned_structural_coverage_pct": 34.35,
+  "achieved_structural_coverage_pct": 56.66,
+  "n_patches_total": 2035,
+  "n_patches_achieved": 1153,
+  "n_defects_total": 192,
+  "n_defects_excluded_undetectable": 119,
+  "n_defects_scoreable": 73,
+  "n_defects_recalled": 39,
+  "recall_pct": 53.42,
+  "stub_precision_pct_SANITY_CHECK_ONLY": 100.0,
+  "stub_caveat": "detect_stub_final.py peeks at ground truth internally -- these are NOT real detector numbers, only a check that this scoring script and the coverage plan agree with each other."
+}

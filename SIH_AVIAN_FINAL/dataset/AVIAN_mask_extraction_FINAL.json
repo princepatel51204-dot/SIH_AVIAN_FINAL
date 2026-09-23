@@ -1,0 +1,4624 @@
+{
+  "dataset/images/POS_001_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      625,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_001_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      0,
+      5,
+      1913,
+      909
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_001_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      243,
+      180,
+      374,
+      294
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_002_MDR_LOOP_0001.png": {
+    "bbox": [
+      3,
+      23,
+      634,
+      437
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_002_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      263,
+      205,
+      355,
+      268
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_003_MDR_LOOP_0001.png": {
+    "bbox": [
+      9,
+      123,
+      598,
+      411
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_003_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      257,
+      231,
+      381,
+      268
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_004_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_004_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      58,
+      121,
+      536,
+      354
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_005_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      64,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_005_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      179,
+      199,
+      440,
+      311
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_006_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      477
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_006_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      203,
+      159,
+      452,
+      293
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_007_MDR_LOOP_0001.png": {
+    "bbox": [
+      2,
+      57,
+      626,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_007_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      257,
+      182,
+      362,
+      290
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_008_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      2,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_008_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      229,
+      176,
+      383,
+      310
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_009_MDR_LOOP_0001.png": {
+    "bbox": [
+      3,
+      1,
+      635,
+      400
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_009_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      259,
+      184,
+      381,
+      293
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_010_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      90,
+      589,
+      400
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_011_MDR_LOOP_0001.png": {
+    "bbox": [
+      1,
+      0,
+      637,
+      461
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_011_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      247,
+      199,
+      369,
+      283
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_012_MDR_LOOP_0001.png": {
+    "bbox": [
+      2,
+      1,
+      636,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_012_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      257,
+      196,
+      378,
+      289
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_013_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_013_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      93,
+      126,
+      525,
+      353
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_014_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      637,
+      444
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_014_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      239,
+      199,
+      355,
+      274
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_015_MDR_LOOP_0001.png": {
+    "bbox": [
+      52,
+      4,
+      553,
+      477
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_015_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      292,
+      240,
+      369,
+      334
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_016_MDR_LOOP_0001.png": {
+    "bbox": [
+      5,
+      5,
+      640,
+      394
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_016_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      233,
+      176,
+      424,
+      272
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_017_MDR_LOOP_0001.png": {
+    "bbox": [
+      68,
+      0,
+      640,
+      478
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_017_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      247,
+      142,
+      395,
+      330
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_018_MDR_LOOP_0001.png": {
+    "bbox": [
+      3,
+      2,
+      570,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_018_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      265,
+      158,
+      342,
+      331
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_019_MDR_LOOP_0001.png": {
+    "bbox": [
+      7,
+      28,
+      636,
+      356
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_019_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      256,
+      200,
+      376,
+      263
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_020_MDR_LOOP_0001.png": {
+    "bbox": [
+      54,
+      103,
+      566,
+      372
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_020_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      291,
+      230,
+      315,
+      268
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_021_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      3,
+      634,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_021_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      257,
+      230,
+      381,
+      289
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_022_MDR_LOOP_0001.png": {
+    "bbox": [
+      42,
+      115,
+      637,
+      274
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_022_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      319,
+      222,
+      369,
+      247
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_023_MDR_LOOP_0001.png": {
+    "bbox": [
+      230,
+      3,
+      556,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_023_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      303,
+      135,
+      412,
+      331
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_024_MDR_LOOP_0001.png": {
+    "bbox": [
+      9,
+      20,
+      640,
+      476
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_024_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      213,
+      161,
+      381,
+      286
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_025_MDR_LOOP_0001.png": {
+    "bbox": [
+      142,
+      0,
+      493,
+      478
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_025_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      461,
+      0,
+      1498,
+      1080
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_025_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      286,
+      196,
+      351,
+      257
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_026_MDR_LOOP_0001.png": {
+    "bbox": [
+      3,
+      29,
+      640,
+      427
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_026_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      239,
+      208,
+      369,
+      274
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_027_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_027_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      19,
+      166,
+      578,
+      381
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_028_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_028_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      36,
+      112,
+      568,
+      334
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_029_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      28,
+      640,
+      345
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_029_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      0,
+      64,
+      640,
+      325
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_030_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      478
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_030_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      162,
+      169,
+      462,
+      309
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_031_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      42,
+      640,
+      469
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_031_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      0,
+      116,
+      639,
+      380
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_032_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      157,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_032_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      187,
+      233,
+      383,
+      296
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_033_MDR_LOOP_0001.png": {
+    "bbox": [
+      3,
+      0,
+      639,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_033_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      252,
+      189,
+      395,
+      287
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_034_MDR_LOOP_0001.png": {
+    "bbox": [
+      2,
+      81,
+      636,
+      469
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_034_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      235,
+      222,
+      383,
+      276
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_035_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      606,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_035_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      239,
+      65,
+      385,
+      399
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_036_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      1,
+      639,
+      464
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_036_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      215,
+      198,
+      405,
+      272
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_037_MDR_LOOP_0001.png": {
+    "bbox": [
+      6,
+      80,
+      604,
+      323
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_037_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      9,
+      52,
+      1918,
+      795
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_038_MDR_LOOP_0001.png": {
+    "bbox": [
+      19,
+      1,
+      640,
+      475
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_038_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      252,
+      187,
+      397,
+      293
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_039_MDR_LOOP_0001.png": {
+    "bbox": [
+      13,
+      1,
+      549,
+      479
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_039_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      260,
+      172,
+      362,
+      297
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_040_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_040_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      189,
+      162,
+      430,
+      319
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_041_MDR_LOOP_0001.png": {
+    "bbox": [
+      28,
+      7,
+      570,
+      396
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_041_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      296,
+      189,
+      358,
+      271
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_042_MDR_LOOP_0001.png": {
+    "bbox": [
+      81,
+      0,
+      634,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_042_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      287,
+      176,
+      383,
+      304
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_043_MDR_LOOP_0001.png": {
+    "bbox": [
+      149,
+      0,
+      479,
+      479
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_043_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      290,
+      187,
+      330,
+      274
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_044_MDR_LOOP_0001.png": {
+    "bbox": [
+      94,
+      1,
+      504,
+      475
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_044_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      277,
+      184,
+      355,
+      277
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_045_MDR_LOOP_0001.png": {
+    "bbox": [
+      7,
+      2,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_045_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      233,
+      185,
+      418,
+      308
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_046_MDR_LOOP_0001.png": {
+    "bbox": [
+      5,
+      0,
+      605,
+      478
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_046_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      184,
+      155,
+      385,
+      297
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_047_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      2,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_047_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_047_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      252,
+      119,
+      387,
+      399
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_048_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_048_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      0,
+      55,
+      640,
+      412
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_049_MDR_LOOP_0001.png": {
+    "bbox": [
+      1,
+      0,
+      640,
+      477
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_049_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      239,
+      197,
+      405,
+      279
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_050_MDR_LOOP_0001.png": {
+    "bbox": [
+      81,
+      0,
+      524,
+      479
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_050_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      225,
+      3,
+      407,
+      463
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_051_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_051_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      254,
+      154,
+      395,
+      339
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_052_MDR_LOOP_0001.png": {
+    "bbox": [
+      81,
+      43,
+      576,
+      388
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_052_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      279,
+      205,
+      346,
+      256
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_053_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      7,
+      636,
+      477
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_053_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      255,
+      204,
+      385,
+      257
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_054_MDR_LOOP_0001.png": {
+    "bbox": [
+      183,
+      9,
+      430,
+      477
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_054_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      305,
+      220,
+      343,
+      290
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_055_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_055_MDR_CAPTURE_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_055_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      255,
+      157,
+      412,
+      319
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_056_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_056_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      244,
+      154,
+      400,
+      321
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_057_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_057_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      247,
+      166,
+      396,
+      312
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_058_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_058_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      248,
+      177,
+      390,
+      315
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_059_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_059_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      255,
+      176,
+      381,
+      298
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_060_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_060_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      233,
+      166,
+      390,
+      322
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_061_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_061_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      236,
+      165,
+      404,
+      326
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_062_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_062_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      257,
+      182,
+      376,
+      307
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_063_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_063_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      239,
+      171,
+      385,
+      304
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_064_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_064_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      267,
+      172,
+      372,
+      300
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_065_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      238,
+      321,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_065_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      230,
+      158,
+      383,
+      323
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_066_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_066_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      242,
+      159,
+      396,
+      301
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_067_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_067_MDR_CAPTURE_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_067_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      260,
+      164,
+      375,
+      317
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_068_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_068_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      274,
+      194,
+      372,
+      263
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_069_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_070_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_070_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      192,
+      124,
+      429,
+      365
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_071_MDR_LOOP_0001.png": {
+    "bbox": [
+      320,
+      239,
+      322,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_071_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      300,
+      152,
+      407,
+      341
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_072_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_072_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      265,
+      182,
+      372,
+      284
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_073_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_073_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      185,
+      91,
+      484,
+      403
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_074_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_074_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      282,
+      191,
+      360,
+      289
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_075_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      238,
+      322,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_075_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      954,
+      534,
+      965,
+      544
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_075_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      213,
+      125,
+      422,
+      316
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_076_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      238,
+      322,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_076_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      262,
+      165,
+      400,
+      311
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_077_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_077_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      285,
+      215,
+      344,
+      267
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_078_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      240,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_078_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      229,
+      216,
+      409,
+      277
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_079_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      238,
+      322,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_079_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      273,
+      189,
+      364,
+      286
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_080_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_080_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_080_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      239,
+      157,
+      395,
+      326
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_081_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_081_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      118,
+      112,
+      489,
+      300
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_082_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_082_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      213,
+      150,
+      424,
+      332
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_083_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      18,
+      640,
+      455
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_083_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      239,
+      205,
+      395,
+      277
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_084_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_084_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      247,
+      178,
+      387,
+      306
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_085_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_085_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      34,
+      112,
+      555,
+      334
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_086_MDR_LOOP_0001.png": {
+    "bbox": [
+      34,
+      53,
+      609,
+      446
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_086_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      267,
+      205,
+      369,
+      268
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_087_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_087_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      244,
+      175,
+      418,
+      299
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_088_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_088_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      189,
+      134,
+      440,
+      353
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_089_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      31,
+      639,
+      459
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_089_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      240,
+      205,
+      391,
+      279
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_090_MDR_LOOP_0001.png": {
+    "bbox": [
+      7,
+      79,
+      640,
+      468
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_090_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      3,
+      32,
+      1920,
+      1080
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_090_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      213,
+      216,
+      416,
+      286
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_091_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      72,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_091_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      260,
+      215,
+      381,
+      306
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_092_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      71,
+      640,
+      479
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_092_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      215,
+      213,
+      424,
+      294
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_093_MDR_LOOP_0001.png": {
+    "bbox": [
+      2,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_094_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_094_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      169,
+      151,
+      471,
+      343
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_095_MDR_LOOP_0001.png": {
+    "bbox": [
+      36,
+      85,
+      596,
+      381
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_095_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      265,
+      222,
+      356,
+      257
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_096_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_096_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      33,
+      3,
+      546,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_097_MDR_LOOP_0001.png": {
+    "bbox": [
+      154,
+      217,
+      537,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_097_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      971,
+      464,
+      1639,
+      703
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_098_MDR_LOOP_0001.png": {
+    "bbox": [
+      185,
+      216,
+      638,
+      435
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_099_MDR_LOOP_0001.png": {
+    "bbox": [
+      70,
+      237,
+      493,
+      240
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_099_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      288,
+      238,
+      330,
+      240
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_100_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      174,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_100_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      0,
+      341,
+      1812,
+      1080
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_101_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      167,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_102_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      238,
+      322,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_102_MDR_CAPTURE_0001.png": {
+    "bbox": [
+      954,
+      534,
+      965,
+      545
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_102_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      138,
+      67,
+      446,
+      378
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_103_MDR_LOOP_0001.png": {
+    "bbox": [
+      320,
+      241,
+      321,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_104_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      108,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_104_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      187,
+      125,
+      462,
+      328
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_105_MDR_LOOP_0001.png": {
+    "bbox": [
+      1,
+      64,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_105_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      103,
+      83,
+      478,
+      388
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_106_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      1,
+      640,
+      459
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_106_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      200,
+      98,
+      513,
+      292
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_107_MDR_LOOP_0001.png": {
+    "bbox": [
+      5,
+      2,
+      639,
+      478
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_107_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      247,
+      192,
+      378,
+      286
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_108_MDR_LOOP_0001.png": {
+    "bbox": [
+      5,
+      3,
+      598,
+      469
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_108_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      58,
+      65,
+      538,
+      400
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_109_MDR_LOOP_0001.png": {
+    "bbox": [
+      3,
+      56,
+      634,
+      394
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_109_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      255,
+      205,
+      381,
+      262
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_110_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_110_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      212,
+      72,
+      431,
+      388
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_111_MDR_LOOP_0001.png": {
+    "bbox": [
+      4,
+      0,
+      640,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_111_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      132,
+      56,
+      509,
+      407
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_112_MDR_LOOP_0001.png": {
+    "bbox": [
+      0,
+      0,
+      597,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_112_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      219,
+      51,
+      412,
+      398
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_113_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      239,
+      322,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_113_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      138,
+      67,
+      484,
+      425
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_114_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      238,
+      322,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_114_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      161,
+      65,
+      471,
+      394
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_115_MDR_LOOP_0001.png": {
+    "bbox": [
+      6,
+      0,
+      580,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_115_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      267,
+      161,
+      369,
+      310
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_116_MDR_LOOP_0001.png": {
+    "bbox": [
+      12,
+      0,
+      578,
+      480
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_116_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      271,
+      150,
+      370,
+      325
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_117_MDR_LOOP_0001.png": {
+    "bbox": [
+      300,
+      238,
+      319,
+      258
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_117_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      308,
+      239,
+      319,
+      251
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_118_MDR_LOOP_0001.png": {
+    "bbox": [
+      321,
+      232,
+      346,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_118_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      321,
+      235,
+      336,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_119_MDR_LOOP_0001.png": {
+    "bbox": [
+      304,
+      242,
+      321,
+      263
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_119_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      310,
+      241,
+      321,
+      254
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_120_MDR_LOOP_0001.png": {
+    "bbox": [
+      310,
+      237,
+      319,
+      244
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_120_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      238,
+      319,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_121_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_122_MDR_LOOP_0001.png": {
+    "bbox": [
+      296,
+      238,
+      313,
+      249
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_122_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      305,
+      239,
+      316,
+      245
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_123_MDR_LOOP_0001.png": {
+    "bbox": [
+      321,
+      230,
+      346,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_123_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      321,
+      234,
+      336,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_124_MDR_LOOP_0001.png": {
+    "bbox": [
+      304,
+      242,
+      321,
+      263
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_125_MDR_LOOP_0001.png": {
+    "bbox": [
+      295,
+      237,
+      319,
+      250
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_125_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      304,
+      238,
+      319,
+      246
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_126_MDR_LOOP_0001.png": {
+    "bbox": [
+      321,
+      220,
+      340,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_126_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      320,
+      228,
+      332,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_127_MDR_LOOP_0001.png": {
+    "bbox": [
+      321,
+      224,
+      343,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_127_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      320,
+      230,
+      334,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_128_MDR_LOOP_0001.png": {
+    "bbox": [
+      321,
+      225,
+      343,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_128_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      320,
+      231,
+      334,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_129_MDR_LOOP_0001.png": {
+    "bbox": [
+      314,
+      225,
+      324,
+      231
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_130_MDR_LOOP_0001.png": {
+    "bbox": [
+      305,
+      223,
+      323,
+      230
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_131_MDR_LOOP_0001.png": {
+    "bbox": [
+      309,
+      227,
+      321,
+      230
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_131_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      232,
+      321,
+      234
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_132_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_133_MDR_LOOP_0001.png": {
+    "bbox": [
+      321,
+      243,
+      330,
+      263
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_133_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      321,
+      243,
+      326,
+      253
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_134_MDR_LOOP_0001.png": {
+    "bbox": [
+      306,
+      223,
+      323,
+      230
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_135_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      239,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_135_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      315,
+      235,
+      323,
+      245
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_136_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      239,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_136_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      315,
+      235,
+      325,
+      245
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_137_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      239,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_137_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      315,
+      235,
+      322,
+      245
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_138_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      239,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_138_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      315,
+      235,
+      325,
+      245
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_139_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      239,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_139_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      315,
+      235,
+      325,
+      245
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_140_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      239,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_140_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      315,
+      235,
+      325,
+      245
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_141_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_141_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      315,
+      236,
+      325,
+      244
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_142_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_142_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      315,
+      236,
+      325,
+      244
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_143_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      238,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_143_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      234,
+      326,
+      246
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_144_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      238,
+      322,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_144_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      234,
+      326,
+      246
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_145_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      238,
+      321,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_145_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      234,
+      326,
+      246
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_146_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_147_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      238,
+      322,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_147_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      234,
+      326,
+      246
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_148_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      238,
+      322,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_148_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      234,
+      326,
+      246
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_149_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      238,
+      322,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_149_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      234,
+      326,
+      246
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_150_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_151_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_152_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_153_MDR_LOOP_0001.png": {
+    "bbox": [
+      317,
+      221,
+      322,
+      238
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_153_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      318,
+      229,
+      321,
+      239
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_154_MDR_LOOP_0001.png": {
+    "bbox": [
+      318,
+      213,
+      325,
+      238
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_154_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      319,
+      223,
+      323,
+      239
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_155_MDR_LOOP_0001.png": {
+    "bbox": [
+      319,
+      237,
+      320,
+      238
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_155_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_156_MDR_LOOP_0001.png": {
+    "bbox": [
+      320,
+      228,
+      345,
+      230
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_157_MDR_LOOP_0001.png": {
+    "bbox": [
+      214,
+      232,
+      414,
+      251
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_157_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      304,
+      238,
+      340,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_158_MDR_LOOP_0001.png": {
+    "bbox": [
+      260,
+      235,
+      379,
+      247
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_158_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      314,
+      239,
+      331,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_159_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_159_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_160_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_160_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_161_MDR_LOOP_0001.png": {
+    "bbox": [
+      205,
+      239,
+      430,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_161_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_162_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_162_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_163_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_163_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      280,
+      199,
+      361,
+      241
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_164_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_164_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      285,
+      205,
+      355,
+      243
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_165_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_165_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      293,
+      213,
+      347,
+      243
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_166_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_166_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      286,
+      205,
+      355,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_167_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_167_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      280,
+      200,
+      361,
+      243
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_168_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_168_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      291,
+      211,
+      349,
+      242
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_169_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_169_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_170_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_171_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_171_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_172_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_172_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_173_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_173_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_174_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_174_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_175_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_175_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_176_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_176_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_177_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_177_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_178_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_178_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_179_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_179_SURVEY_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_180_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_180_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      295,
+      232,
+      345,
+      253
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_181_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_181_SURVEY_LOOP_0001.png": {
+    "bbox": [
+      295,
+      232,
+      345,
+      253
+    ],
+    "contaminated": null
+  },
+  "dataset/images/POS_182_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_183_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_184_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_185_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_186_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_187_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_188_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_189_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_190_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_191_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/POS_192_MDR_LOOP_0001.png": {
+    "bbox": null,
+    "contaminated": null
+  },
+  "dataset/images/NEG_SOUND_BOLT_0001_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0002_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0003_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0004_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0005_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0006_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0007_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0008_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0009_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0010_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0011_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0012_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0013_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0014_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0015_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0016_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0017_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0018_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0019_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0020_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0021_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0022_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0023_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0024_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0025_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0026_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0027_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0028_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0029_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0030_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0031_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0032_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0033_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0034_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0035_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0036_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0037_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0038_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0039_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0040_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0041_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0042_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0043_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0044_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0045_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0046_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0047_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0048_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0049_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0050_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0051_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0052_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0053_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0054_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0055_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0056_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0057_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0058_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0059_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0060_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0061_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0062_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0063_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0064_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0065_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0066_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0067_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0068_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0069_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0070_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0071_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0072_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0073_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0074_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0075_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0076_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0077_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0078_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0079_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0080_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0081_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0082_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0083_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0084_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0085_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0086_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0087_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0088_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0089_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0090_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0091_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0092_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0093_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0094_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0095_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0096_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0097_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0098_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0099_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0100_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0101_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0102_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0103_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0104_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0105_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0106_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0107_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0108_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0109_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0110_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0111_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0112_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0113_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0114_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0115_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0116_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0117_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0118_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0119_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0120_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0121_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0122_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0123_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0124_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0125_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0126_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0127_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0128_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0129_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0130_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0131_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0132_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0133_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0134_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0135_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0136_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0137_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0138_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0139_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0140_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0141_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0142_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0143_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0144_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0145_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0146_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0147_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0148_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0149_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0150_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0151_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0152_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0153_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0154_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0155_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0156_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0157_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0158_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0159_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0160_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0161_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0162_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0163_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0164_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0165_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0166_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0167_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0168_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0169_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0170_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0171_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0172_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0173_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0174_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0175_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0176_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0177_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0178_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0179_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0180_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0181_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0182_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0183_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0184_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0185_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0186_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0187_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0188_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0189_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0190_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0191_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0192_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0193_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0194_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0195_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0196_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0197_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0198_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0199_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0200_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0201_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0202_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0203_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0204_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0205_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0206_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0207_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0208_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0209_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0210_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0211_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0212_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0213_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0214_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0215_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0216_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0217_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0218_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0219_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0220_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0221_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0222_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0223_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0224_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0225_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0226_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0227_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0228_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0229_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0230_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0231_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0232_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0233_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0234_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0235_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0236_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0237_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0238_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0239_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0240_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0241_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0242_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0243_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0244_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0245_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0246_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0247_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0248_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0249_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0250_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0251_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0252_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0253_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0254_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0255_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0256_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0257_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0258_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0259_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0260_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0261_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0262_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0263_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0264_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0265_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0266_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0267_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0268_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0269_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0270_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0271_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0272_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0273_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0274_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0275_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0276_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0277_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0278_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0279_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0280_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0281_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0282_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0283_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0284_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0285_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0286_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0287_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0288_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0289_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0290_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0291_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0292_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0293_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0294_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0295_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0296_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0297_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0298_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BOLT_0299_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BOLT_0300_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0301_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0302_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0303_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0304_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0305_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0306_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0307_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0308_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0309_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0310_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0311_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0312_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0313_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0314_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0315_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0316_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0317_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0318_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0319_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0320_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0321_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0322_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0323_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0324_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0325_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0326_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0327_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0328_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0329_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0330_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0331_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0332_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0333_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0334_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0335_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0336_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0337_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0338_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0339_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0340_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0341_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0342_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0343_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0344_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0345_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0346_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0347_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0348_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0349_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0350_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0351_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0352_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0353_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0354_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0355_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0356_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0357_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0358_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0359_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0360_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0361_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0362_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0363_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0364_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0365_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0366_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0367_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0368_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0369_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0370_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0371_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0372_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0373_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0374_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0375_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0376_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0377_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0378_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0379_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0380_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0381_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0382_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_CONCRETE_0383_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0384_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0385_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0386_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0387_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0388_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0389_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0390_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0391_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0392_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0393_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0394_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0395_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0396_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0397_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0398_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0399_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0400_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0401_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0402_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0403_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0404_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0405_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0406_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0407_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0408_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0409_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0410_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0411_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0412_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0413_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0414_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0415_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0416_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0417_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0418_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0419_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0420_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0421_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0422_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_WELD_0423_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_COATING_0424_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_COATING_0425_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_COATING_0426_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_COATING_0427_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_COATING_0428_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BEARING_0429_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BEARING_0430_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BEARING_0431_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BEARING_0432_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  },
+  "dataset/images/NEG_SOUND_BEARING_0433_0001.png": {
+    "bbox": null,
+    "contaminated": false
+  },
+  "dataset/images/NEG_SOUND_BEARING_0434_0001.png": {
+    "bbox": null,
+    "contaminated": true
+  }
+}

@@ -1,0 +1,3017 @@
+{
+  "epochs": 15,
+  "batch_size": 2,
+  "lr": 0.004,
+  "n_train": 415,
+  "n_val": 94,
+  "n_test": 90,
+  "val": {
+    "mAP@0.5": 0.11364745196324141,
+    "per_family_ap": {
+      "CRACK": 0.4253801169590643,
+      "SPALL_DELAM": 0.14285714285714285,
+      "CORROSION_COATING": 0.0,
+      "FASTENER": 0.0,
+      "OTHER": 0.0
+    },
+    "per_family_prf": {
+      "CRACK": {
+        "precision": 0.5263157894736842,
+        "recall": 0.6666666666666666,
+        "tp": 10,
+        "fp": 9,
+        "fn": 5
+      },
+      "SPALL_DELAM": {
+        "precision": 1.0,
+        "recall": 0.14285714285714285,
+        "tp": 1,
+        "fp": 0,
+        "fn": 6
+      },
+      "CORROSION_COATING": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 5
+      },
+      "FASTENER": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 9
+      },
+      "OTHER": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8
+      }
+    },
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        6
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        7
+      ],
+      [
+        6,
+        0,
+        0,
+        0,
+        0,
+        44
+      ]
+    ],
+    "confusion_labels": [
+      "CRACK",
+      "SPALL_DELAM",
+      "CORROSION_COATING",
+      "FASTENER",
+      "OTHER",
+      "NONE"
+    ]
+  },
+  "test": {
+    "mAP@0.5": 0.3419583333333333,
+    "per_family_ap": {
+      "CRACK": 0.29312499999999997,
+      "SPALL_DELAM": 0.5,
+      "CORROSION_COATING": 0.0,
+      "FASTENER": 0.0,
+      "OTHER": 0.9166666666666666
+    },
+    "per_family_prf": {
+      "CRACK": {
+        "precision": 0.4090909090909091,
+        "recall": 0.45,
+        "tp": 9,
+        "fp": 13,
+        "fn": 11
+      },
+      "SPALL_DELAM": {
+        "precision": 1.0,
+        "recall": 0.375,
+        "tp": 3,
+        "fp": 0,
+        "fn": 5
+      },
+      "CORROSION_COATING": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "FASTENER": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8
+      },
+      "OTHER": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        1,
+        0,
+        0,
+        10
+      ],
+      [
+        2,
+        3,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        1,
+        39
+      ]
+    ],
+    "confusion_labels": [
+      "CRACK",
+      "SPALL_DELAM",
+      "CORROSION_COATING",
+      "FASTENER",
+      "OTHER",
+      "NONE"
+    ]
+  },
+  "val_records": [
+    {
+      "image_path": "dataset/images/POS_004_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          0.0,
+          0.0,
+          596.371337890625,
+          449.6549377441406
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7475140690803528
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_004_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          58.0,
+          121.0,
+          536.0,
+          354.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          49.050052642822266,
+          90.28677368164062,
+          536.9534912109375,
+          406.62335205078125
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5680512189865112
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_019_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          7.0,
+          28.0,
+          636.0,
+          356.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          17.532941818237305,
+          7.629661560058594,
+          569.4003295898438,
+          480.0
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6257186532020569
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_019_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          256.0,
+          200.0,
+          376.0,
+          263.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_027_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          27.232637405395508,
+          8.179664611816406,
+          554.2919311523438,
+          475.8703308105469
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5104782581329346
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_027_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          19.0,
+          166.0,
+          578.0,
+          381.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          0.0,
+          18.79694366455078,
+          591.0765991210938,
+          480.0
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6373735666275024
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_033_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          3.0,
+          0.0,
+          639.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          16.226640701293945,
+          34.277687072753906,
+          594.663330078125,
+          438.148681640625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6639126539230347
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_033_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          252.0,
+          189.0,
+          395.0,
+          287.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_034_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          2.0,
+          81.0,
+          636.0,
+          469.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          39.154380798339844,
+          44.67986297607422,
+          583.740234375,
+          424.9399108886719
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7013198137283325
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_034_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          235.0,
+          222.0,
+          383.0,
+          276.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_045_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          7.0,
+          2.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          50.43165969848633,
+          33.13270568847656,
+          558.3314208984375,
+          429.78668212890625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7924683094024658
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_045_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          233.0,
+          185.0,
+          418.0,
+          308.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_055_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          255.0,
+          157.0,
+          412.0,
+          319.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_067_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          260.0,
+          164.0,
+          375.0,
+          317.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_074_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          282.0,
+          191.0,
+          360.0,
+          289.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_075_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          318.0,
+          237.5,
+          322.0,
+          241.5
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_075_MDR_CAPTURE_0001.png",
+      "gt_boxes": [
+        [
+          954.0,
+          534.0,
+          965.0,
+          544.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_075_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          213.0,
+          125.0,
+          422.0,
+          316.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [
+        [
+          212.8684844970703,
+          131.40762329101562,
+          403.4046936035156,
+          327.139892578125
+        ]
+      ],
+      "pred_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_scores": [
+        0.977652907371521
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_084_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CORROSION_COATING"
+      ],
+      "pred_boxes": [
+        [
+          45.00692367553711,
+          50.76298141479492,
+          557.7570190429688,
+          429.85540771484375
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6355445384979248
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_084_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          247.0,
+          178.0,
+          387.0,
+          306.0
+        ]
+      ],
+      "gt_labels": [
+        "CORROSION_COATING"
+      ],
+      "pred_boxes": [
+        [
+          12.706981658935547,
+          67.21388244628906,
+          581.7633056640625,
+          383.5843505859375
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5858773589134216
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_090_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          7.0,
+          79.0,
+          640.0,
+          468.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_090_MDR_CAPTURE_0001.png",
+      "gt_boxes": [
+        [
+          3.0,
+          32.0,
+          1920.0,
+          1080.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_090_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          213.0,
+          216.0,
+          416.0,
+          286.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_095_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          36.0,
+          85.0,
+          596.0,
+          381.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [
+        [
+          32.37701416015625,
+          42.188690185546875,
+          572.6846923828125,
+          443.352783203125
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7535432577133179
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_095_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          265.0,
+          222.0,
+          356.0,
+          257.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_099_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          70.0,
+          236.5,
+          493.0,
+          240.5
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_099_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          288.0,
+          237.0,
+          330.0,
+          241.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_101_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          167.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CORROSION_COATING"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_111_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          4.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          17.767065048217773,
+          5.513557434082031,
+          578.1233520507812,
+          468.52642822265625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7565491795539856
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_111_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          132.0,
+          56.0,
+          509.0,
+          407.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          51.677879333496094,
+          42.27124786376953,
+          560.1190185546875,
+          449.6672058105469
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6419820189476013
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_116_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          12.0,
+          0.0,
+          578.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CORROSION_COATING"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_116_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          271.0,
+          150.0,
+          370.0,
+          325.0
+        ]
+      ],
+      "gt_labels": [
+        "CORROSION_COATING"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_117_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          300.0,
+          238.0,
+          319.0,
+          258.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_117_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          308.0,
+          239.0,
+          319.0,
+          251.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_127_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          321.0,
+          224.0,
+          343.0,
+          241.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_127_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          320.0,
+          230.0,
+          334.0,
+          241.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_140_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          318.0,
+          238.0,
+          322.0,
+          242.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_140_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          315.0,
+          235.0,
+          325.0,
+          245.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_148_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          318.5,
+          238.0,
+          322.5,
+          242.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_148_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          314.0,
+          234.0,
+          326.0,
+          246.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_156_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          320.0,
+          227.0,
+          345.0,
+          231.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_161_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          205.0,
+          238.0,
+          430.0,
+          242.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_167_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          280.0,
+          200.0,
+          361.0,
+          243.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_181_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          295.0,
+          232.0,
+          345.0,
+          253.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0001_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0002_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0003_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0004_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0005_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0006_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0007_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0008_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0009_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0037_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0038_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0039_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0040_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0041_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0042_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0043_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0045_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0093_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0094_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0095_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0097_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0098_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0099_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0197_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0199_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0200_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0201_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0202_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0203_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0261_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0262_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0264_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0265_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0266_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0268_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0317_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          24.414155960083008,
+          39.5225830078125,
+          577.8673706054688,
+          462.05889892578125
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5641244649887085
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0324_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0330_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          33.27088928222656,
+          32.95154571533203,
+          588.8056640625,
+          447.8592224121094
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6317037343978882
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0331_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          28.531145095825195,
+          46.65687561035156,
+          591.4135131835938,
+          423.90447998046875
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6852464079856873
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0357_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          32.416282653808594,
+          49.73323059082031,
+          583.391845703125,
+          428.48052978515625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.620027482509613
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0361_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          23.04481315612793,
+          45.3252067565918,
+          582.6715698242188,
+          425.9970703125
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6287240386009216
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0366_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          7.186399936676025,
+          33.896759033203125,
+          603.2258911132812,
+          468.77252197265625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6854877471923828
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0369_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0371_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0412_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0413_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0414_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0415_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0416_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0417_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    }
+  ],
+  "test_records": [
+    {
+      "image_path": "dataset/images/POS_003_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          9.0,
+          123.0,
+          598.0,
+          411.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          23.854625701904297,
+          30.12279510498047,
+          585.3497314453125,
+          426.16021728515625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7569582462310791
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_003_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          257.0,
+          231.0,
+          381.0,
+          268.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_014_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          0.0,
+          637.0,
+          444.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_014_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          239.0,
+          199.0,
+          355.0,
+          274.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          231.25460815429688,
+          164.50430297851562,
+          392.7705993652344,
+          333.5996398925781
+        ]
+      ],
+      "pred_labels": [
+        "CORROSION_COATING"
+      ],
+      "pred_scores": [
+        0.6447761058807373
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_016_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          5.0,
+          5.0,
+          640.0,
+          394.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          25.110265731811523,
+          46.131683349609375,
+          578.4061889648438,
+          459.20751953125
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.681979238986969
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_016_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          233.0,
+          176.0,
+          424.0,
+          272.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_037_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          6.0,
+          80.0,
+          604.0,
+          323.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_037_MDR_CAPTURE_0001.png",
+      "gt_boxes": [
+        [
+          9.0,
+          52.0,
+          1918.0,
+          795.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_038_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          19.0,
+          1.0,
+          640.0,
+          475.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          8.139878273010254,
+          36.493560791015625,
+          597.4671630859375,
+          429.7336120605469
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6671876311302185
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_038_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          252.0,
+          187.0,
+          397.0,
+          293.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          21.249839782714844,
+          7.54412841796875,
+          597.6971435546875,
+          463.2569274902344
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5192395448684692
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_041_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          28.0,
+          7.0,
+          570.0,
+          396.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          29.465137481689453,
+          45.45746612548828,
+          573.964111328125,
+          430.8515625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5951004028320312
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_041_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          296.0,
+          189.0,
+          358.0,
+          271.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_048_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          0.0,
+          5.92987060546875,
+          595.5439453125,
+          416.080322265625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.8808191418647766
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_048_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          55.0,
+          640.0,
+          412.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          15.0464448928833,
+          47.824127197265625,
+          587.2794189453125,
+          407.2830505371094
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.8404903411865234
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_057_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          247.0,
+          166.0,
+          396.0,
+          312.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [
+        [
+          242.02488708496094,
+          173.85110473632812,
+          394.1233215332031,
+          310.7557373046875
+        ]
+      ],
+      "pred_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_scores": [
+        0.8769142031669617
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_064_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          267.0,
+          172.0,
+          372.0,
+          300.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [
+        [
+          18.164865493774414,
+          6.7257843017578125,
+          583.2268676757812,
+          479.50030517578125
+        ],
+        [
+          261.078125,
+          175.585205078125,
+          409.9312438964844,
+          322.05352783203125
+        ]
+      ],
+      "pred_labels": [
+        "CRACK",
+        "SPALL_DELAM"
+      ],
+      "pred_scores": [
+        0.6028350591659546,
+        0.5094448328018188
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_071_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          319.0,
+          238.5,
+          323.0,
+          242.5
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_071_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          300.0,
+          152.0,
+          407.0,
+          341.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [
+        [
+          41.86491394042969,
+          62.47532272338867,
+          551.982421875,
+          405.2554931640625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5680789947509766
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_079_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          318.0,
+          238.0,
+          322.0,
+          242.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_079_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          273.0,
+          189.0,
+          364.0,
+          286.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [
+        [
+          273.7547912597656,
+          197.08277893066406,
+          369.4501037597656,
+          279.318359375
+        ]
+      ],
+      "pred_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_scores": [
+        0.7896360754966736
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_081_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CORROSION_COATING"
+      ],
+      "pred_boxes": [
+        [
+          13.674397468566895,
+          17.004501342773438,
+          595.2224731445312,
+          446.4035339355469
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6711442470550537
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_081_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          118.0,
+          112.0,
+          489.0,
+          300.0
+        ]
+      ],
+      "gt_labels": [
+        "CORROSION_COATING"
+      ],
+      "pred_boxes": [
+        [
+          25.217824935913086,
+          132.2560272216797,
+          579.21484375,
+          316.58740234375
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5515870451927185
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_091_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          72.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [
+        [
+          124.2308349609375,
+          76.33943939208984,
+          632.7060546875,
+          480.0
+        ]
+      ],
+      "pred_labels": [
+        "OTHER"
+      ],
+      "pred_scores": [
+        0.8440238833427429
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_091_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          260.0,
+          215.0,
+          381.0,
+          306.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [
+        [
+          279.2922668457031,
+          217.50576782226562,
+          386.842041015625,
+          291.70361328125
+        ]
+      ],
+      "pred_labels": [
+        "OTHER"
+      ],
+      "pred_scores": [
+        0.5119806528091431
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_093_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          2.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "OTHER"
+      ],
+      "pred_boxes": [
+        [
+          0.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "pred_labels": [
+        "OTHER"
+      ],
+      "pred_scores": [
+        0.9594289660453796
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_105_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          1.0,
+          64.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_105_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          103.0,
+          83.0,
+          478.0,
+          388.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_110_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          0.0,
+          0.0,
+          640.0,
+          480.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          25.568859100341797,
+          14.522323608398438,
+          591.4680786132812,
+          480.0
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7838016152381897
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_110_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          212.0,
+          72.0,
+          431.0,
+          388.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [
+        [
+          224.1981201171875,
+          89.91122436523438,
+          403.9481201171875,
+          359.7847900390625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5420165061950684
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_113_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          318.0,
+          238.0,
+          322.0,
+          242.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_113_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          138.0,
+          67.0,
+          484.0,
+          425.0
+        ]
+      ],
+      "gt_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_boxes": [
+        [
+          107.1609115600586,
+          70.72212219238281,
+          491.9707336425781,
+          430.92510986328125
+        ]
+      ],
+      "pred_labels": [
+        "SPALL_DELAM"
+      ],
+      "pred_scores": [
+        0.8825269341468811
+      ]
+    },
+    {
+      "image_path": "dataset/images/POS_120_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          310.0,
+          237.0,
+          319.0,
+          244.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_120_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          314.0,
+          238.0,
+          319.0,
+          242.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_129_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          314.0,
+          225.0,
+          324.0,
+          231.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_134_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          306.0,
+          223.0,
+          323.0,
+          230.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_136_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          318.0,
+          238.0,
+          322.0,
+          242.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_136_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          315.0,
+          235.0,
+          325.0,
+          245.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_141_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          315.0,
+          236.0,
+          325.0,
+          244.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_142_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          315.0,
+          236.0,
+          325.0,
+          244.0
+        ]
+      ],
+      "gt_labels": [
+        "FASTENER"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_157_MDR_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          214.0,
+          232.0,
+          414.0,
+          251.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/POS_157_SURVEY_LOOP_0001.png",
+      "gt_boxes": [
+        [
+          304.0,
+          238.0,
+          340.0,
+          242.0
+        ]
+      ],
+      "gt_labels": [
+        "CRACK"
+      ],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0028_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0029_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0030_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0031_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0032_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0033_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0034_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0035_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0109_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0110_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0111_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0112_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0113_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0114_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0115_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0116_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0149_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0151_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0152_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0153_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0154_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0156_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0165_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0166_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0168_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0172_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0207_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0212_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0217_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0218_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_BOLT_0220_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0305_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          27.676652908325195,
+          50.23979187011719,
+          581.520751953125,
+          435.91845703125
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5999976396560669
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0306_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          24.41617202758789,
+          42.703857421875,
+          576.701904296875,
+          439.3125915527344
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7047141194343567
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0333_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          8.201726913452148,
+          29.34821319580078,
+          607.4822998046875,
+          442.7079162597656
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5227210521697998
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0334_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          0.0,
+          11.260665893554688,
+          569.072509765625,
+          480.0
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6239952445030212
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0335_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          7.659092903137207,
+          48.750423431396484,
+          585.7136840820312,
+          421.9606018066406
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.5429829359054565
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0348_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          0.0,
+          92.45299530029297,
+          640.0,
+          480.0
+        ]
+      ],
+      "pred_labels": [
+        "OTHER"
+      ],
+      "pred_scores": [
+        0.6183823943138123
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0354_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          23.561473846435547,
+          30.7353515625,
+          580.815185546875,
+          445.7440185546875
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6625291109085083
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0362_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          30.57880973815918,
+          16.822311401367188,
+          599.2401123046875,
+          443.3249816894531
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.6402840614318848
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0364_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          17.90786361694336,
+          39.220252990722656,
+          594.9260864257812,
+          432.14849853515625
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7643814086914062
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0374_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_CONCRETE_0379_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [
+        [
+          19.56717300415039,
+          42.57334899902344,
+          589.3135986328125,
+          450.8630676269531
+        ]
+      ],
+      "pred_labels": [
+        "CRACK"
+      ],
+      "pred_scores": [
+        0.7233753204345703
+      ]
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0384_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0385_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0386_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0387_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0388_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0389_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    },
+    {
+      "image_path": "dataset/images/NEG_SOUND_WELD_0390_0001.png",
+      "gt_boxes": [],
+      "gt_labels": [],
+      "pred_boxes": [],
+      "pred_labels": [],
+      "pred_scores": []
+    }
+  ]
+}

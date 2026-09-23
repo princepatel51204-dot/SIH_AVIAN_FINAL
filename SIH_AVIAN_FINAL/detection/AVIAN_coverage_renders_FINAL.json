@@ -1,0 +1,2633 @@
+{
+  "renders": [
+    {
+      "waypoint_id": "CWP_001",
+      "image_path": "detection/renders/CWP_001.png",
+      "achieved_position_m": [
+        30.0408,
+        -3.544,
+        4.496
+      ],
+      "target_m": [
+        30.0,
+        -3.6667,
+        12.4956
+      ],
+      "prim_name": "BR_DIAPHRAGM_001_3",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_001_3_+X_0",
+        "BR_DIAPHRAGM_001_3_+X_1",
+        "BR_DIAPHRAGM_001_3_+Z_6",
+        "BR_DIAPHRAGM_001_3_+Z_7",
+        "BR_DIAPHRAGM_001_3_+Z_8",
+        "BR_DIAPHRAGM_001_3_-X_2",
+        "BR_DIAPHRAGM_001_3_-X_3",
+        "BR_DIAPHRAGM_001_3_-Y_5",
+        "BR_DIAPHRAGM_001_3_-Z_10",
+        "BR_DIAPHRAGM_001_3_-Z_11",
+        "BR_DIAPHRAGM_001_3_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_002",
+      "image_path": "detection/renders/CWP_002.png",
+      "achieved_position_m": [
+        14.9943,
+        -3.6653,
+        4.5041
+      ],
+      "target_m": [
+        15.0,
+        -3.6667,
+        12.4956
+      ],
+      "prim_name": "BR_DIAPHRAGM_001_2",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_001_2_+X_0",
+        "BR_DIAPHRAGM_001_2_+X_1",
+        "BR_DIAPHRAGM_001_2_+Z_6",
+        "BR_DIAPHRAGM_001_2_+Z_7",
+        "BR_DIAPHRAGM_001_2_+Z_8",
+        "BR_DIAPHRAGM_001_2_-X_2",
+        "BR_DIAPHRAGM_001_2_-X_3",
+        "BR_DIAPHRAGM_001_2_-Y_5",
+        "BR_DIAPHRAGM_001_2_-Z_10",
+        "BR_DIAPHRAGM_001_2_-Z_11",
+        "BR_DIAPHRAGM_001_2_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "image_path": "detection/renders/CWP_005.png",
+      "achieved_position_m": [
+        45.0861,
+        0.1076,
+        2.6391
+      ],
+      "target_m": [
+        45.0,
+        0.0,
+        10.6375
+      ],
+      "prim_name": "BR_PIER_CAP_002",
+      "prim_kind": "pier_cap",
+      "covers": [
+        "BR_PIER_CAP_002_+X_0",
+        "BR_PIER_CAP_002_+X_1",
+        "BR_PIER_CAP_002_+Y_4",
+        "BR_PIER_CAP_002_+Z_6",
+        "BR_PIER_CAP_002_+Z_7",
+        "BR_PIER_CAP_002_+Z_8",
+        "BR_PIER_CAP_002_-X_2",
+        "BR_PIER_CAP_002_-X_3",
+        "BR_PIER_CAP_002_-Y_5",
+        "BR_PIER_CAP_002_-Z_10",
+        "BR_PIER_CAP_002_-Z_11",
+        "BR_PIER_CAP_002_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_008",
+      "image_path": "detection/renders/CWP_008.png",
+      "achieved_position_m": [
+        60.1238,
+        -3.6954,
+        4.7211
+      ],
+      "target_m": [
+        60.0,
+        -3.6667,
+        12.7206
+      ],
+      "prim_name": "BR_DIAPHRAGM_002_2",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_002_2_+X_0",
+        "BR_DIAPHRAGM_002_2_+X_1",
+        "BR_DIAPHRAGM_002_2_+Z_6",
+        "BR_DIAPHRAGM_002_2_+Z_7",
+        "BR_DIAPHRAGM_002_2_+Z_8",
+        "BR_DIAPHRAGM_002_2_-X_2",
+        "BR_DIAPHRAGM_002_2_-X_3",
+        "BR_DIAPHRAGM_002_2_-Y_5",
+        "BR_DIAPHRAGM_002_2_-Z_10",
+        "BR_DIAPHRAGM_002_2_-Z_11",
+        "BR_DIAPHRAGM_002_2_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_009",
+      "image_path": "detection/renders/CWP_009.png",
+      "achieved_position_m": [
+        75.084,
+        -3.6661,
+        4.7298
+      ],
+      "target_m": [
+        75.0,
+        -3.6667,
+        12.7206
+      ],
+      "prim_name": "BR_DIAPHRAGM_002_3",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_002_3_+X_0",
+        "BR_DIAPHRAGM_002_3_+X_1",
+        "BR_DIAPHRAGM_002_3_+Z_6",
+        "BR_DIAPHRAGM_002_3_+Z_7",
+        "BR_DIAPHRAGM_002_3_+Z_8",
+        "BR_DIAPHRAGM_002_3_-X_2",
+        "BR_DIAPHRAGM_002_3_-X_3",
+        "BR_DIAPHRAGM_002_3_-Y_5",
+        "BR_DIAPHRAGM_002_3_-Z_10",
+        "BR_DIAPHRAGM_002_3_-Z_11",
+        "BR_DIAPHRAGM_002_3_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_010",
+      "image_path": "detection/renders/CWP_010.png",
+      "achieved_position_m": [
+        90.1237,
+        0.031,
+        2.8264
+      ],
+      "target_m": [
+        90.0,
+        0.0,
+        10.825
+      ],
+      "prim_name": "BR_PIER_CAP_003",
+      "prim_kind": "pier_cap",
+      "covers": [
+        "BR_PIER_CAP_003_+X_0",
+        "BR_PIER_CAP_003_+X_1",
+        "BR_PIER_CAP_003_+Y_4",
+        "BR_PIER_CAP_003_+Z_6",
+        "BR_PIER_CAP_003_+Z_7",
+        "BR_PIER_CAP_003_+Z_8",
+        "BR_PIER_CAP_003_-X_2",
+        "BR_PIER_CAP_003_-X_3",
+        "BR_PIER_CAP_003_-Y_5",
+        "BR_PIER_CAP_003_-Z_10",
+        "BR_PIER_CAP_003_-Z_11",
+        "BR_PIER_CAP_003_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_011",
+      "image_path": "detection/renders/CWP_011.png",
+      "achieved_position_m": [
+        98.7933,
+        -2.8703,
+        1.9553
+      ],
+      "target_m": [
+        90.85,
+        -2.75,
+        1.9542
+      ],
+      "prim_name": "BR_PIER_COL_003_1",
+      "prim_kind": "pier_column",
+      "covers": [
+        "BR_PIER_COL_003_1_cap_top",
+        "BR_PIER_COL_003_1_side_0",
+        "BR_PIER_COL_003_1_side_1",
+        "BR_PIER_COL_003_1_side_10",
+        "BR_PIER_COL_003_1_side_11",
+        "BR_PIER_COL_003_1_side_2",
+        "BR_PIER_COL_003_1_side_3",
+        "BR_PIER_COL_003_1_side_4",
+        "BR_PIER_COL_003_1_side_5",
+        "BR_PIER_COL_003_1_side_6",
+        "BR_PIER_COL_003_1_side_7",
+        "BR_PIER_COL_003_1_side_8",
+        "BR_PIER_COL_003_1_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_012",
+      "image_path": "detection/renders/CWP_012.png",
+      "achieved_position_m": [
+        98.819,
+        2.8773,
+        1.9558
+      ],
+      "target_m": [
+        90.85,
+        2.75,
+        1.9542
+      ],
+      "prim_name": "BR_PIER_COL_003_2",
+      "prim_kind": "pier_column",
+      "covers": [
+        "BR_PIER_COL_003_2_cap_top",
+        "BR_PIER_COL_003_2_side_0",
+        "BR_PIER_COL_003_2_side_1",
+        "BR_PIER_COL_003_2_side_10",
+        "BR_PIER_COL_003_2_side_11",
+        "BR_PIER_COL_003_2_side_2",
+        "BR_PIER_COL_003_2_side_3",
+        "BR_PIER_COL_003_2_side_4",
+        "BR_PIER_COL_003_2_side_5",
+        "BR_PIER_COL_003_2_side_6",
+        "BR_PIER_COL_003_2_side_7",
+        "BR_PIER_COL_003_2_side_8",
+        "BR_PIER_COL_003_2_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_013",
+      "image_path": "detection/renders/CWP_013.png",
+      "achieved_position_m": [
+        105.0918,
+        -3.7626,
+        4.8715
+      ],
+      "target_m": [
+        105.0,
+        -3.6667,
+        12.8706
+      ],
+      "prim_name": "BR_DIAPHRAGM_003_2",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_003_2_+X_0",
+        "BR_DIAPHRAGM_003_2_+X_1",
+        "BR_DIAPHRAGM_003_2_+Z_6",
+        "BR_DIAPHRAGM_003_2_+Z_7",
+        "BR_DIAPHRAGM_003_2_+Z_8",
+        "BR_DIAPHRAGM_003_2_-X_2",
+        "BR_DIAPHRAGM_003_2_-X_3",
+        "BR_DIAPHRAGM_003_2_-Y_5",
+        "BR_DIAPHRAGM_003_2_-Z_10",
+        "BR_DIAPHRAGM_003_2_-Z_11",
+        "BR_DIAPHRAGM_003_2_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_014",
+      "image_path": "detection/renders/CWP_014.png",
+      "achieved_position_m": [
+        120.0831,
+        -3.666,
+        4.8798
+      ],
+      "target_m": [
+        120.0,
+        -3.6667,
+        12.8706
+      ],
+      "prim_name": "BR_DIAPHRAGM_003_3",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_003_3_+X_0",
+        "BR_DIAPHRAGM_003_3_+X_1",
+        "BR_DIAPHRAGM_003_3_+Z_6",
+        "BR_DIAPHRAGM_003_3_+Z_7",
+        "BR_DIAPHRAGM_003_3_+Z_8",
+        "BR_DIAPHRAGM_003_3_-X_2",
+        "BR_DIAPHRAGM_003_3_-X_3",
+        "BR_DIAPHRAGM_003_3_-Y_5",
+        "BR_DIAPHRAGM_003_3_-Z_10",
+        "BR_DIAPHRAGM_003_3_-Z_11",
+        "BR_DIAPHRAGM_003_3_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_015",
+      "image_path": "detection/renders/CWP_015.png",
+      "achieved_position_m": [
+        126.8924,
+        -7.0539,
+        13.4901
+      ],
+      "target_m": [
+        134.775,
+        -7.0,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_S_00",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_S_00_+X_0",
+        "ST_VERTICAL_S_00_+X_1",
+        "ST_VERTICAL_S_00_+X_2",
+        "ST_VERTICAL_S_00_+Y_6",
+        "ST_VERTICAL_S_00_+Y_7",
+        "ST_VERTICAL_S_00_+Y_8",
+        "ST_VERTICAL_S_00_+Z_12",
+        "ST_VERTICAL_S_00_-X_3",
+        "ST_VERTICAL_S_00_-X_4",
+        "ST_VERTICAL_S_00_-X_5",
+        "ST_VERTICAL_S_00_-Y_10",
+        "ST_VERTICAL_S_00_-Y_11",
+        "ST_VERTICAL_S_00_-Y_9",
+        "ST_VERTICAL_S_00_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_016",
+      "image_path": "detection/renders/CWP_016.png",
+      "achieved_position_m": [
+        135.0993,
+        0.0831,
+        2.9461
+      ],
+      "target_m": [
+        135.0,
+        0.0,
+        10.9375
+      ],
+      "prim_name": "BR_PIER_CAP_004",
+      "prim_kind": "pier_cap",
+      "covers": [
+        "BR_PIER_CAP_004_+X_0",
+        "BR_PIER_CAP_004_+X_1",
+        "BR_PIER_CAP_004_+Y_4",
+        "BR_PIER_CAP_004_+Z_6",
+        "BR_PIER_CAP_004_+Z_7",
+        "BR_PIER_CAP_004_+Z_8",
+        "BR_PIER_CAP_004_-X_2",
+        "BR_PIER_CAP_004_-X_3",
+        "BR_PIER_CAP_004_-Y_5",
+        "BR_PIER_CAP_004_-Z_10",
+        "BR_PIER_CAP_004_-Z_11",
+        "BR_PIER_CAP_004_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_018",
+      "image_path": "detection/renders/CWP_018.png",
+      "achieved_position_m": [
+        146.3418,
+        0.0009,
+        4.4566
+      ],
+      "target_m": [
+        146.25,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_01",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_01_+X_0",
+        "ST_FLOORBEAM_01_+X_1",
+        "ST_FLOORBEAM_01_+Y_4",
+        "ST_FLOORBEAM_01_+Z_6",
+        "ST_FLOORBEAM_01_+Z_7",
+        "ST_FLOORBEAM_01_+Z_8",
+        "ST_FLOORBEAM_01_-X_2",
+        "ST_FLOORBEAM_01_-X_3",
+        "ST_FLOORBEAM_01_-Y_5",
+        "ST_FLOORBEAM_01_-Z_10",
+        "ST_FLOORBEAM_01_-Z_11",
+        "ST_FLOORBEAM_01_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_019",
+      "image_path": "detection/renders/CWP_019.png",
+      "achieved_position_m": [
+        143.7763,
+        2.8609,
+        5.5598
+      ],
+      "target_m": [
+        135.85,
+        2.75,
+        5.5588
+      ],
+      "prim_name": "BR_PIER_COL_004_2",
+      "prim_kind": "pier_column",
+      "covers": [
+        "BR_PIER_COL_004_2_cap_top",
+        "BR_PIER_COL_004_2_side_0",
+        "BR_PIER_COL_004_2_side_1",
+        "BR_PIER_COL_004_2_side_10",
+        "BR_PIER_COL_004_2_side_11",
+        "BR_PIER_COL_004_2_side_2",
+        "BR_PIER_COL_004_2_side_3",
+        "BR_PIER_COL_004_2_side_4",
+        "BR_PIER_COL_004_2_side_5",
+        "BR_PIER_COL_004_2_side_6",
+        "BR_PIER_COL_004_2_side_7",
+        "BR_PIER_COL_004_2_side_8",
+        "BR_PIER_COL_004_2_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_020",
+      "image_path": "detection/renders/CWP_020.png",
+      "achieved_position_m": [
+        143.1697,
+        -3.6288,
+        13.3347
+      ],
+      "target_m": [
+        135.2,
+        -3.5,
+        13.3438
+      ],
+      "prim_name": "ST_FLOORBEAM_00",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_00_+X_0",
+        "ST_FLOORBEAM_00_+X_1",
+        "ST_FLOORBEAM_00_+Z_6",
+        "ST_FLOORBEAM_00_+Z_7",
+        "ST_FLOORBEAM_00_+Z_8",
+        "ST_FLOORBEAM_00_-X_2",
+        "ST_FLOORBEAM_00_-X_3",
+        "ST_FLOORBEAM_00_-Y_5",
+        "ST_FLOORBEAM_00_-Z_10",
+        "ST_FLOORBEAM_00_-Z_11",
+        "ST_FLOORBEAM_00_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_021",
+      "image_path": "detection/renders/CWP_021.png",
+      "achieved_position_m": [
+        157.5867,
+        0.1008,
+        4.4511
+      ],
+      "target_m": [
+        157.5,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_02",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_02_+X_0",
+        "ST_FLOORBEAM_02_+X_1",
+        "ST_FLOORBEAM_02_+Y_4",
+        "ST_FLOORBEAM_02_+Z_6",
+        "ST_FLOORBEAM_02_+Z_7",
+        "ST_FLOORBEAM_02_+Z_8",
+        "ST_FLOORBEAM_02_-X_2",
+        "ST_FLOORBEAM_02_-X_3",
+        "ST_FLOORBEAM_02_-Y_5",
+        "ST_FLOORBEAM_02_-Z_10",
+        "ST_FLOORBEAM_02_-Z_11",
+        "ST_FLOORBEAM_02_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "image_path": "detection/renders/CWP_022.png",
+      "achieved_position_m": [
+        168.8413,
+        0.0008,
+        4.4614
+      ],
+      "target_m": [
+        168.75,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_03",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_03_+X_0",
+        "ST_FLOORBEAM_03_+X_1",
+        "ST_FLOORBEAM_03_+Y_4",
+        "ST_FLOORBEAM_03_+Z_6",
+        "ST_FLOORBEAM_03_+Z_7",
+        "ST_FLOORBEAM_03_+Z_8",
+        "ST_FLOORBEAM_03_-X_2",
+        "ST_FLOORBEAM_03_-X_3",
+        "ST_FLOORBEAM_03_-Y_5",
+        "ST_FLOORBEAM_03_-Z_10",
+        "ST_FLOORBEAM_03_-Z_11",
+        "ST_FLOORBEAM_03_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_023",
+      "image_path": "detection/renders/CWP_023.png",
+      "achieved_position_m": [
+        180.0934,
+        0.0011,
+        4.4616
+      ],
+      "target_m": [
+        180.0,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_04",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_04_+X_0",
+        "ST_FLOORBEAM_04_+X_1",
+        "ST_FLOORBEAM_04_+Y_4",
+        "ST_FLOORBEAM_04_+Z_6",
+        "ST_FLOORBEAM_04_+Z_7",
+        "ST_FLOORBEAM_04_+Z_8",
+        "ST_FLOORBEAM_04_-X_2",
+        "ST_FLOORBEAM_04_-X_3",
+        "ST_FLOORBEAM_04_-Y_5",
+        "ST_FLOORBEAM_04_-Z_10",
+        "ST_FLOORBEAM_04_-Z_11",
+        "ST_FLOORBEAM_04_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "image_path": "detection/renders/CWP_024.png",
+      "achieved_position_m": [
+        191.3443,
+        0.0011,
+        4.4616
+      ],
+      "target_m": [
+        191.25,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_05",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_05_+X_0",
+        "ST_FLOORBEAM_05_+X_1",
+        "ST_FLOORBEAM_05_+Y_4",
+        "ST_FLOORBEAM_05_+Z_6",
+        "ST_FLOORBEAM_05_+Z_7",
+        "ST_FLOORBEAM_05_+Z_8",
+        "ST_FLOORBEAM_05_-X_2",
+        "ST_FLOORBEAM_05_-X_3",
+        "ST_FLOORBEAM_05_-Y_5",
+        "ST_FLOORBEAM_05_-Z_10",
+        "ST_FLOORBEAM_05_-Z_11",
+        "ST_FLOORBEAM_05_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_025",
+      "image_path": "detection/renders/CWP_025.png",
+      "achieved_position_m": [
+        202.5943,
+        0.0011,
+        4.4616
+      ],
+      "target_m": [
+        202.5,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_06",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_06_+X_0",
+        "ST_FLOORBEAM_06_+X_1",
+        "ST_FLOORBEAM_06_+Y_4",
+        "ST_FLOORBEAM_06_+Z_6",
+        "ST_FLOORBEAM_06_+Z_7",
+        "ST_FLOORBEAM_06_+Z_8",
+        "ST_FLOORBEAM_06_-X_2",
+        "ST_FLOORBEAM_06_-X_3",
+        "ST_FLOORBEAM_06_-Y_5",
+        "ST_FLOORBEAM_06_-Z_10",
+        "ST_FLOORBEAM_06_-Z_11",
+        "ST_FLOORBEAM_06_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "image_path": "detection/renders/CWP_026.png",
+      "achieved_position_m": [
+        213.8443,
+        0.0011,
+        4.4616
+      ],
+      "target_m": [
+        213.75,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_07",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_07_+X_0",
+        "ST_FLOORBEAM_07_+X_1",
+        "ST_FLOORBEAM_07_+Y_4",
+        "ST_FLOORBEAM_07_+Z_6",
+        "ST_FLOORBEAM_07_+Z_7",
+        "ST_FLOORBEAM_07_+Z_8",
+        "ST_FLOORBEAM_07_-X_2",
+        "ST_FLOORBEAM_07_-X_3",
+        "ST_FLOORBEAM_07_-Y_5",
+        "ST_FLOORBEAM_07_-Z_10",
+        "ST_FLOORBEAM_07_-Z_11",
+        "ST_FLOORBEAM_07_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "image_path": "detection/renders/CWP_027.png",
+      "achieved_position_m": [
+        216.897,
+        -3.5926,
+        13.3265
+      ],
+      "target_m": [
+        224.8,
+        -3.5,
+        13.3438
+      ],
+      "prim_name": "ST_FLOORBEAM_08",
+      "prim_kind": "floor_beam",
+      "covers": [
+        "ST_FLOORBEAM_08_+X_0",
+        "ST_FLOORBEAM_08_+X_1",
+        "ST_FLOORBEAM_08_+Z_6",
+        "ST_FLOORBEAM_08_+Z_7",
+        "ST_FLOORBEAM_08_+Z_8",
+        "ST_FLOORBEAM_08_-X_2",
+        "ST_FLOORBEAM_08_-X_3",
+        "ST_FLOORBEAM_08_-Y_5",
+        "ST_FLOORBEAM_08_-Z_10",
+        "ST_FLOORBEAM_08_-Z_11",
+        "ST_FLOORBEAM_08_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "image_path": "detection/renders/CWP_028.png",
+      "achieved_position_m": [
+        225.1176,
+        0.051,
+        2.0488
+      ],
+      "target_m": [
+        225.0,
+        0.0,
+        10.0375
+      ],
+      "prim_name": "BR_PIER_CAP_005",
+      "prim_kind": "pier_cap",
+      "covers": [
+        "BR_PIER_CAP_005_+X_0",
+        "BR_PIER_CAP_005_+X_1",
+        "BR_PIER_CAP_005_+Y_4",
+        "BR_PIER_CAP_005_+Z_6",
+        "BR_PIER_CAP_005_+Z_7",
+        "BR_PIER_CAP_005_+Z_8",
+        "BR_PIER_CAP_005_-X_2",
+        "BR_PIER_CAP_005_-X_3",
+        "BR_PIER_CAP_005_-Y_5",
+        "BR_PIER_CAP_005_-Z_10",
+        "BR_PIER_CAP_005_-Z_11",
+        "BR_PIER_CAP_005_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_031",
+      "image_path": "detection/renders/CWP_031.png",
+      "achieved_position_m": [
+        240.1236,
+        -3.6954,
+        4.8705
+      ],
+      "target_m": [
+        240.0,
+        -3.6667,
+        12.8706
+      ],
+      "prim_name": "BR_DIAPHRAGM_005_2",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_005_2_+X_0",
+        "BR_DIAPHRAGM_005_2_+X_1",
+        "BR_DIAPHRAGM_005_2_+Z_6",
+        "BR_DIAPHRAGM_005_2_+Z_7",
+        "BR_DIAPHRAGM_005_2_+Z_8",
+        "BR_DIAPHRAGM_005_2_-X_2",
+        "BR_DIAPHRAGM_005_2_-X_3",
+        "BR_DIAPHRAGM_005_2_-Y_5",
+        "BR_DIAPHRAGM_005_2_-Z_10",
+        "BR_DIAPHRAGM_005_2_-Z_11",
+        "BR_DIAPHRAGM_005_2_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "image_path": "detection/renders/CWP_033.png",
+      "achieved_position_m": [
+        255.085,
+        -3.6645,
+        4.8798
+      ],
+      "target_m": [
+        255.0,
+        -3.6667,
+        12.8706
+      ],
+      "prim_name": "BR_DIAPHRAGM_005_3",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_005_3_+X_0",
+        "BR_DIAPHRAGM_005_3_+X_1",
+        "BR_DIAPHRAGM_005_3_+Z_6",
+        "BR_DIAPHRAGM_005_3_+Z_7",
+        "BR_DIAPHRAGM_005_3_+Z_8",
+        "BR_DIAPHRAGM_005_3_-X_2",
+        "BR_DIAPHRAGM_005_3_-X_3",
+        "BR_DIAPHRAGM_005_3_-Y_5",
+        "BR_DIAPHRAGM_005_3_-Z_10",
+        "BR_DIAPHRAGM_005_3_-Z_11",
+        "BR_DIAPHRAGM_005_3_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "image_path": "detection/renders/CWP_034.png",
+      "achieved_position_m": [
+        270.1237,
+        0.0311,
+        2.8264
+      ],
+      "target_m": [
+        270.0,
+        0.0,
+        10.825
+      ],
+      "prim_name": "BR_PIER_CAP_006",
+      "prim_kind": "pier_cap",
+      "covers": [
+        "BR_PIER_CAP_006_+X_0",
+        "BR_PIER_CAP_006_+X_1",
+        "BR_PIER_CAP_006_+Y_4",
+        "BR_PIER_CAP_006_+Z_6",
+        "BR_PIER_CAP_006_+Z_7",
+        "BR_PIER_CAP_006_+Z_8",
+        "BR_PIER_CAP_006_-X_2",
+        "BR_PIER_CAP_006_-X_3",
+        "BR_PIER_CAP_006_-Y_5",
+        "BR_PIER_CAP_006_-Z_10",
+        "BR_PIER_CAP_006_-Z_11",
+        "BR_PIER_CAP_006_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_035",
+      "image_path": "detection/renders/CWP_035.png",
+      "achieved_position_m": [
+        278.7939,
+        -2.8706,
+        1.9553
+      ],
+      "target_m": [
+        270.85,
+        -2.75,
+        1.9542
+      ],
+      "prim_name": "BR_PIER_COL_006_1",
+      "prim_kind": "pier_column",
+      "covers": [
+        "BR_PIER_COL_006_1_cap_top",
+        "BR_PIER_COL_006_1_side_0",
+        "BR_PIER_COL_006_1_side_1",
+        "BR_PIER_COL_006_1_side_10",
+        "BR_PIER_COL_006_1_side_11",
+        "BR_PIER_COL_006_1_side_2",
+        "BR_PIER_COL_006_1_side_3",
+        "BR_PIER_COL_006_1_side_4",
+        "BR_PIER_COL_006_1_side_5",
+        "BR_PIER_COL_006_1_side_6",
+        "BR_PIER_COL_006_1_side_7",
+        "BR_PIER_COL_006_1_side_8",
+        "BR_PIER_COL_006_1_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_036",
+      "image_path": "detection/renders/CWP_036.png",
+      "achieved_position_m": [
+        278.819,
+        2.8773,
+        1.9558
+      ],
+      "target_m": [
+        270.85,
+        2.75,
+        1.9542
+      ],
+      "prim_name": "BR_PIER_COL_006_2",
+      "prim_kind": "pier_column",
+      "covers": [
+        "BR_PIER_COL_006_2_cap_top",
+        "BR_PIER_COL_006_2_side_0",
+        "BR_PIER_COL_006_2_side_1",
+        "BR_PIER_COL_006_2_side_10",
+        "BR_PIER_COL_006_2_side_11",
+        "BR_PIER_COL_006_2_side_2",
+        "BR_PIER_COL_006_2_side_3",
+        "BR_PIER_COL_006_2_side_4",
+        "BR_PIER_COL_006_2_side_5",
+        "BR_PIER_COL_006_2_side_6",
+        "BR_PIER_COL_006_2_side_7",
+        "BR_PIER_COL_006_2_side_8",
+        "BR_PIER_COL_006_2_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_037",
+      "image_path": "detection/renders/CWP_037.png",
+      "achieved_position_m": [
+        285.0918,
+        -3.7625,
+        4.7215
+      ],
+      "target_m": [
+        285.0,
+        -3.6667,
+        12.7206
+      ],
+      "prim_name": "BR_DIAPHRAGM_006_2",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_006_2_+X_0",
+        "BR_DIAPHRAGM_006_2_+X_1",
+        "BR_DIAPHRAGM_006_2_+Z_6",
+        "BR_DIAPHRAGM_006_2_+Z_7",
+        "BR_DIAPHRAGM_006_2_+Z_8",
+        "BR_DIAPHRAGM_006_2_-X_2",
+        "BR_DIAPHRAGM_006_2_-X_3",
+        "BR_DIAPHRAGM_006_2_-Y_5",
+        "BR_DIAPHRAGM_006_2_-Z_10",
+        "BR_DIAPHRAGM_006_2_-Z_11",
+        "BR_DIAPHRAGM_006_2_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_038",
+      "image_path": "detection/renders/CWP_038.png",
+      "achieved_position_m": [
+        300.0831,
+        -3.666,
+        4.7298
+      ],
+      "target_m": [
+        300.0,
+        -3.6667,
+        12.7206
+      ],
+      "prim_name": "BR_DIAPHRAGM_006_3",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_006_3_+X_0",
+        "BR_DIAPHRAGM_006_3_+X_1",
+        "BR_DIAPHRAGM_006_3_+Z_6",
+        "BR_DIAPHRAGM_006_3_+Z_7",
+        "BR_DIAPHRAGM_006_3_+Z_8",
+        "BR_DIAPHRAGM_006_3_-X_2",
+        "BR_DIAPHRAGM_006_3_-X_3",
+        "BR_DIAPHRAGM_006_3_-Y_5",
+        "BR_DIAPHRAGM_006_3_-Z_10",
+        "BR_DIAPHRAGM_006_3_-Z_11",
+        "BR_DIAPHRAGM_006_3_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_039",
+      "image_path": "detection/renders/CWP_039.png",
+      "achieved_position_m": [
+        315.1238,
+        0.031,
+        2.6389
+      ],
+      "target_m": [
+        315.0,
+        0.0,
+        10.6375
+      ],
+      "prim_name": "BR_PIER_CAP_007",
+      "prim_kind": "pier_cap",
+      "covers": [
+        "BR_PIER_CAP_007_+X_0",
+        "BR_PIER_CAP_007_+X_1",
+        "BR_PIER_CAP_007_+Y_4",
+        "BR_PIER_CAP_007_+Z_6",
+        "BR_PIER_CAP_007_+Z_7",
+        "BR_PIER_CAP_007_+Z_8",
+        "BR_PIER_CAP_007_-X_2",
+        "BR_PIER_CAP_007_-X_3",
+        "BR_PIER_CAP_007_-Y_5",
+        "BR_PIER_CAP_007_-Z_10",
+        "BR_PIER_CAP_007_-Z_11",
+        "BR_PIER_CAP_007_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_043",
+      "image_path": "detection/renders/CWP_043.png",
+      "achieved_position_m": [
+        345.0715,
+        -3.661,
+        4.4983
+      ],
+      "target_m": [
+        345.0,
+        -3.6667,
+        12.4956
+      ],
+      "prim_name": "BR_DIAPHRAGM_007_3",
+      "prim_kind": "diaphragm",
+      "covers": [
+        "BR_DIAPHRAGM_007_3_+X_0",
+        "BR_DIAPHRAGM_007_3_+X_1",
+        "BR_DIAPHRAGM_007_3_+Z_6",
+        "BR_DIAPHRAGM_007_3_+Z_7",
+        "BR_DIAPHRAGM_007_3_+Z_8",
+        "BR_DIAPHRAGM_007_3_-X_2",
+        "BR_DIAPHRAGM_007_3_-X_3",
+        "BR_DIAPHRAGM_007_3_-Y_5",
+        "BR_DIAPHRAGM_007_3_-Z_10",
+        "BR_DIAPHRAGM_007_3_-Z_11",
+        "BR_DIAPHRAGM_007_3_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "image_path": "detection/renders/CWP_045.png",
+      "achieved_position_m": [
+        345.5225,
+        6.1303,
+        7.0002
+      ],
+      "target_m": [
+        353.5,
+        6.0,
+        7.0
+      ],
+      "prim_name": "BR_ABUTMENT_NORTH",
+      "prim_kind": "abutment",
+      "covers": [
+        "BR_ABUTMENT_NORTH_+X_6",
+        "BR_ABUTMENT_NORTH_+X_7",
+        "BR_ABUTMENT_NORTH_+X_8",
+        "BR_ABUTMENT_NORTH_+Y_18",
+        "BR_ABUTMENT_NORTH_+Y_19",
+        "BR_ABUTMENT_NORTH_+Y_20",
+        "BR_ABUTMENT_NORTH_+Z_26",
+        "BR_ABUTMENT_NORTH_-X_12",
+        "BR_ABUTMENT_NORTH_-X_13",
+        "BR_ABUTMENT_NORTH_-X_14",
+        "BR_ABUTMENT_NORTH_-X_15",
+        "BR_ABUTMENT_NORTH_-X_16",
+        "BR_ABUTMENT_NORTH_-X_17"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_064",
+      "image_path": "detection/renders/CWP_064.png",
+      "achieved_position_m": [
+        234.1194,
+        28.032,
+        8.0697
+      ],
+      "target_m": [
+        226.0,
+        28.0,
+        8.0686
+      ],
+      "prim_name": "MB_PIER_COL_006",
+      "prim_kind": "pier_column",
+      "covers": [
+        "MB_PIER_COL_006_cap_bottom",
+        "MB_PIER_COL_006_cap_top",
+        "MB_PIER_COL_006_side_0",
+        "MB_PIER_COL_006_side_1",
+        "MB_PIER_COL_006_side_10",
+        "MB_PIER_COL_006_side_11",
+        "MB_PIER_COL_006_side_2",
+        "MB_PIER_COL_006_side_3",
+        "MB_PIER_COL_006_side_4",
+        "MB_PIER_COL_006_side_5",
+        "MB_PIER_COL_006_side_6",
+        "MB_PIER_COL_006_side_7",
+        "MB_PIER_COL_006_side_8",
+        "MB_PIER_COL_006_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_065",
+      "image_path": "detection/renders/CWP_065.png",
+      "achieved_position_m": [
+        233.2189,
+        6.8684,
+        13.4993
+      ],
+      "target_m": [
+        225.225,
+        7.0,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_08",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_N_08_+X_0",
+        "ST_VERTICAL_N_08_+X_1",
+        "ST_VERTICAL_N_08_+X_2",
+        "ST_VERTICAL_N_08_+Y_6",
+        "ST_VERTICAL_N_08_+Y_7",
+        "ST_VERTICAL_N_08_+Y_8",
+        "ST_VERTICAL_N_08_+Z_12",
+        "ST_VERTICAL_N_08_-X_3",
+        "ST_VERTICAL_N_08_-X_4",
+        "ST_VERTICAL_N_08_-X_5",
+        "ST_VERTICAL_N_08_-Y_10",
+        "ST_VERTICAL_N_08_-Y_11",
+        "ST_VERTICAL_N_08_-Y_9",
+        "ST_VERTICAL_N_08_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "image_path": "detection/renders/CWP_067.png",
+      "achieved_position_m": [
+        213.6157,
+        15.2212,
+        13.5016
+      ],
+      "target_m": [
+        213.75,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_07",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_N_07_+X_0",
+        "ST_VERTICAL_N_07_+X_1",
+        "ST_VERTICAL_N_07_+X_2",
+        "ST_VERTICAL_N_07_+Y_6",
+        "ST_VERTICAL_N_07_+Y_7",
+        "ST_VERTICAL_N_07_+Y_8",
+        "ST_VERTICAL_N_07_+Z_12",
+        "ST_VERTICAL_N_07_-X_3",
+        "ST_VERTICAL_N_07_-X_4",
+        "ST_VERTICAL_N_07_-X_5",
+        "ST_VERTICAL_N_07_-Y_10",
+        "ST_VERTICAL_N_07_-Y_11",
+        "ST_VERTICAL_N_07_-Y_9",
+        "ST_VERTICAL_N_07_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_068",
+      "image_path": "detection/renders/CWP_068.png",
+      "achieved_position_m": [
+        205.1104,
+        15.2072,
+        16.4995
+      ],
+      "target_m": [
+        205.2422,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_06",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_N_06_+X_1",
+        "ST_DIAGONAL_N_06_+Y_10",
+        "ST_DIAGONAL_N_06_+Y_11",
+        "ST_DIAGONAL_N_06_+Y_6",
+        "ST_DIAGONAL_N_06_+Y_7",
+        "ST_DIAGONAL_N_06_+Y_8",
+        "ST_DIAGONAL_N_06_+Y_9",
+        "ST_DIAGONAL_N_06_+Z_18",
+        "ST_DIAGONAL_N_06_+Z_19",
+        "ST_DIAGONAL_N_06_-X_3",
+        "ST_DIAGONAL_N_06_-X_4",
+        "ST_DIAGONAL_N_06_-X_5",
+        "ST_DIAGONAL_N_06_-Y_12",
+        "ST_DIAGONAL_N_06_-Y_13",
+        "ST_DIAGONAL_N_06_-Y_14",
+        "ST_DIAGONAL_N_06_-Y_15",
+        "ST_DIAGONAL_N_06_-Y_16",
+        "ST_DIAGONAL_N_06_-Y_17",
+        "ST_DIAGONAL_N_06_-Z_20",
+        "ST_DIAGONAL_N_06_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_069",
+      "image_path": "detection/renders/CWP_069.png",
+      "achieved_position_m": [
+        202.4304,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        202.5,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_06",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_N_06_+X_0",
+        "ST_VERTICAL_N_06_+X_1",
+        "ST_VERTICAL_N_06_+X_2",
+        "ST_VERTICAL_N_06_+Y_6",
+        "ST_VERTICAL_N_06_+Y_7",
+        "ST_VERTICAL_N_06_+Y_8",
+        "ST_VERTICAL_N_06_+Z_12",
+        "ST_VERTICAL_N_06_-X_3",
+        "ST_VERTICAL_N_06_-X_4",
+        "ST_VERTICAL_N_06_-X_5",
+        "ST_VERTICAL_N_06_-Y_10",
+        "ST_VERTICAL_N_06_-Y_11",
+        "ST_VERTICAL_N_06_-Y_9",
+        "ST_VERTICAL_N_06_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_070",
+      "image_path": "detection/renders/CWP_070.png",
+      "achieved_position_m": [
+        193.8607,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        193.9922,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_05",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_N_05_+X_1",
+        "ST_DIAGONAL_N_05_+Y_10",
+        "ST_DIAGONAL_N_05_+Y_11",
+        "ST_DIAGONAL_N_05_+Y_6",
+        "ST_DIAGONAL_N_05_+Y_7",
+        "ST_DIAGONAL_N_05_+Y_8",
+        "ST_DIAGONAL_N_05_+Y_9",
+        "ST_DIAGONAL_N_05_+Z_18",
+        "ST_DIAGONAL_N_05_+Z_19",
+        "ST_DIAGONAL_N_05_-X_3",
+        "ST_DIAGONAL_N_05_-X_4",
+        "ST_DIAGONAL_N_05_-X_5",
+        "ST_DIAGONAL_N_05_-Y_12",
+        "ST_DIAGONAL_N_05_-Y_13",
+        "ST_DIAGONAL_N_05_-Y_14",
+        "ST_DIAGONAL_N_05_-Y_15",
+        "ST_DIAGONAL_N_05_-Y_16",
+        "ST_DIAGONAL_N_05_-Y_17",
+        "ST_DIAGONAL_N_05_-Z_20",
+        "ST_DIAGONAL_N_05_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "image_path": "detection/renders/CWP_071.png",
+      "achieved_position_m": [
+        191.1804,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        191.25,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_05",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_N_05_+X_0",
+        "ST_VERTICAL_N_05_+X_1",
+        "ST_VERTICAL_N_05_+X_2",
+        "ST_VERTICAL_N_05_+Y_6",
+        "ST_VERTICAL_N_05_+Y_7",
+        "ST_VERTICAL_N_05_+Y_8",
+        "ST_VERTICAL_N_05_+Z_12",
+        "ST_VERTICAL_N_05_-X_3",
+        "ST_VERTICAL_N_05_-X_4",
+        "ST_VERTICAL_N_05_-X_5",
+        "ST_VERTICAL_N_05_-Y_10",
+        "ST_VERTICAL_N_05_-Y_11",
+        "ST_VERTICAL_N_05_-Y_9",
+        "ST_VERTICAL_N_05_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_072",
+      "image_path": "detection/renders/CWP_072.png",
+      "achieved_position_m": [
+        182.6107,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        182.7422,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_04",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_N_04_+X_1",
+        "ST_DIAGONAL_N_04_+Y_10",
+        "ST_DIAGONAL_N_04_+Y_11",
+        "ST_DIAGONAL_N_04_+Y_6",
+        "ST_DIAGONAL_N_04_+Y_7",
+        "ST_DIAGONAL_N_04_+Y_8",
+        "ST_DIAGONAL_N_04_+Y_9",
+        "ST_DIAGONAL_N_04_+Z_18",
+        "ST_DIAGONAL_N_04_+Z_19",
+        "ST_DIAGONAL_N_04_-X_3",
+        "ST_DIAGONAL_N_04_-X_4",
+        "ST_DIAGONAL_N_04_-X_5",
+        "ST_DIAGONAL_N_04_-Y_12",
+        "ST_DIAGONAL_N_04_-Y_13",
+        "ST_DIAGONAL_N_04_-Y_14",
+        "ST_DIAGONAL_N_04_-Y_15",
+        "ST_DIAGONAL_N_04_-Y_16",
+        "ST_DIAGONAL_N_04_-Y_17",
+        "ST_DIAGONAL_N_04_-Z_20",
+        "ST_DIAGONAL_N_04_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_073",
+      "image_path": "detection/renders/CWP_073.png",
+      "achieved_position_m": [
+        179.9304,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        180.0,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_04",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_N_04_+X_0",
+        "ST_VERTICAL_N_04_+X_1",
+        "ST_VERTICAL_N_04_+X_2",
+        "ST_VERTICAL_N_04_+Y_6",
+        "ST_VERTICAL_N_04_+Y_7",
+        "ST_VERTICAL_N_04_+Y_8",
+        "ST_VERTICAL_N_04_+Z_12",
+        "ST_VERTICAL_N_04_-X_3",
+        "ST_VERTICAL_N_04_-X_4",
+        "ST_VERTICAL_N_04_-X_5",
+        "ST_VERTICAL_N_04_-Y_10",
+        "ST_VERTICAL_N_04_-Y_11",
+        "ST_VERTICAL_N_04_-Y_9",
+        "ST_VERTICAL_N_04_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "image_path": "detection/renders/CWP_074.png",
+      "achieved_position_m": [
+        171.3607,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        171.4922,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_03",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_N_03_+X_1",
+        "ST_DIAGONAL_N_03_+Y_10",
+        "ST_DIAGONAL_N_03_+Y_11",
+        "ST_DIAGONAL_N_03_+Y_6",
+        "ST_DIAGONAL_N_03_+Y_7",
+        "ST_DIAGONAL_N_03_+Y_8",
+        "ST_DIAGONAL_N_03_+Y_9",
+        "ST_DIAGONAL_N_03_+Z_18",
+        "ST_DIAGONAL_N_03_+Z_19",
+        "ST_DIAGONAL_N_03_-X_3",
+        "ST_DIAGONAL_N_03_-X_4",
+        "ST_DIAGONAL_N_03_-X_5",
+        "ST_DIAGONAL_N_03_-Y_12",
+        "ST_DIAGONAL_N_03_-Y_13",
+        "ST_DIAGONAL_N_03_-Y_14",
+        "ST_DIAGONAL_N_03_-Y_15",
+        "ST_DIAGONAL_N_03_-Y_16",
+        "ST_DIAGONAL_N_03_-Y_17",
+        "ST_DIAGONAL_N_03_-Z_20",
+        "ST_DIAGONAL_N_03_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_075",
+      "image_path": "detection/renders/CWP_075.png",
+      "achieved_position_m": [
+        168.6804,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        168.75,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_03",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_N_03_+X_0",
+        "ST_VERTICAL_N_03_+X_1",
+        "ST_VERTICAL_N_03_+X_2",
+        "ST_VERTICAL_N_03_+Y_6",
+        "ST_VERTICAL_N_03_+Y_7",
+        "ST_VERTICAL_N_03_+Y_8",
+        "ST_VERTICAL_N_03_+Z_12",
+        "ST_VERTICAL_N_03_-X_3",
+        "ST_VERTICAL_N_03_-X_4",
+        "ST_VERTICAL_N_03_-X_5",
+        "ST_VERTICAL_N_03_-Y_10",
+        "ST_VERTICAL_N_03_-Y_11",
+        "ST_VERTICAL_N_03_-Y_9",
+        "ST_VERTICAL_N_03_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_076",
+      "image_path": "detection/renders/CWP_076.png",
+      "achieved_position_m": [
+        160.1107,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        160.2422,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_02",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_N_02_+X_1",
+        "ST_DIAGONAL_N_02_+Y_10",
+        "ST_DIAGONAL_N_02_+Y_11",
+        "ST_DIAGONAL_N_02_+Y_6",
+        "ST_DIAGONAL_N_02_+Y_7",
+        "ST_DIAGONAL_N_02_+Y_8",
+        "ST_DIAGONAL_N_02_+Y_9",
+        "ST_DIAGONAL_N_02_+Z_18",
+        "ST_DIAGONAL_N_02_+Z_19",
+        "ST_DIAGONAL_N_02_-X_3",
+        "ST_DIAGONAL_N_02_-X_4",
+        "ST_DIAGONAL_N_02_-X_5",
+        "ST_DIAGONAL_N_02_-Y_12",
+        "ST_DIAGONAL_N_02_-Y_13",
+        "ST_DIAGONAL_N_02_-Y_14",
+        "ST_DIAGONAL_N_02_-Y_15",
+        "ST_DIAGONAL_N_02_-Y_16",
+        "ST_DIAGONAL_N_02_-Y_17",
+        "ST_DIAGONAL_N_02_-Z_20",
+        "ST_DIAGONAL_N_02_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_077",
+      "image_path": "detection/renders/CWP_077.png",
+      "achieved_position_m": [
+        157.4304,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        157.5,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_02",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_N_02_+X_0",
+        "ST_VERTICAL_N_02_+X_1",
+        "ST_VERTICAL_N_02_+X_2",
+        "ST_VERTICAL_N_02_+Y_6",
+        "ST_VERTICAL_N_02_+Y_7",
+        "ST_VERTICAL_N_02_+Y_8",
+        "ST_VERTICAL_N_02_+Z_12",
+        "ST_VERTICAL_N_02_-X_3",
+        "ST_VERTICAL_N_02_-X_4",
+        "ST_VERTICAL_N_02_-X_5",
+        "ST_VERTICAL_N_02_-Y_10",
+        "ST_VERTICAL_N_02_-Y_11",
+        "ST_VERTICAL_N_02_-Y_9",
+        "ST_VERTICAL_N_02_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_078",
+      "image_path": "detection/renders/CWP_078.png",
+      "achieved_position_m": [
+        148.8607,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        148.9922,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_01",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_N_01_+X_1",
+        "ST_DIAGONAL_N_01_+Y_10",
+        "ST_DIAGONAL_N_01_+Y_11",
+        "ST_DIAGONAL_N_01_+Y_6",
+        "ST_DIAGONAL_N_01_+Y_7",
+        "ST_DIAGONAL_N_01_+Y_8",
+        "ST_DIAGONAL_N_01_+Y_9",
+        "ST_DIAGONAL_N_01_+Z_18",
+        "ST_DIAGONAL_N_01_+Z_19",
+        "ST_DIAGONAL_N_01_-X_3",
+        "ST_DIAGONAL_N_01_-X_4",
+        "ST_DIAGONAL_N_01_-X_5",
+        "ST_DIAGONAL_N_01_-Y_12",
+        "ST_DIAGONAL_N_01_-Y_13",
+        "ST_DIAGONAL_N_01_-Y_14",
+        "ST_DIAGONAL_N_01_-Y_15",
+        "ST_DIAGONAL_N_01_-Y_16",
+        "ST_DIAGONAL_N_01_-Y_17",
+        "ST_DIAGONAL_N_01_-Z_20",
+        "ST_DIAGONAL_N_01_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_079",
+      "image_path": "detection/renders/CWP_079.png",
+      "achieved_position_m": [
+        146.1804,
+        15.1323,
+        13.5094
+      ],
+      "target_m": [
+        146.25,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_01",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_N_01_+X_0",
+        "ST_VERTICAL_N_01_+X_1",
+        "ST_VERTICAL_N_01_+X_2",
+        "ST_VERTICAL_N_01_+Y_6",
+        "ST_VERTICAL_N_01_+Y_7",
+        "ST_VERTICAL_N_01_+Y_8",
+        "ST_VERTICAL_N_01_+Z_12",
+        "ST_VERTICAL_N_01_-X_3",
+        "ST_VERTICAL_N_01_-X_4",
+        "ST_VERTICAL_N_01_-X_5",
+        "ST_VERTICAL_N_01_-Y_10",
+        "ST_VERTICAL_N_01_-Y_11",
+        "ST_VERTICAL_N_01_-Y_9",
+        "ST_VERTICAL_N_01_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "image_path": "detection/renders/CWP_080.png",
+      "achieved_position_m": [
+        137.6107,
+        15.2068,
+        16.4996
+      ],
+      "target_m": [
+        137.7422,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_00",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_N_00_+X_1",
+        "ST_DIAGONAL_N_00_+Y_10",
+        "ST_DIAGONAL_N_00_+Y_11",
+        "ST_DIAGONAL_N_00_+Y_6",
+        "ST_DIAGONAL_N_00_+Y_7",
+        "ST_DIAGONAL_N_00_+Y_8",
+        "ST_DIAGONAL_N_00_+Y_9",
+        "ST_DIAGONAL_N_00_+Z_18",
+        "ST_DIAGONAL_N_00_+Z_19",
+        "ST_DIAGONAL_N_00_-X_3",
+        "ST_DIAGONAL_N_00_-X_4",
+        "ST_DIAGONAL_N_00_-X_5",
+        "ST_DIAGONAL_N_00_-Y_12",
+        "ST_DIAGONAL_N_00_-Y_13",
+        "ST_DIAGONAL_N_00_-Y_14",
+        "ST_DIAGONAL_N_00_-Y_15",
+        "ST_DIAGONAL_N_00_-Y_16",
+        "ST_DIAGONAL_N_00_-Y_17",
+        "ST_DIAGONAL_N_00_-Z_20",
+        "ST_DIAGONAL_N_00_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "image_path": "detection/renders/CWP_099.png",
+      "achieved_position_m": [
+        -8.9554,
+        -2.6659,
+        8.676
+      ],
+      "target_m": [
+        -0.85,
+        -2.75,
+        8.6758
+      ],
+      "prim_name": "BR_PIER_COL_001_1",
+      "prim_kind": "pier_column",
+      "covers": [
+        "BR_PIER_COL_001_1_cap_top",
+        "BR_PIER_COL_001_1_side_0",
+        "BR_PIER_COL_001_1_side_1",
+        "BR_PIER_COL_001_1_side_10",
+        "BR_PIER_COL_001_1_side_11",
+        "BR_PIER_COL_001_1_side_2",
+        "BR_PIER_COL_001_1_side_3",
+        "BR_PIER_COL_001_1_side_4",
+        "BR_PIER_COL_001_1_side_5",
+        "BR_PIER_COL_001_1_side_6",
+        "BR_PIER_COL_001_1_side_7",
+        "BR_PIER_COL_001_1_side_8",
+        "BR_PIER_COL_001_1_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "image_path": "detection/renders/CWP_100.png",
+      "achieved_position_m": [
+        -8.8212,
+        -2.9922,
+        11.0629
+      ],
+      "target_m": [
+        -0.9,
+        -3.0,
+        11.075
+      ],
+      "prim_name": "BR_PIER_CAP_001",
+      "prim_kind": "pier_cap",
+      "covers": [
+        "BR_PIER_CAP_001_+X_0",
+        "BR_PIER_CAP_001_+X_1",
+        "BR_PIER_CAP_001_+Z_6",
+        "BR_PIER_CAP_001_+Z_7",
+        "BR_PIER_CAP_001_+Z_8",
+        "BR_PIER_CAP_001_-X_2",
+        "BR_PIER_CAP_001_-X_3",
+        "BR_PIER_CAP_001_-Y_5",
+        "BR_PIER_CAP_001_-Z_10",
+        "BR_PIER_CAP_001_-Z_11",
+        "BR_PIER_CAP_001_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_101",
+      "image_path": "detection/renders/CWP_101.png",
+      "achieved_position_m": [
+        -8.0656,
+        25.9815,
+        18.7742
+      ],
+      "target_m": [
+        -0.06,
+        25.85,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_001",
+      "prim_kind": "joint_gap",
+      "covers": [
+        "MB_JOINT_001_+X_0",
+        "MB_JOINT_001_+X_1",
+        "MB_JOINT_001_+Y_4",
+        "MB_JOINT_001_+Z_6",
+        "MB_JOINT_001_+Z_7",
+        "MB_JOINT_001_+Z_8",
+        "MB_JOINT_001_-X_2",
+        "MB_JOINT_001_-X_3",
+        "MB_JOINT_001_-Y_5",
+        "MB_JOINT_001_-Z_10",
+        "MB_JOINT_001_-Z_11",
+        "MB_JOINT_001_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_104",
+      "image_path": "detection/renders/CWP_104.png",
+      "achieved_position_m": [
+        138.9557,
+        2.282,
+        29.151
+      ],
+      "target_m": [
+        138.8267,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_00_B",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_00_B_+Y_4",
+        "ST_BRACING_TOP_00_B_+Z_10",
+        "ST_BRACING_TOP_00_B_+Z_11",
+        "ST_BRACING_TOP_00_B_+Z_12",
+        "ST_BRACING_TOP_00_B_+Z_13",
+        "ST_BRACING_TOP_00_B_+Z_8",
+        "ST_BRACING_TOP_00_B_+Z_9",
+        "ST_BRACING_TOP_00_B_-X_2",
+        "ST_BRACING_TOP_00_B_-X_3",
+        "ST_BRACING_TOP_00_B_-Y_6",
+        "ST_BRACING_TOP_00_B_-Z_14",
+        "ST_BRACING_TOP_00_B_-Z_15",
+        "ST_BRACING_TOP_00_B_-Z_16",
+        "ST_BRACING_TOP_00_B_-Z_17",
+        "ST_BRACING_TOP_00_B_-Z_18",
+        "ST_BRACING_TOP_00_B_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "image_path": "detection/renders/CWP_105.png",
+      "achieved_position_m": [
+        138.7829,
+        -2.3595,
+        29.1515
+      ],
+      "target_m": [
+        138.8267,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_00_A",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_00_A_+Y_4",
+        "ST_BRACING_TOP_00_A_+Z_10",
+        "ST_BRACING_TOP_00_A_+Z_11",
+        "ST_BRACING_TOP_00_A_+Z_12",
+        "ST_BRACING_TOP_00_A_+Z_13",
+        "ST_BRACING_TOP_00_A_+Z_8",
+        "ST_BRACING_TOP_00_A_+Z_9",
+        "ST_BRACING_TOP_00_A_-X_2",
+        "ST_BRACING_TOP_00_A_-X_3",
+        "ST_BRACING_TOP_00_A_-Y_6",
+        "ST_BRACING_TOP_00_A_-Z_14",
+        "ST_BRACING_TOP_00_A_-Z_15",
+        "ST_BRACING_TOP_00_A_-Z_16",
+        "ST_BRACING_TOP_00_A_-Z_17",
+        "ST_BRACING_TOP_00_A_-Z_18",
+        "ST_BRACING_TOP_00_A_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_106",
+      "image_path": "detection/renders/CWP_106.png",
+      "achieved_position_m": [
+        150.1267,
+        -2.2388,
+        29.1565
+      ],
+      "target_m": [
+        150.0767,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_01_A",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_01_A_+Y_4",
+        "ST_BRACING_TOP_01_A_+Z_10",
+        "ST_BRACING_TOP_01_A_+Z_11",
+        "ST_BRACING_TOP_01_A_+Z_12",
+        "ST_BRACING_TOP_01_A_+Z_13",
+        "ST_BRACING_TOP_01_A_+Z_8",
+        "ST_BRACING_TOP_01_A_+Z_9",
+        "ST_BRACING_TOP_01_A_-X_2",
+        "ST_BRACING_TOP_01_A_-X_3",
+        "ST_BRACING_TOP_01_A_-Y_6",
+        "ST_BRACING_TOP_01_A_-Z_14",
+        "ST_BRACING_TOP_01_A_-Z_15",
+        "ST_BRACING_TOP_01_A_-Z_16",
+        "ST_BRACING_TOP_01_A_-Z_17",
+        "ST_BRACING_TOP_01_A_-Z_18",
+        "ST_BRACING_TOP_01_A_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_107",
+      "image_path": "detection/renders/CWP_107.png",
+      "achieved_position_m": [
+        150.0327,
+        2.3592,
+        29.1516
+      ],
+      "target_m": [
+        150.0767,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_01_B",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_01_B_+Y_4",
+        "ST_BRACING_TOP_01_B_+Z_10",
+        "ST_BRACING_TOP_01_B_+Z_11",
+        "ST_BRACING_TOP_01_B_+Z_12",
+        "ST_BRACING_TOP_01_B_+Z_13",
+        "ST_BRACING_TOP_01_B_+Z_8",
+        "ST_BRACING_TOP_01_B_+Z_9",
+        "ST_BRACING_TOP_01_B_-X_2",
+        "ST_BRACING_TOP_01_B_-X_3",
+        "ST_BRACING_TOP_01_B_-Y_6",
+        "ST_BRACING_TOP_01_B_-Z_14",
+        "ST_BRACING_TOP_01_B_-Z_15",
+        "ST_BRACING_TOP_01_B_-Z_16",
+        "ST_BRACING_TOP_01_B_-Z_17",
+        "ST_BRACING_TOP_01_B_-Z_18",
+        "ST_BRACING_TOP_01_B_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_108",
+      "image_path": "detection/renders/CWP_108.png",
+      "achieved_position_m": [
+        161.3767,
+        2.2372,
+        29.1565
+      ],
+      "target_m": [
+        161.3267,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_02_B",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_02_B_+Y_4",
+        "ST_BRACING_TOP_02_B_+Z_10",
+        "ST_BRACING_TOP_02_B_+Z_11",
+        "ST_BRACING_TOP_02_B_+Z_12",
+        "ST_BRACING_TOP_02_B_+Z_13",
+        "ST_BRACING_TOP_02_B_+Z_8",
+        "ST_BRACING_TOP_02_B_+Z_9",
+        "ST_BRACING_TOP_02_B_-X_2",
+        "ST_BRACING_TOP_02_B_-X_3",
+        "ST_BRACING_TOP_02_B_-Y_6",
+        "ST_BRACING_TOP_02_B_-Z_14",
+        "ST_BRACING_TOP_02_B_-Z_15",
+        "ST_BRACING_TOP_02_B_-Z_16",
+        "ST_BRACING_TOP_02_B_-Z_17",
+        "ST_BRACING_TOP_02_B_-Z_18",
+        "ST_BRACING_TOP_02_B_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "image_path": "detection/renders/CWP_109.png",
+      "achieved_position_m": [
+        161.2835,
+        -2.3594,
+        29.1516
+      ],
+      "target_m": [
+        161.3267,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_02_A",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_02_A_+Y_4",
+        "ST_BRACING_TOP_02_A_+Z_10",
+        "ST_BRACING_TOP_02_A_+Z_11",
+        "ST_BRACING_TOP_02_A_+Z_12",
+        "ST_BRACING_TOP_02_A_+Z_13",
+        "ST_BRACING_TOP_02_A_+Z_8",
+        "ST_BRACING_TOP_02_A_+Z_9",
+        "ST_BRACING_TOP_02_A_-X_2",
+        "ST_BRACING_TOP_02_A_-X_3",
+        "ST_BRACING_TOP_02_A_-Y_6",
+        "ST_BRACING_TOP_02_A_-Z_14",
+        "ST_BRACING_TOP_02_A_-Z_15",
+        "ST_BRACING_TOP_02_A_-Z_16",
+        "ST_BRACING_TOP_02_A_-Z_17",
+        "ST_BRACING_TOP_02_A_-Z_18",
+        "ST_BRACING_TOP_02_A_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_110",
+      "image_path": "detection/renders/CWP_110.png",
+      "achieved_position_m": [
+        172.6267,
+        -2.2388,
+        29.1565
+      ],
+      "target_m": [
+        172.5767,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_03_A",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_03_A_+Y_4",
+        "ST_BRACING_TOP_03_A_+Z_10",
+        "ST_BRACING_TOP_03_A_+Z_11",
+        "ST_BRACING_TOP_03_A_+Z_12",
+        "ST_BRACING_TOP_03_A_+Z_13",
+        "ST_BRACING_TOP_03_A_+Z_8",
+        "ST_BRACING_TOP_03_A_+Z_9",
+        "ST_BRACING_TOP_03_A_-X_2",
+        "ST_BRACING_TOP_03_A_-X_3",
+        "ST_BRACING_TOP_03_A_-Y_6",
+        "ST_BRACING_TOP_03_A_-Z_14",
+        "ST_BRACING_TOP_03_A_-Z_15",
+        "ST_BRACING_TOP_03_A_-Z_16",
+        "ST_BRACING_TOP_03_A_-Z_17",
+        "ST_BRACING_TOP_03_A_-Z_18",
+        "ST_BRACING_TOP_03_A_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_111",
+      "image_path": "detection/renders/CWP_111.png",
+      "achieved_position_m": [
+        172.5327,
+        2.3592,
+        29.1516
+      ],
+      "target_m": [
+        172.5767,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_03_B",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_03_B_+Y_4",
+        "ST_BRACING_TOP_03_B_+Z_10",
+        "ST_BRACING_TOP_03_B_+Z_11",
+        "ST_BRACING_TOP_03_B_+Z_12",
+        "ST_BRACING_TOP_03_B_+Z_13",
+        "ST_BRACING_TOP_03_B_+Z_8",
+        "ST_BRACING_TOP_03_B_+Z_9",
+        "ST_BRACING_TOP_03_B_-X_2",
+        "ST_BRACING_TOP_03_B_-X_3",
+        "ST_BRACING_TOP_03_B_-Y_6",
+        "ST_BRACING_TOP_03_B_-Z_14",
+        "ST_BRACING_TOP_03_B_-Z_15",
+        "ST_BRACING_TOP_03_B_-Z_16",
+        "ST_BRACING_TOP_03_B_-Z_17",
+        "ST_BRACING_TOP_03_B_-Z_18",
+        "ST_BRACING_TOP_03_B_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_112",
+      "image_path": "detection/renders/CWP_112.png",
+      "achieved_position_m": [
+        183.8767,
+        2.2372,
+        29.1565
+      ],
+      "target_m": [
+        183.8267,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_04_B",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_04_B_+Y_4",
+        "ST_BRACING_TOP_04_B_+Z_10",
+        "ST_BRACING_TOP_04_B_+Z_11",
+        "ST_BRACING_TOP_04_B_+Z_12",
+        "ST_BRACING_TOP_04_B_+Z_13",
+        "ST_BRACING_TOP_04_B_+Z_8",
+        "ST_BRACING_TOP_04_B_+Z_9",
+        "ST_BRACING_TOP_04_B_-X_2",
+        "ST_BRACING_TOP_04_B_-X_3",
+        "ST_BRACING_TOP_04_B_-Y_6",
+        "ST_BRACING_TOP_04_B_-Z_14",
+        "ST_BRACING_TOP_04_B_-Z_15",
+        "ST_BRACING_TOP_04_B_-Z_16",
+        "ST_BRACING_TOP_04_B_-Z_17",
+        "ST_BRACING_TOP_04_B_-Z_18",
+        "ST_BRACING_TOP_04_B_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "image_path": "detection/renders/CWP_113.png",
+      "achieved_position_m": [
+        183.7835,
+        -2.3594,
+        29.1516
+      ],
+      "target_m": [
+        183.8267,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_04_A",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_04_A_+Y_4",
+        "ST_BRACING_TOP_04_A_+Z_10",
+        "ST_BRACING_TOP_04_A_+Z_11",
+        "ST_BRACING_TOP_04_A_+Z_12",
+        "ST_BRACING_TOP_04_A_+Z_13",
+        "ST_BRACING_TOP_04_A_+Z_8",
+        "ST_BRACING_TOP_04_A_+Z_9",
+        "ST_BRACING_TOP_04_A_-X_2",
+        "ST_BRACING_TOP_04_A_-X_3",
+        "ST_BRACING_TOP_04_A_-Y_6",
+        "ST_BRACING_TOP_04_A_-Z_14",
+        "ST_BRACING_TOP_04_A_-Z_15",
+        "ST_BRACING_TOP_04_A_-Z_16",
+        "ST_BRACING_TOP_04_A_-Z_17",
+        "ST_BRACING_TOP_04_A_-Z_18",
+        "ST_BRACING_TOP_04_A_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "image_path": "detection/renders/CWP_114.png",
+      "achieved_position_m": [
+        195.1267,
+        -2.2388,
+        29.1565
+      ],
+      "target_m": [
+        195.0767,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_05_A",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_05_A_+Y_4",
+        "ST_BRACING_TOP_05_A_+Z_10",
+        "ST_BRACING_TOP_05_A_+Z_11",
+        "ST_BRACING_TOP_05_A_+Z_12",
+        "ST_BRACING_TOP_05_A_+Z_13",
+        "ST_BRACING_TOP_05_A_+Z_8",
+        "ST_BRACING_TOP_05_A_+Z_9",
+        "ST_BRACING_TOP_05_A_-X_2",
+        "ST_BRACING_TOP_05_A_-X_3",
+        "ST_BRACING_TOP_05_A_-Y_6",
+        "ST_BRACING_TOP_05_A_-Z_14",
+        "ST_BRACING_TOP_05_A_-Z_15",
+        "ST_BRACING_TOP_05_A_-Z_16",
+        "ST_BRACING_TOP_05_A_-Z_17",
+        "ST_BRACING_TOP_05_A_-Z_18",
+        "ST_BRACING_TOP_05_A_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_115",
+      "image_path": "detection/renders/CWP_115.png",
+      "achieved_position_m": [
+        195.0327,
+        2.3592,
+        29.1516
+      ],
+      "target_m": [
+        195.0767,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_05_B",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_05_B_+Y_4",
+        "ST_BRACING_TOP_05_B_+Z_10",
+        "ST_BRACING_TOP_05_B_+Z_11",
+        "ST_BRACING_TOP_05_B_+Z_12",
+        "ST_BRACING_TOP_05_B_+Z_13",
+        "ST_BRACING_TOP_05_B_+Z_8",
+        "ST_BRACING_TOP_05_B_+Z_9",
+        "ST_BRACING_TOP_05_B_-X_2",
+        "ST_BRACING_TOP_05_B_-X_3",
+        "ST_BRACING_TOP_05_B_-Y_6",
+        "ST_BRACING_TOP_05_B_-Z_14",
+        "ST_BRACING_TOP_05_B_-Z_15",
+        "ST_BRACING_TOP_05_B_-Z_16",
+        "ST_BRACING_TOP_05_B_-Z_17",
+        "ST_BRACING_TOP_05_B_-Z_18",
+        "ST_BRACING_TOP_05_B_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_116",
+      "image_path": "detection/renders/CWP_116.png",
+      "achieved_position_m": [
+        206.3767,
+        2.2372,
+        29.1565
+      ],
+      "target_m": [
+        206.3267,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_06_B",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_06_B_+Y_4",
+        "ST_BRACING_TOP_06_B_+Z_10",
+        "ST_BRACING_TOP_06_B_+Z_11",
+        "ST_BRACING_TOP_06_B_+Z_12",
+        "ST_BRACING_TOP_06_B_+Z_13",
+        "ST_BRACING_TOP_06_B_+Z_8",
+        "ST_BRACING_TOP_06_B_+Z_9",
+        "ST_BRACING_TOP_06_B_-X_2",
+        "ST_BRACING_TOP_06_B_-X_3",
+        "ST_BRACING_TOP_06_B_-Y_6",
+        "ST_BRACING_TOP_06_B_-Z_14",
+        "ST_BRACING_TOP_06_B_-Z_15",
+        "ST_BRACING_TOP_06_B_-Z_16",
+        "ST_BRACING_TOP_06_B_-Z_17",
+        "ST_BRACING_TOP_06_B_-Z_18",
+        "ST_BRACING_TOP_06_B_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_117",
+      "image_path": "detection/renders/CWP_117.png",
+      "achieved_position_m": [
+        206.2835,
+        -2.3594,
+        29.1516
+      ],
+      "target_m": [
+        206.3267,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_06_A",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_06_A_+Y_4",
+        "ST_BRACING_TOP_06_A_+Z_10",
+        "ST_BRACING_TOP_06_A_+Z_11",
+        "ST_BRACING_TOP_06_A_+Z_12",
+        "ST_BRACING_TOP_06_A_+Z_13",
+        "ST_BRACING_TOP_06_A_+Z_8",
+        "ST_BRACING_TOP_06_A_+Z_9",
+        "ST_BRACING_TOP_06_A_-X_2",
+        "ST_BRACING_TOP_06_A_-X_3",
+        "ST_BRACING_TOP_06_A_-Y_6",
+        "ST_BRACING_TOP_06_A_-Z_14",
+        "ST_BRACING_TOP_06_A_-Z_15",
+        "ST_BRACING_TOP_06_A_-Z_16",
+        "ST_BRACING_TOP_06_A_-Z_17",
+        "ST_BRACING_TOP_06_A_-Z_18",
+        "ST_BRACING_TOP_06_A_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_118",
+      "image_path": "detection/renders/CWP_118.png",
+      "achieved_position_m": [
+        217.6267,
+        -2.2388,
+        29.1565
+      ],
+      "target_m": [
+        217.5767,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_07_A",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_07_A_+Y_4",
+        "ST_BRACING_TOP_07_A_+Z_10",
+        "ST_BRACING_TOP_07_A_+Z_11",
+        "ST_BRACING_TOP_07_A_+Z_12",
+        "ST_BRACING_TOP_07_A_+Z_13",
+        "ST_BRACING_TOP_07_A_+Z_8",
+        "ST_BRACING_TOP_07_A_+Z_9",
+        "ST_BRACING_TOP_07_A_-X_2",
+        "ST_BRACING_TOP_07_A_-X_3",
+        "ST_BRACING_TOP_07_A_-Y_6",
+        "ST_BRACING_TOP_07_A_-Z_14",
+        "ST_BRACING_TOP_07_A_-Z_15",
+        "ST_BRACING_TOP_07_A_-Z_16",
+        "ST_BRACING_TOP_07_A_-Z_17",
+        "ST_BRACING_TOP_07_A_-Z_18",
+        "ST_BRACING_TOP_07_A_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "image_path": "detection/renders/CWP_119.png",
+      "achieved_position_m": [
+        217.5327,
+        2.3592,
+        29.1516
+      ],
+      "target_m": [
+        217.5767,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_07_B",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_BRACING_TOP_07_B_+Y_4",
+        "ST_BRACING_TOP_07_B_+Z_10",
+        "ST_BRACING_TOP_07_B_+Z_11",
+        "ST_BRACING_TOP_07_B_+Z_12",
+        "ST_BRACING_TOP_07_B_+Z_13",
+        "ST_BRACING_TOP_07_B_+Z_8",
+        "ST_BRACING_TOP_07_B_+Z_9",
+        "ST_BRACING_TOP_07_B_-X_2",
+        "ST_BRACING_TOP_07_B_-X_3",
+        "ST_BRACING_TOP_07_B_-Y_6",
+        "ST_BRACING_TOP_07_B_-Z_14",
+        "ST_BRACING_TOP_07_B_-Z_15",
+        "ST_BRACING_TOP_07_B_-Z_16",
+        "ST_BRACING_TOP_07_B_-Z_17",
+        "ST_BRACING_TOP_07_B_-Z_18",
+        "ST_BRACING_TOP_07_B_-Z_19"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_120",
+      "image_path": "detection/renders/CWP_120.png",
+      "achieved_position_m": [
+        225.0987,
+        -0.0527,
+        29.1506
+      ],
+      "target_m": [
+        225.0,
+        0.0,
+        21.15
+      ],
+      "prim_name": "ST_PORTAL_STRUT_225",
+      "prim_kind": "bracing",
+      "covers": [
+        "ST_PORTAL_STRUT_225_+X_0",
+        "ST_PORTAL_STRUT_225_+X_1",
+        "ST_PORTAL_STRUT_225_+Y_4",
+        "ST_PORTAL_STRUT_225_+Z_6",
+        "ST_PORTAL_STRUT_225_+Z_7",
+        "ST_PORTAL_STRUT_225_+Z_8",
+        "ST_PORTAL_STRUT_225_-X_2",
+        "ST_PORTAL_STRUT_225_-X_3",
+        "ST_PORTAL_STRUT_225_-Y_5",
+        "ST_PORTAL_STRUT_225_-Z_10",
+        "ST_PORTAL_STRUT_225_-Z_11",
+        "ST_PORTAL_STRUT_225_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_121",
+      "image_path": "detection/renders/CWP_121.png",
+      "achieved_position_m": [
+        264.1154,
+        28.0719,
+        8.0722
+      ],
+      "target_m": [
+        256.0,
+        28.0,
+        8.0689
+      ],
+      "prim_name": "MB_PIER_COL_007",
+      "prim_kind": "pier_column",
+      "covers": [
+        "MB_PIER_COL_007_cap_bottom",
+        "MB_PIER_COL_007_cap_top",
+        "MB_PIER_COL_007_side_0",
+        "MB_PIER_COL_007_side_1",
+        "MB_PIER_COL_007_side_10",
+        "MB_PIER_COL_007_side_11",
+        "MB_PIER_COL_007_side_2",
+        "MB_PIER_COL_007_side_3",
+        "MB_PIER_COL_007_side_4",
+        "MB_PIER_COL_007_side_5",
+        "MB_PIER_COL_007_side_6",
+        "MB_PIER_COL_007_side_7",
+        "MB_PIER_COL_007_side_8",
+        "MB_PIER_COL_007_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "image_path": "detection/renders/CWP_122.png",
+      "achieved_position_m": [
+        315.1194,
+        -4.4618,
+        22.2727
+      ],
+      "target_m": [
+        315.0,
+        -4.4,
+        14.2725
+      ],
+      "prim_name": "BR_JOINT_002_GAP",
+      "prim_kind": "expansion_joint",
+      "covers": [
+        "BR_JOINT_002_GAP_+X_0",
+        "BR_JOINT_002_GAP_+X_1",
+        "BR_JOINT_002_GAP_+Z_6",
+        "BR_JOINT_002_GAP_+Z_7",
+        "BR_JOINT_002_GAP_+Z_8",
+        "BR_JOINT_002_GAP_-X_2",
+        "BR_JOINT_002_GAP_-X_3",
+        "BR_JOINT_002_GAP_-Y_5",
+        "BR_JOINT_002_GAP_-Z_10",
+        "BR_JOINT_002_GAP_-Z_11",
+        "BR_JOINT_002_GAP_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_124",
+      "image_path": "detection/renders/CWP_124.png",
+      "achieved_position_m": [
+        359.8663,
+        -0.0101,
+        19.7787
+      ],
+      "target_m": [
+        360.0,
+        0.0,
+        11.775
+      ],
+      "prim_name": "BR_PIER_CAP_008",
+      "prim_kind": "pier_cap",
+      "covers": [
+        "BR_PIER_CAP_008_+X_0",
+        "BR_PIER_CAP_008_+X_1",
+        "BR_PIER_CAP_008_+Y_4",
+        "BR_PIER_CAP_008_+Z_6",
+        "BR_PIER_CAP_008_+Z_7",
+        "BR_PIER_CAP_008_+Z_8",
+        "BR_PIER_CAP_008_-X_2",
+        "BR_PIER_CAP_008_-X_3",
+        "BR_PIER_CAP_008_-Y_5",
+        "BR_PIER_CAP_008_-Z_10",
+        "BR_PIER_CAP_008_-Z_11",
+        "BR_PIER_CAP_008_-Z_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_125",
+      "image_path": "detection/renders/CWP_125.png",
+      "achieved_position_m": [
+        368.9751,
+        -2.8043,
+        8.7058
+      ],
+      "target_m": [
+        360.85,
+        -2.75,
+        8.6758
+      ],
+      "prim_name": "BR_PIER_COL_008_1",
+      "prim_kind": "pier_column",
+      "covers": [
+        "BR_PIER_COL_008_1_cap_top",
+        "BR_PIER_COL_008_1_side_0",
+        "BR_PIER_COL_008_1_side_1",
+        "BR_PIER_COL_008_1_side_10",
+        "BR_PIER_COL_008_1_side_11",
+        "BR_PIER_COL_008_1_side_2",
+        "BR_PIER_COL_008_1_side_3",
+        "BR_PIER_COL_008_1_side_4",
+        "BR_PIER_COL_008_1_side_5",
+        "BR_PIER_COL_008_1_side_6",
+        "BR_PIER_COL_008_1_side_7",
+        "BR_PIER_COL_008_1_side_8",
+        "BR_PIER_COL_008_1_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_126",
+      "image_path": "detection/renders/CWP_126.png",
+      "achieved_position_m": [
+        368.4008,
+        -6.0959,
+        7.0039
+      ],
+      "target_m": [
+        360.5,
+        -6.0,
+        7.0
+      ],
+      "prim_name": "BR_ABUTMENT_NORTH",
+      "prim_kind": "abutment",
+      "covers": [
+        "BR_ABUTMENT_NORTH_+X_0",
+        "BR_ABUTMENT_NORTH_+X_1",
+        "BR_ABUTMENT_NORTH_+X_2",
+        "BR_ABUTMENT_NORTH_+X_3",
+        "BR_ABUTMENT_NORTH_+X_4",
+        "BR_ABUTMENT_NORTH_+X_5",
+        "BR_ABUTMENT_NORTH_+Z_24",
+        "BR_ABUTMENT_NORTH_-X_10",
+        "BR_ABUTMENT_NORTH_-X_11",
+        "BR_ABUTMENT_NORTH_-X_9",
+        "BR_ABUTMENT_NORTH_-Y_21",
+        "BR_ABUTMENT_NORTH_-Y_22",
+        "BR_ABUTMENT_NORTH_-Y_23"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "image_path": "detection/renders/CWP_127.png",
+      "achieved_position_m": [
+        368.8405,
+        2.8831,
+        8.6763
+      ],
+      "target_m": [
+        360.85,
+        2.75,
+        8.6758
+      ],
+      "prim_name": "BR_PIER_COL_008_2",
+      "prim_kind": "pier_column",
+      "covers": [
+        "BR_PIER_COL_008_2_cap_top",
+        "BR_PIER_COL_008_2_side_0",
+        "BR_PIER_COL_008_2_side_1",
+        "BR_PIER_COL_008_2_side_10",
+        "BR_PIER_COL_008_2_side_11",
+        "BR_PIER_COL_008_2_side_2",
+        "BR_PIER_COL_008_2_side_3",
+        "BR_PIER_COL_008_2_side_4",
+        "BR_PIER_COL_008_2_side_5",
+        "BR_PIER_COL_008_2_side_6",
+        "BR_PIER_COL_008_2_side_7",
+        "BR_PIER_COL_008_2_side_8",
+        "BR_PIER_COL_008_2_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_128",
+      "image_path": "detection/renders/CWP_128.png",
+      "achieved_position_m": [
+        369.0026,
+        28.1311,
+        8.0076
+      ],
+      "target_m": [
+        361.0,
+        28.0,
+        8.0067
+      ],
+      "prim_name": "MB_PIER_COL_011",
+      "prim_kind": "pier_column",
+      "covers": [
+        "MB_PIER_COL_011_cap_bottom",
+        "MB_PIER_COL_011_cap_top",
+        "MB_PIER_COL_011_side_0",
+        "MB_PIER_COL_011_side_1",
+        "MB_PIER_COL_011_side_10",
+        "MB_PIER_COL_011_side_11",
+        "MB_PIER_COL_011_side_2",
+        "MB_PIER_COL_011_side_3",
+        "MB_PIER_COL_011_side_4",
+        "MB_PIER_COL_011_side_5",
+        "MB_PIER_COL_011_side_6",
+        "MB_PIER_COL_011_side_7",
+        "MB_PIER_COL_011_side_8",
+        "MB_PIER_COL_011_side_9"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_142",
+      "image_path": "detection/renders/CWP_142.png",
+      "achieved_position_m": [
+        160.361,
+        1.2473,
+        16.5009
+      ],
+      "target_m": [
+        160.2422,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_02",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_S_02_+X_1",
+        "ST_DIAGONAL_S_02_+Y_10",
+        "ST_DIAGONAL_S_02_+Y_11",
+        "ST_DIAGONAL_S_02_+Y_6",
+        "ST_DIAGONAL_S_02_+Y_7",
+        "ST_DIAGONAL_S_02_+Y_8",
+        "ST_DIAGONAL_S_02_+Y_9",
+        "ST_DIAGONAL_S_02_+Z_18",
+        "ST_DIAGONAL_S_02_+Z_19",
+        "ST_DIAGONAL_S_02_-X_3",
+        "ST_DIAGONAL_S_02_-X_4",
+        "ST_DIAGONAL_S_02_-X_5",
+        "ST_DIAGONAL_S_02_-Y_12",
+        "ST_DIAGONAL_S_02_-Y_13",
+        "ST_DIAGONAL_S_02_-Y_14",
+        "ST_DIAGONAL_S_02_-Y_15",
+        "ST_DIAGONAL_S_02_-Y_16",
+        "ST_DIAGONAL_S_02_-Y_17",
+        "ST_DIAGONAL_S_02_-Z_20",
+        "ST_DIAGONAL_S_02_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_143",
+      "image_path": "detection/renders/CWP_143.png",
+      "achieved_position_m": [
+        157.447,
+        1.139,
+        16.5029
+      ],
+      "target_m": [
+        157.5,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_02",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_S_02_+X_0",
+        "ST_VERTICAL_S_02_+X_1",
+        "ST_VERTICAL_S_02_+X_2",
+        "ST_VERTICAL_S_02_+Y_6",
+        "ST_VERTICAL_S_02_+Y_7",
+        "ST_VERTICAL_S_02_+Y_8",
+        "ST_VERTICAL_S_02_+Z_12",
+        "ST_VERTICAL_S_02_-X_3",
+        "ST_VERTICAL_S_02_-X_4",
+        "ST_VERTICAL_S_02_-X_5",
+        "ST_VERTICAL_S_02_-Y_10",
+        "ST_VERTICAL_S_02_-Y_11",
+        "ST_VERTICAL_S_02_-Y_9",
+        "ST_VERTICAL_S_02_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_144",
+      "image_path": "detection/renders/CWP_144.png",
+      "achieved_position_m": [
+        148.8638,
+        1.1993,
+        16.5013
+      ],
+      "target_m": [
+        148.9922,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_01",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_S_01_+X_1",
+        "ST_DIAGONAL_S_01_+Y_10",
+        "ST_DIAGONAL_S_01_+Y_11",
+        "ST_DIAGONAL_S_01_+Y_6",
+        "ST_DIAGONAL_S_01_+Y_7",
+        "ST_DIAGONAL_S_01_+Y_8",
+        "ST_DIAGONAL_S_01_+Y_9",
+        "ST_DIAGONAL_S_01_+Z_18",
+        "ST_DIAGONAL_S_01_+Z_19",
+        "ST_DIAGONAL_S_01_-X_3",
+        "ST_DIAGONAL_S_01_-X_4",
+        "ST_DIAGONAL_S_01_-X_5",
+        "ST_DIAGONAL_S_01_-Y_12",
+        "ST_DIAGONAL_S_01_-Y_13",
+        "ST_DIAGONAL_S_01_-Y_14",
+        "ST_DIAGONAL_S_01_-Y_15",
+        "ST_DIAGONAL_S_01_-Y_16",
+        "ST_DIAGONAL_S_01_-Y_17",
+        "ST_DIAGONAL_S_01_-Z_20",
+        "ST_DIAGONAL_S_01_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_145",
+      "image_path": "detection/renders/CWP_145.png",
+      "achieved_position_m": [
+        146.2088,
+        1.1393,
+        16.5033
+      ],
+      "target_m": [
+        146.25,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_01",
+      "prim_kind": "truss_vertical",
+      "covers": [
+        "ST_VERTICAL_S_01_+X_0",
+        "ST_VERTICAL_S_01_+X_1",
+        "ST_VERTICAL_S_01_+X_2",
+        "ST_VERTICAL_S_01_+Y_6",
+        "ST_VERTICAL_S_01_+Y_7",
+        "ST_VERTICAL_S_01_+Y_8",
+        "ST_VERTICAL_S_01_+Z_12",
+        "ST_VERTICAL_S_01_-X_3",
+        "ST_VERTICAL_S_01_-X_4",
+        "ST_VERTICAL_S_01_-X_5",
+        "ST_VERTICAL_S_01_-Y_10",
+        "ST_VERTICAL_S_01_-Y_11",
+        "ST_VERTICAL_S_01_-Y_9",
+        "ST_VERTICAL_S_01_-Z_13"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_146",
+      "image_path": "detection/renders/CWP_146.png",
+      "achieved_position_m": [
+        137.6138,
+        1.1993,
+        16.5013
+      ],
+      "target_m": [
+        137.7422,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_00",
+      "prim_kind": "truss_diagonal",
+      "covers": [
+        "ST_DIAGONAL_S_00_+X_1",
+        "ST_DIAGONAL_S_00_+Y_10",
+        "ST_DIAGONAL_S_00_+Y_11",
+        "ST_DIAGONAL_S_00_+Y_6",
+        "ST_DIAGONAL_S_00_+Y_7",
+        "ST_DIAGONAL_S_00_+Y_8",
+        "ST_DIAGONAL_S_00_+Y_9",
+        "ST_DIAGONAL_S_00_+Z_18",
+        "ST_DIAGONAL_S_00_+Z_19",
+        "ST_DIAGONAL_S_00_-X_3",
+        "ST_DIAGONAL_S_00_-X_4",
+        "ST_DIAGONAL_S_00_-X_5",
+        "ST_DIAGONAL_S_00_-Y_12",
+        "ST_DIAGONAL_S_00_-Y_13",
+        "ST_DIAGONAL_S_00_-Y_14",
+        "ST_DIAGONAL_S_00_-Y_15",
+        "ST_DIAGONAL_S_00_-Y_16",
+        "ST_DIAGONAL_S_00_-Y_17",
+        "ST_DIAGONAL_S_00_-Z_20",
+        "ST_DIAGONAL_S_00_-Z_21"
+      ]
+    },
+    {
+      "waypoint_id": "CWP_149",
+      "image_path": "detection/renders/CWP_149.png",
+      "achieved_position_m": [
+        99.1098,
+        28.0741,
+        8.0714
+      ],
+      "target_m": [
+        91.0,
+        28.0,
+        8.0708
+      ],
+      "prim_name": "MB_PIER_COL_004",
+      "prim_kind": "pier_column",
+      "covers": [
+        "MB_PIER_COL_004_cap_bottom",
+        "MB_PIER_COL_004_cap_top",
+        "MB_PIER_COL_004_side_0",
+        "MB_PIER_COL_004_side_1",
+        "MB_PIER_COL_004_side_10",
+        "MB_PIER_COL_004_side_11",
+        "MB_PIER_COL_004_side_2",
+        "MB_PIER_COL_004_side_3",
+        "MB_PIER_COL_004_side_4",
+        "MB_PIER_COL_004_side_5",
+        "MB_PIER_COL_004_side_6",
+        "MB_PIER_COL_004_side_7",
+        "MB_PIER_COL_004_side_8",
+        "MB_PIER_COL_004_side_9"
+      ]
+    }
+  ]
+}

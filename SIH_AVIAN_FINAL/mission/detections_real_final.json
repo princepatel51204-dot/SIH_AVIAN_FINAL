@@ -1,0 +1,452 @@
+{
+  "generated_utc": "2026-09-23T12:50:43Z",
+  "detector": "detect_stub_final.detect -- REAL trained model (fasterrcnn_mobilenet_v3_large_320_fpn), not the ground-truth-peeking stub",
+  "weights": "detection/AVIAN_detector_weights_FINAL.pt",
+  "n_renders": 82,
+  "n_detections": 3,
+  "detections": [
+    {
+      "waypoint_id": "CWP_001",
+      "image_path": "detection/renders/CWP_001.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_002",
+      "image_path": "detection/renders/CWP_002.png",
+      "detections": [
+        {
+          "class": "CRACK",
+          "confidence": 0.5709,
+          "bbox": [
+            259.41,
+            170.61,
+            363.4,
+            309.22
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "image_path": "detection/renders/CWP_005.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_008",
+      "image_path": "detection/renders/CWP_008.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_009",
+      "image_path": "detection/renders/CWP_009.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_010",
+      "image_path": "detection/renders/CWP_010.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_011",
+      "image_path": "detection/renders/CWP_011.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_012",
+      "image_path": "detection/renders/CWP_012.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_013",
+      "image_path": "detection/renders/CWP_013.png",
+      "detections": [
+        {
+          "class": "CRACK",
+          "confidence": 0.581,
+          "bbox": [
+            271.71,
+            178.54,
+            350.32,
+            306.11
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_014",
+      "image_path": "detection/renders/CWP_014.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_015",
+      "image_path": "detection/renders/CWP_015.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_016",
+      "image_path": "detection/renders/CWP_016.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_018",
+      "image_path": "detection/renders/CWP_018.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_019",
+      "image_path": "detection/renders/CWP_019.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_020",
+      "image_path": "detection/renders/CWP_020.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_021",
+      "image_path": "detection/renders/CWP_021.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "image_path": "detection/renders/CWP_022.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_023",
+      "image_path": "detection/renders/CWP_023.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "image_path": "detection/renders/CWP_024.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_025",
+      "image_path": "detection/renders/CWP_025.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "image_path": "detection/renders/CWP_026.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "image_path": "detection/renders/CWP_027.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "image_path": "detection/renders/CWP_028.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_031",
+      "image_path": "detection/renders/CWP_031.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "image_path": "detection/renders/CWP_033.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "image_path": "detection/renders/CWP_034.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_035",
+      "image_path": "detection/renders/CWP_035.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_036",
+      "image_path": "detection/renders/CWP_036.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_037",
+      "image_path": "detection/renders/CWP_037.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_038",
+      "image_path": "detection/renders/CWP_038.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_039",
+      "image_path": "detection/renders/CWP_039.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_043",
+      "image_path": "detection/renders/CWP_043.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "image_path": "detection/renders/CWP_045.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_064",
+      "image_path": "detection/renders/CWP_064.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_065",
+      "image_path": "detection/renders/CWP_065.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "image_path": "detection/renders/CWP_067.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_068",
+      "image_path": "detection/renders/CWP_068.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_069",
+      "image_path": "detection/renders/CWP_069.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_070",
+      "image_path": "detection/renders/CWP_070.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "image_path": "detection/renders/CWP_071.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_072",
+      "image_path": "detection/renders/CWP_072.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_073",
+      "image_path": "detection/renders/CWP_073.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "image_path": "detection/renders/CWP_074.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_075",
+      "image_path": "detection/renders/CWP_075.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_076",
+      "image_path": "detection/renders/CWP_076.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_077",
+      "image_path": "detection/renders/CWP_077.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_078",
+      "image_path": "detection/renders/CWP_078.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_079",
+      "image_path": "detection/renders/CWP_079.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "image_path": "detection/renders/CWP_080.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "image_path": "detection/renders/CWP_099.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "image_path": "detection/renders/CWP_100.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_101",
+      "image_path": "detection/renders/CWP_101.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_104",
+      "image_path": "detection/renders/CWP_104.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "image_path": "detection/renders/CWP_105.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_106",
+      "image_path": "detection/renders/CWP_106.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_107",
+      "image_path": "detection/renders/CWP_107.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_108",
+      "image_path": "detection/renders/CWP_108.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "image_path": "detection/renders/CWP_109.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_110",
+      "image_path": "detection/renders/CWP_110.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_111",
+      "image_path": "detection/renders/CWP_111.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_112",
+      "image_path": "detection/renders/CWP_112.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "image_path": "detection/renders/CWP_113.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "image_path": "detection/renders/CWP_114.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_115",
+      "image_path": "detection/renders/CWP_115.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_116",
+      "image_path": "detection/renders/CWP_116.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_117",
+      "image_path": "detection/renders/CWP_117.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_118",
+      "image_path": "detection/renders/CWP_118.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "image_path": "detection/renders/CWP_119.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_120",
+      "image_path": "detection/renders/CWP_120.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_121",
+      "image_path": "detection/renders/CWP_121.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "image_path": "detection/renders/CWP_122.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_124",
+      "image_path": "detection/renders/CWP_124.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_125",
+      "image_path": "detection/renders/CWP_125.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_126",
+      "image_path": "detection/renders/CWP_126.png",
+      "detections": [
+        {
+          "class": "SPALL_DELAM",
+          "confidence": 0.5613,
+          "bbox": [
+            255.55,
+            248.22,
+            409.74,
+            398.56
+          ]
+        }
+      ]
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "image_path": "detection/renders/CWP_127.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_128",
+      "image_path": "detection/renders/CWP_128.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_142",
+      "image_path": "detection/renders/CWP_142.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_143",
+      "image_path": "detection/renders/CWP_143.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_144",
+      "image_path": "detection/renders/CWP_144.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_145",
+      "image_path": "detection/renders/CWP_145.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_146",
+      "image_path": "detection/renders/CWP_146.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "CWP_149",
+      "image_path": "detection/renders/CWP_149.png",
+      "detections": []
+    }
+  ]
+}

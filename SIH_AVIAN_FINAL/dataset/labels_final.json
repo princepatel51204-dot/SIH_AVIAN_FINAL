@@ -1,0 +1,56 @@
+{
+  "_comment": "SIH_AVIAN_FINAL Phase 2 -- coarse label mapping for the primary detector. 192 defects across 28 distinct types (checked against the real rendered dataset, not the master prompt's own '19 types' estimate -- METRO alone contributes 8 types (PIER_SPALL, PIER_CORROSION_STAIN, INTERNAL_SOFFIT_CRACK, WEB_SHEAR_CRACK, SOFFIT_TRANSVERSE_CRACK, SEGMENTAL_JOINT_LEAKAGE, BEARING_DISTRESS, EFFLORESCENCE_JOINT) beyond the road+steel taxonomy that estimate was based on) is roughly 7 unique-instances-per-type on average and several types have 3-6 -- a 28-class detector would overfit and report a meaningless mAP. Grouped into 5 visually- and structurally-coherent families instead, each with 20+ unique defect instances.",
+  "families": {
+    "CRACK": {
+      "types": ["CRACK_HAIRLINE", "CRACK_LONGITUDINAL", "CRACK_TRANSVERSE",
+               "CRACK_NETWORK", "INTERNAL_SOFFIT_CRACK",
+               "SOFFIT_TRANSVERSE_CRACK", "WEB_SHEAR_CRACK", "WELD_CRACK"],
+      "rationale": "All thin, linear surface features regardless of substrate (concrete or steel weld) -- the visual signature a detector has to learn (a line breaking an otherwise-continuous surface) is the same class of pattern, so WELD_CRACK is grouped here by appearance rather than with the other steel/fastener defects.",
+      "n_unique_instances": 69
+    },
+    "SPALL_DELAM": {
+      "types": ["SPALL", "DELAMINATION", "SECTION_LOSS", "REBAR_EXPOSED",
+               "PIER_SPALL"],
+      "rationale": "Broad-area material loss/separation. REBAR_EXPOSED is included here rather than as its own class: it is what a spall looks like once it has progressed far enough to expose reinforcement, the same visual family (an irregular missing-material patch), just a later stage. SECTION_LOSS (steel) is the same broad-area-loss appearance in a different substrate.",
+      "n_unique_instances": 34
+    },
+    "CORROSION_COATING": {
+      "types": ["CORROSION_STAIN", "COATING_FAILURE", "PIER_CORROSION_STAIN",
+               "EFFLORESCENCE_JOINT"],
+      "rationale": "Surface discoloration/staining defects -- rust bleed, failed coating, mineral efflorescence -- all present as an irregular color/texture change on an otherwise uniform surface, distinct from a hard-edged crack or a missing-material spall.",
+      "n_unique_instances": 22
+    },
+    "FASTENER": {
+      "types": ["BOLT_LOOSE", "BOLT_CORRODED", "BOLT_MISSING",
+               "JOINT_ANCHOR_LOOSE", "HANDRAIL_LOOSE", "GUSSET_DISTORTION"],
+      "rationale": "Discrete hardware-connection defects, matching the master prompt's own example grouping. BOLT_CORRODED stays here rather than in CORROSION_COATING despite its rust appearance, because the thing a detector needs to localize is the BOLT (a small, distinct, countable object), not a diffuse stained area -- the object type drives the grouping more than the surface finish does.",
+      "n_unique_instances": 47
+    },
+    "OTHER": {
+      "types": ["BEARING_SEIZED", "BEARING_DISTRESS", "JOINT_DETERIORATION",
+               "CONDUIT_DETACHED", "SEGMENTAL_JOINT_LEAKAGE"],
+      "rationale": "Matches the master prompt's own example (bearing, joint, conduit, leakage) -- a genuine catch-all for defect types too dissimilar to each other and too rare individually (4-12 instances each) to justify their own family.",
+      "n_unique_instances": 20
+    }
+  },
+  "type_to_family": {
+    "CRACK_HAIRLINE": "CRACK", "CRACK_LONGITUDINAL": "CRACK",
+    "CRACK_TRANSVERSE": "CRACK", "CRACK_NETWORK": "CRACK",
+    "INTERNAL_SOFFIT_CRACK": "CRACK", "SOFFIT_TRANSVERSE_CRACK": "CRACK",
+    "WEB_SHEAR_CRACK": "CRACK", "WELD_CRACK": "CRACK",
+    "SPALL": "SPALL_DELAM", "DELAMINATION": "SPALL_DELAM",
+    "SECTION_LOSS": "SPALL_DELAM", "REBAR_EXPOSED": "SPALL_DELAM",
+    "PIER_SPALL": "SPALL_DELAM",
+    "CORROSION_STAIN": "CORROSION_COATING",
+    "COATING_FAILURE": "CORROSION_COATING",
+    "PIER_CORROSION_STAIN": "CORROSION_COATING",
+    "EFFLORESCENCE_JOINT": "CORROSION_COATING",
+    "BOLT_LOOSE": "FASTENER", "BOLT_CORRODED": "FASTENER",
+    "BOLT_MISSING": "FASTENER", "JOINT_ANCHOR_LOOSE": "FASTENER",
+    "HANDRAIL_LOOSE": "FASTENER", "GUSSET_DISTORTION": "FASTENER",
+    "BEARING_SEIZED": "OTHER", "BEARING_DISTRESS": "OTHER",
+    "JOINT_DETERIORATION": "OTHER", "CONDUIT_DETACHED": "OTHER",
+    "SEGMENTAL_JOINT_LEAKAGE": "OTHER"
+  },
+  "family_order": ["CRACK", "SPALL_DELAM", "CORROSION_COATING", "FASTENER", "OTHER"]
+}

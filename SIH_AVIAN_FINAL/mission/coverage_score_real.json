@@ -1,0 +1,34 @@
+{
+  "iou_threshold": 0.1,
+  "n_renders": 82,
+  "n_scoreable_defects": 73,
+  "tp": 0,
+  "fp": 3,
+  "fn": 109,
+  "precision": 0.0,
+  "recall_of_in_frame_defects": 0.0,
+  "recall_of_all_scoreable_defects": 0.0,
+  "per_family": {
+    "CRACK": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 5
+    },
+    "SPALL_DELAM": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 50
+    },
+    "OTHER": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 12
+    },
+    "FASTENER": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 42
+    }
+  },
+  "caveat": "REAL detector, real inference -- but ground-truth boxes here are a small window around a PROJECTED point, not a rendered silhouette, and this does not model occlusion by intervening structure. Distinct from the stub-era score()'s numbers above, which checked cone-of-view only."
+}
