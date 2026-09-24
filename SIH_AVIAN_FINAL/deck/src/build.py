@@ -14,7 +14,7 @@ AMBER_TINT = RGBColor(0xFD, 0xF1, 0xE3)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 FONT = "Arial"
 
-TEAM_NAME = "TRINETRA"
+TEAM_NAME = "@TRINETRA"
 TEAM_ID = "129300"
 
 prs = Presentation("template.pptx")
@@ -302,7 +302,7 @@ steps = [
     ("1", "Digital twin", "Bridge 3D model → 568 collision shapes"),
     ("2", "Plan coverage", "150 viewpoints from geometry only"),
     ("3", "Fly & avoid", "Ray-cast sensing steers clear of structure"),
-    ("4", "Zoom capture", "~9° zoom view from 8 m, at the pose actually reached"),
+    ("4", "Zoom capture", "8.7× zoom (9° HFOV) from 8 m, at the achieved pose"),
     ("5", "Detect", "Faster R-CNN flags defects in each image"),
     ("6", "Score", "Checked against 192 known defects; report per bridge member"),
 ]
@@ -350,30 +350,37 @@ tb = textbox(s4, 0.5, 1.62, 5.4, 0.3)
 add_para(tb.text_frame, "Measured in our simulation — not estimated", size=10.5,
          color=MUTED, first=True)
 
+# Autonomy numbers await the Section 4 freeze (FINAL_RESULTS.json) --
+# shown as explicit pending markers, never a guessed number, per the
+# project's own "measured numbers only" rule.
 stats = [
-    ("56.7%", "of bridge surfaces seen by the camera — route planned with no defect data (150 waypoints)"),
-    ("39 / 73", "known defects fell inside a settled camera view (53.4%)"),
-    ("239 / 239", "flight-log entries show avoidance driven by the sensor, not a map (6,492 reactions)"),
-    ("71% → 45%", "waypoints with a collision or stall, before vs after sensed avoidance"),
-    ("0.34", "detector mAP@0.5 on 24 held-out defects (synthetic images)"),
+    ("—", "bridge surface coverage — route planned with no defect data (pending freeze)", True),
+    ("—", "known defects fell inside a settled camera view (pending freeze)", True),
+    ("—", "flight-log entries show avoidance driven by the sensor, not a map (pending freeze)", True),
+    ("—", "waypoints with a collision or stall, before vs after sensed avoidance (pending freeze)", True),
+    ("0.34", "detector mAP@0.5 on 24 held-out defects (synthetic images)", False),
 ]
 sy = 2.02
-for big, label in stats:
+for big, label, pending in stats:
     tb = textbox(s4, 0.5, sy, 1.75, 0.72, anchor=MSO_ANCHOR.MIDDLE)
-    add_para(tb.text_frame, big, size=20, bold=True, color=BLUE, first=True)
+    add_para(tb.text_frame, big, size=20, bold=True, color=MUTED if pending else BLUE, first=True)
     tb = textbox(s4, 2.35, sy, 3.55, 0.72, anchor=MSO_ANCHOR.MIDDLE)
-    add_para(tb.text_frame, label, size=11, color=NAVY, first=True)
+    add_para(tb.text_frame, label, size=11, color=MUTED if pending else NAVY,
+             bold=False, first=True)
     sy += 0.8
 
 # right: risks -> strategies table (template pointers as column headers)
 TX, TW = 6.2, 6.63
 rows = [
-    ("Detection accuracy is the weakest link: only 1–2 of 10 defects found in zoomed mission images "
-     "(two model versions); "
-     "loose bolts are too small at current camera resolution",
+    ("Detection accuracy is the weakest link: 0 detections on 1,000 real bridge photos "
+     "(precision = recall = 0) — doesn't yet transfer from simulation; on its own mission imagery, "
+     "unseen-defect recall is 1 of 3 in-scope cases (5 of 20 for all defects, optimistic); "
+     "false alarms fell from 37.6 to 0.08 per 100 tiles (v1 → v2); loose bolts (~10 px) are below "
+     "reliable detection at current resolution",
      "Retrain on real bridge datasets (CODEBRIM, dacl10k) on a GPU; higher-resolution capture for "
      "bolts; an engineer confirms every flag before it is reported"),
-    ("Collisions in the dense steel truss: 45% of waypoints still hit or stall in simulation",
+    ("Collisions in the dense steel truss: stuck/collision rate before → after the Section 4 fix "
+     "is pending the freeze — see the stat at left",
      "Clearance checks along the whole path, not just at waypoints; slower close-range legs; "
      "target under 5% before any field flight"),
     ("No GPS under the deck; magnetic noise near 25 kV railway overhead lines",
