@@ -61,3 +61,8 @@ SIH_AVIAN_FINAL/detection/renders_zoom/
 # (still rendering as of this commit) -- same reasoning, regenerates via
 # render_zoom_tiles_all_final.py from the same tracked mission files.
 SIH_AVIAN_FINAL/detection/renders_zoom_all/
+
+# Phase A item 2 / Prompt 1 retry: external real-photo test dataset
+# (Ozgenel "Concrete Crack Images for Classification", CC BY 4.0, ~230 MB) --
+# downloaded on demand, never a source artifact, never committed.
+SIH_AVIAN_FINAL/data/

@@ -72,7 +72,7 @@ if UAV_DIR not in sys.path:
 import params_final as PF
 import mission_final as MF          # reused verbatim -- see module docstring
 import sensors.cameras as UAVCAM
-from detect_stub_final import FINEST_FEATURE_MM  # the ONE taxonomy constant
+from finest_feature_final import FINEST_FEATURE_MM  # the ONE taxonomy constant
 
 T0 = time.time()
 LOG_LINES = []

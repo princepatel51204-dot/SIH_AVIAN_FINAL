@@ -1,0 +1,18 @@
+{
+  "model": "v2",
+  "threshold": 0.65,
+  "dataset": "Ozgenel 2018 Concrete Crack Images for Classification",
+  "dataset_doi": "10.17632/5y9wdsg2zt.2",
+  "license": "CC BY 4.0",
+  "seed": 20260924,
+  "n_positive": 500,
+  "n_negative": 500,
+  "tp": 0,
+  "fp": 0,
+  "fn": 500,
+  "tn": 500,
+  "precision": 0.0,
+  "recall": 0.0,
+  "accuracy": 0.5,
+  "caveat": "Classification-only ground truth (no bounding boxes) -- measures crack presence/absence, not localization. No retraining on this data, inference only."
+}
