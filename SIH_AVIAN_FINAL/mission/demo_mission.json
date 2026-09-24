@@ -1,0 +1,5243 @@
+{
+  "generated_utc": "2026-09-23T10:29:09Z",
+  "planner": "coverage_final.py (Stage 2 -- structure-driven, no ground truth read for planning)",
+  "base_position_m": [
+    20.0,
+    -30.0,
+    1.626
+  ],
+  "standoff_m": 8.0,
+  "max_samples_per_axis": 3,
+  "max_waypoints_cap": 150,
+  "finest_feature_mm": 0.052,
+  "face_overlap_frac": 0.3,
+  "sensor": {
+    "hfov_deg": 69.0,
+    "vfov_deg": 42.0
+  },
+  "n_inspectable_primitives": 481,
+  "n_primitives_total": 568,
+  "n_patches_total": 5924,
+  "n_patches_covered": 2035,
+  "structural_coverage_pct": 34.35,
+  "n_waypoints": 150,
+  "n_patches_uncovered": 3889,
+  "uncovered_by_kind": {
+    "track_slab": 136,
+    "pier_footing": 146,
+    "cable_trough": 136,
+    "deck_slab": 196,
+    "rail": 272,
+    "diaphragm": 156,
+    "girder": 420,
+    "structure": 343,
+    "bracing": 88,
+    "pier_cap": 67,
+    "bearing": 372,
+    "parapet": 468,
+    "gusset_plate": 216,
+    "deck_box": 562,
+    "truss_chord": 56,
+    "access_hatch": 60,
+    "drain": 48,
+    "stringer": 42,
+    "service_duct": 56,
+    "expansion_joint": 13,
+    "abutment": 2,
+    "truss_diagonal": 32,
+    "floor_beam": 2
+  },
+  "total_distance_m": 2238.838,
+  "estimated_time_s": 945.1,
+  "estimated_energy_Wh": 698.84,
+  "battery_Wh_nominal": 1300.0,
+  "battery_reserve_pct": 20.0,
+  "battery_Wh_usable": 1040.0,
+  "waypoints": [
+    {
+      "waypoint_id": "CWP_001",
+      "position_m": [
+        30.0,
+        -3.6667,
+        4.4956
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 28.314,
+      "cumulative_distance_m": 28.314,
+      "covers": [
+        "BR_DIAPHRAGM_001_3_+X_0",
+        "BR_DIAPHRAGM_001_3_+X_1",
+        "BR_DIAPHRAGM_001_3_+Z_6",
+        "BR_DIAPHRAGM_001_3_+Z_7",
+        "BR_DIAPHRAGM_001_3_+Z_8",
+        "BR_DIAPHRAGM_001_3_-X_2",
+        "BR_DIAPHRAGM_001_3_-X_3",
+        "BR_DIAPHRAGM_001_3_-Y_5",
+        "BR_DIAPHRAGM_001_3_-Z_10",
+        "BR_DIAPHRAGM_001_3_-Z_11",
+        "BR_DIAPHRAGM_001_3_-Z_9"
+      ],
+      "target_m": [
+        30.0,
+        -3.6667,
+        12.4956
+      ],
+      "prim_name": "BR_DIAPHRAGM_001_3",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_002",
+      "position_m": [
+        15.0,
+        -3.6667,
+        4.4956
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.0,
+      "cumulative_distance_m": 43.314,
+      "covers": [
+        "BR_DIAPHRAGM_001_2_+X_0",
+        "BR_DIAPHRAGM_001_2_+X_1",
+        "BR_DIAPHRAGM_001_2_+Z_6",
+        "BR_DIAPHRAGM_001_2_+Z_7",
+        "BR_DIAPHRAGM_001_2_+Z_8",
+        "BR_DIAPHRAGM_001_2_-X_2",
+        "BR_DIAPHRAGM_001_2_-X_3",
+        "BR_DIAPHRAGM_001_2_-Y_5",
+        "BR_DIAPHRAGM_001_2_-Z_10",
+        "BR_DIAPHRAGM_001_2_-Z_11",
+        "BR_DIAPHRAGM_001_2_-Z_9"
+      ],
+      "target_m": [
+        15.0,
+        -3.6667,
+        12.4956
+      ],
+      "prim_name": "BR_DIAPHRAGM_001_2",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_003",
+      "position_m": [
+        14.5,
+        -6.0,
+        7.0
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 3.459,
+      "cumulative_distance_m": 46.773,
+      "covers": [
+        "BR_ABUTMENT_SOUTH_+X_0",
+        "BR_ABUTMENT_SOUTH_+X_1",
+        "BR_ABUTMENT_SOUTH_+X_2",
+        "BR_ABUTMENT_SOUTH_+X_3",
+        "BR_ABUTMENT_SOUTH_+X_4",
+        "BR_ABUTMENT_SOUTH_+X_5",
+        "BR_ABUTMENT_SOUTH_+Z_24",
+        "BR_ABUTMENT_SOUTH_-X_10",
+        "BR_ABUTMENT_SOUTH_-X_11",
+        "BR_ABUTMENT_SOUTH_-X_9",
+        "BR_ABUTMENT_SOUTH_-Y_21",
+        "BR_ABUTMENT_SOUTH_-Y_22",
+        "BR_ABUTMENT_SOUTH_-Y_23"
+      ],
+      "target_m": [
+        6.5,
+        -6.0,
+        7.0
+      ],
+      "prim_name": "BR_ABUTMENT_SOUTH",
+      "prim_kind": "abutment"
+    },
+    {
+      "waypoint_id": "CWP_004",
+      "position_m": [
+        13.5,
+        -0.3,
+        5.6
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.954,
+      "cumulative_distance_m": 52.727,
+      "covers": [
+        "BR_WINGWALL_SOUTH_R_+X_0",
+        "BR_WINGWALL_SOUTH_R_+X_1",
+        "BR_WINGWALL_SOUTH_R_+X_2",
+        "BR_WINGWALL_SOUTH_R_+Y_10",
+        "BR_WINGWALL_SOUTH_R_+Y_11",
+        "BR_WINGWALL_SOUTH_R_+Y_6",
+        "BR_WINGWALL_SOUTH_R_+Y_7",
+        "BR_WINGWALL_SOUTH_R_+Y_8",
+        "BR_WINGWALL_SOUTH_R_+Y_9",
+        "BR_WINGWALL_SOUTH_R_+Z_18",
+        "BR_WINGWALL_SOUTH_R_+Z_19",
+        "BR_WINGWALL_SOUTH_R_-Y_12",
+        "BR_WINGWALL_SOUTH_R_-Y_13",
+        "BR_WINGWALL_SOUTH_R_-Y_14",
+        "BR_WINGWALL_SOUTH_R_-Y_15",
+        "BR_WINGWALL_SOUTH_R_-Y_16",
+        "BR_WINGWALL_SOUTH_R_-Y_17"
+      ],
+      "target_m": [
+        13.5,
+        -8.3,
+        5.6
+      ],
+      "prim_name": "BR_WINGWALL_SOUTH_R",
+      "prim_kind": "structure"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "position_m": [
+        45.0,
+        0.0,
+        2.6375
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 31.64,
+      "cumulative_distance_m": 84.368,
+      "covers": [
+        "BR_PIER_CAP_002_+X_0",
+        "BR_PIER_CAP_002_+X_1",
+        "BR_PIER_CAP_002_+Y_4",
+        "BR_PIER_CAP_002_+Z_6",
+        "BR_PIER_CAP_002_+Z_7",
+        "BR_PIER_CAP_002_+Z_8",
+        "BR_PIER_CAP_002_-X_2",
+        "BR_PIER_CAP_002_-X_3",
+        "BR_PIER_CAP_002_-Y_5",
+        "BR_PIER_CAP_002_-Z_10",
+        "BR_PIER_CAP_002_-Z_11",
+        "BR_PIER_CAP_002_-Z_9"
+      ],
+      "target_m": [
+        45.0,
+        0.0,
+        10.6375
+      ],
+      "prim_name": "BR_PIER_CAP_002",
+      "prim_kind": "pier_cap"
+    },
+    {
+      "waypoint_id": "CWP_006",
+      "position_m": [
+        53.85,
+        -2.75,
+        1.9229
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 9.295,
+      "cumulative_distance_m": 93.663,
+      "covers": [
+        "BR_PIER_COL_002_1_cap_top",
+        "BR_PIER_COL_002_1_side_0",
+        "BR_PIER_COL_002_1_side_1",
+        "BR_PIER_COL_002_1_side_10",
+        "BR_PIER_COL_002_1_side_11",
+        "BR_PIER_COL_002_1_side_2",
+        "BR_PIER_COL_002_1_side_3",
+        "BR_PIER_COL_002_1_side_4",
+        "BR_PIER_COL_002_1_side_5",
+        "BR_PIER_COL_002_1_side_6",
+        "BR_PIER_COL_002_1_side_7",
+        "BR_PIER_COL_002_1_side_8",
+        "BR_PIER_COL_002_1_side_9"
+      ],
+      "target_m": [
+        45.85,
+        -2.75,
+        1.9229
+      ],
+      "prim_name": "BR_PIER_COL_002_1",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_007",
+      "position_m": [
+        53.85,
+        2.75,
+        1.9229
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 5.5,
+      "cumulative_distance_m": 99.163,
+      "covers": [
+        "BR_PIER_COL_002_2_cap_top",
+        "BR_PIER_COL_002_2_side_0",
+        "BR_PIER_COL_002_2_side_1",
+        "BR_PIER_COL_002_2_side_10",
+        "BR_PIER_COL_002_2_side_11",
+        "BR_PIER_COL_002_2_side_2",
+        "BR_PIER_COL_002_2_side_3",
+        "BR_PIER_COL_002_2_side_4",
+        "BR_PIER_COL_002_2_side_5",
+        "BR_PIER_COL_002_2_side_6",
+        "BR_PIER_COL_002_2_side_7",
+        "BR_PIER_COL_002_2_side_8",
+        "BR_PIER_COL_002_2_side_9"
+      ],
+      "target_m": [
+        45.85,
+        2.75,
+        1.9229
+      ],
+      "prim_name": "BR_PIER_COL_002_2",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_008",
+      "position_m": [
+        60.0,
+        -3.6667,
+        4.7206
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 9.318,
+      "cumulative_distance_m": 108.48,
+      "covers": [
+        "BR_DIAPHRAGM_002_2_+X_0",
+        "BR_DIAPHRAGM_002_2_+X_1",
+        "BR_DIAPHRAGM_002_2_+Z_6",
+        "BR_DIAPHRAGM_002_2_+Z_7",
+        "BR_DIAPHRAGM_002_2_+Z_8",
+        "BR_DIAPHRAGM_002_2_-X_2",
+        "BR_DIAPHRAGM_002_2_-X_3",
+        "BR_DIAPHRAGM_002_2_-Y_5",
+        "BR_DIAPHRAGM_002_2_-Z_10",
+        "BR_DIAPHRAGM_002_2_-Z_11",
+        "BR_DIAPHRAGM_002_2_-Z_9"
+      ],
+      "target_m": [
+        60.0,
+        -3.6667,
+        12.7206
+      ],
+      "prim_name": "BR_DIAPHRAGM_002_2",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_009",
+      "position_m": [
+        75.0,
+        -3.6667,
+        4.7206
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.0,
+      "cumulative_distance_m": 123.48,
+      "covers": [
+        "BR_DIAPHRAGM_002_3_+X_0",
+        "BR_DIAPHRAGM_002_3_+X_1",
+        "BR_DIAPHRAGM_002_3_+Z_6",
+        "BR_DIAPHRAGM_002_3_+Z_7",
+        "BR_DIAPHRAGM_002_3_+Z_8",
+        "BR_DIAPHRAGM_002_3_-X_2",
+        "BR_DIAPHRAGM_002_3_-X_3",
+        "BR_DIAPHRAGM_002_3_-Y_5",
+        "BR_DIAPHRAGM_002_3_-Z_10",
+        "BR_DIAPHRAGM_002_3_-Z_11",
+        "BR_DIAPHRAGM_002_3_-Z_9"
+      ],
+      "target_m": [
+        75.0,
+        -3.6667,
+        12.7206
+      ],
+      "prim_name": "BR_DIAPHRAGM_002_3",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_010",
+      "position_m": [
+        90.0,
+        0.0,
+        2.825
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.558,
+      "cumulative_distance_m": 139.038,
+      "covers": [
+        "BR_PIER_CAP_003_+X_0",
+        "BR_PIER_CAP_003_+X_1",
+        "BR_PIER_CAP_003_+Y_4",
+        "BR_PIER_CAP_003_+Z_6",
+        "BR_PIER_CAP_003_+Z_7",
+        "BR_PIER_CAP_003_+Z_8",
+        "BR_PIER_CAP_003_-X_2",
+        "BR_PIER_CAP_003_-X_3",
+        "BR_PIER_CAP_003_-Y_5",
+        "BR_PIER_CAP_003_-Z_10",
+        "BR_PIER_CAP_003_-Z_11",
+        "BR_PIER_CAP_003_-Z_9"
+      ],
+      "target_m": [
+        90.0,
+        0.0,
+        10.825
+      ],
+      "prim_name": "BR_PIER_CAP_003",
+      "prim_kind": "pier_cap"
+    },
+    {
+      "waypoint_id": "CWP_011",
+      "position_m": [
+        98.85,
+        -2.75,
+        1.9542
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 9.308,
+      "cumulative_distance_m": 148.346,
+      "covers": [
+        "BR_PIER_COL_003_1_cap_top",
+        "BR_PIER_COL_003_1_side_0",
+        "BR_PIER_COL_003_1_side_1",
+        "BR_PIER_COL_003_1_side_10",
+        "BR_PIER_COL_003_1_side_11",
+        "BR_PIER_COL_003_1_side_2",
+        "BR_PIER_COL_003_1_side_3",
+        "BR_PIER_COL_003_1_side_4",
+        "BR_PIER_COL_003_1_side_5",
+        "BR_PIER_COL_003_1_side_6",
+        "BR_PIER_COL_003_1_side_7",
+        "BR_PIER_COL_003_1_side_8",
+        "BR_PIER_COL_003_1_side_9"
+      ],
+      "target_m": [
+        90.85,
+        -2.75,
+        1.9542
+      ],
+      "prim_name": "BR_PIER_COL_003_1",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_012",
+      "position_m": [
+        98.85,
+        2.75,
+        1.9542
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 5.5,
+      "cumulative_distance_m": 153.846,
+      "covers": [
+        "BR_PIER_COL_003_2_cap_top",
+        "BR_PIER_COL_003_2_side_0",
+        "BR_PIER_COL_003_2_side_1",
+        "BR_PIER_COL_003_2_side_10",
+        "BR_PIER_COL_003_2_side_11",
+        "BR_PIER_COL_003_2_side_2",
+        "BR_PIER_COL_003_2_side_3",
+        "BR_PIER_COL_003_2_side_4",
+        "BR_PIER_COL_003_2_side_5",
+        "BR_PIER_COL_003_2_side_6",
+        "BR_PIER_COL_003_2_side_7",
+        "BR_PIER_COL_003_2_side_8",
+        "BR_PIER_COL_003_2_side_9"
+      ],
+      "target_m": [
+        90.85,
+        2.75,
+        1.9542
+      ],
+      "prim_name": "BR_PIER_COL_003_2",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_013",
+      "position_m": [
+        105.0,
+        -3.6667,
+        4.8706
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 9.354,
+      "cumulative_distance_m": 163.2,
+      "covers": [
+        "BR_DIAPHRAGM_003_2_+X_0",
+        "BR_DIAPHRAGM_003_2_+X_1",
+        "BR_DIAPHRAGM_003_2_+Z_6",
+        "BR_DIAPHRAGM_003_2_+Z_7",
+        "BR_DIAPHRAGM_003_2_+Z_8",
+        "BR_DIAPHRAGM_003_2_-X_2",
+        "BR_DIAPHRAGM_003_2_-X_3",
+        "BR_DIAPHRAGM_003_2_-Y_5",
+        "BR_DIAPHRAGM_003_2_-Z_10",
+        "BR_DIAPHRAGM_003_2_-Z_11",
+        "BR_DIAPHRAGM_003_2_-Z_9"
+      ],
+      "target_m": [
+        105.0,
+        -3.6667,
+        12.8706
+      ],
+      "prim_name": "BR_DIAPHRAGM_003_2",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_014",
+      "position_m": [
+        120.0,
+        -3.6667,
+        4.8706
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.0,
+      "cumulative_distance_m": 178.2,
+      "covers": [
+        "BR_DIAPHRAGM_003_3_+X_0",
+        "BR_DIAPHRAGM_003_3_+X_1",
+        "BR_DIAPHRAGM_003_3_+Z_6",
+        "BR_DIAPHRAGM_003_3_+Z_7",
+        "BR_DIAPHRAGM_003_3_+Z_8",
+        "BR_DIAPHRAGM_003_3_-X_2",
+        "BR_DIAPHRAGM_003_3_-X_3",
+        "BR_DIAPHRAGM_003_3_-Y_5",
+        "BR_DIAPHRAGM_003_3_-Z_10",
+        "BR_DIAPHRAGM_003_3_-Z_11",
+        "BR_DIAPHRAGM_003_3_-Z_9"
+      ],
+      "target_m": [
+        120.0,
+        -3.6667,
+        12.8706
+      ],
+      "prim_name": "BR_DIAPHRAGM_003_3",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_015",
+      "position_m": [
+        126.775,
+        -7.0,
+        13.5
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 11.466,
+      "cumulative_distance_m": 189.667,
+      "covers": [
+        "ST_VERTICAL_S_00_+X_0",
+        "ST_VERTICAL_S_00_+X_1",
+        "ST_VERTICAL_S_00_+X_2",
+        "ST_VERTICAL_S_00_+Y_6",
+        "ST_VERTICAL_S_00_+Y_7",
+        "ST_VERTICAL_S_00_+Y_8",
+        "ST_VERTICAL_S_00_+Z_12",
+        "ST_VERTICAL_S_00_-X_3",
+        "ST_VERTICAL_S_00_-X_4",
+        "ST_VERTICAL_S_00_-X_5",
+        "ST_VERTICAL_S_00_-Y_10",
+        "ST_VERTICAL_S_00_-Y_11",
+        "ST_VERTICAL_S_00_-Y_9",
+        "ST_VERTICAL_S_00_-Z_13"
+      ],
+      "target_m": [
+        134.775,
+        -7.0,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_S_00",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_016",
+      "position_m": [
+        135.0,
+        0.0,
+        2.9375
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.107,
+      "cumulative_distance_m": 204.774,
+      "covers": [
+        "BR_PIER_CAP_004_+X_0",
+        "BR_PIER_CAP_004_+X_1",
+        "BR_PIER_CAP_004_+Y_4",
+        "BR_PIER_CAP_004_+Z_6",
+        "BR_PIER_CAP_004_+Z_7",
+        "BR_PIER_CAP_004_+Z_8",
+        "BR_PIER_CAP_004_-X_2",
+        "BR_PIER_CAP_004_-X_3",
+        "BR_PIER_CAP_004_-Y_5",
+        "BR_PIER_CAP_004_-Z_10",
+        "BR_PIER_CAP_004_-Z_11",
+        "BR_PIER_CAP_004_-Z_9"
+      ],
+      "target_m": [
+        135.0,
+        0.0,
+        10.9375
+      ],
+      "prim_name": "BR_PIER_CAP_004",
+      "prim_kind": "pier_cap"
+    },
+    {
+      "waypoint_id": "CWP_017",
+      "position_m": [
+        143.85,
+        -2.75,
+        5.5588
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 9.631,
+      "cumulative_distance_m": 214.405,
+      "covers": [
+        "BR_PIER_COL_004_1_cap_top",
+        "BR_PIER_COL_004_1_side_0",
+        "BR_PIER_COL_004_1_side_1",
+        "BR_PIER_COL_004_1_side_10",
+        "BR_PIER_COL_004_1_side_11",
+        "BR_PIER_COL_004_1_side_2",
+        "BR_PIER_COL_004_1_side_3",
+        "BR_PIER_COL_004_1_side_4",
+        "BR_PIER_COL_004_1_side_5",
+        "BR_PIER_COL_004_1_side_6",
+        "BR_PIER_COL_004_1_side_7",
+        "BR_PIER_COL_004_1_side_8",
+        "BR_PIER_COL_004_1_side_9"
+      ],
+      "target_m": [
+        135.85,
+        -2.75,
+        5.5588
+      ],
+      "prim_name": "BR_PIER_COL_004_1",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_018",
+      "position_m": [
+        146.25,
+        0.0,
+        4.45
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 3.815,
+      "cumulative_distance_m": 218.219,
+      "covers": [
+        "ST_FLOORBEAM_01_+X_0",
+        "ST_FLOORBEAM_01_+X_1",
+        "ST_FLOORBEAM_01_+Y_4",
+        "ST_FLOORBEAM_01_+Z_6",
+        "ST_FLOORBEAM_01_+Z_7",
+        "ST_FLOORBEAM_01_+Z_8",
+        "ST_FLOORBEAM_01_-X_2",
+        "ST_FLOORBEAM_01_-X_3",
+        "ST_FLOORBEAM_01_-Y_5",
+        "ST_FLOORBEAM_01_-Z_10",
+        "ST_FLOORBEAM_01_-Z_11",
+        "ST_FLOORBEAM_01_-Z_9"
+      ],
+      "target_m": [
+        146.25,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_01",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_019",
+      "position_m": [
+        143.85,
+        2.75,
+        5.5588
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 3.815,
+      "cumulative_distance_m": 222.034,
+      "covers": [
+        "BR_PIER_COL_004_2_cap_top",
+        "BR_PIER_COL_004_2_side_0",
+        "BR_PIER_COL_004_2_side_1",
+        "BR_PIER_COL_004_2_side_10",
+        "BR_PIER_COL_004_2_side_11",
+        "BR_PIER_COL_004_2_side_2",
+        "BR_PIER_COL_004_2_side_3",
+        "BR_PIER_COL_004_2_side_4",
+        "BR_PIER_COL_004_2_side_5",
+        "BR_PIER_COL_004_2_side_6",
+        "BR_PIER_COL_004_2_side_7",
+        "BR_PIER_COL_004_2_side_8",
+        "BR_PIER_COL_004_2_side_9"
+      ],
+      "target_m": [
+        135.85,
+        2.75,
+        5.5588
+      ],
+      "prim_name": "BR_PIER_COL_004_2",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_020",
+      "position_m": [
+        143.2,
+        -3.5,
+        13.3438
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 10.005,
+      "cumulative_distance_m": 232.039,
+      "covers": [
+        "ST_FLOORBEAM_00_+X_0",
+        "ST_FLOORBEAM_00_+X_1",
+        "ST_FLOORBEAM_00_+Z_6",
+        "ST_FLOORBEAM_00_+Z_7",
+        "ST_FLOORBEAM_00_+Z_8",
+        "ST_FLOORBEAM_00_-X_2",
+        "ST_FLOORBEAM_00_-X_3",
+        "ST_FLOORBEAM_00_-Y_5",
+        "ST_FLOORBEAM_00_-Z_10",
+        "ST_FLOORBEAM_00_-Z_11",
+        "ST_FLOORBEAM_00_-Z_9"
+      ],
+      "target_m": [
+        135.2,
+        -3.5,
+        13.3438
+      ],
+      "prim_name": "ST_FLOORBEAM_00",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_021",
+      "position_m": [
+        157.5,
+        0.0,
+        4.45
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 17.2,
+      "cumulative_distance_m": 249.239,
+      "covers": [
+        "ST_FLOORBEAM_02_+X_0",
+        "ST_FLOORBEAM_02_+X_1",
+        "ST_FLOORBEAM_02_+Y_4",
+        "ST_FLOORBEAM_02_+Z_6",
+        "ST_FLOORBEAM_02_+Z_7",
+        "ST_FLOORBEAM_02_+Z_8",
+        "ST_FLOORBEAM_02_-X_2",
+        "ST_FLOORBEAM_02_-X_3",
+        "ST_FLOORBEAM_02_-Y_5",
+        "ST_FLOORBEAM_02_-Z_10",
+        "ST_FLOORBEAM_02_-Z_11",
+        "ST_FLOORBEAM_02_-Z_9"
+      ],
+      "target_m": [
+        157.5,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_02",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "position_m": [
+        168.75,
+        0.0,
+        4.45
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 260.489,
+      "covers": [
+        "ST_FLOORBEAM_03_+X_0",
+        "ST_FLOORBEAM_03_+X_1",
+        "ST_FLOORBEAM_03_+Y_4",
+        "ST_FLOORBEAM_03_+Z_6",
+        "ST_FLOORBEAM_03_+Z_7",
+        "ST_FLOORBEAM_03_+Z_8",
+        "ST_FLOORBEAM_03_-X_2",
+        "ST_FLOORBEAM_03_-X_3",
+        "ST_FLOORBEAM_03_-Y_5",
+        "ST_FLOORBEAM_03_-Z_10",
+        "ST_FLOORBEAM_03_-Z_11",
+        "ST_FLOORBEAM_03_-Z_9"
+      ],
+      "target_m": [
+        168.75,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_03",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_023",
+      "position_m": [
+        180.0,
+        0.0,
+        4.45
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 271.739,
+      "covers": [
+        "ST_FLOORBEAM_04_+X_0",
+        "ST_FLOORBEAM_04_+X_1",
+        "ST_FLOORBEAM_04_+Y_4",
+        "ST_FLOORBEAM_04_+Z_6",
+        "ST_FLOORBEAM_04_+Z_7",
+        "ST_FLOORBEAM_04_+Z_8",
+        "ST_FLOORBEAM_04_-X_2",
+        "ST_FLOORBEAM_04_-X_3",
+        "ST_FLOORBEAM_04_-Y_5",
+        "ST_FLOORBEAM_04_-Z_10",
+        "ST_FLOORBEAM_04_-Z_11",
+        "ST_FLOORBEAM_04_-Z_9"
+      ],
+      "target_m": [
+        180.0,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_04",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "position_m": [
+        191.25,
+        0.0,
+        4.45
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 282.989,
+      "covers": [
+        "ST_FLOORBEAM_05_+X_0",
+        "ST_FLOORBEAM_05_+X_1",
+        "ST_FLOORBEAM_05_+Y_4",
+        "ST_FLOORBEAM_05_+Z_6",
+        "ST_FLOORBEAM_05_+Z_7",
+        "ST_FLOORBEAM_05_+Z_8",
+        "ST_FLOORBEAM_05_-X_2",
+        "ST_FLOORBEAM_05_-X_3",
+        "ST_FLOORBEAM_05_-Y_5",
+        "ST_FLOORBEAM_05_-Z_10",
+        "ST_FLOORBEAM_05_-Z_11",
+        "ST_FLOORBEAM_05_-Z_9"
+      ],
+      "target_m": [
+        191.25,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_05",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_025",
+      "position_m": [
+        202.5,
+        0.0,
+        4.45
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 294.239,
+      "covers": [
+        "ST_FLOORBEAM_06_+X_0",
+        "ST_FLOORBEAM_06_+X_1",
+        "ST_FLOORBEAM_06_+Y_4",
+        "ST_FLOORBEAM_06_+Z_6",
+        "ST_FLOORBEAM_06_+Z_7",
+        "ST_FLOORBEAM_06_+Z_8",
+        "ST_FLOORBEAM_06_-X_2",
+        "ST_FLOORBEAM_06_-X_3",
+        "ST_FLOORBEAM_06_-Y_5",
+        "ST_FLOORBEAM_06_-Z_10",
+        "ST_FLOORBEAM_06_-Z_11",
+        "ST_FLOORBEAM_06_-Z_9"
+      ],
+      "target_m": [
+        202.5,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_06",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "position_m": [
+        213.75,
+        0.0,
+        4.45
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 305.489,
+      "covers": [
+        "ST_FLOORBEAM_07_+X_0",
+        "ST_FLOORBEAM_07_+X_1",
+        "ST_FLOORBEAM_07_+Y_4",
+        "ST_FLOORBEAM_07_+Z_6",
+        "ST_FLOORBEAM_07_+Z_7",
+        "ST_FLOORBEAM_07_+Z_8",
+        "ST_FLOORBEAM_07_-X_2",
+        "ST_FLOORBEAM_07_-X_3",
+        "ST_FLOORBEAM_07_-Y_5",
+        "ST_FLOORBEAM_07_-Z_10",
+        "ST_FLOORBEAM_07_-Z_11",
+        "ST_FLOORBEAM_07_-Z_9"
+      ],
+      "target_m": [
+        213.75,
+        0.0,
+        12.45
+      ],
+      "prim_name": "ST_FLOORBEAM_07",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "position_m": [
+        216.8,
+        -3.5,
+        13.3438
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 10.033,
+      "cumulative_distance_m": 315.521,
+      "covers": [
+        "ST_FLOORBEAM_08_+X_0",
+        "ST_FLOORBEAM_08_+X_1",
+        "ST_FLOORBEAM_08_+Z_6",
+        "ST_FLOORBEAM_08_+Z_7",
+        "ST_FLOORBEAM_08_+Z_8",
+        "ST_FLOORBEAM_08_-X_2",
+        "ST_FLOORBEAM_08_-X_3",
+        "ST_FLOORBEAM_08_-Y_5",
+        "ST_FLOORBEAM_08_-Z_10",
+        "ST_FLOORBEAM_08_-Z_11",
+        "ST_FLOORBEAM_08_-Z_9"
+      ],
+      "target_m": [
+        224.8,
+        -3.5,
+        13.3438
+      ],
+      "prim_name": "ST_FLOORBEAM_08",
+      "prim_kind": "floor_beam"
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "position_m": [
+        225.0,
+        0.0,
+        2.0375
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 14.399,
+      "cumulative_distance_m": 329.92,
+      "covers": [
+        "BR_PIER_CAP_005_+X_0",
+        "BR_PIER_CAP_005_+X_1",
+        "BR_PIER_CAP_005_+Y_4",
+        "BR_PIER_CAP_005_+Z_6",
+        "BR_PIER_CAP_005_+Z_7",
+        "BR_PIER_CAP_005_+Z_8",
+        "BR_PIER_CAP_005_-X_2",
+        "BR_PIER_CAP_005_-X_3",
+        "BR_PIER_CAP_005_-Y_5",
+        "BR_PIER_CAP_005_-Z_10",
+        "BR_PIER_CAP_005_-Z_11",
+        "BR_PIER_CAP_005_-Z_9"
+      ],
+      "target_m": [
+        225.0,
+        0.0,
+        10.0375
+      ],
+      "prim_name": "BR_PIER_CAP_005",
+      "prim_kind": "pier_cap"
+    },
+    {
+      "waypoint_id": "CWP_029",
+      "position_m": [
+        233.85,
+        -2.75,
+        1.8229
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 9.27,
+      "cumulative_distance_m": 339.19,
+      "covers": [
+        "BR_PIER_COL_005_1_cap_top",
+        "BR_PIER_COL_005_1_side_0",
+        "BR_PIER_COL_005_1_side_1",
+        "BR_PIER_COL_005_1_side_10",
+        "BR_PIER_COL_005_1_side_11",
+        "BR_PIER_COL_005_1_side_2",
+        "BR_PIER_COL_005_1_side_3",
+        "BR_PIER_COL_005_1_side_4",
+        "BR_PIER_COL_005_1_side_5",
+        "BR_PIER_COL_005_1_side_6",
+        "BR_PIER_COL_005_1_side_7",
+        "BR_PIER_COL_005_1_side_8",
+        "BR_PIER_COL_005_1_side_9"
+      ],
+      "target_m": [
+        225.85,
+        -2.75,
+        1.8229
+      ],
+      "prim_name": "BR_PIER_COL_005_1",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_030",
+      "position_m": [
+        233.85,
+        2.75,
+        1.8229
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 5.5,
+      "cumulative_distance_m": 344.69,
+      "covers": [
+        "BR_PIER_COL_005_2_cap_top",
+        "BR_PIER_COL_005_2_side_0",
+        "BR_PIER_COL_005_2_side_1",
+        "BR_PIER_COL_005_2_side_10",
+        "BR_PIER_COL_005_2_side_11",
+        "BR_PIER_COL_005_2_side_2",
+        "BR_PIER_COL_005_2_side_3",
+        "BR_PIER_COL_005_2_side_4",
+        "BR_PIER_COL_005_2_side_5",
+        "BR_PIER_COL_005_2_side_6",
+        "BR_PIER_COL_005_2_side_7",
+        "BR_PIER_COL_005_2_side_8",
+        "BR_PIER_COL_005_2_side_9"
+      ],
+      "target_m": [
+        225.85,
+        2.75,
+        1.8229
+      ],
+      "prim_name": "BR_PIER_COL_005_2",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_031",
+      "position_m": [
+        240.0,
+        -3.6667,
+        4.8706
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 9.396,
+      "cumulative_distance_m": 354.086,
+      "covers": [
+        "BR_DIAPHRAGM_005_2_+X_0",
+        "BR_DIAPHRAGM_005_2_+X_1",
+        "BR_DIAPHRAGM_005_2_+Z_6",
+        "BR_DIAPHRAGM_005_2_+Z_7",
+        "BR_DIAPHRAGM_005_2_+Z_8",
+        "BR_DIAPHRAGM_005_2_-X_2",
+        "BR_DIAPHRAGM_005_2_-X_3",
+        "BR_DIAPHRAGM_005_2_-Y_5",
+        "BR_DIAPHRAGM_005_2_-Z_10",
+        "BR_DIAPHRAGM_005_2_-Z_11",
+        "BR_DIAPHRAGM_005_2_-Z_9"
+      ],
+      "target_m": [
+        240.0,
+        -3.6667,
+        12.8706
+      ],
+      "prim_name": "BR_DIAPHRAGM_005_2",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_032",
+      "position_m": [
+        233.225,
+        -7.0,
+        13.5
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.466,
+      "cumulative_distance_m": 365.552,
+      "covers": [
+        "ST_VERTICAL_S_08_+X_0",
+        "ST_VERTICAL_S_08_+X_1",
+        "ST_VERTICAL_S_08_+X_2",
+        "ST_VERTICAL_S_08_+Y_6",
+        "ST_VERTICAL_S_08_+Y_7",
+        "ST_VERTICAL_S_08_+Y_8",
+        "ST_VERTICAL_S_08_+Z_12",
+        "ST_VERTICAL_S_08_-X_3",
+        "ST_VERTICAL_S_08_-X_4",
+        "ST_VERTICAL_S_08_-X_5",
+        "ST_VERTICAL_S_08_-Y_10",
+        "ST_VERTICAL_S_08_-Y_11",
+        "ST_VERTICAL_S_08_-Y_9",
+        "ST_VERTICAL_S_08_-Z_13"
+      ],
+      "target_m": [
+        225.225,
+        -7.0,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_S_08",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "position_m": [
+        255.0,
+        -3.6667,
+        4.8706
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 23.659,
+      "cumulative_distance_m": 389.211,
+      "covers": [
+        "BR_DIAPHRAGM_005_3_+X_0",
+        "BR_DIAPHRAGM_005_3_+X_1",
+        "BR_DIAPHRAGM_005_3_+Z_6",
+        "BR_DIAPHRAGM_005_3_+Z_7",
+        "BR_DIAPHRAGM_005_3_+Z_8",
+        "BR_DIAPHRAGM_005_3_-X_2",
+        "BR_DIAPHRAGM_005_3_-X_3",
+        "BR_DIAPHRAGM_005_3_-Y_5",
+        "BR_DIAPHRAGM_005_3_-Z_10",
+        "BR_DIAPHRAGM_005_3_-Z_11",
+        "BR_DIAPHRAGM_005_3_-Z_9"
+      ],
+      "target_m": [
+        255.0,
+        -3.6667,
+        12.8706
+      ],
+      "prim_name": "BR_DIAPHRAGM_005_3",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "position_m": [
+        270.0,
+        0.0,
+        2.825
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.577,
+      "cumulative_distance_m": 404.787,
+      "covers": [
+        "BR_PIER_CAP_006_+X_0",
+        "BR_PIER_CAP_006_+X_1",
+        "BR_PIER_CAP_006_+Y_4",
+        "BR_PIER_CAP_006_+Z_6",
+        "BR_PIER_CAP_006_+Z_7",
+        "BR_PIER_CAP_006_+Z_8",
+        "BR_PIER_CAP_006_-X_2",
+        "BR_PIER_CAP_006_-X_3",
+        "BR_PIER_CAP_006_-Y_5",
+        "BR_PIER_CAP_006_-Z_10",
+        "BR_PIER_CAP_006_-Z_11",
+        "BR_PIER_CAP_006_-Z_9"
+      ],
+      "target_m": [
+        270.0,
+        0.0,
+        10.825
+      ],
+      "prim_name": "BR_PIER_CAP_006",
+      "prim_kind": "pier_cap"
+    },
+    {
+      "waypoint_id": "CWP_035",
+      "position_m": [
+        278.85,
+        -2.75,
+        1.9542
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 9.308,
+      "cumulative_distance_m": 414.096,
+      "covers": [
+        "BR_PIER_COL_006_1_cap_top",
+        "BR_PIER_COL_006_1_side_0",
+        "BR_PIER_COL_006_1_side_1",
+        "BR_PIER_COL_006_1_side_10",
+        "BR_PIER_COL_006_1_side_11",
+        "BR_PIER_COL_006_1_side_2",
+        "BR_PIER_COL_006_1_side_3",
+        "BR_PIER_COL_006_1_side_4",
+        "BR_PIER_COL_006_1_side_5",
+        "BR_PIER_COL_006_1_side_6",
+        "BR_PIER_COL_006_1_side_7",
+        "BR_PIER_COL_006_1_side_8",
+        "BR_PIER_COL_006_1_side_9"
+      ],
+      "target_m": [
+        270.85,
+        -2.75,
+        1.9542
+      ],
+      "prim_name": "BR_PIER_COL_006_1",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_036",
+      "position_m": [
+        278.85,
+        2.75,
+        1.9542
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 5.5,
+      "cumulative_distance_m": 419.596,
+      "covers": [
+        "BR_PIER_COL_006_2_cap_top",
+        "BR_PIER_COL_006_2_side_0",
+        "BR_PIER_COL_006_2_side_1",
+        "BR_PIER_COL_006_2_side_10",
+        "BR_PIER_COL_006_2_side_11",
+        "BR_PIER_COL_006_2_side_2",
+        "BR_PIER_COL_006_2_side_3",
+        "BR_PIER_COL_006_2_side_4",
+        "BR_PIER_COL_006_2_side_5",
+        "BR_PIER_COL_006_2_side_6",
+        "BR_PIER_COL_006_2_side_7",
+        "BR_PIER_COL_006_2_side_8",
+        "BR_PIER_COL_006_2_side_9"
+      ],
+      "target_m": [
+        270.85,
+        2.75,
+        1.9542
+      ],
+      "prim_name": "BR_PIER_COL_006_2",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_037",
+      "position_m": [
+        285.0,
+        -3.6667,
+        4.7206
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 9.309,
+      "cumulative_distance_m": 428.904,
+      "covers": [
+        "BR_DIAPHRAGM_006_2_+X_0",
+        "BR_DIAPHRAGM_006_2_+X_1",
+        "BR_DIAPHRAGM_006_2_+Z_6",
+        "BR_DIAPHRAGM_006_2_+Z_7",
+        "BR_DIAPHRAGM_006_2_+Z_8",
+        "BR_DIAPHRAGM_006_2_-X_2",
+        "BR_DIAPHRAGM_006_2_-X_3",
+        "BR_DIAPHRAGM_006_2_-Y_5",
+        "BR_DIAPHRAGM_006_2_-Z_10",
+        "BR_DIAPHRAGM_006_2_-Z_11",
+        "BR_DIAPHRAGM_006_2_-Z_9"
+      ],
+      "target_m": [
+        285.0,
+        -3.6667,
+        12.7206
+      ],
+      "prim_name": "BR_DIAPHRAGM_006_2",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_038",
+      "position_m": [
+        300.0,
+        -3.6667,
+        4.7206
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.0,
+      "cumulative_distance_m": 443.904,
+      "covers": [
+        "BR_DIAPHRAGM_006_3_+X_0",
+        "BR_DIAPHRAGM_006_3_+X_1",
+        "BR_DIAPHRAGM_006_3_+Z_6",
+        "BR_DIAPHRAGM_006_3_+Z_7",
+        "BR_DIAPHRAGM_006_3_+Z_8",
+        "BR_DIAPHRAGM_006_3_-X_2",
+        "BR_DIAPHRAGM_006_3_-X_3",
+        "BR_DIAPHRAGM_006_3_-Y_5",
+        "BR_DIAPHRAGM_006_3_-Z_10",
+        "BR_DIAPHRAGM_006_3_-Z_11",
+        "BR_DIAPHRAGM_006_3_-Z_9"
+      ],
+      "target_m": [
+        300.0,
+        -3.6667,
+        12.7206
+      ],
+      "prim_name": "BR_DIAPHRAGM_006_3",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_039",
+      "position_m": [
+        315.0,
+        0.0,
+        2.6375
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.582,
+      "cumulative_distance_m": 459.486,
+      "covers": [
+        "BR_PIER_CAP_007_+X_0",
+        "BR_PIER_CAP_007_+X_1",
+        "BR_PIER_CAP_007_+Y_4",
+        "BR_PIER_CAP_007_+Z_6",
+        "BR_PIER_CAP_007_+Z_7",
+        "BR_PIER_CAP_007_+Z_8",
+        "BR_PIER_CAP_007_-X_2",
+        "BR_PIER_CAP_007_-X_3",
+        "BR_PIER_CAP_007_-Y_5",
+        "BR_PIER_CAP_007_-Z_10",
+        "BR_PIER_CAP_007_-Z_11",
+        "BR_PIER_CAP_007_-Z_9"
+      ],
+      "target_m": [
+        315.0,
+        0.0,
+        10.6375
+      ],
+      "prim_name": "BR_PIER_CAP_007",
+      "prim_kind": "pier_cap"
+    },
+    {
+      "waypoint_id": "CWP_040",
+      "position_m": [
+        323.85,
+        -2.75,
+        1.9229
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 9.295,
+      "cumulative_distance_m": 468.781,
+      "covers": [
+        "BR_PIER_COL_007_1_cap_top",
+        "BR_PIER_COL_007_1_side_0",
+        "BR_PIER_COL_007_1_side_1",
+        "BR_PIER_COL_007_1_side_10",
+        "BR_PIER_COL_007_1_side_11",
+        "BR_PIER_COL_007_1_side_2",
+        "BR_PIER_COL_007_1_side_3",
+        "BR_PIER_COL_007_1_side_4",
+        "BR_PIER_COL_007_1_side_5",
+        "BR_PIER_COL_007_1_side_6",
+        "BR_PIER_COL_007_1_side_7",
+        "BR_PIER_COL_007_1_side_8",
+        "BR_PIER_COL_007_1_side_9"
+      ],
+      "target_m": [
+        315.85,
+        -2.75,
+        1.9229
+      ],
+      "prim_name": "BR_PIER_COL_007_1",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_041",
+      "position_m": [
+        323.85,
+        2.75,
+        1.9229
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 5.5,
+      "cumulative_distance_m": 474.281,
+      "covers": [
+        "BR_PIER_COL_007_2_cap_top",
+        "BR_PIER_COL_007_2_side_0",
+        "BR_PIER_COL_007_2_side_1",
+        "BR_PIER_COL_007_2_side_10",
+        "BR_PIER_COL_007_2_side_11",
+        "BR_PIER_COL_007_2_side_2",
+        "BR_PIER_COL_007_2_side_3",
+        "BR_PIER_COL_007_2_side_4",
+        "BR_PIER_COL_007_2_side_5",
+        "BR_PIER_COL_007_2_side_6",
+        "BR_PIER_COL_007_2_side_7",
+        "BR_PIER_COL_007_2_side_8",
+        "BR_PIER_COL_007_2_side_9"
+      ],
+      "target_m": [
+        315.85,
+        2.75,
+        1.9229
+      ],
+      "prim_name": "BR_PIER_COL_007_2",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_042",
+      "position_m": [
+        330.0,
+        -3.6667,
+        4.4956
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 9.253,
+      "cumulative_distance_m": 483.533,
+      "covers": [
+        "BR_DIAPHRAGM_007_2_+X_0",
+        "BR_DIAPHRAGM_007_2_+X_1",
+        "BR_DIAPHRAGM_007_2_+Z_6",
+        "BR_DIAPHRAGM_007_2_+Z_7",
+        "BR_DIAPHRAGM_007_2_+Z_8",
+        "BR_DIAPHRAGM_007_2_-X_2",
+        "BR_DIAPHRAGM_007_2_-X_3",
+        "BR_DIAPHRAGM_007_2_-Y_5",
+        "BR_DIAPHRAGM_007_2_-Z_10",
+        "BR_DIAPHRAGM_007_2_-Z_11",
+        "BR_DIAPHRAGM_007_2_-Z_9"
+      ],
+      "target_m": [
+        330.0,
+        -3.6667,
+        12.4956
+      ],
+      "prim_name": "BR_DIAPHRAGM_007_2",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_043",
+      "position_m": [
+        345.0,
+        -3.6667,
+        4.4956
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 15.0,
+      "cumulative_distance_m": 498.533,
+      "covers": [
+        "BR_DIAPHRAGM_007_3_+X_0",
+        "BR_DIAPHRAGM_007_3_+X_1",
+        "BR_DIAPHRAGM_007_3_+Z_6",
+        "BR_DIAPHRAGM_007_3_+Z_7",
+        "BR_DIAPHRAGM_007_3_+Z_8",
+        "BR_DIAPHRAGM_007_3_-X_2",
+        "BR_DIAPHRAGM_007_3_-X_3",
+        "BR_DIAPHRAGM_007_3_-Y_5",
+        "BR_DIAPHRAGM_007_3_-Z_10",
+        "BR_DIAPHRAGM_007_3_-Z_11",
+        "BR_DIAPHRAGM_007_3_-Z_9"
+      ],
+      "target_m": [
+        345.0,
+        -3.6667,
+        12.4956
+      ],
+      "prim_name": "BR_DIAPHRAGM_007_3",
+      "prim_kind": "diaphragm"
+    },
+    {
+      "waypoint_id": "CWP_044",
+      "position_m": [
+        346.5,
+        -0.3,
+        5.6
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 3.848,
+      "cumulative_distance_m": 502.381,
+      "covers": [
+        "BR_WINGWALL_NORTH_R_+Y_10",
+        "BR_WINGWALL_NORTH_R_+Y_11",
+        "BR_WINGWALL_NORTH_R_+Y_6",
+        "BR_WINGWALL_NORTH_R_+Y_7",
+        "BR_WINGWALL_NORTH_R_+Y_8",
+        "BR_WINGWALL_NORTH_R_+Y_9",
+        "BR_WINGWALL_NORTH_R_+Z_18",
+        "BR_WINGWALL_NORTH_R_+Z_19",
+        "BR_WINGWALL_NORTH_R_-X_3",
+        "BR_WINGWALL_NORTH_R_-X_4",
+        "BR_WINGWALL_NORTH_R_-X_5",
+        "BR_WINGWALL_NORTH_R_-Y_12",
+        "BR_WINGWALL_NORTH_R_-Y_13",
+        "BR_WINGWALL_NORTH_R_-Y_14",
+        "BR_WINGWALL_NORTH_R_-Y_15",
+        "BR_WINGWALL_NORTH_R_-Y_16",
+        "BR_WINGWALL_NORTH_R_-Y_17"
+      ],
+      "target_m": [
+        346.5,
+        -8.3,
+        5.6
+      ],
+      "prim_name": "BR_WINGWALL_NORTH_R",
+      "prim_kind": "structure"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "position_m": [
+        345.5,
+        6.0,
+        7.0
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 6.531,
+      "cumulative_distance_m": 508.912,
+      "covers": [
+        "BR_ABUTMENT_NORTH_+X_6",
+        "BR_ABUTMENT_NORTH_+X_7",
+        "BR_ABUTMENT_NORTH_+X_8",
+        "BR_ABUTMENT_NORTH_+Y_18",
+        "BR_ABUTMENT_NORTH_+Y_19",
+        "BR_ABUTMENT_NORTH_+Y_20",
+        "BR_ABUTMENT_NORTH_+Z_26",
+        "BR_ABUTMENT_NORTH_-X_12",
+        "BR_ABUTMENT_NORTH_-X_13",
+        "BR_ABUTMENT_NORTH_-X_14",
+        "BR_ABUTMENT_NORTH_-X_15",
+        "BR_ABUTMENT_NORTH_-X_16",
+        "BR_ABUTMENT_NORTH_-X_17"
+      ],
+      "target_m": [
+        353.5,
+        6.0,
+        7.0
+      ],
+      "prim_name": "BR_ABUTMENT_NORTH",
+      "prim_kind": "abutment"
+    },
+    {
+      "waypoint_id": "CWP_046",
+      "position_m": [
+        346.5,
+        16.9,
+        5.6
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 11.035,
+      "cumulative_distance_m": 519.947,
+      "covers": [
+        "BR_WINGWALL_NORTH_L_+Y_10",
+        "BR_WINGWALL_NORTH_L_+Y_11",
+        "BR_WINGWALL_NORTH_L_+Y_6",
+        "BR_WINGWALL_NORTH_L_+Y_7",
+        "BR_WINGWALL_NORTH_L_+Y_8",
+        "BR_WINGWALL_NORTH_L_+Y_9",
+        "BR_WINGWALL_NORTH_L_+Z_18",
+        "BR_WINGWALL_NORTH_L_+Z_19",
+        "BR_WINGWALL_NORTH_L_-X_3",
+        "BR_WINGWALL_NORTH_L_-X_4",
+        "BR_WINGWALL_NORTH_L_-X_5",
+        "BR_WINGWALL_NORTH_L_-Y_12",
+        "BR_WINGWALL_NORTH_L_-Y_13",
+        "BR_WINGWALL_NORTH_L_-Y_14",
+        "BR_WINGWALL_NORTH_L_-Y_15",
+        "BR_WINGWALL_NORTH_L_-Y_16",
+        "BR_WINGWALL_NORTH_L_-Y_17"
+      ],
+      "target_m": [
+        346.5,
+        8.9,
+        5.6
+      ],
+      "prim_name": "BR_WINGWALL_NORTH_L",
+      "prim_kind": "structure"
+    },
+    {
+      "waypoint_id": "CWP_047",
+      "position_m": [
+        348.75,
+        26.3,
+        8.8
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 10.181,
+      "cumulative_distance_m": 530.128,
+      "covers": [
+        "MB_DECK_SOFFIT_010_+Y_2",
+        "MB_DECK_SOFFIT_010_+Z_6",
+        "MB_DECK_SOFFIT_010_+Z_7",
+        "MB_DECK_SOFFIT_010_+Z_8",
+        "MB_DECK_SOFFIT_010_+Z_9",
+        "MB_DECK_SOFFIT_010_-X_1",
+        "MB_DECK_SOFFIT_010_-Y_4",
+        "MB_DECK_SOFFIT_010_-Y_5",
+        "MB_DECK_SOFFIT_010_-Z_10",
+        "MB_DECK_SOFFIT_010_-Z_11",
+        "MB_DECK_SOFFIT_010_-Z_12",
+        "MB_DECK_SOFFIT_010_-Z_13"
+      ],
+      "target_m": [
+        348.75,
+        26.3,
+        16.8
+      ],
+      "prim_name": "MB_DECK_SOFFIT_010",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_048",
+      "position_m": [
+        354.0,
+        28.0,
+        8.0185
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 5.573,
+      "cumulative_distance_m": 535.702,
+      "covers": [
+        "MB_PIER_COL_010_cap_bottom",
+        "MB_PIER_COL_010_cap_top",
+        "MB_PIER_COL_010_side_0",
+        "MB_PIER_COL_010_side_1",
+        "MB_PIER_COL_010_side_10",
+        "MB_PIER_COL_010_side_11",
+        "MB_PIER_COL_010_side_2",
+        "MB_PIER_COL_010_side_3",
+        "MB_PIER_COL_010_side_4",
+        "MB_PIER_COL_010_side_5",
+        "MB_PIER_COL_010_side_6",
+        "MB_PIER_COL_010_side_7",
+        "MB_PIER_COL_010_side_8",
+        "MB_PIER_COL_010_side_9"
+      ],
+      "target_m": [
+        346.0,
+        28.0,
+        8.0185
+      ],
+      "prim_name": "MB_PIER_COL_010",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_049",
+      "position_m": [
+        348.75,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 17.21,
+      "cumulative_distance_m": 552.911,
+      "covers": [
+        "MB_DECK_TOP_010_+Y_4",
+        "MB_DECK_TOP_010_+Y_5",
+        "MB_DECK_TOP_010_+Z_10",
+        "MB_DECK_TOP_010_+Z_12",
+        "MB_DECK_TOP_010_+Z_13",
+        "MB_DECK_TOP_010_+Z_8",
+        "MB_DECK_TOP_010_+Z_9",
+        "MB_DECK_TOP_010_-X_2",
+        "MB_DECK_TOP_010_-X_3",
+        "MB_DECK_TOP_010_-Y_6",
+        "MB_DECK_TOP_010_-Z_14",
+        "MB_DECK_TOP_010_-Z_15",
+        "MB_DECK_TOP_010_-Z_16",
+        "MB_DECK_TOP_010_-Z_18",
+        "MB_DECK_TOP_010_-Z_19"
+      ],
+      "target_m": [
+        348.75,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_010",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_050",
+      "position_m": [
+        345.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 3.751,
+      "cumulative_distance_m": 556.662,
+      "covers": [
+        "MB_JOINT_010_+X_0",
+        "MB_JOINT_010_+X_1",
+        "MB_JOINT_010_+Y_4",
+        "MB_JOINT_010_+Z_6",
+        "MB_JOINT_010_+Z_7",
+        "MB_JOINT_010_+Z_8",
+        "MB_JOINT_010_-X_2",
+        "MB_JOINT_010_-X_3",
+        "MB_JOINT_010_-Y_5",
+        "MB_JOINT_010_-Z_10",
+        "MB_JOINT_010_-Z_11",
+        "MB_JOINT_010_-Z_9"
+      ],
+      "target_m": [
+        345.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_010",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_051",
+      "position_m": [
+        340.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 561.663,
+      "covers": [
+        "MB_DECK_TOP_009_+X_0",
+        "MB_DECK_TOP_009_+X_1",
+        "MB_DECK_TOP_009_+Y_6",
+        "MB_DECK_TOP_009_+Z_16",
+        "MB_DECK_TOP_009_+Z_17",
+        "MB_DECK_TOP_009_+Z_18",
+        "MB_DECK_TOP_009_-Y_9",
+        "MB_DECK_TOP_009_-Z_25",
+        "MB_DECK_TOP_009_-Z_26",
+        "MB_DECK_TOP_009_-Z_27"
+      ],
+      "target_m": [
+        340.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_009",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_052",
+      "position_m": [
+        338.14,
+        31.1,
+        20.85
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 9.597,
+      "cumulative_distance_m": 571.259,
+      "covers": [
+        "MB_MAST_005_+X_0",
+        "MB_MAST_005_+X_1",
+        "MB_MAST_005_+Y_4",
+        "MB_MAST_005_+Y_5",
+        "MB_MAST_005_+Z_8",
+        "MB_MAST_005_-X_2",
+        "MB_MAST_005_-X_3",
+        "MB_MAST_005_-Y_6",
+        "MB_MAST_005_-Y_7",
+        "MB_MAST_005_-Z_9"
+      ],
+      "target_m": [
+        330.14,
+        31.1,
+        20.85
+      ],
+      "prim_name": "MB_MAST_005",
+      "prim_kind": "catenary_mast"
+    },
+    {
+      "waypoint_id": "CWP_053",
+      "position_m": [
+        320.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 20.438,
+      "cumulative_distance_m": 591.697,
+      "covers": [
+        "MB_DECK_TOP_009_+Y_4",
+        "MB_DECK_TOP_009_+Z_10",
+        "MB_DECK_TOP_009_+Z_11",
+        "MB_DECK_TOP_009_+Z_12",
+        "MB_DECK_TOP_009_-X_2",
+        "MB_DECK_TOP_009_-X_3",
+        "MB_DECK_TOP_009_-Y_7",
+        "MB_DECK_TOP_009_-Z_19",
+        "MB_DECK_TOP_009_-Z_20",
+        "MB_DECK_TOP_009_-Z_21"
+      ],
+      "target_m": [
+        320.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_009",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_054",
+      "position_m": [
+        315.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 596.698,
+      "covers": [
+        "MB_JOINT_009_+X_0",
+        "MB_JOINT_009_+X_1",
+        "MB_JOINT_009_+Y_4",
+        "MB_JOINT_009_+Z_6",
+        "MB_JOINT_009_+Z_7",
+        "MB_JOINT_009_+Z_8",
+        "MB_JOINT_009_-X_2",
+        "MB_JOINT_009_-X_3",
+        "MB_JOINT_009_-Y_5",
+        "MB_JOINT_009_-Z_10",
+        "MB_JOINT_009_-Z_11",
+        "MB_JOINT_009_-Z_9"
+      ],
+      "target_m": [
+        315.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_009",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_055",
+      "position_m": [
+        310.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 601.698,
+      "covers": [
+        "MB_DECK_TOP_008_+X_0",
+        "MB_DECK_TOP_008_+X_1",
+        "MB_DECK_TOP_008_+Y_6",
+        "MB_DECK_TOP_008_+Z_16",
+        "MB_DECK_TOP_008_+Z_17",
+        "MB_DECK_TOP_008_+Z_18",
+        "MB_DECK_TOP_008_-Y_9",
+        "MB_DECK_TOP_008_-Z_25",
+        "MB_DECK_TOP_008_-Z_26",
+        "MB_DECK_TOP_008_-Z_27"
+      ],
+      "target_m": [
+        310.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_008",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_056",
+      "position_m": [
+        290.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 20.0,
+      "cumulative_distance_m": 621.698,
+      "covers": [
+        "MB_DECK_TOP_008_+Y_4",
+        "MB_DECK_TOP_008_+Z_10",
+        "MB_DECK_TOP_008_+Z_11",
+        "MB_DECK_TOP_008_+Z_12",
+        "MB_DECK_TOP_008_-X_2",
+        "MB_DECK_TOP_008_-X_3",
+        "MB_DECK_TOP_008_-Y_7",
+        "MB_DECK_TOP_008_-Z_19",
+        "MB_DECK_TOP_008_-Z_20",
+        "MB_DECK_TOP_008_-Z_21"
+      ],
+      "target_m": [
+        290.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_008",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_057",
+      "position_m": [
+        285.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 626.699,
+      "covers": [
+        "MB_JOINT_008_+X_0",
+        "MB_JOINT_008_+X_1",
+        "MB_JOINT_008_+Y_4",
+        "MB_JOINT_008_+Z_6",
+        "MB_JOINT_008_+Z_7",
+        "MB_JOINT_008_+Z_8",
+        "MB_JOINT_008_-X_2",
+        "MB_JOINT_008_-X_3",
+        "MB_JOINT_008_-Y_5",
+        "MB_JOINT_008_-Z_10",
+        "MB_JOINT_008_-Z_11",
+        "MB_JOINT_008_-Z_9"
+      ],
+      "target_m": [
+        285.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_008",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_058",
+      "position_m": [
+        280.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 631.699,
+      "covers": [
+        "MB_DECK_TOP_007_+X_0",
+        "MB_DECK_TOP_007_+X_1",
+        "MB_DECK_TOP_007_+Y_6",
+        "MB_DECK_TOP_007_+Z_16",
+        "MB_DECK_TOP_007_+Z_17",
+        "MB_DECK_TOP_007_+Z_18",
+        "MB_DECK_TOP_007_-Y_9",
+        "MB_DECK_TOP_007_-Z_25",
+        "MB_DECK_TOP_007_-Z_26",
+        "MB_DECK_TOP_007_-Z_27"
+      ],
+      "target_m": [
+        280.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_007",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_059",
+      "position_m": [
+        260.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 20.0,
+      "cumulative_distance_m": 651.699,
+      "covers": [
+        "MB_DECK_TOP_007_+Y_4",
+        "MB_DECK_TOP_007_+Z_10",
+        "MB_DECK_TOP_007_+Z_11",
+        "MB_DECK_TOP_007_+Z_12",
+        "MB_DECK_TOP_007_-X_2",
+        "MB_DECK_TOP_007_-X_3",
+        "MB_DECK_TOP_007_-Y_7",
+        "MB_DECK_TOP_007_-Z_19",
+        "MB_DECK_TOP_007_-Z_20",
+        "MB_DECK_TOP_007_-Z_21"
+      ],
+      "target_m": [
+        260.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_007",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_060",
+      "position_m": [
+        255.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 656.7,
+      "covers": [
+        "MB_JOINT_007_+X_0",
+        "MB_JOINT_007_+X_1",
+        "MB_JOINT_007_+Y_4",
+        "MB_JOINT_007_+Z_6",
+        "MB_JOINT_007_+Z_7",
+        "MB_JOINT_007_+Z_8",
+        "MB_JOINT_007_-X_2",
+        "MB_JOINT_007_-X_3",
+        "MB_JOINT_007_-Y_5",
+        "MB_JOINT_007_-Z_10",
+        "MB_JOINT_007_-Z_11",
+        "MB_JOINT_007_-Z_9"
+      ],
+      "target_m": [
+        255.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_007",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_061",
+      "position_m": [
+        250.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 661.701,
+      "covers": [
+        "MB_DECK_TOP_006_+X_0",
+        "MB_DECK_TOP_006_+X_1",
+        "MB_DECK_TOP_006_+Y_6",
+        "MB_DECK_TOP_006_+Z_16",
+        "MB_DECK_TOP_006_+Z_17",
+        "MB_DECK_TOP_006_+Z_18",
+        "MB_DECK_TOP_006_-Y_9",
+        "MB_DECK_TOP_006_-Z_25",
+        "MB_DECK_TOP_006_-Z_26",
+        "MB_DECK_TOP_006_-Z_27"
+      ],
+      "target_m": [
+        250.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_006",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_062",
+      "position_m": [
+        230.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 20.0,
+      "cumulative_distance_m": 681.701,
+      "covers": [
+        "MB_DECK_TOP_006_+Y_4",
+        "MB_DECK_TOP_006_+Z_10",
+        "MB_DECK_TOP_006_+Z_11",
+        "MB_DECK_TOP_006_+Z_12",
+        "MB_DECK_TOP_006_-X_2",
+        "MB_DECK_TOP_006_-X_3",
+        "MB_DECK_TOP_006_-Y_7",
+        "MB_DECK_TOP_006_-Z_19",
+        "MB_DECK_TOP_006_-Z_20",
+        "MB_DECK_TOP_006_-Z_21"
+      ],
+      "target_m": [
+        230.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_006",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_063",
+      "position_m": [
+        225.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 686.701,
+      "covers": [
+        "MB_JOINT_006_+X_0",
+        "MB_JOINT_006_+X_1",
+        "MB_JOINT_006_+Y_4",
+        "MB_JOINT_006_+Z_6",
+        "MB_JOINT_006_+Z_7",
+        "MB_JOINT_006_+Z_8",
+        "MB_JOINT_006_-X_2",
+        "MB_JOINT_006_-X_3",
+        "MB_JOINT_006_-Y_5",
+        "MB_JOINT_006_-Z_10",
+        "MB_JOINT_006_-Z_11",
+        "MB_JOINT_006_-Z_9"
+      ],
+      "target_m": [
+        225.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_006",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_064",
+      "position_m": [
+        234.0,
+        28.0,
+        8.0686
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 18.626,
+      "cumulative_distance_m": 705.327,
+      "covers": [
+        "MB_PIER_COL_006_cap_bottom",
+        "MB_PIER_COL_006_cap_top",
+        "MB_PIER_COL_006_side_0",
+        "MB_PIER_COL_006_side_1",
+        "MB_PIER_COL_006_side_10",
+        "MB_PIER_COL_006_side_11",
+        "MB_PIER_COL_006_side_2",
+        "MB_PIER_COL_006_side_3",
+        "MB_PIER_COL_006_side_4",
+        "MB_PIER_COL_006_side_5",
+        "MB_PIER_COL_006_side_6",
+        "MB_PIER_COL_006_side_7",
+        "MB_PIER_COL_006_side_8",
+        "MB_PIER_COL_006_side_9"
+      ],
+      "target_m": [
+        226.0,
+        28.0,
+        8.0686
+      ],
+      "prim_name": "MB_PIER_COL_006",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_065",
+      "position_m": [
+        233.225,
+        7.0,
+        13.5
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 21.705,
+      "cumulative_distance_m": 727.032,
+      "covers": [
+        "ST_VERTICAL_N_08_+X_0",
+        "ST_VERTICAL_N_08_+X_1",
+        "ST_VERTICAL_N_08_+X_2",
+        "ST_VERTICAL_N_08_+Y_6",
+        "ST_VERTICAL_N_08_+Y_7",
+        "ST_VERTICAL_N_08_+Y_8",
+        "ST_VERTICAL_N_08_+Z_12",
+        "ST_VERTICAL_N_08_-X_3",
+        "ST_VERTICAL_N_08_-X_4",
+        "ST_VERTICAL_N_08_-X_5",
+        "ST_VERTICAL_N_08_-Y_10",
+        "ST_VERTICAL_N_08_-Y_11",
+        "ST_VERTICAL_N_08_-Y_9",
+        "ST_VERTICAL_N_08_-Z_13"
+      ],
+      "target_m": [
+        225.225,
+        7.0,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_08",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_066",
+      "position_m": [
+        216.4922,
+        15.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 18.885,
+      "cumulative_distance_m": 745.916,
+      "covers": [
+        "ST_DIAGONAL_N_07_+X_1",
+        "ST_DIAGONAL_N_07_+Y_10",
+        "ST_DIAGONAL_N_07_+Y_11",
+        "ST_DIAGONAL_N_07_+Y_6",
+        "ST_DIAGONAL_N_07_+Y_7",
+        "ST_DIAGONAL_N_07_+Y_8",
+        "ST_DIAGONAL_N_07_+Y_9",
+        "ST_DIAGONAL_N_07_+Z_18",
+        "ST_DIAGONAL_N_07_+Z_19",
+        "ST_DIAGONAL_N_07_-X_3",
+        "ST_DIAGONAL_N_07_-X_4",
+        "ST_DIAGONAL_N_07_-X_5",
+        "ST_DIAGONAL_N_07_-Y_12",
+        "ST_DIAGONAL_N_07_-Y_13",
+        "ST_DIAGONAL_N_07_-Y_14",
+        "ST_DIAGONAL_N_07_-Y_15",
+        "ST_DIAGONAL_N_07_-Y_16",
+        "ST_DIAGONAL_N_07_-Y_17",
+        "ST_DIAGONAL_N_07_-Z_20",
+        "ST_DIAGONAL_N_07_-Z_21"
+      ],
+      "target_m": [
+        216.4922,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_07",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "position_m": [
+        213.75,
+        15.225,
+        13.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 4.064,
+      "cumulative_distance_m": 749.981,
+      "covers": [
+        "ST_VERTICAL_N_07_+X_0",
+        "ST_VERTICAL_N_07_+X_1",
+        "ST_VERTICAL_N_07_+X_2",
+        "ST_VERTICAL_N_07_+Y_6",
+        "ST_VERTICAL_N_07_+Y_7",
+        "ST_VERTICAL_N_07_+Y_8",
+        "ST_VERTICAL_N_07_+Z_12",
+        "ST_VERTICAL_N_07_-X_3",
+        "ST_VERTICAL_N_07_-X_4",
+        "ST_VERTICAL_N_07_-X_5",
+        "ST_VERTICAL_N_07_-Y_10",
+        "ST_VERTICAL_N_07_-Y_11",
+        "ST_VERTICAL_N_07_-Y_9",
+        "ST_VERTICAL_N_07_-Z_13"
+      ],
+      "target_m": [
+        213.75,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_07",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_068",
+      "position_m": [
+        205.2422,
+        15.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 9.021,
+      "cumulative_distance_m": 759.002,
+      "covers": [
+        "ST_DIAGONAL_N_06_+X_1",
+        "ST_DIAGONAL_N_06_+Y_10",
+        "ST_DIAGONAL_N_06_+Y_11",
+        "ST_DIAGONAL_N_06_+Y_6",
+        "ST_DIAGONAL_N_06_+Y_7",
+        "ST_DIAGONAL_N_06_+Y_8",
+        "ST_DIAGONAL_N_06_+Y_9",
+        "ST_DIAGONAL_N_06_+Z_18",
+        "ST_DIAGONAL_N_06_+Z_19",
+        "ST_DIAGONAL_N_06_-X_3",
+        "ST_DIAGONAL_N_06_-X_4",
+        "ST_DIAGONAL_N_06_-X_5",
+        "ST_DIAGONAL_N_06_-Y_12",
+        "ST_DIAGONAL_N_06_-Y_13",
+        "ST_DIAGONAL_N_06_-Y_14",
+        "ST_DIAGONAL_N_06_-Y_15",
+        "ST_DIAGONAL_N_06_-Y_16",
+        "ST_DIAGONAL_N_06_-Y_17",
+        "ST_DIAGONAL_N_06_-Z_20",
+        "ST_DIAGONAL_N_06_-Z_21"
+      ],
+      "target_m": [
+        205.2422,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_06",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_069",
+      "position_m": [
+        202.5,
+        15.225,
+        13.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 4.064,
+      "cumulative_distance_m": 763.067,
+      "covers": [
+        "ST_VERTICAL_N_06_+X_0",
+        "ST_VERTICAL_N_06_+X_1",
+        "ST_VERTICAL_N_06_+X_2",
+        "ST_VERTICAL_N_06_+Y_6",
+        "ST_VERTICAL_N_06_+Y_7",
+        "ST_VERTICAL_N_06_+Y_8",
+        "ST_VERTICAL_N_06_+Z_12",
+        "ST_VERTICAL_N_06_-X_3",
+        "ST_VERTICAL_N_06_-X_4",
+        "ST_VERTICAL_N_06_-X_5",
+        "ST_VERTICAL_N_06_-Y_10",
+        "ST_VERTICAL_N_06_-Y_11",
+        "ST_VERTICAL_N_06_-Y_9",
+        "ST_VERTICAL_N_06_-Z_13"
+      ],
+      "target_m": [
+        202.5,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_06",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_070",
+      "position_m": [
+        193.9922,
+        15.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 9.021,
+      "cumulative_distance_m": 772.088,
+      "covers": [
+        "ST_DIAGONAL_N_05_+X_1",
+        "ST_DIAGONAL_N_05_+Y_10",
+        "ST_DIAGONAL_N_05_+Y_11",
+        "ST_DIAGONAL_N_05_+Y_6",
+        "ST_DIAGONAL_N_05_+Y_7",
+        "ST_DIAGONAL_N_05_+Y_8",
+        "ST_DIAGONAL_N_05_+Y_9",
+        "ST_DIAGONAL_N_05_+Z_18",
+        "ST_DIAGONAL_N_05_+Z_19",
+        "ST_DIAGONAL_N_05_-X_3",
+        "ST_DIAGONAL_N_05_-X_4",
+        "ST_DIAGONAL_N_05_-X_5",
+        "ST_DIAGONAL_N_05_-Y_12",
+        "ST_DIAGONAL_N_05_-Y_13",
+        "ST_DIAGONAL_N_05_-Y_14",
+        "ST_DIAGONAL_N_05_-Y_15",
+        "ST_DIAGONAL_N_05_-Y_16",
+        "ST_DIAGONAL_N_05_-Y_17",
+        "ST_DIAGONAL_N_05_-Z_20",
+        "ST_DIAGONAL_N_05_-Z_21"
+      ],
+      "target_m": [
+        193.9922,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_05",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "position_m": [
+        191.25,
+        15.225,
+        13.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 4.064,
+      "cumulative_distance_m": 776.152,
+      "covers": [
+        "ST_VERTICAL_N_05_+X_0",
+        "ST_VERTICAL_N_05_+X_1",
+        "ST_VERTICAL_N_05_+X_2",
+        "ST_VERTICAL_N_05_+Y_6",
+        "ST_VERTICAL_N_05_+Y_7",
+        "ST_VERTICAL_N_05_+Y_8",
+        "ST_VERTICAL_N_05_+Z_12",
+        "ST_VERTICAL_N_05_-X_3",
+        "ST_VERTICAL_N_05_-X_4",
+        "ST_VERTICAL_N_05_-X_5",
+        "ST_VERTICAL_N_05_-Y_10",
+        "ST_VERTICAL_N_05_-Y_11",
+        "ST_VERTICAL_N_05_-Y_9",
+        "ST_VERTICAL_N_05_-Z_13"
+      ],
+      "target_m": [
+        191.25,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_05",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_072",
+      "position_m": [
+        182.7422,
+        15.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 9.021,
+      "cumulative_distance_m": 785.173,
+      "covers": [
+        "ST_DIAGONAL_N_04_+X_1",
+        "ST_DIAGONAL_N_04_+Y_10",
+        "ST_DIAGONAL_N_04_+Y_11",
+        "ST_DIAGONAL_N_04_+Y_6",
+        "ST_DIAGONAL_N_04_+Y_7",
+        "ST_DIAGONAL_N_04_+Y_8",
+        "ST_DIAGONAL_N_04_+Y_9",
+        "ST_DIAGONAL_N_04_+Z_18",
+        "ST_DIAGONAL_N_04_+Z_19",
+        "ST_DIAGONAL_N_04_-X_3",
+        "ST_DIAGONAL_N_04_-X_4",
+        "ST_DIAGONAL_N_04_-X_5",
+        "ST_DIAGONAL_N_04_-Y_12",
+        "ST_DIAGONAL_N_04_-Y_13",
+        "ST_DIAGONAL_N_04_-Y_14",
+        "ST_DIAGONAL_N_04_-Y_15",
+        "ST_DIAGONAL_N_04_-Y_16",
+        "ST_DIAGONAL_N_04_-Y_17",
+        "ST_DIAGONAL_N_04_-Z_20",
+        "ST_DIAGONAL_N_04_-Z_21"
+      ],
+      "target_m": [
+        182.7422,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_04",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_073",
+      "position_m": [
+        180.0,
+        15.225,
+        13.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 4.064,
+      "cumulative_distance_m": 789.238,
+      "covers": [
+        "ST_VERTICAL_N_04_+X_0",
+        "ST_VERTICAL_N_04_+X_1",
+        "ST_VERTICAL_N_04_+X_2",
+        "ST_VERTICAL_N_04_+Y_6",
+        "ST_VERTICAL_N_04_+Y_7",
+        "ST_VERTICAL_N_04_+Y_8",
+        "ST_VERTICAL_N_04_+Z_12",
+        "ST_VERTICAL_N_04_-X_3",
+        "ST_VERTICAL_N_04_-X_4",
+        "ST_VERTICAL_N_04_-X_5",
+        "ST_VERTICAL_N_04_-Y_10",
+        "ST_VERTICAL_N_04_-Y_11",
+        "ST_VERTICAL_N_04_-Y_9",
+        "ST_VERTICAL_N_04_-Z_13"
+      ],
+      "target_m": [
+        180.0,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_04",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "position_m": [
+        171.4922,
+        15.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 9.021,
+      "cumulative_distance_m": 798.259,
+      "covers": [
+        "ST_DIAGONAL_N_03_+X_1",
+        "ST_DIAGONAL_N_03_+Y_10",
+        "ST_DIAGONAL_N_03_+Y_11",
+        "ST_DIAGONAL_N_03_+Y_6",
+        "ST_DIAGONAL_N_03_+Y_7",
+        "ST_DIAGONAL_N_03_+Y_8",
+        "ST_DIAGONAL_N_03_+Y_9",
+        "ST_DIAGONAL_N_03_+Z_18",
+        "ST_DIAGONAL_N_03_+Z_19",
+        "ST_DIAGONAL_N_03_-X_3",
+        "ST_DIAGONAL_N_03_-X_4",
+        "ST_DIAGONAL_N_03_-X_5",
+        "ST_DIAGONAL_N_03_-Y_12",
+        "ST_DIAGONAL_N_03_-Y_13",
+        "ST_DIAGONAL_N_03_-Y_14",
+        "ST_DIAGONAL_N_03_-Y_15",
+        "ST_DIAGONAL_N_03_-Y_16",
+        "ST_DIAGONAL_N_03_-Y_17",
+        "ST_DIAGONAL_N_03_-Z_20",
+        "ST_DIAGONAL_N_03_-Z_21"
+      ],
+      "target_m": [
+        171.4922,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_03",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_075",
+      "position_m": [
+        168.75,
+        15.225,
+        13.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 4.064,
+      "cumulative_distance_m": 802.324,
+      "covers": [
+        "ST_VERTICAL_N_03_+X_0",
+        "ST_VERTICAL_N_03_+X_1",
+        "ST_VERTICAL_N_03_+X_2",
+        "ST_VERTICAL_N_03_+Y_6",
+        "ST_VERTICAL_N_03_+Y_7",
+        "ST_VERTICAL_N_03_+Y_8",
+        "ST_VERTICAL_N_03_+Z_12",
+        "ST_VERTICAL_N_03_-X_3",
+        "ST_VERTICAL_N_03_-X_4",
+        "ST_VERTICAL_N_03_-X_5",
+        "ST_VERTICAL_N_03_-Y_10",
+        "ST_VERTICAL_N_03_-Y_11",
+        "ST_VERTICAL_N_03_-Y_9",
+        "ST_VERTICAL_N_03_-Z_13"
+      ],
+      "target_m": [
+        168.75,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_03",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_076",
+      "position_m": [
+        160.2422,
+        15.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 9.021,
+      "cumulative_distance_m": 811.345,
+      "covers": [
+        "ST_DIAGONAL_N_02_+X_1",
+        "ST_DIAGONAL_N_02_+Y_10",
+        "ST_DIAGONAL_N_02_+Y_11",
+        "ST_DIAGONAL_N_02_+Y_6",
+        "ST_DIAGONAL_N_02_+Y_7",
+        "ST_DIAGONAL_N_02_+Y_8",
+        "ST_DIAGONAL_N_02_+Y_9",
+        "ST_DIAGONAL_N_02_+Z_18",
+        "ST_DIAGONAL_N_02_+Z_19",
+        "ST_DIAGONAL_N_02_-X_3",
+        "ST_DIAGONAL_N_02_-X_4",
+        "ST_DIAGONAL_N_02_-X_5",
+        "ST_DIAGONAL_N_02_-Y_12",
+        "ST_DIAGONAL_N_02_-Y_13",
+        "ST_DIAGONAL_N_02_-Y_14",
+        "ST_DIAGONAL_N_02_-Y_15",
+        "ST_DIAGONAL_N_02_-Y_16",
+        "ST_DIAGONAL_N_02_-Y_17",
+        "ST_DIAGONAL_N_02_-Z_20",
+        "ST_DIAGONAL_N_02_-Z_21"
+      ],
+      "target_m": [
+        160.2422,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_02",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_077",
+      "position_m": [
+        157.5,
+        15.225,
+        13.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 4.064,
+      "cumulative_distance_m": 815.409,
+      "covers": [
+        "ST_VERTICAL_N_02_+X_0",
+        "ST_VERTICAL_N_02_+X_1",
+        "ST_VERTICAL_N_02_+X_2",
+        "ST_VERTICAL_N_02_+Y_6",
+        "ST_VERTICAL_N_02_+Y_7",
+        "ST_VERTICAL_N_02_+Y_8",
+        "ST_VERTICAL_N_02_+Z_12",
+        "ST_VERTICAL_N_02_-X_3",
+        "ST_VERTICAL_N_02_-X_4",
+        "ST_VERTICAL_N_02_-X_5",
+        "ST_VERTICAL_N_02_-Y_10",
+        "ST_VERTICAL_N_02_-Y_11",
+        "ST_VERTICAL_N_02_-Y_9",
+        "ST_VERTICAL_N_02_-Z_13"
+      ],
+      "target_m": [
+        157.5,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_02",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_078",
+      "position_m": [
+        148.9922,
+        15.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 9.021,
+      "cumulative_distance_m": 824.43,
+      "covers": [
+        "ST_DIAGONAL_N_01_+X_1",
+        "ST_DIAGONAL_N_01_+Y_10",
+        "ST_DIAGONAL_N_01_+Y_11",
+        "ST_DIAGONAL_N_01_+Y_6",
+        "ST_DIAGONAL_N_01_+Y_7",
+        "ST_DIAGONAL_N_01_+Y_8",
+        "ST_DIAGONAL_N_01_+Y_9",
+        "ST_DIAGONAL_N_01_+Z_18",
+        "ST_DIAGONAL_N_01_+Z_19",
+        "ST_DIAGONAL_N_01_-X_3",
+        "ST_DIAGONAL_N_01_-X_4",
+        "ST_DIAGONAL_N_01_-X_5",
+        "ST_DIAGONAL_N_01_-Y_12",
+        "ST_DIAGONAL_N_01_-Y_13",
+        "ST_DIAGONAL_N_01_-Y_14",
+        "ST_DIAGONAL_N_01_-Y_15",
+        "ST_DIAGONAL_N_01_-Y_16",
+        "ST_DIAGONAL_N_01_-Y_17",
+        "ST_DIAGONAL_N_01_-Z_20",
+        "ST_DIAGONAL_N_01_-Z_21"
+      ],
+      "target_m": [
+        148.9922,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_01",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_079",
+      "position_m": [
+        146.25,
+        15.225,
+        13.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 4.064,
+      "cumulative_distance_m": 828.495,
+      "covers": [
+        "ST_VERTICAL_N_01_+X_0",
+        "ST_VERTICAL_N_01_+X_1",
+        "ST_VERTICAL_N_01_+X_2",
+        "ST_VERTICAL_N_01_+Y_6",
+        "ST_VERTICAL_N_01_+Y_7",
+        "ST_VERTICAL_N_01_+Y_8",
+        "ST_VERTICAL_N_01_+Z_12",
+        "ST_VERTICAL_N_01_-X_3",
+        "ST_VERTICAL_N_01_-X_4",
+        "ST_VERTICAL_N_01_-X_5",
+        "ST_VERTICAL_N_01_-Y_10",
+        "ST_VERTICAL_N_01_-Y_11",
+        "ST_VERTICAL_N_01_-Y_9",
+        "ST_VERTICAL_N_01_-Z_13"
+      ],
+      "target_m": [
+        146.25,
+        7.225,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_01",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "position_m": [
+        137.7422,
+        15.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 9.021,
+      "cumulative_distance_m": 837.516,
+      "covers": [
+        "ST_DIAGONAL_N_00_+X_1",
+        "ST_DIAGONAL_N_00_+Y_10",
+        "ST_DIAGONAL_N_00_+Y_11",
+        "ST_DIAGONAL_N_00_+Y_6",
+        "ST_DIAGONAL_N_00_+Y_7",
+        "ST_DIAGONAL_N_00_+Y_8",
+        "ST_DIAGONAL_N_00_+Y_9",
+        "ST_DIAGONAL_N_00_+Z_18",
+        "ST_DIAGONAL_N_00_+Z_19",
+        "ST_DIAGONAL_N_00_-X_3",
+        "ST_DIAGONAL_N_00_-X_4",
+        "ST_DIAGONAL_N_00_-X_5",
+        "ST_DIAGONAL_N_00_-Y_12",
+        "ST_DIAGONAL_N_00_-Y_13",
+        "ST_DIAGONAL_N_00_-Y_14",
+        "ST_DIAGONAL_N_00_-Y_15",
+        "ST_DIAGONAL_N_00_-Y_16",
+        "ST_DIAGONAL_N_00_-Y_17",
+        "ST_DIAGONAL_N_00_-Z_20",
+        "ST_DIAGONAL_N_00_-Z_21"
+      ],
+      "target_m": [
+        137.7422,
+        7.225,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_N_00",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_081",
+      "position_m": [
+        126.775,
+        7.0,
+        13.5
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 14.033,
+      "cumulative_distance_m": 851.549,
+      "covers": [
+        "ST_VERTICAL_N_00_+X_0",
+        "ST_VERTICAL_N_00_+X_1",
+        "ST_VERTICAL_N_00_+X_2",
+        "ST_VERTICAL_N_00_+Y_6",
+        "ST_VERTICAL_N_00_+Y_7",
+        "ST_VERTICAL_N_00_+Y_8",
+        "ST_VERTICAL_N_00_+Z_12",
+        "ST_VERTICAL_N_00_-X_3",
+        "ST_VERTICAL_N_00_-X_4",
+        "ST_VERTICAL_N_00_-X_5",
+        "ST_VERTICAL_N_00_-Y_10",
+        "ST_VERTICAL_N_00_-Y_11",
+        "ST_VERTICAL_N_00_-Y_9",
+        "ST_VERTICAL_N_00_-Z_13"
+      ],
+      "target_m": [
+        134.775,
+        7.0,
+        13.5
+      ],
+      "prim_name": "ST_VERTICAL_N_00",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_082",
+      "position_m": [
+        144.0,
+        28.0,
+        8.0772
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 27.697,
+      "cumulative_distance_m": 879.246,
+      "covers": [
+        "MB_PIER_COL_005_cap_bottom",
+        "MB_PIER_COL_005_cap_top",
+        "MB_PIER_COL_005_side_0",
+        "MB_PIER_COL_005_side_1",
+        "MB_PIER_COL_005_side_10",
+        "MB_PIER_COL_005_side_11",
+        "MB_PIER_COL_005_side_2",
+        "MB_PIER_COL_005_side_3",
+        "MB_PIER_COL_005_side_4",
+        "MB_PIER_COL_005_side_5",
+        "MB_PIER_COL_005_side_6",
+        "MB_PIER_COL_005_side_7",
+        "MB_PIER_COL_005_side_8",
+        "MB_PIER_COL_005_side_9"
+      ],
+      "target_m": [
+        136.0,
+        28.0,
+        8.0772
+      ],
+      "prim_name": "MB_PIER_COL_005",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_083",
+      "position_m": [
+        135.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 18.621,
+      "cumulative_distance_m": 897.867,
+      "covers": [
+        "MB_JOINT_005_+X_0",
+        "MB_JOINT_005_+X_1",
+        "MB_JOINT_005_+Y_4",
+        "MB_JOINT_005_+Z_6",
+        "MB_JOINT_005_+Z_7",
+        "MB_JOINT_005_+Z_8",
+        "MB_JOINT_005_-X_2",
+        "MB_JOINT_005_-X_3",
+        "MB_JOINT_005_-Y_5",
+        "MB_JOINT_005_-Z_10",
+        "MB_JOINT_005_-Z_11",
+        "MB_JOINT_005_-Z_9"
+      ],
+      "target_m": [
+        135.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_005",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_084",
+      "position_m": [
+        97.5,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 37.5,
+      "cumulative_distance_m": 935.367,
+      "covers": [
+        "MB_DECK_TOP_004_+Y_4",
+        "MB_DECK_TOP_004_+Z_10",
+        "MB_DECK_TOP_004_+Z_11",
+        "MB_DECK_TOP_004_+Z_12",
+        "MB_DECK_TOP_004_-X_3",
+        "MB_DECK_TOP_004_-Y_7",
+        "MB_DECK_TOP_004_-Z_19",
+        "MB_DECK_TOP_004_-Z_20",
+        "MB_DECK_TOP_004_-Z_21"
+      ],
+      "target_m": [
+        97.5,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_004",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_085",
+      "position_m": [
+        90.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 7.5,
+      "cumulative_distance_m": 942.867,
+      "covers": [
+        "MB_JOINT_004_+X_0",
+        "MB_JOINT_004_+X_1",
+        "MB_JOINT_004_+Y_4",
+        "MB_JOINT_004_+Z_6",
+        "MB_JOINT_004_+Z_7",
+        "MB_JOINT_004_+Z_8",
+        "MB_JOINT_004_-X_2",
+        "MB_JOINT_004_-X_3",
+        "MB_JOINT_004_-Y_5",
+        "MB_JOINT_004_-Z_10",
+        "MB_JOINT_004_-Z_11",
+        "MB_JOINT_004_-Z_9"
+      ],
+      "target_m": [
+        90.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_004",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_086",
+      "position_m": [
+        85.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 947.868,
+      "covers": [
+        "MB_DECK_TOP_003_+X_0",
+        "MB_DECK_TOP_003_+X_1",
+        "MB_DECK_TOP_003_+Y_6",
+        "MB_DECK_TOP_003_+Z_16",
+        "MB_DECK_TOP_003_+Z_17",
+        "MB_DECK_TOP_003_+Z_18",
+        "MB_DECK_TOP_003_-Y_9",
+        "MB_DECK_TOP_003_-Z_25",
+        "MB_DECK_TOP_003_-Z_26",
+        "MB_DECK_TOP_003_-Z_27"
+      ],
+      "target_m": [
+        85.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_003",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_087",
+      "position_m": [
+        65.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 20.0,
+      "cumulative_distance_m": 967.868,
+      "covers": [
+        "MB_DECK_TOP_003_+Y_4",
+        "MB_DECK_TOP_003_+Z_10",
+        "MB_DECK_TOP_003_+Z_11",
+        "MB_DECK_TOP_003_+Z_12",
+        "MB_DECK_TOP_003_-X_2",
+        "MB_DECK_TOP_003_-X_3",
+        "MB_DECK_TOP_003_-Y_7",
+        "MB_DECK_TOP_003_-Z_19",
+        "MB_DECK_TOP_003_-Z_20",
+        "MB_DECK_TOP_003_-Z_21"
+      ],
+      "target_m": [
+        65.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_003",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_088",
+      "position_m": [
+        60.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 972.868,
+      "covers": [
+        "MB_JOINT_003_+X_0",
+        "MB_JOINT_003_+X_1",
+        "MB_JOINT_003_+Y_4",
+        "MB_JOINT_003_+Z_6",
+        "MB_JOINT_003_+Z_7",
+        "MB_JOINT_003_+Z_8",
+        "MB_JOINT_003_-X_2",
+        "MB_JOINT_003_-X_3",
+        "MB_JOINT_003_-Y_5",
+        "MB_JOINT_003_-Z_10",
+        "MB_JOINT_003_-Z_11",
+        "MB_JOINT_003_-Z_9"
+      ],
+      "target_m": [
+        60.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_003",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_089",
+      "position_m": [
+        55.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 977.869,
+      "covers": [
+        "MB_DECK_TOP_002_+X_0",
+        "MB_DECK_TOP_002_+X_1",
+        "MB_DECK_TOP_002_+Y_6",
+        "MB_DECK_TOP_002_+Z_16",
+        "MB_DECK_TOP_002_+Z_17",
+        "MB_DECK_TOP_002_+Z_18",
+        "MB_DECK_TOP_002_-Y_9",
+        "MB_DECK_TOP_002_-Z_25",
+        "MB_DECK_TOP_002_-Z_26",
+        "MB_DECK_TOP_002_-Z_27"
+      ],
+      "target_m": [
+        55.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_002",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_090",
+      "position_m": [
+        35.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 20.0,
+      "cumulative_distance_m": 997.869,
+      "covers": [
+        "MB_DECK_TOP_002_+Y_4",
+        "MB_DECK_TOP_002_+Z_10",
+        "MB_DECK_TOP_002_+Z_11",
+        "MB_DECK_TOP_002_+Z_12",
+        "MB_DECK_TOP_002_-X_2",
+        "MB_DECK_TOP_002_-X_3",
+        "MB_DECK_TOP_002_-Y_7",
+        "MB_DECK_TOP_002_-Z_19",
+        "MB_DECK_TOP_002_-Z_20",
+        "MB_DECK_TOP_002_-Z_21"
+      ],
+      "target_m": [
+        35.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_002",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_091",
+      "position_m": [
+        30.0,
+        40.3,
+        18.775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 1002.869,
+      "covers": [
+        "MB_JOINT_002_+X_0",
+        "MB_JOINT_002_+X_1",
+        "MB_JOINT_002_+Y_4",
+        "MB_JOINT_002_+Z_6",
+        "MB_JOINT_002_+Z_7",
+        "MB_JOINT_002_+Z_8",
+        "MB_JOINT_002_-X_2",
+        "MB_JOINT_002_-X_3",
+        "MB_JOINT_002_-Y_5",
+        "MB_JOINT_002_-Z_10",
+        "MB_JOINT_002_-Z_11",
+        "MB_JOINT_002_-Z_9"
+      ],
+      "target_m": [
+        30.0,
+        32.3,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_002",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_092",
+      "position_m": [
+        25.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 5.001,
+      "cumulative_distance_m": 1007.87,
+      "covers": [
+        "MB_DECK_TOP_001_+X_0",
+        "MB_DECK_TOP_001_+X_1",
+        "MB_DECK_TOP_001_+Y_6",
+        "MB_DECK_TOP_001_+Z_16",
+        "MB_DECK_TOP_001_+Z_17",
+        "MB_DECK_TOP_001_+Z_18",
+        "MB_DECK_TOP_001_-Y_9",
+        "MB_DECK_TOP_001_-Z_25",
+        "MB_DECK_TOP_001_-Z_26",
+        "MB_DECK_TOP_001_-Z_27"
+      ],
+      "target_m": [
+        25.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_001",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_093",
+      "position_m": [
+        23.14,
+        31.1,
+        20.85
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 9.597,
+      "cumulative_distance_m": 1017.467,
+      "covers": [
+        "MB_MAST_001_+X_0",
+        "MB_MAST_001_+X_1",
+        "MB_MAST_001_+Y_4",
+        "MB_MAST_001_+Y_5",
+        "MB_MAST_001_+Z_8",
+        "MB_MAST_001_-X_2",
+        "MB_MAST_001_-X_3",
+        "MB_MAST_001_-Y_6",
+        "MB_MAST_001_-Y_7",
+        "MB_MAST_001_-Z_9"
+      ],
+      "target_m": [
+        15.14,
+        31.1,
+        20.85
+      ],
+      "prim_name": "MB_MAST_001",
+      "prim_kind": "catenary_mast"
+    },
+    {
+      "waypoint_id": "CWP_094",
+      "position_m": [
+        5.0,
+        40.3,
+        18.85
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 20.438,
+      "cumulative_distance_m": 1037.905,
+      "covers": [
+        "MB_DECK_TOP_001_+Y_4",
+        "MB_DECK_TOP_001_+Z_10",
+        "MB_DECK_TOP_001_+Z_11",
+        "MB_DECK_TOP_001_+Z_12",
+        "MB_DECK_TOP_001_-X_2",
+        "MB_DECK_TOP_001_-X_3",
+        "MB_DECK_TOP_001_-Y_7",
+        "MB_DECK_TOP_001_-Z_19",
+        "MB_DECK_TOP_001_-Z_20",
+        "MB_DECK_TOP_001_-Z_21"
+      ],
+      "target_m": [
+        5.0,
+        32.3,
+        18.85
+      ],
+      "prim_name": "MB_DECK_TOP_001",
+      "prim_kind": "deck_box"
+    },
+    {
+      "waypoint_id": "CWP_095",
+      "position_m": [
+        9.0,
+        28.0,
+        8.0364
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 16.859,
+      "cumulative_distance_m": 1054.764,
+      "covers": [
+        "MB_PIER_COL_001_cap_bottom",
+        "MB_PIER_COL_001_cap_top",
+        "MB_PIER_COL_001_side_0",
+        "MB_PIER_COL_001_side_1",
+        "MB_PIER_COL_001_side_10",
+        "MB_PIER_COL_001_side_11",
+        "MB_PIER_COL_001_side_2",
+        "MB_PIER_COL_001_side_3",
+        "MB_PIER_COL_001_side_4",
+        "MB_PIER_COL_001_side_5",
+        "MB_PIER_COL_001_side_6",
+        "MB_PIER_COL_001_side_7",
+        "MB_PIER_COL_001_side_8",
+        "MB_PIER_COL_001_side_9"
+      ],
+      "target_m": [
+        1.0,
+        28.0,
+        8.0364
+      ],
+      "prim_name": "MB_PIER_COL_001",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_096",
+      "position_m": [
+        6.5,
+        16.9,
+        5.6
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 11.636,
+      "cumulative_distance_m": 1066.4,
+      "covers": [
+        "BR_WINGWALL_SOUTH_L_+Y_10",
+        "BR_WINGWALL_SOUTH_L_+Y_11",
+        "BR_WINGWALL_SOUTH_L_+Y_6",
+        "BR_WINGWALL_SOUTH_L_+Y_7",
+        "BR_WINGWALL_SOUTH_L_+Y_8",
+        "BR_WINGWALL_SOUTH_L_+Y_9",
+        "BR_WINGWALL_SOUTH_L_+Z_18",
+        "BR_WINGWALL_SOUTH_L_+Z_19",
+        "BR_WINGWALL_SOUTH_L_-X_3",
+        "BR_WINGWALL_SOUTH_L_-X_4",
+        "BR_WINGWALL_SOUTH_L_-X_5",
+        "BR_WINGWALL_SOUTH_L_-Y_12",
+        "BR_WINGWALL_SOUTH_L_-Y_13",
+        "BR_WINGWALL_SOUTH_L_-Y_14",
+        "BR_WINGWALL_SOUTH_L_-Y_15",
+        "BR_WINGWALL_SOUTH_L_-Y_16",
+        "BR_WINGWALL_SOUTH_L_-Y_17"
+      ],
+      "target_m": [
+        6.5,
+        8.9,
+        5.6
+      ],
+      "prim_name": "BR_WINGWALL_SOUTH_L",
+      "prim_kind": "structure"
+    },
+    {
+      "waypoint_id": "CWP_097",
+      "position_m": [
+        0.0,
+        11.6,
+        5.2775
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 8.393,
+      "cumulative_distance_m": 1074.793,
+      "covers": [
+        "BR_PIER_COL_001_2_cap_top",
+        "BR_PIER_COL_001_2_side_0",
+        "BR_PIER_COL_001_2_side_1",
+        "BR_PIER_COL_001_2_side_10",
+        "BR_PIER_COL_001_2_side_11",
+        "BR_PIER_COL_001_2_side_2",
+        "BR_PIER_COL_001_2_side_3",
+        "BR_PIER_COL_001_2_side_4",
+        "BR_PIER_COL_001_2_side_5",
+        "BR_PIER_COL_001_2_side_6",
+        "BR_PIER_COL_001_2_side_7",
+        "BR_PIER_COL_001_2_side_8",
+        "BR_PIER_COL_001_2_side_9"
+      ],
+      "target_m": [
+        0.0,
+        3.6,
+        5.2775
+      ],
+      "prim_name": "BR_PIER_COL_001_2",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_098",
+      "position_m": [
+        -8.5,
+        6.0,
+        7.0
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 10.324,
+      "cumulative_distance_m": 1085.116,
+      "covers": [
+        "BR_ABUTMENT_SOUTH_+X_6",
+        "BR_ABUTMENT_SOUTH_+X_7",
+        "BR_ABUTMENT_SOUTH_+X_8",
+        "BR_ABUTMENT_SOUTH_+Y_18",
+        "BR_ABUTMENT_SOUTH_+Y_19",
+        "BR_ABUTMENT_SOUTH_+Y_20",
+        "BR_ABUTMENT_SOUTH_+Z_26",
+        "BR_ABUTMENT_SOUTH_-X_12",
+        "BR_ABUTMENT_SOUTH_-X_13",
+        "BR_ABUTMENT_SOUTH_-X_14",
+        "BR_ABUTMENT_SOUTH_-X_15",
+        "BR_ABUTMENT_SOUTH_-X_16",
+        "BR_ABUTMENT_SOUTH_-X_17"
+      ],
+      "target_m": [
+        -0.5,
+        6.0,
+        7.0
+      ],
+      "prim_name": "BR_ABUTMENT_SOUTH",
+      "prim_kind": "abutment"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "position_m": [
+        -8.85,
+        -2.75,
+        8.6758
+      ],
+      "heading_rad": -0.0,
+      "heading_deg": -0.0,
+      "leg_distance_m": 8.916,
+      "cumulative_distance_m": 1094.032,
+      "covers": [
+        "BR_PIER_COL_001_1_cap_top",
+        "BR_PIER_COL_001_1_side_0",
+        "BR_PIER_COL_001_1_side_1",
+        "BR_PIER_COL_001_1_side_10",
+        "BR_PIER_COL_001_1_side_11",
+        "BR_PIER_COL_001_1_side_2",
+        "BR_PIER_COL_001_1_side_3",
+        "BR_PIER_COL_001_1_side_4",
+        "BR_PIER_COL_001_1_side_5",
+        "BR_PIER_COL_001_1_side_6",
+        "BR_PIER_COL_001_1_side_7",
+        "BR_PIER_COL_001_1_side_8",
+        "BR_PIER_COL_001_1_side_9"
+      ],
+      "target_m": [
+        -0.85,
+        -2.75,
+        8.6758
+      ],
+      "prim_name": "BR_PIER_COL_001_1",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "position_m": [
+        -8.9,
+        -3.0,
+        11.075
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 2.413,
+      "cumulative_distance_m": 1096.445,
+      "covers": [
+        "BR_PIER_CAP_001_+X_0",
+        "BR_PIER_CAP_001_+X_1",
+        "BR_PIER_CAP_001_+Z_6",
+        "BR_PIER_CAP_001_+Z_7",
+        "BR_PIER_CAP_001_+Z_8",
+        "BR_PIER_CAP_001_-X_2",
+        "BR_PIER_CAP_001_-X_3",
+        "BR_PIER_CAP_001_-Y_5",
+        "BR_PIER_CAP_001_-Z_10",
+        "BR_PIER_CAP_001_-Z_11",
+        "BR_PIER_CAP_001_-Z_9"
+      ],
+      "target_m": [
+        -0.9,
+        -3.0,
+        11.075
+      ],
+      "prim_name": "BR_PIER_CAP_001",
+      "prim_kind": "pier_cap"
+    },
+    {
+      "waypoint_id": "CWP_101",
+      "position_m": [
+        -8.06,
+        25.85,
+        18.775
+      ],
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "leg_distance_m": 29.872,
+      "cumulative_distance_m": 1126.316,
+      "covers": [
+        "MB_JOINT_001_+X_0",
+        "MB_JOINT_001_+X_1",
+        "MB_JOINT_001_+Y_4",
+        "MB_JOINT_001_+Z_6",
+        "MB_JOINT_001_+Z_7",
+        "MB_JOINT_001_+Z_8",
+        "MB_JOINT_001_-X_2",
+        "MB_JOINT_001_-X_3",
+        "MB_JOINT_001_-Y_5",
+        "MB_JOINT_001_-Z_10",
+        "MB_JOINT_001_-Z_11",
+        "MB_JOINT_001_-Z_9"
+      ],
+      "target_m": [
+        -0.06,
+        25.85,
+        18.775
+      ],
+      "prim_name": "MB_JOINT_001",
+      "prim_kind": "joint_gap"
+    },
+    {
+      "waypoint_id": "CWP_102",
+      "position_m": [
+        39.0,
+        28.0,
+        8.0506
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 48.314,
+      "cumulative_distance_m": 1174.631,
+      "covers": [
+        "MB_PIER_COL_002_cap_bottom",
+        "MB_PIER_COL_002_cap_top",
+        "MB_PIER_COL_002_side_0",
+        "MB_PIER_COL_002_side_1",
+        "MB_PIER_COL_002_side_10",
+        "MB_PIER_COL_002_side_11",
+        "MB_PIER_COL_002_side_2",
+        "MB_PIER_COL_002_side_3",
+        "MB_PIER_COL_002_side_4",
+        "MB_PIER_COL_002_side_5",
+        "MB_PIER_COL_002_side_6",
+        "MB_PIER_COL_002_side_7",
+        "MB_PIER_COL_002_side_8",
+        "MB_PIER_COL_002_side_9"
+      ],
+      "target_m": [
+        31.0,
+        28.0,
+        8.0506
+      ],
+      "prim_name": "MB_PIER_COL_002",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_103",
+      "position_m": [
+        135.0,
+        0.0,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 102.202,
+      "cumulative_distance_m": 1276.833,
+      "covers": [
+        "ST_PORTAL_STRUT_135_+X_0",
+        "ST_PORTAL_STRUT_135_+X_1",
+        "ST_PORTAL_STRUT_135_+Y_4",
+        "ST_PORTAL_STRUT_135_+Z_6",
+        "ST_PORTAL_STRUT_135_+Z_7",
+        "ST_PORTAL_STRUT_135_+Z_8",
+        "ST_PORTAL_STRUT_135_-X_2",
+        "ST_PORTAL_STRUT_135_-X_3",
+        "ST_PORTAL_STRUT_135_-Y_5",
+        "ST_PORTAL_STRUT_135_-Z_10",
+        "ST_PORTAL_STRUT_135_-Z_11",
+        "ST_PORTAL_STRUT_135_-Z_9"
+      ],
+      "target_m": [
+        135.0,
+        0.0,
+        21.15
+      ],
+      "prim_name": "ST_PORTAL_STRUT_135",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_104",
+      "position_m": [
+        138.8267,
+        2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.433,
+      "cumulative_distance_m": 1281.266,
+      "covers": [
+        "ST_BRACING_TOP_00_B_+Y_4",
+        "ST_BRACING_TOP_00_B_+Z_10",
+        "ST_BRACING_TOP_00_B_+Z_11",
+        "ST_BRACING_TOP_00_B_+Z_12",
+        "ST_BRACING_TOP_00_B_+Z_13",
+        "ST_BRACING_TOP_00_B_+Z_8",
+        "ST_BRACING_TOP_00_B_+Z_9",
+        "ST_BRACING_TOP_00_B_-X_2",
+        "ST_BRACING_TOP_00_B_-X_3",
+        "ST_BRACING_TOP_00_B_-Y_6",
+        "ST_BRACING_TOP_00_B_-Z_14",
+        "ST_BRACING_TOP_00_B_-Z_15",
+        "ST_BRACING_TOP_00_B_-Z_16",
+        "ST_BRACING_TOP_00_B_-Z_17",
+        "ST_BRACING_TOP_00_B_-Z_18",
+        "ST_BRACING_TOP_00_B_-Z_19"
+      ],
+      "target_m": [
+        138.8267,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_00_B",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "position_m": [
+        138.8267,
+        -2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.476,
+      "cumulative_distance_m": 1285.741,
+      "covers": [
+        "ST_BRACING_TOP_00_A_+Y_4",
+        "ST_BRACING_TOP_00_A_+Z_10",
+        "ST_BRACING_TOP_00_A_+Z_11",
+        "ST_BRACING_TOP_00_A_+Z_12",
+        "ST_BRACING_TOP_00_A_+Z_13",
+        "ST_BRACING_TOP_00_A_+Z_8",
+        "ST_BRACING_TOP_00_A_+Z_9",
+        "ST_BRACING_TOP_00_A_-X_2",
+        "ST_BRACING_TOP_00_A_-X_3",
+        "ST_BRACING_TOP_00_A_-Y_6",
+        "ST_BRACING_TOP_00_A_-Z_14",
+        "ST_BRACING_TOP_00_A_-Z_15",
+        "ST_BRACING_TOP_00_A_-Z_16",
+        "ST_BRACING_TOP_00_A_-Z_17",
+        "ST_BRACING_TOP_00_A_-Z_18",
+        "ST_BRACING_TOP_00_A_-Z_19"
+      ],
+      "target_m": [
+        138.8267,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_00_A",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_106",
+      "position_m": [
+        150.0767,
+        -2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 1296.991,
+      "covers": [
+        "ST_BRACING_TOP_01_A_+Y_4",
+        "ST_BRACING_TOP_01_A_+Z_10",
+        "ST_BRACING_TOP_01_A_+Z_11",
+        "ST_BRACING_TOP_01_A_+Z_12",
+        "ST_BRACING_TOP_01_A_+Z_13",
+        "ST_BRACING_TOP_01_A_+Z_8",
+        "ST_BRACING_TOP_01_A_+Z_9",
+        "ST_BRACING_TOP_01_A_-X_2",
+        "ST_BRACING_TOP_01_A_-X_3",
+        "ST_BRACING_TOP_01_A_-Y_6",
+        "ST_BRACING_TOP_01_A_-Z_14",
+        "ST_BRACING_TOP_01_A_-Z_15",
+        "ST_BRACING_TOP_01_A_-Z_16",
+        "ST_BRACING_TOP_01_A_-Z_17",
+        "ST_BRACING_TOP_01_A_-Z_18",
+        "ST_BRACING_TOP_01_A_-Z_19"
+      ],
+      "target_m": [
+        150.0767,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_01_A",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_107",
+      "position_m": [
+        150.0767,
+        2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.476,
+      "cumulative_distance_m": 1301.467,
+      "covers": [
+        "ST_BRACING_TOP_01_B_+Y_4",
+        "ST_BRACING_TOP_01_B_+Z_10",
+        "ST_BRACING_TOP_01_B_+Z_11",
+        "ST_BRACING_TOP_01_B_+Z_12",
+        "ST_BRACING_TOP_01_B_+Z_13",
+        "ST_BRACING_TOP_01_B_+Z_8",
+        "ST_BRACING_TOP_01_B_+Z_9",
+        "ST_BRACING_TOP_01_B_-X_2",
+        "ST_BRACING_TOP_01_B_-X_3",
+        "ST_BRACING_TOP_01_B_-Y_6",
+        "ST_BRACING_TOP_01_B_-Z_14",
+        "ST_BRACING_TOP_01_B_-Z_15",
+        "ST_BRACING_TOP_01_B_-Z_16",
+        "ST_BRACING_TOP_01_B_-Z_17",
+        "ST_BRACING_TOP_01_B_-Z_18",
+        "ST_BRACING_TOP_01_B_-Z_19"
+      ],
+      "target_m": [
+        150.0767,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_01_B",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_108",
+      "position_m": [
+        161.3267,
+        2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 1312.717,
+      "covers": [
+        "ST_BRACING_TOP_02_B_+Y_4",
+        "ST_BRACING_TOP_02_B_+Z_10",
+        "ST_BRACING_TOP_02_B_+Z_11",
+        "ST_BRACING_TOP_02_B_+Z_12",
+        "ST_BRACING_TOP_02_B_+Z_13",
+        "ST_BRACING_TOP_02_B_+Z_8",
+        "ST_BRACING_TOP_02_B_+Z_9",
+        "ST_BRACING_TOP_02_B_-X_2",
+        "ST_BRACING_TOP_02_B_-X_3",
+        "ST_BRACING_TOP_02_B_-Y_6",
+        "ST_BRACING_TOP_02_B_-Z_14",
+        "ST_BRACING_TOP_02_B_-Z_15",
+        "ST_BRACING_TOP_02_B_-Z_16",
+        "ST_BRACING_TOP_02_B_-Z_17",
+        "ST_BRACING_TOP_02_B_-Z_18",
+        "ST_BRACING_TOP_02_B_-Z_19"
+      ],
+      "target_m": [
+        161.3267,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_02_B",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "position_m": [
+        161.3267,
+        -2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.476,
+      "cumulative_distance_m": 1317.193,
+      "covers": [
+        "ST_BRACING_TOP_02_A_+Y_4",
+        "ST_BRACING_TOP_02_A_+Z_10",
+        "ST_BRACING_TOP_02_A_+Z_11",
+        "ST_BRACING_TOP_02_A_+Z_12",
+        "ST_BRACING_TOP_02_A_+Z_13",
+        "ST_BRACING_TOP_02_A_+Z_8",
+        "ST_BRACING_TOP_02_A_+Z_9",
+        "ST_BRACING_TOP_02_A_-X_2",
+        "ST_BRACING_TOP_02_A_-X_3",
+        "ST_BRACING_TOP_02_A_-Y_6",
+        "ST_BRACING_TOP_02_A_-Z_14",
+        "ST_BRACING_TOP_02_A_-Z_15",
+        "ST_BRACING_TOP_02_A_-Z_16",
+        "ST_BRACING_TOP_02_A_-Z_17",
+        "ST_BRACING_TOP_02_A_-Z_18",
+        "ST_BRACING_TOP_02_A_-Z_19"
+      ],
+      "target_m": [
+        161.3267,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_02_A",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_110",
+      "position_m": [
+        172.5767,
+        -2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 1328.443,
+      "covers": [
+        "ST_BRACING_TOP_03_A_+Y_4",
+        "ST_BRACING_TOP_03_A_+Z_10",
+        "ST_BRACING_TOP_03_A_+Z_11",
+        "ST_BRACING_TOP_03_A_+Z_12",
+        "ST_BRACING_TOP_03_A_+Z_13",
+        "ST_BRACING_TOP_03_A_+Z_8",
+        "ST_BRACING_TOP_03_A_+Z_9",
+        "ST_BRACING_TOP_03_A_-X_2",
+        "ST_BRACING_TOP_03_A_-X_3",
+        "ST_BRACING_TOP_03_A_-Y_6",
+        "ST_BRACING_TOP_03_A_-Z_14",
+        "ST_BRACING_TOP_03_A_-Z_15",
+        "ST_BRACING_TOP_03_A_-Z_16",
+        "ST_BRACING_TOP_03_A_-Z_17",
+        "ST_BRACING_TOP_03_A_-Z_18",
+        "ST_BRACING_TOP_03_A_-Z_19"
+      ],
+      "target_m": [
+        172.5767,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_03_A",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_111",
+      "position_m": [
+        172.5767,
+        2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.476,
+      "cumulative_distance_m": 1332.919,
+      "covers": [
+        "ST_BRACING_TOP_03_B_+Y_4",
+        "ST_BRACING_TOP_03_B_+Z_10",
+        "ST_BRACING_TOP_03_B_+Z_11",
+        "ST_BRACING_TOP_03_B_+Z_12",
+        "ST_BRACING_TOP_03_B_+Z_13",
+        "ST_BRACING_TOP_03_B_+Z_8",
+        "ST_BRACING_TOP_03_B_+Z_9",
+        "ST_BRACING_TOP_03_B_-X_2",
+        "ST_BRACING_TOP_03_B_-X_3",
+        "ST_BRACING_TOP_03_B_-Y_6",
+        "ST_BRACING_TOP_03_B_-Z_14",
+        "ST_BRACING_TOP_03_B_-Z_15",
+        "ST_BRACING_TOP_03_B_-Z_16",
+        "ST_BRACING_TOP_03_B_-Z_17",
+        "ST_BRACING_TOP_03_B_-Z_18",
+        "ST_BRACING_TOP_03_B_-Z_19"
+      ],
+      "target_m": [
+        172.5767,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_03_B",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_112",
+      "position_m": [
+        183.8267,
+        2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 1344.169,
+      "covers": [
+        "ST_BRACING_TOP_04_B_+Y_4",
+        "ST_BRACING_TOP_04_B_+Z_10",
+        "ST_BRACING_TOP_04_B_+Z_11",
+        "ST_BRACING_TOP_04_B_+Z_12",
+        "ST_BRACING_TOP_04_B_+Z_13",
+        "ST_BRACING_TOP_04_B_+Z_8",
+        "ST_BRACING_TOP_04_B_+Z_9",
+        "ST_BRACING_TOP_04_B_-X_2",
+        "ST_BRACING_TOP_04_B_-X_3",
+        "ST_BRACING_TOP_04_B_-Y_6",
+        "ST_BRACING_TOP_04_B_-Z_14",
+        "ST_BRACING_TOP_04_B_-Z_15",
+        "ST_BRACING_TOP_04_B_-Z_16",
+        "ST_BRACING_TOP_04_B_-Z_17",
+        "ST_BRACING_TOP_04_B_-Z_18",
+        "ST_BRACING_TOP_04_B_-Z_19"
+      ],
+      "target_m": [
+        183.8267,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_04_B",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "position_m": [
+        183.8267,
+        -2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.476,
+      "cumulative_distance_m": 1348.645,
+      "covers": [
+        "ST_BRACING_TOP_04_A_+Y_4",
+        "ST_BRACING_TOP_04_A_+Z_10",
+        "ST_BRACING_TOP_04_A_+Z_11",
+        "ST_BRACING_TOP_04_A_+Z_12",
+        "ST_BRACING_TOP_04_A_+Z_13",
+        "ST_BRACING_TOP_04_A_+Z_8",
+        "ST_BRACING_TOP_04_A_+Z_9",
+        "ST_BRACING_TOP_04_A_-X_2",
+        "ST_BRACING_TOP_04_A_-X_3",
+        "ST_BRACING_TOP_04_A_-Y_6",
+        "ST_BRACING_TOP_04_A_-Z_14",
+        "ST_BRACING_TOP_04_A_-Z_15",
+        "ST_BRACING_TOP_04_A_-Z_16",
+        "ST_BRACING_TOP_04_A_-Z_17",
+        "ST_BRACING_TOP_04_A_-Z_18",
+        "ST_BRACING_TOP_04_A_-Z_19"
+      ],
+      "target_m": [
+        183.8267,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_04_A",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "position_m": [
+        195.0767,
+        -2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 1359.895,
+      "covers": [
+        "ST_BRACING_TOP_05_A_+Y_4",
+        "ST_BRACING_TOP_05_A_+Z_10",
+        "ST_BRACING_TOP_05_A_+Z_11",
+        "ST_BRACING_TOP_05_A_+Z_12",
+        "ST_BRACING_TOP_05_A_+Z_13",
+        "ST_BRACING_TOP_05_A_+Z_8",
+        "ST_BRACING_TOP_05_A_+Z_9",
+        "ST_BRACING_TOP_05_A_-X_2",
+        "ST_BRACING_TOP_05_A_-X_3",
+        "ST_BRACING_TOP_05_A_-Y_6",
+        "ST_BRACING_TOP_05_A_-Z_14",
+        "ST_BRACING_TOP_05_A_-Z_15",
+        "ST_BRACING_TOP_05_A_-Z_16",
+        "ST_BRACING_TOP_05_A_-Z_17",
+        "ST_BRACING_TOP_05_A_-Z_18",
+        "ST_BRACING_TOP_05_A_-Z_19"
+      ],
+      "target_m": [
+        195.0767,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_05_A",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_115",
+      "position_m": [
+        195.0767,
+        2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.476,
+      "cumulative_distance_m": 1364.371,
+      "covers": [
+        "ST_BRACING_TOP_05_B_+Y_4",
+        "ST_BRACING_TOP_05_B_+Z_10",
+        "ST_BRACING_TOP_05_B_+Z_11",
+        "ST_BRACING_TOP_05_B_+Z_12",
+        "ST_BRACING_TOP_05_B_+Z_13",
+        "ST_BRACING_TOP_05_B_+Z_8",
+        "ST_BRACING_TOP_05_B_+Z_9",
+        "ST_BRACING_TOP_05_B_-X_2",
+        "ST_BRACING_TOP_05_B_-X_3",
+        "ST_BRACING_TOP_05_B_-Y_6",
+        "ST_BRACING_TOP_05_B_-Z_14",
+        "ST_BRACING_TOP_05_B_-Z_15",
+        "ST_BRACING_TOP_05_B_-Z_16",
+        "ST_BRACING_TOP_05_B_-Z_17",
+        "ST_BRACING_TOP_05_B_-Z_18",
+        "ST_BRACING_TOP_05_B_-Z_19"
+      ],
+      "target_m": [
+        195.0767,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_05_B",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_116",
+      "position_m": [
+        206.3267,
+        2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 1375.621,
+      "covers": [
+        "ST_BRACING_TOP_06_B_+Y_4",
+        "ST_BRACING_TOP_06_B_+Z_10",
+        "ST_BRACING_TOP_06_B_+Z_11",
+        "ST_BRACING_TOP_06_B_+Z_12",
+        "ST_BRACING_TOP_06_B_+Z_13",
+        "ST_BRACING_TOP_06_B_+Z_8",
+        "ST_BRACING_TOP_06_B_+Z_9",
+        "ST_BRACING_TOP_06_B_-X_2",
+        "ST_BRACING_TOP_06_B_-X_3",
+        "ST_BRACING_TOP_06_B_-Y_6",
+        "ST_BRACING_TOP_06_B_-Z_14",
+        "ST_BRACING_TOP_06_B_-Z_15",
+        "ST_BRACING_TOP_06_B_-Z_16",
+        "ST_BRACING_TOP_06_B_-Z_17",
+        "ST_BRACING_TOP_06_B_-Z_18",
+        "ST_BRACING_TOP_06_B_-Z_19"
+      ],
+      "target_m": [
+        206.3267,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_06_B",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_117",
+      "position_m": [
+        206.3267,
+        -2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.476,
+      "cumulative_distance_m": 1380.097,
+      "covers": [
+        "ST_BRACING_TOP_06_A_+Y_4",
+        "ST_BRACING_TOP_06_A_+Z_10",
+        "ST_BRACING_TOP_06_A_+Z_11",
+        "ST_BRACING_TOP_06_A_+Z_12",
+        "ST_BRACING_TOP_06_A_+Z_13",
+        "ST_BRACING_TOP_06_A_+Z_8",
+        "ST_BRACING_TOP_06_A_+Z_9",
+        "ST_BRACING_TOP_06_A_-X_2",
+        "ST_BRACING_TOP_06_A_-X_3",
+        "ST_BRACING_TOP_06_A_-Y_6",
+        "ST_BRACING_TOP_06_A_-Z_14",
+        "ST_BRACING_TOP_06_A_-Z_15",
+        "ST_BRACING_TOP_06_A_-Z_16",
+        "ST_BRACING_TOP_06_A_-Z_17",
+        "ST_BRACING_TOP_06_A_-Z_18",
+        "ST_BRACING_TOP_06_A_-Z_19"
+      ],
+      "target_m": [
+        206.3267,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_06_A",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_118",
+      "position_m": [
+        217.5767,
+        -2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.25,
+      "cumulative_distance_m": 1391.347,
+      "covers": [
+        "ST_BRACING_TOP_07_A_+Y_4",
+        "ST_BRACING_TOP_07_A_+Z_10",
+        "ST_BRACING_TOP_07_A_+Z_11",
+        "ST_BRACING_TOP_07_A_+Z_12",
+        "ST_BRACING_TOP_07_A_+Z_13",
+        "ST_BRACING_TOP_07_A_+Z_8",
+        "ST_BRACING_TOP_07_A_+Z_9",
+        "ST_BRACING_TOP_07_A_-X_2",
+        "ST_BRACING_TOP_07_A_-X_3",
+        "ST_BRACING_TOP_07_A_-Y_6",
+        "ST_BRACING_TOP_07_A_-Z_14",
+        "ST_BRACING_TOP_07_A_-Z_15",
+        "ST_BRACING_TOP_07_A_-Z_16",
+        "ST_BRACING_TOP_07_A_-Z_17",
+        "ST_BRACING_TOP_07_A_-Z_18",
+        "ST_BRACING_TOP_07_A_-Z_19"
+      ],
+      "target_m": [
+        217.5767,
+        -2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_07_A",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "position_m": [
+        217.5767,
+        2.2379,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 4.476,
+      "cumulative_distance_m": 1395.822,
+      "covers": [
+        "ST_BRACING_TOP_07_B_+Y_4",
+        "ST_BRACING_TOP_07_B_+Z_10",
+        "ST_BRACING_TOP_07_B_+Z_11",
+        "ST_BRACING_TOP_07_B_+Z_12",
+        "ST_BRACING_TOP_07_B_+Z_13",
+        "ST_BRACING_TOP_07_B_+Z_8",
+        "ST_BRACING_TOP_07_B_+Z_9",
+        "ST_BRACING_TOP_07_B_-X_2",
+        "ST_BRACING_TOP_07_B_-X_3",
+        "ST_BRACING_TOP_07_B_-Y_6",
+        "ST_BRACING_TOP_07_B_-Z_14",
+        "ST_BRACING_TOP_07_B_-Z_15",
+        "ST_BRACING_TOP_07_B_-Z_16",
+        "ST_BRACING_TOP_07_B_-Z_17",
+        "ST_BRACING_TOP_07_B_-Z_18",
+        "ST_BRACING_TOP_07_B_-Z_19"
+      ],
+      "target_m": [
+        217.5767,
+        2.2379,
+        21.15
+      ],
+      "prim_name": "ST_BRACING_TOP_07_B",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_120",
+      "position_m": [
+        225.0,
+        0.0,
+        29.15
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 7.753,
+      "cumulative_distance_m": 1403.576,
+      "covers": [
+        "ST_PORTAL_STRUT_225_+X_0",
+        "ST_PORTAL_STRUT_225_+X_1",
+        "ST_PORTAL_STRUT_225_+Y_4",
+        "ST_PORTAL_STRUT_225_+Z_6",
+        "ST_PORTAL_STRUT_225_+Z_7",
+        "ST_PORTAL_STRUT_225_+Z_8",
+        "ST_PORTAL_STRUT_225_-X_2",
+        "ST_PORTAL_STRUT_225_-X_3",
+        "ST_PORTAL_STRUT_225_-Y_5",
+        "ST_PORTAL_STRUT_225_-Z_10",
+        "ST_PORTAL_STRUT_225_-Z_11",
+        "ST_PORTAL_STRUT_225_-Z_9"
+      ],
+      "target_m": [
+        225.0,
+        0.0,
+        21.15
+      ],
+      "prim_name": "ST_PORTAL_STRUT_225",
+      "prim_kind": "bracing"
+    },
+    {
+      "waypoint_id": "CWP_121",
+      "position_m": [
+        264.0,
+        28.0,
+        8.0689
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 52.435,
+      "cumulative_distance_m": 1456.011,
+      "covers": [
+        "MB_PIER_COL_007_cap_bottom",
+        "MB_PIER_COL_007_cap_top",
+        "MB_PIER_COL_007_side_0",
+        "MB_PIER_COL_007_side_1",
+        "MB_PIER_COL_007_side_10",
+        "MB_PIER_COL_007_side_11",
+        "MB_PIER_COL_007_side_2",
+        "MB_PIER_COL_007_side_3",
+        "MB_PIER_COL_007_side_4",
+        "MB_PIER_COL_007_side_5",
+        "MB_PIER_COL_007_side_6",
+        "MB_PIER_COL_007_side_7",
+        "MB_PIER_COL_007_side_8",
+        "MB_PIER_COL_007_side_9"
+      ],
+      "target_m": [
+        256.0,
+        28.0,
+        8.0689
+      ],
+      "prim_name": "MB_PIER_COL_007",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "position_m": [
+        315.0,
+        -4.4,
+        22.2725
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 62.069,
+      "cumulative_distance_m": 1518.079,
+      "covers": [
+        "BR_JOINT_002_GAP_+X_0",
+        "BR_JOINT_002_GAP_+X_1",
+        "BR_JOINT_002_GAP_+Z_6",
+        "BR_JOINT_002_GAP_+Z_7",
+        "BR_JOINT_002_GAP_+Z_8",
+        "BR_JOINT_002_GAP_-X_2",
+        "BR_JOINT_002_GAP_-X_3",
+        "BR_JOINT_002_GAP_-Y_5",
+        "BR_JOINT_002_GAP_-Z_10",
+        "BR_JOINT_002_GAP_-Z_11",
+        "BR_JOINT_002_GAP_-Z_9"
+      ],
+      "target_m": [
+        315.0,
+        -4.4,
+        14.2725
+      ],
+      "prim_name": "BR_JOINT_002_GAP",
+      "prim_kind": "expansion_joint"
+    },
+    {
+      "waypoint_id": "CWP_123",
+      "position_m": [
+        323.22,
+        -3.3,
+        14.2175
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 11.561,
+      "cumulative_distance_m": 1529.64,
+      "covers": [
+        "BR_JOINT_002_NOSE_B_+X_0",
+        "BR_JOINT_002_NOSE_B_+X_1",
+        "BR_JOINT_002_NOSE_B_+Z_6",
+        "BR_JOINT_002_NOSE_B_+Z_7",
+        "BR_JOINT_002_NOSE_B_+Z_8",
+        "BR_JOINT_002_NOSE_B_-X_2",
+        "BR_JOINT_002_NOSE_B_-X_3",
+        "BR_JOINT_002_NOSE_B_-Y_5",
+        "BR_JOINT_002_NOSE_B_-Z_10",
+        "BR_JOINT_002_NOSE_B_-Z_11",
+        "BR_JOINT_002_NOSE_B_-Z_9"
+      ],
+      "target_m": [
+        315.22,
+        -3.3,
+        14.2175
+      ],
+      "prim_name": "BR_JOINT_002_NOSE_B",
+      "prim_kind": "structure"
+    },
+    {
+      "waypoint_id": "CWP_124",
+      "position_m": [
+        360.0,
+        0.0,
+        19.775
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 37.344,
+      "cumulative_distance_m": 1566.984,
+      "covers": [
+        "BR_PIER_CAP_008_+X_0",
+        "BR_PIER_CAP_008_+X_1",
+        "BR_PIER_CAP_008_+Y_4",
+        "BR_PIER_CAP_008_+Z_6",
+        "BR_PIER_CAP_008_+Z_7",
+        "BR_PIER_CAP_008_+Z_8",
+        "BR_PIER_CAP_008_-X_2",
+        "BR_PIER_CAP_008_-X_3",
+        "BR_PIER_CAP_008_-Y_5",
+        "BR_PIER_CAP_008_-Z_10",
+        "BR_PIER_CAP_008_-Z_11",
+        "BR_PIER_CAP_008_-Z_9"
+      ],
+      "target_m": [
+        360.0,
+        0.0,
+        11.775
+      ],
+      "prim_name": "BR_PIER_CAP_008",
+      "prim_kind": "pier_cap"
+    },
+    {
+      "waypoint_id": "CWP_125",
+      "position_m": [
+        368.85,
+        -2.75,
+        8.6758
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 14.459,
+      "cumulative_distance_m": 1581.443,
+      "covers": [
+        "BR_PIER_COL_008_1_cap_top",
+        "BR_PIER_COL_008_1_side_0",
+        "BR_PIER_COL_008_1_side_1",
+        "BR_PIER_COL_008_1_side_10",
+        "BR_PIER_COL_008_1_side_11",
+        "BR_PIER_COL_008_1_side_2",
+        "BR_PIER_COL_008_1_side_3",
+        "BR_PIER_COL_008_1_side_4",
+        "BR_PIER_COL_008_1_side_5",
+        "BR_PIER_COL_008_1_side_6",
+        "BR_PIER_COL_008_1_side_7",
+        "BR_PIER_COL_008_1_side_8",
+        "BR_PIER_COL_008_1_side_9"
+      ],
+      "target_m": [
+        360.85,
+        -2.75,
+        8.6758
+      ],
+      "prim_name": "BR_PIER_COL_008_1",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_126",
+      "position_m": [
+        368.5,
+        -6.0,
+        7.0
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 3.673,
+      "cumulative_distance_m": 1585.117,
+      "covers": [
+        "BR_ABUTMENT_NORTH_+X_0",
+        "BR_ABUTMENT_NORTH_+X_1",
+        "BR_ABUTMENT_NORTH_+X_2",
+        "BR_ABUTMENT_NORTH_+X_3",
+        "BR_ABUTMENT_NORTH_+X_4",
+        "BR_ABUTMENT_NORTH_+X_5",
+        "BR_ABUTMENT_NORTH_+Z_24",
+        "BR_ABUTMENT_NORTH_-X_10",
+        "BR_ABUTMENT_NORTH_-X_11",
+        "BR_ABUTMENT_NORTH_-X_9",
+        "BR_ABUTMENT_NORTH_-Y_21",
+        "BR_ABUTMENT_NORTH_-Y_22",
+        "BR_ABUTMENT_NORTH_-Y_23"
+      ],
+      "target_m": [
+        360.5,
+        -6.0,
+        7.0
+      ],
+      "prim_name": "BR_ABUTMENT_NORTH",
+      "prim_kind": "abutment"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "position_m": [
+        368.85,
+        2.75,
+        8.6758
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 8.916,
+      "cumulative_distance_m": 1594.033,
+      "covers": [
+        "BR_PIER_COL_008_2_cap_top",
+        "BR_PIER_COL_008_2_side_0",
+        "BR_PIER_COL_008_2_side_1",
+        "BR_PIER_COL_008_2_side_10",
+        "BR_PIER_COL_008_2_side_11",
+        "BR_PIER_COL_008_2_side_2",
+        "BR_PIER_COL_008_2_side_3",
+        "BR_PIER_COL_008_2_side_4",
+        "BR_PIER_COL_008_2_side_5",
+        "BR_PIER_COL_008_2_side_6",
+        "BR_PIER_COL_008_2_side_7",
+        "BR_PIER_COL_008_2_side_8",
+        "BR_PIER_COL_008_2_side_9"
+      ],
+      "target_m": [
+        360.85,
+        2.75,
+        8.6758
+      ],
+      "prim_name": "BR_PIER_COL_008_2",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_128",
+      "position_m": [
+        369.0,
+        28.0,
+        8.0067
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 25.259,
+      "cumulative_distance_m": 1619.292,
+      "covers": [
+        "MB_PIER_COL_011_cap_bottom",
+        "MB_PIER_COL_011_cap_top",
+        "MB_PIER_COL_011_side_0",
+        "MB_PIER_COL_011_side_1",
+        "MB_PIER_COL_011_side_10",
+        "MB_PIER_COL_011_side_11",
+        "MB_PIER_COL_011_side_2",
+        "MB_PIER_COL_011_side_3",
+        "MB_PIER_COL_011_side_4",
+        "MB_PIER_COL_011_side_5",
+        "MB_PIER_COL_011_side_6",
+        "MB_PIER_COL_011_side_7",
+        "MB_PIER_COL_011_side_8",
+        "MB_PIER_COL_011_side_9"
+      ],
+      "target_m": [
+        361.0,
+        28.0,
+        8.0067
+      ],
+      "prim_name": "MB_PIER_COL_011",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_129",
+      "position_m": [
+        324.0,
+        28.0,
+        8.07
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 45.0,
+      "cumulative_distance_m": 1664.292,
+      "covers": [
+        "MB_PIER_COL_009_cap_bottom",
+        "MB_PIER_COL_009_cap_top",
+        "MB_PIER_COL_009_side_0",
+        "MB_PIER_COL_009_side_1",
+        "MB_PIER_COL_009_side_10",
+        "MB_PIER_COL_009_side_11",
+        "MB_PIER_COL_009_side_2",
+        "MB_PIER_COL_009_side_3",
+        "MB_PIER_COL_009_side_4",
+        "MB_PIER_COL_009_side_5",
+        "MB_PIER_COL_009_side_6",
+        "MB_PIER_COL_009_side_7",
+        "MB_PIER_COL_009_side_8",
+        "MB_PIER_COL_009_side_9"
+      ],
+      "target_m": [
+        316.0,
+        28.0,
+        8.07
+      ],
+      "prim_name": "MB_PIER_COL_009",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_130",
+      "position_m": [
+        294.0,
+        28.0,
+        8.0793
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 30.0,
+      "cumulative_distance_m": 1694.292,
+      "covers": [
+        "MB_PIER_COL_008_cap_bottom",
+        "MB_PIER_COL_008_cap_top",
+        "MB_PIER_COL_008_side_0",
+        "MB_PIER_COL_008_side_1",
+        "MB_PIER_COL_008_side_10",
+        "MB_PIER_COL_008_side_11",
+        "MB_PIER_COL_008_side_2",
+        "MB_PIER_COL_008_side_3",
+        "MB_PIER_COL_008_side_4",
+        "MB_PIER_COL_008_side_5",
+        "MB_PIER_COL_008_side_6",
+        "MB_PIER_COL_008_side_7",
+        "MB_PIER_COL_008_side_8",
+        "MB_PIER_COL_008_side_9"
+      ],
+      "target_m": [
+        286.0,
+        28.0,
+        8.0793
+      ],
+      "prim_name": "MB_PIER_COL_008",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_131",
+      "position_m": [
+        278.14,
+        24.9,
+        20.85
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 20.597,
+      "cumulative_distance_m": 1714.889,
+      "covers": [
+        "MB_MAST_004_+X_0",
+        "MB_MAST_004_+X_1",
+        "MB_MAST_004_+Y_4",
+        "MB_MAST_004_+Y_5",
+        "MB_MAST_004_+Z_8",
+        "MB_MAST_004_-X_2",
+        "MB_MAST_004_-X_3",
+        "MB_MAST_004_-Y_6",
+        "MB_MAST_004_-Y_7",
+        "MB_MAST_004_-Z_9"
+      ],
+      "target_m": [
+        270.14,
+        24.9,
+        20.85
+      ],
+      "prim_name": "MB_MAST_004",
+      "prim_kind": "catenary_mast"
+    },
+    {
+      "waypoint_id": "CWP_132",
+      "position_m": [
+        216.4922,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 66.181,
+      "cumulative_distance_m": 1781.07,
+      "covers": [
+        "ST_DIAGONAL_S_07_+X_1",
+        "ST_DIAGONAL_S_07_+Y_10",
+        "ST_DIAGONAL_S_07_+Y_11",
+        "ST_DIAGONAL_S_07_+Y_6",
+        "ST_DIAGONAL_S_07_+Y_7",
+        "ST_DIAGONAL_S_07_+Y_8",
+        "ST_DIAGONAL_S_07_+Y_9",
+        "ST_DIAGONAL_S_07_+Z_18",
+        "ST_DIAGONAL_S_07_+Z_19",
+        "ST_DIAGONAL_S_07_-X_3",
+        "ST_DIAGONAL_S_07_-X_4",
+        "ST_DIAGONAL_S_07_-X_5",
+        "ST_DIAGONAL_S_07_-Y_12",
+        "ST_DIAGONAL_S_07_-Y_13",
+        "ST_DIAGONAL_S_07_-Y_14",
+        "ST_DIAGONAL_S_07_-Y_15",
+        "ST_DIAGONAL_S_07_-Y_16",
+        "ST_DIAGONAL_S_07_-Y_17",
+        "ST_DIAGONAL_S_07_-Z_20",
+        "ST_DIAGONAL_S_07_-Z_21"
+      ],
+      "target_m": [
+        216.4922,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_07",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_133",
+      "position_m": [
+        213.75,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 2.742,
+      "cumulative_distance_m": 1783.812,
+      "covers": [
+        "ST_VERTICAL_S_07_+X_0",
+        "ST_VERTICAL_S_07_+X_1",
+        "ST_VERTICAL_S_07_+X_2",
+        "ST_VERTICAL_S_07_+Y_6",
+        "ST_VERTICAL_S_07_+Y_7",
+        "ST_VERTICAL_S_07_+Y_8",
+        "ST_VERTICAL_S_07_+Z_12",
+        "ST_VERTICAL_S_07_-X_3",
+        "ST_VERTICAL_S_07_-X_4",
+        "ST_VERTICAL_S_07_-X_5",
+        "ST_VERTICAL_S_07_-Y_10",
+        "ST_VERTICAL_S_07_-Y_11",
+        "ST_VERTICAL_S_07_-Y_9",
+        "ST_VERTICAL_S_07_-Z_13"
+      ],
+      "target_m": [
+        213.75,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_07",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_134",
+      "position_m": [
+        205.2422,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 8.508,
+      "cumulative_distance_m": 1792.32,
+      "covers": [
+        "ST_DIAGONAL_S_06_+X_1",
+        "ST_DIAGONAL_S_06_+Y_10",
+        "ST_DIAGONAL_S_06_+Y_11",
+        "ST_DIAGONAL_S_06_+Y_6",
+        "ST_DIAGONAL_S_06_+Y_7",
+        "ST_DIAGONAL_S_06_+Y_8",
+        "ST_DIAGONAL_S_06_+Y_9",
+        "ST_DIAGONAL_S_06_+Z_18",
+        "ST_DIAGONAL_S_06_+Z_19",
+        "ST_DIAGONAL_S_06_-X_3",
+        "ST_DIAGONAL_S_06_-X_4",
+        "ST_DIAGONAL_S_06_-X_5",
+        "ST_DIAGONAL_S_06_-Y_12",
+        "ST_DIAGONAL_S_06_-Y_13",
+        "ST_DIAGONAL_S_06_-Y_14",
+        "ST_DIAGONAL_S_06_-Y_15",
+        "ST_DIAGONAL_S_06_-Y_16",
+        "ST_DIAGONAL_S_06_-Y_17",
+        "ST_DIAGONAL_S_06_-Z_20",
+        "ST_DIAGONAL_S_06_-Z_21"
+      ],
+      "target_m": [
+        205.2422,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_06",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_135",
+      "position_m": [
+        202.5,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 2.742,
+      "cumulative_distance_m": 1795.062,
+      "covers": [
+        "ST_VERTICAL_S_06_+X_0",
+        "ST_VERTICAL_S_06_+X_1",
+        "ST_VERTICAL_S_06_+X_2",
+        "ST_VERTICAL_S_06_+Y_6",
+        "ST_VERTICAL_S_06_+Y_7",
+        "ST_VERTICAL_S_06_+Y_8",
+        "ST_VERTICAL_S_06_+Z_12",
+        "ST_VERTICAL_S_06_-X_3",
+        "ST_VERTICAL_S_06_-X_4",
+        "ST_VERTICAL_S_06_-X_5",
+        "ST_VERTICAL_S_06_-Y_10",
+        "ST_VERTICAL_S_06_-Y_11",
+        "ST_VERTICAL_S_06_-Y_9",
+        "ST_VERTICAL_S_06_-Z_13"
+      ],
+      "target_m": [
+        202.5,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_06",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_136",
+      "position_m": [
+        193.9922,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 8.508,
+      "cumulative_distance_m": 1803.57,
+      "covers": [
+        "ST_DIAGONAL_S_05_+X_1",
+        "ST_DIAGONAL_S_05_+Y_10",
+        "ST_DIAGONAL_S_05_+Y_11",
+        "ST_DIAGONAL_S_05_+Y_6",
+        "ST_DIAGONAL_S_05_+Y_7",
+        "ST_DIAGONAL_S_05_+Y_8",
+        "ST_DIAGONAL_S_05_+Y_9",
+        "ST_DIAGONAL_S_05_+Z_18",
+        "ST_DIAGONAL_S_05_+Z_19",
+        "ST_DIAGONAL_S_05_-X_3",
+        "ST_DIAGONAL_S_05_-X_4",
+        "ST_DIAGONAL_S_05_-X_5",
+        "ST_DIAGONAL_S_05_-Y_12",
+        "ST_DIAGONAL_S_05_-Y_13",
+        "ST_DIAGONAL_S_05_-Y_14",
+        "ST_DIAGONAL_S_05_-Y_15",
+        "ST_DIAGONAL_S_05_-Y_16",
+        "ST_DIAGONAL_S_05_-Y_17",
+        "ST_DIAGONAL_S_05_-Z_20",
+        "ST_DIAGONAL_S_05_-Z_21"
+      ],
+      "target_m": [
+        193.9922,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_05",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_137",
+      "position_m": [
+        191.25,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 2.742,
+      "cumulative_distance_m": 1806.312,
+      "covers": [
+        "ST_VERTICAL_S_05_+X_0",
+        "ST_VERTICAL_S_05_+X_1",
+        "ST_VERTICAL_S_05_+X_2",
+        "ST_VERTICAL_S_05_+Y_6",
+        "ST_VERTICAL_S_05_+Y_7",
+        "ST_VERTICAL_S_05_+Y_8",
+        "ST_VERTICAL_S_05_+Z_12",
+        "ST_VERTICAL_S_05_-X_3",
+        "ST_VERTICAL_S_05_-X_4",
+        "ST_VERTICAL_S_05_-X_5",
+        "ST_VERTICAL_S_05_-Y_10",
+        "ST_VERTICAL_S_05_-Y_11",
+        "ST_VERTICAL_S_05_-Y_9",
+        "ST_VERTICAL_S_05_-Z_13"
+      ],
+      "target_m": [
+        191.25,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_05",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_138",
+      "position_m": [
+        182.7422,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 8.508,
+      "cumulative_distance_m": 1814.82,
+      "covers": [
+        "ST_DIAGONAL_S_04_+X_1",
+        "ST_DIAGONAL_S_04_+Y_10",
+        "ST_DIAGONAL_S_04_+Y_11",
+        "ST_DIAGONAL_S_04_+Y_6",
+        "ST_DIAGONAL_S_04_+Y_7",
+        "ST_DIAGONAL_S_04_+Y_8",
+        "ST_DIAGONAL_S_04_+Y_9",
+        "ST_DIAGONAL_S_04_+Z_18",
+        "ST_DIAGONAL_S_04_+Z_19",
+        "ST_DIAGONAL_S_04_-X_3",
+        "ST_DIAGONAL_S_04_-X_4",
+        "ST_DIAGONAL_S_04_-X_5",
+        "ST_DIAGONAL_S_04_-Y_12",
+        "ST_DIAGONAL_S_04_-Y_13",
+        "ST_DIAGONAL_S_04_-Y_14",
+        "ST_DIAGONAL_S_04_-Y_15",
+        "ST_DIAGONAL_S_04_-Y_16",
+        "ST_DIAGONAL_S_04_-Y_17",
+        "ST_DIAGONAL_S_04_-Z_20",
+        "ST_DIAGONAL_S_04_-Z_21"
+      ],
+      "target_m": [
+        182.7422,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_04",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_139",
+      "position_m": [
+        180.0,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 2.742,
+      "cumulative_distance_m": 1817.562,
+      "covers": [
+        "ST_VERTICAL_S_04_+X_0",
+        "ST_VERTICAL_S_04_+X_1",
+        "ST_VERTICAL_S_04_+X_2",
+        "ST_VERTICAL_S_04_+Y_6",
+        "ST_VERTICAL_S_04_+Y_7",
+        "ST_VERTICAL_S_04_+Y_8",
+        "ST_VERTICAL_S_04_+Z_12",
+        "ST_VERTICAL_S_04_-X_3",
+        "ST_VERTICAL_S_04_-X_4",
+        "ST_VERTICAL_S_04_-X_5",
+        "ST_VERTICAL_S_04_-Y_10",
+        "ST_VERTICAL_S_04_-Y_11",
+        "ST_VERTICAL_S_04_-Y_9",
+        "ST_VERTICAL_S_04_-Z_13"
+      ],
+      "target_m": [
+        180.0,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_04",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_140",
+      "position_m": [
+        171.4922,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 8.508,
+      "cumulative_distance_m": 1826.07,
+      "covers": [
+        "ST_DIAGONAL_S_03_+X_1",
+        "ST_DIAGONAL_S_03_+Y_10",
+        "ST_DIAGONAL_S_03_+Y_11",
+        "ST_DIAGONAL_S_03_+Y_6",
+        "ST_DIAGONAL_S_03_+Y_7",
+        "ST_DIAGONAL_S_03_+Y_8",
+        "ST_DIAGONAL_S_03_+Y_9",
+        "ST_DIAGONAL_S_03_+Z_18",
+        "ST_DIAGONAL_S_03_+Z_19",
+        "ST_DIAGONAL_S_03_-X_3",
+        "ST_DIAGONAL_S_03_-X_4",
+        "ST_DIAGONAL_S_03_-X_5",
+        "ST_DIAGONAL_S_03_-Y_12",
+        "ST_DIAGONAL_S_03_-Y_13",
+        "ST_DIAGONAL_S_03_-Y_14",
+        "ST_DIAGONAL_S_03_-Y_15",
+        "ST_DIAGONAL_S_03_-Y_16",
+        "ST_DIAGONAL_S_03_-Y_17",
+        "ST_DIAGONAL_S_03_-Z_20",
+        "ST_DIAGONAL_S_03_-Z_21"
+      ],
+      "target_m": [
+        171.4922,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_03",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_141",
+      "position_m": [
+        168.75,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 2.742,
+      "cumulative_distance_m": 1828.812,
+      "covers": [
+        "ST_VERTICAL_S_03_+X_0",
+        "ST_VERTICAL_S_03_+X_1",
+        "ST_VERTICAL_S_03_+X_2",
+        "ST_VERTICAL_S_03_+Y_6",
+        "ST_VERTICAL_S_03_+Y_7",
+        "ST_VERTICAL_S_03_+Y_8",
+        "ST_VERTICAL_S_03_+Z_12",
+        "ST_VERTICAL_S_03_-X_3",
+        "ST_VERTICAL_S_03_-X_4",
+        "ST_VERTICAL_S_03_-X_5",
+        "ST_VERTICAL_S_03_-Y_10",
+        "ST_VERTICAL_S_03_-Y_11",
+        "ST_VERTICAL_S_03_-Y_9",
+        "ST_VERTICAL_S_03_-Z_13"
+      ],
+      "target_m": [
+        168.75,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_03",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_142",
+      "position_m": [
+        160.2422,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 8.508,
+      "cumulative_distance_m": 1837.32,
+      "covers": [
+        "ST_DIAGONAL_S_02_+X_1",
+        "ST_DIAGONAL_S_02_+Y_10",
+        "ST_DIAGONAL_S_02_+Y_11",
+        "ST_DIAGONAL_S_02_+Y_6",
+        "ST_DIAGONAL_S_02_+Y_7",
+        "ST_DIAGONAL_S_02_+Y_8",
+        "ST_DIAGONAL_S_02_+Y_9",
+        "ST_DIAGONAL_S_02_+Z_18",
+        "ST_DIAGONAL_S_02_+Z_19",
+        "ST_DIAGONAL_S_02_-X_3",
+        "ST_DIAGONAL_S_02_-X_4",
+        "ST_DIAGONAL_S_02_-X_5",
+        "ST_DIAGONAL_S_02_-Y_12",
+        "ST_DIAGONAL_S_02_-Y_13",
+        "ST_DIAGONAL_S_02_-Y_14",
+        "ST_DIAGONAL_S_02_-Y_15",
+        "ST_DIAGONAL_S_02_-Y_16",
+        "ST_DIAGONAL_S_02_-Y_17",
+        "ST_DIAGONAL_S_02_-Z_20",
+        "ST_DIAGONAL_S_02_-Z_21"
+      ],
+      "target_m": [
+        160.2422,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_02",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_143",
+      "position_m": [
+        157.5,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 2.742,
+      "cumulative_distance_m": 1840.062,
+      "covers": [
+        "ST_VERTICAL_S_02_+X_0",
+        "ST_VERTICAL_S_02_+X_1",
+        "ST_VERTICAL_S_02_+X_2",
+        "ST_VERTICAL_S_02_+Y_6",
+        "ST_VERTICAL_S_02_+Y_7",
+        "ST_VERTICAL_S_02_+Y_8",
+        "ST_VERTICAL_S_02_+Z_12",
+        "ST_VERTICAL_S_02_-X_3",
+        "ST_VERTICAL_S_02_-X_4",
+        "ST_VERTICAL_S_02_-X_5",
+        "ST_VERTICAL_S_02_-Y_10",
+        "ST_VERTICAL_S_02_-Y_11",
+        "ST_VERTICAL_S_02_-Y_9",
+        "ST_VERTICAL_S_02_-Z_13"
+      ],
+      "target_m": [
+        157.5,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_02",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_144",
+      "position_m": [
+        148.9922,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 8.508,
+      "cumulative_distance_m": 1848.57,
+      "covers": [
+        "ST_DIAGONAL_S_01_+X_1",
+        "ST_DIAGONAL_S_01_+Y_10",
+        "ST_DIAGONAL_S_01_+Y_11",
+        "ST_DIAGONAL_S_01_+Y_6",
+        "ST_DIAGONAL_S_01_+Y_7",
+        "ST_DIAGONAL_S_01_+Y_8",
+        "ST_DIAGONAL_S_01_+Y_9",
+        "ST_DIAGONAL_S_01_+Z_18",
+        "ST_DIAGONAL_S_01_+Z_19",
+        "ST_DIAGONAL_S_01_-X_3",
+        "ST_DIAGONAL_S_01_-X_4",
+        "ST_DIAGONAL_S_01_-X_5",
+        "ST_DIAGONAL_S_01_-Y_12",
+        "ST_DIAGONAL_S_01_-Y_13",
+        "ST_DIAGONAL_S_01_-Y_14",
+        "ST_DIAGONAL_S_01_-Y_15",
+        "ST_DIAGONAL_S_01_-Y_16",
+        "ST_DIAGONAL_S_01_-Y_17",
+        "ST_DIAGONAL_S_01_-Z_20",
+        "ST_DIAGONAL_S_01_-Z_21"
+      ],
+      "target_m": [
+        148.9922,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_01",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_145",
+      "position_m": [
+        146.25,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 2.742,
+      "cumulative_distance_m": 1851.312,
+      "covers": [
+        "ST_VERTICAL_S_01_+X_0",
+        "ST_VERTICAL_S_01_+X_1",
+        "ST_VERTICAL_S_01_+X_2",
+        "ST_VERTICAL_S_01_+Y_6",
+        "ST_VERTICAL_S_01_+Y_7",
+        "ST_VERTICAL_S_01_+Y_8",
+        "ST_VERTICAL_S_01_+Z_12",
+        "ST_VERTICAL_S_01_-X_3",
+        "ST_VERTICAL_S_01_-X_4",
+        "ST_VERTICAL_S_01_-X_5",
+        "ST_VERTICAL_S_01_-Y_10",
+        "ST_VERTICAL_S_01_-Y_11",
+        "ST_VERTICAL_S_01_-Y_9",
+        "ST_VERTICAL_S_01_-Z_13"
+      ],
+      "target_m": [
+        146.25,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_VERTICAL_S_01",
+      "prim_kind": "truss_vertical"
+    },
+    {
+      "waypoint_id": "CWP_146",
+      "position_m": [
+        137.7422,
+        1.225,
+        16.5
+      ],
+      "heading_rad": -1.5708,
+      "heading_deg": -90.0,
+      "leg_distance_m": 8.508,
+      "cumulative_distance_m": 1859.82,
+      "covers": [
+        "ST_DIAGONAL_S_00_+X_1",
+        "ST_DIAGONAL_S_00_+Y_10",
+        "ST_DIAGONAL_S_00_+Y_11",
+        "ST_DIAGONAL_S_00_+Y_6",
+        "ST_DIAGONAL_S_00_+Y_7",
+        "ST_DIAGONAL_S_00_+Y_8",
+        "ST_DIAGONAL_S_00_+Y_9",
+        "ST_DIAGONAL_S_00_+Z_18",
+        "ST_DIAGONAL_S_00_+Z_19",
+        "ST_DIAGONAL_S_00_-X_3",
+        "ST_DIAGONAL_S_00_-X_4",
+        "ST_DIAGONAL_S_00_-X_5",
+        "ST_DIAGONAL_S_00_-Y_12",
+        "ST_DIAGONAL_S_00_-Y_13",
+        "ST_DIAGONAL_S_00_-Y_14",
+        "ST_DIAGONAL_S_00_-Y_15",
+        "ST_DIAGONAL_S_00_-Y_16",
+        "ST_DIAGONAL_S_00_-Y_17",
+        "ST_DIAGONAL_S_00_-Z_20",
+        "ST_DIAGONAL_S_00_-Z_21"
+      ],
+      "target_m": [
+        137.7422,
+        -6.775,
+        16.5
+      ],
+      "prim_name": "ST_DIAGONAL_S_00",
+      "prim_kind": "truss_diagonal"
+    },
+    {
+      "waypoint_id": "CWP_147",
+      "position_m": [
+        83.14,
+        24.9,
+        20.85
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 59.673,
+      "cumulative_distance_m": 1919.492,
+      "covers": [
+        "MB_MAST_002_+X_0",
+        "MB_MAST_002_+X_1",
+        "MB_MAST_002_+Y_4",
+        "MB_MAST_002_+Y_5",
+        "MB_MAST_002_+Z_8",
+        "MB_MAST_002_-X_2",
+        "MB_MAST_002_-X_3",
+        "MB_MAST_002_-Y_6",
+        "MB_MAST_002_-Y_7",
+        "MB_MAST_002_-Z_9"
+      ],
+      "target_m": [
+        75.14,
+        24.9,
+        20.85
+      ],
+      "prim_name": "MB_MAST_002",
+      "prim_kind": "catenary_mast"
+    },
+    {
+      "waypoint_id": "CWP_148",
+      "position_m": [
+        69.0,
+        28.0,
+        8.0649
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 19.313,
+      "cumulative_distance_m": 1938.806,
+      "covers": [
+        "MB_PIER_COL_003_cap_bottom",
+        "MB_PIER_COL_003_cap_top",
+        "MB_PIER_COL_003_side_0",
+        "MB_PIER_COL_003_side_1",
+        "MB_PIER_COL_003_side_10",
+        "MB_PIER_COL_003_side_11",
+        "MB_PIER_COL_003_side_2",
+        "MB_PIER_COL_003_side_3",
+        "MB_PIER_COL_003_side_4",
+        "MB_PIER_COL_003_side_5",
+        "MB_PIER_COL_003_side_6",
+        "MB_PIER_COL_003_side_7",
+        "MB_PIER_COL_003_side_8",
+        "MB_PIER_COL_003_side_9"
+      ],
+      "target_m": [
+        61.0,
+        28.0,
+        8.0649
+      ],
+      "prim_name": "MB_PIER_COL_003",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_149",
+      "position_m": [
+        99.0,
+        28.0,
+        8.0708
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 30.0,
+      "cumulative_distance_m": 1968.806,
+      "covers": [
+        "MB_PIER_COL_004_cap_bottom",
+        "MB_PIER_COL_004_cap_top",
+        "MB_PIER_COL_004_side_0",
+        "MB_PIER_COL_004_side_1",
+        "MB_PIER_COL_004_side_10",
+        "MB_PIER_COL_004_side_11",
+        "MB_PIER_COL_004_side_2",
+        "MB_PIER_COL_004_side_3",
+        "MB_PIER_COL_004_side_4",
+        "MB_PIER_COL_004_side_5",
+        "MB_PIER_COL_004_side_6",
+        "MB_PIER_COL_004_side_7",
+        "MB_PIER_COL_004_side_8",
+        "MB_PIER_COL_004_side_9"
+      ],
+      "target_m": [
+        91.0,
+        28.0,
+        8.0708
+      ],
+      "prim_name": "MB_PIER_COL_004",
+      "prim_kind": "pier_column"
+    },
+    {
+      "waypoint_id": "CWP_150",
+      "position_m": [
+        188.14,
+        31.1,
+        20.85
+      ],
+      "heading_rad": -3.1416,
+      "heading_deg": -180.0,
+      "leg_distance_m": 90.105,
+      "cumulative_distance_m": 2058.911,
+      "covers": [
+        "MB_MAST_003_+X_0",
+        "MB_MAST_003_+X_1",
+        "MB_MAST_003_+Y_4",
+        "MB_MAST_003_+Y_5",
+        "MB_MAST_003_+Z_8",
+        "MB_MAST_003_-X_2",
+        "MB_MAST_003_-X_3",
+        "MB_MAST_003_-Y_6",
+        "MB_MAST_003_-Y_7",
+        "MB_MAST_003_-Z_9"
+      ],
+      "target_m": [
+        180.14,
+        31.1,
+        20.85
+      ],
+      "prim_name": "MB_MAST_003",
+      "prim_kind": "catenary_mast"
+    }
+  ]
+}
