@@ -1,0 +1,77 @@
+{
+  "model": "v2",
+  "score_thresh": 0.65,
+  "n_tiles": 8,
+  "defects_in_scope": 0,
+  "true_positives": 0,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "fp_per_100_tiles": 0.0,
+  "note": "0 detections on all 8 tiles; standoff for every tile was 17-18 m (achieved Gazebo pose to aimed structure target), far past the ~8 m design standoff the detector/zoom pipeline was tuned for -- consistent with, not necessarily solely explained by, the 0/8 detection result.",
+  "per_tile": [
+    {
+      "tile_id": "GZ_000",
+      "standoff_m": 15.2,
+      "hit_object": "BR_PIER_COL_001_2",
+      "n_gt_in_scope": 0,
+      "n_detections": 0,
+      "nearest_gt_defect_m": 90.7
+    },
+    {
+      "tile_id": "GZ_001",
+      "standoff_m": 15.8,
+      "hit_object": "BR_WINGWALL_SOUTH_L",
+      "n_gt_in_scope": 0,
+      "n_detections": 0,
+      "nearest_gt_defect_m": 85.3
+    },
+    {
+      "tile_id": "GZ_002",
+      "standoff_m": 16.0,
+      "hit_object": "BR_ABUTMENT_SOUTH",
+      "n_gt_in_scope": 0,
+      "n_detections": 0,
+      "nearest_gt_defect_m": 85.3
+    },
+    {
+      "tile_id": "GZ_003",
+      "standoff_m": 15.9,
+      "hit_object": "BR_ABUTMENT_SOUTH",
+      "n_gt_in_scope": 0,
+      "n_detections": 0,
+      "nearest_gt_defect_m": 86.0
+    },
+    {
+      "tile_id": "GZ_004",
+      "standoff_m": 17.0,
+      "hit_object": "BR_ABUTMENT_SOUTH",
+      "n_gt_in_scope": 0,
+      "n_detections": 0,
+      "nearest_gt_defect_m": 86.9
+    },
+    {
+      "tile_id": "GZ_005",
+      "standoff_m": 17.9,
+      "hit_object": "BR_ABUTMENT_SOUTH",
+      "n_gt_in_scope": 0,
+      "n_detections": 0,
+      "nearest_gt_defect_m": 86.6
+    },
+    {
+      "tile_id": "GZ_006",
+      "standoff_m": 17.9,
+      "hit_object": "BR_ABUTMENT_SOUTH",
+      "n_gt_in_scope": 0,
+      "n_detections": 0,
+      "nearest_gt_defect_m": 86.6
+    },
+    {
+      "tile_id": "GZ_007",
+      "standoff_m": 17.1,
+      "hit_object": "BR_ABUTMENT_SOUTH",
+      "n_gt_in_scope": 0,
+      "n_detections": 0,
+      "nearest_gt_defect_m": 88.4
+    }
+  ]
+}

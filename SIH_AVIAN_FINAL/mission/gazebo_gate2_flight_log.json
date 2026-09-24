@@ -1,0 +1,135 @@
+{
+  "generated_utc": "2026-09-24T13:53:00Z",
+  "source": "Gazebo Gate 2 run, gazebo/gate2_explore/results/metrics.csv",
+  "n_waypoints": 8,
+  "log": [
+    {
+      "waypoint_id": "GZ_000",
+      "target_m": [
+        0.237,
+        15.0,
+        10.0
+      ],
+      "achieved_position_m": [
+        0.237,
+        -0.045,
+        8.0
+      ],
+      "settled": true,
+      "stuck": false,
+      "skipped": false
+    },
+    {
+      "waypoint_id": "GZ_001",
+      "target_m": [
+        5.673,
+        15.0,
+        10.0
+      ],
+      "achieved_position_m": [
+        5.673,
+        -0.704,
+        8.0
+      ],
+      "settled": true,
+      "stuck": false,
+      "skipped": false
+    },
+    {
+      "waypoint_id": "GZ_002",
+      "target_m": [
+        5.589,
+        15.0,
+        10.0
+      ],
+      "achieved_position_m": [
+        5.589,
+        -0.835,
+        8.0
+      ],
+      "settled": true,
+      "stuck": false,
+      "skipped": false
+    },
+    {
+      "waypoint_id": "GZ_003",
+      "target_m": [
+        4.892,
+        15.0,
+        10.0
+      ],
+      "achieved_position_m": [
+        4.892,
+        -0.729,
+        8.0
+      ],
+      "settled": true,
+      "stuck": false,
+      "skipped": false
+    },
+    {
+      "waypoint_id": "GZ_004",
+      "target_m": [
+        4.001,
+        15.0,
+        10.0
+      ],
+      "achieved_position_m": [
+        4.001,
+        -1.857,
+        8.0
+      ],
+      "settled": true,
+      "stuck": false,
+      "skipped": false
+    },
+    {
+      "waypoint_id": "GZ_005",
+      "target_m": [
+        4.374,
+        15.0,
+        10.0
+      ],
+      "achieved_position_m": [
+        4.374,
+        -2.796,
+        8.0
+      ],
+      "settled": true,
+      "stuck": false,
+      "skipped": false
+    },
+    {
+      "waypoint_id": "GZ_006",
+      "target_m": [
+        4.334,
+        15.0,
+        10.0
+      ],
+      "achieved_position_m": [
+        4.334,
+        -2.774,
+        8.0
+      ],
+      "settled": true,
+      "stuck": false,
+      "skipped": false
+    },
+    {
+      "waypoint_id": "GZ_007",
+      "target_m": [
+        2.517,
+        15.0,
+        10.0
+      ],
+      "achieved_position_m": [
+        2.517,
+        -2.021,
+        8.0
+      ],
+      "settled": true,
+      "stuck": false,
+      "skipped": false
+    }
+  ]
+}

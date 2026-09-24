@@ -1,0 +1,35 @@
+{
+  "generated_utc": "2026-09-24T13:59:53Z",
+  "step": "Gate 3 -- Step 3 of the Gazebo autonomy master prompt: detection on what the drone actually saw",
+  "pose_source": "gazebo/gate2_explore/results/metrics.csv, the KEPT official Gate 2 run (21.87 m flown, 0/4 goals) -- 8 poses sampled across the flight, exported to mission/gazebo_gate2_{mission,flight_log}.json in flight_log.json's own schema by source/export_gazebo_gate2_flightlog.py",
+  "render": {
+    "method": "source/render_gate2_tiles.py (time-boxed adaptation of render_zoom_tiles_final.py: 1 tile/pose instead of a full zoom grid), reusing SIH_AVIAN_FINAL.blend, ray-cast confirms a real non-ENV_ structure hit before rendering",
+    "camera_aim_caveat": "The achieved Gazebo poses never got near a structure-inspection target (Gate 2's exploration stayed near spawn); tile aim points were synthesized as (achieved_x, road/deck centerline y=15, mid-height z=10) rather than a planned inspection target, purely as a reasonable camera-framing choice -- not read from any defect ground truth.",
+    "tiles_rendered": 8,
+    "standoff_range_m": [15.2, 17.9],
+    "note": "Standoff far exceeds the ~8 m the zoom/detector pipeline was designed and tuned around (see AVIAN_zoom_tiles_FINAL.json's own median-GSD-based HFOV computation) -- a direct consequence of Gate 2's limited exploration range, not a Gate 3 pipeline defect."
+  },
+  "detection": {
+    "model": "v2 (AVIAN_detector_weights_v2_FINAL.pt)",
+    "score_threshold": 0.65,
+    "detections": 0
+  },
+  "scoring": {
+    "ground_truth_source": "scene/AVIAN_defect_ground_truth_FINAL.json (96 defects) -- read ONLY here, for scoring after every render was already on disk, never during navigation (see gate2_summary.json's sensed_only_grep)",
+    "in_scope_rule": "defect within 5.0 m of a tile's aim point (coarse proxy for the session deadline, not a full frustum projection)",
+    "defects_in_scope": 0,
+    "nearest_defect_to_any_tile_m": 85.3,
+    "true_positives": 0,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "fp_per_100_tiles": 0.0
+  },
+  "honest_summary": "The full Step-3 pipeline (achieved-pose export -> Blender zoom-tile render at those poses -> v2@0.65 detector -> IoU/in-scope scoring against ground truth) runs end to end and is mechanically correct and reproducible. The result is a true, structurally-forced null: Gate 2's autonomous exploration never reached any of the 96 real defects (nearest was 85.3 m from any rendered tile), so there was nothing in frame for the detector to find, and it correctly found nothing (0 detections, 0 FP, 0/100 tiles). This is not a detector or pipeline failure -- it is a direct, honest consequence of Gate 2's own limited exploration range under this session's time budget. A longer or successful Gate 2 run (more distance covered, more of the 380 m corridor actually explored) is the precondition for this pipeline producing a non-trivial TP/FP/FN result.",
+  "files": {
+    "mission_export": ["mission/gazebo_gate2_mission.json", "mission/gazebo_gate2_flight_log.json"],
+    "renders": "detection/renders_gate2/GZ_000.png .. GZ_007.png",
+    "tile_manifest": "detection/AVIAN_gate2_tiles.json",
+    "detections": "mission/gate2_detections_v2.json",
+    "score": "gazebo/gate2_explore/gate3_score.json"
+  }
+}

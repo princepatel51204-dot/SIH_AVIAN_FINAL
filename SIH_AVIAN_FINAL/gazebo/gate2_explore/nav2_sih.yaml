@@ -142,9 +142,17 @@ controller_server:
         cost_weight: 3.0
         threshold_to_consider: 0.5
       PreferForwardCritic:
+        # Lowered from 5.0: every Gate 2 attempt stalled (STUCK, <0.3 m/20s+
+        # net displacement) on far (10-16 m) frontier goals despite real,
+        # nonzero motion (21.87 m total over one run) -- consistent with
+        # this critic fighting goals that aren't roughly ahead of current
+        # heading. It was tuned for a differential-drive ground robot in
+        # GarudaNEX's original warehouse; this is an omni-directional
+        # aerial platform (motion_model: Omni, above) with no mechanical
+        # reason to prefer forward over lateral motion.
         enabled: true
         cost_power: 1
-        cost_weight: 5.0
+        cost_weight: 0.5
         threshold_to_consider: 0.5
       CostCritic:
         enabled: true

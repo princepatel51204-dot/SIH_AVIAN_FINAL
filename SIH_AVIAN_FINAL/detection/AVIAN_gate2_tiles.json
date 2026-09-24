@@ -1,0 +1,140 @@
+{
+  "tiles": [
+    {
+      "waypoint_id": "GZ_000",
+      "tile_id": "GZ_000",
+      "achieved_position_m": [
+        0.2370000034570694,
+        -0.04500000178813934,
+        8.0
+      ],
+      "tile_target_m": [
+        0.2370000034570694,
+        15.0,
+        10.0
+      ],
+      "standoff_m": 15.177352215181404,
+      "image_path": "detection/renders_gate2/GZ_000.png",
+      "hit_object": "BR_PIER_COL_001_2"
+    },
+    {
+      "waypoint_id": "GZ_001",
+      "tile_id": "GZ_001",
+      "achieved_position_m": [
+        5.672999858856201,
+        -0.7039999961853027,
+        8.0
+      ],
+      "tile_target_m": [
+        5.672999858856201,
+        15.0,
+        10.0
+      ],
+      "standoff_m": 15.830844295346841,
+      "image_path": "detection/renders_gate2/GZ_001.png",
+      "hit_object": "BR_WINGWALL_SOUTH_L"
+    },
+    {
+      "waypoint_id": "GZ_002",
+      "tile_id": "GZ_002",
+      "achieved_position_m": [
+        5.589000225067139,
+        -0.8349999785423279,
+        8.0
+      ],
+      "tile_target_m": [
+        5.589000225067139,
+        15.0,
+        10.0
+      ],
+      "standoff_m": 15.96080270225751,
+      "image_path": "detection/renders_gate2/GZ_002.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "GZ_003",
+      "tile_id": "GZ_003",
+      "achieved_position_m": [
+        4.892000198364258,
+        -0.7289999723434448,
+        8.0
+      ],
+      "tile_target_m": [
+        4.892000198364258,
+        15.0,
+        10.0
+      ],
+      "standoff_m": 15.855643899931826,
+      "image_path": "detection/renders_gate2/GZ_003.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "GZ_004",
+      "tile_id": "GZ_004",
+      "achieved_position_m": [
+        4.000999927520752,
+        -1.8569999933242798,
+        8.0
+      ],
+      "tile_target_m": [
+        4.000999927520752,
+        15.0,
+        10.0
+      ],
+      "standoff_m": 16.975230403903947,
+      "image_path": "detection/renders_gate2/GZ_004.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "GZ_005",
+      "tile_id": "GZ_005",
+      "achieved_position_m": [
+        4.374000072479248,
+        -2.7960000038146973,
+        8.0
+      ],
+      "tile_target_m": [
+        4.374000072479248,
+        15.0,
+        10.0
+      ],
+      "standoff_m": 17.90803175444916,
+      "image_path": "detection/renders_gate2/GZ_005.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "GZ_006",
+      "tile_id": "GZ_006",
+      "achieved_position_m": [
+        4.334000110626221,
+        -2.7739999294281006,
+        8.0
+      ],
+      "tile_target_m": [
+        4.334000110626221,
+        15.0,
+        10.0
+      ],
+      "standoff_m": 17.88616978506237,
+      "image_path": "detection/renders_gate2/GZ_006.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "GZ_007",
+      "tile_id": "GZ_007",
+      "achieved_position_m": [
+        2.5169999599456787,
+        -2.0209999084472656,
+        8.0
+      ],
+      "tile_target_m": [
+        2.5169999599456787,
+        15.0,
+        10.0
+      ],
+      "standoff_m": 17.138099282635878,
+      "image_path": "detection/renders_gate2/GZ_007.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    }
+  ]
+}

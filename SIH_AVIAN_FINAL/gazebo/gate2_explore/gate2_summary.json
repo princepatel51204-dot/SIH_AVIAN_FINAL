@@ -32,6 +32,11 @@
     "RTH was not reached (mission was stopped manually after the 4th stall, given the pace of progress, rather than let it run for a possibly very long natural dry-exhaustion). Landing was performed via the same direct offboard-descent method proven in Gate 1, successfully: drone landed and auto-disarmed.",
     "Octomap (3D awareness beyond the flight-altitude LiDAR ring) was verified working standalone (gate2_explore/octomap_sih.launch.py, /projected_map publishing, no errors) but disabled during the live mission run specifically -- adding its point-cloud processing load pushed a raw ROS2 service RPC past its timeout and stalled the entire Nav2 lifecycle_manager activation chain on this machine. Live avoidance for this run came from the scan-based obstacle_layer only (the drone's own native LiDAR ring), which was reliable across every run."
   ],
+  "bounded_retry": {
+    "change": "PreferForwardCritic cost_weight 5.0 -> 0.5 in nav2_sih.yaml (this is an omni-directional aerial platform, not a differential-drive ground robot the critic was tuned for)",
+    "result": {"goals_reached": 0, "goals_attempted": 3, "distance_flown_m": 18.76, "real_gazebo_contact_collisions": 0, "run_time_s": 232.0},
+    "verdict": "Still 0/N. Per instruction, no further tuning attempted; the original run above (21.87 m, 0/4) is the kept official Gate 2 result. The retry's own real numbers are recorded here for completeness, not substituted in."
+  },
   "world_and_infra_fixes_this_gate": [
     "smart_explorer.py: added an additive, backward-compatible geofence (geofence_min/max_x/y params, default unbounded) -- an occupancy-grid frontier explorer has no natural stopping boundary in an open corridor world without one.",
     "x500_base/model.sdf: added a real Gazebo contact sensor (type=contact) on the main-body collision only (not the landing legs, so normal ground contact at takeoff/landing isn't miscounted as a collision).",

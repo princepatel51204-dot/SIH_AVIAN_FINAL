@@ -1,0 +1,58 @@
+{
+  "generated_utc": "2026-09-24T08:29:16Z",
+  "model": "v2",
+  "score_thresh": 0.65,
+  "weights": "detection/AVIAN_detector_weights_v2_FINAL.pt",
+  "n_tiles": 8,
+  "n_detections": 0,
+  "detections": [
+    {
+      "waypoint_id": "GZ_000",
+      "tile_id": "GZ_000",
+      "image_path": "detection/renders_gate2/GZ_000.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "GZ_001",
+      "tile_id": "GZ_001",
+      "image_path": "detection/renders_gate2/GZ_001.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "GZ_002",
+      "tile_id": "GZ_002",
+      "image_path": "detection/renders_gate2/GZ_002.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "GZ_003",
+      "tile_id": "GZ_003",
+      "image_path": "detection/renders_gate2/GZ_003.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "GZ_004",
+      "tile_id": "GZ_004",
+      "image_path": "detection/renders_gate2/GZ_004.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "GZ_005",
+      "tile_id": "GZ_005",
+      "image_path": "detection/renders_gate2/GZ_005.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "GZ_006",
+      "tile_id": "GZ_006",
+      "image_path": "detection/renders_gate2/GZ_006.png",
+      "detections": []
+    },
+    {
+      "waypoint_id": "GZ_007",
+      "tile_id": "GZ_007",
+      "image_path": "detection/renders_gate2/GZ_007.png",
+      "detections": []
+    }
+  ]
+}
