@@ -1,7 +1,35 @@
 # PROMPT 2 of 2 — The AVIAN mission dashboard (professional, light theme)
 
-**Start after Prompt 1's FINAL HANDOFF. Hard stop: 13:30 IST.** The deck
-needs a screenshot by then.
+**Hard stop: 13:30 IST.** The deck needs a screenshot by then.
+
+**You may start now, in parallel with Prompt 1's background jobs.** Build
+the layout, the plan view from the collision primitives, the gallery from
+the existing tiles, and the build script first. Wire in numbers from
+`FINAL_RESULTS.json` once it exists; until then, show visible
+"pending freeze" markers, never guessed numbers. Prompt 1's 11:30 freeze
+still has priority: if the dashboard work slows the B3 jobs, pause it.
+
+## Team and problem statement (put these on the page, exactly as below)
+
+From the SIH portal. Copy these exactly; don't paraphrase them.
+
+| Field | Value |
+|---|---|
+| Team name (as registered) | @TRINETRA |
+| Team ID | 129300 |
+| Institute | Charotar University of Science & Technology, Anand |
+| Team leader | Prince Harshadbhai Patel |
+| Members | Devanshi Sandip Patel · Kavan Shah · Pratham Shah · Anjana Nihal Amitbhai · Dev Nileshbhai Patel |
+| PS ID | SIH26201 |
+| Organisation | AICTE (Ministry of Education's Innovation Cell) |
+| PS title | Student Innovation-There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc. |
+| Theme / bucket | Robotics and Drones |
+| Category | Software |
+
+- **Never put members' emails or phone numbers on the page.** Names only.
+- Store these values in `FINAL_RESULTS.json` under `team` and
+  `problem_statement`, and have the build script read them from there,
+  like every other value.
 
 **Goal:** one page that a judge or mentor opens and understands in 30
 seconds: what the drone did, what it found, and what it can't do yet.
@@ -159,3 +187,56 @@ Screenshots:     paths
 Assets size:     MB
 Commit:          …
 ```
+
+---
+
+## ADDENDUM: team and problem statement (required)
+
+Add a `team` block and a `problem_statement` block to `FINAL_RESULTS.json`.
+The build script reads these like any other data, so the number check
+covers them too. Copy the text exactly as it appears on the SIH portal:
+
+```json
+"team": {
+  "name": "TRINETRA",
+  "portal_name": "@TRINETRA",
+  "team_id": "129300",
+  "institute": "Charotar University of Science & Technology, Anand",
+  "members": [
+    {"name": "Prince Harshadbhai Patel", "role": "Team Leader"},
+    {"name": "Devanshi Sandip Patel", "role": "Member"},
+    {"name": "Kavan Shah", "role": "Member"},
+    {"name": "Pratham Shah", "role": "Member"},
+    {"name": "Anjana Nihal Amitbhai", "role": "Member"},
+    {"name": "Dev Nileshbhai Patel", "role": "Member"}
+  ]
+},
+"problem_statement": {
+  "id": "SIH26201",
+  "title": "Student Innovation-There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.",
+  "organization": "AICTE",
+  "department": "Ministry of Education's Innovation Cell (MIC)",
+  "technology_bucket": "Robotics and Drones",
+  "category": "Software"
+}
+```
+
+**Privacy:** names and roles only. Never put member emails or phone
+numbers on the page or in `FINAL_RESULTS.json`.
+
+Where these go on the page:
+- **Top bar, right side:** `Team TRINETRA · SIH26201 · commit <hash>`.
+- **Problem-statement band, directly under the hero stats.** A
+  full-width `--surface` strip with a small uppercase label "Problem
+  statement · SIH26201". Below it, the exact title. Then one line of
+  chips: AICTE · Robotics and Drones · Software.
+  - Add one sentence: *"Our response: bridges and viaducts are
+    infrastructure whose failure becomes a rescue operation. AVIAN
+    inspects them before that, and can check a damaged bridge before
+    rescue convoys cross."*
+- **New "Team" section, just before the footer** (add "Team" to the top
+  bar's anchor links). Show:
+  - "Team TRINETRA", Team ID 129300, and the institute.
+  - A simple grid of the 6 members, as name + role cards with
+    text-initial avatars (two letters in an `--accent` circle; no photos).
+  - The Team Leader card listed first.
