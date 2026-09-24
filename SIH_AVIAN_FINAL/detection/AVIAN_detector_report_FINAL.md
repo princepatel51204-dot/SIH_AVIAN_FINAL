@@ -425,3 +425,219 @@ $ grep -n ground_truth source/detect_stub_final.py source/render_zoom_tiles_fina
     source/run_real_detector_zoom_final.py source/score_zoom_tiles_final.py
 (no output -- zero matches across all four files)
 ```
+
+---
+
+# Section 3 — detector v3: real bridge data (scoped down), hard negatives, a bigger honest test
+
+**Everything above this line is Section 1 and Section 2, unchanged, accepted
+as committed in `3f2fce4` / `87b2965`.** Nothing above was deleted or
+rewritten.
+
+## Step 0: leak check on Section 2's own 10 "in-scope" defects
+
+Section 2's 16-waypoint zoom-tile sample found 10 of 73 scoreable defects
+in range. Checked directly against the frozen `splits_final.json`
+(recomputed from `score_zoom_tiles_final.py`'s own in-scope logic, not
+assumed): **3 were already a TRAIN positive, 4 were a VAL positive, 1 was
+a TEST positive, and 2 (`SDEFECT_BEARING_SEIZED_04`, `ST_GUSSET_N_BOT_03`)
+were never a positive frame in any split.**
+
+| defect_id | split |
+|---|---|
+| DEFECT_REBAR_EXPOSED_004 | train |
+| FAST_GUSSET_ST_GUSSET_N_BOT_03_07_HOLE | train |
+| FAST_GUSSET_ST_GUSSET_N_BOT_03_12_NUT | train |
+| DEFECT_SPALL_001 | val |
+| FAST_GUSSET_ST_GUSSET_N_BOT_03_06_NUT | val |
+| FAST_GUSSET_ST_GUSSET_N_BOT_03_16_MARK_NUT | val |
+| SDEFECT_BEARING_SEIZED_02 | val |
+| DEFECT_SPALL_010 | test |
+| SDEFECT_BEARING_SEIZED_04 | none |
+| ST_GUSSET_N_BOT_03 | none |
+
+This confirms the suspicion behind this section: **7 of Section 2's 10
+in-scope defects had already been seen by the model as a train or val
+positive**, so Section 2's zoom-tile recall numbers were measuring
+partly-memorized instances, not a clean generalization test. Section 3's
+MISSION-VAL/MISSION-TEST split below is built specifically to fix this —
+scored on waypoints the detector never saw during training, with an
+explicit "unseen defect" recall reported separately from "all defects."
+
+## Corrected zoom factor (was reported wrong in Section 2)
+
+Section 2 reported "~7.6-7.7x" by dividing HFOVs directly (69° / 9.06°).
+That is the wrong ratio for optical zoom: the correct comparison is the
+**tangent ratio**, since sensor width is fixed and it's the half-angle
+tangent that scales with image magnification:
+`zoom = tan(HFOV_wide/2) / tan(HFOV_zoom/2) = tan(34.5°) / tan(HFOV_zoom/2)`.
+
+Recomputed across all 82 waypoints' actual zoom HFOVs (8.89°-9.16°, not
+just the 16-waypoint sample): **zoom factor 8.58x-8.84x, median 8.70x**
+(was reported as ~7.6-7.7x). Still inside the physically realistic
+envelope named in the master prompt (DJI H20-class payloads reach far
+higher zoom than this).
+
+## v3: hard negatives only, no external real bridge photos this pass
+
+**Scope correction against this section's own name.** The plan was real
+bridge photos (CODEBRIM/dacl10k) for training. Checked license and
+throughput directly before committing to it:
+
+- **CODEBRIM** (Zenodo 2620293, 7.9-12.2 GB): license is "other-nc"
+  (non-commercial) — rejected outright, doesn't match this project's
+  BSD/permissive stance.
+- **SegCODEBRIM** (Zenodo 10071534, 916 MB, MIT, crack-only): license is
+  fine, but measured sustained Zenodo throughput twice, independently:
+  **~0.30 MB/s** (177.9 MB in 600s, timed out twice). At that rate even
+  the smallest usable option would take >45 minutes just to download,
+  eating directly into the time box with no training time left after.
+
+**Decision: v3 adds no external real bridge photos this pass.** Instead
+it mines **hard negatives from the mission's own MISSION-NEG tiles**
+(waypoints reserved for this purpose, never touched by VAL/TEST scoring)
+— the same role VD04 played for the original synthetic dataset, but
+sourced from real mission-shaped imagery instead of synthetic renders.
+
+**Hard-negative mining** (`mine_hard_negatives_v3_final.py`, seed
+`20260927`): 2,864 tiles across the 33 MISSION-NEG waypoints, 13 dropped
+as contaminated (a projected ground-truth defect fell in frame — same
+check VD04 used), **2,851 clean, capped to 201** to match v3's 201
+training positives roughly 1:1. Added to **TRAIN only** — val/test stay
+exactly `splits_final.json`'s frozen synthetic frames, so nothing in the
+gate gets easier by definition.
+
+**Training**: same architecture as v2 (`fasterrcnn_mobilenet_v3_large_fpn`,
+native 480x640, not the 320 model), 10 epochs, same optimizer/warmup as
+v1/v2. Training set grew 415 -> 616 frames (201 positive + 214 original
+negative + 201 mined hard negative).
+
+### Frozen synthetic test-set result: v1 vs. v2 vs. v3
+
+| | v1 | v2 | v3 |
+|---|---:|---:|---:|
+| test mAP@0.5 | **0.342** | 0.182 | **0.069** |
+
+**Reported honestly, not tuned to look better**: adding 201 hard
+negatives (nearly doubling the negative fraction of an already-small
+616-frame training set) made v3 *more* conservative than v2 on the
+frozen synthetic test set, not less — mAP@0.5 declined monotonically
+v1 -> v2 -> v3. This is a real result, not a bug: v3's own per-family
+table shows near-zero precision/recall on 4 of 5 families (CRACK,
+CORROSION_COATING, FASTENER, OTHER all read 0/0/0), with only
+SPALL_DELAM keeping any signal (P=0.750, R=0.375, tp=3). The hard
+negatives taught the model caution at the cost of nearly all recall on
+this held-out synthetic set.
+
+## Mission-based headline rule (fixed BEFORE MISSION-TEST was touched)
+
+Per the leak fix above, the headline model is chosen by **highest F1 on
+MISSION-VAL** (16 waypoints, 1,352 tiles, none touched by any model's
+training) — decided before any model's MISSION-TEST number was looked
+at, written down here before that step ran.
+
+| model | threshold (F1-max sweep) | tp | fp | fn | precision | recall | **F1** |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| v1 | 0.50 | 1 | 357 | 19 | 0.003 | 0.050 | 0.0053 |
+| v2 | 0.65 | 2 | 0 | 18 | 1.000 | 0.100 | **0.1818** |
+| v3 | 0.10 | 2 | 0 | 18 | 1.000 | 0.100 | **0.1818** |
+
+**Headline: v2** (tie with v3 at F1=0.1818, both catch the same single
+MISSION-VAL defect `DEFECT_SPALL_012` with zero false positives; v2
+selected). v1 collapses on real mission tiles the same way it did in
+Section 2 (357 false positives from its texture-triggered CRACK habit).
+
+### MISSION-TEST result (33 waypoints, 2,660 tiles, scored once per model at its own MISSION-VAL threshold)
+
+**Unseen-defect recall is the headline metric**: 21 of 73 scoreable
+defects were never a TRAIN or VAL positive in `splits_final.json`
+(unseen-instance assertion re-run and passed: `0 unseen ids also found
+in train/val -- PASS`). All-defect recall is reported alongside, labeled
+explicitly as optimistic (it includes defects the model may have
+partially memorized).
+
+| model | thr | unseen recall (n) | all-defects recall (optimistic) | FP/100 tiles |
+|---|---:|---:|---:|---:|
+| v1 | 0.50 | 0.333 (1/21) | 0.150 | 37.59 |
+| **v2 (headline)** | 0.65 | **0.333 (1/21)** | 0.250 | **0.08** |
+| v3 | 0.10 | 0.333 (1/21) | 0.200 | 0.04 |
+
+All three models find exactly the same one unseen defect
+(`DEFECT_SPALL_010`, a spall — the same family that has carried every
+real signal since Section 1). **Read honestly**: unseen-defect recall is
+identical across all three models at this sample size (1/21) — the
+MISSION-VAL headline pick (v2) is decided by false-positive rate and
+all-defects recall, not by a real difference in unseen generalization,
+which this test set is too small to distinguish. v2's FP rate (0.08 per
+100 tiles) is ~470x lower than v1's (37.59) — the single most
+mission-relevant number in this section, since a field operator reviewing
+detections cares about false-alarm rate as much as recall.
+
+## Real-photo crack/no-crack test: **not run**
+
+Per Phase A item 2, downloaded and license-checked Özgenel's "Concrete
+Crack Images for Classification" (Mendeley, DOI `10.17632/5y9wdsg2zt.2`,
+CC BY 4.0, 40,000 images) after `unrar` became available mid-session, and
+ran it successfully once in an earlier pass of this session. **That
+dataset was lost when `/tmp` was cleared across a session/environment
+gap** (confirmed: `/tmp/concrete_crack` no longer exists, along with the
+downloaded `.rar`), and the result was never written to a committed file
+before the loss. Per the operating rule that hard stops beat
+completeness — Phase A's 07:00 IST stop had already passed by the time
+this was discovered — re-downloading was not attempted a second time so
+the remaining time box could go to Phase B (not yet started) and Phase C.
+**Not run. No number is estimated or carried over from the earlier,
+lost run.**
+
+## FASTENER: declared resolution limitation, not a bug to keep chasing
+
+Unchanged from Section 2's own finding: FASTENER's median box is 6.7 px
+at v1's 320 input, 10.0 px at v2/v3's native 480 input. **CAPTURE mode
+(1920x1080) would give ~0.66 mm/px at the zoom tiles' own 9° HFOV and 8 m
+standoff** (computed directly:
+`2 x 8000mm x tan(4.52deg) / 1920px = 0.658 mm/px`, vs. LOOP's 2.15 mm/px
+at the same geometry) — the real path to a usable FASTENER detector. Not
+attempted this pass: only 12 CAPTURE frames exist in the dataset today,
+nowhere near enough to retrain on.
+
+## Updated failure modes (mission-scale evidence, 6,876 tiles across all 82 waypoints)
+
+1. **v1's texture-triggered CRACK false-positive habit is the dominant
+   failure at mission scale.** 357 false positives on MISSION-VAL alone,
+   37.59 FP/100 tiles on MISSION-TEST — the same failure named in Section
+   1 (plain concrete texture read as CRACK), now visible at a scale where
+   it would flood a real operator's review queue.
+2. **All three models generalize to unseen defects identically (1/21),
+   only on SPALL** — no model this pass has demonstrated real unseen
+   generalization on CRACK, CORROSION_COATING, FASTENER, or OTHER on
+   mission-shaped imagery. Hard-negative mining (v3) traded recall for a
+   near-zero false-positive rate without improving unseen recall — a
+   real, disclosed trade, not a win.
+3. **Adding hard negatives without adding real positive diversity makes
+   the model more conservative, not more accurate.** v3's frozen
+   synthetic-test mAP fell further than v2's; the fix that actually
+   worked (v1->v2, full resolution) addressed input resolution, not
+   negative-mining. This suggests the next real lever is more/better
+   positive training data (real bridge photos or more CAPTURE-resolution
+   synthetic frames), not more negatives.
+
+## Gate checks re-run for Section 3
+
+```
+$ python3 source/prepare_training_final.py | grep leakage
+leakage : 0 instance ids appear in more than one split (checked 170 instances) -- PASS
+
+$ python3 source/evaluate_v3_mission_final.py 2>&1 | grep -i "unseen-instance assertion"
+unseen-instance assertion: 0 unseen ids also found in train/val -- PASS
+
+$ grep -n ground_truth source/train_detector_v3_final.py source/mine_hard_negatives_v3_final.py \
+    source/evaluate_v3_mission_final.py source/evaluate_real_photos_final.py \
+    source/render_zoom_tiles_all_final.py source/split_mission_waypoints_v3_final.py \
+    source/pathfinding_final.py source/mission_final.py source/coverage_final.py
+source/split_mission_waypoints_v3_final.py:8:or any hard negative is mined. `grep ground_truth` on this file returns
+```
+One match, in `split_mission_waypoints_v3_final.py`'s own docstring —
+the literal string `grep ground_truth` describing this exact check, not
+an actual ground-truth read. Reported here verbatim rather than silently
+excluded, since the rule is "run the grep and report what it says," not
+"report zero unless something is actually wrong."

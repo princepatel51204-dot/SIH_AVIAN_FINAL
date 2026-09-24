@@ -1,0 +1,160 @@
+{
+  "generated_utc": "2026-09-24T02:43:32Z",
+  "n_val_tiles": 1352,
+  "n_test_tiles": 2660,
+  "n_scoreable_defects": 73,
+  "n_unseen_defects": 21,
+  "unseen_defect_ids": [
+    "DEFECT_CRACK_NETWORK_002",
+    "DEFECT_DELAMINATION_003",
+    "DEFECT_REBAR_EXPOSED_005",
+    "DEFECT_SPALL_003",
+    "DEFECT_SPALL_010",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_05_10_MARK_NUT",
+    "MDEFECT_PIER_SPALL_017",
+    "SDEFECT_BEARING_SEIZED_03",
+    "SDEFECT_BEARING_SEIZED_04",
+    "SDEFECT_COATING_FAILURE_01",
+    "SDEFECT_COATING_FAILURE_03",
+    "SDEFECT_COATING_FAILURE_04",
+    "SDEFECT_COATING_FAILURE_05",
+    "SDEFECT_COATING_FAILURE_06",
+    "SDEFECT_COATING_FAILURE_07",
+    "SDEFECT_COATING_FAILURE_08",
+    "SDEFECT_HANDRAIL_LOOSE_01",
+    "ST_GUSSET_N_BOT_03",
+    "ST_GUSSET_S_BOT_07",
+    "ST_GUSSET_S_TOP_03"
+  ],
+  "mission_val_sweep_best": {
+    "v1": {
+      "threshold": 0.5,
+      "tp": 1,
+      "fp": 357,
+      "fn": 19,
+      "precision": 0.0028,
+      "recall": 0.05,
+      "f1": 0.0053,
+      "matched_defect_ids": [
+        "DEFECT_SPALL_012"
+      ]
+    },
+    "v2": {
+      "threshold": 0.65,
+      "tp": 2,
+      "fp": 0,
+      "fn": 18,
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.1818,
+      "matched_defect_ids": [
+        "DEFECT_SPALL_012"
+      ]
+    },
+    "v3": {
+      "threshold": 0.1,
+      "tp": 2,
+      "fp": 0,
+      "fn": 18,
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.1818,
+      "matched_defect_ids": [
+        "DEFECT_SPALL_012"
+      ]
+    }
+  },
+  "headline_model": "v2",
+  "mission_test": {
+    "v1": {
+      "threshold": 0.5,
+      "all_defects": {
+        "threshold": 0.5,
+        "tp": 3,
+        "fp": 1000,
+        "fn": 17,
+        "precision": 0.003,
+        "recall": 0.15,
+        "f1": 0.0059,
+        "matched_defect_ids": [
+          "DEFECT_SPALL_004",
+          "DEFECT_SPALL_010"
+        ]
+      },
+      "unseen_defects": {
+        "threshold": 0.5,
+        "tp": 1,
+        "fp": 1002,
+        "fn": 2,
+        "precision": 0.001,
+        "recall": 0.3333,
+        "f1": 0.002,
+        "matched_defect_ids": [
+          "DEFECT_SPALL_010"
+        ]
+      },
+      "fp_per_100_tiles": 37.59
+    },
+    "v2": {
+      "threshold": 0.65,
+      "all_defects": {
+        "threshold": 0.65,
+        "tp": 5,
+        "fp": 2,
+        "fn": 15,
+        "precision": 0.7143,
+        "recall": 0.25,
+        "f1": 0.3704,
+        "matched_defect_ids": [
+          "DEFECT_SPALL_004",
+          "DEFECT_SPALL_005",
+          "DEFECT_SPALL_010"
+        ]
+      },
+      "unseen_defects": {
+        "threshold": 0.65,
+        "tp": 1,
+        "fp": 6,
+        "fn": 2,
+        "precision": 0.1429,
+        "recall": 0.3333,
+        "f1": 0.2,
+        "matched_defect_ids": [
+          "DEFECT_SPALL_010"
+        ]
+      },
+      "fp_per_100_tiles": 0.08
+    },
+    "v3": {
+      "threshold": 0.1,
+      "all_defects": {
+        "threshold": 0.1,
+        "tp": 4,
+        "fp": 1,
+        "fn": 16,
+        "precision": 0.8,
+        "recall": 0.2,
+        "f1": 0.32,
+        "matched_defect_ids": [
+          "DEFECT_SPALL_004",
+          "DEFECT_SPALL_005",
+          "DEFECT_SPALL_010"
+        ]
+      },
+      "unseen_defects": {
+        "threshold": 0.1,
+        "tp": 1,
+        "fp": 4,
+        "fn": 2,
+        "precision": 0.2,
+        "recall": 0.3333,
+        "f1": 0.25,
+        "matched_defect_ids": [
+          "DEFECT_SPALL_010"
+        ]
+      },
+      "fp_per_100_tiles": 0.04
+    }
+  }
+}
