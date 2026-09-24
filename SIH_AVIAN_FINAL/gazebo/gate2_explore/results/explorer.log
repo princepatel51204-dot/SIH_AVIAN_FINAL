@@ -1,0 +1,33 @@
+[0m[INFO] [1790237371.478322210] [smart_explorer]: waiting for /map, TF and Nav2 ...[0m
+[0m[INFO] [1790237374.733182651] [smart_explorer]: takeoff -> 8.00 m (now 0.59)[0m
+[0m[INFO] [1790237385.799577007] [smart_explorer]: takeoff done, alt 7.96[0m
+[0m[INFO] [1790237385.799859972] [smart_explorer]: bootstrap: seeding SLAM with 15 s of motion[0m
+[0m[INFO] [1790237403.673156561] [smart_explorer]: GOTO (-2.6, 5.8) | gain 67230 | path 11.8m | u 0.19 | 35 frontiers | visited 0[0m
+[33m[WARN] [1790237444.599546254] [smart_explorer]:   STUCK - escape maneuver[0m
+[33m[WARN] [1790237449.114697586] [smart_explorer]:   stuck point blacklisted (1)[0m
+[0m[INFO] [1790237449.976820355] [smart_explorer]: GOTO (-4.9, 7.2) | gain 73236 | path 13.4m | u 0.33 | 26 frontiers | visited 0[0m
+[33m[WARN] [1790237490.766776360] [smart_explorer]:   STUCK - escape maneuver[0m
+[33m[WARN] [1790237495.285702217] [smart_explorer]:   stuck point blacklisted (2)[0m
+[0m[INFO] [1790237496.149095889] [smart_explorer]: GOTO (-2.3, 7.6) | gain 67032 | path 12.4m | u 0.49 | 28 frontiers | visited 0[0m
+[33m[WARN] [1790237537.083878684] [smart_explorer]:   STUCK - escape maneuver[0m
+[33m[WARN] [1790237541.616939831] [smart_explorer]:   stuck point blacklisted (3)[0m
+[0m[INFO] [1790237542.514450021] [smart_explorer]: GOTO (-1.5, 3.7) | gain 60745 | path 9.7m | u 0.47 | 45 frontiers | visited 0[0m
+Exception in thread Thread-1 (spin):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 247, in spin
+    executor.spin_once()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 926, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 907, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 877, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 785, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

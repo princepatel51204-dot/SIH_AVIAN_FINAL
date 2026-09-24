@@ -1,0 +1,41 @@
+{
+  "generated_utc": "2026-09-24T13:44:00Z",
+  "world": "gazebo/worlds/sih_avian_final.sdf",
+  "spawn_pose_m": [20.0, -30.0, 1.626, 0, 0, 0],
+  "cruise_alt_m": 8.0,
+  "geofence_world_frame_m": {"x": [0, 100], "y": [-33, 15], "note": "translated to SLAM map-frame (origin at spawn) at launch"},
+  "sensed_only_grep": "empty -- no reads of collision JSON / ground_truth files anywhere in the navigation/avoidance code path (gate2_explore/, garudanex_explore, garudanex_bridge, garudanex_navigation). See commit for the exact grep run.",
+  "result": {
+    "armed": true,
+    "autonomous_explore": true,
+    "goals_reached": 0,
+    "goals_attempted": 4,
+    "distance_flown_m": 21.87,
+    "area_explored_m2": 180.0,
+    "known_pct_final": 15.55,
+    "min_standoff_achieved_m": 15.71,
+    "min_standoff_required_m": 3.0,
+    "real_gazebo_contact_collisions": 0,
+    "run_time_s": 262.0,
+    "landed_disarmed": true
+  },
+  "what_worked": [
+    "World+drone+DDS bridge, offboard arm, climb to 8.0m cruise altitude -- reliable across every run once the physics/magnetic-field/sensor-name fixes from Gate 1 were in place.",
+    "Real Gazebo contact sensor added to x500_base's main body collision, bridged to ROS, counted live: 0 collisions the entire run.",
+    "SLAM Toolbox producing a live /map from the drone's own native 2D LiDAR ring; smart_explorer's frontier detector finding real, geofenced frontier candidates from it.",
+    "Nav2 planner_server successfully planning paths through unknown space (allow_unknown:true) once the global costmap was switched from a SLAM-map-mirroring static_layer -- which left the robot's own position outside the costmap's bounds as it drove ahead of the mapped area -- to a fixed window sized to the whole geofenced area.",
+    "MPPI controller actually driving the vehicle: 21.87 m of real, sensor-derived distance flown (run_recorder, TF-based), min sensed obstacle range never below 15.71 m against a 3.0 m standoff requirement, i.e. standoff was never remotely challenged.",
+    "Fully autonomous: no manual waypoints or joystick input at any point after the initial arm+OFFBOARD mode switch (a mission decision, not manual flight control, matching cmd_vel_bridge.cpp's own convention)."
+  ],
+  "what_did_not_finish": [
+    "0/4 GOTO goals reached Nav2's strict 'arrived' criterion. Each of the 4 attempts entered smart_explorer's own STUCK/escape-maneuver recovery (>40 s without >0.3 m net displacement) despite real distance being covered (21.87 m total) -- the MPPI controller was moving the vehicle but too slowly/conservatively to close on far (10-16 m) frontier goals within the stuck-timeout window on this machine (PX4 + Gazebo rendering + SLAM + Nav2 running concurrently). Diagnosed as a controller-tuning issue (MPPI's PreferForwardCritic likely fighting goals that aren't roughly ahead of current heading, compounded by real CPU contention -- controller_server's own log showed its loop dropping to 6.9-12.5 Hz against a 20 Hz target on the first tuning pass), not an architecture or sensing failure -- distinct root causes were found and fixed one at a time (geofence coordinate frame, global costmap sizing, allow_unknown, MPPI batch size/rate) and each fix produced correct, verifiable behavior at that layer. Ran out of session time before resolving the goal-completion tuning specifically.",
+    "RTH was not reached (mission was stopped manually after the 4th stall, given the pace of progress, rather than let it run for a possibly very long natural dry-exhaustion). Landing was performed via the same direct offboard-descent method proven in Gate 1, successfully: drone landed and auto-disarmed.",
+    "Octomap (3D awareness beyond the flight-altitude LiDAR ring) was verified working standalone (gate2_explore/octomap_sih.launch.py, /projected_map publishing, no errors) but disabled during the live mission run specifically -- adding its point-cloud processing load pushed a raw ROS2 service RPC past its timeout and stalled the entire Nav2 lifecycle_manager activation chain on this machine. Live avoidance for this run came from the scan-based obstacle_layer only (the drone's own native LiDAR ring), which was reliable across every run."
+  ],
+  "world_and_infra_fixes_this_gate": [
+    "smart_explorer.py: added an additive, backward-compatible geofence (geofence_min/max_x/y params, default unbounded) -- an occupancy-grid frontier explorer has no natural stopping boundary in an open corridor world without one.",
+    "x500_base/model.sdf: added a real Gazebo contact sensor (type=contact) on the main-body collision only (not the landing legs, so normal ground contact at takeoff/landing isn't miscounted as a collision).",
+    "nav2_sih.yaml: 3.0 m inflation_radius (both costmaps + MPPI CostCritic) for the hard 3 m standoff rule; global costmap switched to a fixed window over the geofenced area instead of mirroring SLAM's live-growing map; allow_unknown:true on the planner (frontier goals are by definition in unknown space); MPPI batch_size/controller_frequency reduced to what this machine can actually sustain.",
+    "navigation_sih.launch.py: a trimmed copy of nav2_bringup's navigation_launch.py excluding route_server/collision_monitor/docking_server, none of which this mission needs, and one of which (collision_monitor) had an independent, reproducible bug that stalled the whole lifecycle_manager activation group."
+  ]
+}
