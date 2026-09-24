@@ -1,0 +1,4832 @@
+{
+  "seed": 20260927,
+  "n_available": 2864,
+  "n_dropped_contaminated": 13,
+  "n_selected": 201,
+  "tiles": [
+    {
+      "waypoint_id": "CWP_118",
+      "tile_id": "CWP_118_T0910",
+      "achieved_position_m": [
+        217.62669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        -0.4924629032611847,
+        0.32715898752212524,
+        -0.8065031170845032
+      ],
+      "tile_target_m": [
+        213.6837158203125,
+        0.3806495666503906,
+        22.699106216430664
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_118_T0910.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "tile_id": "CWP_027_T0906",
+      "achieved_position_m": [
+        216.89700317382812,
+        -3.592600107192993,
+        13.326499938964844
+      ],
+      "tile_direction": [
+        0.8485798239707947,
+        0.5246192216873169,
+        0.06846149265766144
+      ],
+      "tile_target_m": [
+        223.6038055419922,
+        0.553760290145874,
+        13.867589950561523
+      ],
+      "standoff_m": 7.903561410089394,
+      "zoom_hfov_deg": 9.13765252932529,
+      "zoom_vfov_deg": 5.111066139382083,
+      "image_path": "detection/renders_zoom_all/CWP_027_T0906.png",
+      "hit_object": "ST_STRINGER_01"
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "tile_id": "CWP_074_T0803",
+      "achieved_position_m": [
+        171.36070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        0.420341432094574,
+        -0.8975893259048462,
+        -0.13283994793891907
+      ],
+      "tile_target_m": [
+        174.7162322998047,
+        8.041448593139648,
+        15.439153671264648
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_074_T0803.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0502",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        0.04847443103790283,
+        -0.21173134446144104,
+        0.9761250615119934
+      ],
+      "tile_target_m": [
+        45.473876953125,
+        -1.5861634016036987,
+        10.447697639465332
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0502.png",
+      "hit_object": "BR_PIER_CAP_002"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0110",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        -0.3964540660381317,
+        0.32698166370391846,
+        0.8578503727912903
+      ],
+      "tile_target_m": [
+        165.67398071289062,
+        2.613095998764038,
+        11.314870834350586
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0110.png",
+      "hit_object": "ST_STRINGER_02"
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "tile_id": "CWP_074_T0810",
+      "achieved_position_m": [
+        171.36070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        0.40077704191207886,
+        -0.8557897806167603,
+        0.32711130380630493
+      ],
+      "tile_target_m": [
+        174.56005859375,
+        8.375129699707031,
+        19.110891342163086
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_074_T0810.png",
+      "hit_object": "ST_BRACING_TOP_03_A"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0207",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        -0.304101824760437,
+        0.12014155089855194,
+        0.9450333714485168
+      ],
+      "tile_target_m": [
+        42.653411865234375,
+        1.0686827898025513,
+        10.198976516723633
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0207.png",
+      "hit_object": "BR_DECK_SLAB_001"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0108",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.9008699059486389,
+        0.38602781295776367,
+        0.19853447377681732
+      ],
+      "tile_target_m": [
+        361.64111328125,
+        5.9680867195129395,
+        10.262911796569824
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0108.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0610",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.9313437938690186,
+        0.16012534499168396,
+        0.32704514265060425
+      ],
+      "tile_target_m": [
+        -1.406080722808838,
+        -1.367950201034546,
+        11.326973915100098
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0610.png",
+      "hit_object": "BR_PIER_CAP_001"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0301",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.951724648475647,
+        0.15748664736747742,
+        -0.2634732127189636
+      ],
+      "tile_target_m": [
+        361.23468017578125,
+        4.1416730880737305,
+        6.570722579956055
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0301.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_069",
+      "tile_id": "CWP_069_T0502",
+      "achieved_position_m": [
+        202.43040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.06758461147546768,
+        -0.9775127172470093,
+        -0.1997532993555069
+      ],
+      "tile_target_m": [
+        202.96484375,
+        7.402508735656738,
+        11.929828643798828
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_069_T0502.png",
+      "hit_object": "ST_CHORD_BOT_N"
+    },
+    {
+      "waypoint_id": "CWP_145",
+      "tile_id": "CWP_145_T0808",
+      "achieved_position_m": [
+        146.20880126953125,
+        1.139299988746643,
+        16.503299713134766
+      ],
+      "tile_direction": [
+        0.40562862157821655,
+        -0.8922865390777588,
+        0.19821754097938538
+      ],
+      "tile_target_m": [
+        149.4191131591797,
+        -5.922619819641113,
+        18.07207489013672
+      ],
+      "standoff_m": 7.914407808181981,
+      "zoom_hfov_deg": 9.125182629845156,
+      "zoom_vfov_deg": 5.104070882587832,
+      "image_path": "detection/renders_zoom_all/CWP_145_T0808.png",
+      "hit_object": "ST_DIAGONAL_S_01"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0100",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        -0.39645326137542725,
+        -0.32715433835983276,
+        0.8577848076820374
+      ],
+      "tile_target_m": [
+        165.67398071289062,
+        -2.6128759384155273,
+        11.314346313476562
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0100.png",
+      "hit_object": "ST_STRINGER_00"
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "tile_id": "CWP_119_T0309",
+      "achieved_position_m": [
+        217.53269958496094,
+        2.3592000007629395,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.1785535216331482,
+        0.24899934232234955,
+        -0.9519023299217224
+      ],
+      "tile_target_m": [
+        218.9615936279297,
+        4.3518524169921875,
+        21.53386688232422
+      ],
+      "standoff_m": 8.002640470034905,
+      "zoom_hfov_deg": 9.02499126718398,
+      "zoom_vfov_deg": 5.047869413226928,
+      "image_path": "detection/renders_zoom_all/CWP_119_T0309.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "tile_id": "CWP_119_T0010",
+      "achieved_position_m": [
+        217.53269958496094,
+        2.3592000007629395,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.49188995361328125,
+        0.31475892663002014,
+        -0.8117703199386597
+      ],
+      "tile_target_m": [
+        221.4691162109375,
+        4.8781023025512695,
+        22.655292510986328
+      ],
+      "standoff_m": 8.002640470034905,
+      "zoom_hfov_deg": 9.02499126718398,
+      "zoom_vfov_deg": 5.047869413226928,
+      "image_path": "detection/renders_zoom_all/CWP_119_T0010.png",
+      "hit_object": "ST_VERTICAL_N_08"
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "tile_id": "CWP_067_T0408",
+      "achieved_position_m": [
+        213.61570739746094,
+        15.221199989318848,
+        13.50160026550293
+      ],
+      "tile_direction": [
+        -0.04254195839166641,
+        -0.9791985750198364,
+        0.19839464128017426
+      ],
+      "tile_target_m": [
+        213.27548217773438,
+        7.390227794647217,
+        15.088227272033691
+      ],
+      "standoff_m": 7.9973279085881614,
+      "zoom_hfov_deg": 9.030961711917282,
+      "zoom_vfov_deg": 5.051218332202846,
+      "image_path": "detection/renders_zoom_all/CWP_067_T0408.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "tile_id": "CWP_114_T0007",
+      "achieved_position_m": [
+        195.12669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        0.5059004426002502,
+        0.1329808086156845,
+        -0.8522799015045166
+      ],
+      "tile_target_m": [
+        199.17726135253906,
+        -1.1740683317184448,
+        22.33258819580078
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_114_T0007.png",
+      "hit_object": "BR_MEDIAN_004"
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "tile_id": "CWP_034_T0102",
+      "achieved_position_m": [
+        270.1236877441406,
+        0.031099999323487282,
+        2.8264000415802
+      ],
+      "tile_direction": [
+        -0.4147458076477051,
+        -0.20206567645072937,
+        0.8872178196907043
+      ],
+      "tile_target_m": [
+        266.8058776855469,
+        -1.5853478908538818,
+        9.923802375793457
+      ],
+      "standoff_m": 7.999616852099118,
+      "zoom_hfov_deg": 9.028388349855097,
+      "zoom_vfov_deg": 5.049774889498348,
+      "image_path": "detection/renders_zoom_all/CWP_034_T0102.png",
+      "hit_object": "BR_GIRDER_005_G2"
+    },
+    {
+      "waypoint_id": "CWP_120",
+      "tile_id": "CWP_120_T0706",
+      "achieved_position_m": [
+        225.09869384765625,
+        -0.05270000174641609,
+        29.15060043334961
+      ],
+      "tile_direction": [
+        -0.30760908126831055,
+        0.07286529242992401,
+        -0.9487187266349792
+      ],
+      "tile_target_m": [
+        222.63739013671875,
+        0.5303230881690979,
+        21.559539794921875
+      ],
+      "standoff_m": 8.001383055633084,
+      "zoom_hfov_deg": 9.026403682282607,
+      "zoom_vfov_deg": 5.048661657982125,
+      "image_path": "detection/renders_zoom_all/CWP_120_T0706.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "tile_id": "CWP_024_T0608",
+      "achieved_position_m": [
+        191.34429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        0.16468949615955353,
+        0.19845768809318542,
+        0.9661738872528076
+      ],
+      "tile_target_m": [
+        192.66000366210938,
+        1.5865697860717773,
+        12.180320739746094
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_024_T0608.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0205",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.30779367685317993,
+        -0.0001314967666985467,
+        0.9514531493186951
+      ],
+      "tile_target_m": [
+        211.38534545898438,
+        4.9478025175631046e-05,
+        12.06271743774414
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0205.png",
+      "hit_object": "ST_STRINGER_01"
+    },
+    {
+      "waypoint_id": "CWP_075",
+      "tile_id": "CWP_075_T0806",
+      "achieved_position_m": [
+        168.68040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.41621676087379456,
+        -0.9069026708602905,
+        0.06550822407007217
+      ],
+      "tile_target_m": [
+        171.9716796875,
+        7.960865497589111,
+        14.027414321899414
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_075_T0806.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_118",
+      "tile_id": "CWP_118_T0809",
+      "achieved_position_m": [
+        217.62669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        -0.4001655876636505,
+        0.26351282000541687,
+        -0.8777405619621277
+      ],
+      "tile_target_m": [
+        214.42269897460938,
+        -0.12894344329833984,
+        22.128732681274414
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_118_T0809.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "tile_id": "CWP_109_T0304",
+      "achieved_position_m": [
+        161.2834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.18456508219242096,
+        -0.051680613309144974,
+        -0.9814606308937073
+      ],
+      "tile_target_m": [
+        162.760498046875,
+        -2.7729814052581787,
+        21.297325134277344
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_109_T0304.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "tile_id": "CWP_100_T0107",
+      "achieved_position_m": [
+        -8.821200370788574,
+        -2.9921998977661133,
+        11.062899589538574
+      ],
+      "tile_direction": [
+        0.9037813544273376,
+        -0.40638887882232666,
+        0.1342666894197464
+      ],
+      "tile_target_m": [
+        -1.6621551513671875,
+        -6.2112932205200195,
+        12.12645435333252
+      ],
+      "standoff_m": 7.921213416566814,
+      "zoom_hfov_deg": 9.117375675877923,
+      "zoom_vfov_deg": 5.099691447273178,
+      "image_path": "detection/renders_zoom_all/CWP_100_T0107.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "CWP_068",
+      "tile_id": "CWP_068_T0208",
+      "achieved_position_m": [
+        205.1103973388672,
+        15.207200050354004,
+        16.499500274658203
+      ],
+      "tile_direction": [
+        -0.2751423120498657,
+        -0.940656840801239,
+        0.19864900410175323
+      ],
+      "tile_target_m": [
+        202.9138641357422,
+        7.697665214538574,
+        18.085372924804688
+      ],
+      "standoff_m": 7.98328828672314,
+      "zoom_hfov_deg": 9.046777946492952,
+      "zoom_vfov_deg": 5.060090005387168,
+      "image_path": "detection/renders_zoom_all/CWP_068_T0208.png",
+      "hit_object": "ST_VERTICAL_N_06"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "tile_id": "CWP_114_T0603",
+      "achieved_position_m": [
+        195.12669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        -0.18415135145187378,
+        -0.13277573883533478,
+        -0.9738885760307312
+      ],
+      "tile_target_m": [
+        193.65225219726562,
+        -3.3018898963928223,
+        21.358909606933594
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_114_T0603.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "tile_id": "CWP_113_T0410",
+      "achieved_position_m": [
+        183.7834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.06193366274237633,
+        0.34135180711746216,
+        -0.9378929734230042
+      ],
+      "tile_target_m": [
+        184.2791290283203,
+        0.3723151683807373,
+        21.645980834960938
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_113_T0410.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_035",
+      "tile_id": "CWP_035_T0501",
+      "achieved_position_m": [
+        278.7939147949219,
+        -2.8705999851226807,
+        1.955299973487854
+      ],
+      "tile_direction": [
+        -0.9636684060096741,
+        -0.0434289425611496,
+        -0.26354721188545227
+      ],
+      "tile_target_m": [
+        271.1377258300781,
+        -3.215635299682617,
+        -0.13853633403778076
+      ],
+      "standoff_m": 7.944824211663562,
+      "zoom_hfov_deg": 9.0903939383545,
+      "zoom_vfov_deg": 5.084555862775615,
+      "image_path": "detection/renders_zoom_all/CWP_035_T0501.png",
+      "hit_object": "BR_PIER_FOOTING_006_1"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "tile_id": "CWP_109_T0901",
+      "achieved_position_m": [
+        161.2834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.49307823181152344,
+        -0.25083574652671814,
+        -0.8330398201942444
+      ],
+      "tile_target_m": [
+        157.3375701904297,
+        -4.366747856140137,
+        22.485082626342773
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_109_T0901.png",
+      "hit_object": "BR_PARAPET_004_R"
+    },
+    {
+      "waypoint_id": "CWP_068",
+      "tile_id": "CWP_068_T0708",
+      "achieved_position_m": [
+        205.1103973388672,
+        15.207200050354004,
+        16.499500274658203
+      ],
+      "tile_direction": [
+        0.3060488700866699,
+        -0.9310599565505981,
+        0.19864898920059204
+      ],
+      "tile_target_m": [
+        207.55368041992188,
+        7.774280071258545,
+        18.085372924804688
+      ],
+      "standoff_m": 7.98328828672314,
+      "zoom_hfov_deg": 9.046777946492952,
+      "zoom_vfov_deg": 5.060090005387168,
+      "image_path": "detection/renders_zoom_all/CWP_068_T0708.png",
+      "hit_object": "ST_CHORD_TOP_S"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0308",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        -0.18708856403827667,
+        0.1984938532114029,
+        0.9620800614356995
+      ],
+      "tile_target_m": [
+        167.34661865234375,
+        1.5865914821624756,
+        12.147574424743652
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0308.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "tile_id": "CWP_080_T0904",
+      "achieved_position_m": [
+        137.61070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        0.5286524295806885,
+        -0.8462257385253906,
+        -0.066547691822052
+      ],
+      "tile_target_m": [
+        141.83087158203125,
+        8.451478958129883,
+        15.96835708618164
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_080_T0904.png",
+      "hit_object": "BR_MEDIAN_004"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0000",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.8044900894165039,
+        -0.49579158425331116,
+        -0.327087938785553
+      ],
+      "tile_target_m": [
+        -2.434335708618164,
+        -6.684704780578613,
+        6.0246782302856445
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0000.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "tile_id": "CWP_114_T0204",
+      "achieved_position_m": [
+        195.12669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        0.28992828726768494,
+        -0.06648346781730652,
+        -0.9547363519668579
+      ],
+      "tile_target_m": [
+        197.4480438232422,
+        -2.7711102962493896,
+        21.512252807617188
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_114_T0204.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "tile_id": "CWP_074_T0202",
+      "achieved_position_m": [
+        171.36070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        -0.27517712116241455,
+        -0.9406690001487732,
+        -0.19854344427585602
+      ],
+      "tile_target_m": [
+        169.16400146484375,
+        7.697548866271973,
+        14.914649963378906
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_074_T0202.png",
+      "hit_object": "ST_VERTICAL_N_03"
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "tile_id": "CWP_105_T0403",
+      "achieved_position_m": [
+        138.78289794921875,
+        -2.359499931335449,
+        29.151500701904297
+      ],
+      "tile_direction": [
+        0.0650697723031044,
+        -0.1178368628025055,
+        -0.9908987879753113
+      ],
+      "tile_target_m": [
+        139.30361938476562,
+        -3.302494525909424,
+        21.221790313720703
+      ],
+      "standoff_m": 8.002544783508668,
+      "zoom_hfov_deg": 9.025098733422702,
+      "zoom_vfov_deg": 5.047929692610462,
+      "image_path": "detection/renders_zoom_all/CWP_105_T0403.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "tile_id": "CWP_119_T0109",
+      "achieved_position_m": [
+        217.53269958496094,
+        2.3592000007629395,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.39953431487083435,
+        0.2500411868095398,
+        -0.8819590210914612
+      ],
+      "tile_target_m": [
+        220.7300262451172,
+        4.360189437866211,
+        22.093599319458008
+      ],
+      "standoff_m": 8.002640470034905,
+      "zoom_hfov_deg": 9.02499126718398,
+      "zoom_vfov_deg": 5.047869413226928,
+      "image_path": "detection/renders_zoom_all/CWP_119_T0109.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "tile_id": "CWP_080_T0103",
+      "achieved_position_m": [
+        137.61070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        -0.3905458152294159,
+        -0.9109487533569336,
+        -0.13283994793891907
+      ],
+      "tile_target_m": [
+        134.49302673339844,
+        7.934802532196045,
+        15.439153671264648
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_080_T0103.png",
+      "hit_object": "BR_PARAPET_003_L"
+    },
+    {
+      "waypoint_id": "CWP_065",
+      "tile_id": "CWP_065_T0705",
+      "achieved_position_m": [
+        233.21890258789062,
+        6.8684000968933105,
+        13.499300003051758
+      ],
+      "tile_direction": [
+        -0.9597717523574829,
+        -0.28078144788742065,
+        8.361635991604999e-05
+      ],
+      "tile_target_m": [
+        225.54554748535156,
+        4.623558044433594,
+        13.499968528747559
+      ],
+      "standoff_m": 7.994979732350913,
+      "zoom_hfov_deg": 9.033603188511115,
+      "zoom_vfov_deg": 5.052699985167496,
+      "image_path": "detection/renders_zoom_all/CWP_065_T0705.png",
+      "hit_object": "BR_GIRDER_005_G5"
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "tile_id": "CWP_100_T0601",
+      "achieved_position_m": [
+        -8.821200370788574,
+        -2.9921998977661133,
+        11.062899589538574
+      ],
+      "tile_direction": [
+        0.9495577216148376,
+        0.17238081991672516,
+        -0.26196393370628357
+      ],
+      "tile_target_m": [
+        -1.299551010131836,
+        -1.6267346143722534,
+        8.98782730102539
+      ],
+      "standoff_m": 7.921213416566814,
+      "zoom_hfov_deg": 9.117375675877923,
+      "zoom_vfov_deg": 5.099691447273178,
+      "image_path": "detection/renders_zoom_all/CWP_100_T0601.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "CWP_145",
+      "tile_id": "CWP_145_T0807",
+      "achieved_position_m": [
+        146.20880126953125,
+        1.139299988746643,
+        16.503299713134766
+      ],
+      "tile_direction": [
+        0.41020122170448303,
+        -0.902317225933075,
+        0.13250824809074402
+      ],
+      "tile_target_m": [
+        149.45530700683594,
+        -6.002006530761719,
+        17.552024841308594
+      ],
+      "standoff_m": 7.914407808181981,
+      "zoom_hfov_deg": 9.125182629845156,
+      "zoom_vfov_deg": 5.104070882587832,
+      "image_path": "detection/renders_zoom_all/CWP_145_T0807.png",
+      "hit_object": "ST_DIAGONAL_S_01"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "tile_id": "CWP_113_T0607",
+      "achieved_position_m": [
+        183.7834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.17281094193458557,
+        0.14767301082611084,
+        -0.9738219380378723
+      ],
+      "tile_target_m": [
+        182.40054321289062,
+        -1.1776262521743774,
+        21.358455657958984
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_113_T0607.png",
+      "hit_object": "BR_MEDIAN_004"
+    },
+    {
+      "waypoint_id": "CWP_079",
+      "tile_id": "CWP_079_T0000",
+      "achieved_position_m": [
+        146.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.48027729988098145,
+        -0.813467800617218,
+        -0.32803019881248474
+      ],
+      "tile_target_m": [
+        142.38255310058594,
+        8.699712753295898,
+        10.915464401245117
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_079_T0000.png",
+      "hit_object": "BR_PIER_COL_004_1"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0003",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.8575077652931213,
+        0.49699878692626953,
+        -0.132938414812088
+      ],
+      "tile_target_m": [
+        361.9876403808594,
+        6.854924201965332,
+        7.6139068603515625
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0003.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "tile_id": "CWP_034_T0705",
+      "achieved_position_m": [
+        270.1236877441406,
+        0.031099999323487282,
+        2.8264000415802
+      ],
+      "tile_direction": [
+        0.28173989057540894,
+        -0.0037128180265426636,
+        0.9594836235046387
+      ],
+      "tile_target_m": [
+        272.37750244140625,
+        0.0013988781720399857,
+        10.501901626586914
+      ],
+      "standoff_m": 7.999616852099118,
+      "zoom_hfov_deg": 9.028388349855097,
+      "zoom_vfov_deg": 5.049774889498348,
+      "image_path": "detection/renders_zoom_all/CWP_034_T0705.png",
+      "hit_object": "BR_GIRDER_006_G3"
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "tile_id": "CWP_071_T0210",
+      "achieved_position_m": [
+        191.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.27227482199668884,
+        -0.9053141474723816,
+        0.32599493861198425
+      ],
+      "tile_target_m": [
+        189.02735900878906,
+        7.9734272956848145,
+        16.087242126464844
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_071_T0210.png",
+      "hit_object": "ST_CHORD_TOP_S"
+    },
+    {
+      "waypoint_id": "CWP_120",
+      "tile_id": "CWP_120_T0805",
+      "achieved_position_m": [
+        225.09869384765625,
+        -0.05270000174641609,
+        29.15060043334961
+      ],
+      "tile_direction": [
+        -0.42035093903541565,
+        0.006009905599057674,
+        -0.9073416590690613
+      ],
+      "tile_target_m": [
+        221.7353057861328,
+        -0.004612445831298828,
+        21.890613555908203
+      ],
+      "standoff_m": 8.001383055633084,
+      "zoom_hfov_deg": 9.026403682282607,
+      "zoom_vfov_deg": 5.048661657982125,
+      "image_path": "detection/renders_zoom_all/CWP_120_T0805.png",
+      "hit_object": "BR_MEDIAN_004"
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "tile_id": "CWP_105_T0005",
+      "achieved_position_m": [
+        138.78289794921875,
+        -2.359499931335449,
+        29.151500701904297
+      ],
+      "tile_direction": [
+        0.5204680562019348,
+        0.013017957098782063,
+        -0.8537819981575012
+      ],
+      "tile_target_m": [
+        142.94796752929688,
+        -2.2553231716156006,
+        22.319072723388672
+      ],
+      "standoff_m": 8.002544783508668,
+      "zoom_hfov_deg": 9.025098733422702,
+      "zoom_vfov_deg": 5.047929692610462,
+      "image_path": "detection/renders_zoom_all/CWP_105_T0005.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_118",
+      "tile_id": "CWP_118_T0110",
+      "achieved_position_m": [
+        217.62669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        0.3812345266342163,
+        0.3271649181842804,
+        -0.8646522164344788
+      ],
+      "tile_target_m": [
+        220.67910766601562,
+        0.38069701194763184,
+        22.2335262298584
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_118_T0110.png",
+      "hit_object": "VEH_BUS_001_BODY"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0905",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        0.5065349340438843,
+        -0.011523445136845112,
+        0.8621424436569214
+      ],
+      "tile_target_m": [
+        49.1381721496582,
+        0.015417203307151794,
+        9.535882949829102
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0905.png",
+      "hit_object": "BR_GIRDER_002_G3"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0607",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        0.16691413521766663,
+        0.13278768956661224,
+        0.9769888520240784
+      ],
+      "tile_target_m": [
+        170.17478942871094,
+        1.0616569519042969,
+        12.266682624816895
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0607.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "tile_id": "CWP_045_T0510",
+      "achieved_position_m": [
+        345.5224914550781,
+        6.130300045013428,
+        7.000199794769287
+      ],
+      "tile_direction": [
+        0.9440992474555969,
+        0.041454918682575226,
+        0.32704439759254456
+      ],
+      "tile_target_m": [
+        353.0550537109375,
+        6.461050987243652,
+        9.60954761505127
+      ],
+      "standoff_m": 7.978572692857359,
+      "zoom_hfov_deg": 9.052102674661558,
+      "zoom_vfov_deg": 5.063076792233934,
+      "image_path": "detection/renders_zoom_all/CWP_045_T0510.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0309",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        -0.18414896726608276,
+        0.263318806886673,
+        0.9469700455665588
+      ],
+      "tile_target_m": [
+        167.37010192871094,
+        2.1044857501983643,
+        12.026859283447266
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0309.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "tile_id": "CWP_024_T0008",
+      "achieved_position_m": [
+        191.34429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.5153889656066895,
+        0.19847482442855835,
+        0.833655834197998
+      ],
+      "tile_target_m": [
+        187.2268829345703,
+        1.5867066383361816,
+        11.1216402053833
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_024_T0008.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0401",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        -0.06905168294906616,
+        -0.2635103166103363,
+        0.9621819257736206
+      ],
+      "tile_target_m": [
+        168.2896270751953,
+        -2.1044161319732666,
+        12.148387908935547
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0401.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_079",
+      "tile_id": "CWP_079_T0908",
+      "achieved_position_m": [
+        146.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.5128851532936096,
+        -0.8354077935218811,
+        0.1975921094417572
+      ],
+      "tile_target_m": [
+        150.23609924316406,
+        8.526219367980957,
+        15.071882247924805
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_079_T0908.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "tile_id": "CWP_045_T0002",
+      "achieved_position_m": [
+        345.5224914550781,
+        6.130300045013428,
+        7.000199794769287
+      ],
+      "tile_direction": [
+        0.8312813639640808,
+        -0.5191578269004822,
+        -0.19861143827438354
+      ],
+      "tile_target_m": [
+        352.1549377441406,
+        1.988161563873291,
+        5.415564060211182
+      ],
+      "standoff_m": 7.978572692857359,
+      "zoom_hfov_deg": 9.052102674661558,
+      "zoom_vfov_deg": 5.063076792233934,
+      "image_path": "detection/renders_zoom_all/CWP_045_T0002.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "tile_id": "CWP_028_T0104",
+      "achieved_position_m": [
+        225.1175994873047,
+        0.050999999046325684,
+        2.048799991607666
+      ],
+      "tile_direction": [
+        -0.42156916856765747,
+        -0.07240081578493118,
+        0.903901219367981
+      ],
+      "tile_target_m": [
+        221.74937438964844,
+        -0.5274628400802612,
+        9.27072525024414
+      ],
+      "standoff_m": 7.989728578744019,
+      "zoom_hfov_deg": 9.039515824145363,
+      "zoom_vfov_deg": 5.0560165050326145,
+      "image_path": "detection/renders_zoom_all/CWP_028_T0104.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0701",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        0.27617400884628296,
+        -0.27578204870224,
+        0.9206910729408264
+      ],
+      "tile_target_m": [
+        47.295379638671875,
+        -2.0985424518585205,
+        10.00424861907959
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0701.png",
+      "hit_object": "BR_GIRDER_002_G2"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "tile_id": "CWP_027_T0006",
+      "achieved_position_m": [
+        216.89700317382812,
+        -3.592600107192993,
+        13.326499938964844
+      ],
+      "tile_direction": [
+        0.8606390953063965,
+        -0.5045921802520752,
+        0.06846149265766144
+      ],
+      "tile_target_m": [
+        223.69911193847656,
+        -7.58067512512207,
+        13.867589950561523
+      ],
+      "standoff_m": 7.903561410089394,
+      "zoom_hfov_deg": 9.13765252932529,
+      "zoom_vfov_deg": 5.111066139382083,
+      "image_path": "detection/renders_zoom_all/CWP_027_T0006.png",
+      "hit_object": "ST_DIAGONAL_S_07"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0606",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        0.1686774492263794,
+        0.05338210240006447,
+        0.984224796295166
+      ],
+      "tile_target_m": [
+        46.43545150756836,
+        0.5346347689628601,
+        10.512492179870605
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0606.png",
+      "hit_object": "BR_DECK_SLAB_002"
+    },
+    {
+      "waypoint_id": "CWP_075",
+      "tile_id": "CWP_075_T0206",
+      "achieved_position_m": [
+        168.68040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.28748467564582825,
+        -0.9555459022521973,
+        0.0654577687382698
+      ],
+      "tile_target_m": [
+        166.40708923339844,
+        7.576213836669922,
+        14.02701473236084
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_075_T0206.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0008",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.5153889656066895,
+        0.19847482442855835,
+        0.833655834197998
+      ],
+      "tile_target_m": [
+        209.7268829345703,
+        1.5867066383361816,
+        11.1216402053833
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0008.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_036",
+      "tile_id": "CWP_036_T0508",
+      "achieved_position_m": [
+        278.8190002441406,
+        2.8773000240325928,
+        1.9558000564575195
+      ],
+      "tile_direction": [
+        -0.9772794246673584,
+        -0.07459783554077148,
+        0.19839398562908173
+      ],
+      "tile_target_m": [
+        271.0300598144531,
+        2.282754421234131,
+        3.5370023250579834
+      ],
+      "standoff_m": 7.9700110043661745,
+      "zoom_hfov_deg": 9.061786319618742,
+      "zoom_vfov_deg": 5.068508654373022,
+      "image_path": "detection/renders_zoom_all/CWP_036_T0508.png",
+      "hit_object": "BR_PIER_COL_006_2"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0505",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        0.048390913754701614,
+        -0.00013744054012931883,
+        0.9988284707069397
+      ],
+      "tile_target_m": [
+        214.23089599609375,
+        1.9934959709644318e-06,
+        12.44119644165039
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0505.png",
+      "hit_object": "ST_STRINGER_01"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0408",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        -0.07015452533960342,
+        0.19849242269992828,
+        0.9775883555412292
+      ],
+      "tile_target_m": [
+        168.28082275390625,
+        1.5865800380706787,
+        12.271471977233887
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0408.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "tile_id": "CWP_027_T0009",
+      "achieved_position_m": [
+        216.89700317382812,
+        -3.592600107192993,
+        13.326499938964844
+      ],
+      "tile_direction": [
+        0.8316551446914673,
+        -0.4878593981266022,
+        0.2652222514152527
+      ],
+      "tile_target_m": [
+        223.4700469970703,
+        -7.448427200317383,
+        15.422700881958008
+      ],
+      "standoff_m": 7.903561410089394,
+      "zoom_hfov_deg": 9.13765252932529,
+      "zoom_vfov_deg": 5.111066139382083,
+      "image_path": "detection/renders_zoom_all/CWP_027_T0009.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0708",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        0.28051522374153137,
+        0.1859826147556305,
+        0.9416589736938477
+      ],
+      "tile_target_m": [
+        47.330108642578125,
+        1.595384120941162,
+        10.17198371887207
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0708.png",
+      "hit_object": "BR_GIRDER_002_G4"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "tile_id": "CWP_045_T0301",
+      "achieved_position_m": [
+        345.5224914550781,
+        6.130300045013428,
+        7.000199794769287
+      ],
+      "tile_direction": [
+        0.9460225701332092,
+        -0.18879064917564392,
+        -0.2634376585483551
+      ],
+      "tile_target_m": [
+        353.0704040527344,
+        4.624020099639893,
+        4.898343086242676
+      ],
+      "standoff_m": 7.978572692857359,
+      "zoom_hfov_deg": 9.052102674661558,
+      "zoom_vfov_deg": 5.063076792233934,
+      "image_path": "detection/renders_zoom_all/CWP_045_T0301.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "tile_id": "CWP_034_T0000",
+      "achieved_position_m": [
+        270.1236877441406,
+        0.031099999323487282,
+        2.8264000415802
+      ],
+      "tile_direction": [
+        -0.49985793232917786,
+        -0.3302129805088043,
+        0.8006880879402161
+      ],
+      "tile_target_m": [
+        266.1250305175781,
+        -2.6104772090911865,
+        9.231597900390625
+      ],
+      "standoff_m": 7.999616852099118,
+      "zoom_hfov_deg": 9.028388349855097,
+      "zoom_vfov_deg": 5.049774889498348,
+      "image_path": "detection/renders_zoom_all/CWP_034_T0000.png",
+      "hit_object": "BR_DECK_SLAB_005"
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "tile_id": "CWP_100_T0410",
+      "achieved_position_m": [
+        -8.821200370788574,
+        -2.9921998977661133,
+        11.062899589538574
+      ],
+      "tile_direction": [
+        0.9427310228347778,
+        -0.05779606103897095,
+        0.32850855588912964
+      ],
+      "tile_target_m": [
+        -1.3536267280578613,
+        -3.45001482963562,
+        13.665085792541504
+      ],
+      "standoff_m": 7.921213416566814,
+      "zoom_hfov_deg": 9.117375675877923,
+      "zoom_vfov_deg": 5.099691447273178,
+      "image_path": "detection/renders_zoom_all/CWP_100_T0410.png",
+      "hit_object": "BR_WEARING_001"
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "tile_id": "CWP_080_T0501",
+      "achieved_position_m": [
+        137.61070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        0.07390668243169785,
+        -0.9618608951568604,
+        -0.26336556673049927
+      ],
+      "tile_target_m": [
+        138.20068359375,
+        7.528376579284668,
+        14.39718246459961
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_080_T0501.png",
+      "hit_object": "ST_DIAGONAL_N_00"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "tile_id": "CWP_113_T0703",
+      "achieved_position_m": [
+        183.7834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.28878524899482727,
+        -0.11849901080131531,
+        -0.950032114982605
+      ],
+      "tile_target_m": [
+        181.47244262695312,
+        -3.3077049255371094,
+        21.54883575439453
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_113_T0703.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "tile_id": "CWP_122_T0002",
+      "achieved_position_m": [
+        315.119384765625,
+        -4.4618000984191895,
+        22.2726993560791
+      ],
+      "tile_direction": [
+        0.49290552735328674,
+        -0.19209922850131989,
+        -0.8486118316650391
+      ],
+      "tile_target_m": [
+        319.06329345703125,
+        -5.998848915100098,
+        15.482677459716797
+      ],
+      "standoff_m": 8.001328705263106,
+      "zoom_hfov_deg": 9.026464742335921,
+      "zoom_vfov_deg": 5.048695907503212,
+      "image_path": "detection/renders_zoom_all/CWP_122_T0002.png",
+      "hit_object": "BR_WEARING_007"
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "tile_id": "CWP_028_T0207",
+      "achieved_position_m": [
+        225.1175994873047,
+        0.050999999046325684,
+        2.048799991607666
+      ],
+      "tile_direction": [
+        -0.3078244626522064,
+        0.12684060633182526,
+        0.942950427532196
+      ],
+      "tile_target_m": [
+        222.65817260742188,
+        1.0644220113754272,
+        9.582717895507812
+      ],
+      "standoff_m": 7.989728578744019,
+      "zoom_hfov_deg": 9.039515824145363,
+      "zoom_vfov_deg": 5.0560165050326145,
+      "image_path": "detection/renders_zoom_all/CWP_028_T0207.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "tile_id": "CWP_028_T0310",
+      "achieved_position_m": [
+        225.1175994873047,
+        0.050999999046325684,
+        2.048799991607666
+      ],
+      "tile_direction": [
+        -0.18347495794296265,
+        0.32112735509872437,
+        0.9290931820869446
+      ],
+      "tile_target_m": [
+        223.6516876220703,
+        2.616720199584961,
+        9.472002029418945
+      ],
+      "standoff_m": 7.989728578744019,
+      "zoom_hfov_deg": 9.039515824145363,
+      "zoom_vfov_deg": 5.0560165050326145,
+      "image_path": "detection/renders_zoom_all/CWP_028_T0310.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "tile_id": "CWP_024_T0302",
+      "achieved_position_m": [
+        191.34429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.18745024502277374,
+        -0.1987231969833374,
+        0.9619624018669128
+      ],
+      "tile_target_m": [
+        189.84677124023438,
+        -1.5864909887313843,
+        12.146675109863281
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_024_T0302.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_120",
+      "tile_id": "CWP_120_T0200",
+      "achieved_position_m": [
+        225.09869384765625,
+        -0.05270000174641609,
+        29.15060043334961
+      ],
+      "tile_direction": [
+        0.2690521776676178,
+        -0.32111677527427673,
+        -0.9080169796943665
+      ],
+      "tile_target_m": [
+        227.25148010253906,
+        -2.6220781803131104,
+        21.885208129882812
+      ],
+      "standoff_m": 8.001383055633084,
+      "zoom_hfov_deg": 9.026403682282607,
+      "zoom_vfov_deg": 5.048661657982125,
+      "image_path": "detection/renders_zoom_all/CWP_120_T0200.png",
+      "hit_object": "BR_WEARING_005"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0700",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.897681713104248,
+        -0.29522377252578735,
+        -0.3271244168281555
+      ],
+      "tile_target_m": [
+        361.6665954589844,
+        0.5237843990325928,
+        6.062047004699707
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0700.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0702",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        0.280572772026062,
+        -0.21116229891777039,
+        0.9363170266151428
+      ],
+      "tile_target_m": [
+        47.33056640625,
+        -1.5816112756729126,
+        10.129249572753906
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0702.png",
+      "hit_object": "BR_GIRDER_002_G2"
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "tile_id": "CWP_105_T0808",
+      "achieved_position_m": [
+        138.78289794921875,
+        -2.359499931335449,
+        29.151500701904297
+      ],
+      "tile_direction": [
+        -0.39609310030937195,
+        0.21215657889842987,
+        -0.893364429473877
+      ],
+      "tile_target_m": [
+        135.61314392089844,
+        -0.6617075204849243,
+        22.00231170654297
+      ],
+      "standoff_m": 8.002544783508668,
+      "zoom_hfov_deg": 9.025098733422702,
+      "zoom_vfov_deg": 5.047929692610462,
+      "image_path": "detection/renders_zoom_all/CWP_105_T0808.png",
+      "hit_object": "ST_PORTAL_STRUT_135"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "tile_id": "CWP_122_T0507",
+      "achieved_position_m": [
+        315.119384765625,
+        -4.4618000984191895,
+        22.2726993560791
+      ],
+      "tile_direction": [
+        -0.07438328117132187,
+        0.14052270352840424,
+        -0.9872793555259705
+      ],
+      "tile_target_m": [
+        314.52423095703125,
+        -3.3374319076538086,
+        14.373152732849121
+      ],
+      "standoff_m": 8.001328705263106,
+      "zoom_hfov_deg": 9.026464742335921,
+      "zoom_vfov_deg": 5.048695907503212,
+      "image_path": "detection/renders_zoom_all/CWP_122_T0507.png",
+      "hit_object": "BR_WEARING_006"
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "tile_id": "CWP_119_T0301",
+      "achieved_position_m": [
+        217.53269958496094,
+        2.3592000007629395,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.17850960791110992,
+        -0.2777678370475769,
+        -0.9439170360565186
+      ],
+      "tile_target_m": [
+        218.96124267578125,
+        0.1363236904144287,
+        21.59777069091797
+      ],
+      "standoff_m": 8.002640470034905,
+      "zoom_hfov_deg": 9.02499126718398,
+      "zoom_vfov_deg": 5.047869413226928,
+      "image_path": "detection/renders_zoom_all/CWP_119_T0301.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_069",
+      "tile_id": "CWP_069_T0303",
+      "achieved_position_m": [
+        202.43040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.16948091983795166,
+        -0.976375162601471,
+        -0.13404430449008942
+      ],
+      "tile_target_m": [
+        201.0902099609375,
+        7.41150426864624,
+        12.449430465698242
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_069_T0303.png",
+      "hit_object": "ST_CHORD_BOT_N"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "tile_id": "CWP_122_T0003",
+      "achieved_position_m": [
+        315.119384765625,
+        -4.4618000984191895,
+        22.2726993560791
+      ],
+      "tile_direction": [
+        0.4984700679779053,
+        -0.12632299959659576,
+        -0.8576538562774658
+      ],
+      "tile_target_m": [
+        319.1078186035156,
+        -5.4725518226623535,
+        15.410329818725586
+      ],
+      "standoff_m": 8.001328705263106,
+      "zoom_hfov_deg": 9.026464742335921,
+      "zoom_vfov_deg": 5.048695907503212,
+      "image_path": "detection/renders_zoom_all/CWP_122_T0003.png",
+      "hit_object": "BR_WEARING_007"
+    },
+    {
+      "waypoint_id": "CWP_145",
+      "tile_id": "CWP_145_T0906",
+      "achieved_position_m": [
+        146.20880126953125,
+        1.139299988746643,
+        16.503299713134766
+      ],
+      "tile_direction": [
+        0.5190839767456055,
+        -0.8521530032157898,
+        0.06623418629169464
+      ],
+      "tile_target_m": [
+        150.31704711914062,
+        -5.604986667633057,
+        17.027503967285156
+      ],
+      "standoff_m": 7.914407808181981,
+      "zoom_hfov_deg": 9.125182629845156,
+      "zoom_vfov_deg": 5.104070882587832,
+      "image_path": "detection/renders_zoom_all/CWP_145_T0906.png",
+      "hit_object": "ST_DIAGONAL_S_01"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "tile_id": "CWP_045_T0004",
+      "achieved_position_m": [
+        345.5224914550781,
+        6.130300045013428,
+        7.000199794769287
+      ],
+      "tile_direction": [
+        0.8462955355644226,
+        -0.5285326242446899,
+        -0.06661199778318405
+      ],
+      "tile_target_m": [
+        352.27471923828125,
+        1.9133639335632324,
+        6.468730926513672
+      ],
+      "standoff_m": 7.978572692857359,
+      "zoom_hfov_deg": 9.052102674661558,
+      "zoom_vfov_deg": 5.063076792233934,
+      "image_path": "detection/renders_zoom_all/CWP_045_T0004.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_079",
+      "tile_id": "CWP_079_T0106",
+      "achieved_position_m": [
+        146.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.40018942952156067,
+        -0.9140881299972534,
+        0.06550820916891098
+      ],
+      "tile_target_m": [
+        143.015869140625,
+        7.904045581817627,
+        14.027414321899414
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_079_T0106.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "tile_id": "CWP_074_T0002",
+      "achieved_position_m": [
+        171.36070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        -0.49161261320114136,
+        -0.8478772044181824,
+        -0.1985483020544052
+      ],
+      "tile_target_m": [
+        167.43621826171875,
+        8.438295364379883,
+        14.91461181640625
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_074_T0002.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "tile_id": "CWP_071_T0503",
+      "achieved_position_m": [
+        191.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.06834722310304642,
+        -0.9886133074760437,
+        -0.1340613216161728
+      ],
+      "tile_target_m": [
+        191.7208709716797,
+        7.314729690551758,
+        12.449295043945312
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_071_T0503.png",
+      "hit_object": "ST_CHORD_BOT_N"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "tile_id": "CWP_113_T0002",
+      "achieved_position_m": [
+        183.7834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.5100557208061218,
+        -0.18581946194171906,
+        -0.8398299813270569
+      ],
+      "tile_target_m": [
+        187.8652801513672,
+        -3.8464460372924805,
+        22.430744171142578
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_113_T0002.png",
+      "hit_object": "ST_BRACING_TOP_04_B"
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "tile_id": "CWP_034_T0305",
+      "achieved_position_m": [
+        270.1236877441406,
+        0.031099999323487282,
+        2.8264000415802
+      ],
+      "tile_direction": [
+        -0.19484947621822357,
+        -0.003824427956715226,
+        0.9808257222175598
+      ],
+      "tile_target_m": [
+        268.5649719238281,
+        0.0005060415714979172,
+        10.672629356384277
+      ],
+      "standoff_m": 7.999616852099118,
+      "zoom_hfov_deg": 9.028388349855097,
+      "zoom_vfov_deg": 5.049774889498348,
+      "image_path": "detection/renders_zoom_all/CWP_034_T0305.png",
+      "hit_object": "BR_GIRDER_005_G3"
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "tile_id": "CWP_080_T0001",
+      "achieved_position_m": [
+        137.61070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        -0.48388805985450745,
+        -0.8345582485198975,
+        -0.26337242126464844
+      ],
+      "tile_target_m": [
+        133.7478790283203,
+        8.544618606567383,
+        14.397128105163574
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_080_T0001.png",
+      "hit_object": "BR_GIRDER_003_G5"
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "tile_id": "CWP_071_T0302",
+      "achieved_position_m": [
+        191.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.16759228706359863,
+        -0.9654108881950378,
+        -0.19973640143871307
+      ],
+      "tile_target_m": [
+        189.8551483154297,
+        7.498205184936523,
+        11.929962158203125
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_071_T0302.png",
+      "hit_object": "ST_CHORD_BOT_N"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0310",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.1807413548231125,
+        0.32694002985954285,
+        0.9276005625724792
+      ],
+      "tile_target_m": [
+        212.40036010742188,
+        2.6130096912384033,
+        11.872159957885742
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0310.png",
+      "hit_object": "ST_STRINGER_02"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "tile_id": "CWP_122_T0209",
+      "achieved_position_m": [
+        315.119384765625,
+        -4.4618000984191895,
+        22.2726993560791
+      ],
+      "tile_direction": [
+        0.27232086658477783,
+        0.2705218493938446,
+        -0.9233955144882202
+      ],
+      "tile_target_m": [
+        317.2983093261719,
+        -2.2972660064697266,
+        14.884307861328125
+      ],
+      "standoff_m": 8.001328705263106,
+      "zoom_hfov_deg": 9.026464742335921,
+      "zoom_vfov_deg": 5.048695907503212,
+      "image_path": "detection/renders_zoom_all/CWP_122_T0209.png",
+      "hit_object": "BR_WEARING_007"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0901",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.8180426955223083,
+        -0.5112651586532593,
+        -0.26346555352211
+      ],
+      "tile_target_m": [
+        362.30303955078125,
+        -1.202735424041748,
+        6.570784091949463
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0901.png",
+      "hit_object": "BR_PIER_COL_008_1"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0705",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        0.28560900688171387,
+        -9.563203639118001e-05,
+        0.9583462476730347
+      ],
+      "tile_target_m": [
+        171.12306213378906,
+        3.5984034184366465e-05,
+        12.117744445800781
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0705.png",
+      "hit_object": "ST_STRINGER_01"
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "tile_id": "CWP_024_T0904",
+      "achieved_position_m": [
+        191.34429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        0.5045153498649597,
+        -0.0667082890868187,
+        0.8608219623565674
+      ],
+      "tile_target_m": [
+        195.37484741210938,
+        -0.5318295955657959,
+        11.338668823242188
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_024_T0904.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0802",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.8874885439872742,
+        -0.415816992521286,
+        -0.19864633679389954
+      ],
+      "tile_target_m": [
+        361.748046875,
+        -0.43995046615600586,
+        7.088794708251953
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0802.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "tile_id": "CWP_045_T0804",
+      "achieved_position_m": [
+        345.5224914550781,
+        6.130300045013428,
+        7.000199794769287
+      ],
+      "tile_direction": [
+        0.9169957041740417,
+        0.39329561591148376,
+        -0.06661337614059448
+      ],
+      "tile_target_m": [
+        352.83880615234375,
+        9.268238067626953,
+        6.468719959259033
+      ],
+      "standoff_m": 7.978572692857359,
+      "zoom_hfov_deg": 9.052102674661558,
+      "zoom_vfov_deg": 5.063076792233934,
+      "image_path": "detection/renders_zoom_all/CWP_045_T0804.png",
+      "hit_object": "BR_WINGWALL_NORTH_L"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0408",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.9791653752326965,
+        0.04267680272459984,
+        0.1985292285680771
+      ],
+      "tile_target_m": [
+        361.0154113769531,
+        3.2241568565368652,
+        10.262869834899902
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0408.png",
+      "hit_object": "BR_PIER_COL_008_2"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0309",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.9471433758735657,
+        -0.18315242230892181,
+        0.26339054107666016
+      ],
+      "tile_target_m": [
+        -1.2780117988586426,
+        -4.150503635406494,
+        10.810999870300293
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0309.png",
+      "hit_object": "BR_PIER_CAP_001"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0307",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        -0.18857063353061676,
+        0.11975882202386856,
+        0.9747301936149597
+      ],
+      "tile_target_m": [
+        43.577613830566406,
+        1.0656211376190186,
+        10.436538696289062
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0307.png",
+      "hit_object": "BR_DECK_SLAB_001"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0801",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.8735395073890686,
+        -0.4092833697795868,
+        -0.2634689211845398
+      ],
+      "tile_target_m": [
+        361.8595275878906,
+        -0.38773608207702637,
+        6.570756912231445
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0801.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0801",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        0.3852187693119049,
+        -0.2752300202846527,
+        0.8808262944221497
+      ],
+      "tile_target_m": [
+        48.167694091796875,
+        -2.0941264629364014,
+        9.685346603393555
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0801.png",
+      "hit_object": "BR_GIRDER_002_G2"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "tile_id": "CWP_122_T0309",
+      "achieved_position_m": [
+        315.119384765625,
+        -4.4618000984191895,
+        22.2726993560791
+      ],
+      "tile_direction": [
+        0.1591673493385315,
+        0.2707357406616211,
+        -0.9494040012359619
+      ],
+      "tile_target_m": [
+        316.3929443359375,
+        -2.2955543994903564,
+        14.676206588745117
+      ],
+      "standoff_m": 8.001328705263106,
+      "zoom_hfov_deg": 9.026464742335921,
+      "zoom_vfov_deg": 5.048695907503212,
+      "image_path": "detection/renders_zoom_all/CWP_122_T0309.png",
+      "hit_object": "BR_WEARING_007"
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "tile_id": "CWP_067_T0204",
+      "achieved_position_m": [
+        213.61570739746094,
+        15.221199989318848,
+        13.50160026550293
+      ],
+      "tile_direction": [
+        -0.2798405885696411,
+        -0.9577210545539856,
+        -0.06678126752376556
+      ],
+      "tile_target_m": [
+        211.3777313232422,
+        7.561990737915039,
+        12.967528343200684
+      ],
+      "standoff_m": 7.9973279085881614,
+      "zoom_hfov_deg": 9.030961711917282,
+      "zoom_vfov_deg": 5.051218332202846,
+      "image_path": "detection/renders_zoom_all/CWP_067_T0204.png",
+      "hit_object": "ST_CHORD_BOT_S"
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "tile_id": "CWP_119_T0206",
+      "achieved_position_m": [
+        217.53269958496094,
+        2.3592000007629395,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.3011244535446167,
+        0.05213936045765877,
+        -0.9521584510803223
+      ],
+      "tile_target_m": [
+        219.94248962402344,
+        2.7764525413513184,
+        21.531818389892578
+      ],
+      "standoff_m": 8.002640470034905,
+      "zoom_hfov_deg": 9.02499126718398,
+      "zoom_vfov_deg": 5.047869413226928,
+      "image_path": "detection/renders_zoom_all/CWP_119_T0206.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "tile_id": "CWP_033_T0306",
+      "achieved_position_m": [
+        255.0850067138672,
+        -3.6644999980926514,
+        4.879799842834473
+      ],
+      "tile_direction": [
+        -0.18969327211380005,
+        0.06632037460803986,
+        0.9796009659767151
+      ],
+      "tile_target_m": [
+        253.56912231445312,
+        -3.134517192840576,
+        12.708038330078125
+      ],
+      "standoff_m": 7.991252302732766,
+      "zoom_hfov_deg": 9.037799363040714,
+      "zoom_vfov_deg": 5.055053704512499,
+      "image_path": "detection/renders_zoom_all/CWP_033_T0306.png",
+      "hit_object": "BR_GIRDER_005_G2"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "tile_id": "CWP_113_T0609",
+      "achieved_position_m": [
+        183.7834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.1682104468345642,
+        0.27779150009155273,
+        -0.9457997679710388
+      ],
+      "tile_target_m": [
+        182.43736267089844,
+        -0.13633489608764648,
+        21.582706451416016
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_113_T0609.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_120",
+      "tile_id": "CWP_120_T0010",
+      "achieved_position_m": [
+        225.09869384765625,
+        -0.05270000174641609,
+        29.15060043334961
+      ],
+      "tile_direction": [
+        0.4774215519428253,
+        0.33239322900772095,
+        -0.8133777976036072
+      ],
+      "tile_target_m": [
+        228.91873168945312,
+        2.606905460357666,
+        22.642452239990234
+      ],
+      "standoff_m": 8.001383055633084,
+      "zoom_hfov_deg": 9.026403682282607,
+      "zoom_vfov_deg": 5.048661657982125,
+      "image_path": "detection/renders_zoom_all/CWP_120_T0010.png",
+      "hit_object": "BR_WEARING_005"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "tile_id": "CWP_122_T0901",
+      "achieved_position_m": [
+        315.119384765625,
+        -4.4618000984191895,
+        22.2726993560791
+      ],
+      "tile_direction": [
+        -0.5098761916160583,
+        -0.2570227086544037,
+        -0.8209542036056519
+      ],
+      "tile_target_m": [
+        311.0397033691406,
+        -6.518322944641113,
+        15.703975677490234
+      ],
+      "standoff_m": 8.001328705263106,
+      "zoom_hfov_deg": 9.026464742335921,
+      "zoom_vfov_deg": 5.048695907503212,
+      "image_path": "detection/renders_zoom_all/CWP_122_T0901.png",
+      "hit_object": "BR_PARAPET_006_R"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0006",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.5246952772140503,
+        0.06647288799285889,
+        0.8486908674240112
+      ],
+      "tile_target_m": [
+        209.65252685546875,
+        0.5321490168571472,
+        11.241754531860352
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0006.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0002",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.8479443192481995,
+        0.4914584457874298,
+        -0.19864290952682495
+      ],
+      "tile_target_m": [
+        362.0640563964844,
+        6.810647964477539,
+        7.088821887969971
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0002.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0809",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.8735724687576294,
+        -0.40928393602371216,
+        0.26335883140563965
+      ],
+      "tile_target_m": [
+        361.8592529296875,
+        -0.3877406120300293,
+        10.780962944030762
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0809.png",
+      "hit_object": "BR_PIER_CAP_008"
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "tile_id": "CWP_119_T0506",
+      "achieved_position_m": [
+        217.53269958496094,
+        2.3592000007629395,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.05456056445837021,
+        0.05148649215698242,
+        -0.9971821904182434
+      ],
+      "tile_target_m": [
+        217.0960693359375,
+        2.7712278366088867,
+        21.1715087890625
+      ],
+      "standoff_m": 8.002640470034905,
+      "zoom_hfov_deg": 9.02499126718398,
+      "zoom_vfov_deg": 5.047869413226928,
+      "image_path": "detection/renders_zoom_all/CWP_119_T0506.png",
+      "hit_object": "ST_BRACING_TOP_07_B"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "tile_id": "CWP_113_T0606",
+      "achieved_position_m": [
+        183.7834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.1739647388458252,
+        0.08148521184921265,
+        -0.9813748002052307
+      ],
+      "tile_target_m": [
+        182.3913116455078,
+        -1.7073032855987549,
+        21.298011779785156
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_113_T0606.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "tile_id": "CWP_067_T0508",
+      "achieved_position_m": [
+        213.61570739746094,
+        15.221199989318848,
+        13.50160026550293
+      ],
+      "tile_direction": [
+        0.07539910078048706,
+        -0.9772177338600159,
+        0.19839465618133545
+      ],
+      "tile_target_m": [
+        214.2187042236328,
+        7.406069278717041,
+        15.088227272033691
+      ],
+      "standoff_m": 7.9973279085881614,
+      "zoom_hfov_deg": 9.030961711917282,
+      "zoom_vfov_deg": 5.051218332202846,
+      "image_path": "detection/renders_zoom_all/CWP_067_T0508.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_143",
+      "tile_id": "CWP_143_T0101",
+      "achieved_position_m": [
+        157.44700622558594,
+        1.1390000581741333,
+        16.502899169921875
+      ],
+      "tile_direction": [
+        -0.38877543807029724,
+        -0.8827779293060303,
+        -0.2637363374233246
+      ],
+      "tile_target_m": [
+        154.3701629638672,
+        -5.847461700439453,
+        14.415642738342285
+      ],
+      "standoff_m": 7.914178036449985,
+      "zoom_hfov_deg": 9.125446441950569,
+      "zoom_vfov_deg": 5.104218872766018,
+      "image_path": "detection/renders_zoom_all/CWP_143_T0101.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "tile_id": "CWP_067_T0900",
+      "achieved_position_m": [
+        213.61570739746094,
+        15.221199989318848,
+        13.50160026550293
+      ],
+      "tile_direction": [
+        0.500943124294281,
+        -0.8012343049049377,
+        -0.32722997665405273
+      ],
+      "tile_target_m": [
+        217.62191772460938,
+        8.813467025756836,
+        10.884634971618652
+      ],
+      "standoff_m": 7.9973279085881614,
+      "zoom_hfov_deg": 9.030961711917282,
+      "zoom_vfov_deg": 5.051218332202846,
+      "image_path": "detection/renders_zoom_all/CWP_067_T0900.png",
+      "hit_object": "BR_PIER_COL_005_1"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0400",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.9440839886665344,
+        0.04114973917603493,
+        -0.32712697982788086
+      ],
+      "tile_target_m": [
+        361.2957458496094,
+        3.2119529247283936,
+        6.062026023864746
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0400.png",
+      "hit_object": "BR_PIER_COL_008_2"
+    },
+    {
+      "waypoint_id": "CWP_069",
+      "tile_id": "CWP_069_T0210",
+      "achieved_position_m": [
+        202.43040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.27227482199668884,
+        -0.9053141474723816,
+        0.32599493861198425
+      ],
+      "tile_target_m": [
+        200.27735900878906,
+        7.9734272956848145,
+        16.087242126464844
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_069_T0210.png",
+      "hit_object": "ST_CHORD_TOP_S"
+    },
+    {
+      "waypoint_id": "CWP_069",
+      "tile_id": "CWP_069_T0508",
+      "achieved_position_m": [
+        202.43040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.06758876889944077,
+        -0.9779848456382751,
+        0.19742730259895325
+      ],
+      "tile_target_m": [
+        202.96487426757812,
+        7.398775577545166,
+        15.070578575134277
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_069_T0508.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_075",
+      "tile_id": "CWP_075_T0009",
+      "achieved_position_m": [
+        168.68040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.49027419090270996,
+        -0.831120491027832,
+        0.26243123412132263
+      ],
+      "tile_target_m": [
+        164.8035125732422,
+        8.560121536254883,
+        15.584604263305664
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_075_T0009.png",
+      "hit_object": "ST_CHORD_TOP_S"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0901",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.8315721750259399,
+        0.4889683723449707,
+        -0.26343417167663574
+      ],
+      "tile_target_m": [
+        -2.214812755584717,
+        1.2975974082946777,
+        6.540645599365234
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0901.png",
+      "hit_object": "BR_PIER_COL_001_2"
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "tile_id": "CWP_067_T0608",
+      "achieved_position_m": [
+        213.61570739746094,
+        15.221199989318848,
+        13.50160026550293
+      ],
+      "tile_direction": [
+        0.19224825501441956,
+        -0.9610822796821594,
+        0.19839750230312347
+      ],
+      "tile_target_m": [
+        215.15318298339844,
+        7.535109996795654,
+        15.088250160217285
+      ],
+      "standoff_m": 7.9973279085881614,
+      "zoom_hfov_deg": 9.030961711917282,
+      "zoom_vfov_deg": 5.051218332202846,
+      "image_path": "detection/renders_zoom_all/CWP_067_T0608.png",
+      "hit_object": "_MD_BR_PARAPET_POST_02152_L"
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "tile_id": "CWP_071_T0906",
+      "achieved_position_m": [
+        191.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.5221450924873352,
+        -0.8503319621086121,
+        0.06557436287403107
+      ],
+      "tile_target_m": [
+        195.309326171875,
+        8.408205032348633,
+        14.027936935424805
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_071_T0906.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_075",
+      "tile_id": "CWP_075_T0604",
+      "achieved_position_m": [
+        168.68040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.18789304792881012,
+        -0.979849636554718,
+        -0.06775736808776855
+      ],
+      "tile_target_m": [
+        170.1661834716797,
+        7.384029388427734,
+        12.973601341247559
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_075_T0604.png",
+      "hit_object": "ST_CHORD_BOT_S"
+    },
+    {
+      "waypoint_id": "CWP_127",
+      "tile_id": "CWP_127_T0001",
+      "achieved_position_m": [
+        368.84051513671875,
+        2.8831000328063965,
+        8.676300048828125
+      ],
+      "tile_direction": [
+        -0.8346166610717773,
+        0.48373645544052124,
+        -0.26346555352211
+      ],
+      "tile_target_m": [
+        362.17059326171875,
+        6.748936653137207,
+        6.570784091949463
+      ],
+      "standoff_m": 7.9916176054491075,
+      "zoom_hfov_deg": 9.037387949546968,
+      "zoom_vfov_deg": 5.054822933931408,
+      "image_path": "detection/renders_zoom_all/CWP_127_T0001.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_035",
+      "tile_id": "CWP_035_T0601",
+      "achieved_position_m": [
+        278.7939147949219,
+        -2.8705999851226807,
+        1.955299973487854
+      ],
+      "tile_direction": [
+        -0.9514713287353516,
+        -0.15889102220535278,
+        -0.26354530453681946
+      ],
+      "tile_target_m": [
+        271.2346496582031,
+        -4.132961273193359,
+        -0.13852107524871826
+      ],
+      "standoff_m": 7.944824211663562,
+      "zoom_hfov_deg": 9.0903939383545,
+      "zoom_vfov_deg": 5.084555862775615,
+      "image_path": "detection/renders_zoom_all/CWP_035_T0601.png",
+      "hit_object": "BR_PIER_FOOTING_006_1"
+    },
+    {
+      "waypoint_id": "CWP_080",
+      "tile_id": "CWP_080_T0808",
+      "achieved_position_m": [
+        137.61070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        0.41565537452697754,
+        -0.8875668048858643,
+        0.1986353099346161
+      ],
+      "tile_target_m": [
+        140.9288330078125,
+        8.121458053588867,
+        18.085281372070312
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_080_T0808.png",
+      "hit_object": "ST_BRACING_TOP_01_A"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "tile_id": "CWP_045_T0204",
+      "achieved_position_m": [
+        345.5224914550781,
+        6.130300045013428,
+        7.000199794769287
+      ],
+      "tile_direction": [
+        0.9479393362998962,
+        -0.31140589714050293,
+        -0.06661445647478104
+      ],
+      "tile_target_m": [
+        353.085693359375,
+        3.6457254886627197,
+        6.4687113761901855
+      ],
+      "standoff_m": 7.978572692857359,
+      "zoom_hfov_deg": 9.052102674661558,
+      "zoom_vfov_deg": 5.063076792233934,
+      "image_path": "detection/renders_zoom_all/CWP_045_T0204.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "tile_id": "CWP_122_T0501",
+      "achieved_position_m": [
+        315.119384765625,
+        -4.4618000984191895,
+        22.2726993560791
+      ],
+      "tile_direction": [
+        -0.07244360446929932,
+        -0.25596854090690613,
+        -0.9639667868614197
+      ],
+      "tile_target_m": [
+        314.53973388671875,
+        -6.509888648986816,
+        14.559684753417969
+      ],
+      "standoff_m": 8.001328705263106,
+      "zoom_hfov_deg": 9.026464742335921,
+      "zoom_vfov_deg": 5.048695907503212,
+      "image_path": "detection/renders_zoom_all/CWP_122_T0501.png",
+      "hit_object": "BR_WEARING_006"
+    },
+    {
+      "waypoint_id": "CWP_122",
+      "tile_id": "CWP_122_T0705",
+      "achieved_position_m": [
+        315.119384765625,
+        -4.4618000984191895,
+        22.2726993560791
+      ],
+      "tile_direction": [
+        -0.3107580244541168,
+        0.007376303430646658,
+        -0.9504603743553162
+      ],
+      "tile_target_m": [
+        312.6329040527344,
+        -4.402780055999756,
+        14.667753219604492
+      ],
+      "standoff_m": 8.001328705263106,
+      "zoom_hfov_deg": 9.026464742335921,
+      "zoom_vfov_deg": 5.048695907503212,
+      "image_path": "detection/renders_zoom_all/CWP_122_T0705.png",
+      "hit_object": "BR_WEARING_006"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0109",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        -0.4041675329208374,
+        0.2515500783920288,
+        0.8794152736663818
+      ],
+      "tile_target_m": [
+        41.852928161621094,
+        2.119896650314331,
+        9.67405891418457
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0109.png",
+      "hit_object": "BR_GIRDER_001_G4"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0507",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.98990398645401,
+        0.04937589913606644,
+        0.13286100327968597
+      ],
+      "tile_target_m": [
+        -0.931401252746582,
+        -2.265666961669922,
+        9.752948760986328
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0507.png",
+      "hit_object": "BR_PIER_COL_001_1"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "tile_id": "CWP_109_T0302",
+      "achieved_position_m": [
+        161.2834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.18130233883857727,
+        -0.18392953276634216,
+        -0.9660742282867432
+      ],
+      "tile_target_m": [
+        162.73439025878906,
+        -3.8313217163085938,
+        21.420455932617188
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_109_T0302.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "tile_id": "CWP_109_T0307",
+      "achieved_position_m": [
+        161.2834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.1833188533782959,
+        0.14767301082611084,
+        -0.9718986749649048
+      ],
+      "tile_target_m": [
+        162.7505340576172,
+        -1.1776262521743774,
+        21.37384605407715
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_109_T0307.png",
+      "hit_object": "BR_MEDIAN_004"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0108",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        -0.41117167472839355,
+        0.198500856757164,
+        0.8896827101707458
+      ],
+      "tile_target_m": [
+        165.556396484375,
+        1.5866475105285645,
+        11.569183349609375
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0108.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_067",
+      "tile_id": "CWP_067_T0407",
+      "achieved_position_m": [
+        213.61570739746094,
+        15.221199989318848,
+        13.50160026550293
+      ],
+      "tile_direction": [
+        -0.043021783232688904,
+        -0.9902238249778748,
+        0.13268737494945526
+      ],
+      "tile_target_m": [
+        213.2716522216797,
+        7.302055358886719,
+        14.562745094299316
+      ],
+      "standoff_m": 7.9973279085881614,
+      "zoom_hfov_deg": 9.030961711917282,
+      "zoom_vfov_deg": 5.051218332202846,
+      "image_path": "detection/renders_zoom_all/CWP_067_T0407.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "tile_id": "CWP_114_T0703",
+      "achieved_position_m": [
+        195.12669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        -0.2998155951499939,
+        -0.13277894258499146,
+        -0.9447118043899536
+      ],
+      "tile_target_m": [
+        192.72616577148438,
+        -3.301915407180786,
+        21.592517852783203
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_114_T0703.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "tile_id": "CWP_024_T0807",
+      "achieved_position_m": [
+        191.34429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        0.3947950601577759,
+        0.13276080787181854,
+        0.9091267585754395
+      ],
+      "tile_target_m": [
+        194.49830627441406,
+        1.0617202520370483,
+        11.724574089050293
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_024_T0807.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0510",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        0.046664219349622726,
+        0.31435051560401917,
+        0.9481593370437622
+      ],
+      "tile_target_m": [
+        45.45939636230469,
+        2.622274398803711,
+        10.223983764648438
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0510.png",
+      "hit_object": "BR_PIER_COL_002_2"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "tile_id": "CWP_114_T0910",
+      "achieved_position_m": [
+        195.12669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        -0.4924629032611847,
+        0.32715898752212524,
+        -0.8065031170845032
+      ],
+      "tile_target_m": [
+        191.1837158203125,
+        0.3806495666503906,
+        22.699106216430664
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_114_T0910.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "tile_id": "CWP_109_T0701",
+      "achieved_position_m": [
+        161.2834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.28106799721717834,
+        -0.24939605593681335,
+        -0.9267159104347229
+      ],
+      "tile_target_m": [
+        159.03421020507812,
+        -4.355226516723633,
+        21.735427856445312
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_109_T0701.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0410",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.06799858063459396,
+        0.32693812251091003,
+        0.9425962567329407
+      ],
+      "tile_target_m": [
+        213.30105590820312,
+        2.612994432449341,
+        11.991960525512695
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0410.png",
+      "hit_object": "ST_STRINGER_02"
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "tile_id": "CWP_033_T0009",
+      "achieved_position_m": [
+        255.0850067138672,
+        -3.6644999980926514,
+        4.879799842834473
+      ],
+      "tile_direction": [
+        -0.5063339471817017,
+        0.26318633556365967,
+        0.821193516254425
+      ],
+      "tile_target_m": [
+        251.03875732421875,
+        -1.5613114833831787,
+        11.442164421081543
+      ],
+      "standoff_m": 7.991252302732766,
+      "zoom_hfov_deg": 9.037799363040714,
+      "zoom_vfov_deg": 5.055053704512499,
+      "image_path": "detection/renders_zoom_all/CWP_033_T0009.png",
+      "hit_object": "BR_DECK_SLAB_005"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "tile_id": "CWP_045_T0106",
+      "achieved_position_m": [
+        345.5224914550781,
+        6.130300045013428,
+        7.000199794769287
+      ],
+      "tile_direction": [
+        0.9036656618118286,
+        -0.42303332686424255,
+        0.0665677860379219
+      ],
+      "tile_target_m": [
+        352.7324523925781,
+        2.7550978660583496,
+        7.531315803527832
+      ],
+      "standoff_m": 7.978572692857359,
+      "zoom_hfov_deg": 9.052102674661558,
+      "zoom_vfov_deg": 5.063076792233934,
+      "image_path": "detection/renders_zoom_all/CWP_045_T0106.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "tile_id": "CWP_113_T0103",
+      "achieved_position_m": [
+        183.7834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.41038718819618225,
+        -0.11913919448852539,
+        -0.9040952920913696
+      ],
+      "tile_target_m": [
+        187.0676727294922,
+        -3.3128280639648438,
+        21.916452407836914
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_113_T0103.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_068",
+      "tile_id": "CWP_068_T0408",
+      "achieved_position_m": [
+        205.1103973388672,
+        15.207200050354004,
+        16.499500274658203
+      ],
+      "tile_direction": [
+        -0.042819008231163025,
+        -0.9791343212127686,
+        0.19865162670612335
+      ],
+      "tile_target_m": [
+        204.7685546875,
+        7.390488624572754,
+        18.08539390563965
+      ],
+      "standoff_m": 7.98328828672314,
+      "zoom_hfov_deg": 9.046777946492952,
+      "zoom_vfov_deg": 5.060090005387168,
+      "image_path": "detection/renders_zoom_all/CWP_068_T0408.png",
+      "hit_object": "ST_CHORD_TOP_S"
+    },
+    {
+      "waypoint_id": "CWP_074",
+      "tile_id": "CWP_074_T0301",
+      "achieved_position_m": [
+        171.36070251464844,
+        15.20680046081543,
+        16.49959945678711
+      ],
+      "tile_direction": [
+        -0.15765957534313202,
+        -0.9517256617546082,
+        -0.2633662819862366
+      ],
+      "tile_target_m": [
+        170.1021270751953,
+        7.6092848777771,
+        14.397176742553711
+      ],
+      "standoff_m": 7.982883767868631,
+      "zoom_hfov_deg": 9.047234473712482,
+      "zoom_vfov_deg": 5.060346083501125,
+      "image_path": "detection/renders_zoom_all/CWP_074_T0301.png",
+      "hit_object": "ST_FLOORBEAM_03"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "tile_id": "CWP_027_T0802",
+      "achieved_position_m": [
+        216.89700317382812,
+        -3.592600107192993,
+        13.326499938964844
+      ],
+      "tile_direction": [
+        0.889976441860199,
+        0.41143378615379333,
+        -0.19663245975971222
+      ],
+      "tile_target_m": [
+        223.9309844970703,
+        -0.3408079147338867,
+        11.772403717041016
+      ],
+      "standoff_m": 7.903561410089394,
+      "zoom_hfov_deg": 9.13765252932529,
+      "zoom_vfov_deg": 5.111066139382083,
+      "image_path": "detection/renders_zoom_all/CWP_027_T0802.png",
+      "hit_object": "BR_PIER_CAP_005"
+    },
+    {
+      "waypoint_id": "CWP_005",
+      "tile_id": "CWP_005_T0103",
+      "achieved_position_m": [
+        45.08610153198242,
+        0.10760000348091125,
+        2.6391000747680664
+      ],
+      "tile_direction": [
+        -0.41519007086753845,
+        -0.1450379192829132,
+        0.8980987071990967
+      ],
+      "tile_target_m": [
+        41.76475143432617,
+        -1.0526435375213623,
+        9.823518753051758
+      ],
+      "standoff_m": 7.999586914420187,
+      "zoom_hfov_deg": 9.028421998071453,
+      "zoom_vfov_deg": 5.049793763334549,
+      "image_path": "detection/renders_zoom_all/CWP_005_T0103.png",
+      "hit_object": "BR_DECK_SLAB_001"
+    },
+    {
+      "waypoint_id": "CWP_036",
+      "tile_id": "CWP_036_T0405",
+      "achieved_position_m": [
+        278.8190002441406,
+        2.8773000240325928,
+        1.9558000564575195
+      ],
+      "tile_direction": [
+        -0.9990215301513672,
+        0.04422631487250328,
+        -0.0002003921108553186
+      ],
+      "tile_target_m": [
+        270.8567810058594,
+        3.2297842502593994,
+        1.9542028903961182
+      ],
+      "standoff_m": 7.9700110043661745,
+      "zoom_hfov_deg": 9.061786319618742,
+      "zoom_vfov_deg": 5.068508654373022,
+      "image_path": "detection/renders_zoom_all/CWP_036_T0405.png",
+      "hit_object": "BR_PIER_COL_006_2"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0102",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.41150611639022827,
+        -0.19871357083320618,
+        0.8894805908203125
+      ],
+      "tile_target_m": [
+        210.55679321289062,
+        -1.586414098739624,
+        11.567621231079102
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0102.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0409",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.06941470503807068,
+        0.2632812559604645,
+        0.9622185230255127
+      ],
+      "tile_target_m": [
+        213.2897491455078,
+        2.104442596435547,
+        12.148721694946289
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0409.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "tile_id": "CWP_105_T0208",
+      "achieved_position_m": [
+        138.78289794921875,
+        -2.359499931335449,
+        29.151500701904297
+      ],
+      "tile_direction": [
+        0.29573825001716614,
+        0.2127901315689087,
+        -0.9312675595283508
+      ],
+      "tile_target_m": [
+        141.14955139160156,
+        -0.65663743019104,
+        21.698989868164062
+      ],
+      "standoff_m": 8.002544783508668,
+      "zoom_hfov_deg": 9.025098733422702,
+      "zoom_vfov_deg": 5.047929692610462,
+      "image_path": "detection/renders_zoom_all/CWP_105_T0208.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_068",
+      "tile_id": "CWP_068_T0303",
+      "achieved_position_m": [
+        205.1103973388672,
+        15.207200050354004,
+        16.499500274658203
+      ],
+      "tile_direction": [
+        -0.16194561123847961,
+        -0.9778197407722473,
+        -0.13282430171966553
+      ],
+      "tile_target_m": [
+        203.81753540039062,
+        7.4009833335876465,
+        15.439125061035156
+      ],
+      "standoff_m": 7.98328828672314,
+      "zoom_hfov_deg": 9.046777946492952,
+      "zoom_vfov_deg": 5.060090005387168,
+      "image_path": "detection/renders_zoom_all/CWP_068_T0303.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_024",
+      "tile_id": "CWP_024_T0301",
+      "achieved_position_m": [
+        191.34429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        -0.18450479209423065,
+        -0.26354455947875977,
+        0.9468380212783813
+      ],
+      "tile_target_m": [
+        189.87030029296875,
+        -2.1043460369110107,
+        12.025847434997559
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_024_T0301.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "tile_id": "CWP_028_T0902",
+      "achieved_position_m": [
+        225.1175994873047,
+        0.050999999046325684,
+        2.048799991607666
+      ],
+      "tile_direction": [
+        0.49311795830726624,
+        -0.203946053981781,
+        0.8457191586494446
+      ],
+      "tile_target_m": [
+        229.05747985839844,
+        -1.5784735679626465,
+        8.805866241455078
+      ],
+      "standoff_m": 7.989728578744019,
+      "zoom_hfov_deg": 9.039515824145363,
+      "zoom_vfov_deg": 5.0560165050326145,
+      "image_path": "detection/renders_zoom_all/CWP_028_T0902.png",
+      "hit_object": "BR_GIRDER_005_G2"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "tile_id": "CWP_027_T0001",
+      "achieved_position_m": [
+        216.89700317382812,
+        -3.592600107192993,
+        13.326499938964844
+      ],
+      "tile_direction": [
+        0.8328081965446472,
+        -0.48784586787223816,
+        -0.26160427927970886
+      ],
+      "tile_target_m": [
+        223.47915649414062,
+        -7.448319911956787,
+        11.258893966674805
+      ],
+      "standoff_m": 7.903561410089394,
+      "zoom_hfov_deg": 9.13765252932529,
+      "zoom_vfov_deg": 5.111066139382083,
+      "image_path": "detection/renders_zoom_all/CWP_027_T0001.png",
+      "hit_object": "ST_CHORD_BOT_S"
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "tile_id": "CWP_071_T0506",
+      "achieved_position_m": [
+        191.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.06880783289670944,
+        -0.9954835772514343,
+        0.06540656834840775
+      ],
+      "tile_target_m": [
+        191.72451782226562,
+        7.260402202606201,
+        14.026610374450684
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_071_T0506.png",
+      "hit_object": "ST_STRINGER_02"
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "tile_id": "CWP_105_T0002",
+      "achieved_position_m": [
+        138.78289794921875,
+        -2.359499931335449,
+        29.151500701904297
+      ],
+      "tile_direction": [
+        0.5101181864738464,
+        -0.18580880761146545,
+        -0.8397943377494812
+      ],
+      "tile_target_m": [
+        142.86514282226562,
+        -3.8464431762695312,
+        22.43100929260254
+      ],
+      "standoff_m": 8.002544783508668,
+      "zoom_hfov_deg": 9.025098733422702,
+      "zoom_vfov_deg": 5.047929692610462,
+      "image_path": "detection/renders_zoom_all/CWP_105_T0002.png",
+      "hit_object": "ST_BRACING_TOP_00_B"
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "tile_id": "CWP_033_T0003",
+      "achieved_position_m": [
+        255.0850067138672,
+        -3.6644999980926514,
+        4.879799842834473
+      ],
+      "tile_direction": [
+        -0.5202147960662842,
+        -0.13311906158924103,
+        0.8435969352722168
+      ],
+      "tile_target_m": [
+        250.92784118652344,
+        -4.728288173675537,
+        11.621195793151855
+      ],
+      "standoff_m": 7.991252302732766,
+      "zoom_hfov_deg": 9.037799363040714,
+      "zoom_vfov_deg": 5.055053704512499,
+      "image_path": "detection/renders_zoom_all/CWP_033_T0003.png",
+      "hit_object": "BR_GIRDER_005_G1"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0109",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.8761155605316162,
+        -0.4037894606590271,
+        0.26339223980903625
+      ],
+      "tile_target_m": [
+        -1.8537516593933105,
+        -5.938951015472412,
+        10.811014175415039
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0109.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "CWP_034",
+      "tile_id": "CWP_034_T0201",
+      "achieved_position_m": [
+        270.1236877441406,
+        0.031099999323487282,
+        2.8264000415802
+      ],
+      "tile_direction": [
+        -0.30026328563690186,
+        -0.26699361205101013,
+        0.9157272577285767
+      ],
+      "tile_target_m": [
+        267.7217102050781,
+        -2.1047465801239014,
+        10.151866912841797
+      ],
+      "standoff_m": 7.999616852099118,
+      "zoom_hfov_deg": 9.028388349855097,
+      "zoom_vfov_deg": 5.049774889498348,
+      "image_path": "detection/renders_zoom_all/CWP_034_T0201.png",
+      "hit_object": "BR_GIRDER_005_G2"
+    },
+    {
+      "waypoint_id": "CWP_036",
+      "tile_id": "CWP_036_T0408",
+      "achieved_position_m": [
+        278.8190002441406,
+        2.8773000240325928,
+        1.9558000564575195
+      ],
+      "tile_direction": [
+        -0.9791634678840637,
+        0.043344803154468536,
+        0.19839400053024292
+      ],
+      "tile_target_m": [
+        271.0150451660156,
+        3.2227585315704346,
+        3.5370025634765625
+      ],
+      "standoff_m": 7.9700110043661745,
+      "zoom_hfov_deg": 9.061786319618742,
+      "zoom_vfov_deg": 5.068508654373022,
+      "image_path": "detection/renders_zoom_all/CWP_036_T0408.png",
+      "hit_object": "BR_PIER_COL_006_2"
+    },
+    {
+      "waypoint_id": "CWP_113",
+      "tile_id": "CWP_113_T0908",
+      "achieved_position_m": [
+        183.7834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.500987708568573,
+        0.2113155871629715,
+        -0.839259922504425
+      ],
+      "tile_target_m": [
+        179.77427673339844,
+        -0.6683176755905151,
+        22.435306549072266
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_113_T0908.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "tile_id": "CWP_105_T0901",
+      "achieved_position_m": [
+        138.78289794921875,
+        -2.359499931335449,
+        29.151500701904297
+      ],
+      "tile_direction": [
+        -0.49301618337631226,
+        -0.25082528591156006,
+        -0.8330796957015991
+      ],
+      "tile_target_m": [
+        134.83750915527344,
+        -4.3667402267456055,
+        22.484743118286133
+      ],
+      "standoff_m": 8.002544783508668,
+      "zoom_hfov_deg": 9.025098733422702,
+      "zoom_vfov_deg": 5.047929692610462,
+      "image_path": "detection/renders_zoom_all/CWP_105_T0901.png",
+      "hit_object": "BR_PARAPET_003_R"
+    },
+    {
+      "waypoint_id": "CWP_145",
+      "tile_id": "CWP_145_T0903",
+      "achieved_position_m": [
+        146.20880126953125,
+        1.139299988746643,
+        16.503299713134766
+      ],
+      "tile_direction": [
+        0.515624463558197,
+        -0.846391499042511,
+        -0.13323932886123657
+      ],
+      "tile_target_m": [
+        150.28965759277344,
+        -5.559387683868408,
+        15.448789596557617
+      ],
+      "standoff_m": 7.914407808181981,
+      "zoom_hfov_deg": 9.125182629845156,
+      "zoom_vfov_deg": 5.104070882587832,
+      "image_path": "detection/renders_zoom_all/CWP_145_T0903.png",
+      "hit_object": "BR_PARAPET_004_R"
+    },
+    {
+      "waypoint_id": "CWP_079",
+      "tile_id": "CWP_079_T0502",
+      "achieved_position_m": [
+        146.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        0.06758461147546768,
+        -0.9775127172470093,
+        -0.1997532993555069
+      ],
+      "tile_target_m": [
+        146.71484375,
+        7.402508735656738,
+        11.929828643798828
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_079_T0502.png",
+      "hit_object": "ST_CHORD_BOT_N"
+    },
+    {
+      "waypoint_id": "CWP_065",
+      "tile_id": "CWP_065_T0708",
+      "achieved_position_m": [
+        233.21890258789062,
+        6.8684000968933105,
+        13.499300003051758
+      ],
+      "tile_direction": [
+        -0.9406382441520691,
+        -0.27518928050994873,
+        0.1986723691225052
+      ],
+      "tile_target_m": [
+        225.69851684570312,
+        4.668267250061035,
+        15.087681770324707
+      ],
+      "standoff_m": 7.994979732350913,
+      "zoom_hfov_deg": 9.033603188511115,
+      "zoom_vfov_deg": 5.052699985167496,
+      "image_path": "detection/renders_zoom_all/CWP_065_T0708.png",
+      "hit_object": "BR_DECK_SLAB_005"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0501",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.9634785652160645,
+        0.04805838689208031,
+        -0.26343750953674316
+      ],
+      "tile_target_m": [
+        -1.1456012725830078,
+        -2.2763466835021973,
+        6.540618419647217
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0501.png",
+      "hit_object": "BR_PIER_COL_001_1"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0606",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.983353853225708,
+        0.16906863451004028,
+        0.06656645238399506
+      ],
+      "tile_target_m": [
+        -0.9844956398010254,
+        -1.295457363128662,
+        9.215576171875
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0606.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "CWP_035",
+      "tile_id": "CWP_035_T0409",
+      "achieved_position_m": [
+        278.7939147949219,
+        -2.8705999851226807,
+        1.955299973487854
+      ],
+      "tile_direction": [
+        -0.9619789123535156,
+        0.07266303896903992,
+        0.2632805407047272
+      ],
+      "tile_target_m": [
+        271.1511535644531,
+        -2.293304920196533,
+        4.047017574310303
+      ],
+      "standoff_m": 7.944824211663562,
+      "zoom_hfov_deg": 9.0903939383545,
+      "zoom_vfov_deg": 5.084555862775615,
+      "image_path": "detection/renders_zoom_all/CWP_035_T0409.png",
+      "hit_object": "BR_PIER_COL_006_1"
+    },
+    {
+      "waypoint_id": "CWP_045",
+      "tile_id": "CWP_045_T0307",
+      "achieved_position_m": [
+        345.5224914550781,
+        6.130300045013428,
+        7.000199794769287
+      ],
+      "tile_direction": [
+        0.9719695448875427,
+        -0.1939668357372284,
+        0.1328609138727188
+      ],
+      "tile_target_m": [
+        353.2774353027344,
+        4.582721710205078,
+        8.060239791870117
+      ],
+      "standoff_m": 7.978572692857359,
+      "zoom_hfov_deg": 9.052102674661558,
+      "zoom_vfov_deg": 5.063076792233934,
+      "image_path": "detection/renders_zoom_all/CWP_045_T0307.png",
+      "hit_object": "BR_ABUTMENT_NORTH"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "tile_id": "CWP_109_T0202",
+      "achieved_position_m": [
+        161.2834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.2957015335559845,
+        -0.18435674905776978,
+        -0.9373224377632141
+      ],
+      "tile_target_m": [
+        163.64988708496094,
+        -3.83474063873291,
+        21.65054702758789
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_109_T0202.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "tile_id": "CWP_114_T0008",
+      "achieved_position_m": [
+        195.12669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        0.5002608299255371,
+        0.19868485629558563,
+        -0.8427713513374329
+      ],
+      "tile_target_m": [
+        199.13211059570312,
+        -0.647998571395874,
+        22.40871810913086
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_114_T0008.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "tile_id": "CWP_027_T0507",
+      "achieved_position_m": [
+        216.89700317382812,
+        -3.592600107192993,
+        13.326499938964844
+      ],
+      "tile_direction": [
+        0.9882752895355225,
+        0.07122752815485,
+        0.13505052030086517
+      ],
+      "tile_target_m": [
+        224.70790100097656,
+        -3.029649019241333,
+        14.393879890441895
+      ],
+      "standoff_m": 7.903561410089394,
+      "zoom_hfov_deg": 9.13765252932529,
+      "zoom_vfov_deg": 5.111066139382083,
+      "image_path": "detection/renders_zoom_all/CWP_027_T0507.png",
+      "hit_object": "ST_STRINGER_00"
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "tile_id": "CWP_033_T0603",
+      "achieved_position_m": [
+        255.0850067138672,
+        -3.6644999980926514,
+        4.879799842834473
+      ],
+      "tile_direction": [
+        0.16768622398376465,
+        -0.13315370678901672,
+        0.9768067002296448
+      ],
+      "tile_target_m": [
+        256.4250183105469,
+        -4.728564739227295,
+        12.685708999633789
+      ],
+      "standoff_m": 7.991252302732766,
+      "zoom_hfov_deg": 9.037799363040714,
+      "zoom_vfov_deg": 5.055053704512499,
+      "image_path": "detection/renders_zoom_all/CWP_033_T0603.png",
+      "hit_object": "BR_DECK_SLAB_005"
+    },
+    {
+      "waypoint_id": "CWP_071",
+      "tile_id": "CWP_071_T0107",
+      "achieved_position_m": [
+        191.18040466308594,
+        15.13230037689209,
+        13.509400367736816
+      ],
+      "tile_direction": [
+        -0.39752197265625,
+        -0.9080762267112732,
+        0.13181011378765106
+      ],
+      "tile_target_m": [
+        188.03695678710938,
+        7.95158576965332,
+        14.551703453063965
+      ],
+      "standoff_m": 7.907612404935628,
+      "zoom_hfov_deg": 9.132991199966735,
+      "zoom_vfov_deg": 5.108451257219954,
+      "image_path": "detection/renders_zoom_all/CWP_071_T0107.png",
+      "hit_object": "BR_PARAPET_004_L"
+    },
+    {
+      "waypoint_id": "CWP_119",
+      "tile_id": "CWP_119_T0509",
+      "achieved_position_m": [
+        217.53269958496094,
+        2.3592000007629395,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        -0.0527341328561306,
+        0.24878790974617004,
+        -0.9671213030815125
+      ],
+      "tile_target_m": [
+        217.11068725585938,
+        4.350160121917725,
+        21.41207504272461
+      ],
+      "standoff_m": 8.002640470034905,
+      "zoom_hfov_deg": 9.02499126718398,
+      "zoom_vfov_deg": 5.047869413226928,
+      "image_path": "detection/renders_zoom_all/CWP_119_T0509.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_026",
+      "tile_id": "CWP_026_T0605",
+      "achieved_position_m": [
+        213.84429931640625,
+        0.0010999999940395355,
+        4.461599826812744
+      ],
+      "tile_direction": [
+        0.16803666949272156,
+        -0.0001354496635030955,
+        0.9857807159423828
+      ],
+      "tile_target_m": [
+        215.18673706054688,
+        1.7898506484925747e-05,
+        12.336958885192871
+      ],
+      "standoff_m": 7.988956552937136,
+      "zoom_hfov_deg": 9.0403857525032,
+      "zoom_vfov_deg": 5.0565044674450945,
+      "image_path": "detection/renders_zoom_all/CWP_026_T0605.png",
+      "hit_object": "ST_STRINGER_01"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "tile_id": "CWP_109_T0000",
+      "achieved_position_m": [
+        161.2834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.49180954694747925,
+        -0.31473857164382935,
+        -0.8118270635604858
+      ],
+      "tile_target_m": [
+        165.21926879882812,
+        -4.878139495849609,
+        22.65484046936035
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_109_T0000.png",
+      "hit_object": "ST_VERTICAL_S_03"
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "tile_id": "CWP_100_T0305",
+      "achieved_position_m": [
+        -8.821200370788574,
+        -2.9921998977661133,
+        11.062899589538574
+      ],
+      "tile_direction": [
+        0.9835500717163086,
+        -0.18062946200370789,
+        0.0015027157496660948
+      ],
+      "tile_target_m": [
+        -1.030290126800537,
+        -4.423004627227783,
+        11.074803352355957
+      ],
+      "standoff_m": 7.921213416566814,
+      "zoom_hfov_deg": 9.117375675877923,
+      "zoom_vfov_deg": 5.099691447273178,
+      "image_path": "detection/renders_zoom_all/CWP_100_T0305.png",
+      "hit_object": "BR_PIER_CAP_001"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "tile_id": "CWP_114_T0209",
+      "achieved_position_m": [
+        195.12669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        0.2803112864494324,
+        0.2635174095630646,
+        -0.923029899597168
+      ],
+      "tile_target_m": [
+        197.3710479736328,
+        -0.1289067268371582,
+        21.766117095947266
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_114_T0209.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_105",
+      "tile_id": "CWP_105_T0709",
+      "achieved_position_m": [
+        138.78289794921875,
+        -2.359499931335449,
+        29.151500701904297
+      ],
+      "tile_direction": [
+        -0.28104281425476074,
+        0.27738261222839355,
+        -0.9187349677085876
+      ],
+      "tile_target_m": [
+        136.53384399414062,
+        -0.13973331451416016,
+        21.799283981323242
+      ],
+      "standoff_m": 8.002544783508668,
+      "zoom_hfov_deg": 9.025098733422702,
+      "zoom_vfov_deg": 5.047929692610462,
+      "image_path": "detection/renders_zoom_all/CWP_105_T0709.png",
+      "hit_object": "BR_WEARING_003"
+    },
+    {
+      "waypoint_id": "CWP_022",
+      "tile_id": "CWP_022_T0505",
+      "achieved_position_m": [
+        168.84129333496094,
+        0.0007999999797903001,
+        4.461400032043457
+      ],
+      "tile_direction": [
+        0.04876700043678284,
+        -9.9954690085724e-05,
+        0.9988102316856384
+      ],
+      "tile_target_m": [
+        169.23089599609375,
+        1.4498364180326462e-06,
+        12.44101619720459
+      ],
+      "standoff_m": 7.989121431548609,
+      "zoom_hfov_deg": 9.040199951185224,
+      "zoom_vfov_deg": 5.056400247266583,
+      "image_path": "detection/renders_zoom_all/CWP_022_T0505.png",
+      "hit_object": "ST_STRINGER_01"
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "tile_id": "CWP_028_T0106",
+      "achieved_position_m": [
+        225.1175994873047,
+        0.050999999046325684,
+        2.048799991607666
+      ],
+      "tile_direction": [
+        -0.4215817451477051,
+        0.06077763810753822,
+        0.9047513604164124
+      ],
+      "tile_target_m": [
+        221.74928283691406,
+        0.5365968346595764,
+        9.277517318725586
+      ],
+      "standoff_m": 7.989728578744019,
+      "zoom_hfov_deg": 9.039515824145363,
+      "zoom_vfov_deg": 5.0560165050326145,
+      "image_path": "detection/renders_zoom_all/CWP_028_T0106.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_033",
+      "tile_id": "CWP_033_T0201",
+      "achieved_position_m": [
+        255.0850067138672,
+        -3.6644999980926514,
+        4.879799842834473
+      ],
+      "tile_direction": [
+        -0.29585179686546326,
+        -0.263667494058609,
+        0.9181236624717712
+      ],
+      "tile_target_m": [
+        252.7207794189453,
+        -5.771533489227295,
+        12.216757774353027
+      ],
+      "standoff_m": 7.991252302732766,
+      "zoom_hfov_deg": 9.037799363040714,
+      "zoom_vfov_deg": 5.055053704512499,
+      "image_path": "detection/renders_zoom_all/CWP_033_T0201.png",
+      "hit_object": "BR_DECK_SLAB_005"
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "tile_id": "CWP_100_T0902",
+      "achieved_position_m": [
+        -8.821200370788574,
+        -2.9921998977661133,
+        11.062899589538574
+      ],
+      "tile_direction": [
+        0.8404536247253418,
+        0.5046854615211487,
+        -0.1973075419664383
+      ],
+      "tile_target_m": [
+        -2.163787841796875,
+        1.005521535873413,
+        9.499984741210938
+      ],
+      "standoff_m": 7.921213416566814,
+      "zoom_hfov_deg": 9.117375675877923,
+      "zoom_vfov_deg": 5.099691447273178,
+      "image_path": "detection/renders_zoom_all/CWP_100_T0902.png",
+      "hit_object": "BR_PIER_COL_001_2"
+    },
+    {
+      "waypoint_id": "CWP_143",
+      "tile_id": "CWP_143_T0103",
+      "achieved_position_m": [
+        157.44700622558594,
+        1.1390000581741333,
+        16.502899169921875
+      ],
+      "tile_direction": [
+        -0.39943403005599976,
+        -0.907031238079071,
+        -0.13321660459041595
+      ],
+      "tile_target_m": [
+        154.2858123779297,
+        -6.039406776428223,
+        15.448598861694336
+      ],
+      "standoff_m": 7.914178036449985,
+      "zoom_hfov_deg": 9.125446441950569,
+      "zoom_vfov_deg": 5.104218872766018,
+      "image_path": "detection/renders_zoom_all/CWP_143_T0103.png",
+      "hit_object": "BR_PARAPET_004_R"
+    },
+    {
+      "waypoint_id": "CWP_114",
+      "tile_id": "CWP_114_T0202",
+      "achieved_position_m": [
+        195.12669372558594,
+        -2.238800048828125,
+        29.1564998626709
+      ],
+      "tile_direction": [
+        0.2847856879234314,
+        -0.19848518073558807,
+        -0.9378170371055603
+      ],
+      "tile_target_m": [
+        197.40687561035156,
+        -3.828002691268921,
+        21.647720336914062
+      ],
+      "standoff_m": 8.006656560145272,
+      "zoom_hfov_deg": 9.020483068969886,
+      "zoom_vfov_deg": 5.045340704496705,
+      "image_path": "detection/renders_zoom_all/CWP_114_T0202.png",
+      "hit_object": "BR_WEARING_004"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "tile_id": "CWP_027_T0709",
+      "achieved_position_m": [
+        216.89700317382812,
+        -3.592600107192993,
+        13.326499938964844
+      ],
+      "tile_direction": [
+        0.9172978401184082,
+        0.2968362867832184,
+        0.265429824590683
+      ],
+      "tile_target_m": [
+        224.1469268798828,
+        -1.2465362548828125,
+        15.424341201782227
+      ],
+      "standoff_m": 7.903561410089394,
+      "zoom_hfov_deg": 9.13765252932529,
+      "zoom_vfov_deg": 5.111066139382083,
+      "image_path": "detection/renders_zoom_all/CWP_027_T0709.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_027",
+      "tile_id": "CWP_027_T0400",
+      "achieved_position_m": [
+        216.89700317382812,
+        -3.592600107192993,
+        13.326499938964844
+      ],
+      "tile_direction": [
+        0.9446032643318176,
+        -0.04580361768603325,
+        -0.3250024914741516
+      ],
+      "tile_target_m": [
+        224.36273193359375,
+        -3.9546117782592773,
+        10.75782299041748
+      ],
+      "standoff_m": 7.903561410089394,
+      "zoom_hfov_deg": 9.13765252932529,
+      "zoom_vfov_deg": 5.111066139382083,
+      "image_path": "detection/renders_zoom_all/CWP_027_T0400.png",
+      "hit_object": "BR_PIER_CAP_005"
+    },
+    {
+      "waypoint_id": "CWP_028",
+      "tile_id": "CWP_028_T0210",
+      "achieved_position_m": [
+        225.1175994873047,
+        0.050999999046325684,
+        2.048799991607666
+      ],
+      "tile_direction": [
+        -0.2935160994529724,
+        0.32130056619644165,
+        0.9003412127494812
+      ],
+      "tile_target_m": [
+        222.77249145507812,
+        2.6181044578552246,
+        9.242281913757324
+      ],
+      "standoff_m": 7.989728578744019,
+      "zoom_hfov_deg": 9.039515824145363,
+      "zoom_vfov_deg": 5.0560165050326145,
+      "image_path": "detection/renders_zoom_all/CWP_028_T0210.png",
+      "hit_object": "BR_DECK_SLAB_004"
+    },
+    {
+      "waypoint_id": "CWP_099",
+      "tile_id": "CWP_099_T0700",
+      "achieved_position_m": [
+        -8.955400466918945,
+        -2.6658999919891357,
+        8.675999641418457
+      ],
+      "tile_direction": [
+        0.9053454399108887,
+        0.2708534002304077,
+        -0.32709020376205444
+      ],
+      "tile_target_m": [
+        -1.616818904876709,
+        -0.47040677070617676,
+        6.024660110473633
+      ],
+      "standoff_m": 8.105836330498738,
+      "zoom_hfov_deg": 8.91055914984936,
+      "zoom_vfov_deg": 4.983686228890358,
+      "image_path": "detection/renders_zoom_all/CWP_099_T0700.png",
+      "hit_object": "BR_ABUTMENT_SOUTH"
+    },
+    {
+      "waypoint_id": "CWP_100",
+      "tile_id": "CWP_100_T0404",
+      "achieved_position_m": [
+        -8.821200370788574,
+        -2.9921998977661133,
+        11.062899589538574
+      ],
+      "tile_direction": [
+        0.9960131049156189,
+        -0.06102467700839043,
+        -0.06506908684968948
+      ],
+      "tile_target_m": [
+        -0.9315676689147949,
+        -3.4755892753601074,
+        10.547473907470703
+      ],
+      "standoff_m": 7.921213416566814,
+      "zoom_hfov_deg": 9.117375675877923,
+      "zoom_vfov_deg": 5.099691447273178,
+      "image_path": "detection/renders_zoom_all/CWP_100_T0404.png",
+      "hit_object": "BR_PIER_CAP_001"
+    },
+    {
+      "waypoint_id": "CWP_109",
+      "tile_id": "CWP_109_T0400",
+      "achieved_position_m": [
+        161.2834930419922,
+        -2.3594000339508057,
+        29.151599884033203
+      ],
+      "tile_direction": [
+        0.06198729947209358,
+        -0.31270888447761536,
+        -0.947824239730835
+      ],
+      "tile_target_m": [
+        161.77955627441406,
+        -4.861896514892578,
+        21.566505432128906
+      ],
+      "standoff_m": 8.002639180636821,
+      "zoom_hfov_deg": 9.02499271529944,
+      "zoom_vfov_deg": 5.047870225496007,
+      "image_path": "detection/renders_zoom_all/CWP_109_T0400.png",
+      "hit_object": "ST_DIAGONAL_S_02"
+    }
+  ]
+}
