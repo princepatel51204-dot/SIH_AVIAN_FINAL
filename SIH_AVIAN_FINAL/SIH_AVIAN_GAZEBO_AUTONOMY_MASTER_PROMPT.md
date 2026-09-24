@@ -1,24 +1,15 @@
-# MASTER PROMPT — GarudaNEX autonomy on the SIH bridge (Gazebo) + detection
+# MASTER PROMPT — Gazebo: get the drone flying, avoiding, and detecting. Nothing else.
 
-**Gate: do not paste this into Claude Code until `git tag -l` shows
-`sih-idea-submission` (Prompt 1's freeze) AND at least ~3 hours remain
-before the 16:00 IST submission target.** If either isn't true when the
-freeze lands, this becomes Grand Finale (Dec 2026) work instead, and the
-frozen prototype is what gets submitted.
-
-**Supersedes the earlier from-scratch version of this file** (X3 quad +
-hand-built exploration node). This version reuses `~/GarudaNEX`, a
-separate, already-proven autonomy stack on this machine — verified
-directly, not taken on faith: `results/BEST_RUN/recorder_summary.json`
-shows 671.15 m flown, 0 contact samples, 74.4% goals reached (58/78),
-fully autonomous, and every file this prompt references
-(`README.md`, `docs/RUNBOOK.md`, `docs/debugging.md`,
-`garudanex_bringup/scripts/start.sh`, `garudanex_navigation/config/nav2_uav.yaml`,
-`garudanex_sim/worlds/garudanex_facility_pro.sdf`) exists on disk. The
-spawn point below (x≈20, y≈-30) matches this repo's own
-`mission/coverage_mission.json` → `base_position_m` exactly. Adapting a
-working stack to a new world is a smaller, lower-risk lift than building
-flight + avoidance from nothing under this deadline.
+**Status: ready to send now.** Deliberately run BEFORE the freeze (the earlier
+"wait for the tag" gate on this file is superseded) — Gazebo has a real chance
+of a working gate before the deadline; the freeze itself is comparatively
+quick once Section 4's numbers exist. Diagnosed first, not assumed: as of
+2026-09-24 11:0x IST, `gazebo/worlds/sih_avian_final.sdf` exists and has only
+ever been scene-validated (`gz sim -v 4 ...`, loads + Play) — no drone has
+ever been spawned in it, and no Claude Code process was running anything.
+`~/GarudaNEX/ros2_ws` is a separate, verified, already-working autonomy stack
+on this machine (671.15 m flown, 0 contact samples, 58/78 goals reached —
+`results/BEST_RUN/recorder_summary.json`).
 
 This file is the message pasted into Claude Code to start this pass, kept
 here per the established convention (see `SIH_AVIAN_HANDOVER_FOR_NEW_CHAT.md`
@@ -26,95 +17,62 @@ and the other `*_MASTER_PROMPT.md` files this project has used throughout).
 
 ---
 
-## Goal
-Fully autonomous exploration + obstacle avoidance of the SIH bridge corridor in
-Gazebo, using the PROVEN GarudaNEX stack, then defect detection on what the drone saw.
-Reuse, don't rebuild.
+Ignore all other pending work (Section 4 refly, freeze, dashboard, deck) for now.
+Single focus: a drone that exists in the Gazebo bridge environment, flies
+autonomously, avoids obstacles using its own sensor, and gets scored by the
+detector on what it actually saw. Work fast — report partial progress rather
+than going silent.
 
-## Read first (both repos)
-1. ~/GarudaNEX  (github.com/princepatel51204-dot/GarudaNEX): README.md, docs/RUNBOOK.md,
-   docs/debugging.md (16 failure classes), src/garudanex_bringup/scripts/start.sh,
-   src/garudanex_sim (worlds, how a world is added), src/garudanex_navigation/config/nav2_uav.yaml,
-   src/garudanex_explore (smart_explorer, run_recorder).
-   Proven: PX4 SITL + Gazebo Harmonic + ROS 2 Jazzy, 16-ring 3D LiDAR, slam_toolbox,
-   octomap_server, pointcloud_to_laserscan, Nav2 (NavFn + MPPI), frontier explorer.
-   671 m flown, 0 collisions. Workspace: ~/GarudaNEX/ros2_ws.
-2. /home/prince/avian_rev_c/SIH_AVIAN_FINAL: SIH_AVIAN_HANDOVER_FOR_NEW_CHAT.md,
-   gazebo/worlds/sih_avian_final.sdf + gazebo/models, mission/coverage_mission.json,
-   detection/AVIAN_detector_report_FINAL.md.
+Environment, every new shell:
+  conda deactivate
+  source /opt/ros/jazzy/setup.bash
+  source ~/GarudaNEX/ros2_ws/install/setup.bash
+Confirm `gz sim --version` and `ros2 --help` both work before doing anything else.
 
-## Environment (every shell)
-conda deactivate 2>/dev/null
-source /opt/ros/jazzy/setup.bash
-cd ~/GarudaNEX/ros2_ws && source install/setup.bash
-export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:/home/prince/avian_rev_c/SIH_AVIAN_FINAL/gazebo/models
-Follow RUNBOOK's 3 rules: never launch Nav2 twice; restart sim between runs; be
-airborne before the explorer starts.
+## Step 1 — World + drone exist and fly
+- gazebo/worlds/sih_avian_final.sdf already exists and has been visually
+  validated (loads, Play works) — but no drone has ever been spawned in it.
+- Reuse GarudaNEX's proven drone model, LiDAR, and ROS2/PX4 stack — do not
+  build a new airframe from scratch.
+- Spawn the drone at a sensible start point clear of structure.
+- GATE 1: gz sim launches the world, drone spawns, takeoff -> hover 10s -> land,
+  pose logged. Report PASS/FAIL immediately.
 
-## Step 1 — Bridge world inside GarudaNEX (gate: drone hovers in bridge world)
-- Add the SIH world to garudanex_sim the same way existing worlds are added
-  (new world name: sih_bridge). Keep the SIH SDF geometry unchanged; add what
-  GarudaNEX worlds need (PX4 spawn, physics, sun, ground plane) — copy from
-  garudanex_facility_pro.
-- Spawn the GarudaNEX drone at the SIH drone base (x≈20, y≈-30; see
-  mission/coverage_mission.json base_position_m).
-- start.sh sih_bridge → PX4 takeoff → offboard → hover. GATE 1, commit.
+## Step 2 — Autonomous exploration + real obstacle avoidance
+- Reuse GarudaNEX's frontier-based explorer (smart_explorer) + Nav2 (MPPI) +
+  octomap, fed by the drone's own LiDAR only.
+- HARD RULE: no reading of collision JSON or ground-truth geometry for
+  navigation/avoidance. Sensor data only. Prove with:
+  grep -n "collision\|ground_truth" <avoidance/nav files>
+  and paste the (should-be-empty) result.
+- Minimum standoff 3m. Geofence to corridor bounds.
+- Fully autonomous explore -> RTH -> land, no manual waypoints/joystick.
+- GATE 2: report distance flown, area explored, goals n/N, collisions (real
+  Gazebo contact sensor count), min standoff achieved, run time. Capture
+  demo_flight.mp4 or a rosbag.
 
-## Step 2 — Adapt exploration to an outdoor bridge
-Differences from the indoor facility, handle each explicitly:
-- Altitude: explore at an inspection layer below the deck (deck underside ~12–13 m,
-  piers, truss). Start with one layer at ~5 m AGL (tune so the 2D scan slice hits
-  piers/abutments, not open air); optionally a second layer. Document the chosen
-  altitude(s) and why.
-- Unbounded outdoors: frontiers run to infinity. Bound the map/exploration with a
-  geofence polygon around the corridor (x −10…370, y −40…45 m; check the SDF) —
-  frontiers outside it are ignored.
-- Safety: keep min approach distance ≥ 3 m to structure for bridge work (China MoT
-  UAV bridge guideline); set Nav2 inflation / MPPI obstacle critic accordingly.
-  3D LiDAR + octomap for obstacles above/below the 2D slice (deck underside, truss).
-- Avoidance must be sensed only: LiDAR/octomap. Do NOT read
-  scene/collision/avian_bridge_collision.json or any ground truth in any flight code.
-  Grep to prove it.
-- Return-to-home + land on time/battery budget.
-GATE 2: full autonomous run with no human input after launch. Report: distance
-flown, area mapped (m²), goals reached/total, collisions (from Gazebo contacts),
-min distance to structure, run time. Save run_recorder results + a 60–90 s screen
-recording (gazebo/demo_flight.mp4). Commit.
-
-## Step 3 — Inspection pass (optional, if Gate 2 passes with time left)
-After exploration, fly the geometry-only inspection viewpoints
-(mission/coverage_mission.json, 8 m standoff) through Nav2 goals on the same map,
-same avoidance. Report attempted/reached/failed.
-
-## Step 4 — Detection on what the drone actually saw
-- Gazebo's own camera shows flat colours with no defect textures → the detector
-  would be meaningless there. So: take the ACHIEVED poses from the Gazebo run
-  (odometry at each held viewpoint), render them in Blender with the SIH zoom camera
-  (source/render_zoom_tiles_final.py, ~9° HFOV / ~8.7× zoom), output to
-  detection/renders_zoom_gazebo/ (gitignored).
-- Run headline detector v2 (detection/AVIAN_detector_weights_v2_FINAL.pt, threshold
-  0.65 — do NOT re-tune), score with the existing IoU code
-  (source/score_zoom_tiles_final.py). Report TP/FP/FN, GT defects in scope, false
-  positives per 100 tiles, unseen-defect count.
-- Write a gazebo_flight_log.json in the same schema as the SIH PyBullet flight_log
-  so source/score_coverage.py can report coverage % and recall n/73 (new output file).
+## Step 3 — Detection on what the drone actually saw
+- Export achieved poses to a flight log, same schema as the existing PyBullet
+  flight_log.json so existing scoring scripts work unchanged.
+- Do NOT score on Gazebo's own camera feed (flat-shaded, no defect texture).
+  Render Blender zoom tiles at the Gazebo-achieved poses instead (reuse the
+  existing zoom-tile render script).
+- Run the existing headline detector (v2 @ 0.65, unchanged) on those tiles
+  with the existing IoU scoring code.
+- GATE 3: report tiles rendered, defects in scope, TP/FP/FN, FP per 100 tiles.
 
 ## Rules
-- Measured numbers only; unfinished = "not run". Never fabricate logs or metrics.
-- No ground truth in flight/avoidance/viewpoint selection. Ground truth only for scoring.
-- Never overwrite committed results. Commit each gate with numbers in the message
-  (GarudaNEX repo for stack changes; SIH repo for results).
-- If a failure matches docs/debugging.md, use its fix and say which class.
+- Measured numbers only. Anything that can't finish: report exactly how far
+  it got, mark the rest "not run" — never estimate.
+- Commit after each gate, numbers in the commit message.
+- Do not touch FINAL_RESULTS.json, the freeze tag, dashboard, or deck.
 
-## Finish — post and stop
-HANDOFF — GARUDANEX ON SIH BRIDGE
-Gate 1 (hover in bridge world):   PASS/FAIL
-Autonomous run:  distance m; area mapped m²; goals n/N; collisions; min distance to structure m; time
-Altitude layer(s) + geofence:      …
-Sensed-only grep:                  clean/hits
-Inspection pass:                   attempted/reached or "not run"
-Coverage (score_coverage):         % ; recall n/73
-Detection (v2 @0.65, Blender at Gazebo poses): tiles, GT in scope, TP/FP/FN, FP/100, unseen n
-Demo media / results dir:          …
-Not done:                          …
-Commits:                           …
+## Stop and post exactly this when done or blocked:
+HANDOFF — GAZEBO CORE
+Env check:     gz sim / ros2 versions, PASS/FAIL
+Gate 1:        PASS/FAIL — takeoff/hover/land
+Gate 2:        distance, area, goals n/N, collisions, min standoff, run time
+Sensed-only:   grep result (must be empty)
+Gate 3:        tiles, GT in scope, TP/FP/FN, FP/100
+Blocked on:    …
+Commit:        …
