@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-09-24T12:29:00Z",
+  "world": "gazebo/worlds/sih_avian_final.sdf",
+  "spawn_pose_m": [
+    20.0,
+    -30.0,
+    1.626,
+    0,
+    0,
+    0
+  ],
+  "airframe": "gz_x500_lidar_2d (GarudaNEX x500_base + garudanex lidar_2d_v2)",
+  "control_path": "PX4 OFFBOARD velocity control (OffboardControlMode + TrajectorySetpoint), same mechanism as garudanex_bridge/cmd_vel_bridge.cpp",
+  "cruise_alt_target_m": 3.0,
+  "hover_s_target": 10.0,
+  "result": {
+    "armed": true,
+    "reached_altitude": true,
+    "grounded": true,
+    "landed_disarmed": true,
+    "max_alt_m": 3.012,
+    "final_alt_m": 0.021,
+    "final_xy_m": [
+      -0.456,
+      -0.346
+    ],
+    "n_pose_samples": 1612,
+    "duration_wall_s": 32.21
+  },
+  "world_fixes_applied": [
+    "physics engine dart -> ode (dart produced zero actuator/motor output on this airframe; ode matches every other verified PX4-compatible GarudaNEX world)",
+    "added <magnetic_field>, <gravity>, <atmosphere>, <spherical_coordinates> (missing magnetic_field caused a persistent, non-transient EKF2 \"Strong magnetic interference\" preflight fail blocking arming)"
+  ],
+  "runtime_param_override": {
+    "NAV_DLL_ACT": 0
+  }
+}

@@ -2,17 +2,21 @@
 <sdf version="1.9">
   <!-- SIH_AVIAN_FINAL corridor, x in [0, 360] of the Blender model. No world origin shift (see export_gazebo_final.py docstring). -->
   <world name="sih_avian_final">
-    <physics name="default" type="dart">
-      <max_step_size>0.002</max_step_size>
+    <physics name="default" type="ode">
+      <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
     </physics>
-    <plugin name="gz::sim::systems::physics" filename="gz-sim-physics-system"/>
-    <plugin name="gz::sim::systems::user_commands" filename="gz-sim-user-commands-system"/>
-    <plugin name="gz::sim::systems::scene_broadcaster" filename="gz-sim-scene-broadcaster-system"/>
-    <plugin name="gz::sim::systems::sensors" filename="gz-sim-sensors-system">
-      <render_engine>ogre2</render_engine>
-    </plugin>
-    <plugin name="gz::sim::systems::contact" filename="gz-sim-contact-system"/>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type="adiabatic"/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation>
+      <latitude_deg>47.397971057728974</latitude_deg>
+      <longitude_deg>8.546163739800146</longitude_deg>
+      <elevation>0</elevation>
+    </spherical_coordinates>
     <light name="sun" type="directional">
       <cast_shadows>true</cast_shadows>
       <pose>180 0 200 0 0 0</pose>
