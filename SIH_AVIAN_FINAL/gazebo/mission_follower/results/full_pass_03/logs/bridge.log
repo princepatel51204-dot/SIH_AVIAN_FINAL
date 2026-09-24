@@ -1,0 +1,19 @@
+[0m[INFO] [1790276315.422272214] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)[0m
+[0m[INFO] [1790276315.423740442] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/link/sensor/garudanex_lidar_3d/scan/points (gz.msgs.PointCloudPacked) -> /world/sih_avian_final/model/x500_lidar_2d_0/link/link/sensor/garudanex_lidar_3d/scan/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[0m[INFO] [1790276315.426912081] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/up_range/scan/points (gz.msgs.PointCloudPacked) -> /world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/up_range/scan/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[0m[INFO] [1790276315.427434045] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/down_range/scan/points (gz.msgs.PointCloudPacked) -> /world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/down_range/scan/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[0m[INFO] [1790276315.427801466] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/front_camera/image (gz.msgs.Image) -> /world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/front_camera/image (sensor_msgs/msg/Image)] (Lazy 0)[0m
+[0m[INFO] [1790276315.428432703] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/body_contact_sensor/contact (gz.msgs.Contacts) -> /world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/body_contact_sensor/contact (ros_gz_interfaces/msg/Contacts)] (Lazy 0)[0m
+Exception sending a multicast message:Network is unreachableException sending a multicast message:
+Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+Exception sending a multicast message:Network is unreachable
+[0m[INFO] [1790279365.189306720] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m

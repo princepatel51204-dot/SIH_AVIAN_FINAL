@@ -1,0 +1,605 @@
+{
+ "frames": 28150,
+ "duration_wall_s": 3042.8,
+ "rate_hz": 9.25,
+ "max_gap_s": 1.474,
+ "waypoint_snapshots": 149,
+ "waypoint_frames": [
+  {
+   "waypoint_id": "CWP_001",
+   "frame": 562
+  },
+  {
+   "waypoint_id": "CWP_002",
+   "frame": 680
+  },
+  {
+   "waypoint_id": "CWP_003",
+   "frame": 755
+  },
+  {
+   "waypoint_id": "CWP_004",
+   "frame": 829
+  },
+  {
+   "waypoint_id": "CWP_005",
+   "frame": 1013
+  },
+  {
+   "waypoint_id": "CWP_006",
+   "frame": 1152
+  },
+  {
+   "waypoint_id": "CWP_007",
+   "frame": 1220
+  },
+  {
+   "waypoint_id": "CWP_008",
+   "frame": 1303
+  },
+  {
+   "waypoint_id": "CWP_009",
+   "frame": 1436
+  },
+  {
+   "waypoint_id": "CWP_010",
+   "frame": 1656
+  },
+  {
+   "waypoint_id": "CWP_011",
+   "frame": 1733
+  },
+  {
+   "waypoint_id": "CWP_012",
+   "frame": 1807
+  },
+  {
+   "waypoint_id": "CWP_013",
+   "frame": 1903
+  },
+  {
+   "waypoint_id": "CWP_014",
+   "frame": 2044
+  },
+  {
+   "waypoint_id": "CWP_015",
+   "frame": 2269
+  },
+  {
+   "waypoint_id": "CWP_016",
+   "frame": 2550
+  },
+  {
+   "waypoint_id": "CWP_017",
+   "frame": 2642
+  },
+  {
+   "waypoint_id": "CWP_018",
+   "frame": 2715
+  },
+  {
+   "waypoint_id": "CWP_019",
+   "frame": 2789
+  },
+  {
+   "waypoint_id": "CWP_020",
+   "frame": 2956
+  },
+  {
+   "waypoint_id": "CWP_021",
+   "frame": 3171
+  },
+  {
+   "waypoint_id": "CWP_022",
+   "frame": 3289
+  },
+  {
+   "waypoint_id": "CWP_023",
+   "frame": 3397
+  },
+  {
+   "waypoint_id": "CWP_024",
+   "frame": 3512
+  },
+  {
+   "waypoint_id": "CWP_025",
+   "frame": 3630
+  },
+  {
+   "waypoint_id": "CWP_026",
+   "frame": 3748
+  },
+  {
+   "waypoint_id": "CWP_027",
+   "frame": 3908
+  },
+  {
+   "waypoint_id": "CWP_028",
+   "frame": 4101
+  },
+  {
+   "waypoint_id": "CWP_029",
+   "frame": 4495
+  },
+  {
+   "waypoint_id": "CWP_030",
+   "frame": 4558
+  },
+  {
+   "waypoint_id": "CWP_031",
+   "frame": 4650
+  },
+  {
+   "waypoint_id": "CWP_032",
+   "frame": 4881
+  },
+  {
+   "waypoint_id": "CWP_033",
+   "frame": 5153
+  },
+  {
+   "waypoint_id": "CWP_034",
+   "frame": 5376
+  },
+  {
+   "waypoint_id": "CWP_035",
+   "frame": 5454
+  },
+  {
+   "waypoint_id": "CWP_036",
+   "frame": 5532
+  },
+  {
+   "waypoint_id": "CWP_037",
+   "frame": 5633
+  },
+  {
+   "waypoint_id": "CWP_038",
+   "frame": 5774
+  },
+  {
+   "waypoint_id": "CWP_039",
+   "frame": 5892
+  },
+  {
+   "waypoint_id": "CWP_040",
+   "frame": 6253
+  },
+  {
+   "waypoint_id": "CWP_041",
+   "frame": 6329
+  },
+  {
+   "waypoint_id": "CWP_042",
+   "frame": 6427
+  },
+  {
+   "waypoint_id": "CWP_043",
+   "frame": 6572
+  },
+  {
+   "waypoint_id": "CWP_044",
+   "frame": 6642
+  },
+  {
+   "waypoint_id": "CWP_045",
+   "frame": 6732
+  },
+  {
+   "waypoint_id": "CWP_046",
+   "frame": 7075
+  },
+  {
+   "waypoint_id": "CWP_047",
+   "frame": 7226
+  },
+  {
+   "waypoint_id": "CWP_048",
+   "frame": 7299
+  },
+  {
+   "waypoint_id": "CWP_049",
+   "frame": 7721
+  },
+  {
+   "waypoint_id": "CWP_050",
+   "frame": 7785
+  },
+  {
+   "waypoint_id": "CWP_051",
+   "frame": 7856
+  },
+  {
+   "waypoint_id": "CWP_052",
+   "frame": 8054
+  },
+  {
+   "waypoint_id": "CWP_053",
+   "frame": 8300
+  },
+  {
+   "waypoint_id": "CWP_054",
+   "frame": 8370
+  },
+  {
+   "waypoint_id": "CWP_055",
+   "frame": 8442
+  },
+  {
+   "waypoint_id": "CWP_056",
+   "frame": 8621
+  },
+  {
+   "waypoint_id": "CWP_057",
+   "frame": 8690
+  },
+  {
+   "waypoint_id": "CWP_058",
+   "frame": 8758
+  },
+  {
+   "waypoint_id": "CWP_059",
+   "frame": 8937
+  },
+  {
+   "waypoint_id": "CWP_060",
+   "frame": 9006
+  },
+  {
+   "waypoint_id": "CWP_061",
+   "frame": 9076
+  },
+  {
+   "waypoint_id": "CWP_062",
+   "frame": 9251
+  },
+  {
+   "waypoint_id": "CWP_063",
+   "frame": 9320
+  },
+  {
+   "waypoint_id": "CWP_064",
+   "frame": 9669
+  },
+  {
+   "waypoint_id": "CWP_065",
+   "frame": 9841
+  },
+  {
+   "waypoint_id": "CWP_066",
+   "frame": 10054
+  },
+  {
+   "waypoint_id": "CWP_067",
+   "frame": 10154
+  },
+  {
+   "waypoint_id": "CWP_068",
+   "frame": 10282
+  },
+  {
+   "waypoint_id": "CWP_069",
+   "frame": 10388
+  },
+  {
+   "waypoint_id": "CWP_070",
+   "frame": 10519
+  },
+  {
+   "waypoint_id": "CWP_071",
+   "frame": 10613
+  },
+  {
+   "waypoint_id": "CWP_072",
+   "frame": 10748
+  },
+  {
+   "waypoint_id": "CWP_073",
+   "frame": 10851
+  },
+  {
+   "waypoint_id": "CWP_074",
+   "frame": 10988
+  },
+  {
+   "waypoint_id": "CWP_075",
+   "frame": 11084
+  },
+  {
+   "waypoint_id": "CWP_076",
+   "frame": 11220
+  },
+  {
+   "waypoint_id": "CWP_077",
+   "frame": 11315
+  },
+  {
+   "waypoint_id": "CWP_078",
+   "frame": 11454
+  },
+  {
+   "waypoint_id": "CWP_079",
+   "frame": 11558
+  },
+  {
+   "waypoint_id": "CWP_080",
+   "frame": 11698
+  },
+  {
+   "waypoint_id": "CWP_081",
+   "frame": 11899
+  },
+  {
+   "waypoint_id": "CWP_082",
+   "frame": 12105
+  },
+  {
+   "waypoint_id": "CWP_083",
+   "frame": 12696
+  },
+  {
+   "waypoint_id": "CWP_084",
+   "frame": 12993
+  },
+  {
+   "waypoint_id": "CWP_085",
+   "frame": 13076
+  },
+  {
+   "waypoint_id": "CWP_086",
+   "frame": 13148
+  },
+  {
+   "waypoint_id": "CWP_087",
+   "frame": 13322
+  },
+  {
+   "waypoint_id": "CWP_088",
+   "frame": 13393
+  },
+  {
+   "waypoint_id": "CWP_089",
+   "frame": 13462
+  },
+  {
+   "waypoint_id": "CWP_090",
+   "frame": 13631
+  },
+  {
+   "waypoint_id": "CWP_091",
+   "frame": 13704
+  },
+  {
+   "waypoint_id": "CWP_092",
+   "frame": 13771
+  },
+  {
+   "waypoint_id": "CWP_093",
+   "frame": 13975
+  },
+  {
+   "waypoint_id": "CWP_094",
+   "frame": 14206
+  },
+  {
+   "waypoint_id": "CWP_095",
+   "frame": 14549
+  },
+  {
+   "waypoint_id": "CWP_096",
+   "frame": 14672
+  },
+  {
+   "waypoint_id": "CWP_098",
+   "frame": 14846
+  },
+  {
+   "waypoint_id": "CWP_099",
+   "frame": 14958
+  },
+  {
+   "waypoint_id": "CWP_100",
+   "frame": 15022
+  },
+  {
+   "waypoint_id": "CWP_101",
+   "frame": 15345
+  },
+  {
+   "waypoint_id": "CWP_102",
+   "frame": 15917
+  },
+  {
+   "waypoint_id": "CWP_103",
+   "frame": 16706
+  },
+  {
+   "waypoint_id": "CWP_104",
+   "frame": 16767
+  },
+  {
+   "waypoint_id": "CWP_105",
+   "frame": 16832
+  },
+  {
+   "waypoint_id": "CWP_106",
+   "frame": 16953
+  },
+  {
+   "waypoint_id": "CWP_107",
+   "frame": 17020
+  },
+  {
+   "waypoint_id": "CWP_108",
+   "frame": 17129
+  },
+  {
+   "waypoint_id": "CWP_109",
+   "frame": 17192
+  },
+  {
+   "waypoint_id": "CWP_110",
+   "frame": 17303
+  },
+  {
+   "waypoint_id": "CWP_111",
+   "frame": 17366
+  },
+  {
+   "waypoint_id": "CWP_112",
+   "frame": 17479
+  },
+  {
+   "waypoint_id": "CWP_113",
+   "frame": 17546
+  },
+  {
+   "waypoint_id": "CWP_114",
+   "frame": 17658
+  },
+  {
+   "waypoint_id": "CWP_115",
+   "frame": 17723
+  },
+  {
+   "waypoint_id": "CWP_116",
+   "frame": 17837
+  },
+  {
+   "waypoint_id": "CWP_117",
+   "frame": 17905
+  },
+  {
+   "waypoint_id": "CWP_118",
+   "frame": 18019
+  },
+  {
+   "waypoint_id": "CWP_119",
+   "frame": 18086
+  },
+  {
+   "waypoint_id": "CWP_120",
+   "frame": 18170
+  },
+  {
+   "waypoint_id": "CWP_121",
+   "frame": 18916
+  },
+  {
+   "waypoint_id": "CWP_122",
+   "frame": 19484
+  },
+  {
+   "waypoint_id": "CWP_123",
+   "frame": 19633
+  },
+  {
+   "waypoint_id": "CWP_124",
+   "frame": 19934
+  },
+  {
+   "waypoint_id": "CWP_125",
+   "frame": 20540
+  },
+  {
+   "waypoint_id": "CWP_126",
+   "frame": 20626
+  },
+  {
+   "waypoint_id": "CWP_127",
+   "frame": 20738
+  },
+  {
+   "waypoint_id": "CWP_128",
+   "frame": 20946
+  },
+  {
+   "waypoint_id": "CWP_129",
+   "frame": 21318
+  },
+  {
+   "waypoint_id": "CWP_130",
+   "frame": 21572
+  },
+  {
+   "waypoint_id": "CWP_131",
+   "frame": 22210
+  },
+  {
+   "waypoint_id": "CWP_132",
+   "frame": 22756
+  },
+  {
+   "waypoint_id": "CWP_133",
+   "frame": 22808
+  },
+  {
+   "waypoint_id": "CWP_134",
+   "frame": 22930
+  },
+  {
+   "waypoint_id": "CWP_135",
+   "frame": 22984
+  },
+  {
+   "waypoint_id": "CWP_136",
+   "frame": 23108
+  },
+  {
+   "waypoint_id": "CWP_137",
+   "frame": 23165
+  },
+  {
+   "waypoint_id": "CWP_138",
+   "frame": 23286
+  },
+  {
+   "waypoint_id": "CWP_139",
+   "frame": 23337
+  },
+  {
+   "waypoint_id": "CWP_140",
+   "frame": 23456
+  },
+  {
+   "waypoint_id": "CWP_141",
+   "frame": 23506
+  },
+  {
+   "waypoint_id": "CWP_142",
+   "frame": 23634
+  },
+  {
+   "waypoint_id": "CWP_143",
+   "frame": 23685
+  },
+  {
+   "waypoint_id": "CWP_144",
+   "frame": 23808
+  },
+  {
+   "waypoint_id": "CWP_145",
+   "frame": 23860
+  },
+  {
+   "waypoint_id": "CWP_146",
+   "frame": 24258
+  },
+  {
+   "waypoint_id": "CWP_147",
+   "frame": 24687
+  },
+  {
+   "waypoint_id": "CWP_148",
+   "frame": 25249
+  },
+  {
+   "waypoint_id": "CWP_149",
+   "frame": 25502
+  },
+  {
+   "waypoint_id": "CWP_150",
+   "frame": 26292
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "run": "full_pass_03",
+ "final": true,
+ "waypoints_in_source_mission": 150,
+ "logged": 150,
+ "unique_logged": 150,
+ "duplicates": 0,
+ "results": {
+  "reached": 148,
+  "not_attempted_unreachable_in_plan": 1,
+  "blocked": 1
+ },
+ "reached": 148,
+ "nudged_in_plan": 46,
+ "mapping_true_minus_target_m": {
+  "n": 148,
+  "mean": 0.4969,
+  "median": 0.4746,
+  "p95": 0.9901,
+  "max": 1.0793
+ },
+ "mapping_unnudged_only_m": {
+  "n": 103,
+  "mean": 0.4974,
+  "median": 0.4782,
+  "p95": 1.0022,
+  "max": 1.0793
+ },
+ "mapping_mean_offset_xyz_m": [
+  0.4675,
+  0.0137,
+  -0.0319
+ ],
+ "mapping_std_offset_xyz_m": [
+  0.3114,
+  0.0769,
+  0.0251
+ ],
+ "ekf_vs_true_m": {
+  "n": 148,
+  "mean": 0.4857,
+  "median": 0.4682,
+  "p95": 0.9596,
+  "max": 1.0232
+ },
+ "yaw_err_deg": {
+  "mean": 0.44,
+  "max": 1.58
+ },
+ "speed_calc": {
+  "decel_mps2": 1.95,
+  "stop_k_s": 0.592,
+  "t_lat_s": 0.15,
+  "clearance_m": 3.0,
+  "required_margin": 2.0,
+  "v_max_at_margin": 2.022,
+  "cruise_mps": 1.9,
+  "cruise_with_overshoot_mps": 1.947,
+  "stop_dist_m": 1.445,
+  "achieved_margin": 2.076
+ },
+ "brake_test": {
+  "speed_at_cmd_mps": 1.944,
+  "stop_dist_m": 1.157,
+  "stop_time_s": 1.5,
+  "implied_decel_mps2": 1.635,
+  "budget_stop_dist_m": 1.445,
+  "note": "measured from the instant zero velocity was commanded; excludes sensing latency (budgeted separately in t_lat)"
+ },
+ "sense_stats": {
+  "ticks": 41971,
+  "ticks_limited": 2499,
+  "ticks_pushed": 1438,
+  "min_range_m": 0.4540247743086924,
+  "no_fresh_lidar_ticks": 0,
+  "min_lidar": 1.015306312279193,
+  "min_down": 0.45402478694915793,
+  "min_up": 2.8497837348011976
+ },
+ "min_sensed_range_at_legs_m": 2.768,
+ "contacts": {
+  "episodes": 0,
+  "samples": 0
+ },
+ "camera": {
+  "frames": 28150,
+  "duration_wall_s": 3042.8,
+  "rate_hz": 9.25,
+  "max_gap_s": 1.474,
+  "waypoint_snapshots": 149
+ },
+ "summary_follower": {
+  "waypoints_in_plan": 150,
+  "attempted": 149,
+  "reached": 148,
+  "results": {
+   "blocked": 1,
+   "not_attempted_unreachable_in_plan": 1,
+   "reached": 148
+  },
+  "ekf_err_m": {
+   "mean": 0.0935,
+   "max": 0.1734,
+   "p95": 0.1527
+  },
+  "mission_time_sim_s": 2100.0,
+  "mission_time_wall_s": 3029.9,
+  "distance_ekf_m": 2459.0
+ },
+ "distance_true_m": 2444.1,
+ "planned_total_path_m": 2355.34
+}

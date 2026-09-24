@@ -1,0 +1,7721 @@
+{
+ "generated_utc": "2026-09-24T17:46:08Z",
+ "planner": "gazebo/mission_follower/plan_gazebo_mission.py (offline; geometry only, no defect data)",
+ "source_mission": "mission/coverage_mission.json",
+ "frame": "Gazebo world ENU == Blender/collision-JSON frame (no origin shift; verified primitive-by-primitive)",
+ "sensed_clearance_m": 3.0,
+ "plan_clearance_m": 3.5,
+ "min_agl_m": 3.5,
+ "home_ground_world_m": [
+  20.0,
+  -30.0,
+  0.0
+ ],
+ "home_air_world_m": [
+  20.0,
+  -30.0,
+  5.0
+ ],
+ "n_obstacles_collision_json": 566,
+ "n_obstacles_visual_only": 173,
+ "n_waypoints": 150,
+ "n_nudged": 46,
+ "unfixable_waypoints": [
+  "CWP_097"
+ ],
+ "legs": {
+  "straight": 120,
+  "astar": 29,
+  "failed": 0
+ },
+ "min_route_clearance_m": 3.508,
+ "rth": {
+  "route": [
+   [
+    180.0,
+    35.0,
+    24.0
+   ],
+   [
+    145.0,
+    33.0,
+    24.0
+   ],
+   [
+    63.0,
+    -11.0,
+    23.0
+   ]
+  ],
+  "method": "astar",
+  "min_clearance_m": 3.612,
+  "length_m": 186.278
+ },
+ "planned_total_path_m": 2355.34,
+ "waypoints": [
+  {
+   "waypoint_id": "CWP_001",
+   "prim_name": "BR_DIAPHRAGM_001_3",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    30.0,
+    -3.6667,
+    12.4956
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_001_3_+X_0",
+    "BR_DIAPHRAGM_001_3_+X_1",
+    "BR_DIAPHRAGM_001_3_+Z_6",
+    "BR_DIAPHRAGM_001_3_+Z_7",
+    "BR_DIAPHRAGM_001_3_+Z_8",
+    "BR_DIAPHRAGM_001_3_-X_2",
+    "BR_DIAPHRAGM_001_3_-X_3",
+    "BR_DIAPHRAGM_001_3_-Y_5",
+    "BR_DIAPHRAGM_001_3_-Z_10",
+    "BR_DIAPHRAGM_001_3_-Z_11",
+    "BR_DIAPHRAGM_001_3_-Z_9"
+   ],
+   "original_position_m": [
+    30.0,
+    -3.6667,
+    4.4956
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.496,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    30.0,
+    -3.6667,
+    4.4956
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.496,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.496,
+   "route_length_m": 28.173
+  },
+  {
+   "waypoint_id": "CWP_002",
+   "prim_name": "BR_DIAPHRAGM_001_2",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    15.0,
+    -3.6667,
+    12.4956
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_001_2_+X_0",
+    "BR_DIAPHRAGM_001_2_+X_1",
+    "BR_DIAPHRAGM_001_2_+Z_6",
+    "BR_DIAPHRAGM_001_2_+Z_7",
+    "BR_DIAPHRAGM_001_2_+Z_8",
+    "BR_DIAPHRAGM_001_2_-X_2",
+    "BR_DIAPHRAGM_001_2_-X_3",
+    "BR_DIAPHRAGM_001_2_-Y_5",
+    "BR_DIAPHRAGM_001_2_-Z_10",
+    "BR_DIAPHRAGM_001_2_-Z_11",
+    "BR_DIAPHRAGM_001_2_-Z_9"
+   ],
+   "original_position_m": [
+    15.0,
+    -3.6667,
+    4.4956
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.496,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    15.0,
+    -3.6667,
+    4.4956
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.496,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.496,
+   "route_length_m": 15.0
+  },
+  {
+   "waypoint_id": "CWP_003",
+   "prim_name": "BR_ABUTMENT_SOUTH",
+   "prim_kind": "abutment",
+   "target_m": [
+    6.5,
+    -6.0,
+    7.0
+   ],
+   "covers": [
+    "BR_ABUTMENT_SOUTH_+X_0",
+    "BR_ABUTMENT_SOUTH_+X_1",
+    "BR_ABUTMENT_SOUTH_+X_2",
+    "BR_ABUTMENT_SOUTH_+X_3",
+    "BR_ABUTMENT_SOUTH_+X_4",
+    "BR_ABUTMENT_SOUTH_+X_5",
+    "BR_ABUTMENT_SOUTH_+Z_24",
+    "BR_ABUTMENT_SOUTH_-X_10",
+    "BR_ABUTMENT_SOUTH_-X_11",
+    "BR_ABUTMENT_SOUTH_-X_9",
+    "BR_ABUTMENT_SOUTH_-Y_21",
+    "BR_ABUTMENT_SOUTH_-Y_22",
+    "BR_ABUTMENT_SOUTH_-Y_23"
+   ],
+   "original_position_m": [
+    14.5,
+    -6.0,
+    7.0
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 2.3,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.25,
+   "position_m": [
+    14.4475,
+    -4.7657,
+    7.1906
+   ],
+   "heading_rad": -2.9875,
+   "planned_clearance_m": 3.534,
+   "standoff_to_target_m": 8.045,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.534,
+   "route_length_m": 2.962
+  },
+  {
+   "waypoint_id": "CWP_004",
+   "prim_name": "BR_WINGWALL_SOUTH_R",
+   "prim_kind": "structure",
+   "target_m": [
+    13.5,
+    -8.3,
+    5.6
+   ],
+   "covers": [
+    "BR_WINGWALL_SOUTH_R_+X_0",
+    "BR_WINGWALL_SOUTH_R_+X_1",
+    "BR_WINGWALL_SOUTH_R_+X_2",
+    "BR_WINGWALL_SOUTH_R_+Y_10",
+    "BR_WINGWALL_SOUTH_R_+Y_11",
+    "BR_WINGWALL_SOUTH_R_+Y_6",
+    "BR_WINGWALL_SOUTH_R_+Y_7",
+    "BR_WINGWALL_SOUTH_R_+Y_8",
+    "BR_WINGWALL_SOUTH_R_+Y_9",
+    "BR_WINGWALL_SOUTH_R_+Z_18",
+    "BR_WINGWALL_SOUTH_R_+Z_19",
+    "BR_WINGWALL_SOUTH_R_-Y_12",
+    "BR_WINGWALL_SOUTH_R_-Y_13",
+    "BR_WINGWALL_SOUTH_R_-Y_14",
+    "BR_WINGWALL_SOUTH_R_-Y_15",
+    "BR_WINGWALL_SOUTH_R_-Y_16",
+    "BR_WINGWALL_SOUTH_R_-Y_17"
+   ],
+   "original_position_m": [
+    13.5,
+    -0.3,
+    5.6
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 5.6,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    13.5,
+    -0.3,
+    5.6
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 5.6,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.534,
+   "route_length_m": 4.834
+  },
+  {
+   "waypoint_id": "CWP_005",
+   "prim_name": "BR_PIER_CAP_002",
+   "prim_kind": "pier_cap",
+   "target_m": [
+    45.0,
+    0.0,
+    10.6375
+   ],
+   "covers": [
+    "BR_PIER_CAP_002_+X_0",
+    "BR_PIER_CAP_002_+X_1",
+    "BR_PIER_CAP_002_+Y_4",
+    "BR_PIER_CAP_002_+Z_6",
+    "BR_PIER_CAP_002_+Z_7",
+    "BR_PIER_CAP_002_+Z_8",
+    "BR_PIER_CAP_002_-X_2",
+    "BR_PIER_CAP_002_-X_3",
+    "BR_PIER_CAP_002_-Y_5",
+    "BR_PIER_CAP_002_-Z_10",
+    "BR_PIER_CAP_002_-Z_11",
+    "BR_PIER_CAP_002_-Z_9"
+   ],
+   "original_position_m": [
+    45.0,
+    0.0,
+    2.6375
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 1.9,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.75,
+   "position_m": [
+    41.381,
+    -0.3218,
+    3.5656
+   ],
+   "heading_rad": 0.0887,
+   "planned_clearance_m": 3.508,
+   "standoff_to_target_m": 7.951,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.508,
+   "route_length_m": 27.955
+  },
+  {
+   "waypoint_id": "CWP_006",
+   "prim_name": "BR_PIER_COL_002_1",
+   "prim_kind": "pier_column",
+   "target_m": [
+    45.85,
+    -2.75,
+    1.9229
+   ],
+   "covers": [
+    "BR_PIER_COL_002_1_cap_top",
+    "BR_PIER_COL_002_1_side_0",
+    "BR_PIER_COL_002_1_side_1",
+    "BR_PIER_COL_002_1_side_10",
+    "BR_PIER_COL_002_1_side_11",
+    "BR_PIER_COL_002_1_side_2",
+    "BR_PIER_COL_002_1_side_3",
+    "BR_PIER_COL_002_1_side_4",
+    "BR_PIER_COL_002_1_side_5",
+    "BR_PIER_COL_002_1_side_6",
+    "BR_PIER_COL_002_1_side_7",
+    "BR_PIER_COL_002_1_side_8",
+    "BR_PIER_COL_002_1_side_9"
+   ],
+   "original_position_m": [
+    53.85,
+    -2.75,
+    1.9229
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.923,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    53.6582,
+    -2.6553,
+    3.6598
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.66,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     40.0,
+     -2.0,
+     4.0
+    ],
+    [
+     41.0,
+     -5.0,
+     4.0
+    ],
+    [
+     43.0,
+     -7.0,
+     4.0
+    ],
+    [
+     45.0,
+     -8.0,
+     4.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.508,
+   "route_length_m": 20.624
+  },
+  {
+   "waypoint_id": "CWP_007",
+   "prim_name": "BR_PIER_COL_002_2",
+   "prim_kind": "pier_column",
+   "target_m": [
+    45.85,
+    2.75,
+    1.9229
+   ],
+   "covers": [
+    "BR_PIER_COL_002_2_cap_top",
+    "BR_PIER_COL_002_2_side_0",
+    "BR_PIER_COL_002_2_side_1",
+    "BR_PIER_COL_002_2_side_10",
+    "BR_PIER_COL_002_2_side_11",
+    "BR_PIER_COL_002_2_side_2",
+    "BR_PIER_COL_002_2_side_3",
+    "BR_PIER_COL_002_2_side_4",
+    "BR_PIER_COL_002_2_side_5",
+    "BR_PIER_COL_002_2_side_6",
+    "BR_PIER_COL_002_2_side_7",
+    "BR_PIER_COL_002_2_side_8",
+    "BR_PIER_COL_002_2_side_9"
+   ],
+   "original_position_m": [
+    53.85,
+    2.75,
+    1.9229
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.923,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    53.6582,
+    2.8447,
+    3.6598
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.66,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.66,
+   "route_length_m": 5.5
+  },
+  {
+   "waypoint_id": "CWP_008",
+   "prim_name": "BR_DIAPHRAGM_002_2",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    60.0,
+    -3.6667,
+    12.7206
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_002_2_+X_0",
+    "BR_DIAPHRAGM_002_2_+X_1",
+    "BR_DIAPHRAGM_002_2_+Z_6",
+    "BR_DIAPHRAGM_002_2_+Z_7",
+    "BR_DIAPHRAGM_002_2_+Z_8",
+    "BR_DIAPHRAGM_002_2_-X_2",
+    "BR_DIAPHRAGM_002_2_-X_3",
+    "BR_DIAPHRAGM_002_2_-Y_5",
+    "BR_DIAPHRAGM_002_2_-Z_10",
+    "BR_DIAPHRAGM_002_2_-Z_11",
+    "BR_DIAPHRAGM_002_2_-Z_9"
+   ],
+   "original_position_m": [
+    60.0,
+    -3.6667,
+    4.7206
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.721,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    60.0,
+    -3.6667,
+    4.7206
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.721,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.66,
+   "route_length_m": 9.151
+  },
+  {
+   "waypoint_id": "CWP_009",
+   "prim_name": "BR_DIAPHRAGM_002_3",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    75.0,
+    -3.6667,
+    12.7206
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_002_3_+X_0",
+    "BR_DIAPHRAGM_002_3_+X_1",
+    "BR_DIAPHRAGM_002_3_+Z_6",
+    "BR_DIAPHRAGM_002_3_+Z_7",
+    "BR_DIAPHRAGM_002_3_+Z_8",
+    "BR_DIAPHRAGM_002_3_-X_2",
+    "BR_DIAPHRAGM_002_3_-X_3",
+    "BR_DIAPHRAGM_002_3_-Y_5",
+    "BR_DIAPHRAGM_002_3_-Z_10",
+    "BR_DIAPHRAGM_002_3_-Z_11",
+    "BR_DIAPHRAGM_002_3_-Z_9"
+   ],
+   "original_position_m": [
+    75.0,
+    -3.6667,
+    4.7206
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.721,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    75.0,
+    -3.6667,
+    4.7206
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.721,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.721,
+   "route_length_m": 15.0
+  },
+  {
+   "waypoint_id": "CWP_010",
+   "prim_name": "BR_PIER_CAP_003",
+   "prim_kind": "pier_cap",
+   "target_m": [
+    90.0,
+    0.0,
+    10.825
+   ],
+   "covers": [
+    "BR_PIER_CAP_003_+X_0",
+    "BR_PIER_CAP_003_+X_1",
+    "BR_PIER_CAP_003_+Y_4",
+    "BR_PIER_CAP_003_+Z_6",
+    "BR_PIER_CAP_003_+Z_7",
+    "BR_PIER_CAP_003_+Z_8",
+    "BR_PIER_CAP_003_-X_2",
+    "BR_PIER_CAP_003_-X_3",
+    "BR_PIER_CAP_003_-Y_5",
+    "BR_PIER_CAP_003_-Z_10",
+    "BR_PIER_CAP_003_-Z_11",
+    "BR_PIER_CAP_003_-Z_9"
+   ],
+   "original_position_m": [
+    90.0,
+    0.0,
+    2.825
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 1.9,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.75,
+   "position_m": [
+    93.6381,
+    -0.3151,
+    3.6781
+   ],
+   "heading_rad": 3.0552,
+   "planned_clearance_m": 3.528,
+   "standoff_to_target_m": 8.026,
+   "route_in": [
+    [
+     90.0,
+     -8.0,
+     4.0
+    ],
+    [
+     93.0,
+     -6.0,
+     4.0
+    ],
+    [
+     95.0,
+     -4.0,
+     4.0
+    ],
+    [
+     94.0,
+     0.0,
+     4.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.518,
+   "route_length_m": 26.765
+  },
+  {
+   "waypoint_id": "CWP_011",
+   "prim_name": "BR_PIER_COL_003_1",
+   "prim_kind": "pier_column",
+   "target_m": [
+    90.85,
+    -2.75,
+    1.9542
+   ],
+   "covers": [
+    "BR_PIER_COL_003_1_cap_top",
+    "BR_PIER_COL_003_1_side_0",
+    "BR_PIER_COL_003_1_side_1",
+    "BR_PIER_COL_003_1_side_10",
+    "BR_PIER_COL_003_1_side_11",
+    "BR_PIER_COL_003_1_side_2",
+    "BR_PIER_COL_003_1_side_3",
+    "BR_PIER_COL_003_1_side_4",
+    "BR_PIER_COL_003_1_side_5",
+    "BR_PIER_COL_003_1_side_6",
+    "BR_PIER_COL_003_1_side_7",
+    "BR_PIER_COL_003_1_side_8",
+    "BR_PIER_COL_003_1_side_9"
+   ],
+   "original_position_m": [
+    98.85,
+    -2.75,
+    1.9542
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.954,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    98.6582,
+    -2.6553,
+    3.6911
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.691,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.528,
+   "route_length_m": 5.539
+  },
+  {
+   "waypoint_id": "CWP_012",
+   "prim_name": "BR_PIER_COL_003_2",
+   "prim_kind": "pier_column",
+   "target_m": [
+    90.85,
+    2.75,
+    1.9542
+   ],
+   "covers": [
+    "BR_PIER_COL_003_2_cap_top",
+    "BR_PIER_COL_003_2_side_0",
+    "BR_PIER_COL_003_2_side_1",
+    "BR_PIER_COL_003_2_side_10",
+    "BR_PIER_COL_003_2_side_11",
+    "BR_PIER_COL_003_2_side_2",
+    "BR_PIER_COL_003_2_side_3",
+    "BR_PIER_COL_003_2_side_4",
+    "BR_PIER_COL_003_2_side_5",
+    "BR_PIER_COL_003_2_side_6",
+    "BR_PIER_COL_003_2_side_7",
+    "BR_PIER_COL_003_2_side_8",
+    "BR_PIER_COL_003_2_side_9"
+   ],
+   "original_position_m": [
+    98.85,
+    2.75,
+    1.9542
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.954,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    98.6582,
+    2.8447,
+    3.6911
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.691,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.691,
+   "route_length_m": 5.5
+  },
+  {
+   "waypoint_id": "CWP_013",
+   "prim_name": "BR_DIAPHRAGM_003_2",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    105.0,
+    -3.6667,
+    12.8706
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_003_2_+X_0",
+    "BR_DIAPHRAGM_003_2_+X_1",
+    "BR_DIAPHRAGM_003_2_+Z_6",
+    "BR_DIAPHRAGM_003_2_+Z_7",
+    "BR_DIAPHRAGM_003_2_+Z_8",
+    "BR_DIAPHRAGM_003_2_-X_2",
+    "BR_DIAPHRAGM_003_2_-X_3",
+    "BR_DIAPHRAGM_003_2_-Y_5",
+    "BR_DIAPHRAGM_003_2_-Z_10",
+    "BR_DIAPHRAGM_003_2_-Z_11",
+    "BR_DIAPHRAGM_003_2_-Z_9"
+   ],
+   "original_position_m": [
+    105.0,
+    -3.6667,
+    4.8706
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.871,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    105.0,
+    -3.6667,
+    4.8706
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.871,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.691,
+   "route_length_m": 9.166
+  },
+  {
+   "waypoint_id": "CWP_014",
+   "prim_name": "BR_DIAPHRAGM_003_3",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    120.0,
+    -3.6667,
+    12.8706
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_003_3_+X_0",
+    "BR_DIAPHRAGM_003_3_+X_1",
+    "BR_DIAPHRAGM_003_3_+Z_6",
+    "BR_DIAPHRAGM_003_3_+Z_7",
+    "BR_DIAPHRAGM_003_3_+Z_8",
+    "BR_DIAPHRAGM_003_3_-X_2",
+    "BR_DIAPHRAGM_003_3_-X_3",
+    "BR_DIAPHRAGM_003_3_-Y_5",
+    "BR_DIAPHRAGM_003_3_-Z_10",
+    "BR_DIAPHRAGM_003_3_-Z_11",
+    "BR_DIAPHRAGM_003_3_-Z_9"
+   ],
+   "original_position_m": [
+    120.0,
+    -3.6667,
+    4.8706
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.871,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    120.0,
+    -3.6667,
+    4.8706
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.871,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.871,
+   "route_length_m": 15.0
+  },
+  {
+   "waypoint_id": "CWP_015",
+   "prim_name": "ST_VERTICAL_S_00",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    134.775,
+    -7.0,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_00_+X_0",
+    "ST_VERTICAL_S_00_+X_1",
+    "ST_VERTICAL_S_00_+X_2",
+    "ST_VERTICAL_S_00_+Y_6",
+    "ST_VERTICAL_S_00_+Y_7",
+    "ST_VERTICAL_S_00_+Y_8",
+    "ST_VERTICAL_S_00_+Z_12",
+    "ST_VERTICAL_S_00_-X_3",
+    "ST_VERTICAL_S_00_-X_4",
+    "ST_VERTICAL_S_00_-X_5",
+    "ST_VERTICAL_S_00_-Y_10",
+    "ST_VERTICAL_S_00_-Y_11",
+    "ST_VERTICAL_S_00_-Y_9",
+    "ST_VERTICAL_S_00_-Z_13"
+   ],
+   "original_position_m": [
+    126.775,
+    -7.0,
+    13.5
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 0.691,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.25,
+   "position_m": [
+    127.4021,
+    -9.1752,
+    11.1681
+   ],
+   "heading_rad": 0.2869,
+   "planned_clearance_m": 3.571,
+   "standoff_to_target_m": 8.033,
+   "route_in": [
+    [
+     127.0,
+     -10.0,
+     11.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.571,
+   "route_length_m": 12.188
+  },
+  {
+   "waypoint_id": "CWP_016",
+   "prim_name": "BR_PIER_CAP_004",
+   "prim_kind": "pier_cap",
+   "target_m": [
+    135.0,
+    0.0,
+    10.9375
+   ],
+   "covers": [
+    "BR_PIER_CAP_004_+X_0",
+    "BR_PIER_CAP_004_+X_1",
+    "BR_PIER_CAP_004_+Y_4",
+    "BR_PIER_CAP_004_+Z_6",
+    "BR_PIER_CAP_004_+Z_7",
+    "BR_PIER_CAP_004_+Z_8",
+    "BR_PIER_CAP_004_-X_2",
+    "BR_PIER_CAP_004_-X_3",
+    "BR_PIER_CAP_004_-Y_5",
+    "BR_PIER_CAP_004_-Z_10",
+    "BR_PIER_CAP_004_-Z_11",
+    "BR_PIER_CAP_004_-Z_9"
+   ],
+   "original_position_m": [
+    135.0,
+    0.0,
+    2.9375
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 1.9,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.75,
+   "position_m": [
+    138.6381,
+    -0.3151,
+    3.7906
+   ],
+   "heading_rad": 3.0552,
+   "planned_clearance_m": 3.528,
+   "standoff_to_target_m": 8.026,
+   "route_in": [
+    [
+     136.0,
+     -7.0,
+     6.0
+    ],
+    [
+     137.0,
+     -7.0,
+     6.0
+    ],
+    [
+     140.0,
+     -4.0,
+     5.0
+    ],
+    [
+     139.0,
+     0.0,
+     4.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.516,
+   "route_length_m": 20.39
+  },
+  {
+   "waypoint_id": "CWP_017",
+   "prim_name": "BR_PIER_COL_004_1",
+   "prim_kind": "pier_column",
+   "target_m": [
+    135.85,
+    -2.75,
+    5.5588
+   ],
+   "covers": [
+    "BR_PIER_COL_004_1_cap_top",
+    "BR_PIER_COL_004_1_side_0",
+    "BR_PIER_COL_004_1_side_1",
+    "BR_PIER_COL_004_1_side_10",
+    "BR_PIER_COL_004_1_side_11",
+    "BR_PIER_COL_004_1_side_2",
+    "BR_PIER_COL_004_1_side_3",
+    "BR_PIER_COL_004_1_side_4",
+    "BR_PIER_COL_004_1_side_5",
+    "BR_PIER_COL_004_1_side_6",
+    "BR_PIER_COL_004_1_side_7",
+    "BR_PIER_COL_004_1_side_8",
+    "BR_PIER_COL_004_1_side_9"
+   ],
+   "original_position_m": [
+    143.85,
+    -2.75,
+    5.5588
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 5.559,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    143.85,
+    -2.75,
+    5.5588
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 5.559,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.528,
+   "route_length_m": 6.018
+  },
+  {
+   "waypoint_id": "CWP_018",
+   "prim_name": "ST_FLOORBEAM_01",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    146.25,
+    0.0,
+    12.45
+   ],
+   "covers": [
+    "ST_FLOORBEAM_01_+X_0",
+    "ST_FLOORBEAM_01_+X_1",
+    "ST_FLOORBEAM_01_+Y_4",
+    "ST_FLOORBEAM_01_+Z_6",
+    "ST_FLOORBEAM_01_+Z_7",
+    "ST_FLOORBEAM_01_+Z_8",
+    "ST_FLOORBEAM_01_-X_2",
+    "ST_FLOORBEAM_01_-X_3",
+    "ST_FLOORBEAM_01_-Y_5",
+    "ST_FLOORBEAM_01_-Z_10",
+    "ST_FLOORBEAM_01_-Z_11",
+    "ST_FLOORBEAM_01_-Z_9"
+   ],
+   "original_position_m": [
+    146.25,
+    0.0,
+    4.45
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.45,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    146.25,
+    0.0,
+    4.45
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.45,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.45,
+   "route_length_m": 3.815
+  },
+  {
+   "waypoint_id": "CWP_019",
+   "prim_name": "BR_PIER_COL_004_2",
+   "prim_kind": "pier_column",
+   "target_m": [
+    135.85,
+    2.75,
+    5.5588
+   ],
+   "covers": [
+    "BR_PIER_COL_004_2_cap_top",
+    "BR_PIER_COL_004_2_side_0",
+    "BR_PIER_COL_004_2_side_1",
+    "BR_PIER_COL_004_2_side_10",
+    "BR_PIER_COL_004_2_side_11",
+    "BR_PIER_COL_004_2_side_2",
+    "BR_PIER_COL_004_2_side_3",
+    "BR_PIER_COL_004_2_side_4",
+    "BR_PIER_COL_004_2_side_5",
+    "BR_PIER_COL_004_2_side_6",
+    "BR_PIER_COL_004_2_side_7",
+    "BR_PIER_COL_004_2_side_8",
+    "BR_PIER_COL_004_2_side_9"
+   ],
+   "original_position_m": [
+    143.85,
+    2.75,
+    5.5588
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 5.559,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    143.85,
+    2.75,
+    5.5588
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 5.559,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.45,
+   "route_length_m": 3.815
+  },
+  {
+   "waypoint_id": "CWP_020",
+   "prim_name": "ST_FLOORBEAM_00",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    135.2,
+    -3.5,
+    13.3438
+   ],
+   "covers": [
+    "ST_FLOORBEAM_00_+X_0",
+    "ST_FLOORBEAM_00_+X_1",
+    "ST_FLOORBEAM_00_+Z_6",
+    "ST_FLOORBEAM_00_+Z_7",
+    "ST_FLOORBEAM_00_+Z_8",
+    "ST_FLOORBEAM_00_-X_2",
+    "ST_FLOORBEAM_00_-X_3",
+    "ST_FLOORBEAM_00_-Y_5",
+    "ST_FLOORBEAM_00_-Z_10",
+    "ST_FLOORBEAM_00_-Z_11",
+    "ST_FLOORBEAM_00_-Z_9"
+   ],
+   "original_position_m": [
+    143.2,
+    -3.5,
+    13.3438
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 0.331,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.25,
+   "position_m": [
+    142.902,
+    -2.8042,
+    10.1832
+   ],
+   "heading_rad": -3.0515,
+   "planned_clearance_m": 3.534,
+   "standoff_to_target_m": 8.354,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.534,
+   "route_length_m": 7.289
+  },
+  {
+   "waypoint_id": "CWP_021",
+   "prim_name": "ST_FLOORBEAM_02",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    157.5,
+    0.0,
+    12.45
+   ],
+   "covers": [
+    "ST_FLOORBEAM_02_+X_0",
+    "ST_FLOORBEAM_02_+X_1",
+    "ST_FLOORBEAM_02_+Y_4",
+    "ST_FLOORBEAM_02_+Z_6",
+    "ST_FLOORBEAM_02_+Z_7",
+    "ST_FLOORBEAM_02_+Z_8",
+    "ST_FLOORBEAM_02_-X_2",
+    "ST_FLOORBEAM_02_-X_3",
+    "ST_FLOORBEAM_02_-Y_5",
+    "ST_FLOORBEAM_02_-Z_10",
+    "ST_FLOORBEAM_02_-Z_11",
+    "ST_FLOORBEAM_02_-Z_9"
+   ],
+   "original_position_m": [
+    157.5,
+    0.0,
+    4.45
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.45,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    157.5,
+    0.0,
+    4.45
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.45,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     146.0,
+     -3.0,
+     8.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.534,
+   "route_length_m": 16.199
+  },
+  {
+   "waypoint_id": "CWP_022",
+   "prim_name": "ST_FLOORBEAM_03",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    168.75,
+    0.0,
+    12.45
+   ],
+   "covers": [
+    "ST_FLOORBEAM_03_+X_0",
+    "ST_FLOORBEAM_03_+X_1",
+    "ST_FLOORBEAM_03_+Y_4",
+    "ST_FLOORBEAM_03_+Z_6",
+    "ST_FLOORBEAM_03_+Z_7",
+    "ST_FLOORBEAM_03_+Z_8",
+    "ST_FLOORBEAM_03_-X_2",
+    "ST_FLOORBEAM_03_-X_3",
+    "ST_FLOORBEAM_03_-Y_5",
+    "ST_FLOORBEAM_03_-Z_10",
+    "ST_FLOORBEAM_03_-Z_11",
+    "ST_FLOORBEAM_03_-Z_9"
+   ],
+   "original_position_m": [
+    168.75,
+    0.0,
+    4.45
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.45,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    168.75,
+    0.0,
+    4.45
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.45,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.45,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_023",
+   "prim_name": "ST_FLOORBEAM_04",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    180.0,
+    0.0,
+    12.45
+   ],
+   "covers": [
+    "ST_FLOORBEAM_04_+X_0",
+    "ST_FLOORBEAM_04_+X_1",
+    "ST_FLOORBEAM_04_+Y_4",
+    "ST_FLOORBEAM_04_+Z_6",
+    "ST_FLOORBEAM_04_+Z_7",
+    "ST_FLOORBEAM_04_+Z_8",
+    "ST_FLOORBEAM_04_-X_2",
+    "ST_FLOORBEAM_04_-X_3",
+    "ST_FLOORBEAM_04_-Y_5",
+    "ST_FLOORBEAM_04_-Z_10",
+    "ST_FLOORBEAM_04_-Z_11",
+    "ST_FLOORBEAM_04_-Z_9"
+   ],
+   "original_position_m": [
+    180.0,
+    0.0,
+    4.45
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.45,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    180.0,
+    0.0,
+    4.45
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.45,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.45,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_024",
+   "prim_name": "ST_FLOORBEAM_05",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    191.25,
+    0.0,
+    12.45
+   ],
+   "covers": [
+    "ST_FLOORBEAM_05_+X_0",
+    "ST_FLOORBEAM_05_+X_1",
+    "ST_FLOORBEAM_05_+Y_4",
+    "ST_FLOORBEAM_05_+Z_6",
+    "ST_FLOORBEAM_05_+Z_7",
+    "ST_FLOORBEAM_05_+Z_8",
+    "ST_FLOORBEAM_05_-X_2",
+    "ST_FLOORBEAM_05_-X_3",
+    "ST_FLOORBEAM_05_-Y_5",
+    "ST_FLOORBEAM_05_-Z_10",
+    "ST_FLOORBEAM_05_-Z_11",
+    "ST_FLOORBEAM_05_-Z_9"
+   ],
+   "original_position_m": [
+    191.25,
+    0.0,
+    4.45
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.45,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    191.25,
+    0.0,
+    4.45
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.45,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.45,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_025",
+   "prim_name": "ST_FLOORBEAM_06",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    202.5,
+    0.0,
+    12.45
+   ],
+   "covers": [
+    "ST_FLOORBEAM_06_+X_0",
+    "ST_FLOORBEAM_06_+X_1",
+    "ST_FLOORBEAM_06_+Y_4",
+    "ST_FLOORBEAM_06_+Z_6",
+    "ST_FLOORBEAM_06_+Z_7",
+    "ST_FLOORBEAM_06_+Z_8",
+    "ST_FLOORBEAM_06_-X_2",
+    "ST_FLOORBEAM_06_-X_3",
+    "ST_FLOORBEAM_06_-Y_5",
+    "ST_FLOORBEAM_06_-Z_10",
+    "ST_FLOORBEAM_06_-Z_11",
+    "ST_FLOORBEAM_06_-Z_9"
+   ],
+   "original_position_m": [
+    202.5,
+    0.0,
+    4.45
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.45,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    202.5,
+    0.0,
+    4.45
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.45,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.45,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_026",
+   "prim_name": "ST_FLOORBEAM_07",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    213.75,
+    0.0,
+    12.45
+   ],
+   "covers": [
+    "ST_FLOORBEAM_07_+X_0",
+    "ST_FLOORBEAM_07_+X_1",
+    "ST_FLOORBEAM_07_+Y_4",
+    "ST_FLOORBEAM_07_+Z_6",
+    "ST_FLOORBEAM_07_+Z_7",
+    "ST_FLOORBEAM_07_+Z_8",
+    "ST_FLOORBEAM_07_-X_2",
+    "ST_FLOORBEAM_07_-X_3",
+    "ST_FLOORBEAM_07_-Y_5",
+    "ST_FLOORBEAM_07_-Z_10",
+    "ST_FLOORBEAM_07_-Z_11",
+    "ST_FLOORBEAM_07_-Z_9"
+   ],
+   "original_position_m": [
+    213.75,
+    0.0,
+    4.45
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.45,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    213.75,
+    0.0,
+    4.45
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.45,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.45,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_027",
+   "prim_name": "ST_FLOORBEAM_08",
+   "prim_kind": "floor_beam",
+   "target_m": [
+    224.8,
+    -3.5,
+    13.3438
+   ],
+   "covers": [
+    "ST_FLOORBEAM_08_+X_0",
+    "ST_FLOORBEAM_08_+X_1",
+    "ST_FLOORBEAM_08_+Z_6",
+    "ST_FLOORBEAM_08_+Z_7",
+    "ST_FLOORBEAM_08_+Z_8",
+    "ST_FLOORBEAM_08_-X_2",
+    "ST_FLOORBEAM_08_-X_3",
+    "ST_FLOORBEAM_08_-Y_5",
+    "ST_FLOORBEAM_08_-Z_10",
+    "ST_FLOORBEAM_08_-Z_11",
+    "ST_FLOORBEAM_08_-Z_9"
+   ],
+   "original_position_m": [
+    216.8,
+    -3.5,
+    13.3438
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 0.331,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.25,
+   "position_m": [
+    217.051,
+    -3.0534,
+    10.1344
+   ],
+   "heading_rad": -0.0576,
+   "planned_clearance_m": 3.553,
+   "standoff_to_target_m": 8.399,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.553,
+   "route_length_m": 7.248
+  },
+  {
+   "waypoint_id": "CWP_028",
+   "prim_name": "BR_PIER_CAP_005",
+   "prim_kind": "pier_cap",
+   "target_m": [
+    225.0,
+    0.0,
+    10.0375
+   ],
+   "covers": [
+    "BR_PIER_CAP_005_+X_0",
+    "BR_PIER_CAP_005_+X_1",
+    "BR_PIER_CAP_005_+Y_4",
+    "BR_PIER_CAP_005_+Z_6",
+    "BR_PIER_CAP_005_+Z_7",
+    "BR_PIER_CAP_005_+Z_8",
+    "BR_PIER_CAP_005_-X_2",
+    "BR_PIER_CAP_005_-X_3",
+    "BR_PIER_CAP_005_-Y_5",
+    "BR_PIER_CAP_005_-Z_10",
+    "BR_PIER_CAP_005_-Z_11",
+    "BR_PIER_CAP_005_-Z_9"
+   ],
+   "original_position_m": [
+    225.0,
+    0.0,
+    2.0375
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 1.9,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.75,
+   "position_m": [
+    221.5925,
+    -0.0205,
+    3.6031
+   ],
+   "heading_rad": 0.006,
+   "planned_clearance_m": 3.516,
+   "standoff_to_target_m": 7.281,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.516,
+   "route_length_m": 8.514
+  },
+  {
+   "waypoint_id": "CWP_029",
+   "prim_name": "BR_PIER_COL_005_1",
+   "prim_kind": "pier_column",
+   "target_m": [
+    225.85,
+    -2.75,
+    1.8229
+   ],
+   "covers": [
+    "BR_PIER_COL_005_1_cap_top",
+    "BR_PIER_COL_005_1_side_0",
+    "BR_PIER_COL_005_1_side_1",
+    "BR_PIER_COL_005_1_side_10",
+    "BR_PIER_COL_005_1_side_11",
+    "BR_PIER_COL_005_1_side_2",
+    "BR_PIER_COL_005_1_side_3",
+    "BR_PIER_COL_005_1_side_4",
+    "BR_PIER_COL_005_1_side_5",
+    "BR_PIER_COL_005_1_side_6",
+    "BR_PIER_COL_005_1_side_7",
+    "BR_PIER_COL_005_1_side_8",
+    "BR_PIER_COL_005_1_side_9"
+   ],
+   "original_position_m": [
+    233.85,
+    -2.75,
+    1.8229
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.823,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    233.6582,
+    -2.6553,
+    3.5598
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.56,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     220.0,
+     -2.0,
+     4.0
+    ],
+    [
+     221.0,
+     -5.0,
+     4.0
+    ],
+    [
+     223.0,
+     -7.0,
+     4.0
+    ],
+    [
+     225.0,
+     -8.0,
+     4.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.516,
+   "route_length_m": 20.983
+  },
+  {
+   "waypoint_id": "CWP_030",
+   "prim_name": "BR_PIER_COL_005_2",
+   "prim_kind": "pier_column",
+   "target_m": [
+    225.85,
+    2.75,
+    1.8229
+   ],
+   "covers": [
+    "BR_PIER_COL_005_2_cap_top",
+    "BR_PIER_COL_005_2_side_0",
+    "BR_PIER_COL_005_2_side_1",
+    "BR_PIER_COL_005_2_side_10",
+    "BR_PIER_COL_005_2_side_11",
+    "BR_PIER_COL_005_2_side_2",
+    "BR_PIER_COL_005_2_side_3",
+    "BR_PIER_COL_005_2_side_4",
+    "BR_PIER_COL_005_2_side_5",
+    "BR_PIER_COL_005_2_side_6",
+    "BR_PIER_COL_005_2_side_7",
+    "BR_PIER_COL_005_2_side_8",
+    "BR_PIER_COL_005_2_side_9"
+   ],
+   "original_position_m": [
+    233.85,
+    2.75,
+    1.8229
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.823,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 2.0,
+   "position_m": [
+    233.732,
+    1.7112,
+    3.5279
+   ],
+   "heading_rad": 3.0106,
+   "planned_clearance_m": 3.528,
+   "standoff_to_target_m": 8.131,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.528,
+   "route_length_m": 4.367
+  },
+  {
+   "waypoint_id": "CWP_031",
+   "prim_name": "BR_DIAPHRAGM_005_2",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    240.0,
+    -3.6667,
+    12.8706
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_005_2_+X_0",
+    "BR_DIAPHRAGM_005_2_+X_1",
+    "BR_DIAPHRAGM_005_2_+Z_6",
+    "BR_DIAPHRAGM_005_2_+Z_7",
+    "BR_DIAPHRAGM_005_2_+Z_8",
+    "BR_DIAPHRAGM_005_2_-X_2",
+    "BR_DIAPHRAGM_005_2_-X_3",
+    "BR_DIAPHRAGM_005_2_-Y_5",
+    "BR_DIAPHRAGM_005_2_-Z_10",
+    "BR_DIAPHRAGM_005_2_-Z_11",
+    "BR_DIAPHRAGM_005_2_-Z_9"
+   ],
+   "original_position_m": [
+    240.0,
+    -3.6667,
+    4.8706
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.871,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    240.0,
+    -3.6667,
+    4.8706
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.871,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.528,
+   "route_length_m": 8.367
+  },
+  {
+   "waypoint_id": "CWP_032",
+   "prim_name": "ST_VERTICAL_S_08",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    225.225,
+    -7.0,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_08_+X_0",
+    "ST_VERTICAL_S_08_+X_1",
+    "ST_VERTICAL_S_08_+X_2",
+    "ST_VERTICAL_S_08_+Y_6",
+    "ST_VERTICAL_S_08_+Y_7",
+    "ST_VERTICAL_S_08_+Y_8",
+    "ST_VERTICAL_S_08_+Z_12",
+    "ST_VERTICAL_S_08_-X_3",
+    "ST_VERTICAL_S_08_-X_4",
+    "ST_VERTICAL_S_08_-X_5",
+    "ST_VERTICAL_S_08_-Y_10",
+    "ST_VERTICAL_S_08_-Y_11",
+    "ST_VERTICAL_S_08_-Y_9",
+    "ST_VERTICAL_S_08_-Z_13"
+   ],
+   "original_position_m": [
+    233.225,
+    -7.0,
+    13.5
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 0.691,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.25,
+   "position_m": [
+    232.5639,
+    -9.2495,
+    11.2494
+   ],
+   "heading_rad": 2.8442,
+   "planned_clearance_m": 3.608,
+   "standoff_to_target_m": 7.999,
+   "route_in": [
+    [
+     233.0,
+     -10.0,
+     11.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.608,
+   "route_length_m": 12.158
+  },
+  {
+   "waypoint_id": "CWP_033",
+   "prim_name": "BR_DIAPHRAGM_005_3",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    255.0,
+    -3.6667,
+    12.8706
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_005_3_+X_0",
+    "BR_DIAPHRAGM_005_3_+X_1",
+    "BR_DIAPHRAGM_005_3_+Z_6",
+    "BR_DIAPHRAGM_005_3_+Z_7",
+    "BR_DIAPHRAGM_005_3_+Z_8",
+    "BR_DIAPHRAGM_005_3_-X_2",
+    "BR_DIAPHRAGM_005_3_-X_3",
+    "BR_DIAPHRAGM_005_3_-Y_5",
+    "BR_DIAPHRAGM_005_3_-Z_10",
+    "BR_DIAPHRAGM_005_3_-Z_11",
+    "BR_DIAPHRAGM_005_3_-Z_9"
+   ],
+   "original_position_m": [
+    255.0,
+    -3.6667,
+    4.8706
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.871,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    255.0,
+    -3.6667,
+    4.8706
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.871,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     243.0,
+     -7.0,
+     8.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.512,
+   "route_length_m": 24.001
+  },
+  {
+   "waypoint_id": "CWP_034",
+   "prim_name": "BR_PIER_CAP_006",
+   "prim_kind": "pier_cap",
+   "target_m": [
+    270.0,
+    0.0,
+    10.825
+   ],
+   "covers": [
+    "BR_PIER_CAP_006_+X_0",
+    "BR_PIER_CAP_006_+X_1",
+    "BR_PIER_CAP_006_+Y_4",
+    "BR_PIER_CAP_006_+Z_6",
+    "BR_PIER_CAP_006_+Z_7",
+    "BR_PIER_CAP_006_+Z_8",
+    "BR_PIER_CAP_006_-X_2",
+    "BR_PIER_CAP_006_-X_3",
+    "BR_PIER_CAP_006_-Y_5",
+    "BR_PIER_CAP_006_-Z_10",
+    "BR_PIER_CAP_006_-Z_11",
+    "BR_PIER_CAP_006_-Z_9"
+   ],
+   "original_position_m": [
+    270.0,
+    0.0,
+    2.825
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 1.9,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.75,
+   "position_m": [
+    273.6381,
+    -0.3151,
+    3.6781
+   ],
+   "heading_rad": 3.0552,
+   "planned_clearance_m": 3.528,
+   "standoff_to_target_m": 8.026,
+   "route_in": [
+    [
+     270.0,
+     -8.0,
+     4.0
+    ],
+    [
+     273.0,
+     -6.0,
+     4.0
+    ],
+    [
+     275.0,
+     -4.0,
+     4.0
+    ],
+    [
+     274.0,
+     0.0,
+     4.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.518,
+   "route_length_m": 26.773
+  },
+  {
+   "waypoint_id": "CWP_035",
+   "prim_name": "BR_PIER_COL_006_1",
+   "prim_kind": "pier_column",
+   "target_m": [
+    270.85,
+    -2.75,
+    1.9542
+   ],
+   "covers": [
+    "BR_PIER_COL_006_1_cap_top",
+    "BR_PIER_COL_006_1_side_0",
+    "BR_PIER_COL_006_1_side_1",
+    "BR_PIER_COL_006_1_side_10",
+    "BR_PIER_COL_006_1_side_11",
+    "BR_PIER_COL_006_1_side_2",
+    "BR_PIER_COL_006_1_side_3",
+    "BR_PIER_COL_006_1_side_4",
+    "BR_PIER_COL_006_1_side_5",
+    "BR_PIER_COL_006_1_side_6",
+    "BR_PIER_COL_006_1_side_7",
+    "BR_PIER_COL_006_1_side_8",
+    "BR_PIER_COL_006_1_side_9"
+   ],
+   "original_position_m": [
+    278.85,
+    -2.75,
+    1.9542
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.954,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    278.6582,
+    -2.6553,
+    3.6911
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.691,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.528,
+   "route_length_m": 5.539
+  },
+  {
+   "waypoint_id": "CWP_036",
+   "prim_name": "BR_PIER_COL_006_2",
+   "prim_kind": "pier_column",
+   "target_m": [
+    270.85,
+    2.75,
+    1.9542
+   ],
+   "covers": [
+    "BR_PIER_COL_006_2_cap_top",
+    "BR_PIER_COL_006_2_side_0",
+    "BR_PIER_COL_006_2_side_1",
+    "BR_PIER_COL_006_2_side_10",
+    "BR_PIER_COL_006_2_side_11",
+    "BR_PIER_COL_006_2_side_2",
+    "BR_PIER_COL_006_2_side_3",
+    "BR_PIER_COL_006_2_side_4",
+    "BR_PIER_COL_006_2_side_5",
+    "BR_PIER_COL_006_2_side_6",
+    "BR_PIER_COL_006_2_side_7",
+    "BR_PIER_COL_006_2_side_8",
+    "BR_PIER_COL_006_2_side_9"
+   ],
+   "original_position_m": [
+    278.85,
+    2.75,
+    1.9542
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.954,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    278.6582,
+    2.8447,
+    3.6911
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.691,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.691,
+   "route_length_m": 5.5
+  },
+  {
+   "waypoint_id": "CWP_037",
+   "prim_name": "BR_DIAPHRAGM_006_2",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    285.0,
+    -3.6667,
+    12.7206
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_006_2_+X_0",
+    "BR_DIAPHRAGM_006_2_+X_1",
+    "BR_DIAPHRAGM_006_2_+Z_6",
+    "BR_DIAPHRAGM_006_2_+Z_7",
+    "BR_DIAPHRAGM_006_2_+Z_8",
+    "BR_DIAPHRAGM_006_2_-X_2",
+    "BR_DIAPHRAGM_006_2_-X_3",
+    "BR_DIAPHRAGM_006_2_-Y_5",
+    "BR_DIAPHRAGM_006_2_-Z_10",
+    "BR_DIAPHRAGM_006_2_-Z_11",
+    "BR_DIAPHRAGM_006_2_-Z_9"
+   ],
+   "original_position_m": [
+    285.0,
+    -3.6667,
+    4.7206
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.721,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    285.0,
+    -3.6667,
+    4.7206
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.721,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.691,
+   "route_length_m": 9.147
+  },
+  {
+   "waypoint_id": "CWP_038",
+   "prim_name": "BR_DIAPHRAGM_006_3",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    300.0,
+    -3.6667,
+    12.7206
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_006_3_+X_0",
+    "BR_DIAPHRAGM_006_3_+X_1",
+    "BR_DIAPHRAGM_006_3_+Z_6",
+    "BR_DIAPHRAGM_006_3_+Z_7",
+    "BR_DIAPHRAGM_006_3_+Z_8",
+    "BR_DIAPHRAGM_006_3_-X_2",
+    "BR_DIAPHRAGM_006_3_-X_3",
+    "BR_DIAPHRAGM_006_3_-Y_5",
+    "BR_DIAPHRAGM_006_3_-Z_10",
+    "BR_DIAPHRAGM_006_3_-Z_11",
+    "BR_DIAPHRAGM_006_3_-Z_9"
+   ],
+   "original_position_m": [
+    300.0,
+    -3.6667,
+    4.7206
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.721,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    300.0,
+    -3.6667,
+    4.7206
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.721,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.721,
+   "route_length_m": 15.0
+  },
+  {
+   "waypoint_id": "CWP_039",
+   "prim_name": "BR_PIER_CAP_007",
+   "prim_kind": "pier_cap",
+   "target_m": [
+    315.0,
+    0.0,
+    10.6375
+   ],
+   "covers": [
+    "BR_PIER_CAP_007_+X_0",
+    "BR_PIER_CAP_007_+X_1",
+    "BR_PIER_CAP_007_+Y_4",
+    "BR_PIER_CAP_007_+Z_6",
+    "BR_PIER_CAP_007_+Z_7",
+    "BR_PIER_CAP_007_+Z_8",
+    "BR_PIER_CAP_007_-X_2",
+    "BR_PIER_CAP_007_-X_3",
+    "BR_PIER_CAP_007_-Y_5",
+    "BR_PIER_CAP_007_-Z_10",
+    "BR_PIER_CAP_007_-Z_11",
+    "BR_PIER_CAP_007_-Z_9"
+   ],
+   "original_position_m": [
+    315.0,
+    0.0,
+    2.6375
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 1.9,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.75,
+   "position_m": [
+    311.381,
+    -0.3218,
+    3.5656
+   ],
+   "heading_rad": 0.0887,
+   "planned_clearance_m": 3.508,
+   "standoff_to_target_m": 7.951,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.508,
+   "route_length_m": 11.918
+  },
+  {
+   "waypoint_id": "CWP_040",
+   "prim_name": "BR_PIER_COL_007_1",
+   "prim_kind": "pier_column",
+   "target_m": [
+    315.85,
+    -2.75,
+    1.9229
+   ],
+   "covers": [
+    "BR_PIER_COL_007_1_cap_top",
+    "BR_PIER_COL_007_1_side_0",
+    "BR_PIER_COL_007_1_side_1",
+    "BR_PIER_COL_007_1_side_10",
+    "BR_PIER_COL_007_1_side_11",
+    "BR_PIER_COL_007_1_side_2",
+    "BR_PIER_COL_007_1_side_3",
+    "BR_PIER_COL_007_1_side_4",
+    "BR_PIER_COL_007_1_side_5",
+    "BR_PIER_COL_007_1_side_6",
+    "BR_PIER_COL_007_1_side_7",
+    "BR_PIER_COL_007_1_side_8",
+    "BR_PIER_COL_007_1_side_9"
+   ],
+   "original_position_m": [
+    323.85,
+    -2.75,
+    1.9229
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.923,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    323.6582,
+    -2.6553,
+    3.6598
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.66,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     310.0,
+     -2.0,
+     4.0
+    ],
+    [
+     311.0,
+     -5.0,
+     4.0
+    ],
+    [
+     313.0,
+     -7.0,
+     4.0
+    ],
+    [
+     315.0,
+     -8.0,
+     4.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.508,
+   "route_length_m": 20.624
+  },
+  {
+   "waypoint_id": "CWP_041",
+   "prim_name": "BR_PIER_COL_007_2",
+   "prim_kind": "pier_column",
+   "target_m": [
+    315.85,
+    2.75,
+    1.9229
+   ],
+   "covers": [
+    "BR_PIER_COL_007_2_cap_top",
+    "BR_PIER_COL_007_2_side_0",
+    "BR_PIER_COL_007_2_side_1",
+    "BR_PIER_COL_007_2_side_10",
+    "BR_PIER_COL_007_2_side_11",
+    "BR_PIER_COL_007_2_side_2",
+    "BR_PIER_COL_007_2_side_3",
+    "BR_PIER_COL_007_2_side_4",
+    "BR_PIER_COL_007_2_side_5",
+    "BR_PIER_COL_007_2_side_6",
+    "BR_PIER_COL_007_2_side_7",
+    "BR_PIER_COL_007_2_side_8",
+    "BR_PIER_COL_007_2_side_9"
+   ],
+   "original_position_m": [
+    323.85,
+    2.75,
+    1.9229
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.923,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.75,
+   "position_m": [
+    323.6582,
+    2.8447,
+    3.6598
+   ],
+   "heading_rad": -3.1295,
+   "planned_clearance_m": 3.66,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.66,
+   "route_length_m": 5.5
+  },
+  {
+   "waypoint_id": "CWP_042",
+   "prim_name": "BR_DIAPHRAGM_007_2",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    330.0,
+    -3.6667,
+    12.4956
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_007_2_+X_0",
+    "BR_DIAPHRAGM_007_2_+X_1",
+    "BR_DIAPHRAGM_007_2_+Z_6",
+    "BR_DIAPHRAGM_007_2_+Z_7",
+    "BR_DIAPHRAGM_007_2_+Z_8",
+    "BR_DIAPHRAGM_007_2_-X_2",
+    "BR_DIAPHRAGM_007_2_-X_3",
+    "BR_DIAPHRAGM_007_2_-Y_5",
+    "BR_DIAPHRAGM_007_2_-Z_10",
+    "BR_DIAPHRAGM_007_2_-Z_11",
+    "BR_DIAPHRAGM_007_2_-Z_9"
+   ],
+   "original_position_m": [
+    330.0,
+    -3.6667,
+    4.4956
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.496,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    330.0,
+    -3.6667,
+    4.4956
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.496,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.66,
+   "route_length_m": 9.128
+  },
+  {
+   "waypoint_id": "CWP_043",
+   "prim_name": "BR_DIAPHRAGM_007_3",
+   "prim_kind": "diaphragm",
+   "target_m": [
+    345.0,
+    -3.6667,
+    12.4956
+   ],
+   "covers": [
+    "BR_DIAPHRAGM_007_3_+X_0",
+    "BR_DIAPHRAGM_007_3_+X_1",
+    "BR_DIAPHRAGM_007_3_+Z_6",
+    "BR_DIAPHRAGM_007_3_+Z_7",
+    "BR_DIAPHRAGM_007_3_+Z_8",
+    "BR_DIAPHRAGM_007_3_-X_2",
+    "BR_DIAPHRAGM_007_3_-X_3",
+    "BR_DIAPHRAGM_007_3_-Y_5",
+    "BR_DIAPHRAGM_007_3_-Z_10",
+    "BR_DIAPHRAGM_007_3_-Z_11",
+    "BR_DIAPHRAGM_007_3_-Z_9"
+   ],
+   "original_position_m": [
+    345.0,
+    -3.6667,
+    4.4956
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 4.496,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    345.0,
+    -3.6667,
+    4.4956
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 4.496,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.496,
+   "route_length_m": 15.0
+  },
+  {
+   "waypoint_id": "CWP_044",
+   "prim_name": "BR_WINGWALL_NORTH_R",
+   "prim_kind": "structure",
+   "target_m": [
+    346.5,
+    -8.3,
+    5.6
+   ],
+   "covers": [
+    "BR_WINGWALL_NORTH_R_+Y_10",
+    "BR_WINGWALL_NORTH_R_+Y_11",
+    "BR_WINGWALL_NORTH_R_+Y_6",
+    "BR_WINGWALL_NORTH_R_+Y_7",
+    "BR_WINGWALL_NORTH_R_+Y_8",
+    "BR_WINGWALL_NORTH_R_+Y_9",
+    "BR_WINGWALL_NORTH_R_+Z_18",
+    "BR_WINGWALL_NORTH_R_+Z_19",
+    "BR_WINGWALL_NORTH_R_-X_3",
+    "BR_WINGWALL_NORTH_R_-X_4",
+    "BR_WINGWALL_NORTH_R_-X_5",
+    "BR_WINGWALL_NORTH_R_-Y_12",
+    "BR_WINGWALL_NORTH_R_-Y_13",
+    "BR_WINGWALL_NORTH_R_-Y_14",
+    "BR_WINGWALL_NORTH_R_-Y_15",
+    "BR_WINGWALL_NORTH_R_-Y_16",
+    "BR_WINGWALL_NORTH_R_-Y_17"
+   ],
+   "original_position_m": [
+    346.5,
+    -0.3,
+    5.6
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 5.6,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    346.5,
+    -0.3,
+    5.6
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 5.6,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.496,
+   "route_length_m": 3.848
+  },
+  {
+   "waypoint_id": "CWP_045",
+   "prim_name": "BR_ABUTMENT_NORTH",
+   "prim_kind": "abutment",
+   "target_m": [
+    353.5,
+    6.0,
+    7.0
+   ],
+   "covers": [
+    "BR_ABUTMENT_NORTH_+X_6",
+    "BR_ABUTMENT_NORTH_+X_7",
+    "BR_ABUTMENT_NORTH_+X_8",
+    "BR_ABUTMENT_NORTH_+Y_18",
+    "BR_ABUTMENT_NORTH_+Y_19",
+    "BR_ABUTMENT_NORTH_+Y_20",
+    "BR_ABUTMENT_NORTH_+Z_26",
+    "BR_ABUTMENT_NORTH_-X_12",
+    "BR_ABUTMENT_NORTH_-X_13",
+    "BR_ABUTMENT_NORTH_-X_14",
+    "BR_ABUTMENT_NORTH_-X_15",
+    "BR_ABUTMENT_NORTH_-X_16",
+    "BR_ABUTMENT_NORTH_-X_17"
+   ],
+   "original_position_m": [
+    345.5,
+    6.0,
+    7.0
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 2.3,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 1.25,
+   "position_m": [
+    345.6044,
+    4.7572,
+    7.0844
+   ],
+   "heading_rad": 0.1561,
+   "planned_clearance_m": 3.543,
+   "standoff_to_target_m": 7.993,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.543,
+   "route_length_m": 5.346
+  },
+  {
+   "waypoint_id": "CWP_046",
+   "prim_name": "BR_WINGWALL_NORTH_L",
+   "prim_kind": "structure",
+   "target_m": [
+    346.5,
+    8.9,
+    5.6
+   ],
+   "covers": [
+    "BR_WINGWALL_NORTH_L_+Y_10",
+    "BR_WINGWALL_NORTH_L_+Y_11",
+    "BR_WINGWALL_NORTH_L_+Y_6",
+    "BR_WINGWALL_NORTH_L_+Y_7",
+    "BR_WINGWALL_NORTH_L_+Y_8",
+    "BR_WINGWALL_NORTH_L_+Y_9",
+    "BR_WINGWALL_NORTH_L_+Z_18",
+    "BR_WINGWALL_NORTH_L_+Z_19",
+    "BR_WINGWALL_NORTH_L_-X_3",
+    "BR_WINGWALL_NORTH_L_-X_4",
+    "BR_WINGWALL_NORTH_L_-X_5",
+    "BR_WINGWALL_NORTH_L_-Y_12",
+    "BR_WINGWALL_NORTH_L_-Y_13",
+    "BR_WINGWALL_NORTH_L_-Y_14",
+    "BR_WINGWALL_NORTH_L_-Y_15",
+    "BR_WINGWALL_NORTH_L_-Y_16",
+    "BR_WINGWALL_NORTH_L_-Y_17"
+   ],
+   "original_position_m": [
+    346.5,
+    16.9,
+    5.6
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 5.6,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    346.5,
+    16.9,
+    5.6
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 5.6,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     342.0,
+     4.0,
+     7.0
+    ],
+    [
+     339.0,
+     7.0,
+     7.0
+    ],
+    [
+     339.0,
+     10.0,
+     7.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.518,
+   "route_length_m": 21.214
+  },
+  {
+   "waypoint_id": "CWP_047",
+   "prim_name": "MB_DECK_SOFFIT_010",
+   "prim_kind": "deck_box",
+   "target_m": [
+    348.75,
+    26.3,
+    16.8
+   ],
+   "covers": [
+    "MB_DECK_SOFFIT_010_+Y_2",
+    "MB_DECK_SOFFIT_010_+Z_6",
+    "MB_DECK_SOFFIT_010_+Z_7",
+    "MB_DECK_SOFFIT_010_+Z_8",
+    "MB_DECK_SOFFIT_010_+Z_9",
+    "MB_DECK_SOFFIT_010_-X_1",
+    "MB_DECK_SOFFIT_010_-Y_4",
+    "MB_DECK_SOFFIT_010_-Y_5",
+    "MB_DECK_SOFFIT_010_-Z_10",
+    "MB_DECK_SOFFIT_010_-Z_11",
+    "MB_DECK_SOFFIT_010_-Z_12",
+    "MB_DECK_SOFFIT_010_-Z_13"
+   ],
+   "original_position_m": [
+    348.75,
+    26.3,
+    8.8
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 3.117,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 0.5,
+   "position_m": [
+    349.0525,
+    25.9024,
+    8.8213
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 3.563,
+   "standoff_to_target_m": 7.994,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.563,
+   "route_length_m": 9.896
+  },
+  {
+   "waypoint_id": "CWP_048",
+   "prim_name": "MB_PIER_COL_010",
+   "prim_kind": "pier_column",
+   "target_m": [
+    346.0,
+    28.0,
+    8.0185
+   ],
+   "covers": [
+    "MB_PIER_COL_010_cap_bottom",
+    "MB_PIER_COL_010_cap_top",
+    "MB_PIER_COL_010_side_0",
+    "MB_PIER_COL_010_side_1",
+    "MB_PIER_COL_010_side_10",
+    "MB_PIER_COL_010_side_11",
+    "MB_PIER_COL_010_side_2",
+    "MB_PIER_COL_010_side_3",
+    "MB_PIER_COL_010_side_4",
+    "MB_PIER_COL_010_side_5",
+    "MB_PIER_COL_010_side_6",
+    "MB_PIER_COL_010_side_7",
+    "MB_PIER_COL_010_side_8",
+    "MB_PIER_COL_010_side_9"
+   ],
+   "original_position_m": [
+    354.0,
+    28.0,
+    8.0185
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 5.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    354.0,
+    28.0,
+    8.0185
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 5.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.563,
+   "route_length_m": 5.433
+  },
+  {
+   "waypoint_id": "CWP_049",
+   "prim_name": "MB_DECK_TOP_010",
+   "prim_kind": "deck_box",
+   "target_m": [
+    348.75,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_010_+Y_4",
+    "MB_DECK_TOP_010_+Y_5",
+    "MB_DECK_TOP_010_+Z_10",
+    "MB_DECK_TOP_010_+Z_12",
+    "MB_DECK_TOP_010_+Z_13",
+    "MB_DECK_TOP_010_+Z_8",
+    "MB_DECK_TOP_010_+Z_9",
+    "MB_DECK_TOP_010_-X_2",
+    "MB_DECK_TOP_010_-X_3",
+    "MB_DECK_TOP_010_-Y_6",
+    "MB_DECK_TOP_010_-Z_14",
+    "MB_DECK_TOP_010_-Z_15",
+    "MB_DECK_TOP_010_-Z_16",
+    "MB_DECK_TOP_010_-Z_18",
+    "MB_DECK_TOP_010_-Z_19"
+   ],
+   "original_position_m": [
+    348.75,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    348.75,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.344,
+   "route_length_m": 17.21
+  },
+  {
+   "waypoint_id": "CWP_050",
+   "prim_name": "MB_JOINT_010",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    345.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_010_+X_0",
+    "MB_JOINT_010_+X_1",
+    "MB_JOINT_010_+Y_4",
+    "MB_JOINT_010_+Z_6",
+    "MB_JOINT_010_+Z_7",
+    "MB_JOINT_010_+Z_8",
+    "MB_JOINT_010_-X_2",
+    "MB_JOINT_010_-X_3",
+    "MB_JOINT_010_-Y_5",
+    "MB_JOINT_010_-Z_10",
+    "MB_JOINT_010_-Z_11",
+    "MB_JOINT_010_-Z_9"
+   ],
+   "original_position_m": [
+    345.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    345.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 3.751
+  },
+  {
+   "waypoint_id": "CWP_051",
+   "prim_name": "MB_DECK_TOP_009",
+   "prim_kind": "deck_box",
+   "target_m": [
+    340.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_009_+X_0",
+    "MB_DECK_TOP_009_+X_1",
+    "MB_DECK_TOP_009_+Y_6",
+    "MB_DECK_TOP_009_+Z_16",
+    "MB_DECK_TOP_009_+Z_17",
+    "MB_DECK_TOP_009_+Z_18",
+    "MB_DECK_TOP_009_-Y_9",
+    "MB_DECK_TOP_009_-Z_25",
+    "MB_DECK_TOP_009_-Z_26",
+    "MB_DECK_TOP_009_-Z_27"
+   ],
+   "original_position_m": [
+    340.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    340.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_052",
+   "prim_name": "MB_MAST_005",
+   "prim_kind": "catenary_mast",
+   "target_m": [
+    330.14,
+    31.1,
+    20.85
+   ],
+   "covers": [
+    "MB_MAST_005_+X_0",
+    "MB_MAST_005_+X_1",
+    "MB_MAST_005_+Y_4",
+    "MB_MAST_005_+Y_5",
+    "MB_MAST_005_+Z_8",
+    "MB_MAST_005_-X_2",
+    "MB_MAST_005_-X_3",
+    "MB_MAST_005_-Y_6",
+    "MB_MAST_005_-Y_7",
+    "MB_MAST_005_-Z_9"
+   ],
+   "original_position_m": [
+    338.14,
+    31.1,
+    20.85
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.218,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 2.5,
+   "position_m": [
+    337.8183,
+    30.1591,
+    23.1438
+   ],
+   "heading_rad": 3.0197,
+   "planned_clearance_m": 3.589,
+   "standoff_to_target_m": 8.069,
+   "route_in": [
+    [
+     339.0,
+     33.0,
+     24.0
+    ],
+    [
+     339.0,
+     31.0,
+     24.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.589,
+   "route_length_m": 12.674
+  },
+  {
+   "waypoint_id": "CWP_053",
+   "prim_name": "MB_DECK_TOP_009",
+   "prim_kind": "deck_box",
+   "target_m": [
+    320.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_009_+Y_4",
+    "MB_DECK_TOP_009_+Z_10",
+    "MB_DECK_TOP_009_+Z_11",
+    "MB_DECK_TOP_009_+Z_12",
+    "MB_DECK_TOP_009_-X_2",
+    "MB_DECK_TOP_009_-X_3",
+    "MB_DECK_TOP_009_-Y_7",
+    "MB_DECK_TOP_009_-Z_19",
+    "MB_DECK_TOP_009_-Z_20",
+    "MB_DECK_TOP_009_-Z_21"
+   ],
+   "original_position_m": [
+    320.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    320.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     336.0,
+     32.0,
+     24.0
+    ],
+    [
+     332.0,
+     35.0,
+     23.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.562,
+   "route_length_m": 21.584
+  },
+  {
+   "waypoint_id": "CWP_054",
+   "prim_name": "MB_JOINT_009",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    315.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_009_+X_0",
+    "MB_JOINT_009_+X_1",
+    "MB_JOINT_009_+Y_4",
+    "MB_JOINT_009_+Z_6",
+    "MB_JOINT_009_+Z_7",
+    "MB_JOINT_009_+Z_8",
+    "MB_JOINT_009_-X_2",
+    "MB_JOINT_009_-X_3",
+    "MB_JOINT_009_-Y_5",
+    "MB_JOINT_009_-Z_10",
+    "MB_JOINT_009_-Z_11",
+    "MB_JOINT_009_-Z_9"
+   ],
+   "original_position_m": [
+    315.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    315.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_055",
+   "prim_name": "MB_DECK_TOP_008",
+   "prim_kind": "deck_box",
+   "target_m": [
+    310.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_008_+X_0",
+    "MB_DECK_TOP_008_+X_1",
+    "MB_DECK_TOP_008_+Y_6",
+    "MB_DECK_TOP_008_+Z_16",
+    "MB_DECK_TOP_008_+Z_17",
+    "MB_DECK_TOP_008_+Z_18",
+    "MB_DECK_TOP_008_-Y_9",
+    "MB_DECK_TOP_008_-Z_25",
+    "MB_DECK_TOP_008_-Z_26",
+    "MB_DECK_TOP_008_-Z_27"
+   ],
+   "original_position_m": [
+    310.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    310.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_056",
+   "prim_name": "MB_DECK_TOP_008",
+   "prim_kind": "deck_box",
+   "target_m": [
+    290.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_008_+Y_4",
+    "MB_DECK_TOP_008_+Z_10",
+    "MB_DECK_TOP_008_+Z_11",
+    "MB_DECK_TOP_008_+Z_12",
+    "MB_DECK_TOP_008_-X_2",
+    "MB_DECK_TOP_008_-X_3",
+    "MB_DECK_TOP_008_-Y_7",
+    "MB_DECK_TOP_008_-Z_19",
+    "MB_DECK_TOP_008_-Z_20",
+    "MB_DECK_TOP_008_-Z_21"
+   ],
+   "original_position_m": [
+    290.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    290.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 20.0
+  },
+  {
+   "waypoint_id": "CWP_057",
+   "prim_name": "MB_JOINT_008",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    285.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_008_+X_0",
+    "MB_JOINT_008_+X_1",
+    "MB_JOINT_008_+Y_4",
+    "MB_JOINT_008_+Z_6",
+    "MB_JOINT_008_+Z_7",
+    "MB_JOINT_008_+Z_8",
+    "MB_JOINT_008_-X_2",
+    "MB_JOINT_008_-X_3",
+    "MB_JOINT_008_-Y_5",
+    "MB_JOINT_008_-Z_10",
+    "MB_JOINT_008_-Z_11",
+    "MB_JOINT_008_-Z_9"
+   ],
+   "original_position_m": [
+    285.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    285.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_058",
+   "prim_name": "MB_DECK_TOP_007",
+   "prim_kind": "deck_box",
+   "target_m": [
+    280.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_007_+X_0",
+    "MB_DECK_TOP_007_+X_1",
+    "MB_DECK_TOP_007_+Y_6",
+    "MB_DECK_TOP_007_+Z_16",
+    "MB_DECK_TOP_007_+Z_17",
+    "MB_DECK_TOP_007_+Z_18",
+    "MB_DECK_TOP_007_-Y_9",
+    "MB_DECK_TOP_007_-Z_25",
+    "MB_DECK_TOP_007_-Z_26",
+    "MB_DECK_TOP_007_-Z_27"
+   ],
+   "original_position_m": [
+    280.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    280.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_059",
+   "prim_name": "MB_DECK_TOP_007",
+   "prim_kind": "deck_box",
+   "target_m": [
+    260.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_007_+Y_4",
+    "MB_DECK_TOP_007_+Z_10",
+    "MB_DECK_TOP_007_+Z_11",
+    "MB_DECK_TOP_007_+Z_12",
+    "MB_DECK_TOP_007_-X_2",
+    "MB_DECK_TOP_007_-X_3",
+    "MB_DECK_TOP_007_-Y_7",
+    "MB_DECK_TOP_007_-Z_19",
+    "MB_DECK_TOP_007_-Z_20",
+    "MB_DECK_TOP_007_-Z_21"
+   ],
+   "original_position_m": [
+    260.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    260.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 20.0
+  },
+  {
+   "waypoint_id": "CWP_060",
+   "prim_name": "MB_JOINT_007",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    255.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_007_+X_0",
+    "MB_JOINT_007_+X_1",
+    "MB_JOINT_007_+Y_4",
+    "MB_JOINT_007_+Z_6",
+    "MB_JOINT_007_+Z_7",
+    "MB_JOINT_007_+Z_8",
+    "MB_JOINT_007_-X_2",
+    "MB_JOINT_007_-X_3",
+    "MB_JOINT_007_-Y_5",
+    "MB_JOINT_007_-Z_10",
+    "MB_JOINT_007_-Z_11",
+    "MB_JOINT_007_-Z_9"
+   ],
+   "original_position_m": [
+    255.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    255.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_061",
+   "prim_name": "MB_DECK_TOP_006",
+   "prim_kind": "deck_box",
+   "target_m": [
+    250.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_006_+X_0",
+    "MB_DECK_TOP_006_+X_1",
+    "MB_DECK_TOP_006_+Y_6",
+    "MB_DECK_TOP_006_+Z_16",
+    "MB_DECK_TOP_006_+Z_17",
+    "MB_DECK_TOP_006_+Z_18",
+    "MB_DECK_TOP_006_-Y_9",
+    "MB_DECK_TOP_006_-Z_25",
+    "MB_DECK_TOP_006_-Z_26",
+    "MB_DECK_TOP_006_-Z_27"
+   ],
+   "original_position_m": [
+    250.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    250.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_062",
+   "prim_name": "MB_DECK_TOP_006",
+   "prim_kind": "deck_box",
+   "target_m": [
+    230.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_006_+Y_4",
+    "MB_DECK_TOP_006_+Z_10",
+    "MB_DECK_TOP_006_+Z_11",
+    "MB_DECK_TOP_006_+Z_12",
+    "MB_DECK_TOP_006_-X_2",
+    "MB_DECK_TOP_006_-X_3",
+    "MB_DECK_TOP_006_-Y_7",
+    "MB_DECK_TOP_006_-Z_19",
+    "MB_DECK_TOP_006_-Z_20",
+    "MB_DECK_TOP_006_-Z_21"
+   ],
+   "original_position_m": [
+    230.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    230.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 20.0
+  },
+  {
+   "waypoint_id": "CWP_063",
+   "prim_name": "MB_JOINT_006",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    225.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_006_+X_0",
+    "MB_JOINT_006_+X_1",
+    "MB_JOINT_006_+Y_4",
+    "MB_JOINT_006_+Z_6",
+    "MB_JOINT_006_+Z_7",
+    "MB_JOINT_006_+Z_8",
+    "MB_JOINT_006_-X_2",
+    "MB_JOINT_006_-X_3",
+    "MB_JOINT_006_-Y_5",
+    "MB_JOINT_006_-Z_10",
+    "MB_JOINT_006_-Z_11",
+    "MB_JOINT_006_-Z_9"
+   ],
+   "original_position_m": [
+    225.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    225.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_064",
+   "prim_name": "MB_PIER_COL_006",
+   "prim_kind": "pier_column",
+   "target_m": [
+    226.0,
+    28.0,
+    8.0686
+   ],
+   "covers": [
+    "MB_PIER_COL_006_cap_bottom",
+    "MB_PIER_COL_006_cap_top",
+    "MB_PIER_COL_006_side_0",
+    "MB_PIER_COL_006_side_1",
+    "MB_PIER_COL_006_side_10",
+    "MB_PIER_COL_006_side_11",
+    "MB_PIER_COL_006_side_2",
+    "MB_PIER_COL_006_side_3",
+    "MB_PIER_COL_006_side_4",
+    "MB_PIER_COL_006_side_5",
+    "MB_PIER_COL_006_side_6",
+    "MB_PIER_COL_006_side_7",
+    "MB_PIER_COL_006_side_8",
+    "MB_PIER_COL_006_side_9"
+   ],
+   "original_position_m": [
+    234.0,
+    28.0,
+    8.0686
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    234.0,
+    28.0,
+    8.0686
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.354,
+   "route_length_m": 18.626
+  },
+  {
+   "waypoint_id": "CWP_065",
+   "prim_name": "ST_VERTICAL_N_08",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    225.225,
+    7.0,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_08_+X_0",
+    "ST_VERTICAL_N_08_+X_1",
+    "ST_VERTICAL_N_08_+X_2",
+    "ST_VERTICAL_N_08_+Y_6",
+    "ST_VERTICAL_N_08_+Y_7",
+    "ST_VERTICAL_N_08_+Y_8",
+    "ST_VERTICAL_N_08_+Z_12",
+    "ST_VERTICAL_N_08_-X_3",
+    "ST_VERTICAL_N_08_-X_4",
+    "ST_VERTICAL_N_08_-X_5",
+    "ST_VERTICAL_N_08_-Y_10",
+    "ST_VERTICAL_N_08_-Y_11",
+    "ST_VERTICAL_N_08_-Y_9",
+    "ST_VERTICAL_N_08_-Z_13"
+   ],
+   "original_position_m": [
+    233.225,
+    7.0,
+    13.5
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 0.691,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.25,
+   "position_m": [
+    232.6282,
+    9.4455,
+    11.4444
+   ],
+   "heading_rad": -2.8225,
+   "planned_clearance_m": 3.677,
+   "standoff_to_target_m": 8.063,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.677,
+   "route_length_m": 18.909
+  },
+  {
+   "waypoint_id": "CWP_066",
+   "prim_name": "ST_DIAGONAL_N_07",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    216.4922,
+    7.225,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_N_07_+X_1",
+    "ST_DIAGONAL_N_07_+Y_10",
+    "ST_DIAGONAL_N_07_+Y_11",
+    "ST_DIAGONAL_N_07_+Y_6",
+    "ST_DIAGONAL_N_07_+Y_7",
+    "ST_DIAGONAL_N_07_+Y_8",
+    "ST_DIAGONAL_N_07_+Y_9",
+    "ST_DIAGONAL_N_07_+Z_18",
+    "ST_DIAGONAL_N_07_+Z_19",
+    "ST_DIAGONAL_N_07_-X_3",
+    "ST_DIAGONAL_N_07_-X_4",
+    "ST_DIAGONAL_N_07_-X_5",
+    "ST_DIAGONAL_N_07_-Y_12",
+    "ST_DIAGONAL_N_07_-Y_13",
+    "ST_DIAGONAL_N_07_-Y_14",
+    "ST_DIAGONAL_N_07_-Y_15",
+    "ST_DIAGONAL_N_07_-Y_16",
+    "ST_DIAGONAL_N_07_-Y_17",
+    "ST_DIAGONAL_N_07_-Z_20",
+    "ST_DIAGONAL_N_07_-Z_21"
+   ],
+   "original_position_m": [
+    216.4922,
+    15.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.719,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    216.4922,
+    15.225,
+    16.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.719,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.677,
+   "route_length_m": 17.87
+  },
+  {
+   "waypoint_id": "CWP_067",
+   "prim_name": "ST_VERTICAL_N_07",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    213.75,
+    7.225,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_07_+X_0",
+    "ST_VERTICAL_N_07_+X_1",
+    "ST_VERTICAL_N_07_+X_2",
+    "ST_VERTICAL_N_07_+Y_6",
+    "ST_VERTICAL_N_07_+Y_7",
+    "ST_VERTICAL_N_07_+Y_8",
+    "ST_VERTICAL_N_07_+Z_12",
+    "ST_VERTICAL_N_07_-X_3",
+    "ST_VERTICAL_N_07_-X_4",
+    "ST_VERTICAL_N_07_-X_5",
+    "ST_VERTICAL_N_07_-Y_10",
+    "ST_VERTICAL_N_07_-Y_11",
+    "ST_VERTICAL_N_07_-Y_9",
+    "ST_VERTICAL_N_07_-Z_13"
+   ],
+   "original_position_m": [
+    213.75,
+    15.225,
+    13.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.994,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    213.75,
+    15.225,
+    13.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.994,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 4.064
+  },
+  {
+   "waypoint_id": "CWP_068",
+   "prim_name": "ST_DIAGONAL_N_06",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    205.2422,
+    7.225,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_N_06_+X_1",
+    "ST_DIAGONAL_N_06_+Y_10",
+    "ST_DIAGONAL_N_06_+Y_11",
+    "ST_DIAGONAL_N_06_+Y_6",
+    "ST_DIAGONAL_N_06_+Y_7",
+    "ST_DIAGONAL_N_06_+Y_8",
+    "ST_DIAGONAL_N_06_+Y_9",
+    "ST_DIAGONAL_N_06_+Z_18",
+    "ST_DIAGONAL_N_06_+Z_19",
+    "ST_DIAGONAL_N_06_-X_3",
+    "ST_DIAGONAL_N_06_-X_4",
+    "ST_DIAGONAL_N_06_-X_5",
+    "ST_DIAGONAL_N_06_-Y_12",
+    "ST_DIAGONAL_N_06_-Y_13",
+    "ST_DIAGONAL_N_06_-Y_14",
+    "ST_DIAGONAL_N_06_-Y_15",
+    "ST_DIAGONAL_N_06_-Y_16",
+    "ST_DIAGONAL_N_06_-Y_17",
+    "ST_DIAGONAL_N_06_-Z_20",
+    "ST_DIAGONAL_N_06_-Z_21"
+   ],
+   "original_position_m": [
+    205.2422,
+    15.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.719,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    205.2422,
+    15.225,
+    16.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.719,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 9.021
+  },
+  {
+   "waypoint_id": "CWP_069",
+   "prim_name": "ST_VERTICAL_N_06",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    202.5,
+    7.225,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_06_+X_0",
+    "ST_VERTICAL_N_06_+X_1",
+    "ST_VERTICAL_N_06_+X_2",
+    "ST_VERTICAL_N_06_+Y_6",
+    "ST_VERTICAL_N_06_+Y_7",
+    "ST_VERTICAL_N_06_+Y_8",
+    "ST_VERTICAL_N_06_+Z_12",
+    "ST_VERTICAL_N_06_-X_3",
+    "ST_VERTICAL_N_06_-X_4",
+    "ST_VERTICAL_N_06_-X_5",
+    "ST_VERTICAL_N_06_-Y_10",
+    "ST_VERTICAL_N_06_-Y_11",
+    "ST_VERTICAL_N_06_-Y_9",
+    "ST_VERTICAL_N_06_-Z_13"
+   ],
+   "original_position_m": [
+    202.5,
+    15.225,
+    13.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.994,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    202.5,
+    15.225,
+    13.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.994,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 4.064
+  },
+  {
+   "waypoint_id": "CWP_070",
+   "prim_name": "ST_DIAGONAL_N_05",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    193.9922,
+    7.225,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_N_05_+X_1",
+    "ST_DIAGONAL_N_05_+Y_10",
+    "ST_DIAGONAL_N_05_+Y_11",
+    "ST_DIAGONAL_N_05_+Y_6",
+    "ST_DIAGONAL_N_05_+Y_7",
+    "ST_DIAGONAL_N_05_+Y_8",
+    "ST_DIAGONAL_N_05_+Y_9",
+    "ST_DIAGONAL_N_05_+Z_18",
+    "ST_DIAGONAL_N_05_+Z_19",
+    "ST_DIAGONAL_N_05_-X_3",
+    "ST_DIAGONAL_N_05_-X_4",
+    "ST_DIAGONAL_N_05_-X_5",
+    "ST_DIAGONAL_N_05_-Y_12",
+    "ST_DIAGONAL_N_05_-Y_13",
+    "ST_DIAGONAL_N_05_-Y_14",
+    "ST_DIAGONAL_N_05_-Y_15",
+    "ST_DIAGONAL_N_05_-Y_16",
+    "ST_DIAGONAL_N_05_-Y_17",
+    "ST_DIAGONAL_N_05_-Z_20",
+    "ST_DIAGONAL_N_05_-Z_21"
+   ],
+   "original_position_m": [
+    193.9922,
+    15.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.719,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    193.9922,
+    15.225,
+    16.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.719,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 9.021
+  },
+  {
+   "waypoint_id": "CWP_071",
+   "prim_name": "ST_VERTICAL_N_05",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    191.25,
+    7.225,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_05_+X_0",
+    "ST_VERTICAL_N_05_+X_1",
+    "ST_VERTICAL_N_05_+X_2",
+    "ST_VERTICAL_N_05_+Y_6",
+    "ST_VERTICAL_N_05_+Y_7",
+    "ST_VERTICAL_N_05_+Y_8",
+    "ST_VERTICAL_N_05_+Z_12",
+    "ST_VERTICAL_N_05_-X_3",
+    "ST_VERTICAL_N_05_-X_4",
+    "ST_VERTICAL_N_05_-X_5",
+    "ST_VERTICAL_N_05_-Y_10",
+    "ST_VERTICAL_N_05_-Y_11",
+    "ST_VERTICAL_N_05_-Y_9",
+    "ST_VERTICAL_N_05_-Z_13"
+   ],
+   "original_position_m": [
+    191.25,
+    15.225,
+    13.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.994,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    191.25,
+    15.225,
+    13.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.994,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 4.064
+  },
+  {
+   "waypoint_id": "CWP_072",
+   "prim_name": "ST_DIAGONAL_N_04",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    182.7422,
+    7.225,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_N_04_+X_1",
+    "ST_DIAGONAL_N_04_+Y_10",
+    "ST_DIAGONAL_N_04_+Y_11",
+    "ST_DIAGONAL_N_04_+Y_6",
+    "ST_DIAGONAL_N_04_+Y_7",
+    "ST_DIAGONAL_N_04_+Y_8",
+    "ST_DIAGONAL_N_04_+Y_9",
+    "ST_DIAGONAL_N_04_+Z_18",
+    "ST_DIAGONAL_N_04_+Z_19",
+    "ST_DIAGONAL_N_04_-X_3",
+    "ST_DIAGONAL_N_04_-X_4",
+    "ST_DIAGONAL_N_04_-X_5",
+    "ST_DIAGONAL_N_04_-Y_12",
+    "ST_DIAGONAL_N_04_-Y_13",
+    "ST_DIAGONAL_N_04_-Y_14",
+    "ST_DIAGONAL_N_04_-Y_15",
+    "ST_DIAGONAL_N_04_-Y_16",
+    "ST_DIAGONAL_N_04_-Y_17",
+    "ST_DIAGONAL_N_04_-Z_20",
+    "ST_DIAGONAL_N_04_-Z_21"
+   ],
+   "original_position_m": [
+    182.7422,
+    15.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.719,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    182.7422,
+    15.225,
+    16.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.719,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 9.021
+  },
+  {
+   "waypoint_id": "CWP_073",
+   "prim_name": "ST_VERTICAL_N_04",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    180.0,
+    7.225,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_04_+X_0",
+    "ST_VERTICAL_N_04_+X_1",
+    "ST_VERTICAL_N_04_+X_2",
+    "ST_VERTICAL_N_04_+Y_6",
+    "ST_VERTICAL_N_04_+Y_7",
+    "ST_VERTICAL_N_04_+Y_8",
+    "ST_VERTICAL_N_04_+Z_12",
+    "ST_VERTICAL_N_04_-X_3",
+    "ST_VERTICAL_N_04_-X_4",
+    "ST_VERTICAL_N_04_-X_5",
+    "ST_VERTICAL_N_04_-Y_10",
+    "ST_VERTICAL_N_04_-Y_11",
+    "ST_VERTICAL_N_04_-Y_9",
+    "ST_VERTICAL_N_04_-Z_13"
+   ],
+   "original_position_m": [
+    180.0,
+    15.225,
+    13.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.994,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    180.0,
+    15.225,
+    13.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.994,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 4.064
+  },
+  {
+   "waypoint_id": "CWP_074",
+   "prim_name": "ST_DIAGONAL_N_03",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    171.4922,
+    7.225,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_N_03_+X_1",
+    "ST_DIAGONAL_N_03_+Y_10",
+    "ST_DIAGONAL_N_03_+Y_11",
+    "ST_DIAGONAL_N_03_+Y_6",
+    "ST_DIAGONAL_N_03_+Y_7",
+    "ST_DIAGONAL_N_03_+Y_8",
+    "ST_DIAGONAL_N_03_+Y_9",
+    "ST_DIAGONAL_N_03_+Z_18",
+    "ST_DIAGONAL_N_03_+Z_19",
+    "ST_DIAGONAL_N_03_-X_3",
+    "ST_DIAGONAL_N_03_-X_4",
+    "ST_DIAGONAL_N_03_-X_5",
+    "ST_DIAGONAL_N_03_-Y_12",
+    "ST_DIAGONAL_N_03_-Y_13",
+    "ST_DIAGONAL_N_03_-Y_14",
+    "ST_DIAGONAL_N_03_-Y_15",
+    "ST_DIAGONAL_N_03_-Y_16",
+    "ST_DIAGONAL_N_03_-Y_17",
+    "ST_DIAGONAL_N_03_-Z_20",
+    "ST_DIAGONAL_N_03_-Z_21"
+   ],
+   "original_position_m": [
+    171.4922,
+    15.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.719,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    171.4922,
+    15.225,
+    16.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.719,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 9.021
+  },
+  {
+   "waypoint_id": "CWP_075",
+   "prim_name": "ST_VERTICAL_N_03",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    168.75,
+    7.225,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_03_+X_0",
+    "ST_VERTICAL_N_03_+X_1",
+    "ST_VERTICAL_N_03_+X_2",
+    "ST_VERTICAL_N_03_+Y_6",
+    "ST_VERTICAL_N_03_+Y_7",
+    "ST_VERTICAL_N_03_+Y_8",
+    "ST_VERTICAL_N_03_+Z_12",
+    "ST_VERTICAL_N_03_-X_3",
+    "ST_VERTICAL_N_03_-X_4",
+    "ST_VERTICAL_N_03_-X_5",
+    "ST_VERTICAL_N_03_-Y_10",
+    "ST_VERTICAL_N_03_-Y_11",
+    "ST_VERTICAL_N_03_-Y_9",
+    "ST_VERTICAL_N_03_-Z_13"
+   ],
+   "original_position_m": [
+    168.75,
+    15.225,
+    13.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.994,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    168.75,
+    15.225,
+    13.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.994,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 4.064
+  },
+  {
+   "waypoint_id": "CWP_076",
+   "prim_name": "ST_DIAGONAL_N_02",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    160.2422,
+    7.225,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_N_02_+X_1",
+    "ST_DIAGONAL_N_02_+Y_10",
+    "ST_DIAGONAL_N_02_+Y_11",
+    "ST_DIAGONAL_N_02_+Y_6",
+    "ST_DIAGONAL_N_02_+Y_7",
+    "ST_DIAGONAL_N_02_+Y_8",
+    "ST_DIAGONAL_N_02_+Y_9",
+    "ST_DIAGONAL_N_02_+Z_18",
+    "ST_DIAGONAL_N_02_+Z_19",
+    "ST_DIAGONAL_N_02_-X_3",
+    "ST_DIAGONAL_N_02_-X_4",
+    "ST_DIAGONAL_N_02_-X_5",
+    "ST_DIAGONAL_N_02_-Y_12",
+    "ST_DIAGONAL_N_02_-Y_13",
+    "ST_DIAGONAL_N_02_-Y_14",
+    "ST_DIAGONAL_N_02_-Y_15",
+    "ST_DIAGONAL_N_02_-Y_16",
+    "ST_DIAGONAL_N_02_-Y_17",
+    "ST_DIAGONAL_N_02_-Z_20",
+    "ST_DIAGONAL_N_02_-Z_21"
+   ],
+   "original_position_m": [
+    160.2422,
+    15.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.719,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    160.2422,
+    15.225,
+    16.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.719,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 9.021
+  },
+  {
+   "waypoint_id": "CWP_077",
+   "prim_name": "ST_VERTICAL_N_02",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    157.5,
+    7.225,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_02_+X_0",
+    "ST_VERTICAL_N_02_+X_1",
+    "ST_VERTICAL_N_02_+X_2",
+    "ST_VERTICAL_N_02_+Y_6",
+    "ST_VERTICAL_N_02_+Y_7",
+    "ST_VERTICAL_N_02_+Y_8",
+    "ST_VERTICAL_N_02_+Z_12",
+    "ST_VERTICAL_N_02_-X_3",
+    "ST_VERTICAL_N_02_-X_4",
+    "ST_VERTICAL_N_02_-X_5",
+    "ST_VERTICAL_N_02_-Y_10",
+    "ST_VERTICAL_N_02_-Y_11",
+    "ST_VERTICAL_N_02_-Y_9",
+    "ST_VERTICAL_N_02_-Z_13"
+   ],
+   "original_position_m": [
+    157.5,
+    15.225,
+    13.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.994,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    157.5,
+    15.225,
+    13.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.994,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 4.064
+  },
+  {
+   "waypoint_id": "CWP_078",
+   "prim_name": "ST_DIAGONAL_N_01",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    148.9922,
+    7.225,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_N_01_+X_1",
+    "ST_DIAGONAL_N_01_+Y_10",
+    "ST_DIAGONAL_N_01_+Y_11",
+    "ST_DIAGONAL_N_01_+Y_6",
+    "ST_DIAGONAL_N_01_+Y_7",
+    "ST_DIAGONAL_N_01_+Y_8",
+    "ST_DIAGONAL_N_01_+Y_9",
+    "ST_DIAGONAL_N_01_+Z_18",
+    "ST_DIAGONAL_N_01_+Z_19",
+    "ST_DIAGONAL_N_01_-X_3",
+    "ST_DIAGONAL_N_01_-X_4",
+    "ST_DIAGONAL_N_01_-X_5",
+    "ST_DIAGONAL_N_01_-Y_12",
+    "ST_DIAGONAL_N_01_-Y_13",
+    "ST_DIAGONAL_N_01_-Y_14",
+    "ST_DIAGONAL_N_01_-Y_15",
+    "ST_DIAGONAL_N_01_-Y_16",
+    "ST_DIAGONAL_N_01_-Y_17",
+    "ST_DIAGONAL_N_01_-Z_20",
+    "ST_DIAGONAL_N_01_-Z_21"
+   ],
+   "original_position_m": [
+    148.9922,
+    15.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.719,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    148.9922,
+    15.225,
+    16.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.719,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 9.021
+  },
+  {
+   "waypoint_id": "CWP_079",
+   "prim_name": "ST_VERTICAL_N_01",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    146.25,
+    7.225,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_01_+X_0",
+    "ST_VERTICAL_N_01_+X_1",
+    "ST_VERTICAL_N_01_+X_2",
+    "ST_VERTICAL_N_01_+Y_6",
+    "ST_VERTICAL_N_01_+Y_7",
+    "ST_VERTICAL_N_01_+Y_8",
+    "ST_VERTICAL_N_01_+Z_12",
+    "ST_VERTICAL_N_01_-X_3",
+    "ST_VERTICAL_N_01_-X_4",
+    "ST_VERTICAL_N_01_-X_5",
+    "ST_VERTICAL_N_01_-Y_10",
+    "ST_VERTICAL_N_01_-Y_11",
+    "ST_VERTICAL_N_01_-Y_9",
+    "ST_VERTICAL_N_01_-Z_13"
+   ],
+   "original_position_m": [
+    146.25,
+    15.225,
+    13.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.994,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    146.25,
+    15.225,
+    13.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.994,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 4.064
+  },
+  {
+   "waypoint_id": "CWP_080",
+   "prim_name": "ST_DIAGONAL_N_00",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    137.7422,
+    7.225,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_N_00_+X_1",
+    "ST_DIAGONAL_N_00_+Y_10",
+    "ST_DIAGONAL_N_00_+Y_11",
+    "ST_DIAGONAL_N_00_+Y_6",
+    "ST_DIAGONAL_N_00_+Y_7",
+    "ST_DIAGONAL_N_00_+Y_8",
+    "ST_DIAGONAL_N_00_+Y_9",
+    "ST_DIAGONAL_N_00_+Z_18",
+    "ST_DIAGONAL_N_00_+Z_19",
+    "ST_DIAGONAL_N_00_-X_3",
+    "ST_DIAGONAL_N_00_-X_4",
+    "ST_DIAGONAL_N_00_-X_5",
+    "ST_DIAGONAL_N_00_-Y_12",
+    "ST_DIAGONAL_N_00_-Y_13",
+    "ST_DIAGONAL_N_00_-Y_14",
+    "ST_DIAGONAL_N_00_-Y_15",
+    "ST_DIAGONAL_N_00_-Y_16",
+    "ST_DIAGONAL_N_00_-Y_17",
+    "ST_DIAGONAL_N_00_-Z_20",
+    "ST_DIAGONAL_N_00_-Z_21"
+   ],
+   "original_position_m": [
+    137.7422,
+    15.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 7.719,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    137.7422,
+    15.225,
+    16.5
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 7.719,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.719,
+   "route_length_m": 9.021
+  },
+  {
+   "waypoint_id": "CWP_081",
+   "prim_name": "ST_VERTICAL_N_00",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    134.775,
+    7.0,
+    13.5
+   ],
+   "covers": [
+    "ST_VERTICAL_N_00_+X_0",
+    "ST_VERTICAL_N_00_+X_1",
+    "ST_VERTICAL_N_00_+X_2",
+    "ST_VERTICAL_N_00_+Y_6",
+    "ST_VERTICAL_N_00_+Y_7",
+    "ST_VERTICAL_N_00_+Y_8",
+    "ST_VERTICAL_N_00_+Z_12",
+    "ST_VERTICAL_N_00_-X_3",
+    "ST_VERTICAL_N_00_-X_4",
+    "ST_VERTICAL_N_00_-X_5",
+    "ST_VERTICAL_N_00_-Y_10",
+    "ST_VERTICAL_N_00_-Y_11",
+    "ST_VERTICAL_N_00_-Y_9",
+    "ST_VERTICAL_N_00_-Z_13"
+   ],
+   "original_position_m": [
+    126.775,
+    7.0,
+    13.5
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 0.691,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.25,
+   "position_m": [
+    127.3151,
+    9.7575,
+    11.8669
+   ],
+   "heading_rad": -0.3541,
+   "planned_clearance_m": 3.606,
+   "standoff_to_target_m": 8.119,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.606,
+   "route_length_m": 12.652
+  },
+  {
+   "waypoint_id": "CWP_082",
+   "prim_name": "MB_PIER_COL_005",
+   "prim_kind": "pier_column",
+   "target_m": [
+    136.0,
+    28.0,
+    8.0772
+   ],
+   "covers": [
+    "MB_PIER_COL_005_cap_bottom",
+    "MB_PIER_COL_005_cap_top",
+    "MB_PIER_COL_005_side_0",
+    "MB_PIER_COL_005_side_1",
+    "MB_PIER_COL_005_side_10",
+    "MB_PIER_COL_005_side_11",
+    "MB_PIER_COL_005_side_2",
+    "MB_PIER_COL_005_side_3",
+    "MB_PIER_COL_005_side_4",
+    "MB_PIER_COL_005_side_5",
+    "MB_PIER_COL_005_side_6",
+    "MB_PIER_COL_005_side_7",
+    "MB_PIER_COL_005_side_8",
+    "MB_PIER_COL_005_side_9"
+   ],
+   "original_position_m": [
+    144.0,
+    28.0,
+    8.0772
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 7.723,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    144.0,
+    28.0,
+    8.0772
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 7.723,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.606,
+   "route_length_m": 25.011
+  },
+  {
+   "waypoint_id": "CWP_083",
+   "prim_name": "MB_JOINT_005",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    135.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_005_+X_0",
+    "MB_JOINT_005_+X_1",
+    "MB_JOINT_005_+Y_4",
+    "MB_JOINT_005_+Z_6",
+    "MB_JOINT_005_+Z_7",
+    "MB_JOINT_005_+Z_8",
+    "MB_JOINT_005_-X_2",
+    "MB_JOINT_005_-X_3",
+    "MB_JOINT_005_-Y_5",
+    "MB_JOINT_005_-Z_10",
+    "MB_JOINT_005_-Z_11",
+    "MB_JOINT_005_-Z_9"
+   ],
+   "original_position_m": [
+    135.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    135.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.596,
+   "route_length_m": 18.621
+  },
+  {
+   "waypoint_id": "CWP_084",
+   "prim_name": "MB_DECK_TOP_004",
+   "prim_kind": "deck_box",
+   "target_m": [
+    97.5,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_004_+Y_4",
+    "MB_DECK_TOP_004_+Z_10",
+    "MB_DECK_TOP_004_+Z_11",
+    "MB_DECK_TOP_004_+Z_12",
+    "MB_DECK_TOP_004_-X_3",
+    "MB_DECK_TOP_004_-Y_7",
+    "MB_DECK_TOP_004_-Z_19",
+    "MB_DECK_TOP_004_-Z_20",
+    "MB_DECK_TOP_004_-Z_21"
+   ],
+   "original_position_m": [
+    97.5,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    97.5,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 37.5
+  },
+  {
+   "waypoint_id": "CWP_085",
+   "prim_name": "MB_JOINT_004",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    90.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_004_+X_0",
+    "MB_JOINT_004_+X_1",
+    "MB_JOINT_004_+Y_4",
+    "MB_JOINT_004_+Z_6",
+    "MB_JOINT_004_+Z_7",
+    "MB_JOINT_004_+Z_8",
+    "MB_JOINT_004_-X_2",
+    "MB_JOINT_004_-X_3",
+    "MB_JOINT_004_-Y_5",
+    "MB_JOINT_004_-Z_10",
+    "MB_JOINT_004_-Z_11",
+    "MB_JOINT_004_-Z_9"
+   ],
+   "original_position_m": [
+    90.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    90.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 7.5
+  },
+  {
+   "waypoint_id": "CWP_086",
+   "prim_name": "MB_DECK_TOP_003",
+   "prim_kind": "deck_box",
+   "target_m": [
+    85.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_003_+X_0",
+    "MB_DECK_TOP_003_+X_1",
+    "MB_DECK_TOP_003_+Y_6",
+    "MB_DECK_TOP_003_+Z_16",
+    "MB_DECK_TOP_003_+Z_17",
+    "MB_DECK_TOP_003_+Z_18",
+    "MB_DECK_TOP_003_-Y_9",
+    "MB_DECK_TOP_003_-Z_25",
+    "MB_DECK_TOP_003_-Z_26",
+    "MB_DECK_TOP_003_-Z_27"
+   ],
+   "original_position_m": [
+    85.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    85.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_087",
+   "prim_name": "MB_DECK_TOP_003",
+   "prim_kind": "deck_box",
+   "target_m": [
+    65.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_003_+Y_4",
+    "MB_DECK_TOP_003_+Z_10",
+    "MB_DECK_TOP_003_+Z_11",
+    "MB_DECK_TOP_003_+Z_12",
+    "MB_DECK_TOP_003_-X_2",
+    "MB_DECK_TOP_003_-X_3",
+    "MB_DECK_TOP_003_-Y_7",
+    "MB_DECK_TOP_003_-Z_19",
+    "MB_DECK_TOP_003_-Z_20",
+    "MB_DECK_TOP_003_-Z_21"
+   ],
+   "original_position_m": [
+    65.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    65.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 20.0
+  },
+  {
+   "waypoint_id": "CWP_088",
+   "prim_name": "MB_JOINT_003",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    60.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_003_+X_0",
+    "MB_JOINT_003_+X_1",
+    "MB_JOINT_003_+Y_4",
+    "MB_JOINT_003_+Z_6",
+    "MB_JOINT_003_+Z_7",
+    "MB_JOINT_003_+Z_8",
+    "MB_JOINT_003_-X_2",
+    "MB_JOINT_003_-X_3",
+    "MB_JOINT_003_-Y_5",
+    "MB_JOINT_003_-Z_10",
+    "MB_JOINT_003_-Z_11",
+    "MB_JOINT_003_-Z_9"
+   ],
+   "original_position_m": [
+    60.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    60.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_089",
+   "prim_name": "MB_DECK_TOP_002",
+   "prim_kind": "deck_box",
+   "target_m": [
+    55.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_002_+X_0",
+    "MB_DECK_TOP_002_+X_1",
+    "MB_DECK_TOP_002_+Y_6",
+    "MB_DECK_TOP_002_+Z_16",
+    "MB_DECK_TOP_002_+Z_17",
+    "MB_DECK_TOP_002_+Z_18",
+    "MB_DECK_TOP_002_-Y_9",
+    "MB_DECK_TOP_002_-Z_25",
+    "MB_DECK_TOP_002_-Z_26",
+    "MB_DECK_TOP_002_-Z_27"
+   ],
+   "original_position_m": [
+    55.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    55.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_090",
+   "prim_name": "MB_DECK_TOP_002",
+   "prim_kind": "deck_box",
+   "target_m": [
+    35.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_002_+Y_4",
+    "MB_DECK_TOP_002_+Z_10",
+    "MB_DECK_TOP_002_+Z_11",
+    "MB_DECK_TOP_002_+Z_12",
+    "MB_DECK_TOP_002_-X_2",
+    "MB_DECK_TOP_002_-X_3",
+    "MB_DECK_TOP_002_-Y_7",
+    "MB_DECK_TOP_002_-Z_19",
+    "MB_DECK_TOP_002_-Z_20",
+    "MB_DECK_TOP_002_-Z_21"
+   ],
+   "original_position_m": [
+    35.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    35.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 20.0
+  },
+  {
+   "waypoint_id": "CWP_091",
+   "prim_name": "MB_JOINT_002",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    30.0,
+    32.3,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_002_+X_0",
+    "MB_JOINT_002_+X_1",
+    "MB_JOINT_002_+Y_4",
+    "MB_JOINT_002_+Z_6",
+    "MB_JOINT_002_+Z_7",
+    "MB_JOINT_002_+Z_8",
+    "MB_JOINT_002_-X_2",
+    "MB_JOINT_002_-X_3",
+    "MB_JOINT_002_-Y_5",
+    "MB_JOINT_002_-Z_10",
+    "MB_JOINT_002_-Z_11",
+    "MB_JOINT_002_-Z_9"
+   ],
+   "original_position_m": [
+    30.0,
+    40.3,
+    18.775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    30.0,
+    40.3,
+    18.775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_092",
+   "prim_name": "MB_DECK_TOP_001",
+   "prim_kind": "deck_box",
+   "target_m": [
+    25.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_001_+X_0",
+    "MB_DECK_TOP_001_+X_1",
+    "MB_DECK_TOP_001_+Y_6",
+    "MB_DECK_TOP_001_+Z_16",
+    "MB_DECK_TOP_001_+Z_17",
+    "MB_DECK_TOP_001_+Z_18",
+    "MB_DECK_TOP_001_-Y_9",
+    "MB_DECK_TOP_001_-Z_25",
+    "MB_DECK_TOP_001_-Z_26",
+    "MB_DECK_TOP_001_-Z_27"
+   ],
+   "original_position_m": [
+    25.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    25.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 5.001
+  },
+  {
+   "waypoint_id": "CWP_093",
+   "prim_name": "MB_MAST_001",
+   "prim_kind": "catenary_mast",
+   "target_m": [
+    15.14,
+    31.1,
+    20.85
+   ],
+   "covers": [
+    "MB_MAST_001_+X_0",
+    "MB_MAST_001_+X_1",
+    "MB_MAST_001_+Y_4",
+    "MB_MAST_001_+Y_5",
+    "MB_MAST_001_+Z_8",
+    "MB_MAST_001_-X_2",
+    "MB_MAST_001_-X_3",
+    "MB_MAST_001_-Y_6",
+    "MB_MAST_001_-Y_7",
+    "MB_MAST_001_-Z_9"
+   ],
+   "original_position_m": [
+    23.14,
+    31.1,
+    20.85
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.218,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 2.5,
+   "position_m": [
+    22.8183,
+    30.1591,
+    23.1438
+   ],
+   "heading_rad": 3.0197,
+   "planned_clearance_m": 3.589,
+   "standoff_to_target_m": 8.069,
+   "route_in": [
+    [
+     24.0,
+     33.0,
+     24.0
+    ],
+    [
+     24.0,
+     31.0,
+     24.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.589,
+   "route_length_m": 12.674
+  },
+  {
+   "waypoint_id": "CWP_094",
+   "prim_name": "MB_DECK_TOP_001",
+   "prim_kind": "deck_box",
+   "target_m": [
+    5.0,
+    32.3,
+    18.85
+   ],
+   "covers": [
+    "MB_DECK_TOP_001_+Y_4",
+    "MB_DECK_TOP_001_+Z_10",
+    "MB_DECK_TOP_001_+Z_11",
+    "MB_DECK_TOP_001_+Z_12",
+    "MB_DECK_TOP_001_-X_2",
+    "MB_DECK_TOP_001_-X_3",
+    "MB_DECK_TOP_001_-Y_7",
+    "MB_DECK_TOP_001_-Z_19",
+    "MB_DECK_TOP_001_-Z_20",
+    "MB_DECK_TOP_001_-Z_21"
+   ],
+   "original_position_m": [
+    5.0,
+    40.3,
+    18.85
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    5.0,
+    40.3,
+    18.85
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     21.0,
+     32.0,
+     24.0
+    ],
+    [
+     17.0,
+     35.0,
+     23.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.562,
+   "route_length_m": 21.584
+  },
+  {
+   "waypoint_id": "CWP_095",
+   "prim_name": "MB_PIER_COL_001",
+   "prim_kind": "pier_column",
+   "target_m": [
+    1.0,
+    28.0,
+    8.0364
+   ],
+   "covers": [
+    "MB_PIER_COL_001_cap_bottom",
+    "MB_PIER_COL_001_cap_top",
+    "MB_PIER_COL_001_side_0",
+    "MB_PIER_COL_001_side_1",
+    "MB_PIER_COL_001_side_10",
+    "MB_PIER_COL_001_side_11",
+    "MB_PIER_COL_001_side_2",
+    "MB_PIER_COL_001_side_3",
+    "MB_PIER_COL_001_side_4",
+    "MB_PIER_COL_001_side_5",
+    "MB_PIER_COL_001_side_6",
+    "MB_PIER_COL_001_side_7",
+    "MB_PIER_COL_001_side_8",
+    "MB_PIER_COL_001_side_9"
+   ],
+   "original_position_m": [
+    9.0,
+    28.0,
+    8.0364
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    9.0,
+    28.0,
+    8.0364
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.338,
+   "route_length_m": 16.859
+  },
+  {
+   "waypoint_id": "CWP_096",
+   "prim_name": "BR_WINGWALL_SOUTH_L",
+   "prim_kind": "structure",
+   "target_m": [
+    6.5,
+    8.9,
+    5.6
+   ],
+   "covers": [
+    "BR_WINGWALL_SOUTH_L_+Y_10",
+    "BR_WINGWALL_SOUTH_L_+Y_11",
+    "BR_WINGWALL_SOUTH_L_+Y_6",
+    "BR_WINGWALL_SOUTH_L_+Y_7",
+    "BR_WINGWALL_SOUTH_L_+Y_8",
+    "BR_WINGWALL_SOUTH_L_+Y_9",
+    "BR_WINGWALL_SOUTH_L_+Z_18",
+    "BR_WINGWALL_SOUTH_L_+Z_19",
+    "BR_WINGWALL_SOUTH_L_-X_3",
+    "BR_WINGWALL_SOUTH_L_-X_4",
+    "BR_WINGWALL_SOUTH_L_-X_5",
+    "BR_WINGWALL_SOUTH_L_-Y_12",
+    "BR_WINGWALL_SOUTH_L_-Y_13",
+    "BR_WINGWALL_SOUTH_L_-Y_14",
+    "BR_WINGWALL_SOUTH_L_-Y_15",
+    "BR_WINGWALL_SOUTH_L_-Y_16",
+    "BR_WINGWALL_SOUTH_L_-Y_17"
+   ],
+   "original_position_m": [
+    6.5,
+    16.9,
+    5.6
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 5.6,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    6.5,
+    16.9,
+    5.6
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 5.6,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 5.6,
+   "route_length_m": 11.636
+  },
+  {
+   "waypoint_id": "CWP_097",
+   "prim_name": "BR_PIER_COL_001_2",
+   "prim_kind": "pier_column",
+   "target_m": [
+    0.0,
+    3.6,
+    5.2775
+   ],
+   "covers": [
+    "BR_PIER_COL_001_2_cap_top",
+    "BR_PIER_COL_001_2_side_0",
+    "BR_PIER_COL_001_2_side_1",
+    "BR_PIER_COL_001_2_side_10",
+    "BR_PIER_COL_001_2_side_11",
+    "BR_PIER_COL_001_2_side_2",
+    "BR_PIER_COL_001_2_side_3",
+    "BR_PIER_COL_001_2_side_4",
+    "BR_PIER_COL_001_2_side_5",
+    "BR_PIER_COL_001_2_side_6",
+    "BR_PIER_COL_001_2_side_7",
+    "BR_PIER_COL_001_2_side_8",
+    "BR_PIER_COL_001_2_side_9"
+   ],
+   "original_position_m": [
+    0.0,
+    11.6,
+    5.2775
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 2.6,
+   "nudge_tier": null,
+   "reachable_in_plan": false,
+   "nudged": false,
+   "nudge_m": null,
+   "position_m": [
+    0.0,
+    11.6,
+    5.2775
+   ],
+   "heading_rad": -1.5708,
+   "planned_clearance_m": 2.6,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "skipped_unreachable_in_plan",
+   "route_min_clearance_m": null,
+   "route_length_m": 0.0
+  },
+  {
+   "waypoint_id": "CWP_098",
+   "prim_name": "BR_ABUTMENT_SOUTH",
+   "prim_kind": "abutment",
+   "target_m": [
+    -0.5,
+    6.0,
+    7.0
+   ],
+   "covers": [
+    "BR_ABUTMENT_SOUTH_+X_6",
+    "BR_ABUTMENT_SOUTH_+X_7",
+    "BR_ABUTMENT_SOUTH_+X_8",
+    "BR_ABUTMENT_SOUTH_+Y_18",
+    "BR_ABUTMENT_SOUTH_+Y_19",
+    "BR_ABUTMENT_SOUTH_+Y_20",
+    "BR_ABUTMENT_SOUTH_+Z_26",
+    "BR_ABUTMENT_SOUTH_-X_12",
+    "BR_ABUTMENT_SOUTH_-X_13",
+    "BR_ABUTMENT_SOUTH_-X_14",
+    "BR_ABUTMENT_SOUTH_-X_15",
+    "BR_ABUTMENT_SOUTH_-X_16",
+    "BR_ABUTMENT_SOUTH_-X_17"
+   ],
+   "original_position_m": [
+    -8.5,
+    6.0,
+    7.0
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 7.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    -8.5,
+    6.0,
+    7.0
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 7.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     -3.0,
+     12.0,
+     6.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.814,
+   "route_length_m": 18.897
+  },
+  {
+   "waypoint_id": "CWP_099",
+   "prim_name": "BR_PIER_COL_001_1",
+   "prim_kind": "pier_column",
+   "target_m": [
+    -0.85,
+    -2.75,
+    8.6758
+   ],
+   "covers": [
+    "BR_PIER_COL_001_1_cap_top",
+    "BR_PIER_COL_001_1_side_0",
+    "BR_PIER_COL_001_1_side_1",
+    "BR_PIER_COL_001_1_side_10",
+    "BR_PIER_COL_001_1_side_11",
+    "BR_PIER_COL_001_1_side_2",
+    "BR_PIER_COL_001_1_side_3",
+    "BR_PIER_COL_001_1_side_4",
+    "BR_PIER_COL_001_1_side_5",
+    "BR_PIER_COL_001_1_side_6",
+    "BR_PIER_COL_001_1_side_7",
+    "BR_PIER_COL_001_1_side_8",
+    "BR_PIER_COL_001_1_side_9"
+   ],
+   "original_position_m": [
+    -8.85,
+    -2.75,
+    8.6758
+   ],
+   "original_heading_rad": -0.0,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    -8.85,
+    -2.75,
+    8.6758
+   ],
+   "heading_rad": -0.0,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.0,
+   "route_length_m": 8.916
+  },
+  {
+   "waypoint_id": "CWP_100",
+   "prim_name": "BR_PIER_CAP_001",
+   "prim_kind": "pier_cap",
+   "target_m": [
+    -0.9,
+    -3.0,
+    11.075
+   ],
+   "covers": [
+    "BR_PIER_CAP_001_+X_0",
+    "BR_PIER_CAP_001_+X_1",
+    "BR_PIER_CAP_001_+Z_6",
+    "BR_PIER_CAP_001_+Z_7",
+    "BR_PIER_CAP_001_+Z_8",
+    "BR_PIER_CAP_001_-X_2",
+    "BR_PIER_CAP_001_-X_3",
+    "BR_PIER_CAP_001_-Y_5",
+    "BR_PIER_CAP_001_-Z_10",
+    "BR_PIER_CAP_001_-Z_11",
+    "BR_PIER_CAP_001_-Z_9"
+   ],
+   "original_position_m": [
+    -8.9,
+    -3.0,
+    11.075
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    -8.9,
+    -3.0,
+    11.075
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.984,
+   "route_length_m": 2.413
+  },
+  {
+   "waypoint_id": "CWP_101",
+   "prim_name": "MB_JOINT_001",
+   "prim_kind": "joint_gap",
+   "target_m": [
+    -0.06,
+    25.85,
+    18.775
+   ],
+   "covers": [
+    "MB_JOINT_001_+X_0",
+    "MB_JOINT_001_+X_1",
+    "MB_JOINT_001_+Y_4",
+    "MB_JOINT_001_+Z_6",
+    "MB_JOINT_001_+Z_7",
+    "MB_JOINT_001_+Z_8",
+    "MB_JOINT_001_-X_2",
+    "MB_JOINT_001_-X_3",
+    "MB_JOINT_001_-Y_5",
+    "MB_JOINT_001_-Z_10",
+    "MB_JOINT_001_-Z_11",
+    "MB_JOINT_001_-Z_9"
+   ],
+   "original_position_m": [
+    -8.06,
+    25.85,
+    18.775
+   ],
+   "original_heading_rad": 0.0,
+   "original_clearance_m": 5.412,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    -8.06,
+    25.85,
+    18.775
+   ],
+   "heading_rad": 0.0,
+   "planned_clearance_m": 5.412,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 5.412,
+   "route_length_m": 29.872
+  },
+  {
+   "waypoint_id": "CWP_102",
+   "prim_name": "MB_PIER_COL_002",
+   "prim_kind": "pier_column",
+   "target_m": [
+    31.0,
+    28.0,
+    8.0506
+   ],
+   "covers": [
+    "MB_PIER_COL_002_cap_bottom",
+    "MB_PIER_COL_002_cap_top",
+    "MB_PIER_COL_002_side_0",
+    "MB_PIER_COL_002_side_1",
+    "MB_PIER_COL_002_side_10",
+    "MB_PIER_COL_002_side_11",
+    "MB_PIER_COL_002_side_2",
+    "MB_PIER_COL_002_side_3",
+    "MB_PIER_COL_002_side_4",
+    "MB_PIER_COL_002_side_5",
+    "MB_PIER_COL_002_side_6",
+    "MB_PIER_COL_002_side_7",
+    "MB_PIER_COL_002_side_8",
+    "MB_PIER_COL_002_side_9"
+   ],
+   "original_position_m": [
+    39.0,
+    28.0,
+    8.0506
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    39.0,
+    28.0,
+    8.0506
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     -5.0,
+     23.0,
+     16.0
+    ],
+    [
+     0.0,
+     23.0,
+     13.0
+    ],
+    [
+     32.0,
+     23.0,
+     13.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.523,
+   "route_length_m": 52.774
+  },
+  {
+   "waypoint_id": "CWP_103",
+   "prim_name": "ST_PORTAL_STRUT_135",
+   "prim_kind": "bracing",
+   "target_m": [
+    135.0,
+    0.0,
+    21.15
+   ],
+   "covers": [
+    "ST_PORTAL_STRUT_135_+X_0",
+    "ST_PORTAL_STRUT_135_+X_1",
+    "ST_PORTAL_STRUT_135_+Y_4",
+    "ST_PORTAL_STRUT_135_+Z_6",
+    "ST_PORTAL_STRUT_135_+Z_7",
+    "ST_PORTAL_STRUT_135_+Z_8",
+    "ST_PORTAL_STRUT_135_-X_2",
+    "ST_PORTAL_STRUT_135_-X_3",
+    "ST_PORTAL_STRUT_135_-Y_5",
+    "ST_PORTAL_STRUT_135_-Z_10",
+    "ST_PORTAL_STRUT_135_-Z_11",
+    "ST_PORTAL_STRUT_135_-Z_9"
+   ],
+   "original_position_m": [
+    135.0,
+    0.0,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    135.0,
+    0.0,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.881,
+   "route_length_m": 102.202
+  },
+  {
+   "waypoint_id": "CWP_104",
+   "prim_name": "ST_BRACING_TOP_00_B",
+   "prim_kind": "bracing",
+   "target_m": [
+    138.8267,
+    2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_00_B_+Y_4",
+    "ST_BRACING_TOP_00_B_+Z_10",
+    "ST_BRACING_TOP_00_B_+Z_11",
+    "ST_BRACING_TOP_00_B_+Z_12",
+    "ST_BRACING_TOP_00_B_+Z_13",
+    "ST_BRACING_TOP_00_B_+Z_8",
+    "ST_BRACING_TOP_00_B_+Z_9",
+    "ST_BRACING_TOP_00_B_-X_2",
+    "ST_BRACING_TOP_00_B_-X_3",
+    "ST_BRACING_TOP_00_B_-Y_6",
+    "ST_BRACING_TOP_00_B_-Z_14",
+    "ST_BRACING_TOP_00_B_-Z_15",
+    "ST_BRACING_TOP_00_B_-Z_16",
+    "ST_BRACING_TOP_00_B_-Z_17",
+    "ST_BRACING_TOP_00_B_-Z_18",
+    "ST_BRACING_TOP_00_B_-Z_19"
+   ],
+   "original_position_m": [
+    138.8267,
+    2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    138.8267,
+    2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.433
+  },
+  {
+   "waypoint_id": "CWP_105",
+   "prim_name": "ST_BRACING_TOP_00_A",
+   "prim_kind": "bracing",
+   "target_m": [
+    138.8267,
+    -2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_00_A_+Y_4",
+    "ST_BRACING_TOP_00_A_+Z_10",
+    "ST_BRACING_TOP_00_A_+Z_11",
+    "ST_BRACING_TOP_00_A_+Z_12",
+    "ST_BRACING_TOP_00_A_+Z_13",
+    "ST_BRACING_TOP_00_A_+Z_8",
+    "ST_BRACING_TOP_00_A_+Z_9",
+    "ST_BRACING_TOP_00_A_-X_2",
+    "ST_BRACING_TOP_00_A_-X_3",
+    "ST_BRACING_TOP_00_A_-Y_6",
+    "ST_BRACING_TOP_00_A_-Z_14",
+    "ST_BRACING_TOP_00_A_-Z_15",
+    "ST_BRACING_TOP_00_A_-Z_16",
+    "ST_BRACING_TOP_00_A_-Z_17",
+    "ST_BRACING_TOP_00_A_-Z_18",
+    "ST_BRACING_TOP_00_A_-Z_19"
+   ],
+   "original_position_m": [
+    138.8267,
+    -2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    138.8267,
+    -2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.476
+  },
+  {
+   "waypoint_id": "CWP_106",
+   "prim_name": "ST_BRACING_TOP_01_A",
+   "prim_kind": "bracing",
+   "target_m": [
+    150.0767,
+    -2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_01_A_+Y_4",
+    "ST_BRACING_TOP_01_A_+Z_10",
+    "ST_BRACING_TOP_01_A_+Z_11",
+    "ST_BRACING_TOP_01_A_+Z_12",
+    "ST_BRACING_TOP_01_A_+Z_13",
+    "ST_BRACING_TOP_01_A_+Z_8",
+    "ST_BRACING_TOP_01_A_+Z_9",
+    "ST_BRACING_TOP_01_A_-X_2",
+    "ST_BRACING_TOP_01_A_-X_3",
+    "ST_BRACING_TOP_01_A_-Y_6",
+    "ST_BRACING_TOP_01_A_-Z_14",
+    "ST_BRACING_TOP_01_A_-Z_15",
+    "ST_BRACING_TOP_01_A_-Z_16",
+    "ST_BRACING_TOP_01_A_-Z_17",
+    "ST_BRACING_TOP_01_A_-Z_18",
+    "ST_BRACING_TOP_01_A_-Z_19"
+   ],
+   "original_position_m": [
+    150.0767,
+    -2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    150.0767,
+    -2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_107",
+   "prim_name": "ST_BRACING_TOP_01_B",
+   "prim_kind": "bracing",
+   "target_m": [
+    150.0767,
+    2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_01_B_+Y_4",
+    "ST_BRACING_TOP_01_B_+Z_10",
+    "ST_BRACING_TOP_01_B_+Z_11",
+    "ST_BRACING_TOP_01_B_+Z_12",
+    "ST_BRACING_TOP_01_B_+Z_13",
+    "ST_BRACING_TOP_01_B_+Z_8",
+    "ST_BRACING_TOP_01_B_+Z_9",
+    "ST_BRACING_TOP_01_B_-X_2",
+    "ST_BRACING_TOP_01_B_-X_3",
+    "ST_BRACING_TOP_01_B_-Y_6",
+    "ST_BRACING_TOP_01_B_-Z_14",
+    "ST_BRACING_TOP_01_B_-Z_15",
+    "ST_BRACING_TOP_01_B_-Z_16",
+    "ST_BRACING_TOP_01_B_-Z_17",
+    "ST_BRACING_TOP_01_B_-Z_18",
+    "ST_BRACING_TOP_01_B_-Z_19"
+   ],
+   "original_position_m": [
+    150.0767,
+    2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    150.0767,
+    2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.476
+  },
+  {
+   "waypoint_id": "CWP_108",
+   "prim_name": "ST_BRACING_TOP_02_B",
+   "prim_kind": "bracing",
+   "target_m": [
+    161.3267,
+    2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_02_B_+Y_4",
+    "ST_BRACING_TOP_02_B_+Z_10",
+    "ST_BRACING_TOP_02_B_+Z_11",
+    "ST_BRACING_TOP_02_B_+Z_12",
+    "ST_BRACING_TOP_02_B_+Z_13",
+    "ST_BRACING_TOP_02_B_+Z_8",
+    "ST_BRACING_TOP_02_B_+Z_9",
+    "ST_BRACING_TOP_02_B_-X_2",
+    "ST_BRACING_TOP_02_B_-X_3",
+    "ST_BRACING_TOP_02_B_-Y_6",
+    "ST_BRACING_TOP_02_B_-Z_14",
+    "ST_BRACING_TOP_02_B_-Z_15",
+    "ST_BRACING_TOP_02_B_-Z_16",
+    "ST_BRACING_TOP_02_B_-Z_17",
+    "ST_BRACING_TOP_02_B_-Z_18",
+    "ST_BRACING_TOP_02_B_-Z_19"
+   ],
+   "original_position_m": [
+    161.3267,
+    2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    161.3267,
+    2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_109",
+   "prim_name": "ST_BRACING_TOP_02_A",
+   "prim_kind": "bracing",
+   "target_m": [
+    161.3267,
+    -2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_02_A_+Y_4",
+    "ST_BRACING_TOP_02_A_+Z_10",
+    "ST_BRACING_TOP_02_A_+Z_11",
+    "ST_BRACING_TOP_02_A_+Z_12",
+    "ST_BRACING_TOP_02_A_+Z_13",
+    "ST_BRACING_TOP_02_A_+Z_8",
+    "ST_BRACING_TOP_02_A_+Z_9",
+    "ST_BRACING_TOP_02_A_-X_2",
+    "ST_BRACING_TOP_02_A_-X_3",
+    "ST_BRACING_TOP_02_A_-Y_6",
+    "ST_BRACING_TOP_02_A_-Z_14",
+    "ST_BRACING_TOP_02_A_-Z_15",
+    "ST_BRACING_TOP_02_A_-Z_16",
+    "ST_BRACING_TOP_02_A_-Z_17",
+    "ST_BRACING_TOP_02_A_-Z_18",
+    "ST_BRACING_TOP_02_A_-Z_19"
+   ],
+   "original_position_m": [
+    161.3267,
+    -2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    161.3267,
+    -2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.476
+  },
+  {
+   "waypoint_id": "CWP_110",
+   "prim_name": "ST_BRACING_TOP_03_A",
+   "prim_kind": "bracing",
+   "target_m": [
+    172.5767,
+    -2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_03_A_+Y_4",
+    "ST_BRACING_TOP_03_A_+Z_10",
+    "ST_BRACING_TOP_03_A_+Z_11",
+    "ST_BRACING_TOP_03_A_+Z_12",
+    "ST_BRACING_TOP_03_A_+Z_13",
+    "ST_BRACING_TOP_03_A_+Z_8",
+    "ST_BRACING_TOP_03_A_+Z_9",
+    "ST_BRACING_TOP_03_A_-X_2",
+    "ST_BRACING_TOP_03_A_-X_3",
+    "ST_BRACING_TOP_03_A_-Y_6",
+    "ST_BRACING_TOP_03_A_-Z_14",
+    "ST_BRACING_TOP_03_A_-Z_15",
+    "ST_BRACING_TOP_03_A_-Z_16",
+    "ST_BRACING_TOP_03_A_-Z_17",
+    "ST_BRACING_TOP_03_A_-Z_18",
+    "ST_BRACING_TOP_03_A_-Z_19"
+   ],
+   "original_position_m": [
+    172.5767,
+    -2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    172.5767,
+    -2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_111",
+   "prim_name": "ST_BRACING_TOP_03_B",
+   "prim_kind": "bracing",
+   "target_m": [
+    172.5767,
+    2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_03_B_+Y_4",
+    "ST_BRACING_TOP_03_B_+Z_10",
+    "ST_BRACING_TOP_03_B_+Z_11",
+    "ST_BRACING_TOP_03_B_+Z_12",
+    "ST_BRACING_TOP_03_B_+Z_13",
+    "ST_BRACING_TOP_03_B_+Z_8",
+    "ST_BRACING_TOP_03_B_+Z_9",
+    "ST_BRACING_TOP_03_B_-X_2",
+    "ST_BRACING_TOP_03_B_-X_3",
+    "ST_BRACING_TOP_03_B_-Y_6",
+    "ST_BRACING_TOP_03_B_-Z_14",
+    "ST_BRACING_TOP_03_B_-Z_15",
+    "ST_BRACING_TOP_03_B_-Z_16",
+    "ST_BRACING_TOP_03_B_-Z_17",
+    "ST_BRACING_TOP_03_B_-Z_18",
+    "ST_BRACING_TOP_03_B_-Z_19"
+   ],
+   "original_position_m": [
+    172.5767,
+    2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    172.5767,
+    2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.476
+  },
+  {
+   "waypoint_id": "CWP_112",
+   "prim_name": "ST_BRACING_TOP_04_B",
+   "prim_kind": "bracing",
+   "target_m": [
+    183.8267,
+    2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_04_B_+Y_4",
+    "ST_BRACING_TOP_04_B_+Z_10",
+    "ST_BRACING_TOP_04_B_+Z_11",
+    "ST_BRACING_TOP_04_B_+Z_12",
+    "ST_BRACING_TOP_04_B_+Z_13",
+    "ST_BRACING_TOP_04_B_+Z_8",
+    "ST_BRACING_TOP_04_B_+Z_9",
+    "ST_BRACING_TOP_04_B_-X_2",
+    "ST_BRACING_TOP_04_B_-X_3",
+    "ST_BRACING_TOP_04_B_-Y_6",
+    "ST_BRACING_TOP_04_B_-Z_14",
+    "ST_BRACING_TOP_04_B_-Z_15",
+    "ST_BRACING_TOP_04_B_-Z_16",
+    "ST_BRACING_TOP_04_B_-Z_17",
+    "ST_BRACING_TOP_04_B_-Z_18",
+    "ST_BRACING_TOP_04_B_-Z_19"
+   ],
+   "original_position_m": [
+    183.8267,
+    2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    183.8267,
+    2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_113",
+   "prim_name": "ST_BRACING_TOP_04_A",
+   "prim_kind": "bracing",
+   "target_m": [
+    183.8267,
+    -2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_04_A_+Y_4",
+    "ST_BRACING_TOP_04_A_+Z_10",
+    "ST_BRACING_TOP_04_A_+Z_11",
+    "ST_BRACING_TOP_04_A_+Z_12",
+    "ST_BRACING_TOP_04_A_+Z_13",
+    "ST_BRACING_TOP_04_A_+Z_8",
+    "ST_BRACING_TOP_04_A_+Z_9",
+    "ST_BRACING_TOP_04_A_-X_2",
+    "ST_BRACING_TOP_04_A_-X_3",
+    "ST_BRACING_TOP_04_A_-Y_6",
+    "ST_BRACING_TOP_04_A_-Z_14",
+    "ST_BRACING_TOP_04_A_-Z_15",
+    "ST_BRACING_TOP_04_A_-Z_16",
+    "ST_BRACING_TOP_04_A_-Z_17",
+    "ST_BRACING_TOP_04_A_-Z_18",
+    "ST_BRACING_TOP_04_A_-Z_19"
+   ],
+   "original_position_m": [
+    183.8267,
+    -2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    183.8267,
+    -2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.476
+  },
+  {
+   "waypoint_id": "CWP_114",
+   "prim_name": "ST_BRACING_TOP_05_A",
+   "prim_kind": "bracing",
+   "target_m": [
+    195.0767,
+    -2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_05_A_+Y_4",
+    "ST_BRACING_TOP_05_A_+Z_10",
+    "ST_BRACING_TOP_05_A_+Z_11",
+    "ST_BRACING_TOP_05_A_+Z_12",
+    "ST_BRACING_TOP_05_A_+Z_13",
+    "ST_BRACING_TOP_05_A_+Z_8",
+    "ST_BRACING_TOP_05_A_+Z_9",
+    "ST_BRACING_TOP_05_A_-X_2",
+    "ST_BRACING_TOP_05_A_-X_3",
+    "ST_BRACING_TOP_05_A_-Y_6",
+    "ST_BRACING_TOP_05_A_-Z_14",
+    "ST_BRACING_TOP_05_A_-Z_15",
+    "ST_BRACING_TOP_05_A_-Z_16",
+    "ST_BRACING_TOP_05_A_-Z_17",
+    "ST_BRACING_TOP_05_A_-Z_18",
+    "ST_BRACING_TOP_05_A_-Z_19"
+   ],
+   "original_position_m": [
+    195.0767,
+    -2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    195.0767,
+    -2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_115",
+   "prim_name": "ST_BRACING_TOP_05_B",
+   "prim_kind": "bracing",
+   "target_m": [
+    195.0767,
+    2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_05_B_+Y_4",
+    "ST_BRACING_TOP_05_B_+Z_10",
+    "ST_BRACING_TOP_05_B_+Z_11",
+    "ST_BRACING_TOP_05_B_+Z_12",
+    "ST_BRACING_TOP_05_B_+Z_13",
+    "ST_BRACING_TOP_05_B_+Z_8",
+    "ST_BRACING_TOP_05_B_+Z_9",
+    "ST_BRACING_TOP_05_B_-X_2",
+    "ST_BRACING_TOP_05_B_-X_3",
+    "ST_BRACING_TOP_05_B_-Y_6",
+    "ST_BRACING_TOP_05_B_-Z_14",
+    "ST_BRACING_TOP_05_B_-Z_15",
+    "ST_BRACING_TOP_05_B_-Z_16",
+    "ST_BRACING_TOP_05_B_-Z_17",
+    "ST_BRACING_TOP_05_B_-Z_18",
+    "ST_BRACING_TOP_05_B_-Z_19"
+   ],
+   "original_position_m": [
+    195.0767,
+    2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    195.0767,
+    2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.476
+  },
+  {
+   "waypoint_id": "CWP_116",
+   "prim_name": "ST_BRACING_TOP_06_B",
+   "prim_kind": "bracing",
+   "target_m": [
+    206.3267,
+    2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_06_B_+Y_4",
+    "ST_BRACING_TOP_06_B_+Z_10",
+    "ST_BRACING_TOP_06_B_+Z_11",
+    "ST_BRACING_TOP_06_B_+Z_12",
+    "ST_BRACING_TOP_06_B_+Z_13",
+    "ST_BRACING_TOP_06_B_+Z_8",
+    "ST_BRACING_TOP_06_B_+Z_9",
+    "ST_BRACING_TOP_06_B_-X_2",
+    "ST_BRACING_TOP_06_B_-X_3",
+    "ST_BRACING_TOP_06_B_-Y_6",
+    "ST_BRACING_TOP_06_B_-Z_14",
+    "ST_BRACING_TOP_06_B_-Z_15",
+    "ST_BRACING_TOP_06_B_-Z_16",
+    "ST_BRACING_TOP_06_B_-Z_17",
+    "ST_BRACING_TOP_06_B_-Z_18",
+    "ST_BRACING_TOP_06_B_-Z_19"
+   ],
+   "original_position_m": [
+    206.3267,
+    2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    206.3267,
+    2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_117",
+   "prim_name": "ST_BRACING_TOP_06_A",
+   "prim_kind": "bracing",
+   "target_m": [
+    206.3267,
+    -2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_06_A_+Y_4",
+    "ST_BRACING_TOP_06_A_+Z_10",
+    "ST_BRACING_TOP_06_A_+Z_11",
+    "ST_BRACING_TOP_06_A_+Z_12",
+    "ST_BRACING_TOP_06_A_+Z_13",
+    "ST_BRACING_TOP_06_A_+Z_8",
+    "ST_BRACING_TOP_06_A_+Z_9",
+    "ST_BRACING_TOP_06_A_-X_2",
+    "ST_BRACING_TOP_06_A_-X_3",
+    "ST_BRACING_TOP_06_A_-Y_6",
+    "ST_BRACING_TOP_06_A_-Z_14",
+    "ST_BRACING_TOP_06_A_-Z_15",
+    "ST_BRACING_TOP_06_A_-Z_16",
+    "ST_BRACING_TOP_06_A_-Z_17",
+    "ST_BRACING_TOP_06_A_-Z_18",
+    "ST_BRACING_TOP_06_A_-Z_19"
+   ],
+   "original_position_m": [
+    206.3267,
+    -2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    206.3267,
+    -2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.476
+  },
+  {
+   "waypoint_id": "CWP_118",
+   "prim_name": "ST_BRACING_TOP_07_A",
+   "prim_kind": "bracing",
+   "target_m": [
+    217.5767,
+    -2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_07_A_+Y_4",
+    "ST_BRACING_TOP_07_A_+Z_10",
+    "ST_BRACING_TOP_07_A_+Z_11",
+    "ST_BRACING_TOP_07_A_+Z_12",
+    "ST_BRACING_TOP_07_A_+Z_13",
+    "ST_BRACING_TOP_07_A_+Z_8",
+    "ST_BRACING_TOP_07_A_+Z_9",
+    "ST_BRACING_TOP_07_A_-X_2",
+    "ST_BRACING_TOP_07_A_-X_3",
+    "ST_BRACING_TOP_07_A_-Y_6",
+    "ST_BRACING_TOP_07_A_-Z_14",
+    "ST_BRACING_TOP_07_A_-Z_15",
+    "ST_BRACING_TOP_07_A_-Z_16",
+    "ST_BRACING_TOP_07_A_-Z_17",
+    "ST_BRACING_TOP_07_A_-Z_18",
+    "ST_BRACING_TOP_07_A_-Z_19"
+   ],
+   "original_position_m": [
+    217.5767,
+    -2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    217.5767,
+    -2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 11.25
+  },
+  {
+   "waypoint_id": "CWP_119",
+   "prim_name": "ST_BRACING_TOP_07_B",
+   "prim_kind": "bracing",
+   "target_m": [
+    217.5767,
+    2.2379,
+    21.15
+   ],
+   "covers": [
+    "ST_BRACING_TOP_07_B_+Y_4",
+    "ST_BRACING_TOP_07_B_+Z_10",
+    "ST_BRACING_TOP_07_B_+Z_11",
+    "ST_BRACING_TOP_07_B_+Z_12",
+    "ST_BRACING_TOP_07_B_+Z_13",
+    "ST_BRACING_TOP_07_B_+Z_8",
+    "ST_BRACING_TOP_07_B_+Z_9",
+    "ST_BRACING_TOP_07_B_-X_2",
+    "ST_BRACING_TOP_07_B_-X_3",
+    "ST_BRACING_TOP_07_B_-Y_6",
+    "ST_BRACING_TOP_07_B_-Z_14",
+    "ST_BRACING_TOP_07_B_-Z_15",
+    "ST_BRACING_TOP_07_B_-Z_16",
+    "ST_BRACING_TOP_07_B_-Z_17",
+    "ST_BRACING_TOP_07_B_-Z_18",
+    "ST_BRACING_TOP_07_B_-Z_19"
+   ],
+   "original_position_m": [
+    217.5767,
+    2.2379,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    217.5767,
+    2.2379,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 4.476
+  },
+  {
+   "waypoint_id": "CWP_120",
+   "prim_name": "ST_PORTAL_STRUT_225",
+   "prim_kind": "bracing",
+   "target_m": [
+    225.0,
+    0.0,
+    21.15
+   ],
+   "covers": [
+    "ST_PORTAL_STRUT_225_+X_0",
+    "ST_PORTAL_STRUT_225_+X_1",
+    "ST_PORTAL_STRUT_225_+Y_4",
+    "ST_PORTAL_STRUT_225_+Z_6",
+    "ST_PORTAL_STRUT_225_+Z_7",
+    "ST_PORTAL_STRUT_225_+Z_8",
+    "ST_PORTAL_STRUT_225_-X_2",
+    "ST_PORTAL_STRUT_225_-X_3",
+    "ST_PORTAL_STRUT_225_-Y_5",
+    "ST_PORTAL_STRUT_225_-Z_10",
+    "ST_PORTAL_STRUT_225_-Z_11",
+    "ST_PORTAL_STRUT_225_-Z_9"
+   ],
+   "original_position_m": [
+    225.0,
+    0.0,
+    29.15
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    225.0,
+    0.0,
+    29.15
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 7.753
+  },
+  {
+   "waypoint_id": "CWP_121",
+   "prim_name": "MB_PIER_COL_007",
+   "prim_kind": "pier_column",
+   "target_m": [
+    256.0,
+    28.0,
+    8.0689
+   ],
+   "covers": [
+    "MB_PIER_COL_007_cap_bottom",
+    "MB_PIER_COL_007_cap_top",
+    "MB_PIER_COL_007_side_0",
+    "MB_PIER_COL_007_side_1",
+    "MB_PIER_COL_007_side_10",
+    "MB_PIER_COL_007_side_11",
+    "MB_PIER_COL_007_side_2",
+    "MB_PIER_COL_007_side_3",
+    "MB_PIER_COL_007_side_4",
+    "MB_PIER_COL_007_side_5",
+    "MB_PIER_COL_007_side_6",
+    "MB_PIER_COL_007_side_7",
+    "MB_PIER_COL_007_side_8",
+    "MB_PIER_COL_007_side_9"
+   ],
+   "original_position_m": [
+    264.0,
+    28.0,
+    8.0689
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    264.0,
+    28.0,
+    8.0689
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 4.249,
+   "route_length_m": 52.435
+  },
+  {
+   "waypoint_id": "CWP_122",
+   "prim_name": "BR_JOINT_002_GAP",
+   "prim_kind": "expansion_joint",
+   "target_m": [
+    315.0,
+    -4.4,
+    14.2725
+   ],
+   "covers": [
+    "BR_JOINT_002_GAP_+X_0",
+    "BR_JOINT_002_GAP_+X_1",
+    "BR_JOINT_002_GAP_+Z_6",
+    "BR_JOINT_002_GAP_+Z_7",
+    "BR_JOINT_002_GAP_+Z_8",
+    "BR_JOINT_002_GAP_-X_2",
+    "BR_JOINT_002_GAP_-X_3",
+    "BR_JOINT_002_GAP_-Y_5",
+    "BR_JOINT_002_GAP_-Z_10",
+    "BR_JOINT_002_GAP_-Z_11",
+    "BR_JOINT_002_GAP_-Z_9"
+   ],
+   "original_position_m": [
+    315.0,
+    -4.4,
+    22.2725
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 7.225,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    315.0,
+    -4.4,
+    22.2725
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 7.225,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     301.0,
+     8.0,
+     19.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.647,
+   "route_length_m": 62.443
+  },
+  {
+   "waypoint_id": "CWP_123",
+   "prim_name": "BR_JOINT_002_NOSE_B",
+   "prim_kind": "structure",
+   "target_m": [
+    315.22,
+    -3.3,
+    14.2175
+   ],
+   "covers": [
+    "BR_JOINT_002_NOSE_B_+X_0",
+    "BR_JOINT_002_NOSE_B_+X_1",
+    "BR_JOINT_002_NOSE_B_+Z_6",
+    "BR_JOINT_002_NOSE_B_+Z_7",
+    "BR_JOINT_002_NOSE_B_+Z_8",
+    "BR_JOINT_002_NOSE_B_-X_2",
+    "BR_JOINT_002_NOSE_B_-X_3",
+    "BR_JOINT_002_NOSE_B_-Y_5",
+    "BR_JOINT_002_NOSE_B_-Z_10",
+    "BR_JOINT_002_NOSE_B_-Z_11",
+    "BR_JOINT_002_NOSE_B_-Z_9"
+   ],
+   "original_position_m": [
+    323.22,
+    -3.3,
+    14.2175
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 0.077,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 4.5,
+   "position_m": [
+    322.6409,
+    -4.9935,
+    18.3462
+   ],
+   "heading_rad": 2.9172,
+   "planned_clearance_m": 3.563,
+   "standoff_to_target_m": 8.659,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.563,
+   "route_length_m": 8.611
+  },
+  {
+   "waypoint_id": "CWP_124",
+   "prim_name": "BR_PIER_CAP_008",
+   "prim_kind": "pier_cap",
+   "target_m": [
+    360.0,
+    0.0,
+    11.775
+   ],
+   "covers": [
+    "BR_PIER_CAP_008_+X_0",
+    "BR_PIER_CAP_008_+X_1",
+    "BR_PIER_CAP_008_+Y_4",
+    "BR_PIER_CAP_008_+Z_6",
+    "BR_PIER_CAP_008_+Z_7",
+    "BR_PIER_CAP_008_+Z_8",
+    "BR_PIER_CAP_008_-X_2",
+    "BR_PIER_CAP_008_-X_3",
+    "BR_PIER_CAP_008_-Y_5",
+    "BR_PIER_CAP_008_-Z_10",
+    "BR_PIER_CAP_008_-Z_11",
+    "BR_PIER_CAP_008_-Z_9"
+   ],
+   "original_position_m": [
+    360.0,
+    0.0,
+    19.775
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 4.759,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    360.0,
+    0.0,
+    19.775
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 4.759,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     356.0,
+     -3.0,
+     19.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.529,
+   "route_length_m": 38.485
+  },
+  {
+   "waypoint_id": "CWP_125",
+   "prim_name": "BR_PIER_COL_008_1",
+   "prim_kind": "pier_column",
+   "target_m": [
+    360.85,
+    -2.75,
+    8.6758
+   ],
+   "covers": [
+    "BR_PIER_COL_008_1_cap_top",
+    "BR_PIER_COL_008_1_side_0",
+    "BR_PIER_COL_008_1_side_1",
+    "BR_PIER_COL_008_1_side_10",
+    "BR_PIER_COL_008_1_side_11",
+    "BR_PIER_COL_008_1_side_2",
+    "BR_PIER_COL_008_1_side_3",
+    "BR_PIER_COL_008_1_side_4",
+    "BR_PIER_COL_008_1_side_5",
+    "BR_PIER_COL_008_1_side_6",
+    "BR_PIER_COL_008_1_side_7",
+    "BR_PIER_COL_008_1_side_8",
+    "BR_PIER_COL_008_1_side_9"
+   ],
+   "original_position_m": [
+    368.85,
+    -2.75,
+    8.6758
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    368.85,
+    -2.75,
+    8.6758
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     362.0,
+     0.0,
+     18.0
+    ],
+    [
+     368.0,
+     -2.0,
+     12.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.525,
+   "route_length_m": 14.904
+  },
+  {
+   "waypoint_id": "CWP_126",
+   "prim_name": "BR_ABUTMENT_NORTH",
+   "prim_kind": "abutment",
+   "target_m": [
+    360.5,
+    -6.0,
+    7.0
+   ],
+   "covers": [
+    "BR_ABUTMENT_NORTH_+X_0",
+    "BR_ABUTMENT_NORTH_+X_1",
+    "BR_ABUTMENT_NORTH_+X_2",
+    "BR_ABUTMENT_NORTH_+X_3",
+    "BR_ABUTMENT_NORTH_+X_4",
+    "BR_ABUTMENT_NORTH_+X_5",
+    "BR_ABUTMENT_NORTH_+Z_24",
+    "BR_ABUTMENT_NORTH_-X_10",
+    "BR_ABUTMENT_NORTH_-X_11",
+    "BR_ABUTMENT_NORTH_-X_9",
+    "BR_ABUTMENT_NORTH_-Y_21",
+    "BR_ABUTMENT_NORTH_-Y_22",
+    "BR_ABUTMENT_NORTH_-Y_23"
+   ],
+   "original_position_m": [
+    368.5,
+    -6.0,
+    7.0
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 7.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    368.5,
+    -6.0,
+    7.0
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 7.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.0,
+   "route_length_m": 3.673
+  },
+  {
+   "waypoint_id": "CWP_127",
+   "prim_name": "BR_PIER_COL_008_2",
+   "prim_kind": "pier_column",
+   "target_m": [
+    360.85,
+    2.75,
+    8.6758
+   ],
+   "covers": [
+    "BR_PIER_COL_008_2_cap_top",
+    "BR_PIER_COL_008_2_side_0",
+    "BR_PIER_COL_008_2_side_1",
+    "BR_PIER_COL_008_2_side_10",
+    "BR_PIER_COL_008_2_side_11",
+    "BR_PIER_COL_008_2_side_2",
+    "BR_PIER_COL_008_2_side_3",
+    "BR_PIER_COL_008_2_side_4",
+    "BR_PIER_COL_008_2_side_5",
+    "BR_PIER_COL_008_2_side_6",
+    "BR_PIER_COL_008_2_side_7",
+    "BR_PIER_COL_008_2_side_8",
+    "BR_PIER_COL_008_2_side_9"
+   ],
+   "original_position_m": [
+    368.85,
+    2.75,
+    8.6758
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    368.85,
+    2.75,
+    8.6758
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 7.0,
+   "route_length_m": 8.916
+  },
+  {
+   "waypoint_id": "CWP_128",
+   "prim_name": "MB_PIER_COL_011",
+   "prim_kind": "pier_column",
+   "target_m": [
+    361.0,
+    28.0,
+    8.0067
+   ],
+   "covers": [
+    "MB_PIER_COL_011_cap_bottom",
+    "MB_PIER_COL_011_cap_top",
+    "MB_PIER_COL_011_side_0",
+    "MB_PIER_COL_011_side_1",
+    "MB_PIER_COL_011_side_10",
+    "MB_PIER_COL_011_side_11",
+    "MB_PIER_COL_011_side_2",
+    "MB_PIER_COL_011_side_3",
+    "MB_PIER_COL_011_side_4",
+    "MB_PIER_COL_011_side_5",
+    "MB_PIER_COL_011_side_6",
+    "MB_PIER_COL_011_side_7",
+    "MB_PIER_COL_011_side_8",
+    "MB_PIER_COL_011_side_9"
+   ],
+   "original_position_m": [
+    369.0,
+    28.0,
+    8.0067
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    369.0,
+    28.0,
+    8.0067
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 8.0,
+   "route_length_m": 25.259
+  },
+  {
+   "waypoint_id": "CWP_129",
+   "prim_name": "MB_PIER_COL_009",
+   "prim_kind": "pier_column",
+   "target_m": [
+    316.0,
+    28.0,
+    8.07
+   ],
+   "covers": [
+    "MB_PIER_COL_009_cap_bottom",
+    "MB_PIER_COL_009_cap_top",
+    "MB_PIER_COL_009_side_0",
+    "MB_PIER_COL_009_side_1",
+    "MB_PIER_COL_009_side_10",
+    "MB_PIER_COL_009_side_11",
+    "MB_PIER_COL_009_side_2",
+    "MB_PIER_COL_009_side_3",
+    "MB_PIER_COL_009_side_4",
+    "MB_PIER_COL_009_side_5",
+    "MB_PIER_COL_009_side_6",
+    "MB_PIER_COL_009_side_7",
+    "MB_PIER_COL_009_side_8",
+    "MB_PIER_COL_009_side_9"
+   ],
+   "original_position_m": [
+    324.0,
+    28.0,
+    8.07
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    324.0,
+    28.0,
+    8.07
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     361.0,
+     23.0,
+     8.0
+    ],
+    [
+     334.0,
+     23.0,
+     8.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.77,
+   "route_length_m": 47.615
+  },
+  {
+   "waypoint_id": "CWP_130",
+   "prim_name": "MB_PIER_COL_008",
+   "prim_kind": "pier_column",
+   "target_m": [
+    286.0,
+    28.0,
+    8.0793
+   ],
+   "covers": [
+    "MB_PIER_COL_008_cap_bottom",
+    "MB_PIER_COL_008_cap_top",
+    "MB_PIER_COL_008_side_0",
+    "MB_PIER_COL_008_side_1",
+    "MB_PIER_COL_008_side_10",
+    "MB_PIER_COL_008_side_11",
+    "MB_PIER_COL_008_side_2",
+    "MB_PIER_COL_008_side_3",
+    "MB_PIER_COL_008_side_4",
+    "MB_PIER_COL_008_side_5",
+    "MB_PIER_COL_008_side_6",
+    "MB_PIER_COL_008_side_7",
+    "MB_PIER_COL_008_side_8",
+    "MB_PIER_COL_008_side_9"
+   ],
+   "original_position_m": [
+    294.0,
+    28.0,
+    8.0793
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    294.0,
+    28.0,
+    8.0793
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     316.0,
+     23.0,
+     8.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.655,
+   "route_length_m": 31.995
+  },
+  {
+   "waypoint_id": "CWP_131",
+   "prim_name": "MB_MAST_004",
+   "prim_kind": "catenary_mast",
+   "target_m": [
+    270.14,
+    24.9,
+    20.85
+   ],
+   "covers": [
+    "MB_MAST_004_+X_0",
+    "MB_MAST_004_+X_1",
+    "MB_MAST_004_+Y_4",
+    "MB_MAST_004_+Y_5",
+    "MB_MAST_004_+Z_8",
+    "MB_MAST_004_-X_2",
+    "MB_MAST_004_-X_3",
+    "MB_MAST_004_-Y_6",
+    "MB_MAST_004_-Y_7",
+    "MB_MAST_004_-Z_9"
+   ],
+   "original_position_m": [
+    278.14,
+    24.9,
+    20.85
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.218,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 2.5,
+   "position_m": [
+    277.7303,
+    25.8371,
+    23.1313
+   ],
+   "heading_rad": -3.0188,
+   "planned_clearance_m": 3.576,
+   "standoff_to_target_m": 7.981,
+   "route_in": [
+    [
+     287.0,
+     21.0,
+     15.0
+    ],
+    [
+     283.0,
+     20.0,
+     19.0
+    ],
+    [
+     282.0,
+     20.0,
+     22.0
+    ],
+    [
+     279.0,
+     23.0,
+     24.0
+    ],
+    [
+     279.0,
+     25.0,
+     24.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.512,
+   "route_length_m": 29.427
+  },
+  {
+   "waypoint_id": "CWP_132",
+   "prim_name": "ST_DIAGONAL_S_07",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    216.4922,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_S_07_+X_1",
+    "ST_DIAGONAL_S_07_+Y_10",
+    "ST_DIAGONAL_S_07_+Y_11",
+    "ST_DIAGONAL_S_07_+Y_6",
+    "ST_DIAGONAL_S_07_+Y_7",
+    "ST_DIAGONAL_S_07_+Y_8",
+    "ST_DIAGONAL_S_07_+Y_9",
+    "ST_DIAGONAL_S_07_+Z_18",
+    "ST_DIAGONAL_S_07_+Z_19",
+    "ST_DIAGONAL_S_07_-X_3",
+    "ST_DIAGONAL_S_07_-X_4",
+    "ST_DIAGONAL_S_07_-X_5",
+    "ST_DIAGONAL_S_07_-Y_12",
+    "ST_DIAGONAL_S_07_-Y_13",
+    "ST_DIAGONAL_S_07_-Y_14",
+    "ST_DIAGONAL_S_07_-Y_15",
+    "ST_DIAGONAL_S_07_-Y_16",
+    "ST_DIAGONAL_S_07_-Y_17",
+    "ST_DIAGONAL_S_07_-Z_20",
+    "ST_DIAGONAL_S_07_-Z_21"
+   ],
+   "original_position_m": [
+    216.4922,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 2,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 10.75,
+   "position_m": [
+    211.532,
+    -3.4651,
+    24.8044
+   ],
+   "heading_rad": -0.5884,
+   "planned_clearance_m": 3.654,
+   "standoff_to_target_m": 10.224,
+   "route_in": [
+    [
+     276.0,
+     24.0,
+     24.0
+    ],
+    [
+     269.0,
+     20.0,
+     24.0
+    ],
+    [
+     212.0,
+     -3.0,
+     25.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.552,
+   "route_length_m": 72.893
+  },
+  {
+   "waypoint_id": "CWP_133",
+   "prim_name": "ST_VERTICAL_S_07",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    213.75,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_07_+X_0",
+    "ST_VERTICAL_S_07_+X_1",
+    "ST_VERTICAL_S_07_+X_2",
+    "ST_VERTICAL_S_07_+Y_6",
+    "ST_VERTICAL_S_07_+Y_7",
+    "ST_VERTICAL_S_07_+Y_8",
+    "ST_VERTICAL_S_07_+Z_12",
+    "ST_VERTICAL_S_07_-X_3",
+    "ST_VERTICAL_S_07_-X_4",
+    "ST_VERTICAL_S_07_-X_5",
+    "ST_VERTICAL_S_07_-Y_10",
+    "ST_VERTICAL_S_07_-Y_11",
+    "ST_VERTICAL_S_07_-Y_9",
+    "ST_VERTICAL_S_07_-Z_13"
+   ],
+   "original_position_m": [
+    213.75,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 9.75,
+   "position_m": [
+    213.1749,
+    -3.839,
+    24.8119
+   ],
+   "heading_rad": -1.3774,
+   "planned_clearance_m": 3.662,
+   "standoff_to_target_m": 8.834,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 1.685
+  },
+  {
+   "waypoint_id": "CWP_134",
+   "prim_name": "ST_DIAGONAL_S_06",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    205.2422,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_S_06_+X_1",
+    "ST_DIAGONAL_S_06_+Y_10",
+    "ST_DIAGONAL_S_06_+Y_11",
+    "ST_DIAGONAL_S_06_+Y_6",
+    "ST_DIAGONAL_S_06_+Y_7",
+    "ST_DIAGONAL_S_06_+Y_8",
+    "ST_DIAGONAL_S_06_+Y_9",
+    "ST_DIAGONAL_S_06_+Z_18",
+    "ST_DIAGONAL_S_06_+Z_19",
+    "ST_DIAGONAL_S_06_-X_3",
+    "ST_DIAGONAL_S_06_-X_4",
+    "ST_DIAGONAL_S_06_-X_5",
+    "ST_DIAGONAL_S_06_-Y_12",
+    "ST_DIAGONAL_S_06_-Y_13",
+    "ST_DIAGONAL_S_06_-Y_14",
+    "ST_DIAGONAL_S_06_-Y_15",
+    "ST_DIAGONAL_S_06_-Y_16",
+    "ST_DIAGONAL_S_06_-Y_17",
+    "ST_DIAGONAL_S_06_-Z_20",
+    "ST_DIAGONAL_S_06_-Z_21"
+   ],
+   "original_position_m": [
+    205.2422,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 2,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 10.75,
+   "position_m": [
+    200.282,
+    -3.4651,
+    24.8044
+   ],
+   "heading_rad": -0.5884,
+   "planned_clearance_m": 3.654,
+   "standoff_to_target_m": 10.224,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 12.898
+  },
+  {
+   "waypoint_id": "CWP_135",
+   "prim_name": "ST_VERTICAL_S_06",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    202.5,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_06_+X_0",
+    "ST_VERTICAL_S_06_+X_1",
+    "ST_VERTICAL_S_06_+X_2",
+    "ST_VERTICAL_S_06_+Y_6",
+    "ST_VERTICAL_S_06_+Y_7",
+    "ST_VERTICAL_S_06_+Y_8",
+    "ST_VERTICAL_S_06_+Z_12",
+    "ST_VERTICAL_S_06_-X_3",
+    "ST_VERTICAL_S_06_-X_4",
+    "ST_VERTICAL_S_06_-X_5",
+    "ST_VERTICAL_S_06_-Y_10",
+    "ST_VERTICAL_S_06_-Y_11",
+    "ST_VERTICAL_S_06_-Y_9",
+    "ST_VERTICAL_S_06_-Z_13"
+   ],
+   "original_position_m": [
+    202.5,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 9.75,
+   "position_m": [
+    201.9249,
+    -3.839,
+    24.8119
+   ],
+   "heading_rad": -1.3774,
+   "planned_clearance_m": 3.662,
+   "standoff_to_target_m": 8.834,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 1.685
+  },
+  {
+   "waypoint_id": "CWP_136",
+   "prim_name": "ST_DIAGONAL_S_05",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    193.9922,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_S_05_+X_1",
+    "ST_DIAGONAL_S_05_+Y_10",
+    "ST_DIAGONAL_S_05_+Y_11",
+    "ST_DIAGONAL_S_05_+Y_6",
+    "ST_DIAGONAL_S_05_+Y_7",
+    "ST_DIAGONAL_S_05_+Y_8",
+    "ST_DIAGONAL_S_05_+Y_9",
+    "ST_DIAGONAL_S_05_+Z_18",
+    "ST_DIAGONAL_S_05_+Z_19",
+    "ST_DIAGONAL_S_05_-X_3",
+    "ST_DIAGONAL_S_05_-X_4",
+    "ST_DIAGONAL_S_05_-X_5",
+    "ST_DIAGONAL_S_05_-Y_12",
+    "ST_DIAGONAL_S_05_-Y_13",
+    "ST_DIAGONAL_S_05_-Y_14",
+    "ST_DIAGONAL_S_05_-Y_15",
+    "ST_DIAGONAL_S_05_-Y_16",
+    "ST_DIAGONAL_S_05_-Y_17",
+    "ST_DIAGONAL_S_05_-Z_20",
+    "ST_DIAGONAL_S_05_-Z_21"
+   ],
+   "original_position_m": [
+    193.9922,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 2,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 10.75,
+   "position_m": [
+    189.032,
+    -3.4651,
+    24.8044
+   ],
+   "heading_rad": -0.5884,
+   "planned_clearance_m": 3.654,
+   "standoff_to_target_m": 10.224,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 12.898
+  },
+  {
+   "waypoint_id": "CWP_137",
+   "prim_name": "ST_VERTICAL_S_05",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    191.25,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_05_+X_0",
+    "ST_VERTICAL_S_05_+X_1",
+    "ST_VERTICAL_S_05_+X_2",
+    "ST_VERTICAL_S_05_+Y_6",
+    "ST_VERTICAL_S_05_+Y_7",
+    "ST_VERTICAL_S_05_+Y_8",
+    "ST_VERTICAL_S_05_+Z_12",
+    "ST_VERTICAL_S_05_-X_3",
+    "ST_VERTICAL_S_05_-X_4",
+    "ST_VERTICAL_S_05_-X_5",
+    "ST_VERTICAL_S_05_-Y_10",
+    "ST_VERTICAL_S_05_-Y_11",
+    "ST_VERTICAL_S_05_-Y_9",
+    "ST_VERTICAL_S_05_-Z_13"
+   ],
+   "original_position_m": [
+    191.25,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 0.452,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 9.75,
+   "position_m": [
+    190.6749,
+    -3.839,
+    24.8119
+   ],
+   "heading_rad": -1.3774,
+   "planned_clearance_m": 3.662,
+   "standoff_to_target_m": 8.834,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 1.685
+  },
+  {
+   "waypoint_id": "CWP_138",
+   "prim_name": "ST_DIAGONAL_S_04",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    182.7422,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_S_04_+X_1",
+    "ST_DIAGONAL_S_04_+Y_10",
+    "ST_DIAGONAL_S_04_+Y_11",
+    "ST_DIAGONAL_S_04_+Y_6",
+    "ST_DIAGONAL_S_04_+Y_7",
+    "ST_DIAGONAL_S_04_+Y_8",
+    "ST_DIAGONAL_S_04_+Y_9",
+    "ST_DIAGONAL_S_04_+Z_18",
+    "ST_DIAGONAL_S_04_+Z_19",
+    "ST_DIAGONAL_S_04_-X_3",
+    "ST_DIAGONAL_S_04_-X_4",
+    "ST_DIAGONAL_S_04_-X_5",
+    "ST_DIAGONAL_S_04_-Y_12",
+    "ST_DIAGONAL_S_04_-Y_13",
+    "ST_DIAGONAL_S_04_-Y_14",
+    "ST_DIAGONAL_S_04_-Y_15",
+    "ST_DIAGONAL_S_04_-Y_16",
+    "ST_DIAGONAL_S_04_-Y_17",
+    "ST_DIAGONAL_S_04_-Z_20",
+    "ST_DIAGONAL_S_04_-Z_21"
+   ],
+   "original_position_m": [
+    182.7422,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 2,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 10.75,
+   "position_m": [
+    177.782,
+    -3.4651,
+    24.8044
+   ],
+   "heading_rad": -0.5884,
+   "planned_clearance_m": 3.654,
+   "standoff_to_target_m": 10.224,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 12.898
+  },
+  {
+   "waypoint_id": "CWP_139",
+   "prim_name": "ST_VERTICAL_S_04",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    180.0,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_04_+X_0",
+    "ST_VERTICAL_S_04_+X_1",
+    "ST_VERTICAL_S_04_+X_2",
+    "ST_VERTICAL_S_04_+Y_6",
+    "ST_VERTICAL_S_04_+Y_7",
+    "ST_VERTICAL_S_04_+Y_8",
+    "ST_VERTICAL_S_04_+Z_12",
+    "ST_VERTICAL_S_04_-X_3",
+    "ST_VERTICAL_S_04_-X_4",
+    "ST_VERTICAL_S_04_-X_5",
+    "ST_VERTICAL_S_04_-Y_10",
+    "ST_VERTICAL_S_04_-Y_11",
+    "ST_VERTICAL_S_04_-Y_9",
+    "ST_VERTICAL_S_04_-Z_13"
+   ],
+   "original_position_m": [
+    180.0,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 9.75,
+   "position_m": [
+    179.4249,
+    -3.839,
+    24.8119
+   ],
+   "heading_rad": -1.3774,
+   "planned_clearance_m": 3.662,
+   "standoff_to_target_m": 8.834,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 1.685
+  },
+  {
+   "waypoint_id": "CWP_140",
+   "prim_name": "ST_DIAGONAL_S_03",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    171.4922,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_S_03_+X_1",
+    "ST_DIAGONAL_S_03_+Y_10",
+    "ST_DIAGONAL_S_03_+Y_11",
+    "ST_DIAGONAL_S_03_+Y_6",
+    "ST_DIAGONAL_S_03_+Y_7",
+    "ST_DIAGONAL_S_03_+Y_8",
+    "ST_DIAGONAL_S_03_+Y_9",
+    "ST_DIAGONAL_S_03_+Z_18",
+    "ST_DIAGONAL_S_03_+Z_19",
+    "ST_DIAGONAL_S_03_-X_3",
+    "ST_DIAGONAL_S_03_-X_4",
+    "ST_DIAGONAL_S_03_-X_5",
+    "ST_DIAGONAL_S_03_-Y_12",
+    "ST_DIAGONAL_S_03_-Y_13",
+    "ST_DIAGONAL_S_03_-Y_14",
+    "ST_DIAGONAL_S_03_-Y_15",
+    "ST_DIAGONAL_S_03_-Y_16",
+    "ST_DIAGONAL_S_03_-Y_17",
+    "ST_DIAGONAL_S_03_-Z_20",
+    "ST_DIAGONAL_S_03_-Z_21"
+   ],
+   "original_position_m": [
+    171.4922,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 2,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 10.75,
+   "position_m": [
+    166.532,
+    -3.4651,
+    24.8044
+   ],
+   "heading_rad": -0.5884,
+   "planned_clearance_m": 3.654,
+   "standoff_to_target_m": 10.224,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 12.898
+  },
+  {
+   "waypoint_id": "CWP_141",
+   "prim_name": "ST_VERTICAL_S_03",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    168.75,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_03_+X_0",
+    "ST_VERTICAL_S_03_+X_1",
+    "ST_VERTICAL_S_03_+X_2",
+    "ST_VERTICAL_S_03_+Y_6",
+    "ST_VERTICAL_S_03_+Y_7",
+    "ST_VERTICAL_S_03_+Y_8",
+    "ST_VERTICAL_S_03_+Z_12",
+    "ST_VERTICAL_S_03_-X_3",
+    "ST_VERTICAL_S_03_-X_4",
+    "ST_VERTICAL_S_03_-X_5",
+    "ST_VERTICAL_S_03_-Y_10",
+    "ST_VERTICAL_S_03_-Y_11",
+    "ST_VERTICAL_S_03_-Y_9",
+    "ST_VERTICAL_S_03_-Z_13"
+   ],
+   "original_position_m": [
+    168.75,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 9.75,
+   "position_m": [
+    168.1749,
+    -3.839,
+    24.8119
+   ],
+   "heading_rad": -1.3774,
+   "planned_clearance_m": 3.662,
+   "standoff_to_target_m": 8.834,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 1.685
+  },
+  {
+   "waypoint_id": "CWP_142",
+   "prim_name": "ST_DIAGONAL_S_02",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    160.2422,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_S_02_+X_1",
+    "ST_DIAGONAL_S_02_+Y_10",
+    "ST_DIAGONAL_S_02_+Y_11",
+    "ST_DIAGONAL_S_02_+Y_6",
+    "ST_DIAGONAL_S_02_+Y_7",
+    "ST_DIAGONAL_S_02_+Y_8",
+    "ST_DIAGONAL_S_02_+Y_9",
+    "ST_DIAGONAL_S_02_+Z_18",
+    "ST_DIAGONAL_S_02_+Z_19",
+    "ST_DIAGONAL_S_02_-X_3",
+    "ST_DIAGONAL_S_02_-X_4",
+    "ST_DIAGONAL_S_02_-X_5",
+    "ST_DIAGONAL_S_02_-Y_12",
+    "ST_DIAGONAL_S_02_-Y_13",
+    "ST_DIAGONAL_S_02_-Y_14",
+    "ST_DIAGONAL_S_02_-Y_15",
+    "ST_DIAGONAL_S_02_-Y_16",
+    "ST_DIAGONAL_S_02_-Y_17",
+    "ST_DIAGONAL_S_02_-Z_20",
+    "ST_DIAGONAL_S_02_-Z_21"
+   ],
+   "original_position_m": [
+    160.2422,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 2,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 10.75,
+   "position_m": [
+    155.282,
+    -3.4651,
+    24.8044
+   ],
+   "heading_rad": -0.5884,
+   "planned_clearance_m": 3.654,
+   "standoff_to_target_m": 10.224,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 12.898
+  },
+  {
+   "waypoint_id": "CWP_143",
+   "prim_name": "ST_VERTICAL_S_02",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    157.5,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_02_+X_0",
+    "ST_VERTICAL_S_02_+X_1",
+    "ST_VERTICAL_S_02_+X_2",
+    "ST_VERTICAL_S_02_+Y_6",
+    "ST_VERTICAL_S_02_+Y_7",
+    "ST_VERTICAL_S_02_+Y_8",
+    "ST_VERTICAL_S_02_+Z_12",
+    "ST_VERTICAL_S_02_-X_3",
+    "ST_VERTICAL_S_02_-X_4",
+    "ST_VERTICAL_S_02_-X_5",
+    "ST_VERTICAL_S_02_-Y_10",
+    "ST_VERTICAL_S_02_-Y_11",
+    "ST_VERTICAL_S_02_-Y_9",
+    "ST_VERTICAL_S_02_-Z_13"
+   ],
+   "original_position_m": [
+    157.5,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 9.75,
+   "position_m": [
+    156.9249,
+    -3.839,
+    24.8119
+   ],
+   "heading_rad": -1.3774,
+   "planned_clearance_m": 3.662,
+   "standoff_to_target_m": 8.834,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 1.685
+  },
+  {
+   "waypoint_id": "CWP_144",
+   "prim_name": "ST_DIAGONAL_S_01",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    148.9922,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_S_01_+X_1",
+    "ST_DIAGONAL_S_01_+Y_10",
+    "ST_DIAGONAL_S_01_+Y_11",
+    "ST_DIAGONAL_S_01_+Y_6",
+    "ST_DIAGONAL_S_01_+Y_7",
+    "ST_DIAGONAL_S_01_+Y_8",
+    "ST_DIAGONAL_S_01_+Y_9",
+    "ST_DIAGONAL_S_01_+Z_18",
+    "ST_DIAGONAL_S_01_+Z_19",
+    "ST_DIAGONAL_S_01_-X_3",
+    "ST_DIAGONAL_S_01_-X_4",
+    "ST_DIAGONAL_S_01_-X_5",
+    "ST_DIAGONAL_S_01_-Y_12",
+    "ST_DIAGONAL_S_01_-Y_13",
+    "ST_DIAGONAL_S_01_-Y_14",
+    "ST_DIAGONAL_S_01_-Y_15",
+    "ST_DIAGONAL_S_01_-Y_16",
+    "ST_DIAGONAL_S_01_-Y_17",
+    "ST_DIAGONAL_S_01_-Z_20",
+    "ST_DIAGONAL_S_01_-Z_21"
+   ],
+   "original_position_m": [
+    148.9922,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 0.533,
+   "nudge_tier": 2,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 10.75,
+   "position_m": [
+    144.032,
+    -3.4651,
+    24.8044
+   ],
+   "heading_rad": -0.5884,
+   "planned_clearance_m": 3.654,
+   "standoff_to_target_m": 10.224,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 12.898
+  },
+  {
+   "waypoint_id": "CWP_145",
+   "prim_name": "ST_VERTICAL_S_01",
+   "prim_kind": "truss_vertical",
+   "target_m": [
+    146.25,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_VERTICAL_S_01_+X_0",
+    "ST_VERTICAL_S_01_+X_1",
+    "ST_VERTICAL_S_01_+X_2",
+    "ST_VERTICAL_S_01_+Y_6",
+    "ST_VERTICAL_S_01_+Y_7",
+    "ST_VERTICAL_S_01_+Y_8",
+    "ST_VERTICAL_S_01_+Z_12",
+    "ST_VERTICAL_S_01_-X_3",
+    "ST_VERTICAL_S_01_-X_4",
+    "ST_VERTICAL_S_01_-X_5",
+    "ST_VERTICAL_S_01_-Y_10",
+    "ST_VERTICAL_S_01_-Y_11",
+    "ST_VERTICAL_S_01_-Y_9",
+    "ST_VERTICAL_S_01_-Z_13"
+   ],
+   "original_position_m": [
+    146.25,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 9.75,
+   "position_m": [
+    145.6749,
+    -3.839,
+    24.8119
+   ],
+   "heading_rad": -1.3774,
+   "planned_clearance_m": 3.662,
+   "standoff_to_target_m": 8.834,
+   "route_in": [],
+   "route_method": "straight",
+   "route_min_clearance_m": 3.654,
+   "route_length_m": 1.685
+  },
+  {
+   "waypoint_id": "CWP_146",
+   "prim_name": "ST_DIAGONAL_S_00",
+   "prim_kind": "truss_diagonal",
+   "target_m": [
+    137.7422,
+    -6.775,
+    16.5
+   ],
+   "covers": [
+    "ST_DIAGONAL_S_00_+X_1",
+    "ST_DIAGONAL_S_00_+Y_10",
+    "ST_DIAGONAL_S_00_+Y_11",
+    "ST_DIAGONAL_S_00_+Y_6",
+    "ST_DIAGONAL_S_00_+Y_7",
+    "ST_DIAGONAL_S_00_+Y_8",
+    "ST_DIAGONAL_S_00_+Y_9",
+    "ST_DIAGONAL_S_00_+Z_18",
+    "ST_DIAGONAL_S_00_+Z_19",
+    "ST_DIAGONAL_S_00_-X_3",
+    "ST_DIAGONAL_S_00_-X_4",
+    "ST_DIAGONAL_S_00_-X_5",
+    "ST_DIAGONAL_S_00_-Y_12",
+    "ST_DIAGONAL_S_00_-Y_13",
+    "ST_DIAGONAL_S_00_-Y_14",
+    "ST_DIAGONAL_S_00_-Y_15",
+    "ST_DIAGONAL_S_00_-Y_16",
+    "ST_DIAGONAL_S_00_-Y_17",
+    "ST_DIAGONAL_S_00_-Z_20",
+    "ST_DIAGONAL_S_00_-Z_21"
+   ],
+   "original_position_m": [
+    137.7422,
+    1.225,
+    16.5
+   ],
+   "original_heading_rad": -1.5708,
+   "original_clearance_m": 1.381,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 8.25,
+   "position_m": [
+    130.6936,
+    4.8755,
+    18.7481
+   ],
+   "heading_rad": -1.0267,
+   "planned_clearance_m": 3.563,
+   "standoff_to_target_m": 13.801,
+   "route_in": [
+    [
+     133.0,
+     3.0,
+     25.0
+    ],
+    [
+     131.0,
+     5.0,
+     23.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.561,
+   "route_length_m": 22.132
+  },
+  {
+   "waypoint_id": "CWP_147",
+   "prim_name": "MB_MAST_002",
+   "prim_kind": "catenary_mast",
+   "target_m": [
+    75.14,
+    24.9,
+    20.85
+   ],
+   "covers": [
+    "MB_MAST_002_+X_0",
+    "MB_MAST_002_+X_1",
+    "MB_MAST_002_+Y_4",
+    "MB_MAST_002_+Y_5",
+    "MB_MAST_002_+Z_8",
+    "MB_MAST_002_-X_2",
+    "MB_MAST_002_-X_3",
+    "MB_MAST_002_-Y_6",
+    "MB_MAST_002_-Y_7",
+    "MB_MAST_002_-Z_9"
+   ],
+   "original_position_m": [
+    83.14,
+    24.9,
+    20.85
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.218,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 2.5,
+   "position_m": [
+    82.7303,
+    25.8371,
+    23.1313
+   ],
+   "heading_rad": -3.0188,
+   "planned_clearance_m": 3.576,
+   "standoff_to_target_m": 7.981,
+   "route_in": [
+    [
+     87.0,
+     24.0,
+     24.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.55,
+   "route_length_m": 52.713
+  },
+  {
+   "waypoint_id": "CWP_148",
+   "prim_name": "MB_PIER_COL_003",
+   "prim_kind": "pier_column",
+   "target_m": [
+    61.0,
+    28.0,
+    8.0649
+   ],
+   "covers": [
+    "MB_PIER_COL_003_cap_bottom",
+    "MB_PIER_COL_003_cap_top",
+    "MB_PIER_COL_003_side_0",
+    "MB_PIER_COL_003_side_1",
+    "MB_PIER_COL_003_side_10",
+    "MB_PIER_COL_003_side_11",
+    "MB_PIER_COL_003_side_2",
+    "MB_PIER_COL_003_side_3",
+    "MB_PIER_COL_003_side_4",
+    "MB_PIER_COL_003_side_5",
+    "MB_PIER_COL_003_side_6",
+    "MB_PIER_COL_003_side_7",
+    "MB_PIER_COL_003_side_8",
+    "MB_PIER_COL_003_side_9"
+   ],
+   "original_position_m": [
+    69.0,
+    28.0,
+    8.0649
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 8.0,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    69.0,
+    28.0,
+    8.0649
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 8.0,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     81.0,
+     24.0,
+     24.0
+    ],
+    [
+     78.0,
+     21.0,
+     23.0
+    ],
+    [
+     77.0,
+     20.0,
+     21.0
+    ],
+    [
+     77.0,
+     20.0,
+     17.0
+    ],
+    [
+     74.0,
+     23.0,
+     13.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.552,
+   "route_length_m": 27.931
+  },
+  {
+   "waypoint_id": "CWP_149",
+   "prim_name": "MB_PIER_COL_004",
+   "prim_kind": "pier_column",
+   "target_m": [
+    91.0,
+    28.0,
+    8.0708
+   ],
+   "covers": [
+    "MB_PIER_COL_004_cap_bottom",
+    "MB_PIER_COL_004_cap_top",
+    "MB_PIER_COL_004_side_0",
+    "MB_PIER_COL_004_side_1",
+    "MB_PIER_COL_004_side_10",
+    "MB_PIER_COL_004_side_11",
+    "MB_PIER_COL_004_side_2",
+    "MB_PIER_COL_004_side_3",
+    "MB_PIER_COL_004_side_4",
+    "MB_PIER_COL_004_side_5",
+    "MB_PIER_COL_004_side_6",
+    "MB_PIER_COL_004_side_7",
+    "MB_PIER_COL_004_side_8",
+    "MB_PIER_COL_004_side_9"
+   ],
+   "original_position_m": [
+    99.0,
+    28.0,
+    8.0708
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 7.729,
+   "nudge_tier": 0,
+   "reachable_in_plan": true,
+   "nudged": false,
+   "nudge_m": 0.0,
+   "position_m": [
+    99.0,
+    28.0,
+    8.0708
+   ],
+   "heading_rad": -3.1416,
+   "planned_clearance_m": 7.729,
+   "standoff_to_target_m": 8.0,
+   "route_in": [
+    [
+     91.0,
+     23.0,
+     8.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.655,
+   "route_length_m": 31.995
+  },
+  {
+   "waypoint_id": "CWP_150",
+   "prim_name": "MB_MAST_003",
+   "prim_kind": "catenary_mast",
+   "target_m": [
+    180.14,
+    31.1,
+    20.85
+   ],
+   "covers": [
+    "MB_MAST_003_+X_0",
+    "MB_MAST_003_+X_1",
+    "MB_MAST_003_+Y_4",
+    "MB_MAST_003_+Y_5",
+    "MB_MAST_003_+Z_8",
+    "MB_MAST_003_-X_2",
+    "MB_MAST_003_-X_3",
+    "MB_MAST_003_-Y_6",
+    "MB_MAST_003_-Y_7",
+    "MB_MAST_003_-Z_9"
+   ],
+   "original_position_m": [
+    188.14,
+    31.1,
+    20.85
+   ],
+   "original_heading_rad": -3.1416,
+   "original_clearance_m": 1.218,
+   "nudge_tier": 1,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 3.5,
+   "position_m": [
+    187.5726,
+    33.085,
+    23.6763
+   ],
+   "heading_rad": -2.8806,
+   "planned_clearance_m": 3.661,
+   "standoff_to_target_m": 8.196,
+   "route_in": [
+    [
+     162.0,
+     36.0,
+     15.0
+    ],
+    [
+     183.0,
+     36.0,
+     22.0
+    ],
+    [
+     188.0,
+     33.0,
+     24.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.535,
+   "route_length_m": 92.726
+  }
+ ]
+}
