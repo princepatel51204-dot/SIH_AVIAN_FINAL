@@ -549,29 +549,41 @@ Section 2 (357 false positives from its texture-triggered CRACK habit).
 
 ### MISSION-TEST result (33 waypoints, 2,660 tiles, scored once per model at its own MISSION-VAL threshold)
 
-**Unseen-defect recall is the headline metric**: 21 of 73 scoreable
+**Unseen-defect recall is the headline metric.** 21 of 73 scoreable
 defects were never a TRAIN or VAL positive in `splits_final.json`
 (unseen-instance assertion re-run and passed: `0 unseen ids also found
-in train/val -- PASS`). All-defect recall is reported alongside, labeled
-explicitly as optimistic (it includes defects the model may have
-partially memorized).
+in train/val -- PASS`) — but the recall denominator below is **not** 21.
+It is the count of unseen defects that actually fell within range
+(≤12 m) of some MISSION-TEST tile, which is smaller: only 3 of the 21
+unseen defects were ever in scope for this waypoint set (the rest sit on
+parts of the structure the 33 MISSION-TEST waypoints never look at
+closely enough to score). Similarly, "all-defects" recall's denominator
+is 20 in-scope defects, not all 73. All-defect recall is reported
+alongside, labeled explicitly as optimistic (it includes defects the
+model may have partially memorized).
 
-| model | thr | unseen recall (n) | all-defects recall (optimistic) | FP/100 tiles |
+**Correction**: an earlier version of this table and the HANDOFF —
+SECTION 3 block both wrote "0.333 (1/21)" — conflating the 21-defect
+dataset-wide unseen count with the actual recall fraction (1/3). Fixed
+here with exact numerators and denominators for every model.
+
+| model | thr | unseen recall (tp/n) | all-defects recall (tp/n, optimistic) | FP/100 tiles |
 |---|---:|---:|---:|---:|
-| v1 | 0.50 | 0.333 (1/21) | 0.150 | 37.59 |
-| **v2 (headline)** | 0.65 | **0.333 (1/21)** | 0.250 | **0.08** |
-| v3 | 0.10 | 0.333 (1/21) | 0.200 | 0.04 |
+| v1 | 0.50 | 0.333 (1/3) | 0.150 (3/20) | 37.59 |
+| **v2 (headline)** | 0.65 | **0.333 (1/3)** | 0.250 (5/20) | **0.08** |
+| v3 | 0.10 | 0.333 (1/3) | 0.200 (4/20) | 0.04 |
 
 All three models find exactly the same one unseen defect
 (`DEFECT_SPALL_010`, a spall — the same family that has carried every
 real signal since Section 1). **Read honestly**: unseen-defect recall is
-identical across all three models at this sample size (1/21) — the
+identical across all three models at this sample size (1/3) — the
 MISSION-VAL headline pick (v2) is decided by false-positive rate and
 all-defects recall, not by a real difference in unseen generalization,
-which this test set is too small to distinguish. v2's FP rate (0.08 per
-100 tiles) is ~470x lower than v1's (37.59) — the single most
-mission-relevant number in this section, since a field operator reviewing
-detections cares about false-alarm rate as much as recall.
+which this test set (3 in-scope unseen defects) is far too small to
+distinguish. v2's FP rate (0.08 per 100 tiles) is ~470x lower than v1's
+(37.59) — the single most mission-relevant number in this section, since
+a field operator reviewing detections cares about false-alarm rate as
+much as recall.
 
 ## Real-photo crack/no-crack test: **not run**
 
@@ -607,8 +619,9 @@ nowhere near enough to retrain on.
    37.59 FP/100 tiles on MISSION-TEST — the same failure named in Section
    1 (plain concrete texture read as CRACK), now visible at a scale where
    it would flood a real operator's review queue.
-2. **All three models generalize to unseen defects identically (1/21),
-   only on SPALL** — no model this pass has demonstrated real unseen
+2. **All three models generalize to unseen defects identically (1/3
+   in-scope unseen defects found), only on SPALL** — no model this pass
+   has demonstrated real unseen
    generalization on CRACK, CORROSION_COATING, FASTENER, or OTHER on
    mission-shaped imagery. Hard-negative mining (v3) traded recall for a
    near-zero false-positive rate without improving unseen recall — a
