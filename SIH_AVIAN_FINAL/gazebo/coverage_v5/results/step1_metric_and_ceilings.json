@@ -1,0 +1,328 @@
+{
+ "patch_set": {
+  "method": "uniform 1.0 m cells on every face of every inspectable primitive (coverage_final.py kinds), each patch weighted by its area",
+  "total": {
+   "patches": 97780,
+   "area_m2": 72895.0
+  },
+  "excluded_buried_centre_inside_another_solid_or_below_ground": {
+   "patches": 10320,
+   "area_m2": 6039.4
+  },
+  "excluded_faces_into_a_solid_within_0.5m": {
+   "patches": 25359,
+   "area_m2": 19149.3
+  },
+  "visible_denominator": {
+   "patches": 62101,
+   "area_m2": 47706.3
+  },
+  "buried_top_kinds": [
+   [
+    "truss_diagonal",
+    1664
+   ],
+   [
+    "pier_footing",
+    1283
+   ],
+   [
+    "bracing",
+    828
+   ],
+   [
+    "parapet",
+    736
+   ],
+   [
+    "diaphragm",
+    656
+   ],
+   [
+    "truss_chord",
+    592
+   ],
+   [
+    "girder",
+    580
+   ],
+   [
+    "service_duct",
+    544
+   ]
+  ],
+  "faces_into_top_kinds": [
+   [
+    "structure",
+    6561
+   ],
+   [
+    "deck_slab",
+    6400
+   ],
+   [
+    "deck_box",
+    3552
+   ],
+   [
+    "track_slab",
+    2088
+   ],
+   [
+    "parapet",
+    1766
+   ],
+   [
+    "girder",
+    1465
+   ],
+   [
+    "rail",
+    768
+   ],
+   [
+    "cable_trough",
+    738
+   ]
+  ]
+ },
+ "camera_model": {
+  "image": [
+   640,
+   480
+  ],
+  "hfov_deg": 80.0,
+  "vfov_deg": 64.37,
+  "max_range_m": 12.0,
+  "max_incidence_deg": 60.0,
+  "los": "exact ray casting vs collision JSON (566) + Gazebo-only visual boxes (173)",
+  "current_airframe": "fixed, mount (0.15,0,-0.02), 22.9 deg nose-down"
+ },
+ "rescore_plan_v4_fixed_camera": {
+  "covered_m2": 4174.0,
+  "pct": 8.75,
+  "by_component_pct": {
+   "abutments": 35.0,
+   "bearings": 9.1,
+   "deck edges": 8.8,
+   "deck furniture": 3.7,
+   "deck top": 2.1,
+   "deck underside": 0.0,
+   "girders": 4.3,
+   "parapets": 7.6,
+   "piers": 27.8,
+   "truss": 16.4
+  }
+ },
+ "full_pass_04_flown_holds_fixed_camera_pct": 8.71,
+ "ceilings": {
+  "fixed_camera_3.5m": 50.89,
+  "gimbal_3.5m_planning": 80.94,
+  "gimbal_3.5m_dense_probe": 81.37,
+  "physical_0.3m": 99.94,
+  "clearance_sweep": {
+   "3.0": {
+    "ceiling_pct": 82.06,
+    "sensed_ring_m": 2.5,
+    "v_max_2x_mps": 1.68,
+    "uncoverable_by_comp_m2": {
+     "abutments": 0,
+     "bearings": 1,
+     "deck edges": 179,
+     "deck furniture": 32,
+     "deck top": 2146,
+     "deck underside": 1655,
+     "girders": 1374,
+     "parapets": 186,
+     "piers": 131,
+     "truss": 2853
+    }
+   },
+   "2.5": {
+    "ceiling_pct": 89.68,
+    "sensed_ring_m": 2.0,
+    "v_max_2x_mps": 1.35,
+    "uncoverable_by_comp_m2": {
+     "abutments": 0,
+     "bearings": 1,
+     "deck edges": 34,
+     "deck furniture": 32,
+     "deck top": 1693,
+     "deck underside": 1655,
+     "girders": 1367,
+     "parapets": 9,
+     "piers": 131,
+     "truss": 1
+    }
+   },
+   "2.0": {
+    "ceiling_pct": 89.72,
+    "sensed_ring_m": 1.5,
+    "v_max_2x_mps": 1.01,
+    "uncoverable_by_comp_m2": {
+     "abutments": 0,
+     "bearings": 1,
+     "deck edges": 33,
+     "deck furniture": 32,
+     "deck top": 1693,
+     "deck underside": 1655,
+     "girders": 1348,
+     "parapets": 9,
+     "piers": 131,
+     "truss": 1
+    }
+   },
+   "1.5": {
+    "ceiling_pct": 89.76,
+    "sensed_ring_m": 1.0,
+    "v_max_2x_mps": 0.67,
+    "uncoverable_by_comp_m2": {
+     "abutments": 0,
+     "bearings": 1,
+     "deck edges": 25,
+     "deck furniture": 32,
+     "deck top": 1693,
+     "deck underside": 1655,
+     "girders": 1341,
+     "parapets": 9,
+     "piers": 131,
+     "truss": 1
+    }
+   }
+  },
+  "external_options": {
+   "cell_interior_m2": 6945.4,
+   "external_visible_m2": 40760.9,
+   "ceiling_35_external_pct": 89.73,
+   "ceiling_35_plus_truss25_external_pct": 99.42
+  }
+ },
+ "greedy_plans": {
+  "fixed": {
+   "camera": "fixed",
+   "visible_area_m2": 47706.3,
+   "ceiling_area_m2": 24279.5,
+   "ceiling_pct": 50.89,
+   "target_pct": 90.0,
+   "n_greedy": 1082,
+   "n_after_prune": 915,
+   "covered_area_m2": 24157.8,
+   "covered_pct": 50.64,
+   "by_component": {
+    "abutments": {
+     "visible_m2": 2254.9,
+     "ceiling_pct": 94.6,
+     "covered_pct": 94.5
+    },
+    "bearings": {
+     "visible_m2": 23.0,
+     "ceiling_pct": 61.4,
+     "covered_pct": 47.7
+    },
+    "deck edges": {
+     "visible_m2": 1504.2,
+     "ceiling_pct": 87.6,
+     "covered_pct": 87.4
+    },
+    "deck furniture": {
+     "visible_m2": 720.2,
+     "ceiling_pct": 93.9,
+     "covered_pct": 92.8
+    },
+    "deck top": {
+     "visible_m2": 9962.2,
+     "ceiling_pct": 72.3,
+     "covered_pct": 72.2
+    },
+    "deck underside": {
+     "visible_m2": 8985.1,
+     "ceiling_pct": 0.0,
+     "covered_pct": 0.0
+    },
+    "girders": {
+     "visible_m2": 8984.4,
+     "ceiling_pct": 24.5,
+     "covered_pct": 24.3
+    },
+    "parapets": {
+     "visible_m2": 3140.5,
+     "ceiling_pct": 91.0,
+     "covered_pct": 90.6
+    },
+    "piers": {
+     "visible_m2": 3536.7,
+     "ceiling_pct": 88.6,
+     "covered_pct": 88.3
+    },
+    "truss": {
+     "visible_m2": 8595.2,
+     "ceiling_pct": 55.1,
+     "covered_pct": 54.6
+    }
+   }
+  },
+  "gimbal": {
+   "camera": "gimbal",
+   "visible_area_m2": 47706.3,
+   "ceiling_area_m2": 38613.1,
+   "ceiling_pct": 80.94,
+   "target_pct": 90.0,
+   "n_greedy": 1366,
+   "n_after_prune": 1162,
+   "covered_area_m2": 38466.8,
+   "covered_pct": 80.63,
+   "by_component": {
+    "abutments": {
+     "visible_m2": 2254.9,
+     "ceiling_pct": 100.0,
+     "covered_pct": 99.9
+    },
+    "bearings": {
+     "visible_m2": 23.0,
+     "ceiling_pct": 95.5,
+     "covered_pct": 80.3
+    },
+    "deck edges": {
+     "visible_m2": 1504.2,
+     "ceiling_pct": 87.6,
+     "covered_pct": 87.2
+    },
+    "deck furniture": {
+     "visible_m2": 720.2,
+     "ceiling_pct": 95.5,
+     "covered_pct": 94.6
+    },
+    "deck top": {
+     "visible_m2": 9962.2,
+     "ceiling_pct": 75.3,
+     "covered_pct": 75.1
+    },
+    "deck underside": {
+     "visible_m2": 8985.1,
+     "ceiling_pct": 81.5,
+     "covered_pct": 81.5
+    },
+    "girders": {
+     "visible_m2": 8984.4,
+     "ceiling_pct": 84.5,
+     "covered_pct": 84.1
+    },
+    "parapets": {
+     "visible_m2": 3140.5,
+     "ceiling_pct": 93.5,
+     "covered_pct": 93.0
+    },
+    "piers": {
+     "visible_m2": 3536.7,
+     "ceiling_pct": 96.3,
+     "covered_pct": 96.0
+    },
+    "truss": {
+     "visible_m2": 8595.2,
+     "ceiling_pct": 64.9,
+     "covered_pct": 64.2
+    }
+   }
+  }
+ }
+}
