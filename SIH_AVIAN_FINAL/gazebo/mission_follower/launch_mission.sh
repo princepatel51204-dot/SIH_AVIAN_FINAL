@@ -13,6 +13,19 @@
 #        source ~/GarudaNEX/ros2_ws/install/setup.bash
 set -uo pipefail
 
+# Keep the laptop awake for the whole run. full_pass_04 was suspended twice
+# mid-flight (~44 min and ~19 min wall-clock gaps). Re-exec this script
+# under a logind block inhibitor (works without sudo for the active local
+# user); it is released automatically when the script exits.
+if [ -z "${AVIAN_INHIBITED:-}" ] && command -v systemd-inhibit >/dev/null; then
+  if systemd-inhibit --what=sleep:idle:handle-lid-switch --mode=block true 2>/dev/null; then
+    export AVIAN_INHIBITED=1
+    exec systemd-inhibit --what=sleep:idle:handle-lid-switch --mode=block \
+      --who=AVIAN --why="AVIAN mission ${1:-run}" "$0" "$@"
+  fi
+  echo "WARNING: systemd-inhibit refused -- the machine may suspend mid-run" >&2
+fi
+
 RUN="${1:?run name}"
 MAXWP="${2:-0}"
 BRAKE="${3:-true}"

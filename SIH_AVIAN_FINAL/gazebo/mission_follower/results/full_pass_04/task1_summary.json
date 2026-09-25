@@ -1,0 +1,138 @@
+{
+ "run": "full_pass_04",
+ "final": true,
+ "plan_file": "plan_used_v3.json",
+ "waypoints_in_source_mission": 150,
+ "logged": 150,
+ "unique_logged": 150,
+ "duplicates": 0,
+ "results": {
+  "reached": 149,
+  "not_attempted_unreachable_in_plan": 1
+ },
+ "reached": 149,
+ "nudged_in_plan": 46,
+ "mapping_true_minus_target_m": {
+  "n": 149,
+  "mean": 0.1293,
+  "median": 0.1321,
+  "p95": 0.2031,
+  "max": 0.2589
+ },
+ "mapping_unnudged_only_m": {
+  "n": 103,
+  "mean": 0.1322,
+  "median": 0.1347,
+  "p95": 0.2081,
+  "max": 0.2589
+ },
+ "mapping_mean_offset_xyz_m": [
+  -0.0056,
+  -0.0032,
+  0.0307
+ ],
+ "mapping_std_offset_xyz_m": [
+  0.1004,
+  0.0775,
+  0.0393
+ ],
+ "ekf_vs_true_m": {
+  "n": 149,
+  "mean": 0.0495,
+  "median": 0.0479,
+  "p95": 0.0775,
+  "max": 0.0961
+ },
+ "yaw_err_deg": {
+  "mean": 0.43,
+  "max": 1.66
+ },
+ "speed_calc": {
+  "decel_mps2": 1.95,
+  "stop_k_s": 0.592,
+  "t_lat_s": 0.15,
+  "clearance_m": 3.0,
+  "required_margin": 2.0,
+  "v_max_at_margin": 2.022,
+  "cruise_mps": 1.9,
+  "cruise_with_overshoot_mps": 1.947,
+  "stop_dist_m": 1.445,
+  "achieved_margin": 2.076
+ },
+ "brake_test": {
+  "speed_at_cmd_mps": 1.94,
+  "stop_dist_m": 1.148,
+  "stop_time_s": 1.5,
+  "implied_decel_mps2": 1.64,
+  "budget_stop_dist_m": 1.445,
+  "note": "measured from the instant zero velocity was commanded; excludes sensing latency (budgeted separately in t_lat)"
+ },
+ "sense_stats": {
+  "ticks": 38060,
+  "ticks_limited": 203,
+  "ticks_pushed": 280,
+  "min_range_m": 0.4530225514695187,
+  "no_fresh_lidar_ticks": 0,
+  "min_lidar": 1.0501993076940097,
+  "min_down": 0.4530225646495821,
+  "min_up": 3.546825052321859
+ },
+ "min_sensed_range_at_legs_m": 3.323,
+ "contacts": {
+  "episodes": 0,
+  "samples": 0
+ },
+ "camera": {
+  "frames": 21498,
+  "duration_wall_s": 14887.2,
+  "rate_hz": 1.44,
+  "max_gap_s": 5089.794,
+  "waypoint_snapshots": 149
+ },
+ "camera_sim_time": {
+  "frames_csv": 21498,
+  "rate_per_sim_s_hz": 11.25,
+  "max_sim_gap_s": 0.66,
+  "wall_gaps_over_60s": [
+   {
+    "frame": 3627,
+    "wall_gap_s": 5089.8,
+    "sim_gap_s": 0.132
+   },
+   {
+    "frame": 9048,
+    "wall_gap_s": 2588.3,
+    "sim_gap_s": 0.2
+   },
+   {
+    "frame": 13980,
+    "wall_gap_s": 2576.8,
+    "sim_gap_s": 0.064
+   },
+   {
+    "frame": 14665,
+    "wall_gap_s": 1112.6,
+    "sim_gap_s": 0.132
+   }
+  ]
+ },
+ "summary_follower": {
+  "waypoints_in_plan": 150,
+  "attempted": 149,
+  "reached": 149,
+  "results": {
+   "not_attempted_unreachable_in_plan": 1,
+   "reached": 149
+  },
+  "ekf_err_m": {
+   "mean": 0.0973,
+   "max": 0.1967,
+   "p95": 0.1641
+  },
+  "mission_time_sim_s": 1904.5,
+  "mission_time_wall_s": 14876.6,
+  "distance_ekf_m": 2581.1
+ },
+ "distance_true_m": 2563.2,
+ "planned_total_path_m": 2558.13
+}

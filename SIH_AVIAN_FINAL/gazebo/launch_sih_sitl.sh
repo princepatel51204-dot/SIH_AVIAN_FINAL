@@ -32,7 +32,12 @@ cd "${PX4_DIR}"
 export GZ_SIM_RESOURCE_PATH="${HERE}/models:${WS}/src/garudanex_sim/models:${GZ_SIM_RESOURCE_PATH:-}"
 PX4_GZ_WORLD=sih_avian_final PX4_GZ_MODEL_POSE="${SPAWN}" HEADLESS=1 \
   GZ_SIM_RESOURCE_PATH="${GZ_SIM_RESOURCE_PATH}" \
-  make px4_sitl gz_x500_lidar_2d > /tmp/sih_px4_sitl.log 2>&1 &
+  make px4_sitl gz_x500_lidar_2d > /tmp/sih_px4_sitl.log 2>&1 \
+  < <(tail -f /dev/null --pid="${PPID}") &
+# stdin: PX4's interactive shell (pxh>) re-prints its prompt in a tight loop
+# when stdin is at EOF, which grew this log to 16.7 GB during full_pass_04
+# (and costs CPU). A pipe that stays open but silent keeps the shell idle;
+# it closes by itself when the calling mission script exits.
 PX4_PID=$!
 echo "PX4/Gazebo launcher PID ${PX4_PID}, log: /tmp/sih_px4_sitl.log"
 

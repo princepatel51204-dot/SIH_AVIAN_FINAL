@@ -1,6 +1,7 @@
 {
  "run": "full_pass_03",
  "final": true,
+ "plan_file": "plan_used_v1.json",
  "waypoints_in_source_mission": 150,
  "logged": 150,
  "unique_logged": 150,
@@ -88,6 +89,12 @@
   "rate_hz": 9.25,
   "max_gap_s": 1.474,
   "waypoint_snapshots": 149
+ },
+ "camera_sim_time": {
+  "frames_csv": 28150,
+  "rate_per_sim_s_hz": 13.35,
+  "max_sim_gap_s": 0.464,
+  "wall_gaps_over_60s": []
  },
  "summary_follower": {
   "waypoints_in_plan": 150,

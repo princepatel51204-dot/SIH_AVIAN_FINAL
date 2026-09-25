@@ -1,0 +1,165 @@
+[0m[INFO] [1790288088.590184043] [sih_mission_follower]: plan /home/prince/avian_rev_c/SIH_AVIAN_FINAL/mission/gazebo_mission_plan.json: 150 waypoints, home [20.0, -30.0, 0.24], geodesy k_east=0.997068 k_north=1.000147[0m
+[0m[INFO] [1790288088.789685539] [sih_mission_follower]: phase WAIT -> ARM[0m
+[0m[INFO] [1790288090.969307774] [sih_mission_follower]: phase ARM -> TAKEOFF[0m
+[0m[INFO] [1790288115.013633191] [sih_mission_follower]: takeoff reached at [20.05, -30.05, 4.86][0m
+[0m[INFO] [1790288115.014150149] [sih_mission_follower]: phase TAKEOFF -> BRAKE_OUT[0m
+[0m[INFO] [1790288128.278244939] [sih_mission_follower]: phase BRAKE_OUT -> BRAKE_RUN[0m
+[0m[INFO] [1790288135.936344823] [sih_mission_follower]: BRAKE TEST: {'speed_at_cmd_mps': 1.94, 'stop_dist_m': 1.148, 'stop_time_s': 1.5, 'implied_decel_mps2': 1.64, 'budget_stop_dist_m': 1.445, 'note': 'measured from the instant zero velocity was commanded; excludes sensing latency (budgeted separately in t_lat)'}[0m
+[0m[INFO] [1790288135.936984995] [sih_mission_follower]: phase BRAKE_RUN -> BRAKE_BACK[0m
+[0m[INFO] [1790288153.633869284] [sih_mission_follower]: phase BRAKE_BACK -> MISSION[0m
+[0m[INFO] [1790288187.227512938] [sih_mission_follower]: CWP_001 reached: ekf err 0.080 m, leg 28.3 m in 17.2 s, min sensed 4.528[0m
+[0m[INFO] [1790288207.398938216] [sih_mission_follower]: CWP_002 reached: ekf err 0.110 m, leg 15.2 m in 10.2 s, min sensed 4.493[0m
+[0m[INFO] [1790288220.221509341] [sih_mission_follower]: CWP_003 reached: ekf err 0.069 m, leg 3.9 m in 6.5 s, min sensed 3.434[0m
+[0m[INFO] [1790288232.348658113] [sih_mission_follower]: CWP_004 reached: ekf err 0.118 m, leg 6.1 m in 6.2 s, min sensed 3.446[0m
+[0m[INFO] [1790288265.483153819] [sih_mission_follower]: CWP_005 reached: ekf err 0.124 m, leg 28.0 m in 16.8 s, min sensed 3.323[0m
+[0m[INFO] [1790288294.307179491] [sih_mission_follower]: CWP_006 reached: ekf err 0.121 m, leg 21.1 m in 14.1 s, min sensed 3.328[0m
+[0m[INFO] [1790288305.105107782] [sih_mission_follower]: CWP_007 reached: ekf err 0.118 m, leg 5.7 m in 5.5 s, min sensed 3.692[0m
+[0m[INFO] [1790288319.455799616] [sih_mission_follower]: CWP_008 reached: ekf err 0.181 m, leg 9.5 m in 7.2 s, min sensed 3.723[0m
+[0m[INFO] [1790288339.844752392] [sih_mission_follower]: CWP_009 reached: ekf err 0.111 m, leg 15.2 m in 10.2 s, min sensed 4.727[0m
+[0m[INFO] [1790288380.072523477] [sih_mission_follower]: CWP_010 reached: ekf err 0.091 m, leg 27.8 m in 19.4 s, min sensed 3.416[0m
+[0m[INFO] [1790288390.919403252] [sih_mission_follower]: CWP_011 reached: ekf err 0.138 m, leg 5.8 m in 5.5 s, min sensed 3.432[0m
+[0m[INFO] [1790288401.675827587] [sih_mission_follower]: CWP_012 reached: ekf err 0.124 m, leg 5.8 m in 5.5 s, min sensed 3.699[0m
+[0m[INFO] [1790288415.693536240] [sih_mission_follower]: CWP_013 reached: ekf err 0.169 m, leg 9.6 m in 7.2 s, min sensed 3.743[0m
+[0m[INFO] [1790288435.792754668] [sih_mission_follower]: CWP_014 reached: ekf err 0.074 m, leg 15.1 m in 10.2 s, min sensed 4.839[0m
+[0m[INFO] [1790288460.334783126] [sih_mission_follower]: CWP_015 reached: ekf err 0.138 m, leg 15.5 m in 12.0 s, min sensed 4.015[0m
+[0m[INFO] [1790288506.666649519] [sih_mission_follower]: CWP_016 reached: ekf err 0.072 m, leg 24.7 m in 22.8 s, min sensed 3.461[0m
+[0m[INFO] [1790288519.970057358] [sih_mission_follower]: CWP_017 reached: ekf err 0.115 m, leg 7.4 m in 6.8 s, min sensed 3.459[0m
+[0m[INFO] [1790288530.451855194] [sih_mission_follower]: CWP_018 reached: ekf err 0.106 m, leg 4.7 m in 5.1 s, min sensed 4.51[0m
+[0m[INFO] [1790288541.754521395] [sih_mission_follower]: CWP_019 reached: ekf err 0.123 m, leg 4.7 m in 5.5 s, min sensed 4.51[0m
+[0m[INFO] [1790288564.236212694] [sih_mission_follower]: CWP_020 reached: ekf err 0.049 m, leg 10.8 m in 11.1 s, min sensed 3.551[0m
+[0m[INFO] [1790288595.170272021] [sih_mission_follower]: CWP_021 reached: ekf err 0.109 m, leg 20.5 m in 15.3 s, min sensed 3.547[0m
+[0m[INFO] [1790288611.646622060] [sih_mission_follower]: CWP_022 reached: ekf err 0.083 m, leg 11.4 m in 8.3 s, min sensed 4.487[0m
+[0m[INFO] [1790288628.359751754] [sih_mission_follower]: CWP_023 reached: ekf err 0.088 m, leg 11.4 m in 8.3 s, min sensed 4.501[0m
+[0m[INFO] [1790288645.341628898] [sih_mission_follower]: CWP_024 reached: ekf err 0.081 m, leg 11.4 m in 8.4 s, min sensed 4.49[0m
+[0m[INFO] [1790288662.415529397] [sih_mission_follower]: CWP_025 reached: ekf err 0.095 m, leg 11.4 m in 8.4 s, min sensed 4.47[0m
+[0m[INFO] [1790288679.400989007] [sih_mission_follower]: CWP_026 reached: ekf err 0.092 m, leg 11.3 m in 8.4 s, min sensed 4.47[0m
+[0m[INFO] [1790288699.039044906] [sih_mission_follower]: CWP_027 reached: ekf err 0.166 m, leg 10.2 m in 9.7 s, min sensed 3.771[0m
+[0m[INFO] [1790288721.398369704] [sih_mission_follower]: CWP_028 reached: ekf err 0.126 m, leg 11.9 m in 11.3 s, min sensed 3.395[0m
+[0m[INFO] [1790288750.210146960] [sih_mission_follower]: CWP_029 reached: ekf err 0.110 m, leg 21.6 m in 14.2 s, min sensed 3.41[0m
+[0m[INFO] [1790288760.035768183] [sih_mission_follower]: CWP_030 reached: ekf err 0.068 m, leg 4.4 m in 4.8 s, min sensed 3.587[0m
+[0m[INFO] [1790288773.848297448] [sih_mission_follower]: CWP_031 reached: ekf err 0.132 m, leg 8.6 m in 6.8 s, min sensed 3.588[0m
+[0m[INFO] [1790293890.982142938] [sih_mission_follower]: CWP_032 reached: ekf err 0.059 m, leg 16.0 m in 13.1 s, min sensed 3.91[0m
+[0m[INFO] [1790293931.723666960] [sih_mission_follower]: CWP_033 reached: ekf err 0.072 m, leg 29.1 m in 20.1 s, min sensed 3.893[0m
+[0m[INFO] [1790293970.090215976] [sih_mission_follower]: CWP_034 reached: ekf err 0.112 m, leg 27.7 m in 19.1 s, min sensed 3.402[0m
+[0m[INFO] [1790293981.651737778] [sih_mission_follower]: CWP_035 reached: ekf err 0.166 m, leg 5.8 m in 5.5 s, min sensed 3.41[0m
+[0m[INFO] [1790293993.464751081] [sih_mission_follower]: CWP_036 reached: ekf err 0.136 m, leg 5.8 m in 5.5 s, min sensed 3.734[0m
+[0m[INFO] [1790294008.841945112] [sih_mission_follower]: CWP_037 reached: ekf err 0.183 m, leg 9.6 m in 7.2 s, min sensed 3.739[0m
+[0m[INFO] [1790294028.679236299] [sih_mission_follower]: CWP_038 reached: ekf err 0.080 m, leg 15.1 m in 10.2 s, min sensed 4.687[0m
+[0m[INFO] [1790294045.512178638] [sih_mission_follower]: CWP_039 reached: ekf err 0.115 m, leg 12.0 m in 8.8 s, min sensed 3.407[0m
+[0m[INFO] [1790294073.875429313] [sih_mission_follower]: CWP_040 reached: ekf err 0.067 m, leg 21.2 m in 14.1 s, min sensed 3.423[0m
+[0m[INFO] [1790294084.300182696] [sih_mission_follower]: CWP_041 reached: ekf err 0.128 m, leg 5.7 m in 5.4 s, min sensed 3.643[0m
+[0m[INFO] [1790294098.143837833] [sih_mission_follower]: CWP_042 reached: ekf err 0.168 m, leg 9.5 m in 7.2 s, min sensed 3.661[0m
+[0m[INFO] [1790294117.282565944] [sih_mission_follower]: CWP_043 reached: ekf err 0.064 m, leg 15.1 m in 10.2 s, min sensed 4.486[0m
+[0m[INFO] [1790294127.980546549] [sih_mission_follower]: CWP_044 reached: ekf err 0.069 m, leg 4.6 m in 5.5 s, min sensed 4.508[0m
+[0m[INFO] [1790294140.285819189] [sih_mission_follower]: CWP_045 reached: ekf err 0.092 m, leg 6.5 m in 6.5 s, min sensed 3.408[0m
+[0m[INFO] [1790294169.366333393] [sih_mission_follower]: CWP_046 reached: ekf err 0.101 m, leg 21.7 m in 14.2 s, min sensed 3.416[0m
+[0m[INFO] [1790294188.668378563] [sih_mission_follower]: CWP_047 reached: ekf err 0.114 m, leg 12.6 m in 9.8 s, min sensed 3.466[0m
+[0m[INFO] [1790294199.940023067] [sih_mission_follower]: CWP_048 reached: ekf err 0.064 m, leg 5.6 m in 5.4 s, min sensed 3.491[0m
+[0m[INFO] [1790294233.605211998] [sih_mission_follower]: CWP_049 reached: ekf err 0.162 m, leg 24.1 m in 16.9 s, min sensed 4.929[0m
+[0m[INFO] [1790294242.596691052] [sih_mission_follower]: CWP_050 reached: ekf err 0.119 m, leg 3.9 m in 4.5 s, min sensed 7.955[0m
+[0m[INFO] [1790294252.629673328] [sih_mission_follower]: CWP_051 reached: ekf err 0.128 m, leg 5.1 m in 5.1 s, min sensed 7.957[0m
+[0m[INFO] [1790294281.424828442] [sih_mission_follower]: CWP_052 reached: ekf err 0.024 m, leg 15.7 m in 14.1 s, min sensed 3.589[0m
+[0m[INFO] [1790294320.882903864] [sih_mission_follower]: CWP_053 reached: ekf err 0.052 m, leg 24.6 m in 19.4 s, min sensed 3.623[0m
+[0m[INFO] [1790294330.960907420] [sih_mission_follower]: CWP_054 reached: ekf err 0.127 m, leg 5.2 m in 5.2 s, min sensed 7.955[0m
+[0m[INFO] [1790294340.945691656] [sih_mission_follower]: CWP_055 reached: ekf err 0.110 m, leg 5.1 m in 5.1 s, min sensed 7.934[0m
+[0m[INFO] [1790294366.198248665] [sih_mission_follower]: CWP_056 reached: ekf err 0.048 m, leg 20.0 m in 12.9 s, min sensed 7.941[0m
+[0m[INFO] [1790294376.022199604] [sih_mission_follower]: CWP_057 reached: ekf err 0.053 m, leg 5.1 m in 5.2 s, min sensed 7.982[0m
+[0m[INFO] [1790294386.066934074] [sih_mission_follower]: CWP_058 reached: ekf err 0.098 m, leg 5.1 m in 5.2 s, min sensed 7.98[0m
+[0m[INFO] [1790294411.316059182] [sih_mission_follower]: CWP_059 reached: ekf err 0.085 m, leg 20.0 m in 12.8 s, min sensed 7.913[0m
+[0m[INFO] [1790294421.500264518] [sih_mission_follower]: CWP_060 reached: ekf err 0.048 m, leg 5.0 m in 5.2 s, min sensed 7.926[0m
+[0m[INFO] [1790294431.684278444] [sih_mission_follower]: CWP_061 reached: ekf err 0.068 m, leg 5.1 m in 5.2 s, min sensed 7.995[0m
+[0m[INFO] [1790294457.139956393] [sih_mission_follower]: CWP_062 reached: ekf err 0.061 m, leg 20.1 m in 12.9 s, min sensed 7.951[0m
+[0m[INFO] [1790294467.159710988] [sih_mission_follower]: CWP_063 reached: ekf err 0.057 m, leg 5.1 m in 5.2 s, min sensed 7.952[0m
+[0m[INFO] [1790294508.445254655] [sih_mission_follower]: CWP_064 reached: ekf err 0.081 m, leg 25.9 m in 20.5 s, min sensed 4.73[0m
+[0m[INFO] [1790294533.870243137] [sih_mission_follower]: CWP_065 reached: ekf err 0.062 m, leg 19.0 m in 12.7 s, min sensed 3.671[0m
+[0m[INFO] [1790294564.666443251] [sih_mission_follower]: CWP_066 reached: ekf err 0.148 m, leg 22.2 m in 15.3 s, min sensed 3.623[0m
+[0m[INFO] [1790294577.852108734] [sih_mission_follower]: CWP_067 reached: ekf err 0.076 m, leg 5.6 m in 6.6 s, min sensed 7.609[0m
+[0m[INFO] [1790294596.061574613] [sih_mission_follower]: CWP_068 reached: ekf err 0.137 m, leg 11.4 m in 9.0 s, min sensed 7.596[0m
+[0m[INFO] [1790294609.249819819] [sih_mission_follower]: CWP_069 reached: ekf err 0.043 m, leg 5.5 m in 6.6 s, min sensed 7.714[0m
+[0m[INFO] [1790294627.451057732] [sih_mission_follower]: CWP_070 reached: ekf err 0.107 m, leg 11.3 m in 9.0 s, min sensed 7.713[0m
+[0m[INFO] [1790294640.725510331] [sih_mission_follower]: CWP_071 reached: ekf err 0.055 m, leg 5.5 m in 6.7 s, min sensed 7.611[0m
+[0m[INFO] [1790294658.673938196] [sih_mission_follower]: CWP_072 reached: ekf err 0.112 m, leg 11.4 m in 9.1 s, min sensed 7.79[0m
+[0m[INFO] [1790294671.718977089] [sih_mission_follower]: CWP_073 reached: ekf err 0.049 m, leg 5.5 m in 6.7 s, min sensed 7.589[0m
+[0m[INFO] [1790294689.579481092] [sih_mission_follower]: CWP_074 reached: ekf err 0.112 m, leg 11.4 m in 8.9 s, min sensed 7.755[0m
+[0m[INFO] [1790294702.699616424] [sih_mission_follower]: CWP_075 reached: ekf err 0.049 m, leg 5.5 m in 6.7 s, min sensed 7.973[0m
+[0m[INFO] [1790294720.390785555] [sih_mission_follower]: CWP_076 reached: ekf err 0.113 m, leg 11.4 m in 9.1 s, min sensed 7.944[0m
+[0m[INFO] [1790294733.297284946] [sih_mission_follower]: CWP_077 reached: ekf err 0.073 m, leg 5.6 m in 6.6 s, min sensed 7.614[0m
+[0m[INFO] [1790294751.236564354] [sih_mission_follower]: CWP_078 reached: ekf err 0.123 m, leg 11.4 m in 9.1 s, min sensed 7.652[0m
+[0m[INFO] [1790294764.117417829] [sih_mission_follower]: CWP_079 reached: ekf err 0.039 m, leg 5.5 m in 6.7 s, min sensed 7.6[0m
+[0m[INFO] [1790294781.782394142] [sih_mission_follower]: CWP_080 reached: ekf err 0.113 m, leg 11.4 m in 9.1 s, min sensed 7.65[0m
+[0m[INFO] [1790294807.180234090] [sih_mission_follower]: CWP_081 reached: ekf err 0.123 m, leg 16.4 m in 12.9 s, min sensed 3.838[0m
+[0m[INFO] [1790294838.041380281] [sih_mission_follower]: CWP_082 reached: ekf err 0.052 m, leg 25.2 m in 15.2 s, min sensed 3.869[0m
+[0m[INFO] [1790294873.807618666] [sih_mission_follower]: CWP_083 reached: ekf err 0.126 m, leg 25.8 m in 17.6 s, min sensed 5.059[0m
+[0m[INFO] [1790297503.753091077] [sih_mission_follower]: CWP_084 reached: ekf err 0.074 m, leg 37.6 m in 21.9 s, min sensed 7.855[0m
+[0m[INFO] [1790297516.877812226] [sih_mission_follower]: CWP_085 reached: ekf err 0.099 m, leg 7.6 m in 6.5 s, min sensed 7.951[0m
+[0m[INFO] [1790297527.298543382] [sih_mission_follower]: CWP_086 reached: ekf err 0.070 m, leg 5.1 m in 5.2 s, min sensed 7.956[0m
+[0m[INFO] [1790297553.677784572] [sih_mission_follower]: CWP_087 reached: ekf err 0.080 m, leg 20.1 m in 12.9 s, min sensed 7.931[0m
+[0m[INFO] [1790297564.501773665] [sih_mission_follower]: CWP_088 reached: ekf err 0.058 m, leg 5.1 m in 5.2 s, min sensed 7.98[0m
+[0m[INFO] [1790297575.156040820] [sih_mission_follower]: CWP_089 reached: ekf err 0.084 m, leg 5.1 m in 5.2 s, min sensed 7.938[0m
+[0m[INFO] [1790297600.246080753] [sih_mission_follower]: CWP_090 reached: ekf err 0.077 m, leg 20.1 m in 12.9 s, min sensed 7.924[0m
+[0m[INFO] [1790297610.184201426] [sih_mission_follower]: CWP_091 reached: ekf err 0.043 m, leg 5.1 m in 5.2 s, min sensed 7.984[0m
+[0m[INFO] [1790297620.105455381] [sih_mission_follower]: CWP_092 reached: ekf err 0.078 m, leg 5.1 m in 5.2 s, min sensed 7.979[0m
+[0m[INFO] [1790297647.261323766] [sih_mission_follower]: CWP_093 reached: ekf err 0.033 m, leg 15.6 m in 13.9 s, min sensed 3.551[0m
+[0m[INFO] [1790297685.272919412] [sih_mission_follower]: CWP_094 reached: ekf err 0.071 m, leg 24.7 m in 20.1 s, min sensed 3.585[0m
+[0m[INFO] [1790297721.620275071] [sih_mission_follower]: CWP_095 reached: ekf err 0.125 m, leg 23.7 m in 19.6 s, min sensed 7.528[0m
+[0m[INFO] [1790297741.679814444] [sih_mission_follower]: CWP_096 reached: ekf err 0.109 m, leg 13.7 m in 10.4 s, min sensed 5.607[0m
+[0m[INFO] [1790297741.748050231] [sih_mission_follower]: CWP_097 not attempted: no position with >=3.2 m clearance and line of sight to its target (see plan)[0m
+[0m[INFO] [1790297766.925705443] [sih_mission_follower]: CWP_098 reached: ekf err 0.033 m, leg 19.0 m in 12.5 s, min sensed 3.877[0m
+[0m[INFO] [1790297783.917564490] [sih_mission_follower]: CWP_099 reached: ekf err 0.097 m, leg 9.6 m in 8.6 s, min sensed 6.988[0m
+[0m[INFO] [1790297793.364970790] [sih_mission_follower]: CWP_100 reached: ekf err 0.100 m, leg 2.5 m in 4.8 s, min sensed 7.914[0m
+[0m[INFO] [1790297837.239740672] [sih_mission_follower]: CWP_101 reached: ekf err 0.083 m, leg 36.4 m in 22.7 s, min sensed 6.73[0m
+[0m[INFO] [1790297917.028555640] [sih_mission_follower]: CWP_102 reached: ekf err 0.047 m, leg 55.8 m in 40.5 s, min sensed 3.602[0m
+[0m[INFO] [1790298029.858224050] [sih_mission_follower]: CWP_103 reached: ekf err 0.023 m, leg 102.1 m in 58.4 s, min sensed 4.85[0m
+[0m[INFO] [1790298039.109480171] [sih_mission_follower]: CWP_104 reached: ekf err 0.075 m, leg 4.6 m in 4.8 s, min sensed 8.012[0m
+[0m[INFO] [1790298048.607158591] [sih_mission_follower]: CWP_105 reached: ekf err 0.159 m, leg 4.8 m in 5.0 s, min sensed 8.026[0m
+[0m[INFO] [1790298065.173238642] [sih_mission_follower]: CWP_106 reached: ekf err 0.125 m, leg 11.6 m in 8.3 s, min sensed 7.827[0m
+[0m[INFO] [1790298074.775186975] [sih_mission_follower]: CWP_107 reached: ekf err 0.118 m, leg 4.7 m in 4.9 s, min sensed 8.066[0m
+[0m[INFO] [1790298091.486165307] [sih_mission_follower]: CWP_108 reached: ekf err 0.115 m, leg 11.6 m in 8.4 s, min sensed 7.861[0m
+[0m[INFO] [1790298101.020790701] [sih_mission_follower]: CWP_109 reached: ekf err 0.135 m, leg 4.7 m in 4.9 s, min sensed 8.027[0m
+[0m[INFO] [1790298117.789718264] [sih_mission_follower]: CWP_110 reached: ekf err 0.096 m, leg 11.5 m in 8.4 s, min sensed 7.85[0m
+[0m[INFO] [1790298127.309802760] [sih_mission_follower]: CWP_111 reached: ekf err 0.142 m, leg 4.8 m in 5.0 s, min sensed 8.067[0m
+[0m[INFO] [1790298143.783897358] [sih_mission_follower]: CWP_112 reached: ekf err 0.112 m, leg 11.6 m in 8.3 s, min sensed 7.853[0m
+[0m[INFO] [1790298153.107080969] [sih_mission_follower]: CWP_113 reached: ekf err 0.146 m, leg 4.7 m in 4.8 s, min sensed 8.047[0m
+[0m[INFO] [1790298169.599741861] [sih_mission_follower]: CWP_114 reached: ekf err 0.115 m, leg 11.5 m in 8.4 s, min sensed 7.822[0m
+[0m[INFO] [1790298179.041303638] [sih_mission_follower]: CWP_115 reached: ekf err 0.135 m, leg 4.7 m in 4.9 s, min sensed 8.007[0m
+[0m[INFO] [1790298196.041202353] [sih_mission_follower]: CWP_116 reached: ekf err 0.101 m, leg 11.5 m in 8.4 s, min sensed 7.845[0m
+[0m[INFO] [1790298205.459731426] [sih_mission_follower]: CWP_117 reached: ekf err 0.168 m, leg 4.7 m in 4.8 s, min sensed 8.061[0m
+[0m[INFO] [1790298222.599229974] [sih_mission_follower]: CWP_118 reached: ekf err 0.108 m, leg 11.6 m in 8.4 s, min sensed 7.872[0m
+[0m[INFO] [1790298232.154867942] [sih_mission_follower]: CWP_119 reached: ekf err 0.123 m, leg 4.7 m in 4.9 s, min sensed 8.049[0m
+[0m[INFO] [1790298244.932844482] [sih_mission_follower]: CWP_120 reached: ekf err 0.140 m, leg 8.1 m in 6.6 s, min sensed 8.001[0m
+[0m[INFO] [1790298337.498795756] [sih_mission_follower]: CWP_121 reached: ekf err 0.048 m, leg 60.2 m in 45.1 s, min sensed 3.994[0m
+[0m[INFO] [1790298419.199731393] [sih_mission_follower]: CWP_122 reached: ekf err 0.059 m, leg 66.0 m in 38.5 s, min sensed 3.786[0m
+[0m[INFO] [1790298444.183682821] [sih_mission_follower]: CWP_123 reached: ekf err 0.073 m, leg 12.1 m in 12.0 s, min sensed 3.783[0m
+[0m[INFO] [1790301066.472560547] [sih_mission_follower]: CWP_124 reached: ekf err 0.047 m, leg 39.0 m in 23.3 s, min sensed 3.782[0m
+[0m[INFO] [1790301092.565908978] [sih_mission_follower]: CWP_125 reached: ekf err 0.197 m, leg 20.3 m in 17.9 s, min sensed 4.788[0m
+[0m[INFO] [1790301100.187882507] [sih_mission_follower]: CWP_126 reached: ekf err 0.093 m, leg 4.8 m in 5.6 s, min sensed 7.049[0m
+[0m[INFO] [1790301111.453434470] [sih_mission_follower]: CWP_127 reached: ekf err 0.126 m, leg 9.6 m in 8.4 s, min sensed 7.046[0m
+[0m[INFO] [1790302246.029329013] [sih_mission_follower]: CWP_128 reached: ekf err 0.058 m, leg 25.4 m in 15.6 s, min sensed 7.907[0m
+[0m[INFO] [1790302285.816775813] [sih_mission_follower]: CWP_129 reached: ekf err 0.087 m, leg 47.8 m in 27.6 s, min sensed 3.899[0m
+[0m[INFO] [1790302314.752880853] [sih_mission_follower]: CWP_130 reached: ekf err 0.087 m, leg 32.2 m in 19.4 s, min sensed 3.86[0m
+[0m[INFO] [1790302357.665121961] [sih_mission_follower]: CWP_131 reached: ekf err 0.029 m, leg 35.7 m in 27.9 s, min sensed 3.541[0m
+[0m[INFO] [1790302418.944726844] [sih_mission_follower]: CWP_132 reached: ekf err 0.049 m, leg 73.6 m in 42.2 s, min sensed 3.572[0m
+[0m[INFO] [1790302424.543892557] [sih_mission_follower]: CWP_133 reached: ekf err 0.158 m, leg 1.9 m in 3.8 s, min sensed 3.692[0m
+[0m[INFO] [1790302438.591309017] [sih_mission_follower]: CWP_134 reached: ekf err 0.068 m, leg 13.2 m in 9.2 s, min sensed 3.676[0m
+[0m[INFO] [1790302444.352714756] [sih_mission_follower]: CWP_135 reached: ekf err 0.130 m, leg 1.9 m in 3.9 s, min sensed 3.69[0m
+[0m[INFO] [1790302458.403763996] [sih_mission_follower]: CWP_136 reached: ekf err 0.107 m, leg 13.2 m in 9.2 s, min sensed 3.693[0m
+[0m[INFO] [1790302464.223079683] [sih_mission_follower]: CWP_137 reached: ekf err 0.151 m, leg 2.0 m in 3.9 s, min sensed 3.695[0m
+[0m[INFO] [1790302478.037049288] [sih_mission_follower]: CWP_138 reached: ekf err 0.079 m, leg 13.2 m in 9.2 s, min sensed 3.688[0m
+[0m[INFO] [1790302483.723517729] [sih_mission_follower]: CWP_139 reached: ekf err 0.128 m, leg 2.0 m in 3.9 s, min sensed 3.688[0m
+[0m[INFO] [1790302497.757215566] [sih_mission_follower]: CWP_140 reached: ekf err 0.103 m, leg 13.2 m in 9.2 s, min sensed 3.661[0m
+[0m[INFO] [1790302503.552929282] [sih_mission_follower]: CWP_141 reached: ekf err 0.146 m, leg 2.0 m in 3.9 s, min sensed 3.682[0m
+[0m[INFO] [1790302517.778934399] [sih_mission_follower]: CWP_142 reached: ekf err 0.103 m, leg 13.2 m in 9.2 s, min sensed 3.681[0m
+[0m[INFO] [1790302523.507629268] [sih_mission_follower]: CWP_143 reached: ekf err 0.101 m, leg 1.9 m in 3.9 s, min sensed 3.679[0m
+[0m[INFO] [1790302537.236589276] [sih_mission_follower]: CWP_144 reached: ekf err 0.101 m, leg 13.2 m in 9.3 s, min sensed 3.664[0m
+[0m[INFO] [1790302542.696387877] [sih_mission_follower]: CWP_145 reached: ekf err 0.119 m, leg 2.0 m in 3.9 s, min sensed 3.673[0m
+[0m[INFO] [1790302570.500006886] [sih_mission_follower]: CWP_146 reached: ekf err 0.059 m, leg 23.7 m in 17.8 s, min sensed 3.668[0m
+[0m[INFO] [1790302615.185509743] [sih_mission_follower]: CWP_147 reached: ekf err 0.016 m, leg 53.5 m in 31.6 s, min sensed 3.662[0m
+[0m[INFO] [1790302661.855760328] [sih_mission_follower]: CWP_148 reached: ekf err 0.076 m, leg 32.9 m in 30.9 s, min sensed 3.679[0m
+[0m[INFO] [1790302688.781280857] [sih_mission_follower]: CWP_149 reached: ekf err 0.088 m, leg 32.2 m in 19.2 s, min sensed 3.59[0m
+[0m[INFO] [1790302767.684986207] [sih_mission_follower]: CWP_150 reached: ekf err 0.105 m, leg 95.2 m in 54.1 s, min sensed 3.576[0m
+[0m[INFO] [1790302767.773211390] [sih_mission_follower]: phase MISSION -> RTH[0m
+[0m[INFO] [1790302948.496844577] [sih_mission_follower]: RTH reached at [19.97, -30.04, 5.01][0m
+[0m[INFO] [1790302948.497065934] [sih_mission_follower]: phase RTH -> LAND[0m
+[0m[INFO] [1790302967.595314208] [sih_mission_follower]: landed=True, disarmed[0m
+[0m[INFO] [1790302967.608712054] [sih_mission_follower]: SUMMARY {'waypoints_in_plan': 150, 'attempted': 149, 'reached': 149, 'results': {'not_attempted_unreachable_in_plan': 1, 'reached': 149}, 'ekf_err_m': {'mean': 0.0973, 'max': 0.1967, 'p95': 0.1641}, 'mission_time_sim_s': 1904.5, 'mission_time_wall_s': 14876.6, 'distance_ekf_m': 2581.1}[0m
+[0m[INFO] [1790302967.701388209] [sih_mission_follower]: phase LAND -> DONE[0m

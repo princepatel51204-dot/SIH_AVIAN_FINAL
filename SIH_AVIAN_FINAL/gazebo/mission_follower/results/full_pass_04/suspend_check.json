@@ -1,0 +1,24 @@
+{
+ "finding": "host laptop suspended 4 times during full_pass_04; the whole sim stack (Gazebo, PX4 lockstep, ROS /clock) froze and resumed together; no measurable effect on the flight data",
+ "suspends_journalctl": [
+  {"entry": "2026-09-25T03:56:16+05:30", "exit": "05:21:06", "cause": "idle auto-suspend", "leg": "CWP_031->CWP_032", "wall_gap_s": 5117.1, "sim_leg_s": 13.10},
+  {"entry": "2026-09-25T05:38:31+05:30", "exit": "06:21:39", "cause": "idle auto-suspend", "leg": "CWP_083->CWP_084", "wall_gap_s": 2629.9, "sim_leg_s": 21.95},
+  {"entry": "2026-09-25T06:37:26+05:30", "exit": "07:20:23", "cause": "idle auto-suspend", "leg": "CWP_123->CWP_124", "wall_gap_s": 2622.3, "sim_leg_s": 23.30},
+  {"entry": "2026-09-25T07:21:51+05:30", "exit": "07:40:24", "cause": "lid closed", "leg": "CWP_127->CWP_128", "wall_gap_s": 1134.6, "sim_leg_s": 15.60}
+ ],
+ "a_sim_time": "mission_log events monotonic in sim time, no resets; 5 Hz track max sim-time step 0.26 s",
+ "b_pose_audit": "EKF-vs-true at the waypoint after each suspend (CWP_032/084/124/128): 0.031/0.059/0.036/0.021 m vs run mean 0.050 m, max 0.096 m -- no spike",
+ "c_px4": {
+  "console_log": "only boot-time messages: 'Preflight Fail: ekf2 missing data' (before EKF init), 'Connection to ground station lost' (no GCS by design, NAV_DLL_ACT=0), 'Armed by external command', 'Takeoff detected'; no failsafe / offboard-loss / EKF messages (logs/px4_messages_extracted.txt)",
+  "ulog": "PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-09-24/22_14_32.ulg",
+  "nav_state_transitions": "one: 4 (loiter) -> 14 (offboard) at 13.1 s; vehicle_status.failsafe never set",
+  "xy_reset_counter_changes_s": [5.08, 6.12, 7.4],
+  "heading_reset_counter_changes_s": [7.4, 25.88, 1923.19],
+  "armed_at_s": 18.5,
+  "note": "xy resets are all before arming (EKF init/GNSS fusion start); heading resets at 7.4 s (init), 25.9 s (in-flight yaw alignment after takeoff), 1923.2 s (end of log, landing). None inside a suspend. xy_valid false only 4.8-7.4 s at boot; local_position max sim gap 0.016 s"
+ },
+ "d_camera": "4 wall-clock gaps (5089.8, 2588.3, 2576.8, 1112.6 s) at exactly the suspend times; sim-time gaps at those frames 0.132/0.200/0.064/0.132 s, i.e. no flight time went unrecorded. Rate 11.25 frames per sim second. Separately 4 frame drops up to 0.66 s sim, not suspend-related. The mp4 is encoded at a fixed 13 fps, so its playback duration is not flight time; frames.csv has the true stamps",
+ "e_contacts": 0,
+ "verdict": "full_pass_04 kept as valid; pauses noted",
+ "prevention": "launch_mission.sh now re-execs itself under systemd-inhibit --what=sleep:idle:handle-lid-switch --mode=block (verified working without sudo)"
+}

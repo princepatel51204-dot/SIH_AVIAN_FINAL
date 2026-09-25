@@ -17,7 +17,11 @@ A = json.load(open(os.path.join(run, 'pose_audit.json')))
 C = json.load(open(os.path.join(run, 'contact_summary.json')))
 cam_p = os.path.join(run, 'camera', 'camera_stats.json')
 CAM = json.load(open(cam_p)) if os.path.exists(cam_p) else None
-plan = json.load(open(L['plan']))
+# the plan the run actually flew: a per-run snapshot if present (the shared
+# mission/gazebo_mission_plan.json may have been regenerated since)
+snap = sorted(f for f in os.listdir(run) if f.startswith('plan_used') and f.endswith('.json'))
+plan_file = os.path.join(run, snap[0]) if snap else L['plan']
+plan = json.load(open(plan_file))
 
 wl = L['waypoints']
 ids = [w['waypoint_id'] for w in wl]
@@ -40,9 +44,24 @@ def st(a):
 
 
 legs = [w for w in wl if 'leg_dist_m' in w]
+
+# camera rate per SIM second (wall-clock rate is meaningless if the host
+# suspended mid-run) + wall-clock gaps > 60 s (host suspends)
+cam_sim = None
+fcsv = os.path.join(run, 'camera', 'frames.csv')
+if os.path.exists(fcsv):
+    fr = np.genfromtxt(fcsv, delimiter=',', skip_header=1)
+    if len(fr) > 1:
+        dw, ds = np.diff(fr[:, 2]), np.diff(fr[:, 1])
+        cam_sim = {'frames_csv': int(len(fr)),
+                   'rate_per_sim_s_hz': round(float((len(fr) - 1) / (fr[-1, 1] - fr[0, 1])), 2),
+                   'max_sim_gap_s': round(float(ds.max()), 3),
+                   'wall_gaps_over_60s': [{'frame': int(i), 'wall_gap_s': round(float(dw[i]), 1),
+                                           'sim_gap_s': round(float(ds[i]), 3)} for i in np.where(dw > 60)[0]]}
 out = {
     'run': os.path.basename(os.path.normpath(run)),
     'final': L.get('final'),
+    'plan_file': os.path.relpath(plan_file, run),
     'waypoints_in_source_mission': len(plan['waypoints']),
     'logged': len(wl),
     'unique_logged': len(set(ids)),
@@ -62,6 +81,7 @@ out = {
     'min_sensed_range_at_legs_m': min((w['min_sensed_range_m'] for w in legs if w.get('min_sensed_range_m') is not None), default=None),
     'contacts': {'episodes': C['contact_episodes'], 'samples': C['contact_samples']},
     'camera': None if CAM is None else {k: CAM[k] for k in ('frames', 'duration_wall_s', 'rate_hz', 'max_gap_s', 'waypoint_snapshots')},
+    'camera_sim_time': cam_sim,
     'summary_follower': L.get('summary'),
     'distance_true_m': (A.get('summary') or {}).get('distance_true_m'),
     'planned_total_path_m': plan['planned_total_path_m'],
