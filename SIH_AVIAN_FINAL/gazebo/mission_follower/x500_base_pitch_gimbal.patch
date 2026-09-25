@@ -1,0 +1,103 @@
+--- x500_base/model.sdf.bak_pre_gimbal	2026-09-25 08:50:30.711544226 +0530
++++ x500_base/model.sdf	2026-09-25 08:50:30.741422020 +0530
+@@ -319,30 +319,11 @@
+         <always_on>1</always_on>
+         <update_rate>30</update_rate>
+       </sensor>
+-      <!-- Live visual-monitoring camera only, viewed via rqt_image_view
+-           or "gz topic echo" during flight. Not part of, and not wired
+-           to, the Blender zoom-tile render plus detector scoring
+-           pipeline, which renders offline from achieved poses against
+-           the actual .blend scene, not from this sim sensor. -->
+-      <sensor name="front_camera" type="camera">
+-        <pose>0.15 0 -0.02 0 0.4 0</pose>
+-        <gz_frame_id>base_link</gz_frame_id>
+-        <always_on>1</always_on>
+-        <update_rate>15</update_rate>
+-        <visualize>true</visualize>
+-        <camera>
+-          <horizontal_fov>1.3962634</horizontal_fov>
+-          <image>
+-            <width>640</width>
+-            <height>480</height>
+-            <format>R8G8B8</format>
+-          </image>
+-          <clip>
+-            <near>0.05</near>
+-            <far>300</far>
+-          </clip>
+-        </camera>
+-      </sensor>
++      <!-- front_camera moved onto gimbal_cam_link (pitch gimbal), see below. -->
++      <visual name="gimbal_boom_visual">
++        <pose>0.265 0 0.05 0 0 0</pose>
++        <geometry><box><size>0.13 0.02 0.02</size></box></geometry>
++      </visual>
+       <!-- SIH AVIAN mission follower: sensed vertical clearance (up). The 2D LiDAR ring only sees the horizontal plane at flight altitude; this 9x9-ray +/-45 deg cone is what the safety layer uses before any climb (e.g. under a deck). Sensor data only. -->
+       <sensor name="up_range" type="gpu_lidar">
+         <pose>0 0 0.42 0 -1.5708 0</pose>
+@@ -374,6 +355,64 @@
+         </lidar>
+       </sensor>
+     </link>
++    <!-- SIH AVIAN Task 1 v5: 1-axis PITCH GIMBAL for the inspection camera.
++         Same sensor as before (640x480, HFOV 80 deg, 15 Hz); on a 0.35 m
++         front boom so the props and legs stay out of the image over the
++         whole -90..+90 deg range. Joint angle = nose-down pitch (+0.4 rad
++         = the old fixed mount, used as the initial position). Commanded per
++         viewpoint on /model/<model>/joint/gimbal_pitch_joint/0/cmd_pos; true
++         angle published by JointStatePublisher. No collision geometry. -->
++    <link name="gimbal_cam_link">
++      <pose relative_to="base_link">0.35 0 0.05 0 0 0</pose>
++      <inertial>
++        <mass>0.05</mass>
++        <inertia><ixx>1e-5</ixx><ixy>0</ixy><ixz>0</ixz><iyy>1e-5</iyy><iyz>0</iyz><izz>1e-5</izz></inertia>
++      </inertial>
++      <visual name="gimbal_cam_visual">
++        <geometry><box><size>0.04 0.04 0.04</size></box></geometry>
++      </visual>
++      <sensor name="front_camera" type="camera">
++        <pose>0.03 0 0 0 0 0</pose>
++        <gz_frame_id>gimbal_cam_link</gz_frame_id>
++        <always_on>1</always_on>
++        <update_rate>15</update_rate>
++        <visualize>true</visualize>
++        <camera>
++          <horizontal_fov>1.3962634</horizontal_fov>
++          <image>
++            <width>640</width>
++            <height>480</height>
++            <format>R8G8B8</format>
++          </image>
++          <clip>
++            <near>0.05</near>
++            <far>300</far>
++          </clip>
++        </camera>
++      </sensor>
++    </link>
++    <joint name="gimbal_pitch_joint" type="revolute">
++      <parent>base_link</parent>
++      <child>gimbal_cam_link</child>
++      <axis>
++        <xyz>0 1 0</xyz>
++        <limit><lower>-1.5708</lower><upper>1.5708</upper><effort>10</effort><velocity>3</velocity></limit>
++        <dynamics><damping>0.001</damping></dynamics>
++      </axis>
++    </joint>
++    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
++      <joint_name>gimbal_pitch_joint</joint_name>
++      <use_velocity_commands>true</use_velocity_commands>
++      <p_gain>8</p_gain>
++      <i_gain>0</i_gain>
++      <d_gain>0</d_gain>
++      <cmd_max>3</cmd_max>
++      <cmd_min>-3</cmd_min>
++      <initial_position>0.4</initial_position>
++    </plugin>
++    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
++      <joint_name>gimbal_pitch_joint</joint_name>
++    </plugin>
+     <link name="rotor_0">
+       <gravity>true</gravity>
+       <self_collide>false</self_collide>

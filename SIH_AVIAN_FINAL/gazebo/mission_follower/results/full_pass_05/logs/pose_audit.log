@@ -1,0 +1,26 @@
+[0m[INFO] [1790337692.043454935] [sih_pose_audit]: pose audit on /world/sih_avian_final/dynamic_pose/info + /world/sih_avian_final/model/x500_lidar_2d_0/joint_state, model x500_lidar_2d_0[0m
+Traceback (most recent call last):
+  File "/home/prince/avian_rev_c/SIH_AVIAN_FINAL/gazebo/mission_follower/pose_audit_node.py", line 217, in <module>
+    main()
+  File "/home/prince/avian_rev_c/SIH_AVIAN_FINAL/gazebo/mission_follower/pose_audit_node.py", line 206, in main
+    rclpy.spin(n)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 247, in spin
+    executor.spin_once()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 926, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 907, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 877, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 785, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+Traceback (most recent call last):
+  File "/opt/ros/jazzy/opt/gz_transport_vendor/lib/python/gz/transport13/__init__.py", line 115, in cb_deserialize
+    callback(deserialized_msg)
+  File "/home/prince/avian_rev_c/SIH_AVIAN_FINAL/gazebo/mission_follower/pose_audit_node.py", line 126, in on_gz
+    self.track_f.write(f'{t_sim:.3f},{now:.3f},{xyz[0]:.4f},{xyz[1]:.4f},{xyz[2]:.4f},'
+ValueError: I/O operation on closed file.
+ <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>

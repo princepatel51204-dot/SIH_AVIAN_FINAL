@@ -1,0 +1,196 @@
+{
+ "run": "full_pass_05",
+ "final": true,
+ "plan_file": "plan_used_v5.json",
+ "waypoints_in_source_mission": 1162,
+ "logged": 1162,
+ "unique_logged": 1162,
+ "duplicates": 0,
+ "results": {
+  "reached": 1161,
+  "not_attempted_unreachable_in_plan": 1
+ },
+ "reached": 1161,
+ "nudged_in_plan": 0,
+ "mapping_true_minus_target_m": {
+  "n": 1161,
+  "mean": 0.1284,
+  "median": 0.125,
+  "p95": 0.2195,
+  "max": 0.742
+ },
+ "mapping_unnudged_only_m": {
+  "n": 1161,
+  "mean": 0.1284,
+  "median": 0.125,
+  "p95": 0.2195,
+  "max": 0.742
+ },
+ "mapping_mean_offset_xyz_m": [
+  0.0271,
+  -0.0039,
+  -0.0085
+ ],
+ "mapping_std_offset_xyz_m": [
+  0.0878,
+  0.0871,
+  0.0614
+ ],
+ "ekf_vs_true_m": {
+  "n": 1161,
+  "mean": 0.0499,
+  "median": 0.0461,
+  "p95": 0.084,
+  "max": 0.5815
+ },
+ "yaw_err_deg": {
+  "mean": 0.72,
+  "max": 4.42
+ },
+ "speed_calc": {
+  "decel_mps2": 1.95,
+  "stop_k_s": 0.592,
+  "t_lat_s": 0.15,
+  "clearance_m": 3.0,
+  "required_margin": 2.0,
+  "v_max_at_margin": 2.022,
+  "cruise_mps": 1.9,
+  "cruise_with_overshoot_mps": 1.947,
+  "stop_dist_m": 1.445,
+  "achieved_margin": 2.076
+ },
+ "brake_test": {
+  "speed_at_cmd_mps": 1.943,
+  "stop_dist_m": 1.132,
+  "stop_time_s": 1.5,
+  "implied_decel_mps2": 1.668,
+  "budget_stop_dist_m": 1.445,
+  "note": "measured from the instant zero velocity was commanded; excludes sensing latency (budgeted separately in t_lat)"
+ },
+ "sense_stats": {
+  "ticks": 187468,
+  "ticks_limited": 210,
+  "ticks_pushed": 396,
+  "min_range_m": 0.4542725825191004,
+  "no_fresh_lidar_ticks": 0,
+  "min_lidar": 1.010555816650787,
+  "min_down": 0.4542725932598116,
+  "min_up": 3.4349382696094874
+ },
+ "min_sensed_range_at_legs_m": 1.944,
+ "contacts": {
+  "episodes": 0,
+  "samples": 0
+ },
+ "camera": {
+  "frames": 114666,
+  "duration_wall_s": 22459.0,
+  "rate_hz": 5.11,
+  "max_gap_s": 4.151,
+  "waypoint_snapshots": 1161
+ },
+ "camera_sim_time": {
+  "frames_csv": 114666,
+  "rate_per_sim_s_hz": 12.22,
+  "max_sim_gap_s": 1.188,
+  "wall_gaps_over_60s": []
+ },
+ "summary_follower": {
+  "waypoints_in_plan": 1162,
+  "attempted": 1161,
+  "reached": 1161,
+  "results": {
+   "not_attempted_unreachable_in_plan": 1,
+   "reached": 1161
+  },
+  "ekf_err_m": {
+   "mean": 0.0992,
+   "max": 0.2266,
+   "p95": 0.1502
+  },
+  "mission_time_sim_s": 9374.9,
+  "mission_time_wall_s": 22445.0,
+  "distance_ekf_m": 9162.4
+ },
+ "distance_true_m": 9050.3,
+ "planned_total_path_m": 8987.41,
+ "coverage_flown": {
+  "planned_pct": 80.61,
+  "flown_all_frames_pct": 81.1,
+  "flown_hold_frames_only_pct": 80.26,
+  "visible_area_m2": 47706.3,
+  "by_component": {
+   "abutments": {
+    "visible_m2": 2254.9,
+    "planned_pct": 99.91,
+    "flown_pct": 100.0,
+    "flown_hold_pct": 99.72
+   },
+   "bearings": {
+    "visible_m2": 23.0,
+    "planned_pct": 80.3,
+    "flown_pct": 87.15,
+    "flown_hold_pct": 81.06
+   },
+   "deck edges": {
+    "visible_m2": 1504.2,
+    "planned_pct": 87.18,
+    "flown_pct": 87.69,
+    "flown_hold_pct": 87.04
+   },
+   "deck furniture": {
+    "visible_m2": 720.2,
+    "planned_pct": 94.61,
+    "flown_pct": 95.13,
+    "flown_hold_pct": 94.58
+   },
+   "deck top": {
+    "visible_m2": 9962.2,
+    "planned_pct": 75.07,
+    "flown_pct": 75.88,
+    "flown_hold_pct": 74.7
+   },
+   "deck underside": {
+    "visible_m2": 8985.1,
+    "planned_pct": 81.5,
+    "flown_pct": 81.55,
+    "flown_hold_pct": 81.37
+   },
+   "girders": {
+    "visible_m2": 8984.4,
+    "planned_pct": 84.15,
+    "flown_pct": 84.43,
+    "flown_hold_pct": 84.01
+   },
+   "parapets": {
+    "visible_m2": 3140.5,
+    "planned_pct": 92.98,
+    "flown_pct": 93.8,
+    "flown_hold_pct": 90.61
+   },
+   "piers": {
+    "visible_m2": 3536.7,
+    "planned_pct": 95.97,
+    "flown_pct": 96.16,
+    "flown_hold_pct": 95.55
+   },
+   "truss": {
+    "visible_m2": 8595.2,
+    "planned_pct": 64.19,
+    "flown_pct": 65.06,
+    "flown_hold_pct": 64.05
+   }
+  },
+  "method": "true base_link pose + true gimbal angle (pose_audit_track.csv, interpolated to each frame's sim stamp) -> camera pose -> covlib camera model (640x480, 80x64.4 deg, 12 m, incidence <=60 deg, ray-cast LOS vs collision JSON + Gazebo-only boxes)"
+ },
+ "live_detection": {
+  "frames_processed": 112730,
+  "achieved_hz": 7.193,
+  "mean_inference_s": 0.139,
+  "n_detections": 87,
+  "model": "v2",
+  "score_thresh": 0.65,
+  "note": "in-sim detection: proves the live inference/publish/log pipeline end to end against Gazebo's flat-shaded, untextured geometry -- NOT a real-world accuracy measurement. Real-world accuracy is the separate offline Blender zoom-tile benchmark: detection/AVIAN_detector_report_FINAL.md."
+ },
+ "git_commit": "a749e13"
+}

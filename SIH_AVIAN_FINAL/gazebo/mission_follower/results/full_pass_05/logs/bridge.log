@@ -1,0 +1,9 @@
+[0m[INFO] [1790337689.596858877] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)[0m
+[0m[INFO] [1790337689.599499814] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/link/sensor/garudanex_lidar_3d/scan/points (gz.msgs.PointCloudPacked) -> /mission/lidar_points (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[0m[INFO] [1790337689.606409102] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/up_range/scan/points (gz.msgs.PointCloudPacked) -> /mission/up_points (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[0m[INFO] [1790337689.607740445] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/down_range/scan/points (gz.msgs.PointCloudPacked) -> /mission/down_points (sensor_msgs/msg/PointCloud2)] (Lazy 0)[0m
+[0m[INFO] [1790337689.608861337] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/gimbal_cam_link/sensor/front_camera/image (gz.msgs.Image) -> /camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)[0m
+[0m[INFO] [1790337689.610518732] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/mission/gimbal_cmd (std_msgs/msg/Float64) -> /model/x500_lidar_2d_0/joint/gimbal_pitch_joint/0/cmd_pos (gz.msgs.Double)] (Lazy 0)[0m
+[0m[INFO] [1790337689.612127697] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/body_contact_sensor/contact (gz.msgs.Contacts) -> /body_contact (ros_gz_interfaces/msg/Contacts)] (Lazy 0)[0m
+[0m[INFO] [1790337761.243889441] [ros_gz_bridge]: Passing message from ROS std_msgs/msg/Float64 to Gazebo gz.msgs.Double (showing msg only once per type)[0m
+[0m[INFO] [1790360156.363643156] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m

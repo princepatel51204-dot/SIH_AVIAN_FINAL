@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Summarise one mission_follower run from its own output files only
 (mission_log.json, pose_audit.json, contact_summary.json,
-camera/camera_stats.json) -> <run>/task1_summary.json + stdout.
+camera/camera_stats.json, coverage_flown.json if measure_flown.py has been
+run, detection/detection_stats.json + detections.json if the live detector
+ran) -> <run>/task1_summary.json + stdout.
 
 Usage: summarize_run.py results/<run>
 """
 import json
 import os
+import subprocess
 import sys
 
 import numpy as np
@@ -32,7 +35,7 @@ recs = [r for r in A['records'] if r['result'] == 'reached']
 te = np.array([r['true_err_m'] for r in recs]) if recs else np.zeros(0)
 off = np.array([r['true_minus_target_m'] for r in recs]) if recs else np.zeros((0, 3))
 ev = np.array([r['ekf_vs_true_err_m'] for r in recs]) if recs else np.zeros(0)
-nudged = {w['waypoint_id'] for w in plan['waypoints'] if w['nudged']}
+nudged = {w['waypoint_id'] for w in plan['waypoints'] if w.get('nudged')}
 te_orig = np.array([r['true_err_m'] for r in recs if r['waypoint_id'] not in nudged])
 
 
@@ -58,6 +61,21 @@ if os.path.exists(fcsv):
                    'max_sim_gap_s': round(float(ds.max()), 3),
                    'wall_gaps_over_60s': [{'frame': int(i), 'wall_gap_s': round(float(dw[i]), 1),
                                            'sim_gap_s': round(float(ds[i]), 3)} for i in np.where(dw > 60)[0]]}
+
+cov_p = os.path.join(run, 'coverage_flown.json')
+COVERAGE = json.load(open(cov_p)) if os.path.exists(cov_p) else None
+
+det_stats_p = os.path.join(run, 'detection', 'detection_stats.json')
+det_json_p = os.path.join(run, 'detection', 'detections.json')
+DET_STATS = json.load(open(det_stats_p)) if os.path.exists(det_stats_p) else None
+DET = json.load(open(det_json_p)) if os.path.exists(det_json_p) else None
+
+try:
+    commit = subprocess.run(['git', 'rev-parse', '--short', 'HEAD'], cwd=os.path.dirname(os.path.abspath(__file__)),
+                            capture_output=True, text=True, timeout=5).stdout.strip() or None
+except Exception:
+    commit = None
+
 out = {
     'run': os.path.basename(os.path.normpath(run)),
     'final': L.get('final'),
@@ -85,6 +103,21 @@ out = {
     'summary_follower': L.get('summary'),
     'distance_true_m': (A.get('summary') or {}).get('distance_true_m'),
     'planned_total_path_m': plan['planned_total_path_m'],
+    'coverage_flown': None if COVERAGE is None else {
+        'planned_pct': COVERAGE['coverage_pct']['planned'], 'flown_all_frames_pct': COVERAGE['coverage_pct']['flown_all_frames'],
+        'flown_hold_frames_only_pct': COVERAGE['coverage_pct']['flown_hold_frames_only'],
+        'visible_area_m2': COVERAGE['visible_area_m2'], 'by_component': COVERAGE['by_component'],
+        'method': COVERAGE['method'],
+    },
+    'live_detection': None if DET_STATS is None else {
+        'frames_processed': DET_STATS['frames_processed'], 'achieved_hz': DET_STATS['achieved_hz'],
+        'mean_inference_s': DET_STATS['mean_inference_s'], 'n_detections': DET_STATS['n_detections'],
+        'model': None if DET is None else DET.get('model'), 'score_thresh': None if DET is None else DET.get('score_thresh'),
+        'note': 'in-sim detection: proves the live inference/publish/log pipeline end to end against Gazebo\'s '
+                'flat-shaded, untextured geometry -- NOT a real-world accuracy measurement. Real-world accuracy '
+                'is the separate offline Blender zoom-tile benchmark: detection/AVIAN_detector_report_FINAL.md.',
+    },
+    'git_commit': commit,
 }
 json.dump(out, open(os.path.join(run, 'task1_summary.json'), 'w'), indent=1)
 print(json.dumps(out, indent=1))

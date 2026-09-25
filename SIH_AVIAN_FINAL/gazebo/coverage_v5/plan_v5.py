@@ -280,9 +280,139 @@ def cover(cam, target=0.90):
     return res
 
 
+# ---------------------------------------------------------------- route ---
+LANES = [("road_low", "BR", "low", +1), ("road_high", "BR", "high", -1),
+         ("metro_high", "MB", "high", +1), ("metro_low", "MB", "low", -1)]
+LEVEL_Z = {"BR": 13.0, "MB": 17.3}   # between the deck's underside and top
+
+
+def _zones(S, fam):
+    """Pier zones (pier x +/- 8 m) and the spans between them, along x."""
+    xs = sorted({round(S.c[i][0], 2) for i, n in enumerate(S.names)
+                 if n.startswith(fam + "_PIER_COL")})
+    edges = [-1e9]
+    for x in xs:
+        edges += [x - 8.0, x + 8.0]
+    edges.append(1e9)
+    return np.array(edges)
+
+
+def _cost(a, b):
+    return math.hypot(a[0] - b[0], a[1] - b[1]) + abs(a[2] - b[2])   # flat + vertical legs
+
+
+def _order_zone(pts, start):
+    """Open path through pts from `start`: nearest neighbour + 2-opt."""
+    n = len(pts)
+    left = list(range(n))
+    path, cur = [], start
+    while left:
+        j = min(left, key=lambda k: _cost(cur, pts[k]))
+        path.append(j)
+        left.remove(j)
+        cur = pts[j]
+    seq = [start] + [pts[k] for k in path]
+    improved = True
+    while improved:
+        improved = False
+        for i in range(1, len(seq) - 1):
+            for j in range(i + 1, len(seq)):
+                a, b = seq[i - 1], seq[i]
+                c_, d = seq[j], seq[j + 1] if j + 1 < len(seq) else None
+                delta = _cost(a, c_) - _cost(a, b)
+                if d is not None:
+                    delta += _cost(b, d) - _cost(c_, d)
+                if delta < -1e-6:
+                    seq[i:j + 1] = seq[i:j + 1][::-1]
+                    path[i - 1:j] = path[i - 1:j][::-1]
+                    improved = True
+    return path
+
+
+def route_plan(cam="gimbal", out_path=None):
+    import plan_gazebo_mission as PG
+    S, g = geometry()
+    c = candidates(S, g, cam)
+    kept = np.load(os.path.join(CACHE, f"chosen_{cam}.npy"))
+    fam = np.array([S.names[g["solid"][s]].split("_")[0] for s in c["seed"][kept]])
+    fam = np.where(fam == "ST", "BR", fam)
+    base = c["base"][kept]
+    level = np.array(["low" if b[2] < LEVEL_Z[f] else "high" for b, f in zip(base, fam)])
+    order, lane_of = [], {}
+    cur = HOME_AIR.copy()
+    for lane, f, lev, sgn in LANES:
+        m = np.flatnonzero((fam == f) & (level == lev))
+        edges = _zones(S, f)
+        zone = np.searchsorted(edges, base[m, 0])
+        for z in sorted(set(zone), reverse=sgn < 0):
+            mz = m[zone == z]
+            path = _order_zone([base[i] for i in mz], cur)
+            for k in path:
+                order.append(mz[k])
+                lane_of[mz[k]] = (lane, int(z))
+            cur = base[order[-1]]
+    assert sorted(order) == list(range(len(kept)))
+    # routing: the existing flat/vertical 3.5 m router, with the fast exact clearance
+    PG.clearance = lambda pts, prims: C.fast_clearance(S, pts)
+    # v5: every viewpoint clears 3.5 m, so no endpoint relaxation anywhere
+    # (v4's 3.2 m tier-3 floor must not leak into corners of v5 legs)
+    PG.TIER3_CLEARANCE_M = PLAN_CLEARANCE_M
+    grid = PG.Grid(None)
+    wps, prev, total = [], HOME_AIR.tolist(), PG.TAKEOFF_ALT_M
+    raw_min, n_fail, methods = math.inf, 0, {}
+    t0 = time.time()
+    for k, i in enumerate(order):
+        ci = kept[i]
+        pos = [round(float(v), 4) for v in c["base"][ci]]
+        via, method, mc = PG.route(prev, pos, None, grid)
+        ok_route = via is not None
+        if not ok_route:
+            n_fail += 1
+            via = []
+        methods[method] = methods.get(method, 0) + 1
+        pts = [prev] + via + [pos]
+        leg = sum(float(np.linalg.norm(np.subtract(q, p))) for p, q in zip(pts[:-1], pts[1:]))
+        for p, q in zip(pts[:-1], pts[1:]):
+            raw_min = min(raw_min, PG.segment_min_clearance(p, q, None))
+        seed = int(c["seed"][ci])
+        wps.append({"waypoint_id": f"V5_{k + 1:04d}", "position_m": pos,
+                    "heading_rad": round(float(c["yaw"][ci]), 4), "gimbal_pitch_rad": round(float(c["pitch"][ci]), 4),
+                    "camera_world_m": [round(float(v), 4) for v in c["cam"][ci]],
+                    "seed_patch": seed, "seed_member": S.names[g["solid"][seed]], "seed_component": str(g["comp"][seed]),
+                    "lane": lane_of[i][0], "zone": lane_of[i][1], "route_in": via, "route_method": method,
+                    "route_length_m": round(leg, 3), "reachable_in_plan": ok_route,
+                    "candidate_index": int(ci)})
+        if ok_route:
+            total += leg
+            prev = pos
+        if k % 100 == 0:
+            log(f"  routed {k + 1}/{len(order)}  {time.time() - t0:.0f} s  path {total:.0f} m")
+    rth, rth_m, _ = PG.route(prev, HOME_AIR.tolist(), None, grid)
+    pts = [prev] + (rth or []) + [HOME_AIR.tolist()]
+    rth_len = sum(float(np.linalg.norm(np.subtract(q, p))) for p, q in zip(pts[:-1], pts[1:]))
+    total += rth_len + PG.TAKEOFF_ALT_M
+    plan = {"generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "planner": "gazebo/coverage_v5/plan_v5.py (offline; geometry only, no defect data)",
+            "camera": cam, "camera_mount_m": CAMS[cam]["mount"].tolist(),
+            "sensed_clearance_m": 3.0, "plan_clearance_m": PLAN_CLEARANCE_M, "min_agl_m": MIN_AGL_M,
+            "home_ground_world_m": [20.0, -30.0, 0.0], "home_air_world_m": HOME_AIR.tolist(),
+            "n_waypoints": len(wps), "legs": methods, "route_failures": n_fail,
+            "min_route_clearance_m": round(raw_min, 3),
+            "rth": {"route": rth or [], "method": rth_m, "length_m": round(rth_len, 3)},
+            "planned_total_path_m": round(total, 2), "waypoints": wps}
+    out_path = out_path or os.path.join(ROOT_MISSION, "gazebo_mission_plan_v5.json")
+    json.dump(plan, open(out_path, "w"), indent=1)
+    log(f"plan: {len(wps)} viewpoints, path {total:.0f} m, legs {methods}, failures {n_fail}, "
+        f"raw min clearance {raw_min:.3f} m -> {out_path}")
+    return plan
+
+
+ROOT_MISSION = os.path.join(C.ROOT, "mission")
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("stage", choices=["geometry", "cands", "vis", "cover"])
+    ap.add_argument("stage", choices=["geometry", "cands", "vis", "cover", "route"])
     ap.add_argument("camera", nargs="?", default="gimbal", choices=list(CAMS))
     ap.add_argument("--target", type=float, default=0.90)
     a = ap.parse_args()
@@ -296,3 +426,6 @@ if __name__ == "__main__":
         visibility(a.camera)
     elif a.stage == "cover":
         cover(a.camera, a.target)
+    elif a.stage == "route":
+        sys.path.insert(0, os.path.join(HERE, "..", "mission_follower"))
+        route_plan(a.camera)

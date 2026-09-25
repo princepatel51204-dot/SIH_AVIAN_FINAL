@@ -1,0 +1,1661 @@
+{
+ "model": "v2",
+ "weights": "detection/AVIAN_detector_weights_v2_FINAL.pt",
+ "score_thresh": 0.65,
+ "n_detections": 87,
+ "detections": [
+  {
+   "waypoint_id": "V5_0443",
+   "sim_time_s": 3164.372,
+   "frame_id": 38687,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7547,
+   "bbox_xyxy_px": [
+    240.51,
+    143.52,
+    468.27,
+    323.39
+   ],
+   "drone_pose_ekf_world_m": [
+    302.7659,
+    -2.7456,
+    21.1261
+   ],
+   "drone_yaw_ekf_enu_rad": -2.2858
+  },
+  {
+   "waypoint_id": "V5_0443",
+   "sim_time_s": 3164.436,
+   "frame_id": 38688,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7095,
+   "bbox_xyxy_px": [
+    242.64,
+    144.58,
+    467.62,
+    326.89
+   ],
+   "drone_pose_ekf_world_m": [
+    302.7649,
+    -2.7445,
+    21.1311
+   ],
+   "drone_yaw_ekf_enu_rad": -2.2684
+  },
+  {
+   "waypoint_id": "V5_0443",
+   "sim_time_s": 3164.504,
+   "frame_id": 38689,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7256,
+   "bbox_xyxy_px": [
+    238.26,
+    145.18,
+    462.14,
+    328.71
+   ],
+   "drone_pose_ekf_world_m": [
+    302.7598,
+    -2.7394,
+    21.157
+   ],
+   "drone_yaw_ekf_enu_rad": -2.1763
+  },
+  {
+   "waypoint_id": "V5_0443",
+   "sim_time_s": 3164.568,
+   "frame_id": 38690,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6862,
+   "bbox_xyxy_px": [
+    235.39,
+    146.59,
+    461.12,
+    331.58
+   ],
+   "drone_pose_ekf_world_m": [
+    302.757,
+    -2.7366,
+    21.1735
+   ],
+   "drone_yaw_ekf_enu_rad": -2.1173
+  },
+  {
+   "waypoint_id": "V5_0443",
+   "sim_time_s": 3164.636,
+   "frame_id": 38691,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6635,
+   "bbox_xyxy_px": [
+    232.77,
+    147.38,
+    460.93,
+    332.55
+   ],
+   "drone_pose_ekf_world_m": [
+    302.7516,
+    -2.7318,
+    21.2112
+   ],
+   "drone_yaw_ekf_enu_rad": -1.9934
+  },
+  {
+   "waypoint_id": "V5_0443",
+   "sim_time_s": 3164.832,
+   "frame_id": 38694,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7311,
+   "bbox_xyxy_px": [
+    252.51,
+    169.81,
+    442.68,
+    333.0
+   ],
+   "drone_pose_ekf_world_m": [
+    302.7449,
+    -2.7269,
+    21.3151
+   ],
+   "drone_yaw_ekf_enu_rad": -1.7439
+  },
+  {
+   "waypoint_id": "V5_0620",
+   "sim_time_s": 4489.056,
+   "frame_id": 54499,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7101,
+   "bbox_xyxy_px": [
+    275.75,
+    195.94,
+    410.11,
+    297.74
+   ],
+   "drone_pose_ekf_world_m": [
+    135.604,
+    9.6111,
+    25.0592
+   ],
+   "drone_yaw_ekf_enu_rad": -2.2659
+  },
+  {
+   "waypoint_id": "V5_0620",
+   "sim_time_s": 4489.124,
+   "frame_id": 54500,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8908,
+   "bbox_xyxy_px": [
+    258.21,
+    192.98,
+    396.48,
+    308.04
+   ],
+   "drone_pose_ekf_world_m": [
+    135.6097,
+    9.6063,
+    25.1283
+   ],
+   "drone_yaw_ekf_enu_rad": -2.4035
+  },
+  {
+   "waypoint_id": "V5_0620",
+   "sim_time_s": 4489.256,
+   "frame_id": 54501,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8051,
+   "bbox_xyxy_px": [
+    217.85,
+    199.18,
+    359.1,
+    305.76
+   ],
+   "drone_pose_ekf_world_m": [
+    135.6129,
+    9.602,
+    25.2105
+   ],
+   "drone_yaw_ekf_enu_rad": -2.5225
+  },
+  {
+   "waypoint_id": "V5_0620",
+   "sim_time_s": 4490.772,
+   "frame_id": 54520,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6755,
+   "bbox_xyxy_px": [
+    195.66,
+    216.32,
+    333.51,
+    327.91
+   ],
+   "drone_pose_ekf_world_m": [
+    135.823,
+    9.5722,
+    25.6917
+   ],
+   "drone_yaw_ekf_enu_rad": -2.5442
+  },
+  {
+   "waypoint_id": "V5_0802",
+   "sim_time_s": 6145.196,
+   "frame_id": 72365,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7394,
+   "bbox_xyxy_px": [
+    285.68,
+    198.11,
+    347.98,
+    276.08
+   ],
+   "drone_pose_ekf_world_m": [
+    205.3647,
+    36.7482,
+    22.3608
+   ],
+   "drone_yaw_ekf_enu_rad": 0.1724
+  },
+  {
+   "waypoint_id": "V5_0802",
+   "sim_time_s": 6145.26,
+   "frame_id": 72366,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7843,
+   "bbox_xyxy_px": [
+    290.48,
+    199.3,
+    351.91,
+    282.62
+   ],
+   "drone_pose_ekf_world_m": [
+    205.4252,
+    36.7519,
+    22.3648
+   ],
+   "drone_yaw_ekf_enu_rad": 0.1762
+  },
+  {
+   "waypoint_id": "V5_0802",
+   "sim_time_s": 6145.328,
+   "frame_id": 72367,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8009,
+   "bbox_xyxy_px": [
+    290.22,
+    200.99,
+    353.87,
+    283.93
+   ],
+   "drone_pose_ekf_world_m": [
+    205.5005,
+    36.7569,
+    22.37
+   ],
+   "drone_yaw_ekf_enu_rad": 0.1783
+  },
+  {
+   "waypoint_id": "V5_0802",
+   "sim_time_s": 6145.392,
+   "frame_id": 72368,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8025,
+   "bbox_xyxy_px": [
+    287.27,
+    202.56,
+    353.53,
+    283.6
+   ],
+   "drone_pose_ekf_world_m": [
+    205.8456,
+    36.7819,
+    22.3952
+   ],
+   "drone_yaw_ekf_enu_rad": 0.1544
+  },
+  {
+   "waypoint_id": "V5_1009",
+   "sim_time_s": 7933.4,
+   "frame_id": 94225,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6652,
+   "bbox_xyxy_px": [
+    252.07,
+    145.09,
+    352.77,
+    270.3
+   ],
+   "drone_pose_ekf_world_m": [
+    234.0382,
+    25.0386,
+    7.7707
+   ],
+   "drone_yaw_ekf_enu_rad": 2.0637
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7982.436,
+   "frame_id": 94832,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6694,
+   "bbox_xyxy_px": [
+    403.87,
+    315.64,
+    533.34,
+    463.29
+   ],
+   "drone_pose_ekf_world_m": [
+    230.8671,
+    30.5198,
+    7.8186
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0572
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7983.228,
+   "frame_id": 94842,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7217,
+   "bbox_xyxy_px": [
+    390.14,
+    286.35,
+    524.52,
+    434.16
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9007,
+    30.517,
+    7.0215
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0988
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7983.624,
+   "frame_id": 94847,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6516,
+   "bbox_xyxy_px": [
+    397.79,
+    270.77,
+    532.58,
+    421.8
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9097,
+    30.5175,
+    6.6791
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0908
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7983.692,
+   "frame_id": 94848,
+   "class": "SPALL_DELAM",
+   "confidence": 0.668,
+   "bbox_xyxy_px": [
+    399.19,
+    269.64,
+    533.77,
+    420.61
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9105,
+    30.5175,
+    6.647
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0898
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7983.888,
+   "frame_id": 94850,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6644,
+   "bbox_xyxy_px": [
+    401.07,
+    264.55,
+    538.43,
+    411.57
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9156,
+    30.5168,
+    6.3807
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0832
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7983.956,
+   "frame_id": 94851,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6541,
+   "bbox_xyxy_px": [
+    402.35,
+    263.41,
+    539.49,
+    409.2
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9165,
+    30.5162,
+    6.3243
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0822
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.22,
+   "frame_id": 94852,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8062,
+   "bbox_xyxy_px": [
+    402.67,
+    253.73,
+    541.65,
+    403.66
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9202,
+    30.516,
+    6.0833
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0803
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.284,
+   "frame_id": 94853,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8477,
+   "bbox_xyxy_px": [
+    403.18,
+    251.43,
+    542.91,
+    402.3
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9211,
+    30.5171,
+    6.0193
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0803
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.352,
+   "frame_id": 94854,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7976,
+   "bbox_xyxy_px": [
+    403.42,
+    249.94,
+    545.5,
+    400.06
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9218,
+    30.5181,
+    5.9793
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0804
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.416,
+   "frame_id": 94855,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7726,
+   "bbox_xyxy_px": [
+    403.13,
+    247.47,
+    547.18,
+    397.16
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9237,
+    30.5209,
+    5.883
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0809
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.484,
+   "frame_id": 94856,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7833,
+   "bbox_xyxy_px": [
+    403.4,
+    244.05,
+    547.57,
+    395.43
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9242,
+    30.5216,
+    5.859
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0811
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.548,
+   "frame_id": 94857,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7728,
+   "bbox_xyxy_px": [
+    404.0,
+    240.31,
+    548.3,
+    394.0
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9252,
+    30.5231,
+    5.8029
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0815
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.616,
+   "frame_id": 94858,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7775,
+   "bbox_xyxy_px": [
+    404.14,
+    238.13,
+    549.38,
+    391.15
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9272,
+    30.5248,
+    5.6834
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0826
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.68,
+   "frame_id": 94859,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9345,
+   "bbox_xyxy_px": [
+    395.7,
+    225.63,
+    555.43,
+    388.56
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9275,
+    30.5249,
+    5.6596
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0829
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.812,
+   "frame_id": 94860,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9295,
+   "bbox_xyxy_px": [
+    397.07,
+    222.94,
+    556.1,
+    382.19
+   ],
+   "drone_pose_ekf_world_m": [
+    230.93,
+    30.5234,
+    5.4771
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0846
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7984.944,
+   "frame_id": 94861,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9504,
+   "bbox_xyxy_px": [
+    399.77,
+    216.86,
+    556.81,
+    377.89
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9319,
+    30.5207,
+    5.3254
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0858
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.012,
+   "frame_id": 94862,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9454,
+   "bbox_xyxy_px": [
+    400.51,
+    215.26,
+    558.08,
+    375.13
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9322,
+    30.5202,
+    5.3013
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0859
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.076,
+   "frame_id": 94863,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9454,
+   "bbox_xyxy_px": [
+    401.74,
+    214.22,
+    559.41,
+    372.09
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9333,
+    30.5179,
+    5.1809
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0865
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.144,
+   "frame_id": 94864,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9367,
+   "bbox_xyxy_px": [
+    402.11,
+    212.11,
+    560.64,
+    369.02
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9336,
+    30.5175,
+    5.1574
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0866
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.208,
+   "frame_id": 94865,
+   "class": "SPALL_DELAM",
+   "confidence": 0.936,
+   "bbox_xyxy_px": [
+    401.38,
+    208.95,
+    560.43,
+    367.41
+   ],
+   "drone_pose_ekf_world_m": [
+    230.934,
+    30.517,
+    5.1265
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0867
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.276,
+   "frame_id": 94866,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8481,
+   "bbox_xyxy_px": [
+    407.94,
+    205.02,
+    562.94,
+    358.61
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9348,
+    30.5162,
+    5.0671
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0868
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.34,
+   "frame_id": 94867,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8275,
+   "bbox_xyxy_px": [
+    409.22,
+    202.56,
+    563.47,
+    356.24
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9358,
+    30.5153,
+    4.9562
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0868
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.472,
+   "frame_id": 94868,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8561,
+   "bbox_xyxy_px": [
+    397.56,
+    211.2,
+    547.04,
+    364.01
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9354,
+    30.5157,
+    4.8945
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0891
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.604,
+   "frame_id": 94869,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9507,
+   "bbox_xyxy_px": [
+    365.06,
+    212.81,
+    527.69,
+    375.37
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9358,
+    30.5072,
+    4.8506
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0908
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.672,
+   "frame_id": 94870,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8581,
+   "bbox_xyxy_px": [
+    368.96,
+    224.67,
+    525.95,
+    376.77
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9369,
+    30.5002,
+    4.8452
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0905
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.736,
+   "frame_id": 94871,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8384,
+   "bbox_xyxy_px": [
+    368.01,
+    226.66,
+    525.47,
+    378.56
+   ],
+   "drone_pose_ekf_world_m": [
+    230.939,
+    30.4885,
+    4.8418
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0897
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.804,
+   "frame_id": 94872,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8502,
+   "bbox_xyxy_px": [
+    370.33,
+    226.98,
+    527.35,
+    379.83
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9485,
+    30.4431,
+    4.8405
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0869
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7985.936,
+   "frame_id": 94873,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8718,
+   "bbox_xyxy_px": [
+    379.46,
+    224.54,
+    536.27,
+    380.27
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9703,
+    30.356,
+    4.8405
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0839
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.0,
+   "frame_id": 94874,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8486,
+   "bbox_xyxy_px": [
+    388.31,
+    225.12,
+    540.8,
+    377.41
+   ],
+   "drone_pose_ekf_world_m": [
+    230.9748,
+    30.3397,
+    4.8403
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0835
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.068,
+   "frame_id": 94875,
+   "class": "SPALL_DELAM",
+   "confidence": 0.87,
+   "bbox_xyxy_px": [
+    396.62,
+    223.41,
+    545.59,
+    375.47
+   ],
+   "drone_pose_ekf_world_m": [
+    231.0009,
+    30.251,
+    4.8375
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0824
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.132,
+   "frame_id": 94876,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9606,
+   "bbox_xyxy_px": [
+    396.7,
+    216.07,
+    557.72,
+    374.6
+   ],
+   "drone_pose_ekf_world_m": [
+    231.015,
+    30.2062,
+    4.8353
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0821
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.264,
+   "frame_id": 94877,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9474,
+   "bbox_xyxy_px": [
+    394.93,
+    207.03,
+    563.35,
+    369.81
+   ],
+   "drone_pose_ekf_world_m": [
+    231.0434,
+    30.1191,
+    4.8296
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0819
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.332,
+   "frame_id": 94878,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8344,
+   "bbox_xyxy_px": [
+    416.27,
+    212.3,
+    574.94,
+    363.54
+   ],
+   "drone_pose_ekf_world_m": [
+    231.0708,
+    30.0354,
+    4.8225
+   ],
+   "drone_yaw_ekf_enu_rad": -3.082
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.396,
+   "frame_id": 94879,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8222,
+   "bbox_xyxy_px": [
+    419.06,
+    212.43,
+    571.37,
+    362.08
+   ],
+   "drone_pose_ekf_world_m": [
+    231.0778,
+    30.0142,
+    4.8206
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0821
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.464,
+   "frame_id": 94880,
+   "class": "SPALL_DELAM",
+   "confidence": 0.859,
+   "bbox_xyxy_px": [
+    421.05,
+    205.36,
+    574.43,
+    356.82
+   ],
+   "drone_pose_ekf_world_m": [
+    231.0896,
+    29.9786,
+    4.8171
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0822
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.528,
+   "frame_id": 94881,
+   "class": "SPALL_DELAM",
+   "confidence": 0.84,
+   "bbox_xyxy_px": [
+    426.66,
+    208.77,
+    578.33,
+    357.8
+   ],
+   "drone_pose_ekf_world_m": [
+    231.1186,
+    29.8924,
+    4.8077
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0824
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.596,
+   "frame_id": 94882,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8245,
+   "bbox_xyxy_px": [
+    432.29,
+    207.98,
+    583.57,
+    354.73
+   ],
+   "drone_pose_ekf_world_m": [
+    231.1384,
+    29.8344,
+    4.8007
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0825
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.66,
+   "frame_id": 94883,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8364,
+   "bbox_xyxy_px": [
+    435.52,
+    207.17,
+    586.93,
+    351.19
+   ],
+   "drone_pose_ekf_world_m": [
+    231.1558,
+    29.7834,
+    4.7943
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0826
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.792,
+   "frame_id": 94884,
+   "class": "SPALL_DELAM",
+   "confidence": 0.863,
+   "bbox_xyxy_px": [
+    442.25,
+    201.08,
+    596.29,
+    349.5
+   ],
+   "drone_pose_ekf_world_m": [
+    231.1883,
+    29.6878,
+    4.782
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0828
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.86,
+   "frame_id": 94885,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7452,
+   "bbox_xyxy_px": [
+    444.75,
+    195.98,
+    599.37,
+    342.64
+   ],
+   "drone_pose_ekf_world_m": [
+    231.2258,
+    29.5765,
+    4.7669
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0828
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.924,
+   "frame_id": 94886,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7592,
+   "bbox_xyxy_px": [
+    444.1,
+    195.91,
+    597.88,
+    343.57
+   ],
+   "drone_pose_ekf_world_m": [
+    231.2309,
+    29.5616,
+    4.7648
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0828
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7986.992,
+   "frame_id": 94887,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7681,
+   "bbox_xyxy_px": [
+    447.24,
+    194.38,
+    601.51,
+    342.13
+   ],
+   "drone_pose_ekf_world_m": [
+    231.2511,
+    29.5018,
+    4.7564
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0827
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7987.056,
+   "frame_id": 94888,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8861,
+   "bbox_xyxy_px": [
+    446.83,
+    183.74,
+    614.15,
+    341.32
+   ],
+   "drone_pose_ekf_world_m": [
+    231.2712,
+    29.442,
+    4.7481
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0825
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7987.124,
+   "frame_id": 94889,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9426,
+   "bbox_xyxy_px": [
+    435.88,
+    179.36,
+    624.23,
+    340.31
+   ],
+   "drone_pose_ekf_world_m": [
+    231.2935,
+    29.3749,
+    4.739
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0822
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7987.188,
+   "frame_id": 94890,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9021,
+   "bbox_xyxy_px": [
+    445.89,
+    178.27,
+    628.4,
+    334.46
+   ],
+   "drone_pose_ekf_world_m": [
+    231.32,
+    29.2935,
+    4.7286
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0817
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7987.256,
+   "frame_id": 94891,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8193,
+   "bbox_xyxy_px": [
+    456.34,
+    177.35,
+    633.59,
+    329.3
+   ],
+   "drone_pose_ekf_world_m": [
+    231.3364,
+    29.2427,
+    4.7226
+   ],
+   "drone_yaw_ekf_enu_rad": -3.0813
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "sim_time_s": 7987.32,
+   "frame_id": 94892,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7402,
+   "bbox_xyxy_px": [
+    464.9,
+    174.19,
+    635.39,
+    326.34
+   ],
+   "drone_pose_ekf_world_m": [
+    231.3546,
+    29.1857,
+    4.7161
+   ],
+   "drone_yaw_ekf_enu_rad": -3.081
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8058.8,
+   "frame_id": 95802,
+   "class": "SPALL_DELAM",
+   "confidence": 0.853,
+   "bbox_xyxy_px": [
+    279.49,
+    317.66,
+    462.34,
+    480.0
+   ],
+   "drone_pose_ekf_world_m": [
+    224.1212,
+    36.2045,
+    6.53
+   ],
+   "drone_yaw_ekf_enu_rad": -1.5399
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8058.864,
+   "frame_id": 95803,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9149,
+   "bbox_xyxy_px": [
+    271.7,
+    313.48,
+    455.34,
+    480.0
+   ],
+   "drone_pose_ekf_world_m": [
+    224.1029,
+    36.1745,
+    6.5067
+   ],
+   "drone_yaw_ekf_enu_rad": -1.5676
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8058.932,
+   "frame_id": 95804,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8612,
+   "bbox_xyxy_px": [
+    257.74,
+    314.41,
+    444.86,
+    480.0
+   ],
+   "drone_pose_ekf_world_m": [
+    224.0627,
+    36.1127,
+    6.4672
+   ],
+   "drone_yaw_ekf_enu_rad": -1.6267
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8058.996,
+   "frame_id": 95805,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8696,
+   "bbox_xyxy_px": [
+    244.48,
+    319.52,
+    427.82,
+    480.0
+   ],
+   "drone_pose_ekf_world_m": [
+    224.0502,
+    36.0942,
+    6.4565
+   ],
+   "drone_yaw_ekf_enu_rad": -1.6445
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8062.692,
+   "frame_id": 95850,
+   "class": "SPALL_DELAM",
+   "confidence": 0.715,
+   "bbox_xyxy_px": [
+    85.12,
+    281.14,
+    270.9,
+    471.21
+   ],
+   "drone_pose_ekf_world_m": [
+    220.0615,
+    30.6793,
+    5.1161
+   ],
+   "drone_yaw_ekf_enu_rad": 0.0648
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8062.76,
+   "frame_id": 95851,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6827,
+   "bbox_xyxy_px": [
+    84.19,
+    276.6,
+    266.5,
+    469.03
+   ],
+   "drone_pose_ekf_world_m": [
+    219.9993,
+    30.5969,
+    5.096
+   ],
+   "drone_yaw_ekf_enu_rad": 0.0644
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8062.824,
+   "frame_id": 95852,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6975,
+   "bbox_xyxy_px": [
+    80.64,
+    271.57,
+    255.61,
+    470.44
+   ],
+   "drone_pose_ekf_world_m": [
+    219.9726,
+    30.5615,
+    5.0874
+   ],
+   "drone_yaw_ekf_enu_rad": 0.0629
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8062.892,
+   "frame_id": 95853,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8328,
+   "bbox_xyxy_px": [
+    65.84,
+    263.89,
+    245.23,
+    478.01
+   ],
+   "drone_pose_ekf_world_m": [
+    219.9099,
+    30.4785,
+    5.0676
+   ],
+   "drone_yaw_ekf_enu_rad": 0.057
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8062.956,
+   "frame_id": 95854,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8643,
+   "bbox_xyxy_px": [
+    58.93,
+    267.53,
+    235.58,
+    465.12
+   ],
+   "drone_pose_ekf_world_m": [
+    219.7742,
+    30.3,
+    5.0257
+   ],
+   "drone_yaw_ekf_enu_rad": 0.0347
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8063.024,
+   "frame_id": 95855,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8078,
+   "bbox_xyxy_px": [
+    49.5,
+    265.32,
+    226.59,
+    466.36
+   ],
+   "drone_pose_ekf_world_m": [
+    219.7468,
+    30.2641,
+    5.0174
+   ],
+   "drone_yaw_ekf_enu_rad": 0.0291
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8063.088,
+   "frame_id": 95856,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9152,
+   "bbox_xyxy_px": [
+    33.34,
+    269.18,
+    221.86,
+    474.74
+   ],
+   "drone_pose_ekf_world_m": [
+    219.701,
+    30.2041,
+    5.0035
+   ],
+   "drone_yaw_ekf_enu_rad": 0.0191
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8063.156,
+   "frame_id": 95857,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9326,
+   "bbox_xyxy_px": [
+    15.59,
+    245.29,
+    199.33,
+    461.14
+   ],
+   "drone_pose_ekf_world_m": [
+    219.5342,
+    29.9868,
+    4.9618
+   ],
+   "drone_yaw_ekf_enu_rad": -0.0215
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "sim_time_s": 8063.22,
+   "frame_id": 95858,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8293,
+   "bbox_xyxy_px": [
+    8.13,
+    229.99,
+    179.53,
+    443.33
+   ],
+   "drone_pose_ekf_world_m": [
+    219.4974,
+    29.9388,
+    4.9553
+   ],
+   "drone_yaw_ekf_enu_rad": -0.031
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8078.072,
+   "frame_id": 96039,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7712,
+   "bbox_xyxy_px": [
+    160.75,
+    134.93,
+    419.75,
+    453.42
+   ],
+   "drone_pose_ekf_world_m": [
+    221.2312,
+    21.8729,
+    5.9932
+   ],
+   "drone_yaw_ekf_enu_rad": 0.922
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8078.136,
+   "frame_id": 96040,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8443,
+   "bbox_xyxy_px": [
+    192.99,
+    134.8,
+    441.84,
+    444.77
+   ],
+   "drone_pose_ekf_world_m": [
+    221.2766,
+    21.8487,
+    5.9876
+   ],
+   "drone_yaw_ekf_enu_rad": 0.9902
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8078.204,
+   "frame_id": 96041,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7274,
+   "bbox_xyxy_px": [
+    224.57,
+    150.45,
+    473.77,
+    441.05
+   ],
+   "drone_pose_ekf_world_m": [
+    221.3458,
+    21.8146,
+    5.9786
+   ],
+   "drone_yaw_ekf_enu_rad": 1.0929
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8078.268,
+   "frame_id": 96042,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7666,
+   "bbox_xyxy_px": [
+    242.36,
+    147.81,
+    496.98,
+    440.66
+   ],
+   "drone_pose_ekf_world_m": [
+    221.3813,
+    21.7978,
+    5.9739
+   ],
+   "drone_yaw_ekf_enu_rad": 1.1444
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8079.984,
+   "frame_id": 96059,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7153,
+   "bbox_xyxy_px": [
+    208.08,
+    123.14,
+    427.6,
+    433.09
+   ],
+   "drone_pose_ekf_world_m": [
+    223.5867,
+    20.7915,
+    5.7794
+   ],
+   "drone_yaw_ekf_enu_rad": 1.5709
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8080.052,
+   "frame_id": 96060,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8704,
+   "bbox_xyxy_px": [
+    193.44,
+    120.75,
+    416.75,
+    430.44
+   ],
+   "drone_pose_ekf_world_m": [
+    223.7302,
+    20.7272,
+    5.7694
+   ],
+   "drone_yaw_ekf_enu_rad": 1.5622
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8080.184,
+   "frame_id": 96061,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7241,
+   "bbox_xyxy_px": [
+    169.84,
+    129.57,
+    408.06,
+    415.84
+   ],
+   "drone_pose_ekf_world_m": [
+    224.049,
+    20.5862,
+    5.7462
+   ],
+   "drone_yaw_ekf_enu_rad": 1.5574
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8080.248,
+   "frame_id": 96062,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7615,
+   "bbox_xyxy_px": [
+    164.19,
+    130.17,
+    397.77,
+    410.65
+   ],
+   "drone_pose_ekf_world_m": [
+    224.0927,
+    20.567,
+    5.7431
+   ],
+   "drone_yaw_ekf_enu_rad": 1.558
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8080.316,
+   "frame_id": 96063,
+   "class": "SPALL_DELAM",
+   "confidence": 0.697,
+   "bbox_xyxy_px": [
+    151.28,
+    117.23,
+    385.64,
+    408.77
+   ],
+   "drone_pose_ekf_world_m": [
+    224.2387,
+    20.5037,
+    5.7352
+   ],
+   "drone_yaw_ekf_enu_rad": 1.5606
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8080.38,
+   "frame_id": 96064,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6788,
+   "bbox_xyxy_px": [
+    138.55,
+    111.5,
+    371.26,
+    393.97
+   ],
+   "drone_pose_ekf_world_m": [
+    224.2823,
+    20.4849,
+    5.7334
+   ],
+   "drone_yaw_ekf_enu_rad": 1.5617
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "sim_time_s": 8081.172,
+   "frame_id": 96075,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6648,
+   "bbox_xyxy_px": [
+    112.11,
+    99.95,
+    338.36,
+    364.79
+   ],
+   "drone_pose_ekf_world_m": [
+    225.4291,
+    20.0051,
+    5.6513
+   ],
+   "drone_yaw_ekf_enu_rad": 1.6434
+  },
+  {
+   "waypoint_id": "V5_1044",
+   "sim_time_s": 8227.824,
+   "frame_id": 97935,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8415,
+   "bbox_xyxy_px": [
+    29.14,
+    190.18,
+    180.01,
+    327.33
+   ],
+   "drone_pose_ekf_world_m": [
+    144.5116,
+    21.1351,
+    7.8241
+   ],
+   "drone_yaw_ekf_enu_rad": 2.7179
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "run": "full_pass_05",
+ "plan": "gazebo/mission_follower/results/full_pass_05/plan_used_v5.json",
+ "visible_area_m2": 47706.3,
+ "frames_total": 114666,
+ "frames_with_true_pose": 114666,
+ "frames_holding_at_reached_viewpoints": 14288,
+ "coverage_pct": {
+  "planned": 80.61,
+  "flown_all_frames": 81.1,
+  "flown_hold_frames_only": 80.26
+ },
+ "covered_area_m2": {
+  "planned": 38456.2,
+  "flown_all_frames": 38690.5,
+  "flown_hold_frames_only": 38289.7
+ },
+ "planned_but_not_flown_m2": 5.1,
+ "by_component": {
+  "abutments": {
+   "visible_m2": 2254.9,
+   "planned_pct": 99.91,
+   "flown_pct": 100.0,
+   "flown_hold_pct": 99.72
+  },
+  "bearings": {
+   "visible_m2": 23.0,
+   "planned_pct": 80.3,
+   "flown_pct": 87.15,
+   "flown_hold_pct": 81.06
+  },
+  "deck edges": {
+   "visible_m2": 1504.2,
+   "planned_pct": 87.18,
+   "flown_pct": 87.69,
+   "flown_hold_pct": 87.04
+  },
+  "deck furniture": {
+   "visible_m2": 720.2,
+   "planned_pct": 94.61,
+   "flown_pct": 95.13,
+   "flown_hold_pct": 94.58
+  },
+  "deck top": {
+   "visible_m2": 9962.2,
+   "planned_pct": 75.07,
+   "flown_pct": 75.88,
+   "flown_hold_pct": 74.7
+  },
+  "deck underside": {
+   "visible_m2": 8985.1,
+   "planned_pct": 81.5,
+   "flown_pct": 81.55,
+   "flown_hold_pct": 81.37
+  },
+  "girders": {
+   "visible_m2": 8984.4,
+   "planned_pct": 84.15,
+   "flown_pct": 84.43,
+   "flown_hold_pct": 84.01
+  },
+  "parapets": {
+   "visible_m2": 3140.5,
+   "planned_pct": 92.98,
+   "flown_pct": 93.8,
+   "flown_hold_pct": 90.61
+  },
+  "piers": {
+   "visible_m2": 3536.7,
+   "planned_pct": 95.97,
+   "flown_pct": 96.16,
+   "flown_hold_pct": 95.55
+  },
+  "truss": {
+   "visible_m2": 8595.2,
+   "planned_pct": 64.19,
+   "flown_pct": 65.06,
+   "flown_hold_pct": 64.05
+  }
+ },
+ "method": "true base_link pose + true gimbal angle (pose_audit_track.csv, interpolated to each frame's sim stamp) -> camera pose -> covlib camera model (640x480, 80x64.4 deg, 12 m, incidence <=60 deg, ray-cast LOS vs collision JSON + Gazebo-only boxes)",
+ "elapsed_s": 5.9
+}

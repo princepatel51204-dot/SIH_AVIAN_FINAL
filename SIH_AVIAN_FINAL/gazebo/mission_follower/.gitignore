@@ -1,4 +1,5 @@
 # too large for git without LFS; kept on disk next to each run
 results/*/camera/front_camera.mp4
+results/*/detection/annotated.mp4
 results/*/logs/px4_boot.log
 __pycache__/

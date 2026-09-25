@@ -48,7 +48,7 @@ from rclpy.node import Node
 from rclpy.qos import (QoSProfile, QoSReliabilityPolicy, QoSDurabilityPolicy,
                        QoSHistoryPolicy, qos_profile_sensor_data)
 from sensor_msgs.msg import PointCloud2
-from std_msgs.msg import String
+from std_msgs.msg import Float64, String
 from px4_msgs.msg import (VehicleCommand, VehicleStatus, VehicleLocalPosition,
                           VehicleAttitude, VehicleLandDetected,
                           OffboardControlMode, TrajectorySetpoint)
@@ -89,6 +89,7 @@ BLOCKED_GIVEUP_S = 20.0
 SELF_BOX = np.array([[-0.55, -0.55, -0.45], [0.55, 0.55, 0.60]])
 YAW_RATE_MAX = math.radians(60.0)
 TICK_HZ = 20.0
+GIMBAL_SETTLE_S = 1.0     # time allowed for the pitch gimbal after a new command
 
 
 def wrap(a):
@@ -192,6 +193,11 @@ class MissionFollower(Node):
         self.ocm_pub = self.create_publisher(OffboardControlMode, '/fmu/in/offboard_control_mode', be)
         self.sp_pub = self.create_publisher(TrajectorySetpoint, '/fmu/in/trajectory_setpoint', be)
         self.evt_pub = self.create_publisher(String, '/mission/event', 10)
+        # pitch gimbal: joint angle = nose-down pitch = -(plan's gimbal_pitch_rad)
+        self.gimbal_pub = self.create_publisher(Float64, '/mission/gimbal_cmd', 10)
+        self.gimbal_cmd = None
+        self.gimbal_t = -1e9
+        self.gimbal_last_pub = -1e9
 
         self.phase = 'WAIT'
         self.phase_t0 = self.t()
@@ -364,14 +370,32 @@ class MissionFollower(Node):
         self.cmd_yaw = wrap(cur + max(-step, min(step, wrap(target_yaw_ned - cur))))
         return self.cmd_yaw
 
-    def start_leg(self, name, route_world, final_world, yaw_enu, settle=True):
+    def set_gimbal(self, pitch_up):
+        if pitch_up is None:
+            return
+        cmd = -float(pitch_up)
+        if self.gimbal_cmd is None or abs(cmd - self.gimbal_cmd) > 1e-4:
+            self.gimbal_cmd = cmd
+            self.gimbal_t = self.t()
+            self.gimbal_last_pub = -1e9
+
+    def start_leg(self, name, route_world, final_world, yaw_enu, settle=True, gimbal_pitch=None):
+        self.set_gimbal(gimbal_pitch)
         pts = [self.p_ned()] + [self.ned_from_world(p) for p in route_world] + [self.ned_from_world(final_world)]
         self.leg = {'name': name, 'pts': np.array(pts), 'seg': 0, 'settle': settle,
                     'final': self.ned_from_world(final_world), 'final_world': list(map(float, final_world)),
                     'yaw_ned': None if yaw_enu is None else wrap(math.pi / 2 - yaw_enu),
                     't0': self.t(), 'held_since': None, 'blocked_since': None,
                     'dist': 0.0, 'last_p': self.p_ned(), 'min_range': math.inf,
-                    'limited_ticks': 0, 'ticks': 0,
+                    # inf, not 0: the post-corner ramp-up only applies after an
+                    # actual sharp corner (reset to 0.0 in carrot() below) --
+                    # a leg with no corner (TAKEOFF, BRAKE_*, a single-via
+                    # waypoint) must fly at full planned speed from a standing
+                    # start like it always did, not get capped at 0.3 m/s
+                    # forever (found 25 Sep: that starved takeoff -- 0.3 m/s
+                    # commanded near the pad never produced enough measured
+                    # motion to grow the ramp, a self-reinforcing standstill)
+                    'since_corner': math.inf, 'limited_ticks': 0, 'ticks': 0,
                     'timeout': self.route_len(pts) / (0.5 * CRUISE_MPS) + 45.0}
 
     @staticmethod
@@ -404,6 +428,16 @@ class MissionFollower(Node):
             sharp = self._turn(pts, L['seg'] + 1) > math.radians(20)
             if np.linalg.norm(p - b) < (0.5 if sharp else 1.0) or (t >= 1.0 and not sharp):
                 L['seg'] += 1
+                if sharp:
+                    # leaving a sharp corner (e.g. the 90 deg vertex between a
+                    # vertical-first descent and the flat leg after it): reset
+                    # the ramp-up distance so guidance() re-applies the same
+                    # slow-out it used slowing IN, instead of jumping straight
+                    # to cruise speed while residual vertical momentum from
+                    # the corner is still bleeding off (found 25 Sep: this gap
+                    # let a leg sag ~3.6 m toward the ground before the sensed
+                    # safety layer caught it -- no contact, but avoidable)
+                    L['since_corner'] = 0.0
             else:
                 break
         a, b = pts[L['seg']], pts[L['seg'] + 1]
@@ -450,8 +484,13 @@ class MissionFollower(Node):
         else:
             d = c - p
             spd = min(CRUISE_MPS, math.sqrt(2 * A_PLAN * rem), max(0.4, rem),
-                      0.3 + 1.0 * to_corner)   # arrive at a sharp corner slowly:
-                                               # PX4's measured stop lag is ~0.59 s
+                      0.3 + 1.0 * to_corner,      # arrive at a sharp corner slowly:
+                      0.3 + 1.0 * L['since_corner'])  # ...and leave one slowly too, so
+                      # residual momentum from the corner (e.g. a vertical descent
+                      # just before a 90 deg turn into a flat leg) has time to bleed
+                      # off before cruise speed is commanded, instead of fighting a
+                      # sudden near-max horizontal command against still-nonzero
+                      # vertical velocity. PX4's measured stop lag is ~0.59 s.
             v = d / max(np.linalg.norm(d), 1e-9) * spd
         # sensed-coverage rule: near-horizontal or near-vertical only
         dxy = math.hypot(v[0], v[1])
@@ -468,6 +507,7 @@ class MissionFollower(Node):
         L = self.leg
         p = self.p_ned()
         L['dist'] += float(np.linalg.norm(p - L['last_p']))
+        L['since_corner'] += float(np.linalg.norm(p - L['last_p']))
         L['last_p'] = p
         v_des, rem, err = self.guidance()
         self.stale = False
@@ -501,6 +541,7 @@ class MissionFollower(Node):
         if not L['settle']:
             return 'passed' if rem < 1.0 else ('timeout' if now - L['t0'] > L['timeout'] else None)
         yaw_ok = L['yaw_ned'] is None or abs(wrap(self.pos.heading - L['yaw_ned'])) < SETTLE_YAW_TOL
+        yaw_ok = yaw_ok and now - self.gimbal_t >= GIMBAL_SETTLE_S
         if err <= SETTLE_TOL_M and yaw_ok and np.linalg.norm(self.v_ned()) < SETTLE_SPEED:
             L['held_since'] = L['held_since'] or now
             if now - L['held_since'] >= SETTLE_HOLD_S:
@@ -521,14 +562,14 @@ class MissionFollower(Node):
         self.log['track'].append([round(now, 2), *[round(float(x), 3) for x in w],
                                   round(float(np.linalg.norm(self.v_ned())), 3), self.phase, self.dbg])
 
-    def write(self, final=False):
+    def write(self, final=False, track=False):
         out = {
             'plan': self.plan_path,
             'home_world_m': self.home.tolist(),
             'speed_calc': self.speed_calc(),
             'sense_stats': {k: (None if v == math.inf else v) for k, v in self.sense_stats.items()},
             'final': final,
-            **self.log,
+            **{k: v for k, v in self.log.items() if final or track or k != 'track'},
         }
         tmp = os.path.join(self.results_dir, 'mission_log.json.tmp')
         json.dump(out, open(tmp, 'w'))
@@ -547,6 +588,9 @@ class MissionFollower(Node):
     def tick(self):
         if self.pos is not None:
             self.record_track()
+        if self.gimbal_cmd is not None and self.t() - self.gimbal_last_pub >= 0.5:
+            self.gimbal_pub.publish(Float64(data=self.gimbal_cmd))
+            self.gimbal_last_pub = self.t()
         ph = self.phase
         if ph == 'WAIT':
             self.publish_setpoint([0.0, 0.0, 0.0], None)
@@ -630,6 +674,7 @@ class MissionFollower(Node):
             'ekf_world_m': [round(float(x), 4) for x in p_world],
             'ekf_err_m': round(err, 4),
             'heading_target_enu_rad': wp['heading_rad'],
+            'gimbal_pitch_rad': wp.get('gimbal_pitch_rad'),
             'heading_ekf_enu_rad': round(wrap(math.pi / 2 - self.pos.heading), 4),
             'leg_time_s': round(self.t() - L['t0'], 2),
             'leg_dist_m': round(L['dist'], 2),
@@ -664,7 +709,8 @@ class MissionFollower(Node):
             return
         wp = self.wps[self.i]
         route = wp['route_in'] if self.phase != 'BRAKE_BACK' or self.i > 0 else wp['route_in']
-        self.start_leg(wp['waypoint_id'], route, wp['position_m'], wp['heading_rad'])
+        self.start_leg(wp['waypoint_id'], route, wp['position_m'], wp['heading_rad'],
+                       gimbal_pitch=wp.get('gimbal_pitch_rad'))
         if self.phase != 'MISSION':
             self.set_phase('MISSION')
 
@@ -733,7 +779,7 @@ def main():
     except KeyboardInterrupt:
         n.note('interrupted')
     finally:
-        n.write(final=n.phase == 'DONE')
+        n.write(final=n.phase == 'DONE', track=True)
         n.destroy_node()
         rclpy.try_shutdown()
     return 0 if n.phase == 'DONE' else 1

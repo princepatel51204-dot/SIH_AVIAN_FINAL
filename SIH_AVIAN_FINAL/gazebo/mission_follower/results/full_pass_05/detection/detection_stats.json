@@ -1,0 +1,9 @@
+{
+ "frames_processed": 112730,
+ "n_detections": 87,
+ "mean_inference_s": 0.139,
+ "p95_inference_s": 0.2449,
+ "achieved_hz": 7.193,
+ "wall_elapsed_s": 22462.4,
+ "note": "achieved_hz is 1/mean(per-frame inference wall time), measured on this run on this CPU-only machine while Gazebo/PX4 were also running; this node always processes the newest available camera frame and drops any that arrived while busy, so it never queues stale frames -- the reported Hz is the true sustained detection rate, not the raw camera rate."
+}
