@@ -154,6 +154,152 @@ def nudge(pos, target, prims, need=PLAN_CLEARANCE_M, max_r=10.0):
     return None, None
 
 
+
+# ---------------------------------------------------------------------------
+# Tier 4 (fallback): a waypoint no position can serve (tiers 1-3 all fail)
+# is re-examined patch by patch. Each of its member's patches (regenerated
+# exactly as coverage_final.py lays them out, from the mission's own sensor
+# and sampling parameters) is classed as
+#   embedded       -- the patch point lies inside another solid: no camera
+#                     anywhere can see it (needs a manual/contact inspection)
+#   neighbour      -- already in view from the previous/next waypoint
+#   needs_view     -- exposed but unseen: search a viewpoint for it
+# The waypoint is re-targeted to the first needs_view patch that has a
+# viewpoint (level camera, HFOVxVFOV, range <= FALLBACK_MAX_RANGE_M, clear
+# line of sight, clearance >= 3.5 m else 3.2 m, AGL >= MIN_AGL_M).
+# ---------------------------------------------------------------------------
+FALLBACK_MAX_RANGE_M = 12.0
+FALLBACK_MAX_INCIDENCE_DEG = 75.0
+
+
+def prim_patches(prim, cov):
+    """(patch_id, point, outward normal) -- coverage_final._build_patches'
+    layout (grid of cell centres per face / per cylinder side band)."""
+    hf, vf = math.radians(cov["sensor"]["hfov_deg"]), math.radians(cov["sensor"]["vfov_deg"])
+    step_u = 2 * cov["standoff_m"] * math.tan(hf / 2) * (1 - cov["face_overlap_frac"])
+    step_v = 2 * cov["standoff_m"] * math.tan(vf / 2) * (1 - cov["face_overlap_frac"])
+    cap = cov["max_samples_per_axis"]
+
+    def grid(h, step):
+        n = min(cap, max(1, math.ceil(2 * h / step)))
+        return [0.0] if n == 1 else [-h + 2 * h * (k + 0.5) / n for k in range(n)]
+
+    def ground(pt, nrm):
+        return nrm[2] < -0.5 and pt[2] <= GROUND_Z + 0.05
+    out, pid, c = [], 0, np.array(prim["centre"], float)
+    if prim["type"] == "BOX":
+        he, yaw = prim["half_extents"], prim.get("yaw", 0.0)
+        ex = np.array([math.cos(yaw), math.sin(yaw), 0.0])
+        ey = np.array([-math.sin(yaw), math.cos(yaw), 0.0])
+        ez = np.array([0.0, 0.0, 1.0])
+        faces = {"+X": (ex, ey, ez, he[1], he[2], c + ex * he[0]), "-X": (-ex, ey, ez, he[1], he[2], c - ex * he[0]),
+                 "+Y": (ey, ex, ez, he[0], he[2], c + ey * he[1]), "-Y": (-ey, ex, ez, he[0], he[2], c - ey * he[1]),
+                 "+Z": (ez, ex, ey, he[0], he[1], c + ez * he[2]), "-Z": (-ez, ex, ey, he[0], he[1], c - ez * he[2])}
+        for fname, (nrm, ua, va, hu, hv, fc) in faces.items():
+            for u in grid(hu, step_u):
+                for v in grid(hv, step_v):
+                    pt = fc + ua * u + va * v
+                    if not ground(pt, nrm):
+                        out.append((f"{prim['name']}_{fname}_{pid}", pt, nrm))
+                        pid += 1
+    else:
+        r, hh = prim["radius"], prim["half_height"]
+        n_th = min(cap * 2, max(4, math.ceil(2 * math.pi / (step_u / max(r, 0.05)))))
+        for k in range(n_th):
+            th = 2 * math.pi * k / n_th
+            nrm = np.array([math.cos(th), math.sin(th), 0.0])
+            for z in grid(hh, step_v):
+                pt = c + nrm * r + np.array([0, 0, z])
+                if not ground(pt, nrm):
+                    out.append((f"{prim['name']}_side_{pid}", pt, nrm))
+                    pid += 1
+        for cname, nrm in (("bottom", np.array([0, 0, -1.0])), ("top", np.array([0, 0, 1.0]))):
+            pt = c + nrm * hh
+            if not ground(pt, nrm):
+                out.append((f"{prim['name']}_cap_{cname}", pt, nrm))
+    return out
+
+
+def camera_sees(cam, yaw, pt, nrm, prims, cov):
+    """Mission sensor model (level camera, HFOV x VFOV about `yaw`)."""
+    v = np.asarray(pt, float) - np.asarray(cam, float)
+    rng = float(np.linalg.norm(v))
+    if rng > FALLBACK_MAX_RANGE_M or rng < 1e-6:
+        return False, None
+    inc = math.degrees(math.acos(max(-1.0, min(1.0, float(-v @ nrm) / rng))))
+    x = math.cos(yaw) * v[0] + math.sin(yaw) * v[1]
+    y = -math.sin(yaw) * v[0] + math.cos(yaw) * v[1]
+    az = math.degrees(math.atan2(y, x))
+    el = math.degrees(math.atan2(v[2], math.hypot(x, y)))
+    ok = (x > 0 and abs(az) <= cov["sensor"]["hfov_deg"] / 2 and abs(el) <= cov["sensor"]["vfov_deg"] / 2
+          and inc <= FALLBACK_MAX_INCIDENCE_DEG and line_of_sight(cam, pt, prims, stop_short=0.05))
+    return ok, {"range_m": round(rng, 2), "az_deg": round(az, 1), "el_deg": round(el, 1), "incidence_deg": round(inc, 1)}
+
+
+def fallback_viewpoint(pt, nrm, prims, cov):
+    """Legal viewpoint for one patch (camera heading aimed at it): among
+    views with incidence <= 30 deg, the one closest to the mission standoff;
+    None if no legal view exists."""
+    half_v = cov["sensor"]["vfov_deg"] / 2
+    for need in (PLAN_CLEARANCE_M, TIER3_CLEARANCE_M):
+        cands = []
+        base = math.atan2(nrm[1], nrm[0]) if abs(nrm[2]) < 0.9 else 0.0
+        for R in np.arange(3.0, FALLBACK_MAX_RANGE_M + 0.01, 0.5):
+            for daz in range(-75, 76, 5):
+                for dep in range(0, int(half_v) + 1, 2):   # camera level, patch below by <= VFOV/2
+                    for sgn in (1, -1):                   # viewpoint above or below the patch
+                        a, e = base + math.radians(daz), math.radians(dep) * sgn
+                        cam = np.asarray(pt) + R * np.array([math.cos(e) * math.cos(a), math.cos(e) * math.sin(a), math.sin(e)])
+                        if cam[2] < MIN_AGL_M or float(clearance(cam, prims)[0]) < need:
+                            continue
+                        yaw = math.atan2(pt[1] - cam[1], pt[0] - cam[0])
+                        ok, geo = camera_sees(cam, yaw, pt, nrm, prims, cov)
+                        if ok:
+                            cands.append((geo["incidence_deg"], R, cam, yaw, geo))
+        if cands:
+            # prefer the mission's own standoff among near-square-on views
+            good = [c_ for c_ in cands if c_[0] <= 30.0] or cands
+            inc, R, cam, yaw, geo = min(good, key=lambda t: (abs(t[1] - cov["standoff_m"]), t[0]))
+            return {"position_m": [round(float(v), 4) for v in cam], "heading_rad": round(yaw, 4),
+                    "clearance_need_m": need, "view": geo, "n_candidates": len(cands)}
+    return None
+
+
+def tier4_fallback(wps, idx, prims, cov):
+    rec = wps[idx]
+    jprims = {p["name"]: p for p in json.load(open(COLLISION))["primitives"]}
+    prim = jprims[rec["prim_name"]]
+    solids = [p for n, p in jprims.items() if n != rec["prim_name"] and p["kind"] not in ("ground", "water")]
+    covers = set(rec["covers"])
+    acct = {"embedded": [], "neighbour": {}, "needs_view": [], "fallback": None}
+    patches = [q for q in prim_patches(prim, cov) if q[0] in covers]
+    acct["patches_regenerated"] = len(patches)
+    acct["patches_in_covers"] = len(covers)
+    nbrs = [wps[j] for j in (idx - 1, idx + 1) if 0 <= j < len(wps) and wps[j]["reachable_in_plan"]]
+    for pid, pt, nrm in patches:
+        cl = float(_clearance_batch(pt[None], solids)[0])
+        if cl < 0:
+            acct["embedded"].append({"patch": pid, "depth_inside_m": round(-cl, 3)})
+            continue
+        seen = None
+        for nb in nbrs:
+            ok, geo = camera_sees(nb["position_m"], nb["heading_rad"], pt, nrm, prims, cov)
+            if ok:
+                seen = {"by": nb["waypoint_id"], **geo}
+                break
+        if seen:
+            acct["neighbour"][pid] = seen
+        else:
+            acct["needs_view"].append((pid, pt, nrm))
+    for pid, pt, nrm in acct["needs_view"]:
+        vp = fallback_viewpoint(pt, nrm, prims, cov)
+        if vp:
+            acct["fallback"] = {"patch": pid, "target_m": [round(float(v), 4) for v in pt], **vp}
+            break
+    acct["needs_view"] = [q[0] for q in acct["needs_view"]]
+    return acct
+
+
 class Grid:
     def __init__(self, prims):
         self.dims = np.ceil((GRID_HI - GRID_LO) / VOXEL_M).astype(int) + 1
@@ -314,6 +460,34 @@ def main():
         wps.append(rec)
     print(f"waypoints: {len(wps)}, nudged {n_nudged}, unfixable {len(unfixable)} {unfixable}", flush=True)
 
+    # tier 4: patch-level fallback for waypoints no position can serve
+    tier4 = {}
+    for i, rec in enumerate(wps):
+        if rec["reachable_in_plan"]:
+            continue
+        acct = tier4_fallback(wps, i, prims, cov)
+        rec["patch_accounting"] = acct
+        fb = acct["fallback"]
+        print(f"  TIER4 {rec['waypoint_id']}: {len(acct['embedded'])} embedded, "
+              f"{len(acct['neighbour'])} seen by neighbour, needs_view {acct['needs_view']}, "
+              f"fallback {'-> ' + fb['patch'] + ' from ' + str(fb['position_m']) if fb else 'none'}", flush=True)
+        if fb:
+            rec["original_target_m"] = rec["target_m"]
+            rec["target_m"] = fb["target_m"]
+            rec["position_m"] = fb["position_m"]
+            rec["heading_rad"] = fb["heading_rad"]
+            rec["nudge_tier"] = 4
+            rec["reachable_in_plan"] = True
+            rec["nudged"] = True
+            rec["nudge_m"] = round(float(np.linalg.norm(np.subtract(fb["position_m"], rec["original_position_m"]))), 3)
+            rec["planned_clearance_m"] = round(float(clearance(fb["position_m"], prims)[0]), 3)
+            rec["standoff_to_target_m"] = fb["view"]["range_m"]
+            unfixable.remove(rec["waypoint_id"])
+            tier4[rec["waypoint_id"]] = fb["patch"]
+        else:
+            rec["limitation"] = ("no exposed, unseen patch has a legal viewpoint; embedded patches need a "
+                                 "manual or contact inspection")
+
     grid = Grid(prims)
     home_ground = [HOME_WORLD[0], HOME_WORLD[1], 0.0]
     home_air = [HOME_WORLD[0], HOME_WORLD[1], TAKEOFF_ALT_M]
@@ -386,6 +560,7 @@ def main():
         "n_waypoints": len(wps),
         "n_nudged": n_nudged,
         "unfixable_waypoints": unfixable,
+        "tier4_fallback": tier4,
         "legs": legs,
         "max_slope_deg": MAX_SLOPE_DEG,
         "segment_recheck": {"n_segments": n_seg, "n_violations": n_bad,

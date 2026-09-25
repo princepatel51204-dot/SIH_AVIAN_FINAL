@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-24T22:14:03Z",
+ "generated_utc": "2026-09-25T02:48:50Z",
  "planner": "gazebo/mission_follower/plan_gazebo_mission.py (offline; geometry only, no defect data)",
  "source_mission": "mission/coverage_mission.json",
  "frame": "Gazebo world ENU == Blender/collision-JSON frame (no origin shift; verified primitive-by-primitive)",
@@ -20,19 +20,20 @@
  "n_obstacles_visual_only": 173,
  "n_waypoints": 150,
  "n_nudged": 46,
- "unfixable_waypoints": [
-  "CWP_097"
- ],
+ "unfixable_waypoints": [],
+ "tier4_fallback": {
+  "CWP_097": "BR_PIER_COL_001_2_side_6"
+ },
  "legs": {
   "straight": 83,
-  "L_vertical_first": 33,
+  "L_vertical_first": 34,
   "L_horizontal_first": 10,
   "astar": 23,
   "failed": 0
  },
  "max_slope_deg": 12.0,
  "segment_recheck": {
-  "n_segments": 362,
+  "n_segments": 365,
   "n_violations": 0,
   "raw_min_clearance_m": 3.465
  },
@@ -194,7 +195,7 @@
   "min_clearance_m": 3.583,
   "length_m": 201.135
  },
- "planned_total_path_m": 2558.13,
+ "planned_total_path_m": 2568.13,
  "waypoints": [
   {
    "waypoint_id": "CWP_001",
@@ -5357,9 +5358,9 @@
    "prim_name": "BR_PIER_COL_001_2",
    "prim_kind": "pier_column",
    "target_m": [
-    0.0,
-    3.6,
-    5.2775
+    -0.85,
+    2.75,
+    1.8792
    ],
    "covers": [
     "BR_PIER_COL_001_2_cap_top",
@@ -5383,22 +5384,125 @@
    ],
    "original_heading_rad": -1.5708,
    "original_clearance_m": 2.6,
-   "nudge_tier": null,
-   "reachable_in_plan": false,
-   "nudged": false,
-   "nudge_m": null,
+   "nudge_tier": 4,
+   "reachable_in_plan": true,
+   "nudged": true,
+   "nudge_m": 12.514,
    "position_m": [
+    -8.6752,
+    2.75,
+    3.5425
+   ],
+   "heading_rad": -0.0,
+   "planned_clearance_m": 3.542,
+   "standoff_to_target_m": 8.0,
+   "patch_accounting": {
+    "embedded": [
+     {
+      "patch": "BR_PIER_COL_001_2_side_0",
+      "depth_inside_m": 1.35
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_side_1",
+      "depth_inside_m": 1.35
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_side_2",
+      "depth_inside_m": 1.35
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_side_3",
+      "depth_inside_m": 0.5
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_side_4",
+      "depth_inside_m": 0.5
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_side_5",
+      "depth_inside_m": 0.5
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_side_9",
+      "depth_inside_m": 0.5
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_side_10",
+      "depth_inside_m": 0.5
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_side_11",
+      "depth_inside_m": 0.5
+     },
+     {
+      "patch": "BR_PIER_COL_001_2_cap_top",
+      "depth_inside_m": 0.5
+     }
+    ],
+    "neighbour": {
+     "BR_PIER_COL_001_2_side_7": {
+      "by": "CWP_098",
+      "range_m": 8.49,
+      "az_deg": -23.0,
+      "el_deg": -11.7,
+      "incidence_deg": 25.7
+     },
+     "BR_PIER_COL_001_2_side_8": {
+      "by": "CWP_098",
+      "range_m": 8.48,
+      "az_deg": -23.0,
+      "el_deg": 11.4,
+      "incidence_deg": 25.5
+     }
+    },
+    "needs_view": [
+     "BR_PIER_COL_001_2_side_6"
+    ],
+    "fallback": {
+     "patch": "BR_PIER_COL_001_2_side_6",
+     "target_m": [
+      -0.85,
+      2.75,
+      1.8792
+     ],
+     "position_m": [
+      -8.6752,
+      2.75,
+      3.5425
+     ],
+     "heading_rad": -0.0,
+     "clearance_need_m": 3.5,
+     "view": {
+      "range_m": 8.0,
+      "az_deg": 0.0,
+      "el_deg": -12.0,
+      "incidence_deg": 12.0
+     },
+     "n_candidates": 1742
+    },
+    "patches_regenerated": 13,
+    "patches_in_covers": 13
+   },
+   "original_target_m": [
     0.0,
-    11.6,
+    3.6,
     5.2775
    ],
-   "heading_rad": -1.5708,
-   "planned_clearance_m": 2.6,
-   "standoff_to_target_m": 8.0,
-   "route_in": [],
-   "route_method": "skipped_unreachable_in_plan",
-   "route_min_clearance_m": null,
-   "route_length_m": 0.0
+   "route_in": [
+    [
+     -3.0,
+     12.0,
+     6.0
+    ],
+    [
+     -8.6752,
+     2.75,
+     4.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_min_clearance_m": 3.542,
+   "route_length_m": 22.189
   },
   {
    "waypoint_id": "CWP_098",
@@ -5445,14 +5549,14 @@
    "standoff_to_target_m": 8.0,
    "route_in": [
     [
-     -3.0,
-     12.0,
-     6.0
+     -8.6752,
+     2.75,
+     7.0
     ]
    ],
-   "route_method": "astar",
-   "route_min_clearance_m": 3.814,
-   "route_length_m": 18.897
+   "route_method": "L_vertical_first",
+   "route_min_clearance_m": 3.542,
+   "route_length_m": 6.712
   },
   {
    "waypoint_id": "CWP_099",

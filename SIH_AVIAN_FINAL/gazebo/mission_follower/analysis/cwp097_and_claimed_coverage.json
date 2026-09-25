@@ -1,0 +1,353 @@
+{
+ "cwp_097": {
+  "target_member": "BR_PIER_COL_001_2 (pier column, cylinder r=0.85 m, centre (0, 2.75, 5.2775), z 0.18-10.38)",
+  "original_target_m": [
+   0.0,
+   3.6,
+   5.2775
+  ],
+  "why_unreachable": "the original target point (the column's +Y face at x=0) lies 0.5 m INSIDE BR_ABUTMENT_SOUTH (box x -0.5..6.5, y -9..9, z 0..14): the column centre sits 0.5 m inside the abutment's west face, so only a 0.35 m sliver (x -0.85..-0.5) is exposed. No position within 30 m with >=3.2 m clearance has line of sight to it (planner search).",
+  "patch_accounting_13": {
+   "embedded": [
+    {
+     "patch": "BR_PIER_COL_001_2_side_0",
+     "depth_inside_m": 1.35
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_1",
+     "depth_inside_m": 1.35
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_2",
+     "depth_inside_m": 1.35
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_3",
+     "depth_inside_m": 0.5
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_4",
+     "depth_inside_m": 0.5
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_5",
+     "depth_inside_m": 0.5
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_9",
+     "depth_inside_m": 0.5
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_10",
+     "depth_inside_m": 0.5
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_11",
+     "depth_inside_m": 0.5
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_cap_top",
+     "depth_inside_m": 0.5
+    }
+   ],
+   "neighbour": {
+    "BR_PIER_COL_001_2_side_7": {
+     "by": "CWP_098",
+     "range_m": 8.49,
+     "az_deg": -23.0,
+     "el_deg": -11.7,
+     "incidence_deg": 25.7
+    },
+    "BR_PIER_COL_001_2_side_8": {
+     "by": "CWP_098",
+     "range_m": 8.48,
+     "az_deg": -23.0,
+     "el_deg": 11.4,
+     "incidence_deg": 25.5
+    }
+   },
+   "needs_view": [
+    "BR_PIER_COL_001_2_side_6"
+   ],
+   "fallback": {
+    "patch": "BR_PIER_COL_001_2_side_6",
+    "target_m": [
+     -0.85,
+     2.75,
+     1.8792
+    ],
+    "position_m": [
+     -8.6752,
+     2.75,
+     3.5425
+    ],
+    "heading_rad": -0.0,
+    "clearance_need_m": 3.5,
+    "view": {
+     "range_m": 8.0,
+     "az_deg": 0.0,
+     "el_deg": -12.0,
+     "incidence_deg": 12.0
+    },
+    "n_candidates": 1742
+   },
+   "patches_regenerated": 13,
+   "patches_in_covers": 13
+  },
+  "flown_full_pass_04_check": {
+   "note": "exposed patches vs the waypoints actually flown in full_pass_04 (true pose from pose_audit), mission camera 69x42 level at planned pose AND Gazebo front_camera 80x64.4 pitched 22.9 deg down at flown pose",
+   "patches": [
+    {
+     "patch": "BR_PIER_COL_001_2_side_6",
+     "point": [
+      -0.85,
+      2.75,
+      1.879
+     ],
+     "normal": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "exposed": true,
+     "clearance_to_other_solids_m": 0.35,
+     "views": {
+      "CWP_096": {
+       "planned_pos": [
+        6.5,
+        16.9,
+        5.6
+       ],
+       "planned_range_m": 16.37,
+       "az_deg": -27.4,
+       "el_deg": -13.1,
+       "incidence_deg": 116.7,
+       "in_69x42_fov": true,
+       "los": false,
+       "flown_true_pos": [
+        6.4267,
+        16.7705,
+        5.6061
+       ],
+       "flown_range_m": 16.23,
+       "flown_front_camera_in_fov": true,
+       "flown_front_camera_az_el": [
+        -26.9,
+        7.2
+       ],
+       "flown_los": false
+      },
+      "CWP_098": {
+       "planned_pos": [
+        -8.5,
+        6.0,
+        7.0
+       ],
+       "planned_range_m": 9.76,
+       "az_deg": -23.0,
+       "el_deg": -31.6,
+       "incidence_deg": 38.4,
+       "in_69x42_fov": false,
+       "los": true,
+       "flown_true_pos": [
+        -8.5222,
+        5.9464,
+        6.9869
+       ],
+       "flown_range_m": 9.76,
+       "flown_front_camera_in_fov": true,
+       "flown_front_camera_az_el": [
+        -19.4,
+        -10.1
+       ],
+       "flown_los": true
+      }
+     }
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_7",
+     "point": [
+      -0.85,
+      2.75,
+      5.278
+     ],
+     "normal": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "exposed": true,
+     "clearance_to_other_solids_m": 0.35,
+     "views": {
+      "CWP_096": {
+       "planned_pos": [
+        6.5,
+        16.9,
+        5.6
+       ],
+       "planned_range_m": 15.95,
+       "az_deg": -27.4,
+       "el_deg": -1.2,
+       "incidence_deg": 117.4,
+       "in_69x42_fov": true,
+       "los": false,
+       "flown_true_pos": [
+        6.4267,
+        16.7705,
+        5.6061
+       ],
+       "flown_range_m": 15.8,
+       "flown_front_camera_in_fov": true,
+       "flown_front_camera_az_el": [
+        -29.2,
+        19.0
+       ],
+       "flown_los": false
+      },
+      "CWP_098": {
+       "planned_pos": [
+        -8.5,
+        6.0,
+        7.0
+       ],
+       "planned_range_m": 8.49,
+       "az_deg": -23.0,
+       "el_deg": -11.7,
+       "incidence_deg": 25.7,
+       "in_69x42_fov": true,
+       "los": true,
+       "flown_true_pos": [
+        -8.5222,
+        5.9464,
+        6.9869
+       ],
+       "flown_range_m": 8.49,
+       "flown_front_camera_in_fov": true,
+       "flown_front_camera_az_el": [
+        -22.4,
+        9.6
+       ],
+       "flown_los": true
+      }
+     }
+    },
+    {
+     "patch": "BR_PIER_COL_001_2_side_8",
+     "point": [
+      -0.85,
+      2.75,
+      8.676
+     ],
+     "normal": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "exposed": true,
+     "clearance_to_other_solids_m": 0.35,
+     "views": {
+      "CWP_096": {
+       "planned_pos": [
+        6.5,
+        16.9,
+        5.6
+       ],
+       "planned_range_m": 16.24,
+       "az_deg": -27.4,
+       "el_deg": 10.9,
+       "incidence_deg": 116.9,
+       "in_69x42_fov": true,
+       "los": false,
+       "flown_true_pos": [
+        6.4267,
+        16.7705,
+        5.6061
+       ],
+       "flown_range_m": 16.09,
+       "flown_front_camera_in_fov": true,
+       "flown_front_camera_az_el": [
+        -31.9,
+        31.0
+       ],
+       "flown_los": false
+      },
+      "CWP_098": {
+       "planned_pos": [
+        -8.5,
+        6.0,
+        7.0
+       ],
+       "planned_range_m": 8.48,
+       "az_deg": -23.0,
+       "el_deg": 11.4,
+       "incidence_deg": 25.5,
+       "in_69x42_fov": true,
+       "los": true,
+       "flown_true_pos": [
+        -8.5222,
+        5.9464,
+        6.9869
+       ],
+       "flown_range_m": 8.48,
+       "flown_front_camera_in_fov": false,
+       "flown_front_camera_az_el": [
+        -26.5,
+        32.4
+       ],
+       "flown_los": true
+      }
+     }
+    }
+   ]
+  },
+  "plan_v4": {
+   "retargeted_to": "BR_PIER_COL_001_2_side_6",
+   "position_m": [
+    -8.6752,
+    2.75,
+    3.5425
+   ],
+   "view": {
+    "range_m": 8.0,
+    "az_deg": 0.0,
+    "el_deg": -12.0,
+    "incidence_deg": 12.0
+   },
+   "flown": false
+  },
+  "limitation": "10/13 patches (side_0-5, side_9-11, cap_top) are embedded 0.5-1.35 m inside the abutment solid: no camera position can see them; needs a manual or contact inspection (or, if the embedding is a modelling artefact, a corrected model)"
+ },
+ "claimed_coverage_audit": {
+  "source": "mission/coverage_mission.json covers lists, patches regenerated with coverage_final.py's layout (2035/2035 ids matched)",
+  "claimed_covered": 2035,
+  "patches_total": 5924,
+  "claimed_pct": 34.35,
+  "claimed_patches_inside_another_solid_any_depth": 886,
+  "inside_depth_m": {
+   "min": 0.0,
+   "median": 0.15,
+   "max": 1.4,
+   "n_over_0.05": 575,
+   "n_over_0.25": 226
+  },
+  "main_overlaps": {
+   "bracing inside bracing (X-bracing boxes cross)": 250,
+   "truss_vertical inside truss_diagonal (diagonals modelled as panel-filling boxes)": 190,
+   "diaphragm inside girder": 84,
+   "truss_diagonal inside truss_chord": 64,
+   "truss_diagonal inside truss_diagonal": 56,
+   "pier_column inside abutment": 40,
+   "joint_gap inside deck_box": 38,
+   "deck_box inside joint_gap": 31
+  },
+  "full_pass_04": {
+   "reached_waypoints_claim": 2022,
+   "claim_pct": 34.13,
+   "excluding_patches_over_5cm_inside": 1457,
+   "pct": 24.6,
+   "excluding_any_depth": 1146,
+   "pct_strict": 19.35
+  },
+  "caveat": "coverage is the geometry planner's claim, not measured from camera frames; the 47 nudged waypoints' covers lists were not re-scored after nudging"
+ }
+}
