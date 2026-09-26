@@ -1,0 +1,52 @@
+{
+ "plan": "gazebo_columns_demo_plan.json",
+ "n_waypoints": 61,
+ "aiming": {
+  "ring_viewpoints_axis_hits_a_column": 52,
+  "of_ring_viewpoints": 52,
+  "look_up_dwells_axis_hits_cap_or_column": 9,
+  "of_dwells": 9,
+  "dwell_first_solid_hit": {
+   "BR_PIER_COL_": 8,
+   "BR_PIER_CAP_": 1
+  },
+  "by_subject": {
+   "RP03": {
+    "on_column": 25,
+    "of": 25,
+    "dwells_ok": 5,
+    "dwells": 5,
+    "range_min_m": 3.7,
+    "range_max_m": 4.85
+   },
+   "RP04": {
+    "on_column": 27,
+    "of": 27,
+    "dwells_ok": 4,
+    "dwells": 4,
+    "range_min_m": 3.7,
+    "range_max_m": 4.8
+   }
+  },
+  "misses": []
+ },
+ "airframe": {
+  "samples": 2102,
+  "min_clearance_m": 3.516,
+  "samples_below_3.5": 0,
+  "samples_below_3.0": 0
+ },
+ "route_pieces": {
+  "segments": 173,
+  "neither_flat_nor_steep": 0
+ },
+ "at_viewpoints": {
+  "base_min_m": 3.591,
+  "camera_pivot_min_m": 3.541,
+  "z_min_m": 3.6
+ },
+ "camera_pivot_along_routes_informational": {
+  "min_m": 3.247,
+  "samples_below_3.5": 49
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "converted": {
+  "DEFECT_CRACK_HAIRLINE_018": {
+   "mode": "cylinder_strips",
+   "host": "BR_PIER_COL_003_2",
+   "strips": 8,
+   "arc_deg": 79.7,
+   "height_m": 1.09
+  },
+  "DEFECT_CRACK_NETWORK_001": {
+   "mode": "cylinder_strips",
+   "host": "BR_PIER_COL_003_1",
+   "strips": 8,
+   "arc_deg": 140.0,
+   "height_m": 1.791
+  },
+  "DEFECT_SPALL_009": {
+   "mode": "flat",
+   "host": "BR_PIER_CAP_003",
+   "width_m": 0.755
+  },
+  "DEFECT_CORROSION_STAIN_001": {
+   "mode": "cylinder_strips",
+   "host": "BR_PIER_COL_003_2",
+   "strips": 8,
+   "arc_deg": 69.7,
+   "height_m": 0.971
+  },
+  "DEFECT_CRACK_HAIRLINE_007": {
+   "mode": "flat",
+   "host": "BR_PIER_CAP_004",
+   "width_m": 0.817
+  },
+  "DEFECT_CRACK_HAIRLINE_009": {
+   "mode": "cylinder_strips",
+   "host": "BR_PIER_COL_004_1",
+   "strips": 8,
+   "arc_deg": 71.3,
+   "height_m": 0.991
+  },
+  "DEFECT_CRACK_HAIRLINE_015": {
+   "mode": "cylinder_strips",
+   "host": "BR_PIER_COL_004_2",
+   "strips": 8,
+   "arc_deg": 82.3,
+   "height_m": 1.119
+  },
+  "DEFECT_CRACK_LONGITUDINAL_011": {
+   "mode": "cylinder_strips",
+   "host": "BR_PIER_COL_004_2",
+   "strips": 8,
+   "arc_deg": 140.0,
+   "height_m": 2.002
+  },
+  "DEFECT_SPALL_011": {
+   "mode": "cylinder_strips",
+   "host": "BR_PIER_COL_004_1",
+   "strips": 8,
+   "arc_deg": 60.7,
+   "height_m": 0.859
+  },
+  "DEFECT_REBAR_EXPOSED_006": {
+   "mode": "cylinder_strips",
+   "host": "BR_PIER_COL_004_1",
+   "strips": 8,
+   "arc_deg": 140.0,
+   "height_m": 2.83
+  }
+ },
+ "note": "visual-only decals; spheres of converted defects removed; all other spheres unchanged"
+}

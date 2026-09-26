@@ -1,0 +1,2772 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="avian_final_defects">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <visual name="DEFECT_CRACK_HAIRLINE_001">
+        <pose>261.629000 2.850000 13.581000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_002">
+        <pose>230.221000 -2.650000 13.620000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_003">
+        <pose>233.730000 2.850000 13.365000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_004">
+        <pose>269.100000 -3.562000 11.622000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_005">
+        <pose>225.900000 2.822000 10.608000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_006">
+        <pose>254.850000 0.909000 13.362000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_008">
+        <pose>199.126000 -3.935000 13.161000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_010">
+        <pose>147.697000 2.722000 13.297000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_011">
+        <pose>160.874000 1.464000 13.572000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_012">
+        <pose>224.528000 -5.500000 11.437500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_013">
+        <pose>104.850000 -4.201000 13.527000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_014">
+        <pose>212.436000 -2.640000 13.340000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_016">
+        <pose>237.405000 2.793000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_017">
+        <pose>269.627300 -1.997700 8.256000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_019">
+        <pose>175.737000 -6.600000 15.428000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_020">
+        <pose>252.634000 1.632000 14.190600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_021">
+        <pose>96.308000 -5.400000 13.208000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_022">
+        <pose>251.072000 -3.171000 14.190600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_023">
+        <pose>255.150000 5.456000 13.581000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_024">
+        <pose>232.659000 5.600000 13.174000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_001">
+        <pose>225.040600 1.906400 8.519000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_002">
+        <pose>149.556000 -5.610000 13.252000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_003">
+        <pose>130.912000 5.600000 13.424000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_004">
+        <pose>126.886000 5.400000 13.271000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_005">
+        <pose>96.211000 -2.650000 13.236000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_006">
+        <pose>175.737000 6.600000 14.827000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_007">
+        <pose>129.951000 -2.650000 13.410000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_008">
+        <pose>126.284000 -5.600000 13.603000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_009">
+        <pose>233.155000 -5.400000 13.507000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_010">
+        <pose>265.326000 -5.400000 13.440000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_012">
+        <pose>96.638000 0.100000 13.300000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_001">
+        <pose>185.072000 3.500000 14.275000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_002">
+        <pose>107.887000 3.455000 14.190600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_003">
+        <pose>256.396000 -0.058000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_004">
+        <pose>162.513000 0.037000 11.775000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_005">
+        <pose>115.871000 -0.503000 14.190600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_006">
+        <pose>106.549000 5.468000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_007">
+        <pose>176.228000 1.470000 14.275000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_008">
+        <pose>174.672000 -4.671000 14.275000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_009">
+        <pose>260.703000 -2.712000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_TRANSVERSE_010">
+        <pose>121.089000 -5.422000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_002">
+        <pose>112.528000 1.483000 14.190600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_003">
+        <pose>180.909000 -0.533000 14.275000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_004">
+        <pose>224.558700 -3.467400 3.266000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_005">
+        <pose>225.625700 -3.311600 6.704000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_006">
+        <pose>242.831000 -1.162000 14.190600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_007">
+        <pose>224.100000 2.437000 10.666000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_008">
+        <pose>225.688800 3.247400 2.931000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_001">
+        <pose>170.094000 2.806000 11.775000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_002">
+        <pose>183.037000 -5.485000 11.775000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_003">
+        <pose>115.472000 2.774000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_004">
+        <pose>242.671000 -5.444000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_005">
+        <pose>100.311000 -2.707000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_006">
+        <pose>155.115000 5.599000 11.775000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_007">
+        <pose>103.462000 0.023000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_008">
+        <pose>251.583000 5.518000 12.590600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_010">
+        <pose>135.900000 -4.055000 12.029000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_SPALL_012">
+        <pose>116.781000 -4.843000 14.190600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_DELAMINATION_001">
+        <pose>193.473000 -2.839000 11.775000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_DELAMINATION_002">
+        <pose>251.324000 5.027000 14.190600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_DELAMINATION_003">
+        <pose>212.303000 -4.155000 13.030000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_DELAMINATION_004">
+        <pose>211.983000 -1.320000 13.098000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_DELAMINATION_005">
+        <pose>119.850000 -2.914000 13.402000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_DELAMINATION_006">
+        <pose>239.850000 1.512000 13.249000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_DELAMINATION_007">
+        <pose>160.554000 -5.595000 13.261000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_DELAMINATION_008">
+        <pose>240.150000 -3.775000 13.398000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.220 0.224 0.232 1</ambient>
+          <diffuse>0.550 0.560 0.580 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_001">
+        <pose>93.879000 -5.600000 13.196000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_002">
+        <pose>146.846000 5.610000 12.872000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_003">
+        <pose>269.845000 -5.500000 12.225000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_004">
+        <pose>134.520000 -5.500000 12.337500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_005">
+        <pose>145.824000 5.390000 13.313000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_002">
+        <pose>127.070000 0.100000 13.157000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_003">
+        <pose>98.836000 5.600000 13.358000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_004">
+        <pose>261.341000 0.100000 13.416000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_005">
+        <pose>98.013000 2.850000 13.330000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_006">
+        <pose>265.608000 -2.650000 13.250000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_007">
+        <pose>135.482000 5.500000 12.337500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_008">
+        <pose>145.805000 2.860000 12.729000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_009">
+        <pose>211.797000 5.610000 12.708000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_010">
+        <pose>234.265000 5.400000 13.609000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_JOINT_DETERIORATION_001">
+        <pose>90.374000 5.500000 12.225000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_JOINT_DETERIORATION_002">
+        <pose>90.200000 -5.500000 12.225000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_JOINT_DETERIORATION_003">
+        <pose>269.659000 5.500000 12.225000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_JOINT_DETERIORATION_004">
+        <pose>225.080000 5.500000 11.442500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_JOINT_DETERIORATION_005">
+        <pose>239.918000 -6.600000 15.254000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="DEFECT_JOINT_DETERIORATION_006">
+        <pose>230.581000 -5.600000 13.228000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_SEGMENTAL_JOINT_LEAKAGE_001">
+        <pose>255.060000 30.097000 18.750000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_SEGMENTAL_JOINT_LEAKAGE_002">
+        <pose>225.060000 30.976000 18.750000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_SEGMENTAL_JOINT_LEAKAGE_003">
+        <pose>135.060000 27.256000 18.750000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_EFFLORESCENCE_JOINT_004">
+        <pose>255.060000 30.975000 18.750000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_EFFLORESCENCE_JOINT_005">
+        <pose>225.060000 30.200000 18.750000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_BEARING_DISTRESS_006">
+        <pose>225.000000 30.950000 16.675000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_BEARING_DISTRESS_007">
+        <pose>255.000000 25.750000 16.675000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.368 0.368 0.368 1</ambient>
+          <diffuse>0.920 0.920 0.920 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_INTERNAL_SOFFIT_CRACK_008">
+        <pose>270.437000 26.608000 18.700000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_INTERNAL_SOFFIT_CRACK_009">
+        <pose>244.684000 29.916000 18.700000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_INTERNAL_SOFFIT_CRACK_010">
+        <pose>164.438000 27.607000 18.700000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_WEB_SHEAR_CRACK_011">
+        <pose>261.089000 25.225000 17.790000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_WEB_SHEAR_CRACK_012">
+        <pose>241.433000 25.225000 17.790000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_WEB_SHEAR_CRACK_013">
+        <pose>185.424000 25.225000 17.240000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_SOFFIT_TRANSVERSE_CRACK_014">
+        <pose>271.404000 29.030000 16.800000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_SOFFIT_TRANSVERSE_CRACK_015">
+        <pose>244.274000 30.128000 16.800000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_SOFFIT_TRANSVERSE_CRACK_016">
+        <pose>167.846000 26.347000 15.800000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.022 0.020 0.019 1</ambient>
+          <diffuse>0.055 0.050 0.047 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_PIER_SPALL_017">
+        <pose>135.673000 28.713000 5.705000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_PIER_SPALL_018">
+        <pose>90.410000 27.109000 6.377000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.077 0.029 0.010 1</ambient>
+          <diffuse>0.192 0.072 0.026 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_PIER_CORROSION_STAIN_019">
+        <pose>134.105000 27.599000 4.641000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="MDEFECT_PIER_CORROSION_STAIN_020">
+        <pose>89.797000 27.040000 7.050000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.042 0.039 0.037 1</ambient>
+          <diffuse>0.105 0.098 0.092 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_02_MARK_NUT">
+        <pose>180.070000 -7.000000 21.280000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_TOP_03_16_MARK_NUT">
+        <pose>168.540000 7.000000 21.280000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_05_14_MARK_NUT">
+        <pose>191.320000 -7.000000 20.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_05_10_MARK_NUT">
+        <pose>191.320000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_TOP_03_07_MARK_NUT">
+        <pose>168.960000 7.000000 20.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_05_04_MARK_NUT">
+        <pose>191.040000 -7.000000 21.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_11_MARK_NUT">
+        <pose>180.210000 7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_BOT_04_06_MARK_NUT">
+        <pose>180.070000 -7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_BOT_03_09_MARK_NUT">
+        <pose>168.680000 -7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_12_MARK_NUT">
+        <pose>179.790000 7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_03_16_MARK_NUT">
+        <pose>168.540000 7.000000 12.280000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_04_MARK_NUT">
+        <pose>179.790000 7.000000 11.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_N_03_MARK_NUT">
+        <pose>168.750000 7.000000 13.428000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_05_S_03_MARK_NUT">
+        <pose>191.250000 -7.000000 13.428000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT">
+        <pose>151.925000 -0.050000 13.975000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_04_MARK_NUT">
+        <pose>180.140000 7.000000 13.295800 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_N_03_MARK_NUT">
+        <pose>146.250000 7.000000 13.418600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT">
+        <pose>134.860000 7.000000 13.410400 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_05_HOLE">
+        <pose>179.930000 -7.000000 21.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE">
+        <pose>168.820000 -7.000000 21.280000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_09_HOLE">
+        <pose>179.930000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_03_07_HOLE">
+        <pose>168.960000 7.000000 11.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_05_HOLE">
+        <pose>179.930000 7.000000 11.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_BOT_03_04_HOLE">
+        <pose>168.540000 -7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE">
+        <pose>140.575000 -3.450000 13.975000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_STRINGER_00_J03_02_HOLE">
+        <pose>174.325000 -3.450000 13.975000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_18_NUT">
+        <pose>180.070000 -7.000000 20.720000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_TOP_04_00_NUT">
+        <pose>179.790000 7.000000 20.720000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_S_TOP_04_16_NUT">
+        <pose>179.790000 -7.000000 20.720000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT">
+        <pose>180.210000 7.000000 21.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_04_13_NUT">
+        <pose>179.930000 7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_03_06_NUT">
+        <pose>168.820000 7.000000 11.860000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_GUSSET_ST_GUSSET_N_BOT_03_12_NUT">
+        <pose>168.540000 7.000000 12.140000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_S_00_NUT">
+        <pose>168.890000 -7.000000 13.294700 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_04_N_01_NUT">
+        <pose>179.860000 7.000000 13.429200 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_S_01_NUT">
+        <pose>146.390000 -7.000000 13.418600 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.096 0.096 0.104 1</ambient>
+          <diffuse>0.240 0.240 0.260 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT">
+        <pose>135.000000 7.200000 14.572500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_1_13_MARK_NUT">
+        <pose>315.000000 8.100000 14.272500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_06_MARK_NUT">
+        <pose>135.000000 6.000000 14.572500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_-1_18_MARK_NUT">
+        <pose>315.000000 1.200000 14.272500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.215 0.209 0.194 1</ambient>
+          <diffuse>0.537 0.522 0.486 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_01">
+        <pose>180.750000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_02">
+        <pose>192.000000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_03">
+        <pose>192.000000 7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_04">
+        <pose>192.000000 -7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_05">
+        <pose>158.250000 7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_WELD_CRACK_06">
+        <pose>147.000000 -7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.008 0.007 0.007 1</ambient>
+          <diffuse>0.020 0.018 0.018 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_01">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_02">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_03">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_04">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_05">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_SECTION_LOSS_06">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_01">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_02">
+        <pose>180.000000 -6.700000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_03">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_04">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_05">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_06">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_07">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_COATING_FAILURE_08">
+        <pose>0.000000 0.225000 0.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.184 0.116 0.044 1</ambient>
+          <diffuse>0.460 0.290 0.110 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ST_GUSSET_S_TOP_03">
+        <pose>168.750000 -7.000000 21.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ST_GUSSET_N_BOT_03">
+        <pose>168.750000 7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="ST_GUSSET_S_BOT_07">
+        <pose>213.750000 -7.000000 12.000000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.144 0.148 0.152 1</ambient>
+          <diffuse>0.360 0.370 0.380 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_BEARING_SEIZED_01">
+        <pose>135.000000 5.500000 12.337500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_BEARING_SEIZED_02">
+        <pose>135.000000 0.000000 12.337500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_BEARING_SEIZED_03">
+        <pose>225.000000 -5.500000 11.437500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_BEARING_SEIZED_04">
+        <pose>225.000000 5.500000 11.437500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_01">
+        <pose>81.000000 7.270000 13.923200 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_02">
+        <pose>117.000000 7.270000 14.053000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_03">
+        <pose>189.000000 7.270000 14.136000 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_04">
+        <pose>207.000000 7.270000 14.121400 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_CONDUIT_DETACHED_05">
+        <pose>333.000000 7.270000 13.668100 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.060 0.060 0.064 1</ambient>
+          <diffuse>0.150 0.150 0.160 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_HANDRAIL_LOOSE_01">
+        <pose>355.500000 6.800000 14.127900 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_HANDRAIL_LOOSE_02">
+        <pose>184.500000 6.800000 14.692300 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_HANDRAIL_LOOSE_03">
+        <pose>112.500000 6.800000 14.615500 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="SDEFECT_HANDRAIL_LOOSE_04">
+        <pose>139.500000 6.800000 14.667200 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.25</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.120 0.056 0.020 1</ambient>
+          <diffuse>0.300 0.140 0.050 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+
+      <visual name="DEFECT_CRACK_HAIRLINE_018_decal_s0">
+        <pose>90.4063 1.9898 8.9230 -0.00000 -0.00000 -1.07999</pose>
+        <geometry><box><size>0.004 0.1523 1.0896</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_018_s0.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_018_decal_s1">
+        <pose>90.5317 2.0715 8.9230 -0.00000 -0.00000 -0.90606</pose>
+        <geometry><box><size>0.004 0.1523 1.0896</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_018_s1.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_018_decal_s2">
+        <pose>90.6411 2.1738 8.9230 -0.00000 -0.00000 -0.73214</pose>
+        <geometry><box><size>0.004 0.1523 1.0896</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_018_s2.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_018_decal_s3">
+        <pose>90.7312 2.2934 8.9230 -0.00000 -0.00000 -0.55821</pose>
+        <geometry><box><size>0.004 0.1523 1.0896</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_018_s3.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_018_decal_s4">
+        <pose>90.7991 2.4268 8.9230 -0.00000 -0.00000 -0.38429</pose>
+        <geometry><box><size>0.004 0.1523 1.0896</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_018_s4.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_018_decal_s5">
+        <pose>90.8430 2.5700 8.9230 -0.00000 -0.00000 -0.21036</pose>
+        <geometry><box><size>0.004 0.1523 1.0896</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_018_s5.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_018_decal_s6">
+        <pose>90.8614 2.7186 8.9230 -0.00000 -0.00000 -0.03644</pose>
+        <geometry><box><size>0.004 0.1523 1.0896</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_018_s6.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_018_decal_s7">
+        <pose>90.8539 2.8681 8.9230 0.00000 -0.00000 0.13749</pose>
+        <geometry><box><size>0.004 0.1523 1.0896</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_018_s7.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_001_decal_s0">
+        <pose>90.5277 -3.4316 4.6560 -0.00000 -0.00000 -0.91197</pose>
+        <geometry><box><size>0.004 0.2674 1.7908</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_NETWORK_001_s0.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_001_decal_s1">
+        <pose>90.7082 -3.2414 4.6560 -0.00000 -0.00000 -0.60654</pose>
+        <geometry><box><size>0.004 0.2674 1.7908</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_NETWORK_001_s1.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_001_decal_s2">
+        <pose>90.8232 -3.0056 4.6560 -0.00000 -0.00000 -0.30111</pose>
+        <geometry><box><size>0.004 0.2674 1.7908</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_NETWORK_001_s2.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_001_decal_s3">
+        <pose>90.8620 -2.7463 4.6560 0.00000 -0.00000 0.00433</pose>
+        <geometry><box><size>0.004 0.2674 1.7908</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_NETWORK_001_s3.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_001_decal_s4">
+        <pose>90.8210 -2.4872 4.6560 0.00000 -0.00000 0.30976</pose>
+        <geometry><box><size>0.004 0.2674 1.7908</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_NETWORK_001_s4.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_001_decal_s5">
+        <pose>90.7040 -2.2525 4.6560 0.00000 -0.00000 0.61519</pose>
+        <geometry><box><size>0.004 0.2674 1.7908</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_NETWORK_001_s5.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_001_decal_s6">
+        <pose>90.5218 -2.0639 4.6560 0.00000 -0.00000 0.92063</pose>
+        <geometry><box><size>0.004 0.2674 1.7908</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_NETWORK_001_s6.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_NETWORK_001_decal_s7">
+        <pose>90.2913 -1.9387 4.6560 0.00000 -0.00000 1.22606</pose>
+        <geometry><box><size>0.004 0.2674 1.7908</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_NETWORK_001_s7.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_009_decal">
+        <pose>90.9120 2.0320 11.8950 0.00000 -0.00000 0.00000</pose>
+        <geometry><box><size>0.004 0.7550 0.7550</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_009.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_001_decal_s0">
+        <pose>90.8345 2.9660 9.0620 0.00000 -0.00000 0.25325</pose>
+        <geometry><box><size>0.004 0.1331 0.9713</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CORROSION_STAIN_001_s0.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_001_decal_s1">
+        <pose>90.7922 3.0899 9.0620 0.00000 -0.00000 0.40529</pose>
+        <geometry><box><size>0.004 0.1331 0.9713</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CORROSION_STAIN_001_s1.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_001_decal_s2">
+        <pose>90.7316 3.2059 9.0620 0.00000 -0.00000 0.55733</pose>
+        <geometry><box><size>0.004 0.1331 0.9713</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CORROSION_STAIN_001_s2.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_001_decal_s3">
+        <pose>90.6541 3.3115 9.0620 0.00000 -0.00000 0.70938</pose>
+        <geometry><box><size>0.004 0.1331 0.9713</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CORROSION_STAIN_001_s3.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_001_decal_s4">
+        <pose>90.5615 3.4041 9.0620 0.00000 -0.00000 0.86142</pose>
+        <geometry><box><size>0.004 0.1331 0.9713</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CORROSION_STAIN_001_s4.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_001_decal_s5">
+        <pose>90.4559 3.4816 9.0620 0.00000 -0.00000 1.01346</pose>
+        <geometry><box><size>0.004 0.1331 0.9713</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CORROSION_STAIN_001_s5.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_001_decal_s6">
+        <pose>90.3399 3.5422 9.0620 0.00000 -0.00000 1.16550</pose>
+        <geometry><box><size>0.004 0.1331 0.9713</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CORROSION_STAIN_001_s6.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CORROSION_STAIN_001_decal_s7">
+        <pose>90.2160 3.5845 9.0620 0.00000 -0.00000 1.31755</pose>
+        <geometry><box><size>0.004 0.1331 0.9713</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CORROSION_STAIN_001_s7.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_007_decal">
+        <pose>134.0880 -2.6660 11.6380 0.00000 -0.00000 3.14159</pose>
+        <geometry><box><size>0.004 0.8171 0.8171</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_007.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_009_decal_s0">
+        <pose>135.2055 -3.5871 5.7770 -0.00000 -0.00000 -1.33004</pose>
+        <geometry><box><size>0.004 0.1362 0.9911</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_009_s0.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_009_decal_s1">
+        <pose>135.3328 -3.5452 5.7770 -0.00000 -0.00000 -1.17443</pose>
+        <geometry><box><size>0.004 0.1362 0.9911</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_009_s1.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_009_decal_s2">
+        <pose>135.4520 -3.4840 5.7770 -0.00000 -0.00000 -1.01882</pose>
+        <geometry><box><size>0.004 0.1362 0.9911</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_009_s2.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_009_decal_s3">
+        <pose>135.5603 -3.4051 5.7770 -0.00000 -0.00000 -0.86320</pose>
+        <geometry><box><size>0.004 0.1362 0.9911</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_009_s3.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_009_decal_s4">
+        <pose>135.6551 -3.3103 5.7770 -0.00000 -0.00000 -0.70759</pose>
+        <geometry><box><size>0.004 0.1362 0.9911</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_009_s4.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_009_decal_s5">
+        <pose>135.7340 -3.2020 5.7770 -0.00000 -0.00000 -0.55198</pose>
+        <geometry><box><size>0.004 0.1362 0.9911</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_009_s5.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_009_decal_s6">
+        <pose>135.7952 -3.0828 5.7770 -0.00000 -0.00000 -0.39637</pose>
+        <geometry><box><size>0.004 0.1362 0.9911</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_009_s6.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_009_decal_s7">
+        <pose>135.8371 -2.9555 5.7770 -0.00000 -0.00000 -0.24075</pose>
+        <geometry><box><size>0.004 0.1362 0.9911</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_009_s7.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_015_decal_s0">
+        <pose>135.6094 2.1404 6.8650 -0.00000 -0.00000 -0.78560</pose>
+        <geometry><box><size>0.004 0.1572 1.1187</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_015_s0.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_015_decal_s1">
+        <pose>135.7085 2.2590 6.8650 -0.00000 -0.00000 -0.60604</pose>
+        <geometry><box><size>0.004 0.1572 1.1187</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_015_s1.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_015_decal_s2">
+        <pose>135.7848 2.3934 6.8650 -0.00000 -0.00000 -0.42648</pose>
+        <geometry><box><size>0.004 0.1572 1.1187</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_015_s2.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_015_decal_s3">
+        <pose>135.8359 2.5393 6.8650 -0.00000 -0.00000 -0.24692</pose>
+        <geometry><box><size>0.004 0.1572 1.1187</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_015_s3.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_015_decal_s4">
+        <pose>135.8600 2.6920 6.8650 -0.00000 -0.00000 -0.06736</pose>
+        <geometry><box><size>0.004 0.1572 1.1187</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_015_s4.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_015_decal_s5">
+        <pose>135.8566 2.8465 6.8650 0.00000 -0.00000 0.11220</pose>
+        <geometry><box><size>0.004 0.1572 1.1187</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_015_s5.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_015_decal_s6">
+        <pose>135.8256 2.9979 6.8650 0.00000 -0.00000 0.29175</pose>
+        <geometry><box><size>0.004 0.1572 1.1187</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_015_s6.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_HAIRLINE_015_decal_s7">
+        <pose>135.7680 3.1414 6.8650 0.00000 -0.00000 0.47131</pose>
+        <geometry><box><size>0.004 0.1572 1.1187</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_HAIRLINE_015_s7.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_011_decal_s0">
+        <pose>134.9737 3.6116 2.1190 0.00000 -0.00000 1.60133</pose>
+        <geometry><box><size>0.004 0.2674 2.0019</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_LONGITUDINAL_011_s0.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_011_decal_s1">
+        <pose>134.7158 3.5638 2.1190 0.00000 -0.00000 1.90676</pose>
+        <geometry><box><size>0.004 0.2674 2.0019</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_LONGITUDINAL_011_s1.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_011_decal_s2">
+        <pose>134.4843 3.4407 2.1190 0.00000 -0.00000 2.21219</pose>
+        <geometry><box><size>0.004 0.2674 2.0019</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_LONGITUDINAL_011_s2.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_011_decal_s3">
+        <pose>134.3004 3.2536 2.1190 0.00000 -0.00000 2.51763</pose>
+        <geometry><box><size>0.004 0.2674 2.0019</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_LONGITUDINAL_011_s3.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_011_decal_s4">
+        <pose>134.1814 3.0200 2.1190 0.00000 -0.00000 2.82306</pose>
+        <geometry><box><size>0.004 0.2674 2.0019</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_LONGITUDINAL_011_s4.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_011_decal_s5">
+        <pose>134.1381 2.7613 2.1190 0.00000 -0.00000 3.12849</pose>
+        <geometry><box><size>0.004 0.2674 2.0019</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_LONGITUDINAL_011_s5.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_011_decal_s6">
+        <pose>134.1746 2.5016 2.1190 0.00000 -0.00000 -2.84926</pose>
+        <geometry><box><size>0.004 0.2674 2.0019</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_LONGITUDINAL_011_s6.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_CRACK_LONGITUDINAL_011_decal_s7">
+        <pose>134.2875 2.2649 2.1190 0.00000 -0.00000 -2.54383</pose>
+        <geometry><box><size>0.004 0.2674 2.0019</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_CRACK_LONGITUDINAL_011_s7.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_011_decal_s0">
+        <pose>135.5121 -3.4434 7.5550 -0.00000 -0.00000 -0.93470</pose>
+        <geometry><box><size>0.004 0.1159 0.8589</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_011_s0.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_011_decal_s1">
+        <pose>135.5991 -3.3697 7.5550 -0.00000 -0.00000 -0.80228</pose>
+        <geometry><box><size>0.004 0.1159 0.8589</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_011_s1.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_011_decal_s2">
+        <pose>135.6757 -3.2852 7.5550 -0.00000 -0.00000 -0.66987</pose>
+        <geometry><box><size>0.004 0.1159 0.8589</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_011_s2.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_011_decal_s3">
+        <pose>135.7405 -3.1913 7.5550 -0.00000 -0.00000 -0.53746</pose>
+        <geometry><box><size>0.004 0.1159 0.8589</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_011_s3.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_011_decal_s4">
+        <pose>135.7923 -3.0897 7.5550 -0.00000 -0.00000 -0.40504</pose>
+        <geometry><box><size>0.004 0.1159 0.8589</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_011_s4.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_011_decal_s5">
+        <pose>135.8302 -2.9821 7.5550 -0.00000 -0.00000 -0.27263</pose>
+        <geometry><box><size>0.004 0.1159 0.8589</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_011_s5.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_011_decal_s6">
+        <pose>135.8535 -2.8705 7.5550 -0.00000 -0.00000 -0.14022</pose>
+        <geometry><box><size>0.004 0.1159 0.8589</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_011_s6.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_SPALL_011_decal_s7">
+        <pose>135.8620 -2.7567 7.5550 -0.00000 -0.00000 -0.00780</pose>
+        <geometry><box><size>0.004 0.1159 0.8589</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_SPALL_011_s7.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_006_decal_s0">
+        <pose>134.3184 -3.2777 6.0000 0.00000 -0.00000 -2.48277</pose>
+        <geometry><box><size>0.004 0.2674 2.8303</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_REBAR_EXPOSED_006_s0.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_006_decal_s1">
+        <pose>134.5086 -3.4582 6.0000 0.00000 -0.00000 -2.17733</pose>
+        <geometry><box><size>0.004 0.2674 2.8303</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_REBAR_EXPOSED_006_s1.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_006_decal_s2">
+        <pose>134.7444 -3.5732 6.0000 0.00000 -0.00000 -1.87190</pose>
+        <geometry><box><size>0.004 0.2674 2.8303</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_REBAR_EXPOSED_006_s2.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_006_decal_s3">
+        <pose>135.0037 -3.6120 6.0000 -0.00000 -0.00000 -1.56647</pose>
+        <geometry><box><size>0.004 0.2674 2.8303</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_REBAR_EXPOSED_006_s3.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_006_decal_s4">
+        <pose>135.2628 -3.5710 6.0000 -0.00000 -0.00000 -1.26104</pose>
+        <geometry><box><size>0.004 0.2674 2.8303</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_REBAR_EXPOSED_006_s4.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_006_decal_s5">
+        <pose>135.4975 -3.4540 6.0000 -0.00000 -0.00000 -0.95560</pose>
+        <geometry><box><size>0.004 0.2674 2.8303</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_REBAR_EXPOSED_006_s5.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_006_decal_s6">
+        <pose>135.6861 -3.2718 6.0000 -0.00000 -0.00000 -0.65017</pose>
+        <geometry><box><size>0.004 0.2674 2.8303</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_REBAR_EXPOSED_006_s6.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+      <visual name="DEFECT_REBAR_EXPOSED_006_decal_s7">
+        <pose>135.8113 -3.0413 6.0000 -0.00000 -0.00000 -0.34474</pose>
+        <geometry><box><size>0.004 0.2674 2.8303</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
+          <pbr><metal><albedo_map>model://avian_final_defects/materials/textures/DEFECT_REBAR_EXPOSED_006_s7.png</albedo_map><roughness>1.0</roughness><metalness>0.0</metalness></metal></pbr></material>
+      </visual>
+    </link>
+  </model>
+</sdf>

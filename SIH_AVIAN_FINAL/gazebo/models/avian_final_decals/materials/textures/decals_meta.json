@@ -64,5 +64,225 @@
   "type": "CRACK_LONGITUDINAL",
   "px": 512,
   "exposure_extra": 0.0
+ },
+ "DEFECT_CRACK_HAIRLINE_018": {
+  "file": "DEFECT_CRACK_HAIRLINE_018.png",
+  "width_m": 1.089572048187256,
+  "defect_dims_m": [
+   0.681,
+   0.393,
+   0.0
+  ],
+  "position_m": [
+   90.6915,
+   2.2578,
+   8.923
+  ],
+  "surface_normal": [
+   0.891,
+   -0.454,
+   0.0
+  ],
+  "type": "CRACK_HAIRLINE",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_CRACK_NETWORK_001": {
+  "file": "DEFECT_CRACK_NETWORK_001.png",
+  "width_m": 1.790769386291504,
+  "defect_dims_m": [
+   1.119,
+   0.55,
+   0.0
+  ],
+  "position_m": [
+   90.8163,
+   -2.537,
+   4.656
+  ],
+  "surface_normal": [
+   0.9877,
+   0.1564,
+   0.0
+  ],
+  "type": "CRACK_NETWORK",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_SPALL_009": {
+  "file": "DEFECT_SPALL_009.png",
+  "width_m": 0.7550156116485596,
+  "defect_dims_m": [
+   0.448,
+   0.472,
+   0.018
+  ],
+  "position_m": [
+   90.9,
+   2.032,
+   11.895
+  ],
+  "surface_normal": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "type": "SPALL",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_CORROSION_STAIN_001": {
+  "file": "DEFECT_CORROSION_STAIN_001.png",
+  "width_m": 0.9713233947753906,
+  "defect_dims_m": [
+   0.607,
+   0.543,
+   0.0
+  ],
+  "position_m": [
+   90.6486,
+   3.2887,
+   9.062
+  ],
+  "surface_normal": [
+   0.7071,
+   0.7071,
+   0.0
+  ],
+  "type": "CORROSION_STAIN",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_CRACK_HAIRLINE_007": {
+  "file": "DEFECT_CRACK_HAIRLINE_007.png",
+  "width_m": 0.8170939445495606,
+  "defect_dims_m": [
+   0.511,
+   0.461,
+   0.0
+  ],
+  "position_m": [
+   134.1,
+   -2.666,
+   11.638
+  ],
+  "surface_normal": [
+   -1.0,
+   0.0,
+   0.0
+  ],
+  "type": "CRACK_HAIRLINE",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_CRACK_HAIRLINE_009": {
+  "file": "DEFECT_CRACK_HAIRLINE_009.png",
+  "width_m": 0.9911463737487793,
+  "defect_dims_m": [
+   0.619,
+   0.464,
+   0.0
+  ],
+  "position_m": [
+   135.5818,
+   -3.3555,
+   5.777
+  ],
+  "surface_normal": [
+   0.7071,
+   -0.7071,
+   0.0
+  ],
+  "type": "CRACK_HAIRLINE",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_CRACK_HAIRLINE_015": {
+  "file": "DEFECT_CRACK_HAIRLINE_015.png",
+  "width_m": 1.1186976432800293,
+  "defect_dims_m": [
+   0.699,
+   0.343,
+   0.0
+  ],
+  "position_m": [
+   135.8158,
+   2.5339,
+   6.865
+  ],
+  "surface_normal": [
+   0.9877,
+   -0.1565,
+   0.0
+  ],
+  "type": "CRACK_HAIRLINE",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_CRACK_LONGITUDINAL_011": {
+  "file": "DEFECT_CRACK_LONGITUDINAL_011.png",
+  "width_m": 2.00185604095459,
+  "defect_dims_m": [
+   1.251,
+   0.55,
+   0.0
+  ],
+  "position_m": [
+   134.2352,
+   3.0983,
+   2.119
+  ],
+  "surface_normal": [
+   -0.891,
+   0.454,
+   0.0
+  ],
+  "type": "CRACK_LONGITUDINAL",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_SPALL_011": {
+  "file": "DEFECT_SPALL_011.png",
+  "width_m": 0.858900260925293,
+  "defect_dims_m": [
+   0.537,
+   0.502,
+   0.035
+  ],
+  "position_m": [
+   135.8027,
+   -3.0239,
+   7.555
+  ],
+  "surface_normal": [
+   0.891,
+   -0.454,
+   0.0
+  ],
+  "type": "SPALL",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_REBAR_EXPOSED_006": {
+  "file": "DEFECT_REBAR_EXPOSED_006.png",
+  "width_m": 2.8303091049194338,
+  "defect_dims_m": [
+   1.769,
+   1.768,
+   0.053
+  ],
+  "position_m": [
+   135.0,
+   -3.6,
+   6.0
+  ],
+  "surface_normal": [
+   0.1564,
+   -0.9877,
+   0.0
+  ],
+  "type": "REBAR_EXPOSED",
+  "px": 512,
+  "exposure_extra": 0.0
  }
 }

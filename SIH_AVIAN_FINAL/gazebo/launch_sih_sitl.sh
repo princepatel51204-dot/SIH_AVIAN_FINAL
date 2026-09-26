@@ -46,6 +46,12 @@ sleep 1
 echo "--- launching PX4 SITL + Gazebo (world: sih_avian_final) ---"
 cd "${PX4_DIR}"
 export GZ_SIM_RESOURCE_PATH="${HERE}/models:${WS}/src/garudanex_sim/models:${GZ_SIM_RESOURCE_PATH:-}"
+# AVIAN_DECALS=1: resolve model://avian_final_defects to the textured-decal copy (gazebo/models_decals,
+# built by gazebo/decals/build_decal_model.py). Visual-only; the world file is unchanged; default off.
+if [ "${AVIAN_DECALS:-0}" = "1" ]; then
+  export GZ_SIM_RESOURCE_PATH="${HERE}/models_decals:${GZ_SIM_RESOURCE_PATH}"
+  echo "AVIAN_DECALS=1: defects model = ${HERE}/models_decals/avian_final_defects"
+fi
 PX4_GZ_WORLD=sih_avian_final PX4_GZ_MODEL_POSE="${SPAWN}" HEADLESS=1 \
   GZ_SIM_RESOURCE_PATH="${GZ_SIM_RESOURCE_PATH}" \
   make px4_sitl gz_x500_lidar_2d > /tmp/sih_px4_sitl.log 2>&1 \

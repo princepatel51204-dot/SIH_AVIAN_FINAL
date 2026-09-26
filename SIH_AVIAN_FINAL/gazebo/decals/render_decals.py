@@ -9,7 +9,7 @@ defect from its own scene is the way to obtain an equivalent texture.
 Visualisation asset only. Nothing here reads or feeds navigation.
 
 Run:  blender -b scene/SIH_AVIAN_FINAL.blend -P gazebo/decals/render_decals.py -- ID [ID ...]
-      env: DECAL_PX (default 512), DECAL_M (crop width m, default max(1.2, 2.2*defect size)),
+      env: DECAL_PX (default 512), DECAL_M (fixed crop width m) or DECAL_MIN/DECAL_K (width = max(MIN, K*size), default 1.2/2.2),
            DECAL_EXPOSURE (extra exposure stops, default 0), DECAL_OUT (output dir)
 """
 import bpy, sys, os, json, math
@@ -53,7 +53,8 @@ for did in argv:
     d = gt[did]
     ob = bpy.data.objects.get(did)
     size = max(ob.dimensions.x, ob.dimensions.y, ob.dimensions.z) if ob else 0.5
-    width = float(os.environ.get("DECAL_M", max(1.2, 2.2 * size)))
+    width = float(os.environ["DECAL_M"]) if "DECAL_M" in os.environ else max(
+        float(os.environ.get("DECAL_MIN", "1.2")), float(os.environ.get("DECAL_K", "2.2")) * size)
     p = Vector(d["position_m"])
     n = Vector(d.get("surface_normal") or (0, 0, 1)).normalized()
     cam.location = p + n * 1.5
