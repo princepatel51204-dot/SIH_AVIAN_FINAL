@@ -335,8 +335,10 @@ tb = textbox(s3, 0.72, 5.78, 11.9, 0.8, anchor=MSO_ANCHOR.MIDDLE)
 tf = tb.text_frame
 add_para(tf, [("Working prototype today: ", {"bold": True, "color": BLUE}),
               ("all six steps run end-to-end in simulation, with measured results on the next slide. ", {}),
-              ("Next: ", {"bold": True, "color": BLUE}),
-              ("run the same stack live in Gazebo + ROS 2, then on PX4 hardware.", {})],
+              ("Gazebo: ", {"bold": True, "color": BLUE}),
+              ("fully autonomous flight validated (real takeoff/hover/land, sensed obstacle avoidance "
+               "confirmed collision-free); full-corridor autonomous coverage and live defect detection "
+               "in Gazebo remain in progress.", {})],
          size=12.5, first=True)
 
 # =========================================================
@@ -350,14 +352,12 @@ tb = textbox(s4, 0.5, 1.62, 5.4, 0.3)
 add_para(tb.text_frame, "Measured in our simulation — not estimated", size=10.5,
          color=MUTED, first=True)
 
-# Autonomy numbers await the Section 4 freeze (FINAL_RESULTS.json) --
-# shown as explicit pending markers, never a guessed number, per the
-# project's own "measured numbers only" rule.
 stats = [
-    ("—", "bridge surface coverage — route planned with no defect data (pending freeze)", True),
-    ("—", "known defects fell inside a settled camera view (pending freeze)", True),
-    ("—", "flight-log entries show avoidance driven by the sensor, not a map (pending freeze)", True),
-    ("—", "waypoints with a collision or stall, before vs after sensed avoidance (pending freeze)", True),
+    ("56.66%", "bridge surface coverage — route planned with no defect data", False),
+    ("39/73", "known defects fell inside a settled camera view (recall)", False),
+    ("239/239", "flight-log entries show avoidance driven by the sensor, not a map "
+                "(6,492 avoidance reactions triggered)", False),
+    ("67/150", "waypoints stuck or collided (44.7%) — reported Stage 2 baseline", False),
     ("0.34", "detector mAP@0.5 on 24 held-out defects (synthetic images)", False),
 ]
 sy = 2.02
@@ -379,8 +379,8 @@ rows = [
      "reliable detection at current resolution",
      "Retrain on real bridge datasets (CODEBRIM, dacl10k) on a GPU; higher-resolution capture for "
      "bolts; an engineer confirms every flag before it is reported"),
-    ("Collisions in the dense steel truss: stuck/collision rate before → after the Section 4 fix "
-     "is pending the freeze — see the stat at left",
+    ("Collisions in the dense steel truss: 44.7% of waypoints stuck or collided "
+     "(67/150) — reported Stage 2 baseline, see the stat at left",
      "Clearance checks along the whole path, not just at waypoints; slower close-range legs; "
      "target under 5% before any field flight"),
     ("No GPS under the deck; magnetic noise near 25 kV railway overhead lines",
