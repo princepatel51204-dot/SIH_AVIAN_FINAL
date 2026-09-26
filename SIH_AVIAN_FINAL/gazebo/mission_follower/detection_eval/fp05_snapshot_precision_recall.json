@@ -1,0 +1,7694 @@
+{
+ "summary": {
+  "run": "full_pass_05",
+  "snapshots_scored": 1161,
+  "rules": {
+   "rmin_m": 3.5,
+   "rmax_m": 10.0,
+   "threshold": 0.65,
+   "line_of_sight": true
+  },
+  "boxes": 0,
+  "box_tp_location": 0,
+  "box_tp_location_and_class": 0,
+  "precision_location": null,
+  "precision_location_and_class": null,
+  "usable_defect_instances": 444,
+  "instances_detected_location": 0,
+  "instances_detected_location_and_class": 0,
+  "recall_instances_location": 0.0,
+  "recall_instances_location_and_class": 0.0,
+  "unique_defects_usable": 168,
+  "unique_detected_location": 0,
+  "unique_detected_location_and_class": 0,
+  "recall_unique_location": 0.0,
+  "recall_unique_location_and_class": 0.0,
+  "usable_defects_by_family": {
+   "SPALL_DELAM": 32,
+   "CRACK": 60,
+   "FASTENER": 44,
+   "CORROSION_COATING": 19,
+   "OTHER": 13
+  }
+ },
+ "snapshots": [
+  {
+   "waypoint": "V5_0001",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0002",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0003",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_SECTION_LOSS_01",
+    "SDEFECT_SECTION_LOSS_02",
+    "SDEFECT_SECTION_LOSS_03",
+    "SDEFECT_SECTION_LOSS_04",
+    "SDEFECT_SECTION_LOSS_05",
+    "SDEFECT_SECTION_LOSS_06",
+    "SDEFECT_COATING_FAILURE_01",
+    "SDEFECT_COATING_FAILURE_03",
+    "SDEFECT_COATING_FAILURE_04",
+    "SDEFECT_COATING_FAILURE_05",
+    "SDEFECT_COATING_FAILURE_06",
+    "SDEFECT_COATING_FAILURE_07",
+    "SDEFECT_COATING_FAILURE_08"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0004",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0005",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0006",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0007",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0008",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0009",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0010",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0011",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0012",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0013",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0014",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0015",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0016",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0017",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0018",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0019",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0020",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0021",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0022",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0023",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0024",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0025",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0026",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0027",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0028",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0029",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0030",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0031",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0032",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0033",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0034",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0035",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0036",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0037",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0038",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0039",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0040",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0041",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0042",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0043",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0044",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0045",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0046",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0047",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0048",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0049",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0050",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0051",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0052",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0053",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0054",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0055",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0056",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0057",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0058",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0059",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0060",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0061",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0062",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0063",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0064",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0065",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0066",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0067",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0068",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0069",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0070",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0071",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0072",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0073",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0074",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0075",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0076",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0077",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0078",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0079",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0080",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0081",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0082",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0083",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0084",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0085",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0086",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0087",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0088",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0089",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0090",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0091",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0092",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0093",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0094",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0095",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0096",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0097",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0098",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0099",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0100",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0101",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0102",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0103",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_01"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0104",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0105",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0106",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0107",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_003"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0108",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0109",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_005",
+    "DEFECT_CRACK_LONGITUDINAL_012",
+    "DEFECT_SPALL_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0110",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0111",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_005",
+    "DEFECT_SPALL_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0112",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0113",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_REBAR_EXPOSED_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0114",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_JOINT_DETERIORATION_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0115",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0116",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0117",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0118",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0119",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0120",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_018"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0121",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0122",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_005",
+    "DEFECT_SPALL_009",
+    "DEFECT_CORROSION_STAIN_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0123",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_005",
+    "DEFECT_SPALL_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0124",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_002",
+    "DEFECT_CRACK_TRANSVERSE_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0125",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_02",
+    "SDEFECT_HANDRAIL_LOOSE_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0126",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_002",
+    "DEFECT_CRACK_TRANSVERSE_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0127",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0128",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_002",
+    "DEFECT_SPALL_003",
+    "SDEFECT_CONDUIT_DETACHED_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0129",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0130",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_003"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0131",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_010"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0132",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0133",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0134",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_005",
+    "DEFECT_SPALL_012"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0135",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_003",
+    "DEFECT_SPALL_012"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0136",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_005",
+    "DEFECT_CRACK_NETWORK_002",
+    "DEFECT_SPALL_003",
+    "DEFECT_SPALL_012"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0137",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_006",
+    "DEFECT_SPALL_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0138",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_006",
+    "DEFECT_SPALL_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0139",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_013",
+    "DEFECT_SPALL_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0140",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0141",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_010"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0142",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_008",
+    "DEFECT_CRACK_TRANSVERSE_010"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0143",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0144",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_REBAR_EXPOSED_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0145",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_009",
+    "DEFECT_REBAR_EXPOSED_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0146",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0147",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_010",
+    "DEFECT_SPALL_011"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0148",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0149",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_008",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0150",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_010",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0151",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_REBAR_EXPOSED_005",
+    "SDEFECT_HANDRAIL_LOOSE_04"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0152",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0153",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_FLOOR_STRINGER_ST_STRINGER_00_J00_02_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0154",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0155",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0156",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_015",
+    "DEFECT_CRACK_LONGITUDINAL_011"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0157",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_011"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0158",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_003",
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT",
+    "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0159",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0160",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0161",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_007",
+    "DEFECT_CRACK_LONGITUDINAL_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0162",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_007",
+    "DEFECT_CORROSION_STAIN_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0163",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_011"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0164",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_007",
+    "DEFECT_REBAR_EXPOSED_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0165",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0166",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_003",
+    "DEFECT_CRACK_LONGITUDINAL_004",
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT",
+    "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0167",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_003",
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT",
+    "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0168",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_003"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0169",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_010",
+    "DEFECT_REBAR_EXPOSED_002",
+    "DEFECT_CORROSION_STAIN_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0170",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0171",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0172",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_011"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0173",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_001",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_03_07_HOLE",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_03_06_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0174",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_011",
+    "DEFECT_CRACK_TRANSVERSE_004",
+    "DEFECT_DELAMINATION_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0175",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_BOT_03_09_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_BOT_03_04_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0176",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_011",
+    "DEFECT_CRACK_TRANSVERSE_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0177",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_007",
+    "FAST_GUSSET_ST_GUSSET_S_BOT_03_09_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_BOT_03_04_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0178",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_BOT_03_16_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_03_07_HOLE",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_03_06_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_03_12_NUT",
+    "ST_GUSSET_N_BOT_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0179",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_011",
+    "DEFECT_SPALL_006",
+    "SDEFECT_WELD_CRACK_05"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0180",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_010",
+    "DEFECT_REBAR_EXPOSED_002",
+    "DEFECT_CORROSION_STAIN_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0181",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_009",
+    "DEFECT_REBAR_EXPOSED_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0182",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_01_S_01_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0183",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0184",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0185",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_010",
+    "DEFECT_CORROSION_STAIN_008",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0186",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_002",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0187",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_006",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT",
+    "SDEFECT_WELD_CRACK_05"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0188",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_002",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0189",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_010",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_01_J01_01_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0190",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_004",
+    "DEFECT_DELAMINATION_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0191",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0192",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0193",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_S_00_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0194",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_FLOOR_STRINGER_ST_STRINGER_00_J03_02_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0195",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0196",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_008",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_00_J03_02_HOLE",
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_S_00_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0197",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_007",
+    "DEFECT_SPALL_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0198",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_008",
+    "FAST_FLOOR_STRINGER_ST_STRINGER_00_J03_02_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0199",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_001",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_03_16_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_03_12_NUT",
+    "ST_GUSSET_N_BOT_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0200",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0201",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0202",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0203",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0204",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_03_N_03_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0205",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_03",
+    "SDEFECT_HANDRAIL_LOOSE_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0206",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_001",
+    "SDEFECT_CONDUIT_DETACHED_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0207",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_003",
+    "DEFECT_SPALL_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0208",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_001",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_04_11_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_04_12_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_04_04_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_04_05_HOLE",
+    "FAST_GUSSET_ST_GUSSET_N_BOT_04_13_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0209",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_007",
+    "DEFECT_CRACK_NETWORK_003",
+    "DEFECT_SPALL_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0210",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0211",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_001",
+    "DEFECT_CRACK_NETWORK_003"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0212",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_001",
+    "SDEFECT_WELD_CRACK_04"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0213",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_002",
+    "FAST_GUSSET_ST_GUSSET_S_BOT_04_06_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0214",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0215",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_001",
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_05_S_03_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0216",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_008",
+    "DEFECT_DELAMINATION_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0217",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0218",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0219",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0220",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_008",
+    "DEFECT_DELAMINATION_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0221",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_008",
+    "DEFECT_DELAMINATION_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0222",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0223",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_WELD_CRACK_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0224",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_004",
+    "DEFECT_CORROSION_STAIN_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0225",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0226",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_003"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0227",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_014",
+    "DEFECT_DELAMINATION_003",
+    "DEFECT_DELAMINATION_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0228",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_014",
+    "DEFECT_DELAMINATION_003",
+    "DEFECT_DELAMINATION_004",
+    "DEFECT_CORROSION_STAIN_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0229",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0230",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_014",
+    "DEFECT_DELAMINATION_003",
+    "DEFECT_DELAMINATION_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0231",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CORROSION_STAIN_009",
+    "SDEFECT_CONDUIT_DETACHED_04"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0232",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0233",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_04"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0234",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0235",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0236",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0237",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_014",
+    "DEFECT_DELAMINATION_003"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0238",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0239",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0240",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0241",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0242",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_001",
+    "DEFECT_CRACK_NETWORK_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0243",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_014",
+    "DEFECT_DELAMINATION_003",
+    "DEFECT_DELAMINATION_004",
+    "ST_GUSSET_S_BOT_07"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0244",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0245",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0246",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0247",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_014"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0248",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0249",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0250",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0251",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0252",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0253",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0254",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_024"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0255",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0256",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0257",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_002",
+    "DEFECT_CRACK_HAIRLINE_016",
+    "DEFECT_CRACK_HAIRLINE_024"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0258",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_002",
+    "DEFECT_CRACK_HAIRLINE_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0259",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0260",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0261",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_005",
+    "DEFECT_CRACK_LONGITUDINAL_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0262",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0263",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_009",
+    "DEFECT_JOINT_DETERIORATION_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0264",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0265",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0266",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0267",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_005",
+    "DEFECT_CRACK_NETWORK_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0268",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_016",
+    "DEFECT_DELAMINATION_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0269",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_016",
+    "DEFECT_SPALL_004",
+    "DEFECT_DELAMINATION_006",
+    "DEFECT_DELAMINATION_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0270",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0271",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_022",
+    "DEFECT_SPALL_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0272",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_022"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0273",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0274",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_003"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0275",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_006",
+    "DEFECT_CRACK_TRANSVERSE_003"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0276",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_023"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0277",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0278",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_003",
+    "DEFECT_SPALL_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0279",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_006",
+    "DEFECT_CRACK_TRANSVERSE_003",
+    "DEFECT_CRACK_TRANSVERSE_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0280",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_006",
+    "DEFECT_CRACK_HAIRLINE_020",
+    "DEFECT_SPALL_008",
+    "DEFECT_DELAMINATION_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0281",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0282",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_006",
+    "DEFECT_SPALL_004",
+    "DEFECT_DELAMINATION_006",
+    "DEFECT_DELAMINATION_008"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0283",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_006",
+    "DEFECT_CRACK_HAIRLINE_020",
+    "DEFECT_CRACK_TRANSVERSE_003",
+    "DEFECT_SPALL_008",
+    "DEFECT_DELAMINATION_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0284",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0285",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0286",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_016",
+    "DEFECT_DELAMINATION_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0287",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_016",
+    "DEFECT_CRACK_HAIRLINE_024"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0288",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_009",
+    "DEFECT_CORROSION_STAIN_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0289",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_006",
+    "DEFECT_CRACK_TRANSVERSE_003",
+    "DEFECT_CRACK_TRANSVERSE_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0290",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_010",
+    "DEFECT_CRACK_TRANSVERSE_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0291",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0292",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_017"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0293",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0294",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0295",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0296",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0297",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0298",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0299",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0300",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_017"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0301",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0302",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0303",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0304",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0305",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_017"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0306",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0307",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0308",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0309",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0310",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0311",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0312",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0313",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0314",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0315",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0316",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0317",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0318",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0319",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0320",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0321",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0322",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0323",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0324",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0325",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0326",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0327",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0328",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0329",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0330",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0331",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0332",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0333",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0334",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0335",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0336",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0337",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_1_13_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0338",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0339",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0340",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0341",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0342",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0343",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0344",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0345",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0346",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0347",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0348",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0349",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0350",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0351",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0352",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0353",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0354",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0355",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0356",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0357",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_05"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0358",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0359",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0360",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0361",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0362",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0363",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0364",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0365",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0366",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0367",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0368",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0369",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0370",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0371",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0372",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0373",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0374",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0375",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0376",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0377",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0378",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0379",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0380",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0381",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0382",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0383",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0384",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0385",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0386",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0387",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0388",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0389",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0390",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0391",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0392",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0393",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0394",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0395",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0396",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0397",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0398",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0399",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0400",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0401",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0402",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0403",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0404",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0405",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0406",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0407",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0408",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0409",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0410",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0411",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0412",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_HANDRAIL_LOOSE_01"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0413",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0414",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0415",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0416",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0417",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0418",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0419",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0420",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0421",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0422",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0423",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0424",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0425",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_05"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0426",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_05"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0427",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0428",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0429",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0430",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_-1_18_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0431",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0432",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0433",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_-1_18_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0434",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0435",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_JOINT_ANCHOR_BR_JOINT_002_GAP_-1_18_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0436",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0437",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0438",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0439",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0440",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0441",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0442",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0443",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0444",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0445",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0446",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0447",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0448",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0449",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0450",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0451",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0452",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0453",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0454",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0455",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0456",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0457",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0458",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0459",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0460",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0461",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0462",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0463",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0464",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_022"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0465",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_020",
+    "DEFECT_CRACK_HAIRLINE_022"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0466",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_020"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0467",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_DELAMINATION_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0468",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0469",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0470",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0471",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_SPALL_004",
+    "DEFECT_JOINT_DETERIORATION_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0472",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0473",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0474",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0475",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0476",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0477",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_024"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0478",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0479",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0480",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0481",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0482",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0483",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0484",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0485",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0486",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0487",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0488",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0490",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0491",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_JOINT_DETERIORATION_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0492",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0493",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0494",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0495",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0496",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0497",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0498",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0499",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0500",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0501",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0502",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0503",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0504",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0505",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0506",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0507",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0508",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0509",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0510",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0511",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0512",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0513",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0514",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0515",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0516",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0517",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0518",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0519",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0520",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0521",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0522",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0523",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0524",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0525",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0526",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0527",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0528",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0529",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0530",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0531",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0532",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_05_14_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_05_10_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_05_04_MARK_NUT",
+    "SDEFECT_WELD_CRACK_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0533",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0534",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0535",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_00_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0536",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0537",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_02_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_05_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_09_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_18_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_16_NUT",
+    "SDEFECT_WELD_CRACK_01",
+    "SDEFECT_COATING_FAILURE_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0538",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_00_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0539",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_03_16_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_TOP_03_07_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0540",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE",
+    "ST_GUSSET_S_TOP_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0541",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0542",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0543",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0544",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_03_16_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_TOP_03_07_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0545",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0546",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_03_16_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0547",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_03_16_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0548",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0549",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0550",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0551",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_00_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0552",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0553",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_00_NUT",
+    "FAST_GUSSET_ST_GUSSET_N_TOP_04_15_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0554",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_02_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_05_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_09_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_18_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_16_NUT",
+    "SDEFECT_WELD_CRACK_01",
+    "SDEFECT_COATING_FAILURE_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0555",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_02_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_05_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_09_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_18_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_16_NUT",
+    "SDEFECT_WELD_CRACK_01",
+    "SDEFECT_COATING_FAILURE_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0556",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_02_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_05_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_09_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_18_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_16_NUT",
+    "SDEFECT_WELD_CRACK_01",
+    "SDEFECT_COATING_FAILURE_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0557",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0558",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_02_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_05_HOLE",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_04_09_HOLE",
+    "SDEFECT_WELD_CRACK_01"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0559",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0560",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE",
+    "ST_GUSSET_S_TOP_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0561",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE",
+    "ST_GUSSET_S_TOP_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0562",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0563",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_03_02_HOLE",
+    "ST_GUSSET_S_TOP_03"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0564",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0565",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0566",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0567",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0568",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0569",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0570",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0571",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0572",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0573",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0574",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0575",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0576",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0577",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0578",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0579",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0580",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0581",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0582",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0583",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0584",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0585",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0586",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0587",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0588",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0589",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0590",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0591",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0592",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0593",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0594",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0595",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0596",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0597",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_HAIRLINE_019"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0598",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0599",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0600",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0601",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_WELD_CRACK_02"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0602",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0603",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_GUSSET_ST_GUSSET_S_TOP_05_14_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_05_10_MARK_NUT",
+    "FAST_GUSSET_ST_GUSSET_S_TOP_05_04_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0604",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0605",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0606",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0607",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0608",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0609",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0610",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0611",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0612",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0613",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0614",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0615",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0616",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0617",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT",
+    "SDEFECT_HANDRAIL_LOOSE_04"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0618",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0619",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_LONGITUDINAL_003",
+    "FAST_FLOOR_STRINGER_ST_FLOORBEAM_00_N_01_MARK_NUT",
+    "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_10_MARK_NUT",
+    "SDEFECT_BEARING_SEIZED_01"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0620",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0621",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0622",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0623",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0624",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0625",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0626",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0627",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_06_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0628",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0629",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0630",
+   "boxes": [],
+   "usable_defects": [
+    "FAST_JOINT_ANCHOR_BR_JOINT_001_GAP_1_06_MARK_NUT"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0631",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0632",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0633",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0634",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0635",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_REBAR_EXPOSED_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0636",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0637",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0638",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0639",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0640",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0641",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0642",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0643",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0644",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0645",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_TRANSVERSE_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0646",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0647",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0648",
+   "boxes": [],
+   "usable_defects": [
+    "DEFECT_CRACK_NETWORK_002"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0649",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0650",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0651",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0652",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0653",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0654",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0655",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0656",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0657",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0658",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0659",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0660",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0661",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0662",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0663",
+   "boxes": [],
+   "usable_defects": [
+    "SDEFECT_CONDUIT_DETACHED_01"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0664",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0665",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0666",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0667",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0668",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0669",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0670",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0671",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0672",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0673",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0674",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0675",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0676",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0677",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0678",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0679",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0680",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0681",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0682",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0683",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0684",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0685",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0686",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0687",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0688",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0689",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0690",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0691",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0692",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0693",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0694",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0695",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0696",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0697",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0698",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0699",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0700",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0701",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0702",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0703",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0704",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0705",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0706",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0707",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0708",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0709",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0710",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0711",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0712",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0713",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0714",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0715",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0716",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0717",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0718",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0719",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0720",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0721",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0722",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0723",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0724",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0725",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0726",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0727",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0728",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0729",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0730",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0731",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0732",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0733",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0734",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0735",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0736",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0737",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0738",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0739",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0740",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0741",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0742",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0743",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0744",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0745",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0746",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0747",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0748",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0749",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0750",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0751",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0752",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0753",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0754",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0755",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0756",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0757",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0758",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0759",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0760",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0761",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0762",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0763",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0764",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0765",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0766",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0767",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0768",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0769",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0770",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0771",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0772",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0773",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0774",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0775",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0776",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0777",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0778",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0779",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0780",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0781",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0782",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0783",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0784",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0785",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0786",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0787",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0788",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0789",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0790",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0791",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0792",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0793",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0794",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0795",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0796",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0797",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0798",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0799",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0800",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0801",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0802",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0803",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0804",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0805",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0806",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0807",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0808",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0809",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0810",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0811",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0812",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0813",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0814",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0815",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0816",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0817",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0818",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0819",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0820",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0821",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0822",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0823",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0824",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0825",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0826",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0827",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0828",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0829",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0830",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0831",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0832",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0833",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0834",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0835",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0836",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0837",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0838",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0839",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_WEB_SHEAR_CRACK_013"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0840",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_WEB_SHEAR_CRACK_013"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0841",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0842",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0843",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0844",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0845",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0846",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0847",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0848",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0849",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_EFFLORESCENCE_JOINT_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0850",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_EFFLORESCENCE_JOINT_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0851",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_EFFLORESCENCE_JOINT_005"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0852",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0853",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0854",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0855",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0856",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0857",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0858",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_INTERNAL_SOFFIT_CRACK_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0859",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_INTERNAL_SOFFIT_CRACK_009"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0860",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0861",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0862",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_WEB_SHEAR_CRACK_012"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0863",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0864",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0865",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_EFFLORESCENCE_JOINT_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0866",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0867",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0868",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_001"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0869",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0870",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0871",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0872",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0873",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0874",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0875",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0876",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0877",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0878",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0879",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0880",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0881",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0882",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0883",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0884",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0885",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0886",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0887",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0888",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0889",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0890",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0891",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0892",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0893",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0894",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0895",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0896",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0897",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0898",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0899",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0900",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0901",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0902",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0903",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0904",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0905",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0906",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0907",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0908",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0909",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0910",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0911",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0912",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0913",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0914",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0915",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0916",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0917",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0918",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0919",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0920",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0921",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0922",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0923",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0924",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0925",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0926",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0927",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0928",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0929",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0930",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0931",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0932",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0933",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0934",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0935",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0936",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0937",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0938",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0939",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0940",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0941",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0942",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0943",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0944",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0945",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0946",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0947",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0948",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0949",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0950",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0951",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0952",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0953",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0954",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0955",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0956",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0957",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0958",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0959",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0960",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0961",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0962",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0963",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0964",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0965",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0966",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0967",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0968",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0969",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0970",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0971",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0972",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0973",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0974",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0975",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0976",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0977",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0978",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0979",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0980",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0981",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0982",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0983",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0984",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0985",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0986",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0987",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0988",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0989",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0990",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0991",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0992",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0993",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0994",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0995",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0996",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0997",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_BEARING_DISTRESS_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0998",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_0999",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1000",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1001",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_BEARING_DISTRESS_007"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1002",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1003",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_EFFLORESCENCE_JOINT_004"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1004",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1005",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1006",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1007",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1008",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SOFFIT_TRANSVERSE_CRACK_015"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1009",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1010",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1011",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1012",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SOFFIT_TRANSVERSE_CRACK_015"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1013",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SOFFIT_TRANSVERSE_CRACK_015"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1014",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_BEARING_DISTRESS_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1015",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_BEARING_DISTRESS_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1016",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1017",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_BEARING_DISTRESS_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1018",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_002",
+    "MDEFECT_BEARING_DISTRESS_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1019",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_002",
+    "MDEFECT_BEARING_DISTRESS_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1020",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SEGMENTAL_JOINT_LEAKAGE_002",
+    "MDEFECT_BEARING_DISTRESS_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1021",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1022",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_BEARING_DISTRESS_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1023",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_BEARING_DISTRESS_006"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1024",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1025",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1026",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1027",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1028",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1029",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1030",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1031",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1032",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1033",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1034",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1035",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1036",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1037",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1038",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_WEB_SHEAR_CRACK_013"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1039",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1040",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SOFFIT_TRANSVERSE_CRACK_016"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1041",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_SOFFIT_TRANSVERSE_CRACK_016"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1042",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1043",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1044",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1045",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_SPALL_017"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1046",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1047",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1048",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1049",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1050",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1051",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1052",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1053",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1054",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1055",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1056",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1057",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1058",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_SPALL_017"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1059",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_SPALL_017"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1060",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1061",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1062",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_CORROSION_STAIN_019"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1063",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_CORROSION_STAIN_019"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1064",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_CORROSION_STAIN_019"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1065",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1066",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1067",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1068",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1069",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1070",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1071",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_CORROSION_STAIN_019"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1072",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1073",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1074",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1075",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1076",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1077",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_SPALL_018"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1078",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1079",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1080",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1081",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1082",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1083",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_SPALL_018"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1084",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1085",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1086",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1087",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1088",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1089",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1090",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1091",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1092",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1093",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1094",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1095",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1096",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1097",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1098",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1099",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1100",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1101",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_SPALL_018",
+    "MDEFECT_PIER_CORROSION_STAIN_020"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1102",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1103",
+   "boxes": [],
+   "usable_defects": [
+    "MDEFECT_PIER_SPALL_018"
+   ],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1104",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1105",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1106",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1107",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1108",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1109",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1110",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1111",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1112",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1113",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1114",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1115",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1116",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1117",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1118",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1119",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1120",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1121",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1122",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1123",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1124",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1125",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1126",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1127",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1128",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1129",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1130",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1131",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1132",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1133",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1134",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1135",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1136",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1137",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1138",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1139",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1140",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1141",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1142",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1143",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1144",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1145",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1146",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1147",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1148",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1149",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1150",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1151",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1152",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1153",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1154",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1155",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1156",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1157",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1158",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1159",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1160",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1161",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  },
+  {
+   "waypoint": "V5_1162",
+   "boxes": [],
+   "usable_defects": [],
+   "tp_boxes": 0
+  }
+ ]
+}
