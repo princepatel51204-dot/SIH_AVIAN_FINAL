@@ -43,6 +43,11 @@ THRESH = 0.65
 BOX_IN = 5          # frames the box takes to animate in
 CARD_IN = 8
 
+# Wides are composited after the beats, so the running counter is already at
+# its final value by then. The count a viewer sees has to be the number of
+# beats that have played before the wide in the film's edit order.
+WIDE_COUNT = {"wide_open": 0, "wide_mid_a": 2, "wide_mid_b": 5, "wide_close": 8}
+
 gt = {d["defect_id"]: d
       for d in json.load(open(f"{ROOT}/scene/AVIAN_defect_ground_truth_FINAL.json"))["defects"]}
 
@@ -162,7 +167,7 @@ def main():
             else:
                 hud = {"title": "AVIAN — AUTONOMOUS BRIDGE INSPECTION",
                        "subtitle": meta.get("label", "").upper(),
-                       "count": counter,
+                       "count": WIDE_COUNT.get(meta["shot"], counter),
                        "note": "full_pass_05 · flown trajectory"}
 
             card = None
