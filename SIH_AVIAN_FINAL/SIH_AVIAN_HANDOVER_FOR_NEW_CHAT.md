@@ -141,9 +141,11 @@ Blender scene (192 defects) ──► collision.json (568 primitives)
 
 ### Autonomy
 
-- **Stage 1:** 104 waypoints, 74 stuck (71%). Claude Code found no
-  committed source file for this and is regenerating it with a full
-  Stage 1 re-fly. Use the re-fly's number.
+- **Stage 1:** 104 waypoints, **68 stuck (65.4%)**, from the committed re-fly
+  `mission/flight_log.json` (`n_stuck` = 68, commit 6c45ae6, generated
+  2026-09-24T03:46Z). CORRECTED: this document used to say 74 stuck (71%);
+  that figure had no committed source file and was superseded by the re-fly.
+  Do not quote 74 / 71 % anywhere.
 - **Stage 2, before the Section 4 fix:** 150 waypoints.
   - 67/150 stuck = **44.7%**
   - coverage **56.66%**

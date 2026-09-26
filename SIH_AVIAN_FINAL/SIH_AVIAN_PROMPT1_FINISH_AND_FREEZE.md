@@ -52,7 +52,7 @@ Follow the sprint prompt's Phase C exactly:
   "meta": {"commit": "...", "tag": "sih-idea-submission", "generated_ist": "..."},
   "scene": {"corridor_m": 360, "defects_total": 192, "collision_primitives": 568},
   "autonomy": {
-    "stage1": {"waypoints": 104, "stuck": 74, "stuck_pct": 71.2},
+    "stage1": {"waypoints": 104, "stuck": 68, "stuck_pct": 65.4},
     "stage2_before": {"waypoints": 150, "stuck": 67, "stuck_pct": 44.7, "coverage_pct": 56.66, "recall": [39, 73], "sensed_entries": [239, 239], "avoid_reactions": 6492},
     "stage2_after": {"...": "from flight_log_s4.json, or null if not run"}
   },
