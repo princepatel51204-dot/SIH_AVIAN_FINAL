@@ -66,3 +66,37 @@ SIH_AVIAN_FINAL/detection/renders_zoom_all/
 # (Ozgenel "Concrete Crack Images for Classification", CC BY 4.0, ~230 MB) --
 # downloaded on demand, never a source artifact, never committed.
 SIH_AVIAN_FINAL/data/
+
+# Cinematic walkthrough output (scene/cine/): the finished film, the 12
+# per-shot clips it is assembled from, and every look / DoF / benchmark still
+# shot along the way. All of it is build output of render_clips.py +
+# assemble.sh, which regenerate from the tracked scripts plus the (already
+# ignored) .blend. The film alone runs to ~10^2 MB and the intermediates
+# several hundred more -- the same reasoning as the dataset renders above.
+# The scripts, the shot report and the verification JSON ARE tracked: those
+# are the evidence, not the pixels.
+SIH_AVIAN_FINAL/media/*.mp4
+SIH_AVIAN_FINAL/media/*.invalid
+SIH_AVIAN_FINAL/media/*.png
+SIH_AVIAN_FINAL/media/_render.log
+SIH_AVIAN_FINAL/media/_clips/
+SIH_AVIAN_FINAL/media/_look/
+SIH_AVIAN_FINAL/media/_probe/
+SIH_AVIAN_FINAL/media/_verify/
+SIH_AVIAN_FINAL/media/_vframes/
+SIH_AVIAN_FINAL/media/_stills/
+
+# Inspection-film build output (scene/film/): rendered frame sequences, the
+# composited UI frames, the per-shot clips and every casting / standoff /
+# aim test rendered along the way. ~2,100 frames at 1920x1080 plus their UI
+# copies -- build output of render_film.py + compose_film.py, regenerated
+# from the tracked scripts. The scripts, shotlist, approaches.json and the
+# detection log ARE tracked: those are the evidence.
+SIH_AVIAN_FINAL/media/_film/
+SIH_AVIAN_FINAL/media/_casting/
+SIH_AVIAN_FINAL/media/_aimtest/
+SIH_AVIAN_FINAL/media/_legal/
+SIH_AVIAN_FINAL/media/_zoomtest/
+SIH_AVIAN_FINAL/media/_filmtest/
+SIH_AVIAN_FINAL/media/_vfilm/
+SIH_AVIAN_FINAL/scene/film/meshes/

@@ -1,0 +1,957 @@
+{
+ "max_range_m": 12.0,
+ "lens_mm": 24.0,
+ "fov_half_deg": 36.87,
+ "fov_margin": 0.72,
+ "facing_deg": 75.0,
+ "n_detector_positive": 22,
+ "n_real_trajectory": 22,
+ "defects": [
+  {
+   "defect_id": "DEFECT_SPALL_007",
+   "type": "SPALL",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    103.462,
+    0.023,
+    12.591
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9938,
+    "bbox": [
+     677.4,
+     241.8,
+     1226.3,
+     858.2
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 466,
+   "window_t_sim": [
+    906.42,
+    914.56
+   ],
+   "window_duration_s": 8.13,
+   "closest_range_m": 8.35,
+   "t_closest": 906.42,
+   "cam_xyz_at_closest": [
+    101.414,
+    5.788,
+    6.905
+   ],
+   "drone_xyz_at_closest": [
+    101.106,
+    5.986,
+    6.827
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 22.5
+  },
+  {
+   "defect_id": "DEFECT_SPALL_008",
+   "type": "SPALL",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    251.583,
+    5.518,
+    12.591
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9901,
+    "bbox": [
+     701.1,
+     273.9,
+     1159.4,
+     822.6
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 418,
+   "window_t_sim": [
+    1959.14,
+    1969.24
+   ],
+   "window_duration_s": 10.1,
+   "closest_range_m": 6.09,
+   "t_closest": 1967.75,
+   "cam_xyz_at_closest": [
+    253.215,
+    8.747,
+    7.689
+   ],
+   "drone_xyz_at_closest": [
+    253.214,
+    9.111,
+    7.6
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 12.1
+  },
+  {
+   "defect_id": "DEFECT_REBAR_EXPOSED_001",
+   "type": "REBAR_EXPOSED",
+   "host_surface": "GIRDER_WEB",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    93.879,
+    -5.6,
+    13.196
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9899,
+    "bbox": [
+     582.9,
+     88.4,
+     1291.1,
+     861.9
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 425,
+   "window_t_sim": [
+    4771.74,
+    4776.07
+   ],
+   "window_duration_s": 4.33,
+   "closest_range_m": 9.56,
+   "t_closest": 4776.07,
+   "cam_xyz_at_closest": [
+    93.586,
+    -12.246,
+    20.065
+   ],
+   "drone_xyz_at_closest": [
+    93.809,
+    -12.539,
+    20.075
+   ],
+   "gimbal_deg_at_closest": 55.0,
+   "on_axis_deg": 25.1
+  },
+  {
+   "defect_id": "DEFECT_SPALL_011",
+   "type": "SPALL",
+   "host_surface": "PIER_COLUMN",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    135.803,
+    -3.024,
+    7.555
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9867,
+    "bbox": [
+     630.9,
+     191.7,
+     1190.8,
+     854.6
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 77,
+   "window_t_sim": [
+    1068.32,
+    1071.56
+   ],
+   "window_duration_s": 3.25,
+   "closest_range_m": 6.75,
+   "t_closest": 1068.66,
+   "cam_xyz_at_closest": [
+    139.146,
+    -8.767,
+    6.347
+   ],
+   "drone_xyz_at_closest": [
+    139.421,
+    -9.022,
+    6.279
+   ],
+   "gimbal_deg_at_closest": -29.8,
+   "on_axis_deg": 25.1
+  },
+  {
+   "defect_id": "DEFECT_SPALL_005",
+   "type": "SPALL",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    100.311,
+    -2.707,
+    12.591
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9842,
+    "bbox": [
+     702.5,
+     309.9,
+     1154.5,
+     757.4
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 229,
+   "window_t_sim": [
+    874.28,
+    880.48
+   ],
+   "window_duration_s": 6.2,
+   "closest_range_m": 7.45,
+   "t_closest": 877.4,
+   "cam_xyz_at_closest": [
+    99.388,
+    -8.18,
+    7.619
+   ],
+   "drone_xyz_at_closest": [
+    99.382,
+    -8.547,
+    7.541
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 13.4
+  },
+  {
+   "defect_id": "DEFECT_SPALL_003",
+   "type": "SPALL",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    115.472,
+    2.774,
+    12.591
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9778,
+    "bbox": [
+     701.3,
+     236.6,
+     1234.6,
+     813.6
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 188,
+   "window_t_sim": [
+    936.27,
+    939.78
+   ],
+   "window_duration_s": 3.51,
+   "closest_range_m": 6.39,
+   "t_closest": 939.78,
+   "cam_xyz_at_closest": [
+    112.017,
+    5.087,
+    7.743
+   ],
+   "drone_xyz_at_closest": [
+    111.645,
+    5.107,
+    7.705
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 23.9
+  },
+  {
+   "defect_id": "DEFECT_SPALL_012",
+   "type": "SPALL",
+   "host_surface": "DECK_UNDERSIDE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    116.781,
+    -4.843,
+    14.191
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9761,
+    "bbox": [
+     667.5,
+     182.5,
+     1213.6,
+     839.2
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 216,
+   "window_t_sim": [
+    1021.64,
+    1028.1
+   ],
+   "window_duration_s": 6.46,
+   "closest_range_m": 8.44,
+   "t_closest": 1023.73,
+   "cam_xyz_at_closest": [
+    115.304,
+    -10.013,
+    7.682
+   ],
+   "drone_xyz_at_closest": [
+    115.306,
+    -10.379,
+    7.604
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 10.1
+  },
+  {
+   "defect_id": "DEFECT_DELAMINATION_001",
+   "type": "DELAMINATION",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    193.473,
+    -2.839,
+    11.775
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9738,
+    "bbox": [
+     716.4,
+     151.0,
+     1183.8,
+     876.0
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 86,
+   "window_t_sim": [
+    1520.13,
+    1521.56
+   ],
+   "window_duration_s": 1.42,
+   "closest_range_m": 8.4,
+   "t_closest": 1521.56,
+   "cam_xyz_at_closest": [
+    195.519,
+    -9.714,
+    7.41
+   ],
+   "drone_xyz_at_closest": [
+    195.523,
+    -10.082,
+    7.338
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 26.0
+  },
+  {
+   "defect_id": "DEFECT_SPALL_002",
+   "type": "SPALL",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    183.037,
+    -5.485,
+    11.775
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9729,
+    "bbox": [
+     690.0,
+     161.5,
+     1239.7,
+     867.8
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 90,
+   "window_t_sim": [
+    1504.5,
+    1509.32
+   ],
+   "window_duration_s": 4.82,
+   "closest_range_m": 5.76,
+   "t_closest": 1505.74,
+   "cam_xyz_at_closest": [
+    186.265,
+    -4.992,
+    7.029
+   ],
+   "drone_xyz_at_closest": [
+    186.627,
+    -5.036,
+    6.943
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 5.6
+  },
+  {
+   "defect_id": "DEFECT_SPALL_010",
+   "type": "SPALL",
+   "host_surface": "PIER_CAP",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    135.9,
+    -4.055,
+    12.029
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9701,
+    "bbox": [
+     763.8,
+     248.1,
+     1144.3,
+     784.4
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 212,
+   "window_t_sim": [
+    1068.03,
+    1072.42
+   ],
+   "window_duration_s": 4.38,
+   "closest_range_m": 8.06,
+   "t_closest": 1068.66,
+   "cam_xyz_at_closest": [
+    139.146,
+    -8.767,
+    6.347
+   ],
+   "drone_xyz_at_closest": [
+    139.421,
+    -9.022,
+    6.279
+   ],
+   "gimbal_deg_at_closest": -29.8,
+   "on_axis_deg": 17.5
+  },
+  {
+   "defect_id": "DEFECT_SPALL_006",
+   "type": "SPALL",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    155.115,
+    5.599,
+    11.775
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9664,
+    "bbox": [
+     626.5,
+     226.4,
+     1200.2,
+     868.7
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 102,
+   "window_t_sim": [
+    1207.84,
+    1211.24
+   ],
+   "window_duration_s": 3.41,
+   "closest_range_m": 5.31,
+   "t_closest": 1210.8,
+   "cam_xyz_at_closest": [
+    154.678,
+    9.056,
+    7.774
+   ],
+   "drone_xyz_at_closest": [
+    154.66,
+    9.425,
+    7.676
+   ],
+   "gimbal_deg_at_closest": -29.8,
+   "on_axis_deg": 14.8
+  },
+  {
+   "defect_id": "DEFECT_SPALL_009",
+   "type": "SPALL",
+   "host_surface": "PIER_CAP",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    90.9,
+    2.032,
+    11.895
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9655,
+    "bbox": [
+     621.6,
+     270.2,
+     1222.2,
+     799.3
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 185,
+   "window_t_sim": [
+    810.78,
+    815.48
+   ],
+   "window_duration_s": 4.7,
+   "closest_range_m": 6.68,
+   "t_closest": 815.48,
+   "cam_xyz_at_closest": [
+    94.323,
+    0.471,
+    6.377
+   ],
+   "drone_xyz_at_closest": [
+    94.639,
+    0.646,
+    6.277
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 26.4
+  },
+  {
+   "defect_id": "DEFECT_SPALL_001",
+   "type": "SPALL",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    170.094,
+    2.806,
+    11.775
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9564,
+    "bbox": [
+     712.5,
+     169.3,
+     1293.5,
+     871.6
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 190,
+   "window_t_sim": [
+    1400.34,
+    1405.47
+   ],
+   "window_duration_s": 5.13,
+   "closest_range_m": 7.49,
+   "t_closest": 1402.31,
+   "cam_xyz_at_closest": [
+    170.887,
+    0.809,
+    4.598
+   ],
+   "drone_xyz_at_closest": [
+    170.539,
+    0.813,
+    4.509
+   ],
+   "gimbal_deg_at_closest": -90.0,
+   "on_axis_deg": 16.6
+  },
+  {
+   "defect_id": "DEFECT_SPALL_004",
+   "type": "SPALL",
+   "host_surface": "GIRDER_BOTTOM_FLANGE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    242.671,
+    -5.444,
+    12.591
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9534,
+    "bbox": [
+     688.0,
+     264.5,
+     1208.9,
+     833.5
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 123,
+   "window_t_sim": [
+    1916.62,
+    1918.93
+   ],
+   "window_duration_s": 2.31,
+   "closest_range_m": 5.16,
+   "t_closest": 1916.99,
+   "cam_xyz_at_closest": [
+    242.264,
+    -6.969,
+    7.674
+   ],
+   "drone_xyz_at_closest": [
+    242.254,
+    -7.335,
+    7.596
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 17.3
+  },
+  {
+   "defect_id": "DEFECT_REBAR_EXPOSED_002",
+   "type": "REBAR_EXPOSED",
+   "host_surface": "GIRDER_WEB",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    146.846,
+    5.61,
+    12.872
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9529,
+    "bbox": [
+     739.2,
+     216.8,
+     1265.4,
+     836.6
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 130,
+   "window_t_sim": [
+    1200.86,
+    1204.98
+   ],
+   "window_duration_s": 4.12,
+   "closest_range_m": 6.25,
+   "t_closest": 1202.23,
+   "cam_xyz_at_closest": [
+    147.045,
+    9.145,
+    7.725
+   ],
+   "drone_xyz_at_closest": [
+    147.035,
+    9.511,
+    7.645
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 1.3
+  },
+  {
+   "defect_id": "DEFECT_REBAR_EXPOSED_004",
+   "type": "REBAR_EXPOSED",
+   "host_surface": "BEARING_SEAT",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    134.52,
+    -5.5,
+    12.338
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9363,
+    "bbox": [
+     647.0,
+     440.6,
+     1267.6,
+     691.6
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 190,
+   "window_t_sim": [
+    4580.57,
+    4587.63
+   ],
+   "window_duration_s": 7.06,
+   "closest_range_m": 7.4,
+   "t_closest": 4587.63,
+   "cam_xyz_at_closest": [
+    130.795,
+    -10.757,
+    15.967
+   ],
+   "drone_xyz_at_closest": [
+    130.67,
+    -11.115,
+    15.916
+   ],
+   "gimbal_deg_at_closest": 8.5,
+   "on_axis_deg": 26.5
+  },
+  {
+   "defect_id": "DEFECT_JOINT_DETERIORATION_004",
+   "type": "JOINT_DETERIORATION",
+   "host_surface": "BEARING_SEAT",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    225.08,
+    5.5,
+    11.443
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9208,
+    "bbox": [
+     589.0,
+     385.6,
+     1091.1,
+     922.1
+    ]
+   },
+   "casting_standoff_m": 0.909,
+   "real_trajectory": true,
+   "n_qualifying_samples": 223,
+   "window_t_sim": [
+    3544.88,
+    3549.64
+   ],
+   "window_duration_s": 4.76,
+   "closest_range_m": 11.17,
+   "t_closest": 3546.02,
+   "cam_xyz_at_closest": [
+    225.512,
+    13.972,
+    18.705
+   ],
+   "drone_xyz_at_closest": [
+    225.547,
+    14.341,
+    18.676
+   ],
+   "gimbal_deg_at_closest": 45.0,
+   "on_axis_deg": 4.9
+  },
+  {
+   "defect_id": "DEFECT_REBAR_EXPOSED_005",
+   "type": "REBAR_EXPOSED",
+   "host_surface": "GIRDER_WEB",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    145.824,
+    5.39,
+    13.313
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.9037,
+    "bbox": [
+     770.5,
+     304.1,
+     1168.9,
+     744.2
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 39,
+   "window_t_sim": [
+    1328.82,
+    1331.0
+   ],
+   "window_duration_s": 2.18,
+   "closest_range_m": 11.02,
+   "t_closest": 1328.82,
+   "cam_xyz_at_closest": [
+    153.833,
+    1.068,
+    7.097
+   ],
+   "drone_xyz_at_closest": [
+    154.203,
+    1.048,
+    7.041
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 24.8
+  },
+  {
+   "defect_id": "DEFECT_DELAMINATION_002",
+   "type": "DELAMINATION",
+   "host_surface": "DECK_UNDERSIDE",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    251.324,
+    5.027,
+    14.191
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.8107,
+    "bbox": [
+     770.8,
+     337.7,
+     1161.5,
+     619.0
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 528,
+   "window_t_sim": [
+    1957.4,
+    1970.16
+   ],
+   "window_duration_s": 12.75,
+   "closest_range_m": 7.73,
+   "t_closest": 1967.75,
+   "cam_xyz_at_closest": [
+    253.215,
+    8.747,
+    7.689
+   ],
+   "drone_xyz_at_closest": [
+    253.214,
+    9.111,
+    7.6
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 11.1
+  },
+  {
+   "defect_id": "DEFECT_DELAMINATION_003",
+   "type": "DELAMINATION",
+   "host_surface": "DIAPHRAGM",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    212.303,
+    -4.155,
+    13.03
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.7629,
+    "bbox": [
+     732.7,
+     297.7,
+     1173.8,
+     772.2
+    ]
+   },
+   "casting_standoff_m": 1.116,
+   "real_trajectory": true,
+   "n_qualifying_samples": 104,
+   "window_t_sim": [
+    1734.8,
+    1739.76
+   ],
+   "window_duration_s": 4.96,
+   "closest_range_m": 8.14,
+   "t_closest": 1739.19,
+   "cam_xyz_at_closest": [
+    218.422,
+    -4.79,
+    7.703
+   ],
+   "drone_xyz_at_closest": [
+    218.739,
+    -4.972,
+    7.621
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 21.9
+  },
+  {
+   "defect_id": "DEFECT_REBAR_EXPOSED_003",
+   "type": "REBAR_EXPOSED",
+   "host_surface": "BEARING_SEAT",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    269.845,
+    -5.5,
+    12.225
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.7223,
+    "bbox": [
+     830.2,
+     444.1,
+     1034.6,
+     641.1
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 324,
+   "window_t_sim": [
+    3295.0,
+    3302.61
+   ],
+   "window_duration_s": 7.6,
+   "closest_range_m": 9.37,
+   "t_closest": 3295.0,
+   "cam_xyz_at_closest": [
+    272.66,
+    -7.787,
+    20.864
+   ],
+   "drone_xyz_at_closest": [
+    272.664,
+    -8.15,
+    20.841
+   ],
+   "gimbal_deg_at_closest": 63.9,
+   "on_axis_deg": 21.0
+  },
+  {
+   "defect_id": "DEFECT_DELAMINATION_004",
+   "type": "DELAMINATION",
+   "host_surface": "DIAPHRAGM",
+   "bridge_section": "SECTION_02_RIVER_CROSSING",
+   "position_m": [
+    211.983,
+    -1.32,
+    13.098
+   ],
+   "detector": {
+    "family": "SPALL_DELAM",
+    "score": 0.6942,
+    "bbox": [
+     445.5,
+     45.2,
+     1369.1,
+     1045.9
+    ]
+   },
+   "casting_standoff_m": 1.5,
+   "real_trajectory": true,
+   "n_qualifying_samples": 176,
+   "window_t_sim": [
+    1589.32,
+    1594.34
+   ],
+   "window_duration_s": 5.02,
+   "closest_range_m": 8.09,
+   "t_closest": 1594.34,
+   "cam_xyz_at_closest": [
+    208.572,
+    0.226,
+    5.924
+   ],
+   "drone_xyz_at_closest": [
+    208.232,
+    0.087,
+    5.849
+   ],
+   "gimbal_deg_at_closest": -55.0,
+   "on_axis_deg": 24.9
+  }
+ ]
+}
