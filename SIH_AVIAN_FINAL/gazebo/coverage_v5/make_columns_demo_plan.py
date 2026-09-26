@@ -9,7 +9,7 @@ exact clearance (covlib, strict 3.5 m, no relaxation) that plan_columns.py used:
   * last waypoint of the cut -> home   (plan['rth'])
 Every flown segment is then re-checked (run gazebo/coverage_v5/verify_columns_plan.py on the output).
 
-Usage: make_columns_demo_plan.py [--columns RP03,RP04] [--out mission/gazebo_columns_demo_plan.json]
+Usage: make_columns_demo_plan.py [--columns RP03,RP04] [--from-id ID --to-id ID] [--out mission/gazebo_columns_demo_plan.json]
 """
 import argparse, json, math, os, sys, time
 import numpy as np
@@ -30,11 +30,18 @@ def main():
     ap.add_argument('--columns', default='RP03,RP04')
     ap.add_argument('--src', default=os.path.join(C.ROOT, 'mission', 'gazebo_columns_plan.json'))
     ap.add_argument('--out', default=os.path.join(C.ROOT, 'mission', 'gazebo_columns_demo_plan.json'))
+    ap.add_argument('--from-id', default='', help='first waypoint id of a contiguous sub-range (optional)')
+    ap.add_argument('--to-id', default='', help='last waypoint id of a contiguous sub-range (optional)')
     a = ap.parse_args()
     t0 = time.time()
     want = a.columns.split(',')
     plan = json.load(open(a.src))
     W = [dict(w) for w in plan['waypoints'] if w['column_id'] in want]
+    ids = [w['waypoint_id'] for w in W]
+    if a.from_id or a.to_id:
+        i0 = ids.index(a.from_id) if a.from_id else 0
+        i1 = ids.index(a.to_id) if a.to_id else len(W) - 1
+        W = W[i0:i1 + 1]
     assert W and all(w['reachable_in_plan'] for w in W), 'empty cut or unreachable waypoint'
     order = [w['column_id'] for w in W]
     assert order == sorted(order, key=lambda c: order.index(c)), 'columns are not contiguous in the source plan'
@@ -54,7 +61,7 @@ def main():
     total = sum(w['route_length_m'] for w in W) + length([W[-1]['position_m']] + rvia + [home])
     out.update({'generated_utc': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
                 'planner': 'gazebo/coverage_v5/make_columns_demo_plan.py (cut of the columns plan; offline; geometry only)',
-                'source_plan': os.path.relpath(a.src, C.ROOT), 'columns': want,
+                'source_plan': os.path.relpath(a.src, C.ROOT), 'columns': want, 'range': [W[0]['waypoint_id'], W[-1]['waypoint_id']],
                 'n_waypoints': len(W), 'n_look_up_dwells': sum(1 for w in W if w.get('dwell')), 'route_failures': 0,
                 'rth': {'route': rvia, 'method': rmethod, 'length_m': length([W[-1]['position_m']] + rvia + [home])},
                 'planned_total_path_m': round(total, 2), 'waypoints': W})
