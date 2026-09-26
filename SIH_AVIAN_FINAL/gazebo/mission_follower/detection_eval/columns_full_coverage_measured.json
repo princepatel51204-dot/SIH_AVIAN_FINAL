@@ -1,0 +1,585 @@
+{
+ "run": "columns_full",
+ "note": "planner's own visibility model on TRUE camera poses (measures pose/aim error, not independent visibility)",
+ "per_column": {
+  "RP01": {
+   "waypoints_flown": 11,
+   "ring_viewpoints": 9,
+   "dwells": 2,
+   "planned_claim_pct": {
+    "shaft": 98.6,
+    "cap_or_head": 75.8,
+    "footing": 100.0,
+    "whole": 90.2
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 98.6,
+    "cap_or_head": 75.8,
+    "footing": 100.0,
+    "whole": 90.2
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 98.6,
+    "cap_or_head": 75.8,
+    "footing": 100.0,
+    "whole": 90.2
+   },
+   "axis_hits_column_ring": "9/9",
+   "axis_hits_cap_or_column_dwell": "2/2",
+   "axis_range_m": [
+    3.95,
+    4.95
+   ],
+   "axis_misses": {}
+  },
+  "RP02": {
+   "waypoints_flown": 30,
+   "ring_viewpoints": 25,
+   "dwells": 5,
+   "planned_claim_pct": {
+    "shaft": 98.4,
+    "cap_or_head": 73.4,
+    "footing": 100.0,
+    "whole": 90.9
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 98.4,
+    "cap_or_head": 73.4,
+    "footing": 100.0,
+    "whole": 90.9
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 98.8,
+    "cap_or_head": 73.4,
+    "footing": 100.0,
+    "whole": 91.1
+   },
+   "axis_hits_column_ring": "25/25",
+   "axis_hits_cap_or_column_dwell": "5/5",
+   "axis_range_m": [
+    3.6,
+    4.9
+   ],
+   "axis_misses": {}
+  },
+  "RP03": {
+   "waypoints_flown": 30,
+   "ring_viewpoints": 25,
+   "dwells": 5,
+   "planned_claim_pct": {
+    "shaft": 98.1,
+    "cap_or_head": 73.7,
+    "footing": 99.3,
+    "whole": 90.8
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 98.1,
+    "cap_or_head": 73.7,
+    "footing": 99.3,
+    "whole": 90.8
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 98.3,
+    "cap_or_head": 73.7,
+    "footing": 98.5,
+    "whole": 90.8
+   },
+   "axis_hits_column_ring": "25/25",
+   "axis_hits_cap_or_column_dwell": "5/5",
+   "axis_range_m": [
+    3.6,
+    4.9
+   ],
+   "axis_misses": {}
+  },
+  "RP04": {
+   "waypoints_flown": 31,
+   "ring_viewpoints": 27,
+   "dwells": 4,
+   "planned_claim_pct": {
+    "shaft": 98.4,
+    "cap_or_head": 68.4,
+    "footing": 100.0,
+    "whole": 88.8
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 98.4,
+    "cap_or_head": 68.4,
+    "footing": 100.0,
+    "whole": 88.8
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 98.7,
+    "cap_or_head": 68.4,
+    "footing": 100.0,
+    "whole": 88.9
+   },
+   "axis_hits_column_ring": "27/27",
+   "axis_hits_cap_or_column_dwell": "4/4",
+   "axis_range_m": [
+    3.6,
+    4.75
+   ],
+   "axis_misses": {}
+  },
+  "RP05": {
+   "waypoints_flown": 27,
+   "ring_viewpoints": 23,
+   "dwells": 4,
+   "planned_claim_pct": {
+    "shaft": 96.6,
+    "cap_or_head": 65.1,
+    "footing": 100.0,
+    "whole": 86.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.6,
+    "cap_or_head": 65.1,
+    "footing": 100.0,
+    "whole": 86.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.6,
+    "cap_or_head": 65.1,
+    "footing": 100.0,
+    "whole": 86.0
+   },
+   "axis_hits_column_ring": "23/23",
+   "axis_hits_cap_or_column_dwell": "4/4",
+   "axis_range_m": [
+    3.65,
+    5.55
+   ],
+   "axis_misses": {}
+  },
+  "RP06": {
+   "waypoints_flown": 30,
+   "ring_viewpoints": 25,
+   "dwells": 5,
+   "planned_claim_pct": {
+    "shaft": 98.2,
+    "cap_or_head": 73.7,
+    "footing": 100.0,
+    "whole": 91.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 98.2,
+    "cap_or_head": 73.7,
+    "footing": 100.0,
+    "whole": 91.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 98.2,
+    "cap_or_head": 73.4,
+    "footing": 100.0,
+    "whole": 90.8
+   },
+   "axis_hits_column_ring": "25/25",
+   "axis_hits_cap_or_column_dwell": "5/5",
+   "axis_range_m": [
+    3.65,
+    4.75
+   ],
+   "axis_misses": {}
+  },
+  "RP07": {
+   "waypoints_flown": 30,
+   "ring_viewpoints": 25,
+   "dwells": 5,
+   "planned_claim_pct": {
+    "shaft": 98.4,
+    "cap_or_head": 73.7,
+    "footing": 100.0,
+    "whole": 91.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 98.4,
+    "cap_or_head": 73.7,
+    "footing": 100.0,
+    "whole": 91.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 98.8,
+    "cap_or_head": 73.4,
+    "footing": 100.0,
+    "whole": 91.1
+   },
+   "axis_hits_column_ring": "25/25",
+   "axis_hits_cap_or_column_dwell": "5/5",
+   "axis_range_m": [
+    3.65,
+    4.8
+   ],
+   "axis_misses": {}
+  },
+  "RP08": {
+   "waypoints_flown": 11,
+   "ring_viewpoints": 9,
+   "dwells": 2,
+   "planned_claim_pct": {
+    "shaft": 99.0,
+    "cap_or_head": 75.8,
+    "footing": 100.0,
+    "whole": 90.4
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 99.0,
+    "cap_or_head": 75.8,
+    "footing": 100.0,
+    "whole": 90.4
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 98.8,
+    "cap_or_head": 75.8,
+    "footing": 100.0,
+    "whole": 90.3
+   },
+   "axis_hits_column_ring": "9/9",
+   "axis_hits_cap_or_column_dwell": "2/2",
+   "axis_range_m": [
+    3.85,
+    5.25
+   ],
+   "axis_misses": {}
+  },
+  "MC01": {
+   "waypoints_flown": 26,
+   "ring_viewpoints": 26,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 68.4,
+    "footing": 53.4,
+    "whole": 76.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 68.4,
+    "footing": 53.4,
+    "whole": 76.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 68.0,
+    "footing": 53.4,
+    "whole": 75.9
+   },
+   "axis_hits_column_ring": "26/26",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.65,
+    4.5
+   ],
+   "axis_misses": {}
+  },
+  "MC02": {
+   "waypoints_flown": 26,
+   "ring_viewpoints": 26,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.2,
+    "cap_or_head": 79.7,
+    "footing": 53.4,
+    "whole": 78.7
+   },
+   "axis_hits_column_ring": "26/26",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.6,
+    4.55
+   ],
+   "axis_misses": {}
+  },
+  "MC03": {
+   "waypoints_flown": 26,
+   "ring_viewpoints": 26,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 78.3,
+    "footing": 53.4,
+    "whole": 78.5
+   },
+   "axis_hits_column_ring": "26/26",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.65,
+    4.5
+   ],
+   "axis_misses": {}
+  },
+  "MC04": {
+   "waypoints_flown": 18,
+   "ring_viewpoints": 18,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 74.7,
+    "cap_or_head": 43.9,
+    "footing": 53.4,
+    "whole": 60.6
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 74.7,
+    "cap_or_head": 43.9,
+    "footing": 53.4,
+    "whole": 60.6
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 75.3,
+    "cap_or_head": 45.2,
+    "footing": 53.4,
+    "whole": 61.2
+   },
+   "axis_hits_column_ring": "18/18",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.8,
+    6.35
+   ],
+   "axis_misses": {}
+  },
+  "MC05": {
+   "waypoints_flown": 18,
+   "ring_viewpoints": 18,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 77.3,
+    "cap_or_head": 30.2,
+    "footing": 53.4,
+    "whole": 57.7
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 77.3,
+    "cap_or_head": 30.2,
+    "footing": 53.4,
+    "whole": 57.7
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 76.9,
+    "cap_or_head": 32.6,
+    "footing": 53.4,
+    "whole": 58.1
+   },
+   "axis_hits_column_ring": "18/18",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.65,
+    6.4
+   ],
+   "axis_misses": {}
+  },
+  "MC06": {
+   "waypoints_flown": 16,
+   "ring_viewpoints": 16,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 72.4,
+    "cap_or_head": 43.9,
+    "footing": 49.5,
+    "whole": 58.4
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 72.4,
+    "cap_or_head": 43.9,
+    "footing": 49.5,
+    "whole": 58.4
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 73.5,
+    "cap_or_head": 48.8,
+    "footing": 49.5,
+    "whole": 60.2
+   },
+   "axis_hits_column_ring": "15/16",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.75,
+    6.35
+   ],
+   "axis_misses": {
+    "MC06_R3_01->ENV_BANKVEG_014_visual": 1
+   }
+  },
+  "MC07": {
+   "waypoints_flown": 26,
+   "ring_viewpoints": 26,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.6,
+    "cap_or_head": 80.1,
+    "footing": 53.4,
+    "whole": 78.9
+   },
+   "axis_hits_column_ring": "26/26",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.6,
+    4.4
+   ],
+   "axis_misses": {}
+  },
+  "MC08": {
+   "waypoints_flown": 26,
+   "ring_viewpoints": 26,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 78.9
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 78.9
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.5,
+    "cap_or_head": 80.1,
+    "footing": 53.4,
+    "whole": 78.9
+   },
+   "axis_hits_column_ring": "26/26",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.65,
+    4.4
+   ],
+   "axis_misses": {}
+  },
+  "MC09": {
+   "waypoints_flown": 26,
+   "ring_viewpoints": 26,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.6,
+    "cap_or_head": 80.1,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "axis_hits_column_ring": "26/26",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.6,
+    4.4
+   ],
+   "axis_misses": {}
+  },
+  "MC10": {
+   "waypoints_flown": 26,
+   "ring_viewpoints": 26,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole": 79.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 80.1,
+    "footing": 53.4,
+    "whole": 78.9
+   },
+   "axis_hits_column_ring": "26/26",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.6,
+    4.55
+   ],
+   "axis_misses": {}
+  },
+  "MC11": {
+   "waypoints_flown": 26,
+   "ring_viewpoints": 26,
+   "dwells": 0,
+   "planned_claim_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 68.4,
+    "footing": 53.4,
+    "whole": 76.0
+   },
+   "planner_model_on_planned_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 68.4,
+    "footing": 53.4,
+    "whole": 76.0
+   },
+   "planner_model_on_TRUE_poses_pct": {
+    "shaft": 96.4,
+    "cap_or_head": 68.4,
+    "footing": 53.4,
+    "whole": 76.0
+   },
+   "axis_hits_column_ring": "26/26",
+   "axis_hits_cap_or_column_dwell": "0/0",
+   "axis_range_m": [
+    3.65,
+    4.5
+   ],
+   "axis_misses": {}
+  }
+ },
+ "axis_totals": {
+  "ring_ok": 427,
+  "ring_n": 428,
+  "dw_ok": 32,
+  "dw_n": 32
+ },
+ "mean_whole_true": 80.2
+}
