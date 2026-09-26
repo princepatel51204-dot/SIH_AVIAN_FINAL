@@ -185,6 +185,13 @@ def load_facts():
     cr = J(f"{de}/columns_full_snapshot_precision_recall.json")["summary"]
     F.add("gzdet.col_recall", cr["recall_instances_location"], f"{de}/columns_full_snapshot_precision_recall.json")
 
+    dp = J(f"{de}/decals_rp0304_precision_strict.json")["summary"]
+    F.add("gzdet.dec_boxes", dp["boxes"], f"{de}/decals_rp0304_precision_strict.json")
+    F.add("gzdet.dec_tp", dp["tp_location"], f"{de}/decals_rp0304_precision_strict.json")
+    F.add("gzdet.dec_conf", dp["confidence"], f"{de}/decals_rp0304_precision_strict.json")
+    dr = J(f"{de}/decals_rp0304_snapshot_precision_recall.json")["summary"]
+    F.add("gzdet.dec_unique_usable", dr["unique_defects_usable"], f"{de}/decals_rp0304_snapshot_precision_recall.json")
+
     # gimbal aiming before / after (camera target projected through the true camera pose)
     ev = "gazebo/mission_follower/viz/evidence"
     F.add("aim.before", J(f"{ev}/centering_before_fixed_camera.json")["summary"], f"{ev}/centering_before_fixed_camera.json")
@@ -607,6 +614,7 @@ def build_html(F, team, prim, layers, commit):
         ("gz_frame_MC07_R2_03.jpg", "Gazebo camera, metro column MC07 ring 2. The dark-green boxes behind it are bank-vegetation props: most Gazebo false detections landed on these."),
         ("gz_frame_RP04_R1_01_D1.jpg", "A look-up dwell at RP04: the column top and the underside of the pier cap, with a flat dark defect-marker sphere on the cap."),
         ("gz_frame_RP04_R2_09.jpg", "RP04 ring 2. The brown ball is the flat-coloured marker for DEFECT_REBAR_EXPOSED_006: Gazebo defects are untextured spheres, not modelled damage."),
+        ("gz_decal_rebar006.jpg", "Gazebo, road pier RP04 with a textured decal of DEFECT_REBAR_EXPOSED_006: the live detector's boxes (0.88 left, 0.66 right) are on the decal. The only textured defect of ten that fired; not accuracy evidence."),
         ("rviz_map_flight.jpg", "RViz during a Gazebo flight: the live 0.25 m voxel map built only from the drone's LiDAR and range cones (deck, piers, ground), the EKF trajectory (yellow) and the camera axis (magenta)."),
         ("rviz_map_closeup.jpg", "RViz close-up of two piers in the live voxel map, coloured by height, with the trajectory and live scan."),
         ("aim_before_after_B.jpg", f"Gimbal aiming, before and after (CWP_005 / CWP_006): the red ring is the inspection target projected through the true camera pose. Across 8 waypoints the target moved from {F['aim.before']['off_axis_deg']['mean']:.1f} to {F['aim.after']['off_axis_deg']['mean']:.2f} degrees off the camera axis on average."),
@@ -666,6 +674,10 @@ def build_html(F, team, prim, layers, commit):
       snapshots: {F["gzdet.fp05_detected"]} of {F["gzdet.fp05_usable"]} defect sightings.</li>
     <li>Column flight: {F["gzdet.col_tp"]} of {F["gzdet.col_boxes"]} boxes contained a defect, all on {F["gzdet.col_tp_defects"]} dark marker spheres;
       above confidence 0.90, {F["gzdet.col_hi_conf"]["tp_location"]} of {F["gzdet.col_hi_conf"]["boxes"]}. Snapshot recall {100 * F["gzdet.col_recall"]:.1f}%.</li>
+    <li>Textured decals rendered from the Blender twin, fitted to 10 defects on road piers RP03 and RP04 and flown again: {F["gzdet.dec_boxes"]} boxes,
+      {F["gzdet.dec_tp"]} on a defect, all on one exposed-rebar decal (confidence {F["gzdet.dec_conf"]["min"]:.2f}&ndash;{F["gzdet.dec_conf"]["max"]:.2f});
+      of {F["gzdet.dec_unique_usable"]} defects in usable view, one was detected. The wide 80&deg; camera renders defects a few dozen pixels across,
+      about four times smaller than the imagery the detector was trained on.</li>
   </ul>
   <p style="margin:8px 0 0;color:var(--ink-2)">Detector accuracy evidence comes only from the textured Blender imagery: the benchmark above and the inspection film.</p></div>
 </div></section>'''
