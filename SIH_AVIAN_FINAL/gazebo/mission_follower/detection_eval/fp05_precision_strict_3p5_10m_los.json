@@ -1,0 +1,1044 @@
+{
+ "summary": {
+  "run": "full_pass_05",
+  "rules": {
+   "rmin_m": 3.5,
+   "rmax_m": 10.0,
+   "line_of_sight": true,
+   "tp": "box contains the projected centre of >= 1 usable ground-truth defect",
+   "tp_class": "and detector family == defect family"
+  },
+  "boxes": 87,
+  "tp_location": 0,
+  "tp_location_and_class": 0,
+  "false_positives_location": 87,
+  "precision_location": 0.0,
+  "precision_location_and_class": 0.0,
+  "confidence": {
+   "min": 0.652,
+   "max": 0.961
+  },
+  "precision_vs_confidence_floor": {
+   "0.65": {
+    "boxes": 87,
+    "tp_location": 0,
+    "tp_class": 0
+   },
+   "0.75": {
+    "boxes": 61,
+    "tp_location": 0,
+    "tp_class": 0
+   },
+   "0.85": {
+    "boxes": 29,
+    "tp_location": 0,
+    "tp_class": 0
+   },
+   "0.9": {
+    "boxes": 15,
+    "tp_location": 0,
+    "tp_class": 0
+   },
+   "0.95": {
+    "boxes": 3,
+    "tp_location": 0,
+    "tp_class": 0
+   }
+  },
+  "boxes_by_waypoint": [
+   [
+    "V5_1015",
+    47
+   ],
+   [
+    "V5_1024",
+    13
+   ],
+   [
+    "V5_1025",
+    11
+   ],
+   [
+    "V5_0443",
+    6
+   ],
+   [
+    "V5_0620",
+    4
+   ],
+   [
+    "V5_0802",
+    4
+   ],
+   [
+    "V5_1009",
+    1
+   ],
+   [
+    "V5_1044",
+    1
+   ]
+  ],
+  "tp_boxes_by_defect": [],
+  "max_audit_time_gap_s": 0.028
+ },
+ "boxes": [
+  {
+   "waypoint": "V5_0443",
+   "sim_time_s": 3164.372,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7547,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_0443",
+   "sim_time_s": 3164.436,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7095,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_0443",
+   "sim_time_s": 3164.504,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7256,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.008
+  },
+  {
+   "waypoint": "V5_0443",
+   "sim_time_s": 3164.568,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6862,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_0443",
+   "sim_time_s": 3164.636,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6635,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_0443",
+   "sim_time_s": 3164.832,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7311,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_0620",
+   "sim_time_s": 4489.056,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7101,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_0620",
+   "sim_time_s": 4489.124,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8908,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.016
+  },
+  {
+   "waypoint": "V5_0620",
+   "sim_time_s": 4489.256,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8051,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_0620",
+   "sim_time_s": 4490.772,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6755,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "V5_0802",
+   "sim_time_s": 6145.196,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7394,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_0802",
+   "sim_time_s": 6145.26,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7843,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_0802",
+   "sim_time_s": 6145.328,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8009,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_0802",
+   "sim_time_s": 6145.392,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8025,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1009",
+   "sim_time_s": 7933.4,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6652,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7982.436,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6694,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.008
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7983.228,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7217,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7983.624,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6516,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7983.692,
+   "class": "SPALL_DELAM",
+   "confidence": 0.668,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.028
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7983.888,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6644,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.016
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7983.956,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6541,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.22,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8062,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.284,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8477,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.352,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7976,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.028
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.416,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7726,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.484,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7833,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.548,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7728,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.008
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.616,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7775,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.68,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9345,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.008
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.812,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9295,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7984.944,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9504,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.012,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9454,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.076,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9454,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.144,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9367,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.208,
+   "class": "SPALL_DELAM",
+   "confidence": 0.936,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.016
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.276,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8481,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.34,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8275,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.472,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8561,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.604,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9507,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.672,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8581,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.736,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8384,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.804,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8502,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7985.936,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8718,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.0,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8486,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.068,
+   "class": "SPALL_DELAM",
+   "confidence": 0.87,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.132,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9606,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.264,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9474,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.332,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8344,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.396,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8222,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.464,
+   "class": "SPALL_DELAM",
+   "confidence": 0.859,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.528,
+   "class": "SPALL_DELAM",
+   "confidence": 0.84,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.596,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8245,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.66,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8364,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.016
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.792,
+   "class": "SPALL_DELAM",
+   "confidence": 0.863,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.86,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7452,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.924,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7592,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7986.992,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7681,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7987.056,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8861,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7987.124,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9426,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7987.188,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9021,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7987.256,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8193,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1015",
+   "sim_time_s": 7987.32,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7402,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8058.8,
+   "class": "SPALL_DELAM",
+   "confidence": 0.853,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8058.864,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9149,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8058.932,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8612,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8058.996,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8696,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8062.692,
+   "class": "SPALL_DELAM",
+   "confidence": 0.715,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8062.76,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6827,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8062.824,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6975,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.008
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8062.892,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8328,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8062.956,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8643,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8063.024,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8078,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8063.088,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9152,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8063.156,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9326,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1024",
+   "sim_time_s": 8063.22,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8293,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8078.072,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7712,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.008
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8078.136,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8443,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8078.204,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7274,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8078.268,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7666,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8079.984,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7153,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8080.052,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8704,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8080.184,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7241,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8080.248,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7615,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8080.316,
+   "class": "SPALL_DELAM",
+   "confidence": 0.697,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8080.38,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6788,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "V5_1025",
+   "sim_time_s": 8081.172,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6648,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "V5_1044",
+   "sim_time_s": 8227.824,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8415,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  }
+ ]
+}
