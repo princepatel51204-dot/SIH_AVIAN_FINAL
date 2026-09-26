@@ -38,8 +38,23 @@ SPAWN_X=20.0; SPAWN_Y=-30.0
 #     frontier explorer only ever proposes frontiers adjacent to already-
 #     explored space, so a geofence must contain the start point or there
 #     is nothing for it to expand from inside the fence.
-GF_MIN_X=$(python3 -c "print(0.0-${SPAWN_X})");    GF_MAX_X=$(python3 -c "print(100.0-${SPAWN_X})")
-GF_MIN_Y=$(python3 -c "print(-33.0-${SPAWN_Y})");  GF_MAX_Y=$(python3 -c "print(15.0-${SPAWN_Y})")
+# Widened after the cmd_vel_smoothed wiring fix (see navigation_sih.launch.py)
+# made frontier exploration actually work: the first box exhausted its own
+# frontiers in ~2 minutes (8 real goals reached, standoff down to 10.6 m,
+# genuinely nearing the structure) -- covers spawn through the collision
+# manifest's own "research_zone_m" [90, 270].
+GF_MIN_X=$(python3 -c "print(0.0-${SPAWN_X})");    GF_MAX_X=$(python3 -c "print(280.0-${SPAWN_X})")
+GF_MIN_Y=$(python3 -c "print(-33.0-${SPAWN_Y})");  GF_MAX_Y=$(python3 -c "print(20.0-${SPAWN_Y})")
+
+# Target-zone bias (map frame), same -SPAWN translation as the geofence
+# above: the prior run (872.85 m flown, 123 goals, fully self-terminated)
+# never left world x<=80 -- it exhausted the wide-open approach corridor
+# under pure information-gain scoring before ever reaching the collision
+# manifest's research_zone_m [90, 270] (world), which starts just past
+# where that run's OLD geofence ended. See smart_explorer.py's
+# target_bias_* params: additive nudge in frontier utility scoring only,
+# zero effect on CostCritic/costmap avoidance.
+TB_MIN_X=$(python3 -c "print(90.0-${SPAWN_X})");   TB_MAX_X=$(python3 -c "print(270.0-${SPAWN_X})")
 
 echo "=== [1/9] world + drone + DDS bridge ==="
 "${GZDIR}/launch_sih_sitl.sh"
@@ -63,10 +78,17 @@ ros2 run garudanex_bridge odometry_bridge_node --ros-args \
   --params-file "${WS}/src/garudanex_bridge/config/bridge_params.yaml" \
   -r __node:=garudanex_odom_bridge -p use_sim_time:=true \
   > "${LOGDIR}/odom_bridge.log" 2>&1 &
+# max_xy_velocity/max_yaw_rate below override bridge_params.yaml's shared
+# 1.5 / 0.8 defaults (not edited in place -- that file is shared across
+# other GarudaNEX worlds). Raised to cover nav2_sih.yaml's new MPPI limits
+# (vx_max 1.95, vy_max 1.05 -> combined diagonal magnitude 2.21 m/s; wz_max
+# 1.65 rad/s) so this bridge-level clamp doesn't become a silent second
+# bottleneck the way cmd_vel_smoothed once was.
 ros2 run garudanex_bridge cmd_vel_bridge_node --ros-args \
   --params-file "${WS}/src/garudanex_bridge/config/bridge_params.yaml" \
   -r __node:=garudanex_cmd_vel_bridge -p use_sim_time:=true \
   -p cruise_altitude:="${CRUISE_ALT}" \
+  -p max_xy_velocity:=2.3 -p max_yaw_rate:=1.65 \
   > "${LOGDIR}/cmd_vel_bridge.log" 2>&1 &
 
 echo "=== [5/9] SLAM Toolbox (localization; native 2D scan) ==="
@@ -96,6 +118,17 @@ sleep 2
 python3 "${HERE}/contact_counter_node.py" "${RESULTS}/contact_summary.json" \
   > "${LOGDIR}/contact_counter.log" 2>&1 &
 
+echo "=== [7b/9] front camera bridge (live viewing only -- NOT the detection pipeline) ==="
+ros2 run ros_gz_bridge parameter_bridge \
+  "/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/front_camera/image@sensor_msgs/msg/Image[gz.msgs.Image" \
+  "/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/front_camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo" \
+  --ros-args \
+  -r "/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/front_camera/image:=/camera/image_raw" \
+  -r "/world/sih_avian_final/model/x500_lidar_2d_0/link/base_link/sensor/front_camera/camera_info:=/camera/camera_info" \
+  -p use_sim_time:=true \
+  > "${LOGDIR}/camera_bridge.log" 2>&1 &
+echo "  live view: ros2 run rqt_image_view rqt_image_view /camera/image_raw"
+
 echo "waiting for /map, /scan, /odom, /tf ..."
 for i in $(seq 1 60); do
   T="$(ros2 topic list 2>/dev/null)"
@@ -116,6 +149,10 @@ sleep 3
 
 echo "=== arming + OFFBOARD ==="
 python3 "${HERE}/gate2_arm.py" | tee "${LOGDIR}/arm.log"
+if [ "${PIPESTATUS[0]}" -ne 0 ]; then
+  echo "=== ARM/OFFBOARD FAILED -- aborting run, not wasting time on a vehicle that can't be controlled ==="
+  exit 1
+fi
 
 echo "=== run_recorder (distance/speed/coverage/min-standoff metrics) ==="
 ros2 run garudanex_explore run_recorder --ros-args \
@@ -129,6 +166,8 @@ ros2 run garudanex_explore smart_explorer --ros-args \
   -p sensor_range:=8.0 \
   -p geofence_min_x:="${GF_MIN_X}" -p geofence_max_x:="${GF_MAX_X}" \
   -p geofence_min_y:="${GF_MIN_Y}" -p geofence_max_y:="${GF_MAX_Y}" \
+  -p target_bias_x_min:="${TB_MIN_X}" -p target_bias_x_max:="${TB_MAX_X}" \
+  -p target_bias_weight:=0.6 -p target_bias_falloff_m:=40.0 \
   -p land_on_finish:=false \
   -p goal_timeout:=120.0 \
   -p bootstrap_secs:=15.0 \

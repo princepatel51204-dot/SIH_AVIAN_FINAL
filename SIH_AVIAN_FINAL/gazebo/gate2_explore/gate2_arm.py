@@ -51,10 +51,25 @@ def main():
         return 1
     print('status:', status, flush=True)
 
-    print('requesting OFFBOARD', flush=True)
-    send(VehicleCommand.VEHICLE_CMD_DO_SET_MODE, param1=1.0, param2=float(PX4_CUSTOM_MAIN_MODE_OFFBOARD))
-    spin(1.0)
-    print('nav_state:', status.get('nav'), flush=True)
+    print('requesting OFFBOARD (retry up to 15s -- a single request can '
+         'silently fail to switch nav_state if PX4 has not yet accepted '
+         'the setpoint stream as valid; seen once in practice, unarmed '
+         'the whole run since cmd_vel_bridge cannot control a vehicle '
+         'that never actually left AUTO_LOITER)', flush=True)
+    offboard = False
+    t0 = time.time()
+    while time.time() - t0 < 15:
+        send(VehicleCommand.VEHICLE_CMD_DO_SET_MODE, param1=1.0, param2=float(PX4_CUSTOM_MAIN_MODE_OFFBOARD))
+        spin(1.0)
+        if status.get('nav') == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
+            offboard = True
+            break
+    print('offboard:', offboard, 'nav_state:', status.get('nav'), flush=True)
+    if not offboard:
+        print('FAIL: nav_state never reached OFFBOARD (14)', flush=True)
+        node.destroy_node()
+        rclpy.shutdown()
+        return 1
 
     print('arming (retry up to 20s)', flush=True)
     armed = False
@@ -66,6 +81,13 @@ def main():
             armed = True
             break
     print('armed:', armed, 'status:', status, flush=True)
+    if armed and status.get('nav') != VehicleStatus.NAVIGATION_STATE_OFFBOARD:
+        print('FAIL: armed but fell out of OFFBOARD (nav_state=%s) -- '
+             'refusing to hand off to a run that cannot actually be '
+             'controlled' % status.get('nav'), flush=True)
+        node.destroy_node()
+        rclpy.shutdown()
+        return 1
     node.destroy_node()
     rclpy.shutdown()
     return 0 if armed else 1

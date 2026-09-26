@@ -101,10 +101,20 @@ controller_server:
       vx_std: 0.2
       vy_std: 0.2
       wz_std: 0.4
-      vx_max: 1.3
-      vx_min: -0.4
-      vy_max: 0.7
-      wz_max: 1.1
+      # Speed increase (~50%) for the NEXT run, applied to the currently-
+      # running Gate 2 job's successor only. Old: vx_max 1.3, vx_min -0.4,
+      # vy_max 0.7, wz_max 1.1. Safety check against the 3.0 m sensed
+      # standoff (inflation_radius below, clearance_m in smart_explorer):
+      # deceleration capacity is UNCHANGED (ax_min/ay_min still -3.0 m/s2
+      # below), so worst-case stop distance at the new top speed is
+      # v^2/(2*3.0) = 1.95^2/6 = 0.634 m, plus reaction-latency coasting at
+      # ~0.15 s (measured worst-case controller_frequency, see note above)
+      # = 1.95*0.15 = 0.29 m -> ~0.92 m total, still well inside the 3.0 m
+      # ring (>2x margin retained). Not increasing ax_max/ay_max/inflation.
+      vx_max: 1.95
+      vx_min: -0.6
+      vy_max: 1.05
+      wz_max: 1.65
       iteration_count: 1
       prune_distance: 1.7
       transform_tolerance: 0.1
@@ -393,14 +403,15 @@ velocity_smoother:
     stamp_smoothed_velocity_with_smoothing_time: false
     scale_velocities: false
     feedback: OPEN_LOOP
+    # Matches FollowPath's vx/vy/wz_max above -- keep in sync.
     max_velocity:
-    - 1.3
-    - 0.7
-    - 1.1
+    - 1.95
+    - 1.05
+    - 1.65
     min_velocity:
-    - -0.4
-    - -0.7
-    - -1.1
+    - -0.6
+    - -1.05
+    - -1.65
     max_accel:
     - 3.0
     - 3.0

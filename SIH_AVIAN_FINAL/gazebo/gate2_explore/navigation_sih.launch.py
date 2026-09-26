@@ -75,7 +75,21 @@ def generate_launch_description():
         Node(package='nav2_velocity_smoother', executable='velocity_smoother',
              name='velocity_smoother', output='screen', parameters=[configured_params],
              arguments=['--ros-args', '--log-level', log_level],
-             remappings=remappings + [('cmd_vel', 'cmd_vel_nav')]),
+             # ROOT CAUSE of every prior Gate 2 attempt's 0 goals reached:
+             # velocity_smoother subscribes on the generic name 'cmd_vel'
+             # (remapped below to controller_server's real output,
+             # 'cmd_vel_nav') but PUBLISHES on its own distinct hardcoded
+             # name 'cmd_vel_smoothed' -- untouched by that remap. Nothing
+             # was listening to 'cmd_vel_smoothed'; GarudaNEX's
+             # cmd_vel_bridge subscribes to plain '/cmd_vel'. MPPI was
+             # computing real, correct velocities (verified: up to 0.46 m/s
+             # on /cmd_vel_nav) that never reached the vehicle -- confirmed
+             # by comparing to real TF position over a controlled 15 s
+             # window: 0.094 m net displacement while /cmd_vel_nav showed
+             # sustained ~0.3-0.4 m/s. Not CPU (load ~6-9 of 16 cores
+             # throughout), not MPPI tuning, not a distance/timeout issue.
+             remappings=remappings + [('cmd_vel', 'cmd_vel_nav'),
+                                      ('cmd_vel_smoothed', '/cmd_vel')]),
         Node(package='nav2_lifecycle_manager', executable='lifecycle_manager',
              name='lifecycle_manager_navigation', output='screen',
              arguments=['--ros-args', '--log-level', log_level],
