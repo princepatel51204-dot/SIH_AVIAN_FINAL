@@ -4,11 +4,26 @@
 # Reuses gate2_explore's PX4/Gazebo/DDS bring-up (launch_sih_sitl.sh), the
 # real contact-sensor counter and the front_camera bridge. REPLACES
 # smart_explorer + Nav2 + SLAM with mission_follower_node.py (waypoints in
-# order from mission/gazebo_mission_plan.json, direct PX4 offboard velocity
+# order from the mission plan JSON, direct PX4 offboard velocity
 # control, sensed-only safety layer). See mission_follower_node.py's
 # docstring for why Nav2 is not used.
 #
 # Usage: ./launch_mission.sh <run_name> [max_waypoints (0=all)] [brake_test true|false] [plan.json]
+#   plan.json defaults to mission/gazebo_mission_plan_v5.json (the coverage-driven
+#   1162-waypoint plan flown in full_pass_05, which carries a per-waypoint
+#   gimbal_pitch_rad). The older 150-waypoint plan (gazebo_mission_plan.json) is
+#   still accepted as the 4th argument; it has no gimbal_pitch_rad, so the
+#   follower derives the pitch from each waypoint's target_m.
+#   env AVIAN_VIZ=1     also start the live 3D map + RViz support (viz/), default 0
+#   env AVIAN_RVIZ=1    ...and open RViz on viz/avian_viz.rviz (needs AVIAN_VIZ=1)
+#   env AVIAN_AIM_TARGET=false   do not aim the gimbal from target_m (old fixed camera)
+#   env AVIAN_DETECT=0  skip the live detector
+#   env AVIAN_GZ_GUI=1  also open the Gazebo GUI window on the running server (default 0 = headless)
+#   env AVIAN_FOLLOWER_ARGS / AVIAN_DETECT_ARGS / AVIAN_MAP_ARGS   extra "-p name:=value ..." for the
+#                       follower, the live detector and the map node (demo looping, throttles)
+#   env AVIAN_FOLLOWER_LOG_FILTER   egrep applied to the follower lines shown on screen (full log is kept)
+#   Ctrl-C: the follower returns home over the route already flown and lands; a second Ctrl-C lands
+#           where it is. The script then cleans up.
 #   env: conda deactivate; source /opt/ros/jazzy/setup.bash;
 #        source ~/GarudaNEX/ros2_ws/install/setup.bash
 set -uo pipefail
@@ -66,7 +81,10 @@ WS="${HOME}/GarudaNEX/ros2_ws"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 GZDIR="$(cd "${HERE}/.." && pwd)"
 ROOT="$(cd "${GZDIR}/.." && pwd)"
-PLAN="${4:-${ROOT}/mission/gazebo_mission_plan.json}"
+PLAN="${4:-${ROOT}/mission/gazebo_mission_plan_v5.json}"
+AVIAN_VIZ="${AVIAN_VIZ:-0}"
+AVIAN_RVIZ="${AVIAN_RVIZ:-0}"
+AIM="${AVIAN_AIM_TARGET:-true}"
 OUT="${HERE}/results/${RUN}"
 LOGDIR="${OUT}/logs"
 mkdir -p "${OUT}" "${LOGDIR}"
@@ -78,6 +96,11 @@ cleanup() {
   pkill -f pose_audit_node.py 2>/dev/null
   pkill -f contact_counter_node.py 2>/dev/null
   pkill -f live_detector_node.py 2>/dev/null; sleep 2
+  pkill -f map_viz_node.py 2>/dev/null; sleep 2     # writes its map + stats on SIGTERM
+  pkill -f 'robot_state_publisher' 2>/dev/null
+  pkill -f 'rviz2 -d' 2>/dev/null
+  pkill -f rqt_image_view 2>/dev/null
+  pkill -f 'gz sim -g' 2>/dev/null
   pkill -f parameter_bridge 2>/dev/null
   "${WS}/src/garudanex_bringup/scripts/stop.sh" >/dev/null 2>&1 || true
   pkill -9 -f MicroXRCEAgent 2>/dev/null || true
@@ -88,6 +111,11 @@ trap cleanup EXIT
 echo "=== [1/7] world + drone + DDS bridge ==="
 "${GZDIR}/launch_sih_sitl.sh" || exit 1
 cp /tmp/sih_px4_sitl.log "${LOGDIR}/px4_boot.log" 2>/dev/null
+if [ "${AVIAN_GZ_GUI:-0}" = "1" ]; then
+  echo "=== [1b] Gazebo GUI window (client of the running server) ==="
+  GZ_SIM_RESOURCE_PATH="${GZDIR}/models:${WS}/src/garudanex_sim/models:${GZ_SIM_RESOURCE_PATH:-}" \
+    gz sim -g > "${LOGDIR}/gz_gui.log" 2>&1 &
+fi
 
 echo "=== [2/7] sensor bridges: clock, LiDAR cloud, up/down range cones, gimbal camera + pitch command, contact ==="
 # YAML bridge config, not positional args + "-r" remaps: the gimbal command
@@ -162,11 +190,17 @@ AVIAN_VENV_PY="${HOME}/avian_rev_c/.venv/bin/python3"
 if [ "${AVIAN_DETECT}" = "1" ] && [ -x "${AVIAN_VENV_PY}" ]; then
   echo "=== [6/7] live crack detector (real trained weights, per-frame inference) ==="
   "${AVIAN_VENV_PY}" "${HERE}/live_detector_node.py" --ros-args \
-    -p use_sim_time:=true -p out_dir:="${OUT}/detection" -p plan:="${PLAN}" \
+    -p use_sim_time:=true -p out_dir:="${OUT}/detection" -p plan:="${PLAN}" ${AVIAN_DETECT_ARGS:-} \
     > "${LOGDIR}/live_detector.log" 2>&1 &
 else
   echo "=== [6/7] live crack detector SKIPPED (AVIAN_DETECT=${AVIAN_DETECT}, venv found: $([ -x "${AVIAN_VENV_PY}" ] && echo yes || echo no)) ==="
 fi
+
+if [ "${AVIAN_VIZ}" = "1" ]; then
+  echo "=== [6b] live 3D map + RViz support (visualisation only; feeds nothing the follower reads) ==="
+  "${HERE}/viz/launch_viz.sh" "${OUT}" "${PLAN}" "${AVIAN_RVIZ}"
+fi
+cp "${PLAN}" "${OUT}/plan_used_$(basename "${PLAN}")" 2>/dev/null
 
 echo "waiting for /mission/lidar_points and /fmu/out ..."
 for i in $(seq 1 60); do
@@ -178,10 +212,13 @@ gz topic -l > "${LOGDIR}/gz_topics.txt" 2>&1
 ros2 topic list > "${LOGDIR}/ros_topics.txt" 2>&1
 
 echo "=== [7/7] mission follower ==="
+# tee and grep ignore SIGINT so a Ctrl-C reaches only the follower, which handles it (return + land);
+# if they died with it the follower would lose its log pipe mid-landing
 python3 "${HERE}/mission_follower_node.py" --ros-args \
   -p use_sim_time:=true -p plan:="${PLAN}" -p results_dir:="${OUT}" \
-  -p max_waypoints:="${MAXWP}" -p brake_test:="${BRAKE}" \
-  2>&1 | tee "${LOGDIR}/follower.log"
+  -p max_waypoints:="${MAXWP}" -p brake_test:="${BRAKE}" -p aim_from_target:="${AIM}" ${AVIAN_FOLLOWER_ARGS:-} \
+  2>&1 | (trap '' INT; exec tee "${LOGDIR}/follower.log") \
+       | (trap '' INT; exec grep --line-buffered -E "${AVIAN_FOLLOWER_LOG_FILTER:-.}")
 echo "follower exited (${PIPESTATUS[0]})"
 sleep 3
 echo "=== RUN ${RUN} COMPLETE -> ${OUT} ==="

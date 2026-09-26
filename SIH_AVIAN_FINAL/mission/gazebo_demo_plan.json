@@ -1,0 +1,754 @@
+{
+ "generated_utc": "2026-09-26T15:42:23Z",
+ "planner": "gazebo/mission_follower/make_demo_plan.py (offline; geometry only, no defect data)",
+ "camera": "gimbal",
+ "camera_mount_m": [
+  0.35,
+  0.0,
+  0.05
+ ],
+ "sensed_clearance_m": 3.0,
+ "plan_clearance_m": 3.5,
+ "min_agl_m": 3.5,
+ "home_ground_world_m": [
+  20.0,
+  -30.0,
+  0.0
+ ],
+ "home_air_world_m": [
+  20.0,
+  -30.0,
+  5.0
+ ],
+ "source_plan": "mission/gazebo_mission_plan_v5.json",
+ "cut": {
+  "first_index": 1004,
+  "last_index": 1026,
+  "first_id": "V5_1005",
+  "last_id": "V5_1027"
+ },
+ "n_waypoints": 23,
+ "rth": {
+  "route": [
+   [
+    63.0,
+    -28.0,
+    7.0
+   ]
+  ],
+  "method": "astar",
+  "min_clearance_m": 3.626,
+  "length_m": 215.312
+ },
+ "segment_recheck": {
+  "n_segments": 47,
+  "n_violations": 0,
+  "raw_min_clearance_m": 3.548
+ },
+ "planned_total_path_m": 436.17,
+ "waypoints": [
+  {
+   "waypoint_id": "V5_1005",
+   "position_m": [
+    255.6934,
+    34.4726,
+    4.6097
+   ],
+   "heading_rad": -1.6267,
+   "gimbal_pitch_rad": -0.5198,
+   "camera_world_m": [
+    255.6738,
+    34.1232,
+    4.6597
+   ],
+   "seed_patch": 65258,
+   "seed_member": "MB_PIER_COL_007",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 14,
+   "route_in": [
+    [
+     134.0,
+     33.0,
+     5.0
+    ],
+    [
+     255.6934,
+     34.4726,
+     5.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_length_m": 252.342,
+   "reachable_in_plan": true,
+   "candidate_index": 119935,
+   "route_min_clearance_m": 3.56
+  },
+  {
+   "waypoint_id": "V5_1006",
+   "position_m": [
+    248.5274,
+    28.6934,
+    4.6097
+   ],
+   "heading_rad": -0.0559,
+   "gimbal_pitch_rad": -0.5198,
+   "camera_world_m": [
+    248.8768,
+    28.6738,
+    4.6597
+   ],
+   "seed_patch": 65286,
+   "seed_member": "MB_PIER_COL_007",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 14,
+   "route_in": [
+    [
+     248.5274,
+     28.6934,
+     5.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_length_m": 9.605,
+   "reachable_in_plan": true,
+   "candidate_index": 120209
+  },
+  {
+   "waypoint_id": "V5_1007",
+   "position_m": [
+    246.3617,
+    31.5781,
+    8.5104
+   ],
+   "heading_rad": -0.3927,
+   "gimbal_pitch_rad": 0.0,
+   "camera_world_m": [
+    246.6851,
+    31.4442,
+    8.5604
+   ],
+   "seed_patch": 65293,
+   "seed_member": "MB_PIER_COL_007",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 13,
+   "route_in": [
+    [
+     248.5274,
+     28.6934,
+     8.5104
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 7.508,
+   "reachable_in_plan": true,
+   "candidate_index": 120270
+  },
+  {
+   "waypoint_id": "V5_1008",
+   "position_m": [
+    246.5,
+    23.0614,
+    10.1968
+   ],
+   "heading_rad": 1.5708,
+   "gimbal_pitch_rad": 0.9599,
+   "camera_world_m": [
+    246.5,
+    23.4114,
+    10.2468
+   ],
+   "seed_patch": 50378,
+   "seed_member": "MB_DECK_SOFFIT_006",
+   "seed_component": "deck underside",
+   "lane": "metro_low",
+   "zone": 13,
+   "route_in": [],
+   "route_method": "straight",
+   "route_length_m": 8.683,
+   "reachable_in_plan": true,
+   "candidate_index": 81479
+  },
+  {
+   "waypoint_id": "V5_1009",
+   "position_m": [
+    234.5,
+    21.1185,
+    10.1968
+   ],
+   "heading_rad": 1.5708,
+   "gimbal_pitch_rad": 0.9599,
+   "camera_world_m": [
+    234.5,
+    21.4685,
+    10.2468
+   ],
+   "seed_patch": 50292,
+   "seed_member": "MB_DECK_SOFFIT_006",
+   "seed_component": "deck underside",
+   "lane": "metro_low",
+   "zone": 13,
+   "route_in": [],
+   "route_method": "straight",
+   "route_length_m": 12.156,
+   "reachable_in_plan": true,
+   "candidate_index": 81090
+  },
+  {
+   "waypoint_id": "V5_1010",
+   "position_m": [
+    233.0507,
+    31.3347,
+    7.7037
+   ],
+   "heading_rad": -2.7489,
+   "gimbal_pitch_rad": -0.4014,
+   "camera_world_m": [
+    232.7274,
+    31.2008,
+    7.7537
+   ],
+   "seed_patch": 65127,
+   "seed_member": "MB_PIER_COL_006",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 13,
+   "route_in": [
+    [
+     234.5,
+     21.1185,
+     7.7037
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 12.812,
+   "reachable_in_plan": true,
+   "candidate_index": 118971
+  },
+  {
+   "waypoint_id": "V5_1011",
+   "position_m": [
+    238.5,
+    35.8529,
+    10.1968
+   ],
+   "heading_rad": -1.5708,
+   "gimbal_pitch_rad": 0.9599,
+   "camera_world_m": [
+    238.5,
+    35.5029,
+    10.2468
+   ],
+   "seed_patch": 50325,
+   "seed_member": "MB_DECK_SOFFIT_006",
+   "seed_component": "deck underside",
+   "lane": "metro_low",
+   "zone": 13,
+   "route_in": [
+    [
+     233.0507,
+     31.3347,
+     10.1968
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 9.572,
+   "reachable_in_plan": true,
+   "candidate_index": 81253
+  },
+  {
+   "waypoint_id": "V5_1012",
+   "position_m": [
+    240.91,
+    38.2836,
+    12.9161
+   ],
+   "heading_rad": -1.9076,
+   "gimbal_pitch_rad": 0.5198,
+   "camera_world_m": [
+    240.7943,
+    37.9532,
+    12.9661
+   ],
+   "seed_patch": 49971,
+   "seed_member": "MB_DECK_SOFFIT_006",
+   "seed_component": "deck edges",
+   "lane": "metro_low",
+   "zone": 13,
+   "route_in": [
+    [
+     238.5,
+     35.8529,
+     12.9161
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 6.142,
+   "reachable_in_plan": true,
+   "candidate_index": 80004
+  },
+  {
+   "waypoint_id": "V5_1013",
+   "position_m": [
+    244.6636,
+    36.6453,
+    13.9096
+   ],
+   "heading_rad": -1.234,
+   "gimbal_pitch_rad": 0.5198,
+   "camera_world_m": [
+    244.7793,
+    36.3149,
+    13.9596
+   ],
+   "seed_patch": 49979,
+   "seed_member": "MB_DECK_SOFFIT_006",
+   "seed_component": "deck edges",
+   "lane": "metro_low",
+   "zone": 13,
+   "route_in": [
+    [
+     240.91,
+     38.2836,
+     13.9096
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 5.089,
+   "reachable_in_plan": true,
+   "candidate_index": 80090
+  },
+  {
+   "waypoint_id": "V5_1014",
+   "position_m": [
+    230.2453,
+    31.7792,
+    12.9096
+   ],
+   "heading_rad": -2.8048,
+   "gimbal_pitch_rad": 0.5198,
+   "camera_world_m": [
+    229.9149,
+    31.6636,
+    12.9596
+   ],
+   "seed_patch": 48495,
+   "seed_member": "MB_DECK_SOFFIT_005",
+   "seed_component": "deck edges",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [],
+   "route_method": "straight",
+   "route_length_m": 15.25,
+   "reachable_in_plan": true,
+   "candidate_index": 74965
+  },
+  {
+   "waypoint_id": "V5_1015",
+   "position_m": [
+    230.777,
+    30.4693,
+    12.0968
+   ],
+   "heading_rad": -2.618,
+   "gimbal_pitch_rad": 0.9599,
+   "camera_world_m": [
+    230.4739,
+    30.2943,
+    12.1468
+   ],
+   "seed_patch": 57125,
+   "seed_member": "MB_DECK_TOP_006",
+   "seed_component": "deck underside",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     230.2453,
+     31.7792,
+     12.0968
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 2.226,
+   "reachable_in_plan": true,
+   "candidate_index": 100321
+  },
+  {
+   "waypoint_id": "V5_1016",
+   "position_m": [
+    231.4726,
+    28.6934,
+    4.6091
+   ],
+   "heading_rad": -3.0857,
+   "gimbal_pitch_rad": -0.5198,
+   "camera_world_m": [
+    231.1232,
+    28.6738,
+    4.6591
+   ],
+   "seed_patch": 65124,
+   "seed_member": "MB_PIER_COL_006",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     230.777,
+     30.4693,
+     4.6091
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 9.395,
+   "reachable_in_plan": true,
+   "candidate_index": 118939
+  },
+  {
+   "waypoint_id": "V5_1017",
+   "position_m": [
+    230.0671,
+    32.0866,
+    9.462
+   ],
+   "heading_rad": -2.4121,
+   "gimbal_pitch_rad": 0.5198,
+   "camera_world_m": [
+    229.8062,
+    31.8533,
+    9.512
+   ],
+   "seed_patch": 65135,
+   "seed_member": "MB_PIER_COL_006",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     231.4726,
+     28.6934,
+     9.462
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 8.526,
+   "reachable_in_plan": true,
+   "candidate_index": 119044
+  },
+  {
+   "waypoint_id": "V5_1018",
+   "position_m": [
+    228.5,
+    35.75,
+    16.89
+   ],
+   "heading_rad": -1.5708,
+   "gimbal_pitch_rad": 0.0,
+   "camera_world_m": [
+    228.5,
+    35.4,
+    16.94
+   ],
+   "seed_patch": 49961,
+   "seed_member": "MB_DECK_SOFFIT_006",
+   "seed_component": "deck edges",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     228.5,
+     35.75,
+     9.462
+    ]
+   ],
+   "route_method": "L_horizontal_first",
+   "route_length_m": 11.413,
+   "reachable_in_plan": true,
+   "candidate_index": 79892
+  },
+  {
+   "waypoint_id": "V5_1019",
+   "position_m": [
+    226.09,
+    36.9836,
+    15.1511
+   ],
+   "heading_rad": -1.234,
+   "gimbal_pitch_rad": 0.5198,
+   "camera_world_m": [
+    226.2057,
+    36.6532,
+    15.2011
+   ],
+   "seed_patch": 73749,
+   "seed_member": "MB_TRACKSLAB_006",
+   "seed_component": "deck edges",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     228.5,
+     35.75,
+     15.1511
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 4.446,
+   "reachable_in_plan": true,
+   "candidate_index": 140045
+  },
+  {
+   "waypoint_id": "V5_1020",
+   "position_m": [
+    226.91,
+    38.2836,
+    11.9161
+   ],
+   "heading_rad": -1.9076,
+   "gimbal_pitch_rad": 0.5198,
+   "camera_world_m": [
+    226.7943,
+    37.9532,
+    11.9661
+   ],
+   "seed_patch": 48593,
+   "seed_member": "MB_DECK_SOFFIT_005",
+   "seed_component": "deck edges",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     226.09,
+     36.9836,
+     11.9161
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 4.772,
+   "reachable_in_plan": true,
+   "candidate_index": 75991
+  },
+  {
+   "waypoint_id": "V5_1021",
+   "position_m": [
+    218.09,
+    38.2836,
+    11.9161
+   ],
+   "heading_rad": -1.234,
+   "gimbal_pitch_rad": 0.5198,
+   "camera_world_m": [
+    218.2057,
+    37.9532,
+    11.9661
+   ],
+   "seed_patch": 48589,
+   "seed_member": "MB_DECK_SOFFIT_005",
+   "seed_component": "deck edges",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [],
+   "route_method": "straight",
+   "route_length_m": 8.82,
+   "reachable_in_plan": true,
+   "candidate_index": 75948
+  },
+  {
+   "waypoint_id": "V5_1022",
+   "position_m": [
+    225.9221,
+    34.5453,
+    12.3196
+   ],
+   "heading_rad": -1.9076,
+   "gimbal_pitch_rad": 0.5198,
+   "camera_world_m": [
+    225.8064,
+    34.2149,
+    12.3696
+   ],
+   "seed_patch": 67590,
+   "seed_member": "MB_PIER_HEAD_006",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [],
+   "route_method": "straight",
+   "route_length_m": 8.688,
+   "reachable_in_plan": true,
+   "candidate_index": 128058
+  },
+  {
+   "waypoint_id": "V5_1023",
+   "position_m": [
+    226.777,
+    33.3836,
+    9.1968
+   ],
+   "heading_rad": -2.618,
+   "gimbal_pitch_rad": 0.9599,
+   "camera_world_m": [
+    226.4739,
+    33.2086,
+    9.2468
+   ],
+   "seed_patch": 49929,
+   "seed_member": "MB_DECK_SOFFIT_005",
+   "seed_component": "deck underside",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     225.9221,
+     34.5453,
+     9.1968
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 4.565,
+   "reachable_in_plan": true,
+   "candidate_index": 79836
+  },
+  {
+   "waypoint_id": "V5_1024",
+   "position_m": [
+    224.2096,
+    36.2057,
+    6.5856
+   ],
+   "heading_rad": -1.5149,
+   "gimbal_pitch_rad": -0.5198,
+   "camera_world_m": [
+    224.2292,
+    35.8563,
+    6.6356
+   ],
+   "seed_patch": 65153,
+   "seed_member": "MB_PIER_COL_006",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     226.777,
+     33.3836,
+     6.5856
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 6.426,
+   "reachable_in_plan": true,
+   "candidate_index": 119185
+  },
+  {
+   "waypoint_id": "V5_1025",
+   "position_m": [
+    218.5274,
+    28.6934,
+    4.6091
+   ],
+   "heading_rad": -0.0559,
+   "gimbal_pitch_rad": -0.5198,
+   "camera_world_m": [
+    218.8768,
+    28.6738,
+    4.6591
+   ],
+   "seed_patch": 65166,
+   "seed_member": "MB_PIER_COL_006",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [],
+   "route_method": "straight",
+   "route_length_m": 9.624,
+   "reachable_in_plan": true,
+   "candidate_index": 119292
+  },
+  {
+   "waypoint_id": "V5_1026",
+   "position_m": [
+    225.7904,
+    19.7943,
+    5.6026
+   ],
+   "heading_rad": 1.6267,
+   "gimbal_pitch_rad": -0.5198,
+   "camera_world_m": [
+    225.7708,
+    20.1437,
+    5.6526
+   ],
+   "seed_patch": 65208,
+   "seed_member": "MB_PIER_COL_006",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     218.5274,
+     28.6934,
+     5.0
+    ],
+    [
+     219.0,
+     28.0,
+     5.0
+    ],
+    [
+     219.0,
+     28.0,
+     6.0
+    ],
+    [
+     219.0,
+     24.0,
+     6.0
+    ],
+    [
+     221.0,
+     22.0,
+     6.0
+    ]
+   ],
+   "route_method": "astar",
+   "route_length_m": 14.347,
+   "reachable_in_plan": true,
+   "candidate_index": 119576
+  },
+  {
+   "waypoint_id": "V5_1027",
+   "position_m": [
+    228.5781,
+    19.3617,
+    6.544
+   ],
+   "heading_rad": 1.9635,
+   "gimbal_pitch_rad": 0.0,
+   "camera_world_m": [
+    228.4442,
+    19.6851,
+    6.594
+   ],
+   "seed_patch": 65213,
+   "seed_member": "MB_PIER_COL_006",
+   "seed_component": "piers",
+   "lane": "metro_low",
+   "zone": 12,
+   "route_in": [
+    [
+     225.7904,
+     19.7943,
+     6.544
+    ]
+   ],
+   "route_method": "L_vertical_first",
+   "route_length_m": 3.762,
+   "reachable_in_plan": true,
+   "candidate_index": 119607
+  }
+ ]
+}

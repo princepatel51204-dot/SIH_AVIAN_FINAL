@@ -67,6 +67,9 @@ class LiveDetector(Node):
         self.declare_parameter('model', 'v2')
         self.declare_parameter('score_thresh', 0.65)
         self.declare_parameter('torch_threads', 4)
+        # demo throttle: run inference at most this often (wall clock); 0 = as fast as it can. Frames
+        # that arrive sooner are dropped, never queued, exactly like frames that arrive while busy.
+        self.declare_parameter('max_hz', 0.0)
         self.declare_parameter('home_world_z', 0.24)
         self.declare_parameter('origin_lat_deg', 47.397971057728974)
         out_dir = self.get_parameter('out_dir').value
@@ -74,6 +77,10 @@ class LiveDetector(Node):
         self.out_dir = out_dir
         self.model_name = self.get_parameter('model').value
         self.score_thresh = float(self.get_parameter('score_thresh').value)
+        mh = float(self.get_parameter('max_hz').value)
+        self.min_period = 1.0 / mh if mh > 0 else 0.0
+        self.last_infer_wall = 0.0
+        self.frames_throttled = 0
 
         # ---- geodesy / frame: identical formula to mission_follower_node.py,
         # duplicated (not imported) so this node has no runtime dependency on
@@ -110,6 +117,10 @@ class LiveDetector(Node):
         self.create_subscription(Image, '/camera/image_raw', self.on_img, qos_profile_sensor_data)
 
         self.ann_pub = self.create_publisher(Image, '/detection/image_annotated', 10)
+        # Additive, visualisation-only: one JSON message per processed frame that
+        # produced at least one detection (the detector's own output, unchanged).
+        # Nothing in the mission subscribes to it; the RViz marker node does.
+        self.det_pub = self.create_publisher(String, '/detection/detections', 10)
         self.ff = None
         self.detections = []
         self.frames_processed = 0
@@ -194,6 +205,10 @@ class LiveDetector(Node):
         stamp, arr = item
         if self.last_processed_stamp is not None and stamp == self.last_processed_stamp:
             return
+        if self.min_period and time.time() - self.last_infer_wall < self.min_period:
+            self.frames_throttled += 1
+            return
+        self.last_infer_wall = time.time()
         self.last_processed_stamp = stamp
         t0 = time.time()
         tensor = self.torch.from_numpy(arr).permute(2, 0, 1).float() / 255.0
@@ -220,6 +235,16 @@ class LiveDetector(Node):
                 'drone_yaw_ekf_enu_rad': None if yaw is None else round(float(yaw), 4),
             })
         self.publish_and_record(arr, boxes, stamp)
+        if boxes:
+            try:
+                self.det_pub.publish(String(data=json.dumps({
+                    'stamp_sim_s': stamp, 'frame_id': self.frames_processed, 'waypoint_id': self.current_wp,
+                    'detections': [{'family': fam, 'score': round(sc, 4), 'bbox_xyxy_px': bb}
+                                   for fam, sc, bb in boxes],
+                    'drone_pose_ekf_world_m': None if pose is None else [round(float(v), 4) for v in pose],
+                    'drone_yaw_ekf_enu_rad': None if yaw is None else round(float(yaw), 4)})))
+            except Exception as e:      # never let the viz feed disturb detection
+                self.get_logger().warn(f'detection feed publish failed: {e}')
         if self.frames_processed % 20 == 0:
             hz = self.frames_processed / max(sum(self.infer_times), 1e-6)
             self.get_logger().info(f'{self.frames_processed} frames, {len(self.detections)} detections, '
@@ -264,6 +289,8 @@ class LiveDetector(Node):
         n = len(self.infer_times)
         stats = {
             'frames_processed': self.frames_processed,
+            'max_hz_throttle': None if not self.min_period else round(1.0 / self.min_period, 3),
+            'frames_dropped_by_throttle': self.frames_throttled,
             'n_detections': len(self.detections),
             'mean_inference_s': round(sum(self.infer_times) / n, 4) if n else None,
             'p95_inference_s': round(float(np.percentile(self.infer_times, 95)), 4) if n else None,

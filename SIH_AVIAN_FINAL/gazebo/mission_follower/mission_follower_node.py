@@ -39,12 +39,14 @@ Sensed safety layer (runs every control tick, underneath the mission):
 import json
 import math
 import os
+import signal
 import sys
 import time
 
 import numpy as np
 import rclpy
 from rclpy.node import Node
+from rclpy.signals import SignalHandlerOptions
 from rclpy.qos import (QoSProfile, QoSReliabilityPolicy, QoSDurabilityPolicy,
                        QoSHistoryPolicy, qos_profile_sensor_data)
 from sensor_msgs.msg import PointCloud2
@@ -90,6 +92,10 @@ SELF_BOX = np.array([[-0.55, -0.55, -0.45], [0.55, 0.55, 0.60]])
 YAW_RATE_MAX = math.radians(60.0)
 TICK_HZ = 20.0
 GIMBAL_SETTLE_S = 1.0     # time allowed for the pitch gimbal after a new command
+GIMBAL_LIMIT_RAD = 1.5708  # gimbal_pitch_joint travel, +/-90 deg (airframe model's joint limit)
+GIMBAL_PIVOT_BODY = np.array([0.35, 0.0, 0.05])   # gimbal boom pivot, body FLU (m)
+AIM_REFINE_DIST_M = 3.0    # re-aim once from the EKF pose, close to the waypoint AND nearly stationary
+AIM_REFINE_MIN_RAD = math.radians(0.5)   # ...but only if that changes the command
 
 
 def wrap(a):
@@ -145,6 +151,17 @@ class MissionFollower(Node):
         self.declare_parameter('max_waypoints', 0)   # 0 = all
         self.declare_parameter('origin_lat_deg', 47.397971057728974)
         self.declare_parameter('geodesy_fix', True)
+        # Plans that carry no gimbal_pitch_rad but do carry a per-waypoint
+        # target_m (the 150-waypoint plan) get their pitch computed from that
+        # target; false reproduces the old fixed-camera behaviour.
+        self.declare_parameter('aim_from_target', True)
+        # Demo looping (default OFF = the unchanged single pass). The plan's
+        # waypoints are flown forward then backward (ping-pong) using the plan's
+        # own route pieces reversed, so nothing new is ever flown. 0 = off,
+        # N > 0 = N laps (a lap is forward + back), -1 = until interrupted.
+        # demo_wall_minutes > 0 also ends the looping after that much wall clock.
+        self.declare_parameter('demo_laps', 0)
+        self.declare_parameter('demo_wall_minutes', 0.0)
         self.plan_path = self.get_parameter('plan').value
         self.results_dir = self.get_parameter('results_dir').value
         os.makedirs(self.results_dir, exist_ok=True)
@@ -156,6 +173,7 @@ class MissionFollower(Node):
         # 0.24 m above the model origin at the feet).
         self.home = np.array([hg[0], hg[1], self.get_parameter('home_world_z').value])
         self.do_brake = self.get_parameter('brake_test').value
+        self.aim_from_target = self.get_parameter('aim_from_target').value
         # Geodesy correction (found in full_pass_03's audit): Gazebo's GNSS
         # turns world metres into lat/lon on the WGS84 ellipsoid, PX4's local
         # projection turns lat/lon back into metres on a sphere of radius
@@ -176,6 +194,13 @@ class MissionFollower(Node):
         self.k_north = R_ / M_ if on else 1.0
         mx = self.get_parameter('max_waypoints').value
         self.wps = self.plan['waypoints'][:mx] if mx else self.plan['waypoints']
+        self.demo_laps = int(self.get_parameter('demo_laps').value)
+        self.demo_wall_s = 60.0 * float(self.get_parameter('demo_wall_minutes').value)
+        self.demo_on = self.demo_laps != 0 or self.demo_wall_s > 0
+        self.dir, self.lap = 1, 0
+        self.interrupts = self.interrupts_handled = 0
+        if self.demo_on and (len(self.wps) < 2 or any(not w.get('reachable_in_plan', True) for w in self.wps)):
+            raise SystemExit('demo looping needs >= 2 waypoints, all reachable in the plan')
 
         be = QoSProfile(depth=10, reliability=QoSReliabilityPolicy.BEST_EFFORT,
                         durability=QoSDurabilityPolicy.VOLATILE, history=QoSHistoryPolicy.KEEP_LAST)
@@ -379,6 +404,29 @@ class MissionFollower(Node):
             self.gimbal_t = self.t()
             self.gimbal_last_pub = -1e9
 
+    def body_pitch_up(self):
+        """Airframe pitch (rad, nose-up positive) from PX4's attitude estimate."""
+        if self.att is None:
+            return 0.0
+        w, x, y, z = self.att.q
+        return math.asin(max(-1.0, min(1.0, 2.0 * (w * y - z * x))))
+
+    def target_pitch_up(self, body_world, yaw_enu, target_world, body_pitch_up=0.0):
+        """Gimbal pitch (rad, up positive) that puts target_world on the camera
+        axis, seen from the gimbal pivot on a body at body_world with heading
+        yaw_enu. Clamped to the gimbal's real joint travel. Yaw is not
+        commanded here: the airframe already turns to the waypoint heading."""
+        c, s_ = math.cos(yaw_enu), math.sin(yaw_enu)
+        pivot = np.asarray(body_world, float) + np.array(
+            [GIMBAL_PIVOT_BODY[0] * c, GIMBAL_PIVOT_BODY[0] * s_, GIMBAL_PIVOT_BODY[2]])
+        v = np.asarray(target_world, float) - pivot
+        # signed distance along the heading: a target straight above or below the airframe is
+        # slightly BEHIND the pivot (0.35 m forward of the body), i.e. needs a pitch past
+        # vertical, which the joint limit then clamps to +/-90 deg
+        along = v[0] * c + v[1] * s_
+        elev = math.atan2(v[2], along)
+        return max(-GIMBAL_LIMIT_RAD, min(GIMBAL_LIMIT_RAD, elev - body_pitch_up))
+
     def start_leg(self, name, route_world, final_world, yaw_enu, settle=True, gimbal_pitch=None):
         self.set_gimbal(gimbal_pitch)
         pts = [self.p_ned()] + [self.ned_from_world(p) for p in route_world] + [self.ned_from_world(final_world)]
@@ -510,6 +558,18 @@ class MissionFollower(Node):
         L['since_corner'] += float(np.linalg.norm(p - L['last_p']))
         L['last_p'] = p
         v_des, rem, err = self.guidance()
+        if (L.get('aim_target') is not None and not L.get('aim_refined') and rem < AIM_REFINE_DIST_M
+                and float(np.linalg.norm(self.v_ned())) < SETTLE_SPEED):
+            # only once nearly stationary: while braking the airframe is pitched by ~10-17 deg,
+            # and aiming with that transient pitch left a persistent error (measured, aim_after)
+            # one re-aim from the EKF pose, now that the vehicle is nearly on station
+            L['aim_refined'] = True
+            # no body-pitch term: hover pitch is within +/-0.3 deg (measured), and a leftover
+            # braking transient of a few degrees would be frozen into the command
+            new = self.target_pitch_up(self.world_from_ned(p), wrap(math.pi / 2 - self.pos.heading),
+                                       L['aim_target'])
+            if self.gimbal_cmd is None or abs(new - (-self.gimbal_cmd)) > AIM_REFINE_MIN_RAD:
+                self.set_gimbal(new)
         self.stale = False
         v, dmin, free = self.safety(v_des)
         L['ticks'] += 1
@@ -586,6 +646,8 @@ class MissionFollower(Node):
 
     # ---------------- state machine ----------------
     def tick(self):
+        if self.interrupts != self.interrupts_handled:
+            self.handle_interrupt()
         if self.pos is not None:
             self.record_track()
         if self.gimbal_cmd is not None and self.t() - self.gimbal_last_pub >= 0.5:
@@ -675,10 +737,15 @@ class MissionFollower(Node):
             'ekf_err_m': round(err, 4),
             'heading_target_enu_rad': wp['heading_rad'],
             'gimbal_pitch_rad': wp.get('gimbal_pitch_rad'),
+            'gimbal_source': L.get('gimbal_src'),
+            'gimbal_cmd_pitch_up_rad': None if self.gimbal_cmd is None else round(-self.gimbal_cmd, 4),
             'heading_ekf_enu_rad': round(wrap(math.pi / 2 - self.pos.heading), 4),
             'leg_time_s': round(self.t() - L['t0'], 2),
             'leg_dist_m': round(L['dist'], 2),
-            'planned_leg_m': wp['route_length_m'],
+            'planned_leg_m': (self.wps[self.i + 1]['route_length_m'] if self.demo_on and self.dir < 0
+                              else wp['route_length_m']),
+            'pass_direction': self.dir if self.demo_on else 1,
+            'lap': self.lap if self.demo_on else 0,
             'min_sensed_range_m': None if L['min_range'] == math.inf else round(L['min_range'], 3),
             'speed_limited_frac': round(L['limited_ticks'] / max(L['ticks'], 1), 3),
             'stale_lidar_ticks': L.get('stale_ticks', 0),
@@ -690,8 +757,86 @@ class MissionFollower(Node):
         self.note(f"{wp['waypoint_id']} {res}: ekf err {err:.3f} m, leg {L['dist']:.1f} m "
                   f"in {rec['leg_time_s']:.1f} s, min sensed {rec['min_sensed_range_m']}")
         self.write()
-        self.i += 1
+        self.advance()
+
+    def advance(self):
+        if not self.demo_on:
+            self.i += 1
+            self.next_waypoint()
+            return
+        n = len(self.wps)
+        if self.demo_wall_s > 0 and time.time() - self.t_start_wall > self.demo_wall_s:
+            self.note(f'demo wall-clock limit reached after {self.lap} full laps')
+            self.begin_retreat('demo_wall_limit', mid_leg=False)
+            return
+        if self.dir > 0 and self.i == n - 1:
+            self.dir = -1
+        elif self.dir < 0 and self.i == 0:
+            self.lap += 1
+            self.note(f'lap {self.lap} complete')
+            if self.demo_laps > 0 and self.lap >= self.demo_laps:
+                self.begin_retreat('demo_laps_done', mid_leg=False)
+                return
+            self.dir = 1
+        self.i += self.dir
         self.next_waypoint()
+
+    # ---------------- interrupt: retrace home along flown pieces, then land ----------------
+    def request_interrupt(self):
+        """Called from the signal handler. First call: return home along the route
+        already flown and land. Second call: land where the vehicle is."""
+        self.interrupts += 1
+
+    def handle_interrupt(self):
+        n = self.interrupts
+        self.interrupts_handled = n
+        ph = self.phase
+        if ph in ('WAIT', 'ARM'):
+            self.note('interrupt before takeoff: disarming and exiting')
+            self.send_cmd(VehicleCommand.VEHICLE_CMD_COMPONENT_ARM_DISARM, 0.0)
+            self.set_phase('ABORT')
+        elif ph in ('LAND', 'DONE', 'ABORT'):
+            self.note(f'interrupt ({n}) ignored: already in {ph}')
+        elif n >= 2 or ph in ('TAKEOFF', 'BRAKE_OUT', 'BRAKE_RUN', 'BRAKE_BACK'):
+            self.note(f'interrupt ({n}) in {ph}: landing here')
+            self.set_phase('LAND')
+        elif ph == 'RTH':
+            self.note('interrupt: already returning home (press again to land here)')
+        else:
+            self.begin_retreat('interrupt', mid_leg=True)
+
+    def begin_retreat(self, reason, mid_leg):
+        """Fly home over pieces the plan already cleared, in reverse, then land.
+        mid_leg: a leg is in progress (interrupt); otherwise the vehicle sits on
+        waypoint self.i (loop finished / wall-clock limit)."""
+        W = self.wps
+        via, k = [], None
+        if mid_leg:
+            L = self.leg
+            world = lambda q: self.world_from_ned(q).tolist()   # noqa: E731
+            if self.demo_on and self.dir < 0:
+                # already heading to a lower index: finish this leg, then carry on down
+                via += [world(q) for q in L['pts'][L['seg'] + 1:-1]]
+                via.append(list(W[self.i]['position_m']))
+                k = self.i
+            else:
+                # forward pass or single pass: back along what this leg has flown
+                via += [world(q) for q in L['pts'][L['seg']:0:-1]]
+                k = self.i - 1
+                if k >= 0:
+                    via.append(list(W[k]['position_m']))
+        else:
+            k = self.i
+        while k is not None and k >= 0:
+            via += [list(v) for v in reversed(W[k]['route_in'])]
+            k -= 1
+            if k >= 0:
+                via.append(list(W[k]['position_m']))
+        self.note(f'retreat ({reason}): {len(via)} route points home over the planned pieces')
+        self.start_leg('RTH', via, self.plan['home_air_world_m'], 0.0)
+        self.leg['aim_target'] = None
+        self.leg['gimbal_src'] = None
+        self.set_phase('RTH')
 
     def next_waypoint(self):
         while self.i < len(self.wps) and not self.wps[self.i].get('reachable_in_plan', True):
@@ -708,9 +853,19 @@ class MissionFollower(Node):
             self.set_phase('RTH')
             return
         wp = self.wps[self.i]
-        route = wp['route_in'] if self.phase != 'BRAKE_BACK' or self.i > 0 else wp['route_in']
-        self.start_leg(wp['waypoint_id'], route, wp['position_m'], wp['heading_rad'],
-                       gimbal_pitch=wp.get('gimbal_pitch_rad'))
+        route = wp['route_in']
+        if self.demo_on and self.dir < 0:
+            route = list(reversed(self.wps[self.i + 1]['route_in']))   # back over the piece just flown
+        gp, src, tgt = wp.get('gimbal_pitch_rad'), None, None
+        if gp is not None:
+            src = 'plan'
+        elif self.aim_from_target and wp.get('target_m') is not None:
+            tgt = wp['target_m']
+            gp = self.target_pitch_up(wp['position_m'], wp['heading_rad'], tgt)
+            src = 'target_m'
+        self.start_leg(wp['waypoint_id'], route, wp['position_m'], wp['heading_rad'], gimbal_pitch=gp)
+        self.leg['aim_target'] = tgt
+        self.leg['gimbal_src'] = src
         if self.phase != 'MISSION':
             self.set_phase('MISSION')
 
@@ -768,8 +923,12 @@ class MissionFollower(Node):
 
 
 def main():
-    rclpy.init()
+    # own SIGINT/SIGTERM handling (rclpy's default would shut the context down and
+    # leave the vehicle hovering): the first signal returns home and lands, the second lands here
+    rclpy.init(signal_handler_options=SignalHandlerOptions.NO)
     n = MissionFollower()
+    for sig in (signal.SIGINT, signal.SIGTERM):
+        signal.signal(sig, lambda *_: n.request_interrupt())
     try:
         while rclpy.ok() and n.phase not in ('DONE', 'ABORT'):
             rclpy.spin_once(n, timeout_sec=0.05)

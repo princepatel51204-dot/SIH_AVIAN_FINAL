@@ -1,0 +1,198 @@
+{
+ "run": "aim_before",
+ "summary": {
+  "n": 8,
+  "target_in_frame": 4,
+  "off_axis_deg": {
+   "mean": 62.47,
+   "median": 55.66,
+   "max": 115.93
+  },
+  "within_5deg": 0,
+  "within_10deg": 1
+ },
+ "waypoints": [
+  {
+   "waypoint_id": "CWP_001",
+   "target_m": [
+    30.0,
+    -3.6667,
+    12.4956
+   ],
+   "distance_to_target_m": 7.97,
+   "gimbal_joint_rad_true": 0.4,
+   "gimbal_cmd_target_rad": null,
+   "pixel_uv": null,
+   "offset_px": null,
+   "off_axis_deg": 115.63,
+   "azimuth_deg": 179.54,
+   "elevation_deg": 64.37,
+   "target_in_frame": false,
+   "target_pitch_up_needed_deg": 86.4,
+   "frame": "camera/waypoints/CWP_001.jpg"
+  },
+  {
+   "waypoint_id": "CWP_002",
+   "target_m": [
+    15.0,
+    -3.6667,
+    12.4956
+   ],
+   "distance_to_target_m": 7.93,
+   "gimbal_joint_rad_true": 0.4,
+   "gimbal_cmd_target_rad": null,
+   "pixel_uv": null,
+   "offset_px": null,
+   "off_axis_deg": 115.8,
+   "azimuth_deg": 179.22,
+   "elevation_deg": 64.2,
+   "target_in_frame": false,
+   "target_pitch_up_needed_deg": 88.0,
+   "frame": "camera/waypoints/CWP_002.jpg"
+  },
+  {
+   "waypoint_id": "CWP_003",
+   "target_m": [
+    6.5,
+    -6.0,
+    7.0
+   ],
+   "distance_to_target_m": 7.7,
+   "gimbal_joint_rad_true": 0.4,
+   "gimbal_cmd_target_rad": null,
+   "pixel_uv": [
+    342.2,
+    92.4
+   ],
+   "offset_px": [
+    22.2,
+    -147.6
+   ],
+   "off_axis_deg": 21.37,
+   "azimuth_deg": -3.33,
+   "elevation_deg": 21.12,
+   "target_in_frame": true,
+   "target_pitch_up_needed_deg": -1.4,
+   "frame": "camera/waypoints/CWP_003.jpg"
+  },
+  {
+   "waypoint_id": "CWP_004",
+   "target_m": [
+    13.5,
+    -8.3,
+    5.6
+   ],
+   "distance_to_target_m": 7.73,
+   "gimbal_joint_rad_true": 0.4,
+   "gimbal_cmd_target_rad": null,
+   "pixel_uv": [
+    331.8,
+    77.2
+   ],
+   "offset_px": [
+    11.8,
+    -162.8
+   ],
+   "off_axis_deg": 23.17,
+   "azimuth_deg": -1.77,
+   "elevation_deg": 23.11,
+   "target_in_frame": true,
+   "target_pitch_up_needed_deg": -0.4,
+   "frame": "camera/waypoints/CWP_004.jpg"
+  },
+  {
+   "waypoint_id": "CWP_005",
+   "target_m": [
+    45.0,
+    0.0,
+    10.6375
+   ],
+   "distance_to_target_m": 7.7,
+   "gimbal_joint_rad_true": 0.4,
+   "gimbal_cmd_target_rad": null,
+   "pixel_uv": [
+    234.1,
+    -11544.9
+   ],
+   "offset_px": [
+    -85.9,
+    -11784.9
+   ],
+   "off_axis_deg": 88.15,
+   "azimuth_deg": 12.7,
+   "elevation_deg": 88.1,
+   "target_in_frame": false,
+   "target_pitch_up_needed_deg": 66.0,
+   "frame": "camera/waypoints/CWP_005.jpg"
+  },
+  {
+   "waypoint_id": "CWP_006",
+   "target_m": [
+    45.85,
+    -2.75,
+    1.9229
+   ],
+   "distance_to_target_m": 7.77,
+   "gimbal_joint_rad_true": 0.4,
+   "gimbal_cmd_target_rad": null,
+   "pixel_uv": [
+    317.9,
+    172.3
+   ],
+   "offset_px": [
+    -2.1,
+    -67.7
+   ],
+   "off_axis_deg": 10.07,
+   "azimuth_deg": 0.32,
+   "elevation_deg": 10.07,
+   "target_in_frame": true,
+   "target_pitch_up_needed_deg": -13.4,
+   "frame": "camera/waypoints/CWP_006.jpg"
+  },
+  {
+   "waypoint_id": "CWP_007",
+   "target_m": [
+    45.85,
+    2.75,
+    1.9229
+   ],
+   "distance_to_target_m": 7.63,
+   "gimbal_joint_rad_true": 0.4,
+   "gimbal_cmd_target_rad": null,
+   "pixel_uv": [
+    322.9,
+    175.3
+   ],
+   "offset_px": [
+    2.9,
+    -64.7
+   ],
+   "off_axis_deg": 9.63,
+   "azimuth_deg": -0.44,
+   "elevation_deg": 9.62,
+   "target_in_frame": true,
+   "target_pitch_up_needed_deg": -13.3,
+   "frame": "camera/waypoints/CWP_007.jpg"
+  },
+  {
+   "waypoint_id": "CWP_008",
+   "target_m": [
+    60.0,
+    -3.6667,
+    12.7206
+   ],
+   "distance_to_target_m": 8.0,
+   "gimbal_joint_rad_true": 0.4,
+   "gimbal_cmd_target_rad": null,
+   "pixel_uv": null,
+   "offset_px": null,
+   "off_axis_deg": 115.93,
+   "azimuth_deg": 177.57,
+   "elevation_deg": 64.04,
+   "target_in_frame": false,
+   "target_pitch_up_needed_deg": 86.0,
+   "frame": "camera/waypoints/CWP_008.jpg"
+  }
+ ]
+}

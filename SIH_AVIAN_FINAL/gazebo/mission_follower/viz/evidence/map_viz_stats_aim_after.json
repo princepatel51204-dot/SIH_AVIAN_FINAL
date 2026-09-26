@@ -1,0 +1,51 @@
+{
+ "voxel_m": 0.25,
+ "min_hits": 2,
+ "max_voxels": 300000,
+ "scans": {
+  "lidar": 1491,
+  "up": 2041,
+  "down": 2983
+ },
+ "scans_without_pose": 4,
+ "points_integrated": 3525690,
+ "voxels_total": 261517,
+ "voxels_with_min_hits": 207818,
+ "voxels_published": 207818,
+ "scan_callback": {
+  "n": 6515,
+  "mean_ms": 1.032,
+  "p95_ms": 2.483,
+  "max_ms": 7.889
+ },
+ "merge": {
+  "n": 300,
+  "mean_ms": 28.06,
+  "p95_ms": 72.009,
+  "max_ms": 96.051
+ },
+ "map_publish": {
+  "n": 150,
+  "mean_ms": 28.43,
+  "p95_ms": 66.563,
+  "max_ms": 95.798
+ },
+ "this_process_cpu_s": 181.65,
+ "wall_s": 367.6,
+ "this_process_cpu_fraction_of_one_core": 0.4942,
+ "detections": {
+  "raw_detections": 0,
+  "localized_detections": 0,
+  "unlocalized_detections": 0,
+  "still_pending_retry": 0,
+  "distinct_localized_defects": 0,
+  "distinct_unlocalized_groups": 0,
+  "localized_on_first_try": 0,
+  "localized_on_retry": 0,
+  "gate_m": 2.0,
+  "retry_s": 40.0,
+  "messages": 0,
+  "localize_ms": null
+ },
+ "final": true
+}

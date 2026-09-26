@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!-- x500 + pitch gimbal, for RViz only. Template: launch_viz.sh replaces
+     @PX4_MESHES@ with the PX4 x500_base meshes directory. The mount offsets in
+     the fixed joints below are the follower's sensor mounts (checked against
+     viz_frames.py by test_viz_frames.py). Propellers are drawn as thin discs at
+     the motor positions (not the STL meshes) and do not spin. -->
+<robot name="x500_avian">
+  <material name="carbon"><color rgba="0.12 0.12 0.14 1"/></material>
+  <material name="prop"><color rgba="0.8 0.8 0.85 0.35"/></material>
+  <material name="cam"><color rgba="1.0 0.35 0.75 1"/></material>
+  <material name="lidar"><color rgba="0.95 0.3 0.2 1"/></material>
+  <material name="cone"><color rgba="0.9 0.8 0.2 1"/></material>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.025" rpy="0 0 3.141592654"/>
+      <geometry><mesh filename="file://@PX4_MESHES@/NXP-HGD-CF.dae"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.174 0.174 0.032" rpy="0 0 -0.45"/>
+      <geometry><mesh filename="file://@PX4_MESHES@/5010Base.dae"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.174 0.174 0.032" rpy="0 0 -0.45"/>
+      <geometry><mesh filename="file://@PX4_MESHES@/5010Base.dae"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.174 -0.174 0.032" rpy="0 0 -0.45"/>
+      <geometry><mesh filename="file://@PX4_MESHES@/5010Base.dae"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.174 -0.174 0.032" rpy="0 0 -0.45"/>
+      <geometry><mesh filename="file://@PX4_MESHES@/5010Base.dae"/></geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.174 0.174 0.092" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.165" length="0.004"/></geometry>
+      <material name="prop"/>
+    </visual>
+    <visual>
+      <origin xyz="-0.174 0.174 0.092" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.165" length="0.004"/></geometry>
+      <material name="prop"/>
+    </visual>
+    <visual>
+      <origin xyz="0.174 -0.174 0.092" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.165" length="0.004"/></geometry>
+      <material name="prop"/>
+    </visual>
+    <visual>
+      <origin xyz="-0.174 -0.174 0.092" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.165" length="0.004"/></geometry>
+      <material name="prop"/>
+    </visual>
+    <visual>
+      <!-- gimbal boom -->
+      <origin xyz="0.265 0 0.05" rpy="0 0 0"/>
+      <geometry><box size="0.13 0.02 0.02"/></geometry>
+      <material name="carbon"/>
+    </visual>
+  </link>
+
+  <link name="lidar_link">
+    <visual>
+      <geometry><cylinder radius="0.028" length="0.018"/></geometry>
+      <material name="lidar"/>
+    </visual>
+  </link>
+  <joint name="base_to_lidar_link" type="fixed">
+    <parent link="base_link"/><child link="lidar_link"/>
+    <origin xyz="0.12 0.0 0.08" rpy="0 0 0"/>
+  </joint>
+
+  <link name="up_range_link">
+    <visual>
+      <geometry><box size="0.03 0.03 0.01"/></geometry>
+      <material name="cone"/>
+    </visual>
+  </link>
+  <joint name="base_to_up_range_link" type="fixed">
+    <parent link="base_link"/><child link="up_range_link"/>
+    <origin xyz="0.0 0.0 0.42" rpy="0 -1.5708 0"/>
+  </joint>
+
+  <link name="down_range_link">
+    <visual>
+      <geometry><box size="0.03 0.03 0.01"/></geometry>
+      <material name="cone"/>
+    </visual>
+  </link>
+  <joint name="base_to_down_range_link" type="fixed">
+    <parent link="base_link"/><child link="down_range_link"/>
+    <origin xyz="0.0 0.0 -0.12" rpy="0 1.5708 0"/>
+  </joint>
+
+  <link name="gimbal_cam_link">
+    <visual>
+      <geometry><box size="0.04 0.04 0.04"/></geometry>
+      <material name="cam"/>
+    </visual>
+  </link>
+  <!-- positive angle = nose down, rotation about +y (same as the airframe model) -->
+  <joint name="base_to_gimbal_cam_link" type="revolute">
+    <parent link="base_link"/><child link="gimbal_cam_link"/>
+    <origin xyz="0.35 0.0 0.05" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="10" velocity="3"/>
+  </joint>
+
+  <link name="camera_link"/>
+  <joint name="gimbal_to_camera_link" type="fixed">
+    <parent link="gimbal_cam_link"/><child link="camera_link"/>
+    <origin xyz="0.03 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>

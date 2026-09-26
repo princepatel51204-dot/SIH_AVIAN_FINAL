@@ -1,0 +1,2914 @@
+{
+ "helix_analysis": {
+  "orbit_radius_m": 4.85,
+  "note": "ring lidar +/-14 deg; follower flies <=12 deg as flat",
+  "rows": [
+   {
+    "path_pitch_deg": 3,
+    "descent_per_revolution_m": 1.6,
+    "vertical_footprint_m": 4.59,
+    "vertical_overlap_frac": 0.65,
+    "lidar_band_margin_deg": 11
+   },
+   {
+    "path_pitch_deg": 5,
+    "descent_per_revolution_m": 2.67,
+    "vertical_footprint_m": 4.59,
+    "vertical_overlap_frac": 0.42,
+    "lidar_band_margin_deg": 9
+   },
+   {
+    "path_pitch_deg": 6,
+    "descent_per_revolution_m": 3.2,
+    "vertical_footprint_m": 4.59,
+    "vertical_overlap_frac": 0.3,
+    "lidar_band_margin_deg": 8
+   },
+   {
+    "path_pitch_deg": 8,
+    "descent_per_revolution_m": 4.28,
+    "vertical_footprint_m": 4.59,
+    "vertical_overlap_frac": 0.07,
+    "lidar_band_margin_deg": 6
+   },
+   {
+    "path_pitch_deg": 10,
+    "descent_per_revolution_m": 5.37,
+    "vertical_footprint_m": 4.59,
+    "vertical_overlap_frac": -0.17,
+    "lidar_band_margin_deg": 4
+   },
+   {
+    "path_pitch_deg": 12,
+    "descent_per_revolution_m": 6.48,
+    "vertical_footprint_m": 4.59,
+    "vertical_overlap_frac": -0.41,
+    "lidar_band_margin_deg": 2
+   }
+  ]
+ },
+ "inventory": [
+  {
+   "id": "RP01",
+   "kind": "road_pier_pair",
+   "columns": [
+    148,
+    149
+   ],
+   "column_names": [
+    "BR_PIER_COL_001_1",
+    "BR_PIER_COL_001_2"
+   ],
+   "shape": "circular",
+   "radius_m": 0.85,
+   "axes_xy": [
+    [
+     0.0,
+     -2.75
+    ],
+    [
+     0.0,
+     2.75
+    ]
+   ],
+   "z_base": 0.17999999999999972,
+   "z_top": 10.375,
+   "caps": [
+    140
+   ],
+   "footings": [
+    164,
+    165
+   ],
+   "spine": [
+    [
+     0.0,
+     -2.75
+    ],
+    [
+     0.0,
+     2.75
+    ]
+   ],
+   "centre_xy": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "RP02",
+   "kind": "road_pier_pair",
+   "columns": [
+    150,
+    151
+   ],
+   "column_names": [
+    "BR_PIER_COL_002_1",
+    "BR_PIER_COL_002_2"
+   ],
+   "shape": "circular",
+   "radius_m": 0.85,
+   "axes_xy": [
+    [
+     45.0,
+     -2.75
+    ],
+    [
+     45.0,
+     2.75
+    ]
+   ],
+   "z_base": 0.17999999999999972,
+   "z_top": 10.6374,
+   "caps": [
+    141
+   ],
+   "footings": [
+    166,
+    167
+   ],
+   "spine": [
+    [
+     45.0,
+     -2.75
+    ],
+    [
+     45.0,
+     2.75
+    ]
+   ],
+   "centre_xy": [
+    45.0,
+    0.0
+   ]
+  },
+  {
+   "id": "RP03",
+   "kind": "road_pier_pair",
+   "columns": [
+    152,
+    153
+   ],
+   "column_names": [
+    "BR_PIER_COL_003_1",
+    "BR_PIER_COL_003_2"
+   ],
+   "shape": "circular",
+   "radius_m": 0.85,
+   "axes_xy": [
+    [
+     90.0,
+     -2.75
+    ],
+    [
+     90.0,
+     2.75
+    ]
+   ],
+   "z_base": 0.1800000000000006,
+   "z_top": 10.825,
+   "caps": [
+    142
+   ],
+   "footings": [
+    168,
+    169
+   ],
+   "spine": [
+    [
+     90.0,
+     -2.75
+    ],
+    [
+     90.0,
+     2.75
+    ]
+   ],
+   "centre_xy": [
+    90.0,
+    0.0
+   ]
+  },
+  {
+   "id": "RP04",
+   "kind": "road_pier_pair",
+   "columns": [
+    154,
+    155
+   ],
+   "column_names": [
+    "BR_PIER_COL_004_1",
+    "BR_PIER_COL_004_2"
+   ],
+   "shape": "circular",
+   "radius_m": 0.85,
+   "axes_xy": [
+    [
+     135.0,
+     -2.75
+    ],
+    [
+     135.0,
+     2.75
+    ]
+   ],
+   "z_base": 0.18009999999999948,
+   "z_top": 10.9375,
+   "caps": [
+    143
+   ],
+   "footings": [
+    170,
+    171
+   ],
+   "spine": [
+    [
+     135.0,
+     -2.75
+    ],
+    [
+     135.0,
+     2.75
+    ]
+   ],
+   "centre_xy": [
+    135.0,
+    0.0
+   ]
+  },
+  {
+   "id": "RP05",
+   "kind": "road_pier_pair",
+   "columns": [
+    156,
+    157
+   ],
+   "column_names": [
+    "BR_PIER_COL_005_1",
+    "BR_PIER_COL_005_2"
+   ],
+   "shape": "circular",
+   "radius_m": 0.85,
+   "axes_xy": [
+    [
+     225.0,
+     -2.75
+    ],
+    [
+     225.0,
+     2.75
+    ]
+   ],
+   "z_base": 0.17999999999999972,
+   "z_top": 10.0376,
+   "caps": [
+    144
+   ],
+   "footings": [
+    172,
+    173
+   ],
+   "spine": [
+    [
+     225.0,
+     -2.75
+    ],
+    [
+     225.0,
+     2.75
+    ]
+   ],
+   "centre_xy": [
+    225.0,
+    0.0
+   ]
+  },
+  {
+   "id": "RP06",
+   "kind": "road_pier_pair",
+   "columns": [
+    158,
+    159
+   ],
+   "column_names": [
+    "BR_PIER_COL_006_1",
+    "BR_PIER_COL_006_2"
+   ],
+   "shape": "circular",
+   "radius_m": 0.85,
+   "axes_xy": [
+    [
+     270.0,
+     -2.75
+    ],
+    [
+     270.0,
+     2.75
+    ]
+   ],
+   "z_base": 0.1800000000000006,
+   "z_top": 10.825,
+   "caps": [
+    145
+   ],
+   "footings": [
+    174,
+    175
+   ],
+   "spine": [
+    [
+     270.0,
+     -2.75
+    ],
+    [
+     270.0,
+     2.75
+    ]
+   ],
+   "centre_xy": [
+    270.0,
+    0.0
+   ]
+  },
+  {
+   "id": "RP07",
+   "kind": "road_pier_pair",
+   "columns": [
+    160,
+    161
+   ],
+   "column_names": [
+    "BR_PIER_COL_007_1",
+    "BR_PIER_COL_007_2"
+   ],
+   "shape": "circular",
+   "radius_m": 0.85,
+   "axes_xy": [
+    [
+     315.0,
+     -2.75
+    ],
+    [
+     315.0,
+     2.75
+    ]
+   ],
+   "z_base": 0.17999999999999972,
+   "z_top": 10.6374,
+   "caps": [
+    146
+   ],
+   "footings": [
+    176,
+    177
+   ],
+   "spine": [
+    [
+     315.0,
+     -2.75
+    ],
+    [
+     315.0,
+     2.75
+    ]
+   ],
+   "centre_xy": [
+    315.0,
+    0.0
+   ]
+  },
+  {
+   "id": "RP08",
+   "kind": "road_pier_pair",
+   "columns": [
+    162,
+    163
+   ],
+   "column_names": [
+    "BR_PIER_COL_008_1",
+    "BR_PIER_COL_008_2"
+   ],
+   "shape": "circular",
+   "radius_m": 0.85,
+   "axes_xy": [
+    [
+     360.0,
+     -2.75
+    ],
+    [
+     360.0,
+     2.75
+    ]
+   ],
+   "z_base": 0.17999999999999972,
+   "z_top": 10.375,
+   "caps": [
+    147
+   ],
+   "footings": [
+    178,
+    179
+   ],
+   "spine": [
+    [
+     360.0,
+     -2.75
+    ],
+    [
+     360.0,
+     2.75
+    ]
+   ],
+   "centre_xy": [
+    360.0,
+    0.0
+   ]
+  },
+  {
+   "id": "MC01",
+   "kind": "metro_column",
+   "columns": [
+    282
+   ],
+   "column_names": [
+    "MB_PIER_COL_001"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     0.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.1228000000000007,
+   "z_top": 14.95,
+   "caps": [
+    304
+   ],
+   "footings": [
+    293
+   ],
+   "spine": [
+    [
+     0.0,
+     28.0
+    ],
+    [
+     0.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    0.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC02",
+   "kind": "metro_column",
+   "columns": [
+    283
+   ],
+   "column_names": [
+    "MB_PIER_COL_002"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     30.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.1511999999999993,
+   "z_top": 14.95,
+   "caps": [
+    305
+   ],
+   "footings": [
+    294
+   ],
+   "spine": [
+    [
+     30.0,
+     28.0
+    ],
+    [
+     30.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    30.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC03",
+   "kind": "metro_column",
+   "columns": [
+    284
+   ],
+   "column_names": [
+    "MB_PIER_COL_003"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     60.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.1797999999999993,
+   "z_top": 14.95,
+   "caps": [
+    306
+   ],
+   "footings": [
+    295
+   ],
+   "spine": [
+    [
+     60.0,
+     28.0
+    ],
+    [
+     60.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    60.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC04",
+   "kind": "metro_column",
+   "columns": [
+    285
+   ],
+   "column_names": [
+    "MB_PIER_COL_004"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     90.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.1916000000000002,
+   "z_top": 14.95,
+   "caps": [
+    307
+   ],
+   "footings": [
+    296
+   ],
+   "spine": [
+    [
+     90.0,
+     28.0
+    ],
+    [
+     90.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    90.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC05",
+   "kind": "metro_column",
+   "columns": [
+    286
+   ],
+   "column_names": [
+    "MB_PIER_COL_005"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     135.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.2043999999999997,
+   "z_top": 14.95,
+   "caps": [
+    308
+   ],
+   "footings": [
+    297
+   ],
+   "spine": [
+    [
+     135.0,
+     28.0
+    ],
+    [
+     135.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    135.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC06",
+   "kind": "metro_column",
+   "columns": [
+    287
+   ],
+   "column_names": [
+    "MB_PIER_COL_006"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     225.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.1871999999999998,
+   "z_top": 14.95,
+   "caps": [
+    309
+   ],
+   "footings": [
+    298
+   ],
+   "spine": [
+    [
+     225.0,
+     28.0
+    ],
+    [
+     225.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    225.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC07",
+   "kind": "metro_column",
+   "columns": [
+    288
+   ],
+   "column_names": [
+    "MB_PIER_COL_007"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     255.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.1877999999999993,
+   "z_top": 14.95,
+   "caps": [
+    310
+   ],
+   "footings": [
+    299
+   ],
+   "spine": [
+    [
+     255.0,
+     28.0
+    ],
+    [
+     255.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    255.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC08",
+   "kind": "metro_column",
+   "columns": [
+    289
+   ],
+   "column_names": [
+    "MB_PIER_COL_008"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     285.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.2085999999999997,
+   "z_top": 14.95,
+   "caps": [
+    311
+   ],
+   "footings": [
+    300
+   ],
+   "spine": [
+    [
+     285.0,
+     28.0
+    ],
+    [
+     285.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    285.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC09",
+   "kind": "metro_column",
+   "columns": [
+    290
+   ],
+   "column_names": [
+    "MB_PIER_COL_009"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     315.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.1900000000000004,
+   "z_top": 14.95,
+   "caps": [
+    312
+   ],
+   "footings": [
+    301
+   ],
+   "spine": [
+    [
+     315.0,
+     28.0
+    ],
+    [
+     315.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    315.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC10",
+   "kind": "metro_column",
+   "columns": [
+    291
+   ],
+   "column_names": [
+    "MB_PIER_COL_010"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     345.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.0869999999999997,
+   "z_top": 14.95,
+   "caps": [
+    313
+   ],
+   "footings": [
+    302
+   ],
+   "spine": [
+    [
+     345.0,
+     28.0
+    ],
+    [
+     345.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    345.0,
+    28.0
+   ]
+  },
+  {
+   "id": "MC11",
+   "kind": "metro_column",
+   "columns": [
+    292
+   ],
+   "column_names": [
+    "MB_PIER_COL_011"
+   ],
+   "shape": "circular",
+   "radius_m": 1.0,
+   "axes_xy": [
+    [
+     360.0,
+     28.0
+    ]
+   ],
+   "z_base": 1.0634000000000006,
+   "z_top": 14.95,
+   "caps": [
+    314
+   ],
+   "footings": [
+    303
+   ],
+   "spine": [
+    [
+     360.0,
+     28.0
+    ],
+    [
+     360.0,
+     28.0
+    ]
+   ],
+   "centre_xy": [
+    360.0,
+    28.0
+   ]
+  }
+ ],
+ "design": [
+  {
+   "id": "RP01",
+   "perimeter_m": 41.473448739820995,
+   "orbit_radius_m": 4.85,
+   "M": 11,
+   "status": "OK",
+   "z_top_ring": 8.8,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    8.8,
+    6.04,
+    3.6
+   ],
+   "dropped_rings_no_free_viewpoint": [],
+   "rings": [
+    {
+     "z": 8.8,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": -37.4,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 131.4,
+       "to_bearing_deg": -131.4,
+       "length_m": 31.73,
+       "limited_by": "BR_ABUTMENT_SOUTH",
+       "clearance_there_m": -1.65
+      }
+     ]
+    },
+    {
+     "z": 6.04,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": 21.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 129.4,
+       "to_bearing_deg": -129.4,
+       "length_m": 31.23,
+       "limited_by": "BR_ABUTMENT_SOUTH",
+       "clearance_there_m": -1.65
+      }
+     ]
+    },
+    {
+     "z": 3.6,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": -32.1,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 129.4,
+       "to_bearing_deg": -129.4,
+       "length_m": 31.23,
+       "limited_by": "BR_ABUTMENT_SOUTH",
+       "clearance_there_m": -1.65
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "RP02",
+   "perimeter_m": 41.473448739820995,
+   "orbit_radius_m": 4.85,
+   "M": 11,
+   "status": "OK",
+   "z_top_ring": 8.8,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    8.8,
+    6.04,
+    3.6
+   ],
+   "dropped_rings_no_free_viewpoint": [],
+   "rings": [
+    {
+     "z": 8.8,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": -34.0,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 135.5,
+       "to_bearing_deg": 52.6,
+       "length_m": 10.99,
+       "limited_by": "BR_PIER_CAP_002",
+       "clearance_there_m": 2.41
+      },
+      {
+       "from_bearing_deg": -52.6,
+       "to_bearing_deg": -135.5,
+       "length_m": 10.99,
+       "limited_by": "BR_PIER_CAP_002",
+       "clearance_there_m": 2.43
+      },
+      {
+       "from_bearing_deg": -139.6,
+       "to_bearing_deg": 139.7,
+       "length_m": 8.24,
+       "limited_by": "BR_GIRDER_001_G3",
+       "clearance_there_m": 3.42
+      }
+     ]
+    },
+    {
+     "z": 6.04,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": 23.8,
+     "blocked_arcs": []
+    },
+    {
+     "z": 3.6,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": -11.6,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "RP03",
+   "perimeter_m": 41.473448739820995,
+   "orbit_radius_m": 4.85,
+   "M": 11,
+   "status": "OK",
+   "z_top_ring": 9.0,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    9.0,
+    6.24,
+    3.6
+   ],
+   "dropped_rings_no_free_viewpoint": [],
+   "rings": [
+    {
+     "z": 9.0,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": -34.7,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 135.5,
+       "to_bearing_deg": 50.6,
+       "length_m": 11.24,
+       "limited_by": "BR_PIER_CAP_003",
+       "clearance_there_m": 2.42
+      },
+      {
+       "from_bearing_deg": -52.6,
+       "to_bearing_deg": -135.5,
+       "length_m": 10.99,
+       "limited_by": "BR_PIER_CAP_003",
+       "clearance_there_m": 2.42
+      },
+      {
+       "from_bearing_deg": -139.6,
+       "to_bearing_deg": 139.7,
+       "length_m": 8.24,
+       "limited_by": "BR_GIRDER_002_G3",
+       "clearance_there_m": 3.44
+      }
+     ]
+    },
+    {
+     "z": 6.24,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": 22.2,
+     "blocked_arcs": []
+    },
+    {
+     "z": 3.6,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": -11.2,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "RP04",
+   "perimeter_m": 41.473448739820995,
+   "orbit_radius_m": 4.85,
+   "M": 11,
+   "status": "OK",
+   "z_top_ring": 9.0,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    9.0,
+    6.24,
+    3.6
+   ],
+   "dropped_rings_no_free_viewpoint": [],
+   "rings": [
+    {
+     "z": 9.0,
+     "free_viewpoints": 5,
+     "of": 11,
+     "pitch_deg": -33.2,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 127.4,
+       "to_bearing_deg": 44.5,
+       "length_m": 10.99,
+       "limited_by": "ST_GUSSET_N_BOT_00",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -44.5,
+       "to_bearing_deg": -127.4,
+       "length_m": 10.99,
+       "limited_by": "ST_GUSSET_S_BOT_00",
+       "clearance_there_m": 2.36
+      }
+     ]
+    },
+    {
+     "z": 6.24,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": 23.1,
+     "blocked_arcs": []
+    },
+    {
+     "z": 3.6,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": -11.0,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "RP05",
+   "perimeter_m": 41.473448739820995,
+   "orbit_radius_m": 4.85,
+   "M": 11,
+   "status": "OK",
+   "z_top_ring": 9.0,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    9.0,
+    6.24,
+    3.6
+   ],
+   "dropped_rings_no_free_viewpoint": [],
+   "rings": [
+    {
+     "z": 9.0,
+     "free_viewpoints": 4,
+     "of": 11,
+     "pitch_deg": -44.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 135.5,
+       "to_bearing_deg": 44.5,
+       "length_m": 11.99,
+       "limited_by": "BR_PIER_CAP_005",
+       "clearance_there_m": 1.91
+      },
+      {
+       "from_bearing_deg": -44.5,
+       "to_bearing_deg": -135.5,
+       "length_m": 11.99,
+       "limited_by": "BR_PIER_CAP_005",
+       "clearance_there_m": 1.91
+      }
+     ]
+    },
+    {
+     "z": 6.24,
+     "free_viewpoints": 10,
+     "of": 11,
+     "pitch_deg": 16.5,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 70.1,
+       "to_bearing_deg": 36.1,
+       "length_m": 4.5,
+       "limited_by": "ENV_BANKVEG_006_visual",
+       "clearance_there_m": 2.81
+      }
+     ]
+    },
+    {
+     "z": 3.6,
+     "free_viewpoints": 9,
+     "of": 11,
+     "pitch_deg": -12.8,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 81.5,
+       "to_bearing_deg": 22.4,
+       "length_m": 7.5,
+       "limited_by": "ENV_BANKVEG_006_visual",
+       "clearance_there_m": 0.32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "RP06",
+   "perimeter_m": 41.473448739820995,
+   "orbit_radius_m": 4.85,
+   "M": 11,
+   "status": "OK",
+   "z_top_ring": 9.0,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    9.0,
+    6.24,
+    3.6
+   ],
+   "dropped_rings_no_free_viewpoint": [],
+   "rings": [
+    {
+     "z": 9.0,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": -34.7,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 127.4,
+       "to_bearing_deg": 44.5,
+       "length_m": 10.99,
+       "limited_by": "BR_PIER_CAP_006",
+       "clearance_there_m": 2.42
+      },
+      {
+       "from_bearing_deg": 40.4,
+       "to_bearing_deg": -40.3,
+       "length_m": 8.24,
+       "limited_by": "BR_GIRDER_006_G3",
+       "clearance_there_m": 3.44
+      },
+      {
+       "from_bearing_deg": -44.5,
+       "to_bearing_deg": -129.4,
+       "length_m": 11.24,
+       "limited_by": "BR_PIER_CAP_006",
+       "clearance_there_m": 2.42
+      }
+     ]
+    },
+    {
+     "z": 6.24,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": 22.2,
+     "blocked_arcs": []
+    },
+    {
+     "z": 3.6,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": -11.2,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "RP07",
+   "perimeter_m": 41.473448739820995,
+   "orbit_radius_m": 4.85,
+   "M": 11,
+   "status": "OK",
+   "z_top_ring": 8.8,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    8.8,
+    6.04,
+    3.6
+   ],
+   "dropped_rings_no_free_viewpoint": [],
+   "rings": [
+    {
+     "z": 8.8,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": -34.0,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 127.4,
+       "to_bearing_deg": 44.5,
+       "length_m": 10.99,
+       "limited_by": "BR_PIER_CAP_007",
+       "clearance_there_m": 2.43
+      },
+      {
+       "from_bearing_deg": 40.4,
+       "to_bearing_deg": -40.3,
+       "length_m": 8.24,
+       "limited_by": "BR_GIRDER_007_G3",
+       "clearance_there_m": 3.42
+      },
+      {
+       "from_bearing_deg": -44.5,
+       "to_bearing_deg": -127.4,
+       "length_m": 10.99,
+       "limited_by": "BR_PIER_CAP_007",
+       "clearance_there_m": 2.41
+      }
+     ]
+    },
+    {
+     "z": 6.04,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": 23.8,
+     "blocked_arcs": []
+    },
+    {
+     "z": 3.6,
+     "free_viewpoints": 11,
+     "of": 11,
+     "pitch_deg": -11.6,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "RP08",
+   "perimeter_m": 41.473448739820995,
+   "orbit_radius_m": 4.85,
+   "M": 11,
+   "status": "OK",
+   "z_top_ring": 9.0,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    9.0,
+    6.24,
+    3.6
+   ],
+   "dropped_rings_no_free_viewpoint": [],
+   "rings": [
+    {
+     "z": 9.0,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": -40.5,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": -46.5,
+       "to_bearing_deg": 46.6,
+       "length_m": 32.23,
+       "limited_by": "BR_ABUTMENT_NORTH",
+       "clearance_there_m": -1.65
+      }
+     ]
+    },
+    {
+     "z": 6.24,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": 18.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": -50.6,
+       "to_bearing_deg": 50.6,
+       "length_m": 31.23,
+       "limited_by": "BR_ABUTMENT_NORTH",
+       "clearance_there_m": -1.65
+      }
+     ]
+    },
+    {
+     "z": 3.6,
+     "free_viewpoints": 3,
+     "of": 11,
+     "pitch_deg": -32.1,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": -50.6,
+       "to_bearing_deg": 50.6,
+       "length_m": 31.23,
+       "limited_by": "BR_ABUTMENT_NORTH",
+       "clearance_there_m": -1.65
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "MC01",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 13.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    13.4,
+    10.64,
+    7.88,
+    5.12
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 3.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_001",
+       "clearance_there_m": 3.18
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 13.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 10.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 72.9,
+       "to_bearing_deg": -72.9,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_001",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -107.1,
+       "to_bearing_deg": 107.1,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_001",
+       "clearance_there_m": 2.37
+      }
+     ]
+    },
+    {
+     "z": 10.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -32.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 7.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": 28.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 5.12,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -34.9,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC02",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 13.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    13.4,
+    10.64,
+    7.88,
+    5.12
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 3.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_002",
+       "clearance_there_m": 3.16
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 13.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 10.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 72.9,
+       "to_bearing_deg": -72.9,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_002",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -107.1,
+       "to_bearing_deg": 107.1,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_002",
+       "clearance_there_m": 2.37
+      }
+     ]
+    },
+    {
+     "z": 10.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -32.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 7.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": 28.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 5.12,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -34.9,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC03",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 13.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    13.4,
+    10.64,
+    7.88,
+    5.12
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 3.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_003",
+       "clearance_there_m": 3.14
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 13.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 10.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 72.9,
+       "to_bearing_deg": -72.9,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_003",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -107.1,
+       "to_bearing_deg": 107.1,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_003",
+       "clearance_there_m": 2.37
+      }
+     ]
+    },
+    {
+     "z": 10.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -32.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 7.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": 28.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 5.12,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -34.9,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC04",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 12.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    12.4,
+    9.64,
+    6.88
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 4.12,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_004",
+       "clearance_there_m": 3.54
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 12.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 20.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 70.0,
+       "to_bearing_deg": -70.0,
+       "length_m": 12.47,
+       "limited_by": "MB_PIER_HEAD_004",
+       "clearance_there_m": 3.12
+      },
+      {
+       "from_bearing_deg": -127.1,
+       "to_bearing_deg": 127.1,
+       "length_m": 9.47,
+       "limited_by": "MB_PIER_HEAD_004",
+       "clearance_there_m": 3.12
+      }
+     ]
+    },
+    {
+     "z": 9.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -29.6,
+     "blocked_arcs": []
+    },
+    {
+     "z": 6.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -54.2,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC05",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 12.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    12.4,
+    9.64,
+    6.88
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 4.12,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_005",
+       "clearance_there_m": 3.53
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 12.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 15.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 70.0,
+       "to_bearing_deg": -70.0,
+       "length_m": 12.47,
+       "limited_by": "MB_PIER_HEAD_005",
+       "clearance_there_m": 3.12
+      },
+      {
+       "from_bearing_deg": -110.0,
+       "to_bearing_deg": 110.0,
+       "length_m": 12.47,
+       "limited_by": "MB_PIER_HEAD_005",
+       "clearance_there_m": 3.12
+      }
+     ]
+    },
+    {
+     "z": 9.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -29.6,
+     "blocked_arcs": []
+    },
+    {
+     "z": 6.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -54.2,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC06",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 12.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    12.4,
+    9.64,
+    6.88
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 4.12,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "ENV_BANKVEG_014_visual",
+       "clearance_there_m": 1.71
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 12.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 20.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 52.9,
+       "to_bearing_deg": -52.9,
+       "length_m": 9.47,
+       "limited_by": "MB_PIER_HEAD_006",
+       "clearance_there_m": 3.12
+      },
+      {
+       "from_bearing_deg": -110.0,
+       "to_bearing_deg": 110.0,
+       "length_m": 12.47,
+       "limited_by": "MB_PIER_HEAD_006",
+       "clearance_there_m": 3.12
+      }
+     ]
+    },
+    {
+     "z": 9.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -29.6,
+     "blocked_arcs": []
+    },
+    {
+     "z": 6.88,
+     "free_viewpoints": 6,
+     "of": 8,
+     "pitch_deg": -54.2,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": -81.4,
+       "to_bearing_deg": -164.3,
+       "length_m": 7.48,
+       "limited_by": "ENV_BANKVEG_014_visual",
+       "clearance_there_m": 3.31
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "MC07",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 13.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    13.4,
+    10.64,
+    7.88,
+    5.12
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 3.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_007",
+       "clearance_there_m": 3.13
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 13.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 10.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 72.9,
+       "to_bearing_deg": -72.9,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_007",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -107.1,
+       "to_bearing_deg": 107.1,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_007",
+       "clearance_there_m": 2.37
+      }
+     ]
+    },
+    {
+     "z": 10.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -32.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 7.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": 28.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 5.12,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -29.9,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC08",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 13.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    13.4,
+    10.64,
+    7.88,
+    5.12
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 3.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_008",
+       "clearance_there_m": 3.11
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 13.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 10.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 72.9,
+       "to_bearing_deg": -72.9,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_008",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -107.1,
+       "to_bearing_deg": 107.1,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_008",
+       "clearance_there_m": 2.37
+      }
+     ]
+    },
+    {
+     "z": 10.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -32.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 7.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": 28.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 5.12,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -29.9,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC09",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 13.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    13.4,
+    10.64,
+    7.88,
+    5.12
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 3.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_009",
+       "clearance_there_m": 3.13
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 13.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 10.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 72.9,
+       "to_bearing_deg": -72.9,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_009",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -107.1,
+       "to_bearing_deg": 107.1,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_009",
+       "clearance_there_m": 2.37
+      }
+     ]
+    },
+    {
+     "z": 10.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -32.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 7.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": 28.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 5.12,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -29.9,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC10",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 13.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    13.4,
+    10.64,
+    7.88,
+    5.12
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 3.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_010",
+       "clearance_there_m": 3.21
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 13.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 10.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 72.9,
+       "to_bearing_deg": -72.9,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_010",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -107.1,
+       "to_bearing_deg": 107.1,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_010",
+       "clearance_there_m": 2.37
+      }
+     ]
+    },
+    {
+     "z": 10.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -32.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 7.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": 28.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 5.12,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -34.9,
+     "blocked_arcs": []
+    }
+   ]
+  },
+  {
+   "id": "MC11",
+   "perimeter_m": 31.41592653589793,
+   "orbit_radius_m": 5.0,
+   "M": 8,
+   "status": "OK",
+   "z_top_ring": 13.4,
+   "vertical_footprint_m": 4.594070473252864,
+   "ring_spacing_m": 2.7564422839517184,
+   "overlap_v": 0.4,
+   "ring_z": [
+    13.4,
+    10.64,
+    7.88,
+    5.12
+   ],
+   "dropped_rings_no_free_viewpoint": [
+    {
+     "z": 3.6,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 90.0,
+       "to_bearing_deg": 92.9,
+       "length_m": 31.42,
+       "limited_by": "MB_PIER_FOOTING_011",
+       "clearance_there_m": 3.23
+      }
+     ]
+    }
+   ],
+   "rings": [
+    {
+     "z": 13.4,
+     "free_viewpoints": 2,
+     "of": 8,
+     "pitch_deg": 10.9,
+     "blocked_arcs": [
+      {
+       "from_bearing_deg": 72.9,
+       "to_bearing_deg": -72.9,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_011",
+       "clearance_there_m": 2.37
+      },
+      {
+       "from_bearing_deg": -107.1,
+       "to_bearing_deg": 107.1,
+       "length_m": 12.97,
+       "limited_by": "MB_PIER_HEAD_011",
+       "clearance_there_m": 2.37
+      }
+     ]
+    },
+    {
+     "z": 10.64,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -32.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 7.88,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": 28.7,
+     "blocked_arcs": []
+    },
+    {
+     "z": 5.12,
+     "free_viewpoints": 8,
+     "of": 8,
+     "pitch_deg": -34.9,
+     "blocked_arcs": []
+    }
+   ]
+  }
+ ],
+ "per_subject": {
+  "RP01": {
+   "rings": 3,
+   "viewpoints": 9,
+   "orbit_path_m": 27.8,
+   "transit_in_and_links_m": 40.1,
+   "est_time_min": 1.2,
+   "coverage_pct": {
+    "shaft": 97.6,
+    "column_all_faces": 97.6,
+    "cap_or_head": 34.3,
+    "footing": 100.0,
+    "whole_subject": 74.0
+   },
+   "visible_by_face": {
+    "pier_cap/+Y": 0.6,
+    "pier_cap/+Z": 5.4,
+    "pier_cap/-X": 16.8,
+    "pier_cap/-Y": 0.6,
+    "pier_cap/-Z": 4.0,
+    "pier_column/side": 29.7,
+    "pier_footing/+Z": 15.0
+   },
+   "visible_area_m2": 72.2,
+   "uncovered_area_m2": 18.8,
+   "uncovered_by_face": {
+    "pier_cap/+Y": 0.6,
+    "pier_cap/+Z": 5.4,
+    "pier_cap/-X": 11.2,
+    "pier_cap/-Y": 0.6,
+    "pier_cap/-Z": 0.2,
+    "pier_column/side": 0.7
+   }
+  },
+  "RP02": {
+   "rings": 3,
+   "viewpoints": 25,
+   "orbit_path_m": 88.0,
+   "transit_in_and_links_m": 67.2,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 98.3,
+    "column_all_faces": 98.3,
+    "cap_or_head": 53.8,
+    "footing": 100.0,
+    "whole_subject": 84.8
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 16.8,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 10.8,
+    "pier_cap/-X": 16.8,
+    "pier_cap/-Y": 2.5,
+    "pier_cap/-Z": 16.2,
+    "pier_column/side": 111.7,
+    "pier_footing/+Z": 34.0
+   },
+   "visible_area_m2": 211.3,
+   "uncovered_area_m2": 32.2,
+   "uncovered_by_face": {
+    "pier_cap/+X": 7.7,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 10.8,
+    "pier_cap/-X": 6.8,
+    "pier_cap/-Y": 2.5,
+    "pier_column/side": 1.9
+   }
+  },
+  "RP03": {
+   "rings": 3,
+   "viewpoints": 25,
+   "orbit_path_m": 88.2,
+   "transit_in_and_links_m": 49.4,
+   "est_time_min": 2.8,
+   "coverage_pct": {
+    "shaft": 98.0,
+    "column_all_faces": 98.0,
+    "cap_or_head": 40.3,
+    "footing": 100.0,
+    "whole_subject": 80.6
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 16.8,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 10.8,
+    "pier_cap/-X": 16.8,
+    "pier_cap/-Y": 2.5,
+    "pier_cap/-Z": 16.2,
+    "pier_column/side": 113.7,
+    "pier_footing/+Z": 34.0
+   },
+   "visible_area_m2": 213.3,
+   "uncovered_area_m2": 41.4,
+   "uncovered_by_face": {
+    "pier_cap/+X": 11.7,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 10.8,
+    "pier_cap/-X": 11.7,
+    "pier_cap/-Y": 2.5,
+    "pier_column/side": 2.2
+   }
+  },
+  "RP04": {
+   "rings": 3,
+   "viewpoints": 27,
+   "orbit_path_m": 92.0,
+   "transit_in_and_links_m": 54.9,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 98.3,
+    "column_all_faces": 98.3,
+    "cap_or_head": 36.0,
+    "footing": 100.0,
+    "whole_subject": 78.1
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 16.8,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 18.0,
+    "pier_cap/-X": 16.8,
+    "pier_cap/-Y": 2.5,
+    "pier_cap/-Z": 16.2,
+    "pier_column/side": 114.9,
+    "pier_footing/+Z": 34.0
+   },
+   "visible_area_m2": 221.7,
+   "uncovered_area_m2": 48.5,
+   "uncovered_by_face": {
+    "pier_cap/+X": 11.9,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 18.0,
+    "pier_cap/-X": 11.7,
+    "pier_cap/-Y": 2.5,
+    "pier_column/side": 1.9
+   }
+  },
+  "RP05": {
+   "rings": 3,
+   "viewpoints": 23,
+   "orbit_path_m": 71.5,
+   "transit_in_and_links_m": 117.2,
+   "est_time_min": 3.2,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 33.7,
+    "footing": 100.0,
+    "whole_subject": 74.8
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 16.8,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 21.6,
+    "pier_cap/-X": 16.8,
+    "pier_cap/-Y": 2.5,
+    "pier_cap/-Z": 16.2,
+    "pier_column/side": 105.3,
+    "pier_footing/+Z": 34.0
+   },
+   "visible_area_m2": 215.7,
+   "uncovered_area_m2": 54.4,
+   "uncovered_by_face": {
+    "pier_cap/+X": 11.9,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 21.6,
+    "pier_cap/-X": 11.4,
+    "pier_cap/-Y": 2.5,
+    "pier_cap/-Z": 0.7,
+    "pier_column/side": 3.8
+   }
+  },
+  "RP06": {
+   "rings": 3,
+   "viewpoints": 25,
+   "orbit_path_m": 88.2,
+   "transit_in_and_links_m": 35.9,
+   "est_time_min": 2.7,
+   "coverage_pct": {
+    "shaft": 98.1,
+    "column_all_faces": 98.1,
+    "cap_or_head": 40.3,
+    "footing": 100.0,
+    "whole_subject": 80.6
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 16.8,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 10.8,
+    "pier_cap/-X": 16.8,
+    "pier_cap/-Y": 2.5,
+    "pier_cap/-Z": 16.2,
+    "pier_column/side": 113.7,
+    "pier_footing/+Z": 34.0
+   },
+   "visible_area_m2": 213.3,
+   "uncovered_area_m2": 41.3,
+   "uncovered_by_face": {
+    "pier_cap/+X": 11.7,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 10.8,
+    "pier_cap/-X": 11.7,
+    "pier_cap/-Y": 2.5,
+    "pier_column/side": 2.2
+   }
+  },
+  "RP07": {
+   "rings": 3,
+   "viewpoints": 25,
+   "orbit_path_m": 88.0,
+   "transit_in_and_links_m": 48.2,
+   "est_time_min": 2.8,
+   "coverage_pct": {
+    "shaft": 98.4,
+    "column_all_faces": 98.4,
+    "cap_or_head": 53.8,
+    "footing": 100.0,
+    "whole_subject": 84.8
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 16.8,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 10.8,
+    "pier_cap/-X": 16.8,
+    "pier_cap/-Y": 2.5,
+    "pier_cap/-Z": 16.2,
+    "pier_column/side": 111.7,
+    "pier_footing/+Z": 34.0
+   },
+   "visible_area_m2": 211.3,
+   "uncovered_area_m2": 32.1,
+   "uncovered_by_face": {
+    "pier_cap/+X": 7.7,
+    "pier_cap/+Y": 2.5,
+    "pier_cap/+Z": 10.8,
+    "pier_cap/-X": 6.8,
+    "pier_cap/-Y": 2.5,
+    "pier_column/side": 1.8
+   }
+  },
+  "RP08": {
+   "rings": 3,
+   "viewpoints": 9,
+   "orbit_path_m": 24.2,
+   "transit_in_and_links_m": 66.2,
+   "est_time_min": 1.4,
+   "coverage_pct": {
+    "shaft": 98.2,
+    "column_all_faces": 98.2,
+    "cap_or_head": 32.6,
+    "footing": 100.0,
+    "whole_subject": 73.6
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 16.8,
+    "pier_cap/+Y": 0.6,
+    "pier_cap/+Z": 5.4,
+    "pier_cap/-Y": 0.6,
+    "pier_cap/-Z": 4.0,
+    "pier_column/side": 29.7,
+    "pier_footing/+Z": 15.0
+   },
+   "visible_area_m2": 72.2,
+   "uncovered_area_m2": 19.1,
+   "uncovered_by_face": {
+    "pier_cap/+X": 11.4,
+    "pier_cap/+Y": 0.6,
+    "pier_cap/+Z": 5.4,
+    "pier_cap/-Y": 0.6,
+    "pier_cap/-Z": 0.5,
+    "pier_column/side": 0.5
+   }
+  },
+  "MC11": {
+   "rings": 4,
+   "viewpoints": 26,
+   "orbit_path_m": 90.6,
+   "transit_in_and_links_m": 63.6,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 68.4,
+    "footing": 53.4,
+    "whole_subject": 76.0
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 10.2,
+    "pier_cap/+Z": 7.7,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 10.2,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 87.3,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 199.6,
+   "uncovered_area_m2": 47.9,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Z": 7.7,
+    "pier_cap/-X": 4.2,
+    "pier_column/side": 3.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC10": {
+   "rings": 4,
+   "viewpoints": 26,
+   "orbit_path_m": 90.6,
+   "transit_in_and_links_m": 41.9,
+   "est_time_min": 2.9,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole_subject": 79.0
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 10.2,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 10.2,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 87.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 191.8,
+   "uncovered_area_m2": 40.2,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/-X": 4.2,
+    "pier_column/side": 3.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC09": {
+   "rings": 4,
+   "viewpoints": 26,
+   "orbit_path_m": 90.6,
+   "transit_in_and_links_m": 55.9,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole_subject": 79.0
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 10.2,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 10.2,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 86.5,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 191.1,
+   "uncovered_area_m2": 40.2,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/-X": 4.2,
+    "pier_column/side": 3.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC08": {
+   "rings": 4,
+   "viewpoints": 26,
+   "orbit_path_m": 90.6,
+   "transit_in_and_links_m": 55.9,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole_subject": 78.9
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 10.2,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 10.2,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 86.3,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 191.0,
+   "uncovered_area_m2": 40.3,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/-X": 4.2,
+    "pier_column/side": 3.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC07": {
+   "rings": 4,
+   "viewpoints": 26,
+   "orbit_path_m": 90.6,
+   "transit_in_and_links_m": 55.9,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole_subject": 79.0
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 10.2,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 10.2,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 86.5,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 191.2,
+   "uncovered_area_m2": 40.2,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/-X": 4.2,
+    "pier_column/side": 3.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC06": {
+   "rings": 3,
+   "viewpoints": 16,
+   "orbit_path_m": 49.8,
+   "transit_in_and_links_m": 59.6,
+   "est_time_min": 2.0,
+   "coverage_pct": {
+    "shaft": 72.4,
+    "column_all_faces": 72.4,
+    "cap_or_head": 43.9,
+    "footing": 49.5,
+    "whole_subject": 58.4
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 8.9,
+    "pier_cap/+Z": 7.7,
+    "pier_cap/-X": 3.1,
+    "pier_cap/-Y": 8.9,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 81.9,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 25.2,
+    "pier_footing/-X": 6.0,
+    "pier_footing/-Y": 5.4
+   },
+   "visible_area_m2": 179.7,
+   "uncovered_area_m2": 74.7,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 1.4,
+    "pier_cap/+Z": 7.7,
+    "pier_cap/-X": 3.1,
+    "pier_cap/-Y": 1.4,
+    "pier_cap/-Z": 8.5,
+    "pier_column/side": 22.6,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 6.0,
+    "pier_footing/-Y": 5.4
+   }
+  },
+  "MC05": {
+   "rings": 3,
+   "viewpoints": 18,
+   "orbit_path_m": 60.4,
+   "transit_in_and_links_m": 112.5,
+   "est_time_min": 2.7,
+   "coverage_pct": {
+    "shaft": 77.3,
+    "column_all_faces": 77.3,
+    "cap_or_head": 30.2,
+    "footing": 53.4,
+    "whole_subject": 57.7
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 3.1,
+    "pier_cap/+Y": 7.7,
+    "pier_cap/+Z": 16.6,
+    "pier_cap/-X": 3.1,
+    "pier_cap/-Y": 7.7,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 86.4,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 200.5,
+   "uncovered_area_m2": 84.9,
+   "uncovered_by_face": {
+    "pier_cap/+X": 3.1,
+    "pier_cap/+Y": 2.6,
+    "pier_cap/+Z": 16.6,
+    "pier_cap/-X": 3.1,
+    "pier_cap/-Y": 2.6,
+    "pier_cap/-Z": 8.5,
+    "pier_column/side": 19.6,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC04": {
+   "rings": 3,
+   "viewpoints": 18,
+   "orbit_path_m": 60.4,
+   "transit_in_and_links_m": 64.3,
+   "est_time_min": 2.3,
+   "coverage_pct": {
+    "shaft": 74.7,
+    "column_all_faces": 74.7,
+    "cap_or_head": 43.9,
+    "footing": 53.4,
+    "whole_subject": 60.6
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 3.1,
+    "pier_cap/+Y": 8.9,
+    "pier_cap/+Z": 7.7,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 8.9,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 86.4,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 195.0,
+   "uncovered_area_m2": 76.9,
+   "uncovered_by_face": {
+    "pier_cap/+X": 3.1,
+    "pier_cap/+Y": 1.4,
+    "pier_cap/+Z": 7.7,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 1.4,
+    "pier_cap/-Z": 8.5,
+    "pier_column/side": 21.8,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC03": {
+   "rings": 4,
+   "viewpoints": 26,
+   "orbit_path_m": 90.6,
+   "transit_in_and_links_m": 58.0,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole_subject": 79.0
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 10.2,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 10.2,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 86.5,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 191.2,
+   "uncovered_area_m2": 40.2,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/-X": 4.2,
+    "pier_column/side": 3.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC02": {
+   "rings": 4,
+   "viewpoints": 26,
+   "orbit_path_m": 90.6,
+   "transit_in_and_links_m": 55.9,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 80.6,
+    "footing": 53.4,
+    "whole_subject": 79.0
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 10.2,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 10.2,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 86.7,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 191.4,
+   "uncovered_area_m2": 40.2,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/-X": 4.2,
+    "pier_column/side": 3.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  },
+  "MC01": {
+   "rings": 4,
+   "viewpoints": 26,
+   "orbit_path_m": 90.6,
+   "transit_in_and_links_m": 55.9,
+   "est_time_min": 3.0,
+   "coverage_pct": {
+    "shaft": 96.4,
+    "column_all_faces": 96.4,
+    "cap_or_head": 68.4,
+    "footing": 53.4,
+    "whole_subject": 76.0
+   },
+   "visible_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Y": 10.2,
+    "pier_cap/+Z": 7.7,
+    "pier_cap/-X": 4.2,
+    "pier_cap/-Y": 10.2,
+    "pier_cap/-Z": 14.1,
+    "pier_column/side": 86.9,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/+Z": 33.0,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   },
+   "visible_area_m2": 199.2,
+   "uncovered_area_m2": 47.9,
+   "uncovered_by_face": {
+    "pier_cap/+X": 4.2,
+    "pier_cap/+Z": 7.7,
+    "pier_cap/-X": 4.2,
+    "pier_column/side": 3.1,
+    "pier_footing/+X": 7.2,
+    "pier_footing/+Y": 7.2,
+    "pier_footing/-X": 7.2,
+    "pier_footing/-Y": 7.2
+   }
+  }
+ },
+ "totals": {
+  "waypoints": 428,
+  "path_m": 2698.22,
+  "route_failures": 0,
+  "segment_recheck": {
+   "n_segments": 1508,
+   "n_violations": 0,
+   "raw_min_clearance_m": 3.505,
+   "min_camera_pivot_clearance_m": 3.523,
+   "worst": []
+  }
+ }
+}
