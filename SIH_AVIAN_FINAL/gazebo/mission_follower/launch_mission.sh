@@ -99,7 +99,8 @@ cleanup() {
   pkill -f map_viz_node.py 2>/dev/null; sleep 2     # writes its map + stats on SIGTERM
   pkill -f 'robot_state_publisher' 2>/dev/null
   pkill -f 'rviz2 -d' 2>/dev/null
-  pkill -f rqt_image_view 2>/dev/null
+  pkill -f rqt_image_view 2>/dev/null; sleep 1
+  pkill -9 -f "lib/rqt_image_view/rqt_image_view" 2>/dev/null   # it ignores SIGTERM (rehearsal 1)
   pkill -f 'gz sim -g' 2>/dev/null
   pkill -f parameter_bridge 2>/dev/null
   "${WS}/src/garudanex_bringup/scripts/stop.sh" >/dev/null 2>&1 || true
@@ -113,8 +114,19 @@ echo "=== [1/7] world + drone + DDS bridge ==="
 cp /tmp/sih_px4_sitl.log "${LOGDIR}/px4_boot.log" 2>/dev/null
 if [ "${AVIAN_GZ_GUI:-0}" = "1" ]; then
   echo "=== [1b] Gazebo GUI window (client of the running server) ==="
-  GZ_SIM_RESOURCE_PATH="${GZDIR}/models:${WS}/src/garudanex_sim/models:${GZ_SIM_RESOURCE_PATH:-}" \
-    gz sim -g > "${LOGDIR}/gz_gui.log" 2>&1 &
+  GUI_RES="${GZDIR}/models:${WS}/src/garudanex_sim/models:${GZ_SIM_RESOURCE_PATH:-}"
+  # the GUI resolves textures itself: it needs the decal models first too when AVIAN_DECALS=1
+  [ "${AVIAN_DECALS:-0}" = "1" ] && GUI_RES="${GZDIR}/models_decals:${GUI_RES}"
+  GZ_SIM_RESOURCE_PATH="${GUI_RES}" gz sim -g > "${LOGDIR}/gz_gui.log" 2>&1 &
+  # point the GUI camera at the drone (the world's default view looks at empty ground); retried until the
+  # GUI's follow service exists. Visualisation only.
+  ( for i in $(seq 1 60); do
+      if gz service -s /gui/follow --reqtype gz.msgs.StringMsg --reptype gz.msgs.Boolean --timeout 2000 \
+           --req "data: \"${M}\"" 2>/dev/null | grep -q "data: true"; then
+        gz service -s /gui/follow/offset --reqtype gz.msgs.Vector3d --reptype gz.msgs.Boolean --timeout 2000 \
+          --req "x: -9, y: -6, z: 5" >/dev/null 2>&1
+        echo "GUI camera following ${M}" >> "${LOGDIR}/gz_gui.log"; break
+      fi; sleep 2; done ) &
 fi
 
 echo "=== [2/7] sensor bridges: clock, LiDAR cloud, up/down range cones, gimbal camera + pitch command, contact ==="
