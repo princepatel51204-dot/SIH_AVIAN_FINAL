@@ -2259,15 +2259,16 @@
   "RP01": {
    "rings": 3,
    "viewpoints": 9,
+   "look_up_dwells": 2,
    "orbit_path_m": 27.8,
    "transit_in_and_links_m": 40.1,
-   "est_time_min": 1.2,
+   "est_time_min": 1.3,
    "coverage_pct": {
-    "shaft": 97.8,
-    "column_all_faces": 97.8,
-    "cap_or_head": 54.6,
+    "shaft": 98.6,
+    "column_all_faces": 98.6,
+    "cap_or_head": 75.8,
     "footing": 100.0,
-    "whole_subject": 81.8
+    "whole_subject": 90.2
    },
    "visible_by_face": {
     "pier_cap/+Y": 0.6,
@@ -2279,27 +2280,27 @@
     "pier_footing/+Z": 15.0
    },
    "visible_area_m2": 72.2,
-   "uncovered_area_m2": 13.2,
+   "uncovered_area_m2": 7.1,
    "uncovered_by_face": {
     "pier_cap/+Y": 0.6,
     "pier_cap/+Z": 5.4,
-    "pier_cap/-X": 5.8,
     "pier_cap/-Y": 0.6,
-    "pier_column/side": 0.7
+    "pier_column/side": 0.4
    }
   },
   "RP02": {
    "rings": 3,
    "viewpoints": 25,
+   "look_up_dwells": 5,
    "orbit_path_m": 88.0,
    "transit_in_and_links_m": 67.2,
-   "est_time_min": 3.0,
+   "est_time_min": 3.2,
    "coverage_pct": {
     "shaft": 98.4,
     "column_all_faces": 98.4,
-    "cap_or_head": 55.3,
+    "cap_or_head": 73.4,
     "footing": 100.0,
-    "whole_subject": 85.2
+    "whole_subject": 90.9
    },
    "visible_by_face": {
     "pier_cap/+X": 16.8,
@@ -2312,12 +2313,11 @@
     "pier_footing/+Z": 34.0
    },
    "visible_area_m2": 211.3,
-   "uncovered_area_m2": 31.2,
+   "uncovered_area_m2": 19.3,
    "uncovered_by_face": {
-    "pier_cap/+X": 6.8,
     "pier_cap/+Y": 2.5,
     "pier_cap/+Z": 10.8,
-    "pier_cap/-X": 6.8,
+    "pier_cap/-X": 1.6,
     "pier_cap/-Y": 2.5,
     "pier_column/side": 1.8
    }
@@ -2325,15 +2325,16 @@
   "RP03": {
    "rings": 3,
    "viewpoints": 25,
+   "look_up_dwells": 5,
    "orbit_path_m": 88.2,
    "transit_in_and_links_m": 49.4,
-   "est_time_min": 2.8,
+   "est_time_min": 3.1,
    "coverage_pct": {
     "shaft": 98.1,
     "column_all_faces": 98.1,
-    "cap_or_head": 44.6,
+    "cap_or_head": 73.7,
     "footing": 99.3,
-    "whole_subject": 81.8
+    "whole_subject": 90.8
    },
    "visible_by_face": {
     "pier_cap/+X": 16.8,
@@ -2346,12 +2347,11 @@
     "pier_footing/+Z": 34.0
    },
    "visible_area_m2": 213.3,
-   "uncovered_area_m2": 38.8,
+   "uncovered_area_m2": 19.7,
    "uncovered_by_face": {
-    "pier_cap/+X": 10.3,
     "pier_cap/+Y": 2.5,
     "pier_cap/+Z": 10.8,
-    "pier_cap/-X": 10.3,
+    "pier_cap/-X": 1.4,
     "pier_cap/-Y": 2.5,
     "pier_column/side": 2.2,
     "pier_footing/+Z": 0.2
@@ -2360,15 +2360,16 @@
   "RP04": {
    "rings": 3,
    "viewpoints": 27,
+   "look_up_dwells": 4,
    "orbit_path_m": 92.0,
    "transit_in_and_links_m": 54.9,
-   "est_time_min": 3.0,
+   "est_time_min": 3.2,
    "coverage_pct": {
     "shaft": 98.4,
     "column_all_faces": 98.4,
-    "cap_or_head": 40.8,
+    "cap_or_head": 68.4,
     "footing": 100.0,
-    "whole_subject": 79.7
+    "whole_subject": 88.8
    },
    "visible_by_face": {
     "pier_cap/+X": 16.8,
@@ -2381,12 +2382,10 @@
     "pier_footing/+Z": 34.0
    },
    "visible_area_m2": 221.7,
-   "uncovered_area_m2": 44.9,
+   "uncovered_area_m2": 24.9,
    "uncovered_by_face": {
-    "pier_cap/+X": 9.8,
     "pier_cap/+Y": 2.5,
     "pier_cap/+Z": 18.0,
-    "pier_cap/-X": 10.3,
     "pier_cap/-Y": 2.5,
     "pier_column/side": 1.8
    }
@@ -2394,15 +2393,16 @@
   "RP05": {
    "rings": 3,
    "viewpoints": 23,
+   "look_up_dwells": 4,
    "orbit_path_m": 71.5,
    "transit_in_and_links_m": 117.2,
-   "est_time_min": 3.2,
+   "est_time_min": 3.4,
    "coverage_pct": {
-    "shaft": 96.5,
-    "column_all_faces": 96.5,
-    "cap_or_head": 42.0,
+    "shaft": 96.6,
+    "column_all_faces": 96.6,
+    "cap_or_head": 65.1,
     "footing": 100.0,
-    "whole_subject": 77.7
+    "whole_subject": 86.0
    },
    "visible_by_face": {
     "pier_cap/+X": 16.8,
@@ -2415,28 +2415,27 @@
     "pier_footing/+Z": 34.0
    },
    "visible_area_m2": 215.7,
-   "uncovered_area_m2": 48.1,
+   "uncovered_area_m2": 30.2,
    "uncovered_by_face": {
-    "pier_cap/+X": 9.1,
     "pier_cap/+Y": 2.5,
     "pier_cap/+Z": 21.6,
-    "pier_cap/-X": 8.6,
     "pier_cap/-Y": 2.5,
-    "pier_column/side": 3.7
+    "pier_column/side": 3.5
    }
   },
   "RP06": {
    "rings": 3,
    "viewpoints": 25,
+   "look_up_dwells": 5,
    "orbit_path_m": 88.2,
    "transit_in_and_links_m": 35.9,
-   "est_time_min": 2.7,
+   "est_time_min": 3.0,
    "coverage_pct": {
     "shaft": 98.2,
     "column_all_faces": 98.2,
-    "cap_or_head": 44.6,
+    "cap_or_head": 73.7,
     "footing": 100.0,
-    "whole_subject": 82.0
+    "whole_subject": 91.0
    },
    "visible_by_face": {
     "pier_cap/+X": 16.8,
@@ -2449,12 +2448,11 @@
     "pier_footing/+Z": 34.0
    },
    "visible_area_m2": 213.3,
-   "uncovered_area_m2": 38.4,
+   "uncovered_area_m2": 19.3,
    "uncovered_by_face": {
-    "pier_cap/+X": 10.3,
+    "pier_cap/+X": 1.4,
     "pier_cap/+Y": 2.5,
     "pier_cap/+Z": 10.8,
-    "pier_cap/-X": 10.3,
     "pier_cap/-Y": 2.5,
     "pier_column/side": 2.0
    }
@@ -2462,15 +2460,16 @@
   "RP07": {
    "rings": 3,
    "viewpoints": 25,
+   "look_up_dwells": 5,
    "orbit_path_m": 88.0,
    "transit_in_and_links_m": 48.2,
-   "est_time_min": 2.8,
+   "est_time_min": 3.1,
    "coverage_pct": {
     "shaft": 98.4,
     "column_all_faces": 98.4,
-    "cap_or_head": 55.3,
+    "cap_or_head": 73.7,
     "footing": 100.0,
-    "whole_subject": 85.3
+    "whole_subject": 91.0
    },
    "visible_by_face": {
     "pier_cap/+X": 16.8,
@@ -2483,12 +2482,11 @@
     "pier_footing/+Z": 34.0
    },
    "visible_area_m2": 211.3,
-   "uncovered_area_m2": 31.1,
+   "uncovered_area_m2": 19.0,
    "uncovered_by_face": {
-    "pier_cap/+X": 6.8,
+    "pier_cap/+X": 1.4,
     "pier_cap/+Y": 2.5,
     "pier_cap/+Z": 10.8,
-    "pier_cap/-X": 6.8,
     "pier_cap/-Y": 2.5,
     "pier_column/side": 1.8
    }
@@ -2496,15 +2494,16 @@
   "RP08": {
    "rings": 3,
    "viewpoints": 9,
+   "look_up_dwells": 2,
    "orbit_path_m": 24.2,
    "transit_in_and_links_m": 66.2,
-   "est_time_min": 1.4,
+   "est_time_min": 1.5,
    "coverage_pct": {
-    "shaft": 98.6,
-    "column_all_faces": 98.6,
-    "cap_or_head": 42.7,
+    "shaft": 99.0,
+    "column_all_faces": 99.0,
+    "cap_or_head": 75.8,
     "footing": 100.0,
-    "whole_subject": 77.6
+    "whole_subject": 90.4
    },
    "visible_by_face": {
     "pier_cap/+X": 16.8,
@@ -2516,18 +2515,18 @@
     "pier_footing/+Z": 15.0
    },
    "visible_area_m2": 72.2,
-   "uncovered_area_m2": 16.2,
+   "uncovered_area_m2": 7.0,
    "uncovered_by_face": {
-    "pier_cap/+X": 9.1,
     "pier_cap/+Y": 0.6,
     "pier_cap/+Z": 5.4,
     "pier_cap/-Y": 0.6,
-    "pier_column/side": 0.4
+    "pier_column/side": 0.3
    }
   },
   "MC11": {
    "rings": 4,
    "viewpoints": 26,
+   "look_up_dwells": 0,
    "orbit_path_m": 90.6,
    "transit_in_and_links_m": 63.6,
    "est_time_min": 3.0,
@@ -2568,6 +2567,7 @@
   "MC10": {
    "rings": 4,
    "viewpoints": 26,
+   "look_up_dwells": 0,
    "orbit_path_m": 90.6,
    "transit_in_and_links_m": 41.9,
    "est_time_min": 2.9,
@@ -2606,6 +2606,7 @@
   "MC09": {
    "rings": 4,
    "viewpoints": 26,
+   "look_up_dwells": 0,
    "orbit_path_m": 90.6,
    "transit_in_and_links_m": 55.9,
    "est_time_min": 3.0,
@@ -2644,6 +2645,7 @@
   "MC08": {
    "rings": 4,
    "viewpoints": 26,
+   "look_up_dwells": 0,
    "orbit_path_m": 90.6,
    "transit_in_and_links_m": 55.9,
    "est_time_min": 3.0,
@@ -2682,6 +2684,7 @@
   "MC07": {
    "rings": 4,
    "viewpoints": 26,
+   "look_up_dwells": 0,
    "orbit_path_m": 90.6,
    "transit_in_and_links_m": 55.9,
    "est_time_min": 3.0,
@@ -2720,6 +2723,7 @@
   "MC06": {
    "rings": 3,
    "viewpoints": 16,
+   "look_up_dwells": 0,
    "orbit_path_m": 49.8,
    "transit_in_and_links_m": 59.6,
    "est_time_min": 2.0,
@@ -2763,6 +2767,7 @@
   "MC05": {
    "rings": 3,
    "viewpoints": 18,
+   "look_up_dwells": 0,
    "orbit_path_m": 60.4,
    "transit_in_and_links_m": 112.5,
    "est_time_min": 2.7,
@@ -2806,6 +2811,7 @@
   "MC04": {
    "rings": 3,
    "viewpoints": 18,
+   "look_up_dwells": 0,
    "orbit_path_m": 60.4,
    "transit_in_and_links_m": 64.3,
    "est_time_min": 2.3,
@@ -2849,6 +2855,7 @@
   "MC03": {
    "rings": 4,
    "viewpoints": 26,
+   "look_up_dwells": 0,
    "orbit_path_m": 90.6,
    "transit_in_and_links_m": 58.0,
    "est_time_min": 3.0,
@@ -2887,6 +2894,7 @@
   "MC02": {
    "rings": 4,
    "viewpoints": 26,
+   "look_up_dwells": 0,
    "orbit_path_m": 90.6,
    "transit_in_and_links_m": 55.9,
    "est_time_min": 3.0,
@@ -2925,6 +2933,7 @@
   "MC01": {
    "rings": 4,
    "viewpoints": 26,
+   "look_up_dwells": 0,
    "orbit_path_m": 90.6,
    "transit_in_and_links_m": 55.9,
    "est_time_min": 3.0,
@@ -2964,11 +2973,15 @@
   }
  },
  "totals": {
-  "waypoints": 428,
+  "waypoints": 460,
+  "look_up_dwells": 32,
+  "est_time_min_sum_of_subjects": 52.7,
+  "est_total_sim_min_path_based": 53.1,
+  "est_note": "dwell time (3.0 s each) is an estimate, not yet measured in flight",
   "path_m": 2698.22,
   "route_failures": 0,
   "segment_recheck": {
-   "n_segments": 1508,
+   "n_segments": 1540,
    "n_violations": 0,
    "raw_min_clearance_m": 3.505,
    "min_camera_pivot_clearance_m": 3.523,

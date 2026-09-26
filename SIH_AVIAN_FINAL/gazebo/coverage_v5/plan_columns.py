@@ -48,6 +48,11 @@ MIN_FREE_FRAC_TOP = 0.20          # highest ring altitude: at least this share o
 PITCH_CANDS = np.radians(np.arange(-60, 76, 5))
 CRUISE = 1.9
 S_PER_WAYPOINT = 3.9              # measured in full_pass_05: (9375 s - 9162 m/1.9) / 1161 waypoints
+DWELLS = True                     # look-up dwells on road piers (see plan_dwells)
+DWELL_PITCHES = np.radians(np.arange(-60, 91, 10))
+DWELL_GAIN_FRAC = 0.95            # stop when 95 % of the reachable cap/head gain is captured
+DWELL_S = 3.0                     # ESTIMATED sim seconds per dwell (gimbal settle 1.0 + hold 1.0 + margin);
+                                  # not measured until a plan with dwells is flown
 HOME_AIR = PV.HOME_AIR
 
 
@@ -411,6 +416,71 @@ def ring_vias(sh, s_a, s_b, d, z):
     return [[float(p[0]), float(p[1]), float(z)] for p in sh.point(ss)]
 
 
+def plan_dwells(sub, pat, V, sub_wps):
+    """Extra gimbal-pitch dwells at EXISTING viewpoints to see the pier cap / head.
+
+    Each ring uses one pitch, chosen for the shaft; the cap's side faces sit above the top ring and
+    need a look-up angle. Positions and headings are unchanged, so base_link and camera-pivot
+    clearance, routing and the flat/vertical rule are exactly those of the parent viewpoint; only
+    the gimbal pitch differs (+/-90 deg joint limit is not approached). Greedy set cover on cap/head
+    area over (viewpoint, pitch) candidates until DWELL_GAIN_FRAC of the reachable gain is captured.
+    Returns [(index into the reachable sub_wps, pitch_rad)]."""
+    vis = pat['reason'] == 0
+    A = pat['area']
+    cap = np.isin(pat['solid'], sub['caps']) & vis
+    if not cap.any():
+        return [], sub_wps
+
+    def vmask(cam, f, l, u):
+        m = np.zeros(len(A), bool)
+        m[V.visible(cam, f, l, u)] = True
+        return m
+
+    reach = [w for w in sub_wps if w['reachable_in_plan']]
+    seen = np.zeros(len(A), bool)
+    for w in reach:
+        seen |= vmask(np.array(w['camera_world_m']), *C.cam_axes(w['heading_rad'], w['gimbal_pitch_rad']))
+    cands, bound = [], seen.copy()
+    for wi, w in enumerate(reach):
+        for th in DWELL_PITCHES:
+            cam, (f, l, u) = cam_pose(np.array(w['position_m']), w['heading_rad'], th)
+            m = vmask(cam, f, l, u)
+            cands.append((wi, float(th), m))
+            bound |= m
+
+    def capcov(m):
+        return 100.0 * float(A[cap & m].sum()) / float(A[cap].sum())
+    target = capcov(seen) + DWELL_GAIN_FRAC * (capcov(bound) - capcov(seen))
+    chosen, cur = [], seen.copy()
+    while capcov(cur) < target - 1e-9:
+        best = max(cands, key=lambda c: float(A[cap & c[2] & ~cur].sum()))
+        if float(A[cap & best[2] & ~cur].sum()) <= 1e-6:
+            break
+        chosen.append((best[0], best[1]))
+        cur |= best[2]
+    return chosen, reach
+
+
+def insert_dwells(sub_wps, chosen, reach):
+    """Place each dwell immediately after its parent viewpoint (same position, zero-length leg)."""
+    after = {}
+    for wi, th in chosen:
+        after.setdefault(id(reach[wi]), []).append(th)
+    out = []
+    for w in sub_wps:
+        out.append(w)
+        for k, th in enumerate(sorted(after.get(id(w), [])), 1):
+            d = dict(w)
+            pos = np.array(w['position_m'])
+            dcam = math.hypot(w['target_m'][0] - pos[0], w['target_m'][1] - pos[1])
+            d.update({'waypoint_id': f"{w['waypoint_id']}_D{k}", 'gimbal_pitch_rad': round(float(th), 4),
+                      'target_m': [w['target_m'][0], w['target_m'][1], round(float(pos[2] + dcam * math.tan(th)), 3)],
+                      'route_in': [], 'route_method': 'dwell', 'route_length_m': 0.0,
+                      'dwell': True, 'dwell_of': w['waypoint_id']})
+            out.append(d)
+    return out
+
+
 def build(designs, S, feas, do_route=True):
     import plan_gazebo_mission as PG
     PG.clearance = lambda pts, prims: C.fast_clearance(S, pts)      # same exact clearance the v5 router uses
@@ -478,6 +548,13 @@ def build(designs, S, feas, do_route=True):
                 prev_idx, prev_dir = visit[-1], dirn
         # planned coverage of this subject from the viewpoints actually kept
         V = C.Visibility(S, pat, pat['reason'] == 0)
+        n_dw = 0
+        if DWELLS and sub['kind'] == 'road_pier_pair':
+            chosen, reach_ = plan_dwells(sub, pat, V, wps[n_wp0:])
+            if chosen:
+                wps[n_wp0:] = insert_dwells(wps[n_wp0:], chosen, reach_)
+                n_dw = len(chosen)
+        n_ring = len(wps) - n_wp0 - n_dw
         seen = np.zeros(len(pat['area']), bool)
         for w in wps[n_wp0:]:
             if not w['reachable_in_plan']:
@@ -493,9 +570,9 @@ def build(designs, S, feas, do_route=True):
             return None if not m.any() else round(100 * float(A[m & seen].sum()) / float(A[m].sum()), 1)
         col = np.isin(pat['solid'], sub['columns'])
         per_sub[sid] = {
-            'rings': len(rings), 'viewpoints': len(wps) - n_wp0, 'orbit_path_m': round(orbit_len, 1),
+            'rings': len(rings), 'viewpoints': n_ring, 'look_up_dwells': n_dw, 'orbit_path_m': round(orbit_len, 1),
             'transit_in_and_links_m': round(transit_len, 1),
-            'est_time_min': round(((orbit_len + transit_len) / CRUISE + S_PER_WAYPOINT * (len(wps) - n_wp0)) / 60, 1),
+            'est_time_min': round(((orbit_len + transit_len) / CRUISE + S_PER_WAYPOINT * n_ring + DWELL_S * n_dw) / 60, 1),
             'coverage_pct': {'shaft': pct(col & (pat['face'] == 'side')), 'column_all_faces': pct(col),
                              'cap_or_head': pct(np.isin(pat['solid'], sub['caps'])),
                              'footing': pct(np.isin(pat['solid'], sub['footings'])), 'whole_subject': pct(np.ones(len(A), bool))},
@@ -534,7 +611,7 @@ def build(designs, S, feas, do_route=True):
             'mode': 'per_column_orbital_inspection', 'camera': 'gimbal', 'camera_mount_m': PIVOT.tolist(),
             'sensed_clearance_m': 3.0, 'plan_clearance_m': PLAN_CLEARANCE_M, 'min_agl_m': 3.5,
             'home_ground_world_m': [20.0, -30.0, 0.0], 'home_air_world_m': HOME_AIR.tolist(),
-            'n_waypoints': len(wps), 'route_failures': n_fail,
+            'n_waypoints': len(wps), 'n_look_up_dwells': sum(1 for w in wps if w.get('dwell')), 'route_failures': n_fail,
             'segment_recheck': {'n_segments': n_seg, 'n_violations': n_bad, 'raw_min_clearance_m': round(raw_min, 3),
                                 'min_camera_pivot_clearance_m': round(float(piv_min), 3), 'worst': worst[:10]},
             'rth': {'route': rth or [], 'method': rth_m, 'length_m': round(rth_len, 3)},
@@ -548,7 +625,10 @@ def main():
     ap.add_argument('--out', default=os.path.join(C.ROOT, 'mission', 'gazebo_columns_plan.json'))
     ap.add_argument('--report', default=os.path.join(C.ROOT, 'mission', 'columns_plan_report.json'))
     ap.add_argument('--no-route', action='store_true', help='design + coverage only (no routing, no plan JSON)')
+    ap.add_argument('--no-dwells', action='store_true', help='do not add look-up dwells (the plan flown in columns_smoke25)')
     a = ap.parse_args()
+    global DWELLS
+    DWELLS = not a.no_dwells
     t0 = time.time()
     S = C.Solids()
     subs = inventory(S)
@@ -581,7 +661,12 @@ def main():
                       'lidar_band_margin_deg': round(14 - alpha, 1)})
     rep = {'helix_analysis': {'orbit_radius_m': R_, 'note': 'ring lidar +/-14 deg; follower flies <=12 deg as flat', 'rows': helix},
            'inventory': inv, 'design': [d[2] for d in designs], 'per_subject': per_sub,
-           'totals': {'waypoints': plan['n_waypoints'], 'path_m': plan['planned_total_path_m'],
+           'totals': {'waypoints': plan['n_waypoints'], 'look_up_dwells': plan['n_look_up_dwells'],
+                      'est_time_min_sum_of_subjects': round(sum(v['est_time_min'] for v in per_sub.values()), 1),
+                      'est_total_sim_min_path_based': round((plan['planned_total_path_m'] / CRUISE + S_PER_WAYPOINT * (plan['n_waypoints'] - plan['n_look_up_dwells'])
+                                                             + DWELL_S * plan['n_look_up_dwells']) / 60, 1),
+                      'est_note': 'dwell time (%.1f s each) is an estimate, not yet measured in flight' % DWELL_S,
+                      'path_m': plan['planned_total_path_m'],
                       'route_failures': plan['route_failures'], 'segment_recheck': plan['segment_recheck']}}
     json.dump(rep, open(a.report, 'w'), indent=1, default=float)
     log(f"plan: {plan['n_waypoints']} viewpoints, path {plan['planned_total_path_m']:.0f} m, failures {plan['route_failures']}, "

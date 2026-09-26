@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-26T17:15:45Z",
+ "generated_utc": "2026-09-26T17:29:01Z",
  "planner": "gazebo/coverage_v5/plan_columns.py (offline; geometry only, no defect data)",
  "mode": "per_column_orbital_inspection",
  "camera": "gimbal",
@@ -21,10 +21,11 @@
   -30.0,
   5.0
  ],
- "n_waypoints": 428,
+ "n_waypoints": 460,
+ "n_look_up_dwells": 32,
  "route_failures": 0,
  "segment_recheck": {
-  "n_segments": 1508,
+  "n_segments": 1540,
   "n_violations": 0,
   "raw_min_clearance_m": 3.505,
   "min_camera_pivot_clearance_m": 3.523,
@@ -98,6 +99,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP01_R1_01_D1",
+   "position_m": [
+    -4.85,
+    -2.75,
+    8.8
+   ],
+   "heading_rad": 0.0,
+   "gimbal_pitch_rad": 0.1745,
+   "camera_world_m": [
+    -4.5,
+    -2.75,
+    8.85
+   ],
+   "target_m": [
+    0.0,
+    -2.75,
+    9.655
+   ],
+   "seed_member": "BR_PIER_COL_001_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 1,
+   "column_id": "RP01",
+   "ring": 1,
+   "ring_z_m": 8.8,
+   "ring_index": 0,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP01_R1_01"
+  },
+  {
    "waypoint_id": "RP01_R1_02",
    "position_m": [
     -4.85,
@@ -140,6 +176,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP01_R1_02_D1",
+   "position_m": [
+    -4.85,
+    1.0203,
+    8.8
+   ],
+   "heading_rad": 0.3426,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    -4.5203,
+    1.1379,
+    8.85
+   ],
+   "target_m": [
+    0.0,
+    2.75,
+    11.773
+   ],
+   "seed_member": "BR_PIER_COL_001_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 1,
+   "column_id": "RP01",
+   "ring": 1,
+   "ring_z_m": 8.8,
+   "ring_index": 1,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP01_R1_02"
   },
   {
    "waypoint_id": "RP01_R1_03",
@@ -541,6 +612,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP02_R1_02_D1",
+   "position_m": [
+    49.85,
+    0.8648,
+    8.8
+   ],
+   "heading_rad": 2.7709,
+   "gimbal_pitch_rad": 0.3491,
+   "camera_world_m": [
+    49.5238,
+    0.9916,
+    8.85
+   ],
+   "target_m": [
+    45.0,
+    2.75,
+    10.694
+   ],
+   "seed_member": "BR_PIER_COL_002_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 2,
+   "column_id": "RP02",
+   "ring": 1,
+   "ring_z_m": 8.8,
+   "ring_index": 6,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP02_R1_02"
+  },
+  {
    "waypoint_id": "RP02_R1_03",
    "position_m": [
     49.8475,
@@ -583,6 +689,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP02_R1_03_D1",
+   "position_m": [
+    49.8475,
+    -2.9054,
+    8.8
+   ],
+   "heading_rad": 3.1095,
+   "gimbal_pitch_rad": 0.1745,
+   "camera_world_m": [
+    49.4977,
+    -2.8942,
+    8.85
+   ],
+   "target_m": [
+    45.0,
+    -2.75,
+    9.655
+   ],
+   "seed_member": "BR_PIER_COL_002_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 2,
+   "column_id": "RP02",
+   "ring": 1,
+   "ring_z_m": 8.8,
+   "ring_index": 7,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP02_R1_03"
   },
   {
    "waypoint_id": "RP02_R2_01",
@@ -838,6 +979,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP02_R2_06_D1",
+   "position_m": [
+    40.573,
+    4.7309,
+    6.04
+   ],
+   "heading_rad": -0.4207,
+   "gimbal_pitch_rad": 0.6981,
+   "camera_world_m": [
+    40.8925,
+    4.588,
+    6.09
+   ],
+   "target_m": [
+    45.0,
+    2.75,
+    10.11
+   ],
+   "seed_member": "BR_PIER_COL_002_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 2,
+   "column_id": "RP02",
+   "ring": 2,
+   "ring_z_m": 6.04,
+   "ring_index": 2,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP02_R2_06"
+  },
+  {
    "waypoint_id": "RP02_R2_07",
    "position_m": [
     40.15,
@@ -882,6 +1058,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP02_R2_07_D1",
+   "position_m": [
+    40.15,
+    1.0203,
+    6.04
+   ],
+   "heading_rad": 0.3426,
+   "gimbal_pitch_rad": 0.6981,
+   "camera_world_m": [
+    40.4797,
+    1.1379,
+    6.09
+   ],
+   "target_m": [
+    45.0,
+    2.75,
+    10.361
+   ],
+   "seed_member": "BR_PIER_COL_002_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 2,
+   "column_id": "RP02",
+   "ring": 2,
+   "ring_z_m": 6.04,
+   "ring_index": 1,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP02_R2_07"
+  },
+  {
    "waypoint_id": "RP02_R2_08",
    "position_m": [
     40.15,
@@ -924,6 +1135,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP02_R2_08_D1",
+   "position_m": [
+    40.15,
+    -2.75,
+    6.04
+   ],
+   "heading_rad": 0.0,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    40.5,
+    -2.75,
+    6.09
+   ],
+   "target_m": [
+    45.0,
+    -2.75,
+    8.84
+   ],
+   "seed_member": "BR_PIER_COL_002_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 2,
+   "column_id": "RP02",
+   "ring": 2,
+   "ring_z_m": 6.04,
+   "ring_index": 0,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP02_R2_08"
   },
   {
    "waypoint_id": "RP02_R2_09",
@@ -1590,6 +1836,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP03_R1_01_D1",
+   "position_m": [
+    94.4882,
+    4.588,
+    9.0
+   ],
+   "heading_rad": -2.7529,
+   "gimbal_pitch_rad": 0.3491,
+   "camera_world_m": [
+    94.1643,
+    4.4554,
+    9.05
+   ],
+   "target_m": [
+    90.0,
+    2.75,
+    10.765
+   ],
+   "seed_member": "BR_PIER_COL_003_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 3,
+   "column_id": "RP03",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 5,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP03_R1_01"
+  },
+  {
    "waypoint_id": "RP03_R1_02",
    "position_m": [
     94.85,
@@ -1676,6 +1957,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP03_R1_03_D1",
+   "position_m": [
+    94.8475,
+    -2.9054,
+    9.0
+   ],
+   "heading_rad": 3.1095,
+   "gimbal_pitch_rad": 0.3491,
+   "camera_world_m": [
+    94.4977,
+    -2.8942,
+    9.05
+   ],
+   "target_m": [
+    90.0,
+    -2.75,
+    10.765
+   ],
+   "seed_member": "BR_PIER_COL_003_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 3,
+   "column_id": "RP03",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 7,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP03_R1_03"
   },
   {
    "waypoint_id": "RP03_R2_01",
@@ -1931,6 +2247,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP03_R2_06_D1",
+   "position_m": [
+    85.573,
+    4.7309,
+    6.24
+   ],
+   "heading_rad": -0.4207,
+   "gimbal_pitch_rad": 0.6981,
+   "camera_world_m": [
+    85.8925,
+    4.588,
+    6.29
+   ],
+   "target_m": [
+    90.0,
+    2.75,
+    10.31
+   ],
+   "seed_member": "BR_PIER_COL_003_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 3,
+   "column_id": "RP03",
+   "ring": 2,
+   "ring_z_m": 6.24,
+   "ring_index": 2,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP03_R2_06"
+  },
+  {
    "waypoint_id": "RP03_R2_07",
    "position_m": [
     85.15,
@@ -1975,6 +2326,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP03_R2_07_D1",
+   "position_m": [
+    85.15,
+    1.0203,
+    6.24
+   ],
+   "heading_rad": 0.3426,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    85.4797,
+    1.1379,
+    6.29
+   ],
+   "target_m": [
+    90.0,
+    2.75,
+    9.213
+   ],
+   "seed_member": "BR_PIER_COL_003_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 3,
+   "column_id": "RP03",
+   "ring": 2,
+   "ring_z_m": 6.24,
+   "ring_index": 1,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP03_R2_07"
+  },
+  {
    "waypoint_id": "RP03_R2_08",
    "position_m": [
     85.15,
@@ -2017,6 +2403,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP03_R2_08_D1",
+   "position_m": [
+    85.15,
+    -2.75,
+    6.24
+   ],
+   "heading_rad": 0.0,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    85.5,
+    -2.75,
+    6.29
+   ],
+   "target_m": [
+    90.0,
+    -2.75,
+    9.04
+   ],
+   "seed_member": "BR_PIER_COL_003_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 3,
+   "column_id": "RP03",
+   "ring": 2,
+   "ring_z_m": 6.24,
+   "ring_index": 0,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP03_R2_08"
   },
   {
    "waypoint_id": "RP03_R2_09",
@@ -2657,6 +3078,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP04_R1_01_D1",
+   "position_m": [
+    130.15,
+    -2.75,
+    9.0
+   ],
+   "heading_rad": 0.0,
+   "gimbal_pitch_rad": 0.3491,
+   "camera_world_m": [
+    130.5,
+    -2.75,
+    9.05
+   ],
+   "target_m": [
+    135.0,
+    -2.75,
+    10.765
+   ],
+   "seed_member": "BR_PIER_COL_004_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 4,
+   "column_id": "RP04",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 0,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP04_R1_01"
+  },
+  {
    "waypoint_id": "RP04_R1_02",
    "position_m": [
     130.15,
@@ -2699,6 +3155,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP04_R1_02_D1",
+   "position_m": [
+    130.15,
+    1.0203,
+    9.0
+   ],
+   "heading_rad": 0.3426,
+   "gimbal_pitch_rad": 0.1745,
+   "camera_world_m": [
+    130.4797,
+    1.1379,
+    9.05
+   ],
+   "target_m": [
+    135.0,
+    2.75,
+    9.908
+   ],
+   "seed_member": "BR_PIER_COL_004_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 4,
+   "column_id": "RP04",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 1,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP04_R1_02"
   },
   {
    "waypoint_id": "RP04_R1_03",
@@ -2834,6 +3325,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP04_R1_04_D1",
+   "position_m": [
+    139.85,
+    0.8648,
+    9.0
+   ],
+   "heading_rad": 2.7709,
+   "gimbal_pitch_rad": 0.1745,
+   "camera_world_m": [
+    139.5238,
+    0.9916,
+    9.05
+   ],
+   "target_m": [
+    135.0,
+    2.75,
+    9.918
+   ],
+   "seed_member": "BR_PIER_COL_004_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 4,
+   "column_id": "RP04",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 6,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP04_R1_04"
+  },
+  {
    "waypoint_id": "RP04_R1_05",
    "position_m": [
     139.8475,
@@ -2876,6 +3402,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP04_R1_05_D1",
+   "position_m": [
+    139.8475,
+    -2.9054,
+    9.0
+   ],
+   "heading_rad": 3.1095,
+   "gimbal_pitch_rad": 0.6981,
+   "camera_world_m": [
+    139.4977,
+    -2.8942,
+    9.05
+   ],
+   "target_m": [
+    135.0,
+    -2.75,
+    13.07
+   ],
+   "seed_member": "BR_PIER_COL_004_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 4,
+   "column_id": "RP04",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 7,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP04_R1_05"
   },
   {
    "waypoint_id": "RP04_R2_01",
@@ -3901,6 +4462,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP05_R1_02_D1",
+   "position_m": [
+    220.15,
+    1.0203,
+    9.0
+   ],
+   "heading_rad": 0.3426,
+   "gimbal_pitch_rad": 0.0,
+   "camera_world_m": [
+    220.4797,
+    1.1379,
+    9.05
+   ],
+   "target_m": [
+    225.0,
+    2.75,
+    9.0
+   ],
+   "seed_member": "BR_PIER_COL_005_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 5,
+   "column_id": "RP05",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 1,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP05_R1_02"
+  },
+  {
    "waypoint_id": "RP05_R1_03",
    "position_m": [
     229.85,
@@ -3988,6 +4584,41 @@
    "route_length_m": 23.913,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP05_R1_03_D1",
+   "position_m": [
+    229.85,
+    0.8648,
+    9.0
+   ],
+   "heading_rad": 2.7709,
+   "gimbal_pitch_rad": 0.0,
+   "camera_world_m": [
+    229.5238,
+    0.9916,
+    9.05
+   ],
+   "target_m": [
+    225.0,
+    2.75,
+    9.0
+   ],
+   "seed_member": "BR_PIER_COL_005_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 5,
+   "column_id": "RP05",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 6,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP05_R1_03"
   },
   {
    "waypoint_id": "RP05_R1_04",
@@ -4115,6 +4746,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP05_R2_02_D1",
+   "position_m": [
+    229.8475,
+    -2.9054,
+    6.24
+   ],
+   "heading_rad": 3.1095,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    229.4977,
+    -2.8942,
+    6.29
+   ],
+   "target_m": [
+    225.0,
+    -2.75,
+    9.04
+   ],
+   "seed_member": "BR_PIER_COL_005_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 5,
+   "column_id": "RP05",
+   "ring": 2,
+   "ring_z_m": 6.24,
+   "ring_index": 7,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP05_R2_02"
   },
   {
    "waypoint_id": "RP05_R2_03",
@@ -4291,6 +4957,41 @@
    "route_length_m": 3.76,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP05_R2_06_D1",
+   "position_m": [
+    220.15,
+    -2.75,
+    6.24
+   ],
+   "heading_rad": 0.0,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    220.5,
+    -2.75,
+    6.29
+   ],
+   "target_m": [
+    225.0,
+    -2.75,
+    9.04
+   ],
+   "seed_member": "BR_PIER_COL_005_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 5,
+   "column_id": "RP05",
+   "ring": 2,
+   "ring_z_m": 6.24,
+   "ring_index": 0,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP05_R2_06"
   },
   {
    "waypoint_id": "RP05_R2_07",
@@ -4893,6 +5594,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP06_R1_01_D1",
+   "position_m": [
+    265.15,
+    -2.75,
+    9.0
+   ],
+   "heading_rad": 0.0,
+   "gimbal_pitch_rad": 0.3491,
+   "camera_world_m": [
+    265.5,
+    -2.75,
+    9.05
+   ],
+   "target_m": [
+    270.0,
+    -2.75,
+    10.765
+   ],
+   "seed_member": "BR_PIER_COL_006_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 6,
+   "column_id": "RP06",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 0,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP06_R1_01"
+  },
+  {
    "waypoint_id": "RP06_R1_02",
    "position_m": [
     265.15,
@@ -4935,6 +5671,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP06_R1_02_D1",
+   "position_m": [
+    265.15,
+    1.0203,
+    9.0
+   ],
+   "heading_rad": 0.3426,
+   "gimbal_pitch_rad": 0.1745,
+   "camera_world_m": [
+    265.4797,
+    1.1379,
+    9.05
+   ],
+   "target_m": [
+    270.0,
+    2.75,
+    9.908
+   ],
+   "seed_member": "BR_PIER_COL_006_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 6,
+   "column_id": "RP06",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 1,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP06_R1_02"
   },
   {
    "waypoint_id": "RP06_R1_03",
@@ -5278,6 +6049,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP06_R2_07_D1",
+   "position_m": [
+    274.8475,
+    -2.9054,
+    6.24
+   ],
+   "heading_rad": 3.1095,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    274.4977,
+    -2.8942,
+    6.29
+   ],
+   "target_m": [
+    270.0,
+    -2.75,
+    9.04
+   ],
+   "seed_member": "BR_PIER_COL_006_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 6,
+   "column_id": "RP06",
+   "ring": 2,
+   "ring_z_m": 6.24,
+   "ring_index": 7,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP06_R2_07"
+  },
+  {
    "waypoint_id": "RP06_R2_08",
    "position_m": [
     274.85,
@@ -5322,6 +6128,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP06_R2_08_D1",
+   "position_m": [
+    274.85,
+    0.8648,
+    6.24
+   ],
+   "heading_rad": 2.7709,
+   "gimbal_pitch_rad": 0.6981,
+   "camera_world_m": [
+    274.5238,
+    0.9916,
+    6.29
+   ],
+   "target_m": [
+    270.0,
+    2.75,
+    10.606
+   ],
+   "seed_member": "BR_PIER_COL_006_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 6,
+   "column_id": "RP06",
+   "ring": 2,
+   "ring_z_m": 6.24,
+   "ring_index": 6,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP06_R2_08"
+  },
+  {
    "waypoint_id": "RP06_R2_09",
    "position_m": [
     274.4882,
@@ -5364,6 +6205,41 @@
    "route_length_m": 3.766,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP06_R2_09_D1",
+   "position_m": [
+    274.4882,
+    4.588,
+    6.24
+   ],
+   "heading_rad": -2.7529,
+   "gimbal_pitch_rad": 0.6981,
+   "camera_world_m": [
+    274.1643,
+    4.4554,
+    6.29
+   ],
+   "target_m": [
+    270.0,
+    2.75,
+    10.31
+   ],
+   "seed_member": "BR_PIER_COL_006_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 6,
+   "column_id": "RP06",
+   "ring": 2,
+   "ring_z_m": 6.24,
+   "ring_index": 5,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP06_R2_09"
   },
   {
    "waypoint_id": "RP06_R2_10",
@@ -5971,6 +6847,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP07_R1_01_D1",
+   "position_m": [
+    310.15,
+    -2.75,
+    8.8
+   ],
+   "heading_rad": 0.0,
+   "gimbal_pitch_rad": 0.1745,
+   "camera_world_m": [
+    310.5,
+    -2.75,
+    8.85
+   ],
+   "target_m": [
+    315.0,
+    -2.75,
+    9.655
+   ],
+   "seed_member": "BR_PIER_COL_007_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 7,
+   "column_id": "RP07",
+   "ring": 1,
+   "ring_z_m": 8.8,
+   "ring_index": 0,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP07_R1_01"
+  },
+  {
    "waypoint_id": "RP07_R1_02",
    "position_m": [
     310.15,
@@ -6013,6 +6924,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP07_R1_02_D1",
+   "position_m": [
+    310.15,
+    1.0203,
+    8.8
+   ],
+   "heading_rad": 0.3426,
+   "gimbal_pitch_rad": 0.3491,
+   "camera_world_m": [
+    310.4797,
+    1.1379,
+    8.85
+   ],
+   "target_m": [
+    315.0,
+    2.75,
+    10.674
+   ],
+   "seed_member": "BR_PIER_COL_007_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 7,
+   "column_id": "RP07",
+   "ring": 1,
+   "ring_z_m": 8.8,
+   "ring_index": 1,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP07_R1_02"
   },
   {
    "waypoint_id": "RP07_R1_03",
@@ -6356,6 +7302,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP07_R2_07_D1",
+   "position_m": [
+    319.8475,
+    -2.9054,
+    6.04
+   ],
+   "heading_rad": 3.1095,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    319.4977,
+    -2.8942,
+    6.09
+   ],
+   "target_m": [
+    315.0,
+    -2.75,
+    8.84
+   ],
+   "seed_member": "BR_PIER_COL_007_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 7,
+   "column_id": "RP07",
+   "ring": 2,
+   "ring_z_m": 6.04,
+   "ring_index": 7,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP07_R2_07"
+  },
+  {
    "waypoint_id": "RP07_R2_08",
    "position_m": [
     319.85,
@@ -6400,6 +7381,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP07_R2_08_D1",
+   "position_m": [
+    319.85,
+    0.8648,
+    6.04
+   ],
+   "heading_rad": 2.7709,
+   "gimbal_pitch_rad": 0.6981,
+   "camera_world_m": [
+    319.5238,
+    0.9916,
+    6.09
+   ],
+   "target_m": [
+    315.0,
+    2.75,
+    10.406
+   ],
+   "seed_member": "BR_PIER_COL_007_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 7,
+   "column_id": "RP07",
+   "ring": 2,
+   "ring_z_m": 6.04,
+   "ring_index": 6,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP07_R2_08"
+  },
+  {
    "waypoint_id": "RP07_R2_09",
    "position_m": [
     319.4882,
@@ -6442,6 +7458,41 @@
    "route_length_m": 3.766,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP07_R2_09_D1",
+   "position_m": [
+    319.4882,
+    4.588,
+    6.04
+   ],
+   "heading_rad": -2.7529,
+   "gimbal_pitch_rad": 0.6981,
+   "camera_world_m": [
+    319.1643,
+    4.4554,
+    6.09
+   ],
+   "target_m": [
+    315.0,
+    2.75,
+    10.11
+   ],
+   "seed_member": "BR_PIER_COL_007_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 7,
+   "column_id": "RP07",
+   "ring": 2,
+   "ring_z_m": 6.04,
+   "ring_index": 5,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP07_R2_09"
   },
   {
    "waypoint_id": "RP07_R2_10",
@@ -7059,6 +8110,41 @@
    "candidate_index": -1
   },
   {
+   "waypoint_id": "RP08_R1_01_D1",
+   "position_m": [
+    364.4882,
+    4.588,
+    9.0
+   ],
+   "heading_rad": -2.7529,
+   "gimbal_pitch_rad": 0.3491,
+   "camera_world_m": [
+    364.1643,
+    4.4554,
+    9.05
+   ],
+   "target_m": [
+    360.0,
+    2.75,
+    10.765
+   ],
+   "seed_member": "BR_PIER_COL_008_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 8,
+   "column_id": "RP08",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 5,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP08_R1_01"
+  },
+  {
    "waypoint_id": "RP08_R1_02",
    "position_m": [
     364.85,
@@ -7134,6 +8220,41 @@
    "route_length_m": 3.77,
    "reachable_in_plan": true,
    "candidate_index": -1
+  },
+  {
+   "waypoint_id": "RP08_R1_03_D1",
+   "position_m": [
+    364.8475,
+    -2.9054,
+    9.0
+   ],
+   "heading_rad": 3.1095,
+   "gimbal_pitch_rad": 0.5236,
+   "camera_world_m": [
+    364.4977,
+    -2.8942,
+    9.05
+   ],
+   "target_m": [
+    360.0,
+    -2.75,
+    11.8
+   ],
+   "seed_member": "BR_PIER_COL_008_1",
+   "seed_component": "piers",
+   "lane": "columns",
+   "zone": 8,
+   "column_id": "RP08",
+   "ring": 1,
+   "ring_z_m": 9.0,
+   "ring_index": 7,
+   "route_in": [],
+   "route_method": "dwell",
+   "route_length_m": 0.0,
+   "reachable_in_plan": true,
+   "candidate_index": -1,
+   "dwell": true,
+   "dwell_of": "RP08_R1_03"
   },
   {
    "waypoint_id": "RP08_R2_01",

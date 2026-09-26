@@ -5,8 +5,10 @@ OFFLINE. Does not use plan_columns.py's own bookkeeping; re-derives everything f
 plan file and the scene solids (covlib):
 
   1. AIMING   for every viewpoint, cast the planned camera axis (camera_world_m, heading,
-              gimbal pitch) into the scene and report the first solid it hits. A viewpoint
-              "frames a column" when that solid is a pier column (BR_/MB_PIER_COL).
+              gimbal pitch) into the scene and report the first solid it hits. A ring
+              viewpoint "frames a column" when that solid is a pier column (BR_/MB_PIER_COL).
+              A look-up DWELL (dwell: true) aims at the cap/head on purpose; it passes when
+              the first solid is the cap/head or a column.
   2. AIRFRAME base_link clearance to every solid, sampled every 0.25 m along EVERY route
               piece (takeoff-to-home included), must be >= 3.5 m.
   3. ROUTE    every route piece is flat (<= 12 deg elevation) or steep (>= 50 deg).
@@ -32,6 +34,7 @@ import covlib as C  # noqa: E402
 
 PIV = np.array([0.35, 0.0, 0.05])
 COL = re.compile(r'^(BR|MB)_PIER_COL_')
+CAP = re.compile(r'^(BR|MB)_PIER_(CAP|HEAD)_')
 
 
 def first_hit(S, o, d, tmax=30.0, step=0.05):
@@ -70,19 +73,28 @@ def main():
         cam = np.array(w['camera_world_m'])
         f, _, _ = C.cam_axes(w['heading_rad'], w['gimbal_pitch_rad'])
         t, name = first_hit(S, cam, np.asarray(f, float))
-        ok = bool(name and COL.match(name))
-        d = per.setdefault(w['column_id'], {'n': 0, 'on_column': 0, 'range_m': []})
-        d['n'] += 1
-        d['on_column'] += ok
-        if t is not None and ok:
-            d['range_m'].append(t)
+        dwell = bool(w.get('dwell'))
+        ok = bool(name and (COL.match(name) or (dwell and CAP.match(name))))
+        d = per.setdefault(w['column_id'], {'n': 0, 'on_column': 0, 'range_m': [], 'dwells': 0, 'dwells_ok': 0, 'dwell_hits': collections.Counter()})
+        if dwell:
+            d['dwells'] += 1
+            d['dwells_ok'] += ok
+            d['dwell_hits'][(name or 'none')[:12]] += 1
+        else:
+            d['n'] += 1
+            d['on_column'] += ok
+            if t is not None and ok:
+                d['range_m'].append(t)
         if not ok:
-            miss.append({'waypoint': w['waypoint_id'], 'ring': w['ring'], 'hit': name,
+            miss.append({'waypoint': w['waypoint_id'], 'ring': w['ring'], 'dwell': dwell, 'hit': name,
                          'range_m': None if t is None else round(t, 2),
                          'pitch_deg': round(math.degrees(w['gimbal_pitch_rad']), 1)})
     tot = sum(v['on_column'] for v in per.values())
-    out['aiming'] = {'viewpoints_axis_hits_a_column': tot, 'of': len(W),
-                     'by_subject': {k: {'on_column': v['on_column'], 'of': v['n'],
+    ndw = sum(v['dwells'] for v in per.values())
+    out['aiming'] = {'ring_viewpoints_axis_hits_a_column': tot, 'of_ring_viewpoints': len(W) - ndw,
+                     'look_up_dwells_axis_hits_cap_or_column': sum(v['dwells_ok'] for v in per.values()), 'of_dwells': ndw,
+                     'dwell_first_solid_hit': dict(sum((v['dwell_hits'] for v in per.values()), collections.Counter())),
+                     'by_subject': {k: {'on_column': v['on_column'], 'of': v['n'], 'dwells_ok': v['dwells_ok'], 'dwells': v['dwells'],
                                         'range_min_m': round(min(v['range_m']), 2) if v['range_m'] else None,
                                         'range_max_m': round(max(v['range_m']), 2) if v['range_m'] else None}
                                     for k, v in per.items()},
