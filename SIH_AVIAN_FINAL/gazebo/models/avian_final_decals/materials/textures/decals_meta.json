@@ -1,0 +1,68 @@
+{
+ "DEFECT_SPALL_007": {
+  "file": "DEFECT_SPALL_007.png",
+  "width_m": 1.202130377292633,
+  "defect_dims_m": [
+   0.546,
+   0.529,
+   0.047
+  ],
+  "position_m": [
+   103.462,
+   0.023,
+   12.5906
+  ],
+  "surface_normal": [
+   -0.0,
+   -0.0,
+   -1.0
+  ],
+  "type": "SPALL",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_REBAR_EXPOSED_001": {
+  "file": "DEFECT_REBAR_EXPOSED_001.png",
+  "width_m": 1.5944600582122803,
+  "defect_dims_m": [
+   0.725,
+   0.691,
+   0.026
+  ],
+  "position_m": [
+   93.879,
+   -5.6,
+   13.196
+  ],
+  "surface_normal": [
+   -0.0,
+   -1.0,
+   -0.0
+  ],
+  "type": "REBAR_EXPOSED",
+  "px": 512,
+  "exposure_extra": 0.0
+ },
+ "DEFECT_CRACK_LONGITUDINAL_003": {
+  "file": "DEFECT_CRACK_LONGITUDINAL_003.png",
+  "width_m": 4.0851534605026245,
+  "defect_dims_m": [
+   1.857,
+   0.86,
+   0.0
+  ],
+  "position_m": [
+   130.912,
+   5.6,
+   13.424
+  ],
+  "surface_normal": [
+   -0.0,
+   1.0,
+   -0.0
+  ],
+  "type": "CRACK_LONGITUDINAL",
+  "px": 512,
+  "exposure_extra": 0.0
+ }
+}
