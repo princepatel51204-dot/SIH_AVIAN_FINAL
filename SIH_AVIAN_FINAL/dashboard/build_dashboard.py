@@ -146,6 +146,49 @@ def load_facts():
                                                           "AVIAN_metro_ground_truth_FINAL.json",
                                                           "AVIAN_steel_ground_truth_FINAL.json"))
     F.add("scene.defects", n_def, "scene/AVIAN_*_ground_truth_FINAL.json")
+
+    # column-orbit flight (results/ is gitignored; this summary is the tracked copy of its numbers)
+    cfs = "gazebo/mission_follower/columns_flight_summary.json"
+    CF = J(cfs)
+    F.add("col.summary", CF, cfs)
+    for k in ("reached", "waypoints_in_plan", "contact_episodes", "look_up_dwells", "mission_time_wall_s", "mission_time_sim_s",
+              "rtf", "distance_true_m", "min_sensed_range_mission_legs_m", "mission_samples_inside_3p0_ring", "legs_speed_limited"):
+        F.add(f"col.{k}", CF["mission"][k], cfs)
+    F.add("col.n_columns", len(CF["mission"]["columns"]), cfs)
+    F.add("col.pos_err_mean_m", CF["mission"]["true_pos_err_m"]["mean"], cfs)
+    F.add("col.pos_err_p95_m", CF["mission"]["true_pos_err_m"]["p95"], cfs)
+    F.add("col.coverage_mean_whole_pct", CF["coverage_mean_whole_true_pct"], cfs)
+    F.add("col.ring_axis", CF["aiming"]["ring_axis_on_column"], cfs)
+    F.add("col.dwell_axis", CF["aiming"]["dwell_axis_on_cap_or_column"], cfs)
+    F.add("col.det_hz", CF["detector"]["achieved_hz"], cfs)
+    cpr = J("mission/columns_plan_report.json")
+    F.add("col.planned_mean_whole_pct", statistics.mean(v["coverage_pct"]["whole_subject"] for v in cpr["per_subject"].values()),
+          "mission/columns_plan_report.json")
+
+    # Gazebo detection scoring (offline, against all ground-truth defects; gazebo/mission_follower/eval_detection_gazebo.py)
+    de = "gazebo/mission_follower/detection_eval"
+    fp = J(f"{de}/fp05_precision_strict_3p5_10m_los.json")["summary"]
+    F.add("gzdet.fp05_boxes", fp["boxes"], f"{de}/fp05_precision_strict_3p5_10m_los.json")
+    F.add("gzdet.fp05_tp", fp["tp_location"], f"{de}/fp05_precision_strict_3p5_10m_los.json")
+    F.add("gzdet.fp05_hz", J(f"{FP05}/detection/detection_stats.json")["achieved_hz"], f"{FP05}/detection/detection_stats.json")
+    bt = J(f"{de}/fp05_box_targets.json")["box_centre_on"]
+    F.add("gzdet.fp05_on_veg", bt.get("ENV_BANKVEG", 0), f"{de}/fp05_box_targets.json")
+    F.add("gzdet.fp05_on_road", bt.get("BR_WEARING", 0), f"{de}/fp05_box_targets.json")
+    fr = J(f"{de}/fp05_snapshot_precision_recall.json")["summary"]
+    F.add("gzdet.fp05_usable", fr["usable_defect_instances"], f"{de}/fp05_snapshot_precision_recall.json")
+    F.add("gzdet.fp05_detected", fr["instances_detected_location"], f"{de}/fp05_snapshot_precision_recall.json")
+    cp = J(f"{de}/columns_full_precision_strict.json")["summary"]
+    F.add("gzdet.col_boxes", cp["boxes"], f"{de}/columns_full_precision_strict.json")
+    F.add("gzdet.col_tp", cp["tp_location"], f"{de}/columns_full_precision_strict.json")
+    F.add("gzdet.col_tp_defects", len(cp["tp_boxes_by_defect"]), f"{de}/columns_full_precision_strict.json")
+    F.add("gzdet.col_hi_conf", cp["precision_vs_confidence_floor"]["0.9"], f"{de}/columns_full_precision_strict.json")
+    cr = J(f"{de}/columns_full_snapshot_precision_recall.json")["summary"]
+    F.add("gzdet.col_recall", cr["recall_instances_location"], f"{de}/columns_full_snapshot_precision_recall.json")
+
+    # gimbal aiming before / after (camera target projected through the true camera pose)
+    ev = "gazebo/mission_follower/viz/evidence"
+    F.add("aim.before", J(f"{ev}/centering_before_fixed_camera.json")["summary"], f"{ev}/centering_before_fixed_camera.json")
+    F.add("aim.after", J(f"{ev}/centering_after_final.json")["summary"], f"{ev}/centering_after_final.json")
     return F
 
 
@@ -234,14 +277,14 @@ def svg_plan_view(primitives, layers, width=1120, height=340):
     return "".join(o)
 
 
-def svg_bar_chart(series, width=420, height=230):
+def svg_bar_chart(series, width=420, height=230, aria="Bar chart"):
     """series: [(label, pct, colour)]"""
-    ml, mb, mt = 34, 56, 14
+    ml, mb, mt = 34, 56, 22
     ah = height - mb - mt
     slot = (width - ml - 16) / len(series)
     bw = slot * 0.5
     o = [f'<svg viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg" role="img" '
-         f'aria-label="Bar chart: share of waypoints stuck or failed in three flights">']
+         f'aria-label="{html.escape(aria)}">']
     for gy in (0, 25, 50, 75, 100):
         y = mt + ah * (1 - gy / 100)
         o.append(f'<line x1="{ml}" y1="{y:.1f}" x2="{width - 8}" y2="{y:.1f}" stroke="var(--line)"/>')
@@ -484,18 +527,23 @@ def build_html(F, team, prim, layers, commit):
   <p style="color:var(--ink-2);margin-top:12px;">{gz_note}{pb_note}</p>
 </div></section>'''
 
-    # autonomy
-    st1 = 100 * F["stage1.stuck"] / F["stage1.waypoints"]
-    st2 = 100 * F["stage2.stuck"] / F["stage2.waypoints"]
-    gz_fail = 100 * (F["fp05.attempted"] - F["fp05.reached"]) / F["fp05.attempted"]
+    # autonomy: share of attempted waypoints COMPLETED (higher is better). An earlier version plotted the
+    # failure share, which drew our best result as an empty bar labelled "0 of 1,161".
+    ok1 = F["stage1.waypoints"] - F["stage1.stuck"]
+    ok2 = F["stage2.waypoints"] - F["stage2.stuck"]
     bars = svg_bar_chart([
-        (f"PyBullet Stage 1\n{F['stage1.stuck']} of {F['stage1.waypoints']}", st1, "var(--bad)"),
-        (f"PyBullet Stage 2\n{F['stage2.stuck']} of {F['stage2.waypoints']}", st2, "var(--warn)"),
-        (f"Gazebo full pass 05\n{F['fp05.attempted'] - F['fp05.reached']} failed of {n0(F['fp05.attempted'])} attempted\n({100 * F['fp05.reached'] / F['fp05.attempted']:.0f}% reached)", gz_fail, "var(--accent)")])
+        (f"PyBullet Stage 1\n{ok1} of {F['stage1.waypoints']}", 100 * ok1 / F["stage1.waypoints"], "var(--bad)"),
+        (f"PyBullet Stage 2\n{ok2} of {F['stage2.waypoints']}", 100 * ok2 / F["stage2.waypoints"], "var(--warn)"),
+        (f"Gazebo full pass 05\n{n0(F['fp05.reached'])} of {n0(F['fp05.attempted'])}", 100 * F["fp05.reached"] / F["fp05.attempted"], "var(--accent)"),
+        (f"Gazebo columns\n{F['col.reached']} of {F['col.waypoints_in_plan']}", 100 * F["col.reached"] / F["col.waypoints_in_plan"], "var(--ok)")],
+        width=520, aria="Bar chart: share of attempted waypoints completed without a stuck event, four flights, higher is better")
     autonomy = f'''<section id="autonomy" class="tight"><div class="wrap">
   <h2 class="sec">Autonomy</h2>
-  <p class="lede">Share of attempted waypoints that ended stuck or unreached. The three bars come from different simulators and
-  flight stacks (PyBullet, then Gazebo with PX4), so this is a progression, not a controlled before/after.</p>
+  <p class="lede">Share of attempted waypoints completed without a stuck event &mdash; <strong>higher is better</strong>. PyBullet Stage 1
+  stuck on {F["stage1.stuck"]} of {F["stage1.waypoints"]} waypoints and Stage 2 on {F["stage2.stuck"]} of {F["stage2.waypoints"]}; the Gazebo runs
+  reached every waypoint they attempted ({n0(F["fp05.reached"])} of {n0(F["fp05.in_plan"])} planned in full pass 05: {F["fp05.not_attempted"]} had no legal route
+  in the plan and was not attempted). The bars come from different simulators, plans and flight stacks, so this is a
+  progression, not a controlled before/after.</p>
   <div class="grid12"><div class="card span6">{bars}</div>
   <div class="card span6"><ul style="list-style:none;padding:0;margin:0;display:grid;gap:12px;font-size:15px;">
     <li><strong class="num">{n0(F["fp05.sense_ticks"])}</strong> control ticks flown with the sensed-only safety layer; it limited speed on
@@ -507,6 +555,75 @@ def build_html(F, team, prim, layers, commit):
   <p style="margin-top:16px;color:var(--ink-2);">PyBullet Stage 2 stuck events: 13 near the target (settle failures) and 54 in transit, where the airframe was
   displaced by metres, not centimetres (<code>mission/AVIAN_collision_diagnosis_FINAL.md</code>).</p>
 </div></section>'''
+
+    # column-orbit inspection flight
+    CF = F["col.summary"]
+    col_tiles = "".join([
+        tile("col.reached", f"{F['col.reached']} / {F['col.waypoints_in_plan']}",
+             f"viewpoints reached around {F['col.n_columns']} bridge columns ({F['col.look_up_dwells']} of them look-up dwells at the pier caps); "
+             f"{F['col.contact_episodes']} contact episodes", ["col.reached", "col.contact_episodes"]),
+        tile("col.pos_err_mean_m", f"{F['col.pos_err_mean_m']:.3f} m",
+             f"mean true position error at the viewpoints (p95 {F['col.pos_err_p95_m']:.3f} m, simulator truth)", ["col.pos_err_mean_m"]),
+        tile("col.min_sensed_range_mission_legs_m", f"{F['col.min_sensed_range_mission_legs_m']:.2f} m",
+             f"closest sensed return on any mission leg; never inside the 3.0 m ring "
+             f"({F['col.mission_samples_inside_3p0_ring']} samples), avoidance never had to slow the drone ({F['col.legs_speed_limited']} legs)",
+             ["col.min_sensed_range_mission_legs_m"]),
+        tile("col.coverage_mean_whole_pct", f"{F['col.coverage_mean_whole_pct']:.1f}%",
+             f"mean whole-column coverage at the flown poses vs {F['col.planned_mean_whole_pct']:.1f}% planned "
+             f"(planner&rsquo;s visibility model, evaluated at the true camera poses)", ["col.coverage_mean_whole_pct"]),
+    ])
+    crow = ""
+    for sid, v in CF["coverage_per_column"].items():
+        p, t = v["planned"], v["measured_true_poses"]
+        crow += (f'<tr><td>{sid}</td><td class="num">{v["waypoints"]}</td><td class="num">{v["dwells"]}</td>'
+                 f'<td class="num">{p["shaft"]:.1f} / {t["shaft"]:.1f}</td><td class="num">{p["cap_or_head"]:.1f} / {t["cap_or_head"]:.1f}</td>'
+                 f'<td class="num">{p["footing"]:.1f} / {t["footing"]:.1f}</td><td class="num"><strong>{p["whole"]:.1f} / {t["whole"]:.1f}</strong></td></tr>')
+    columns = f'''<section id="columns"><div class="wrap">
+  <h2 class="sec">Column inspection flight</h2>
+  <p class="lede">A second Gazebo mission flew stacked orbit rings around every one of the corridor&rsquo;s {F["col.n_columns"]} bridge columns, the
+  gimbal camera aimed at the nearest column axis, with extra look-up dwells at the road-pier caps. Same PX4 offboard follower, same sensed-only
+  avoidance (3.0 m ring, 1.9 m/s), no change to its safety constants. {n0(F["col.mission_time_sim_s"])} s of mission time took
+  {n0(F["col.mission_time_wall_s"])} s of wall time (real-time factor {F["col.rtf"]:.2f}) with the live detector running.</p>
+  <div class="statrow" style="margin-top:0">{col_tiles}</div>
+  <div class="grid12" style="margin-top:20px">
+    <div class="card span8"><img src="assets/columns_plan_overview.png" style="width:100%" alt="Top-down view of the corridor with the 19 column orbits and the flown track">
+      <div class="cap" style="font-size:13.5px;color:var(--ink-2)">Flown track (simulator truth) over the orbit viewpoints of the plan. Road piers (y&nbsp;&asymp;&nbsp;0) are twin columns
+      orbited as one capsule; metro columns (y&nbsp;&asymp;&nbsp;28) are single. Camera axis on a column at {F["col.ring_axis"]} ring viewpoints, on the cap or a
+      column at {F["col.dwell_axis"]} dwells.</div></div>
+    <div class="card span4"><img src="assets/columns_plan_rp0304.png" style="width:100%" alt="Close-up of the orbits around road piers RP03 and RP04">
+      <div class="cap" style="font-size:13.5px;color:var(--ink-2)">Close-up of road piers RP03 and RP04: the capsule orbit and the flown track.</div></div>
+  </div>
+  <div class="card tablewrap" style="margin-top:20px"><table><thead><tr><th>Column</th><th>Waypoints (incl. dwells)</th><th>Look-up dwells</th><th>Shaft %</th>
+    <th>Cap / head %</th><th>Footing %</th><th>Whole %</th></tr></thead><tbody>{crow}</tbody></table>
+  <p style="font-size:13px;color:var(--ink-2);margin:10px 0 0">Each cell: planned / at the flown poses. Both use the planner&rsquo;s own visibility model, so the
+  second number measures how much pose and aim error cost, not an independent check of what the camera saw. Cap top faces are not reachable:
+  the deck is directly above them. Cap end faces are limited by the 3.5 m planned clearance. Metro columns MC04&ndash;MC06 sit in a constrained
+  bay and are weak (58&ndash;61% whole).</p></div>
+</div></section>'''
+
+    # gallery of flight images (each viewed before inclusion; captions state only what the image shows)
+    GAL2 = [
+        ("gz_frame_RP02_R1_02.jpg", "Gazebo camera, column flight RP02 ring 1: the gimbal looks down at the column, which fills the centre of the frame."),
+        ("gz_frame_MC07_R2_03.jpg", "Gazebo camera, metro column MC07 ring 2. The dark-green boxes behind it are bank-vegetation props: most Gazebo false detections landed on these."),
+        ("gz_frame_RP04_R1_01_D1.jpg", "A look-up dwell at RP04: the column top and the underside of the pier cap, with a flat dark defect-marker sphere on the cap."),
+        ("gz_frame_RP04_R2_09.jpg", "RP04 ring 2. The brown ball is the flat-coloured marker for DEFECT_REBAR_EXPOSED_006: Gazebo defects are untextured spheres, not modelled damage."),
+        ("rviz_map_flight.jpg", "RViz during a Gazebo flight: the live 0.25 m voxel map built only from the drone's LiDAR and range cones (deck, piers, ground), the EKF trajectory (yellow) and the camera axis (magenta)."),
+        ("rviz_map_closeup.jpg", "RViz close-up of two piers in the live voxel map, coloured by height, with the trajectory and live scan."),
+        ("aim_before_after_B.jpg", f"Gimbal aiming, before and after (CWP_005 / CWP_006): the red ring is the inspection target projected through the true camera pose. Across 8 waypoints the target moved from {F['aim.before']['off_axis_deg']['mean']:.1f} to {F['aim.after']['off_axis_deg']['mean']:.2f} degrees off the camera axis on average."),
+        ("aim_before_after_C.jpg", f"Gimbal aiming, before and after (CWP_007 / CWP_008). In frame: {F['aim.before']['target_in_frame']} of {F['aim.before']['n']} targets before, {F['aim.after']['target_in_frame']} of {F['aim.after']['n']} after."),
+        ("film_02_beat1_spall_007_0.99.jpg", "Blender inspection film, beat 1: the trained detector on a textured spall (SPALL_007), SPALL_DELAM 0.99 on this frame. Real detector output."),
+        ("film_06_beat5_rebar_exposed_004_0.76.jpg", "Blender film, beat 5: exposed rebar at a bearing seat, SPALL_DELAM 0.76 on this frame. This beat's detections drop out on some frames."),
+        ("film_09_beat8_rebar_exposed_001_0.99.jpg", "Blender film, beat 8: exposed rebar on a girder web, SPALL_DELAM 0.99. Staged viewpoint; its camera is 2.30 m from a deck edge (below the 3.5 m rule)."),
+    ]
+    gal2 = "".join(f'''<button class="tile" data-caption="{html.escape(c)}"><img src="assets/{f}" alt="{html.escape(c)}">
+      <div class="meta"><div class="note">{html.escape(c)}</div></div></button>''' for f, c in GAL2)
+    for f, _ in GAL2:
+        assert os.path.exists(os.path.join(ASSETS, f)), f"missing gallery image {f}"
+    flights = f'''<section id="gallery" class="tight"><div class="wrap">
+  <h2 class="sec">From the flights</h2>
+  <p class="lede">Gazebo camera frames, RViz map captures, gimbal aiming before and after, and stills from the Blender film. Plan views are in the
+  column-inspection section above.</p>
+  <div class="gallery">{gal2}</div></div></section>'''
 
     # detection
     m = F["det.models"]
@@ -539,6 +656,18 @@ def build_html(F, team, prim, layers, commit):
     {rp["fp"]} of {rp["n_negative"]} clean photos: precision <span class="num">{rp["precision"]}</span>, recall <span class="num">{rp["recall"]}</span>.
     <strong>The detector does not yet transfer to real photos.</strong></p>
   <p style="color:var(--ink-2);">Bolts (FASTENER) are not reliably detectable at the current camera resolution.</p></div>
+  <div class="card" style="margin-top:24px;border-left:4px solid var(--warn)"><h3 style="margin:0 0 8px;font-size:17px">Gazebo detections are not accuracy evidence</h3>
+  <p style="margin:0 0 8px">The trained detector runs in the loop during the Gazebo flights (about {F["col.det_hz"]:.1f} frames per second measured in the column flight), so
+  the pipeline works end to end. But the Gazebo world is untextured SDF primitives and its defects are flat-coloured spheres, so what it detects
+  there says nothing about finding real damage. Scored against all {F["scene.defects"]} ground-truth defects at the true camera pose:</p>
+  <ul style="margin:0;padding-left:20px;font-size:15px">
+    <li>Full pass 05: <strong>{F["gzdet.fp05_tp"]} of {F["gzdet.fp05_boxes"]}</strong> boxes contained a usable defect (3.5&ndash;10 m, line of sight).
+      {F["gzdet.fp05_on_veg"]} box centres lay on bank-vegetation props and {F["gzdet.fp05_on_road"]} on the road surface. Recall on the waypoint
+      snapshots: {F["gzdet.fp05_detected"]} of {F["gzdet.fp05_usable"]} defect sightings.</li>
+    <li>Column flight: {F["gzdet.col_tp"]} of {F["gzdet.col_boxes"]} boxes contained a defect, all on {F["gzdet.col_tp_defects"]} dark marker spheres;
+      above confidence 0.90, {F["gzdet.col_hi_conf"]["tp_location"]} of {F["gzdet.col_hi_conf"]["boxes"]}. Snapshot recall {100 * F["gzdet.col_recall"]:.1f}%.</li>
+  </ul>
+  <p style="margin:8px 0 0;color:var(--ink-2)">Detector accuracy evidence comes only from the textured Blender imagery: the benchmark above and the inspection film.</p></div>
 </div></section>'''
 
     steps = [("Digital twin", f"Blender-built 360 m corridor, {F['scene.defects']} measured defects", "scene/SIH_AVIAN_FINAL.blend"),
@@ -568,8 +697,13 @@ def build_html(F, team, prim, layers, commit):
          f"{min(comp.values()):.1f}% of the steel truss.", F.src["fp05.coverage_flown_pct"]),
         (f"{F['fp05.not_attempted']} of {n0(F['fp05.in_plan'])} planned waypoints was not attempted: the plan found no legal route to it.",
          F.src["fp05.reached"]),
-        ("The live detector in the Gazebo runs is not evidence of detection accuracy: that world is flat-shaded, untextured geometry with no "
-         "crack imagery. Detection accuracy is quoted only from the Blender benchmark and film.", "gazebo/mission_follower/live_detector_node.py"),
+        (f"The live detector in the Gazebo runs is not evidence of detection accuracy: that world is untextured geometry with flat-coloured "
+         f"defect spheres, and in full pass 05 {F['gzdet.fp05_tp']} of {F['gzdet.fp05_boxes']} boxes contained a real defect. Detection accuracy is quoted "
+         f"only from the Blender benchmark and film.", F.src["gzdet.fp05_tp"]),
+        ("Cap top faces cannot be inspected (the deck is directly above them); cap end faces are limited by the 3.5 m planned clearance.",
+         "mission/columns_plan_report.json"),
+        ("Inspection film: beats 3 and 5 have detector dropouts, so their boxes flicker; beat 8's staged camera is 2.30 m from a deck edge.",
+         "scene/film/detection_log.json, scene/film/clearance_result.json"),
         ("Simulation only: nothing here has been flight-tested on hardware.", "project scope"),
     ]
     limits = "".join(f'<li>{html.escape(t)}<span class="src">{html.escape(s)}</span></li>' for t, s in lim)
@@ -595,8 +729,8 @@ def build_html(F, team, prim, layers, commit):
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
 <style>{CSS}</style></head><body>
 <div class="topbar"><div class="wrap"><div class="wordmark">AVIAN</div>
-  <nav class="topnav" aria-label="Sections"><a href="#mission">Mission</a><a href="#autonomy">Autonomy</a><a href="#detection">Detection</a>
-    <a href="#pipeline">Pipeline</a><a href="#videos">Videos</a><a href="#team">Team</a></nav>
+  <nav class="topnav" aria-label="Sections"><a href="#mission">Mission</a><a href="#columns">Columns</a><a href="#autonomy">Autonomy</a><a href="#detection">Detection</a>
+    <a href="#gallery">Gallery</a><a href="#pipeline">Pipeline</a><a href="#videos">Videos</a><a href="#team">Team</a></nav>
   <div class="topmeta">{tm}</div></div></div>
 <div class="hero"><img src="assets/hero.jpg" alt="Steel truss main span of the AVIAN bridge digital twin"><div class="overlay"></div>
   <div class="content"><h1>Autonomous bridge inspection, measured end to end.</h1>
@@ -605,8 +739,10 @@ def build_html(F, team, prim, layers, commit):
 {videos}
 {problem}
 {plan}
+{columns}
 {autonomy}
 {detection}
+{flights}
 <section id="pipeline" class="tight"><div class="wrap"><h2 class="sec">Pipeline</h2><div class="pipeline">{pipeline}</div></div></section>
 {team_sec}
 {scope}

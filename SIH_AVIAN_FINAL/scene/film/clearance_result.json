@@ -1,0 +1,74 @@
+[
+ {
+  "beat": 1,
+  "defect": "DEFECT_SPALL_007",
+  "kind": "real",
+  "min_camera_clearance_m": 4.954,
+  "at_frame": 38,
+  "nearest_object": "BR_GIRDER_003_G4",
+  "min_range_to_defect_m": 7.415
+ },
+ {
+  "beat": 2,
+  "defect": "DEFECT_SPALL_011",
+  "kind": "real",
+  "min_camera_clearance_m": 4.684,
+  "at_frame": 191,
+  "nearest_object": "ST_CHORD_BOT_S",
+  "min_range_to_defect_m": 6.754
+ },
+ {
+  "beat": 3,
+  "defect": "DEFECT_SPALL_009",
+  "kind": "real",
+  "min_camera_clearance_m": 3.919,
+  "at_frame": 163,
+  "nearest_object": "_MD_BR_PIER_COL_003_2_FORMLINE_11",
+  "min_range_to_defect_m": 5.926
+ },
+ {
+  "beat": 4,
+  "defect": "DEFECT_SPALL_008",
+  "kind": "real",
+  "min_camera_clearance_m": 5.355,
+  "at_frame": 146,
+  "nearest_object": "BR_GIRDER_005_G5",
+  "min_range_to_defect_m": 6.093
+ },
+ {
+  "beat": 5,
+  "defect": "DEFECT_REBAR_EXPOSED_004",
+  "kind": "real",
+  "min_camera_clearance_m": 3.615,
+  "at_frame": 191,
+  "nearest_object": "BR_DECK_SLAB_003",
+  "min_range_to_defect_m": 5.889
+ },
+ {
+  "beat": 6,
+  "defect": "DEFECT_SPALL_002",
+  "kind": "real",
+  "min_camera_clearance_m": 4.397,
+  "at_frame": 183,
+  "nearest_object": "ST_CHORD_BOT_S",
+  "min_range_to_defect_m": 5.49
+ },
+ {
+  "beat": 7,
+  "defect": "DEFECT_DELAMINATION_001",
+  "kind": "staged",
+  "min_camera_clearance_m": 4.474,
+  "at_frame": 47,
+  "nearest_object": "DEFECT_DELAMINATION_001",
+  "min_range_to_defect_m": 4.5
+ },
+ {
+  "beat": 8,
+  "defect": "DEFECT_REBAR_EXPOSED_001",
+  "kind": "staged",
+  "min_camera_clearance_m": 2.298,
+  "at_frame": 47,
+  "nearest_object": "BR_DECK_SLAB_003",
+  "min_range_to_defect_m": 3.5
+ }
+]
