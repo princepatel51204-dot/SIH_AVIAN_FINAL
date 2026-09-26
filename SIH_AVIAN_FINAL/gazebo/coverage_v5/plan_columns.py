@@ -94,6 +94,18 @@ class Capsule:
         t = np.clip((xy - self.A) @ self.u, 0.0, self.Ls)
         return self.A + t[:, None] * self.u
 
+    def aim(self, xy):
+        """Where the camera looks: the NEAREST COLUMN AXIS (A or B). For a single column A == B, so
+        this is the same point as inward(). For a two-column pier, aiming at the spine point
+        (inward) made broadside viewpoints look through the gap between the columns (measured in
+        flight: 6 of 25 frames hit the abutment / a footing / the deck instead of a column)."""
+        xy = np.atleast_2d(xy)
+        if self.Ls < 1e-9:
+            return np.tile(self.A, (len(xy), 1))
+        dA = np.linalg.norm(xy - self.A, axis=1)
+        dB = np.linalg.norm(xy - self.B, axis=1)
+        return np.where((dA <= dB)[:, None], self.A[None, :], self.B[None, :])
+
 
 class RoundedRect:
     """Offset at distance d around a rectangular column (half extents hx,hy, yaw). No such column
@@ -139,6 +151,9 @@ class RoundedRect:
         q = self._loc(xy)
         q = np.stack([np.clip(q[:, 0], -self.hx, self.hx), np.clip(q[:, 1], -self.hy, self.hy)], 1)
         return self._glob(q)
+
+    def aim(self, xy):
+        return self.inward(xy)      # a single column: nearest point of the column
 
 
 # ------------------------------------------------------------------ inventory --
@@ -243,11 +258,11 @@ def design_subject(S, sub, feas, patches, log_=log):
     M = max(6, int(round(sh.L / S_STEP_M)))
     s_grid = np.arange(M) * sh.L / M
     P = sh.point(s_grid)
-    yaw = np.arctan2(*(sh.inward(P) - P)[:, ::-1].T)
+    yaw = np.arctan2(*(sh.aim(P) - P)[:, ::-1].T)
     nd = int(math.ceil(sh.L / DENSE_M))
     s_dense = np.arange(nd) * sh.L / nd
     Pd = sh.point(s_dense)
-    yaw_d = np.arctan2(*(sh.inward(Pd) - Pd)[:, ::-1].T)
+    yaw_d = np.arctan2(*(sh.aim(Pd) - Pd)[:, ::-1].T)
 
     def free_dense(z):
         return np.array([feas.ok(Pd[i:i + 1], z, yaw_d[i])[0] for i in range(nd)])
@@ -321,7 +336,8 @@ def design_subject(S, sub, feas, patches, log_=log):
         fidx = np.flatnonzero(fg)
         if len(fidx):
             cam_sets = {}
-            aim = math.atan2(band_c[kr] - zr, d_cam)
+            d_aim = float(np.mean(np.linalg.norm(sh.aim(P[fidx]) - P[fidx], axis=1))) - sub['radius_m'] - PIVOT[0]
+            aim = math.atan2(band_c[kr] - zr, d_aim)      # = d_cam for a single column (4.0 - 0.35)
             for th in np.clip(aim + np.radians(np.arange(-35, 36, 5)), -math.pi / 2, math.pi / 2):
                 u = np.zeros(0, np.int64)
                 sets = []
@@ -437,7 +453,7 @@ def build(designs, S, feas, do_route=True):
                     raw_min = min(raw_min, PG.segment_min_clearance(p, q, None))
                 yw = float(yaw[i])
                 cam, _ = cam_pose(np.array(pos), yw, ring['pitch'])
-                inw = sh.inward(np.array(pos[:2])[None])[0]
+                inw = sh.aim(np.array(pos[:2])[None])[0]
                 dcam = math.hypot(inw[0] - pos[0], inw[1] - pos[1])
                 wps.append({
                     'waypoint_id': f'{sid}_R{kr + 1}_{len([w for w in wps[n_wp0:] if w["ring"] == kr + 1]) + 1:02d}',

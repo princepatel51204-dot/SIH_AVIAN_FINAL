@@ -1,0 +1,152 @@
+{
+ "plan": "gazebo_columns_plan.json",
+ "n_waypoints": 428,
+ "aiming": {
+  "viewpoints_axis_hits_a_column": 427,
+  "of": 428,
+  "by_subject": {
+   "RP01": {
+    "on_column": 9,
+    "of": 9,
+    "range_min_m": 3.95,
+    "range_max_m": 4.95
+   },
+   "RP02": {
+    "on_column": 25,
+    "of": 25,
+    "range_min_m": 3.7,
+    "range_max_m": 4.8
+   },
+   "RP03": {
+    "on_column": 25,
+    "of": 25,
+    "range_min_m": 3.7,
+    "range_max_m": 4.85
+   },
+   "RP04": {
+    "on_column": 27,
+    "of": 27,
+    "range_min_m": 3.7,
+    "range_max_m": 4.8
+   },
+   "RP05": {
+    "on_column": 23,
+    "of": 23,
+    "range_min_m": 3.75,
+    "range_max_m": 5.6
+   },
+   "RP06": {
+    "on_column": 25,
+    "of": 25,
+    "range_min_m": 3.7,
+    "range_max_m": 4.8
+   },
+   "RP07": {
+    "on_column": 25,
+    "of": 25,
+    "range_min_m": 3.7,
+    "range_max_m": 4.75
+   },
+   "RP08": {
+    "on_column": 9,
+    "of": 9,
+    "range_min_m": 3.85,
+    "range_max_m": 5.25
+   },
+   "MC11": {
+    "on_column": 26,
+    "of": 26,
+    "range_min_m": 3.7,
+    "range_max_m": 4.45
+   },
+   "MC10": {
+    "on_column": 26,
+    "of": 26,
+    "range_min_m": 3.7,
+    "range_max_m": 4.45
+   },
+   "MC09": {
+    "on_column": 26,
+    "of": 26,
+    "range_min_m": 3.7,
+    "range_max_m": 4.35
+   },
+   "MC08": {
+    "on_column": 26,
+    "of": 26,
+    "range_min_m": 3.7,
+    "range_max_m": 4.35
+   },
+   "MC07": {
+    "on_column": 26,
+    "of": 26,
+    "range_min_m": 3.7,
+    "range_max_m": 4.35
+   },
+   "MC06": {
+    "on_column": 15,
+    "of": 16,
+    "range_min_m": 3.9,
+    "range_max_m": 6.2
+   },
+   "MC05": {
+    "on_column": 18,
+    "of": 18,
+    "range_min_m": 3.8,
+    "range_max_m": 6.2
+   },
+   "MC04": {
+    "on_column": 18,
+    "of": 18,
+    "range_min_m": 3.9,
+    "range_max_m": 6.2
+   },
+   "MC03": {
+    "on_column": 26,
+    "of": 26,
+    "range_min_m": 3.7,
+    "range_max_m": 4.45
+   },
+   "MC02": {
+    "on_column": 26,
+    "of": 26,
+    "range_min_m": 3.7,
+    "range_max_m": 4.45
+   },
+   "MC01": {
+    "on_column": 26,
+    "of": 26,
+    "range_min_m": 3.7,
+    "range_max_m": 4.45
+   }
+  },
+  "misses": [
+   {
+    "waypoint": "MC06_R3_01",
+    "ring": 3,
+    "hit": "ENV_BANKVEG_014_visual",
+    "range_m": 3.8,
+    "pitch_deg": -54.2
+   }
+  ]
+ },
+ "airframe": {
+  "samples": 12850,
+  "min_clearance_m": 3.505,
+  "samples_below_3.5": 0,
+  "samples_below_3.0": 0
+ },
+ "route_pieces": {
+  "segments": 1511,
+  "neither_flat_nor_steep": 0
+ },
+ "at_viewpoints": {
+  "base_min_m": 3.591,
+  "camera_pivot_min_m": 3.523,
+  "z_min_m": 3.6
+ },
+ "camera_pivot_along_routes_informational": {
+  "min_m": 3.228,
+  "samples_below_3.5": 271
+ }
+}

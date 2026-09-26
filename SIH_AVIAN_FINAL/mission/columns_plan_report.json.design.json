@@ -42,6 +42,8 @@
      2.75
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     0.0,
     0.0
@@ -89,6 +91,8 @@
      2.75
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     45.0,
     0.0
@@ -136,6 +140,8 @@
      2.75
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     90.0,
     0.0
@@ -183,6 +189,8 @@
      2.75
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     135.0,
     0.0
@@ -230,6 +238,8 @@
      2.75
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     225.0,
     0.0
@@ -277,6 +287,8 @@
      2.75
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     270.0,
     0.0
@@ -324,6 +336,8 @@
      2.75
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     315.0,
     0.0
@@ -371,6 +385,8 @@
      2.75
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     360.0,
     0.0
@@ -411,6 +427,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     0.0,
     28.0
@@ -451,6 +469,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     30.0,
     28.0
@@ -491,6 +511,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     60.0,
     28.0
@@ -531,6 +553,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     90.0,
     28.0
@@ -571,6 +595,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     135.0,
     28.0
@@ -611,6 +637,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     225.0,
     28.0
@@ -651,6 +679,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     255.0,
     28.0
@@ -691,6 +721,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     285.0,
     28.0
@@ -731,6 +763,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     315.0,
     28.0
@@ -771,6 +805,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     345.0,
     28.0
@@ -811,6 +847,8 @@
      28.0
     ]
    ],
+   "half_extents": null,
+   "yaw": 0.0,
    "centre_xy": [
     360.0,
     28.0
@@ -854,7 +892,7 @@
      "z": 6.04,
      "free_viewpoints": 3,
      "of": 11,
-     "pitch_deg": 21.9,
+     "pitch_deg": 22.2,
      "blocked_arcs": [
       {
        "from_bearing_deg": 129.4,
@@ -869,7 +907,7 @@
      "z": 3.6,
      "free_viewpoints": 3,
      "of": 11,
-     "pitch_deg": -32.1,
+     "pitch_deg": -26.5,
      "blocked_arcs": [
       {
        "from_bearing_deg": 129.4,
@@ -932,14 +970,14 @@
      "z": 6.04,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": 23.8,
+     "pitch_deg": 24.0,
      "blocked_arcs": []
     },
     {
      "z": 3.6,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": -11.6,
+     "pitch_deg": -11.2,
      "blocked_arcs": []
     }
    ]
@@ -968,6 +1006,20 @@
      "pitch_deg": -34.7,
      "blocked_arcs": [
       {
+       "from_bearing_deg": -168.3,
+       "to_bearing_deg": 168.4,
+       "length_m": 2.25,
+       "limited_by": "BR_GIRDER_002_G3",
+       "clearance_there_m": 3.44
+      },
+      {
+       "from_bearing_deg": 162.8,
+       "to_bearing_deg": 139.7,
+       "length_m": 2.75,
+       "limited_by": "BR_GIRDER_002_G4",
+       "clearance_there_m": 3.44
+      },
+      {
        "from_bearing_deg": 135.5,
        "to_bearing_deg": 50.6,
        "length_m": 11.24,
@@ -983,9 +1035,9 @@
       },
       {
        "from_bearing_deg": -139.6,
-       "to_bearing_deg": 139.7,
-       "length_m": 8.24,
-       "limited_by": "BR_GIRDER_002_G3",
+       "to_bearing_deg": -162.8,
+       "length_m": 2.75,
+       "limited_by": "BR_GIRDER_002_G2",
        "clearance_there_m": 3.44
       }
      ]
@@ -994,14 +1046,14 @@
      "z": 6.24,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": 22.2,
+     "pitch_deg": 22.4,
      "blocked_arcs": []
     },
     {
      "z": 3.6,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": -11.2,
+     "pitch_deg": -10.8,
      "blocked_arcs": []
     }
    ]
@@ -1027,7 +1079,7 @@
      "z": 9.0,
      "free_viewpoints": 5,
      "of": 11,
-     "pitch_deg": -33.2,
+     "pitch_deg": -33.3,
      "blocked_arcs": [
       {
        "from_bearing_deg": 127.4,
@@ -1049,14 +1101,14 @@
      "z": 6.24,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": 23.1,
+     "pitch_deg": 23.3,
      "blocked_arcs": []
     },
     {
      "z": 3.6,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": -11.0,
+     "pitch_deg": -10.6,
      "blocked_arcs": []
     }
    ]
@@ -1082,7 +1134,7 @@
      "z": 9.0,
      "free_viewpoints": 4,
      "of": 11,
-     "pitch_deg": -44.9,
+     "pitch_deg": -44.5,
      "blocked_arcs": [
       {
        "from_bearing_deg": 135.5,
@@ -1104,7 +1156,7 @@
      "z": 6.24,
      "free_viewpoints": 10,
      "of": 11,
-     "pitch_deg": 16.5,
+     "pitch_deg": 16.8,
      "blocked_arcs": [
       {
        "from_bearing_deg": 70.1,
@@ -1119,7 +1171,7 @@
      "z": 3.6,
      "free_viewpoints": 9,
      "of": 11,
-     "pitch_deg": -12.8,
+     "pitch_deg": -12.4,
      "blocked_arcs": [
       {
        "from_bearing_deg": 81.5,
@@ -1164,9 +1216,23 @@
       },
       {
        "from_bearing_deg": 40.4,
-       "to_bearing_deg": -40.3,
-       "length_m": 8.24,
+       "to_bearing_deg": 17.2,
+       "length_m": 2.75,
+       "limited_by": "BR_GIRDER_006_G4",
+       "clearance_there_m": 3.44
+      },
+      {
+       "from_bearing_deg": 11.7,
+       "to_bearing_deg": -11.6,
+       "length_m": 2.25,
        "limited_by": "BR_GIRDER_006_G3",
+       "clearance_there_m": 3.44
+      },
+      {
+       "from_bearing_deg": -17.2,
+       "to_bearing_deg": -40.3,
+       "length_m": 2.75,
+       "limited_by": "BR_GIRDER_006_G2",
        "clearance_there_m": 3.44
       },
       {
@@ -1182,14 +1248,14 @@
      "z": 6.24,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": 22.2,
+     "pitch_deg": 22.4,
      "blocked_arcs": []
     },
     {
      "z": 3.6,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": -11.2,
+     "pitch_deg": -10.8,
      "blocked_arcs": []
     }
    ]
@@ -1244,14 +1310,14 @@
      "z": 6.04,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": 23.8,
+     "pitch_deg": 24.0,
      "blocked_arcs": []
     },
     {
      "z": 3.6,
      "free_viewpoints": 11,
      "of": 11,
-     "pitch_deg": -11.6,
+     "pitch_deg": -11.2,
      "blocked_arcs": []
     }
    ]
@@ -1277,7 +1343,7 @@
      "z": 9.0,
      "free_viewpoints": 3,
      "of": 11,
-     "pitch_deg": -40.5,
+     "pitch_deg": -40.4,
      "blocked_arcs": [
       {
        "from_bearing_deg": -46.5,
@@ -1292,7 +1358,7 @@
      "z": 6.24,
      "free_viewpoints": 3,
      "of": 11,
-     "pitch_deg": 18.9,
+     "pitch_deg": 19.4,
      "blocked_arcs": [
       {
        "from_bearing_deg": -50.6,
@@ -1307,7 +1373,7 @@
      "z": 3.6,
      "free_viewpoints": 3,
      "of": 11,
-     "pitch_deg": -32.1,
+     "pitch_deg": -26.4,
      "blocked_arcs": [
       {
        "from_bearing_deg": -50.6,
