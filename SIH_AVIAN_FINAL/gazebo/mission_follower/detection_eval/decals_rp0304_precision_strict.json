@@ -1,0 +1,825 @@
+{
+ "summary": {
+  "run": "decals_rp0304",
+  "rules": {
+   "rmin_m": 3.5,
+   "rmax_m": 10.0,
+   "line_of_sight": true,
+   "tp": "box contains the projected centre of >= 1 usable ground-truth defect",
+   "tp_class": "and detector family == defect family"
+  },
+  "boxes": 33,
+  "tp_location": 32,
+  "tp_location_and_class": 29,
+  "false_positives_location": 1,
+  "precision_location": 0.9697,
+  "precision_location_and_class": 0.8788,
+  "confidence": {
+   "min": 0.661,
+   "max": 0.881
+  },
+  "precision_vs_confidence_floor": {
+   "0.65": {
+    "boxes": 33,
+    "tp_location": 32,
+    "tp_class": 29
+   },
+   "0.75": {
+    "boxes": 14,
+    "tp_location": 14,
+    "tp_class": 11
+   },
+   "0.85": {
+    "boxes": 5,
+    "tp_location": 5,
+    "tp_class": 4
+   },
+   "0.9": {
+    "boxes": 0,
+    "tp_location": 0,
+    "tp_class": 0
+   },
+   "0.95": {
+    "boxes": 0,
+    "tp_location": 0,
+    "tp_class": 0
+   }
+  },
+  "boxes_by_waypoint": [
+   [
+    "RP04_R2_09",
+    18
+   ],
+   [
+    "RP04_R2_10",
+    12
+   ],
+   [
+    "RP04_R2_11",
+    3
+   ]
+  ],
+  "tp_boxes_by_defect": [
+   [
+    "DEFECT_CRACK_HAIRLINE_009",
+    30
+   ],
+   [
+    "DEFECT_REBAR_EXPOSED_006",
+    29
+   ]
+  ],
+  "max_audit_time_gap_s": 0.028
+ },
+ "boxes": [
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 319.508,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8074,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": false,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.93
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 319.572,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8451,
+   "usable_defects_in_frame": 2,
+   "tp_location": true,
+   "tp_location_and_class": false,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.92
+    }
+   ],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 319.904,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7259,
+   "usable_defects_in_frame": 2,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 320.1,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8794,
+   "usable_defects_in_frame": 2,
+   "tp_location": true,
+   "tp_location_and_class": false,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.89
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 320.168,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7709,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.89
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.5
+    }
+   ],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 320.232,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8458,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.89
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.51
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 320.3,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7815,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.9
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.52
+    }
+   ],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 320.364,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6984,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.9
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.54
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 320.628,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6624,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.92
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.58
+    }
+   ],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.224,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6995,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.64
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.356,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7195,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.65
+    }
+   ],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.488,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6687,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.65
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.552,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7778,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.65
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.62,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.65
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.684,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7348,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.66
+    }
+   ],
+   "audit_time_gap_s": 0.016
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.752,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7122,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.66
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.816,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6632,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.97
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.66
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_09",
+   "sim_time_s": 321.884,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6904,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.97
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.66
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 321.948,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7178,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.66
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.016,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6968,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.65
+    }
+   ],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.08,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6751,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.65
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.148,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8221,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.96
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.65
+    }
+   ],
+   "audit_time_gap_s": 0.028
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.344,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8807,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.94
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.63
+    }
+   ],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.412,
+   "class": "SPALL_DELAM",
+   "confidence": 0.863,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.92
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.62
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.476,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8231,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.9
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.6
+    }
+   ],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.544,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8724,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.88
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.59
+    }
+   ],
+   "audit_time_gap_s": 0.008
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.608,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8722,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.85
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.57
+    }
+   ],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 322.676,
+   "class": "SPALL_DELAM",
+   "confidence": 0.731,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.82
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.54
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 324.26,
+   "class": "SPALL_DELAM",
+   "confidence": 0.734,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.54
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 324.392,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6718,
+   "usable_defects_in_frame": 3,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.59
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_11",
+   "sim_time_s": 326.636,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7628,
+   "usable_defects_in_frame": 4,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.74
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.99
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_11",
+   "sim_time_s": 326.768,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6994,
+   "usable_defects_in_frame": 4,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.73
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.99
+    }
+   ],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "RP04_R2_11",
+   "sim_time_s": 326.832,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6607,
+   "usable_defects_in_frame": 4,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_CRACK_HAIRLINE_009",
+     "type": "CRACK_HAIRLINE",
+     "family": "CRACK",
+     "range_m": 3.73
+    },
+    {
+     "id": "DEFECT_REBAR_EXPOSED_006",
+     "type": "REBAR_EXPOSED",
+     "family": "SPALL_DELAM",
+     "range_m": 3.98
+    }
+   ],
+   "audit_time_gap_s": 0.008
+  }
+ ]
+}
