@@ -10,7 +10,7 @@ textures, so this is NOT the detection pipeline).
     <out_dir>/waypoints/<CWP_xxx>.jpg
   * camera_stats.json: frame count, measured rate, gaps
 
-Usage: camera_recorder_node.py <out_dir>
+Usage: camera_recorder_node.py <out_dir> [image_topic (default /camera/image_raw)] [node_name]
 """
 import json
 import os
@@ -27,8 +27,8 @@ from PIL import Image as PILImage
 
 
 class CameraRecorder(Node):
-    def __init__(self, out_dir):
-        super().__init__('sih_camera_recorder')
+    def __init__(self, out_dir, topic='/camera/image_raw', name='sih_camera_recorder'):
+        super().__init__(name)
         self.out = out_dir
         os.makedirs(os.path.join(out_dir, 'waypoints'), exist_ok=True)
         self.ff = None
@@ -39,7 +39,7 @@ class CameraRecorder(Node):
         self.wp_frames = []
         self.csv = open(os.path.join(out_dir, 'frames.csv'), 'w')
         self.csv.write('frame,stamp_s,wall_s\n')
-        self.create_subscription(Image, '/camera/image_raw', self.on_img, qos_profile_sensor_data)
+        self.create_subscription(Image, topic, self.on_img, qos_profile_sensor_data)
         self.create_subscription(String, '/mission/event', self.on_event, 50)
         self.create_timer(5.0, self.write_stats)
 
@@ -103,7 +103,7 @@ class CameraRecorder(Node):
 
 def main():
     rclpy.init()
-    n = CameraRecorder(sys.argv[1])
+    n = CameraRecorder(*sys.argv[1:4])
     try:
         rclpy.spin(n)
     except KeyboardInterrupt:

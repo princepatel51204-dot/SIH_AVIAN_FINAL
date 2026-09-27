@@ -1,0 +1,33 @@
+--- x500_base/model.sdf.pre_inspect
++++ x500_base/model.sdf
+@@ -390,6 +390,30 @@
+           </clip>
+         </camera>
+       </sensor>
++      <!-- SIH AVIAN: narrow-FOV inspection camera on the same gimbal, co-located with front_camera (same pose, same
++           pitch). 16 deg HFOV frames ~1.26 m of surface at 4.5 m standoff, matching the detector's training tiles
++           (8 m at 9 deg, 1.26 m median span; detection/AVIAN_zoom_tiles_all_FINAL.json). Feeds the detector only;
++           the wide front_camera stays for situational awareness and the demo. Perception only: never an input
++           to navigation or avoidance. -->
++      <sensor name="inspect_camera" type="camera">
++        <pose>0.03 0 0 0 0 0</pose>
++        <gz_frame_id>gimbal_cam_link</gz_frame_id>
++        <always_on>1</always_on>
++        <update_rate>5</update_rate>
++        <visualize>false</visualize>
++        <camera>
++          <horizontal_fov>0.2792527</horizontal_fov>
++          <image>
++            <width>640</width>
++            <height>480</height>
++            <format>R8G8B8</format>
++          </image>
++          <clip>
++            <near>0.05</near>
++            <far>300</far>
++          </clip>
++        </camera>
++      </sensor>
+     </link>
+     <joint name="gimbal_pitch_joint" type="revolute">
+       <parent>base_link</parent>

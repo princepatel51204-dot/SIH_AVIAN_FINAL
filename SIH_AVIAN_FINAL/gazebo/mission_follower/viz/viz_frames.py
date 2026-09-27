@@ -35,6 +35,15 @@ CAM_HFOV = 1.3962634
 CAM_FX = (CAM_W / 2) / math.tan(CAM_HFOV / 2)   # square pixels
 CAM_FY = CAM_FX
 CAM_CX, CAM_CY = CAM_W / 2, CAM_H / 2
+INSPECT_HFOV = 0.2792527                    # inspect_camera (16 deg), same link and pose as front_camera
+
+
+def use_camera_hfov(hfov_rad):
+    """Switch the intrinsics used by this module (and its importers) to a 640x480 camera of this HFOV.
+    Both gimbal cameras share the pose above, so only the focal length changes."""
+    global CAM_HFOV, CAM_FX, CAM_FY
+    CAM_HFOV = float(hfov_rad)
+    CAM_FX = CAM_FY = (CAM_W / 2) / math.tan(CAM_HFOV / 2)
 
 # ---- PX4 local NED -> world ENU (identical to the follower) ------------------
 _S = np.array([[0.0, 1.0, 0.0], [1.0, 0.0, 0.0], [0.0, 0.0, -1.0]])  # NED -> ENU

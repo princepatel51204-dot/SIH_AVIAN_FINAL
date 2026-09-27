@@ -118,9 +118,13 @@ def main():
     ap.add_argument('--rmax', type=float, default=10.0)
     ap.add_argument('--no-los', action='store_true')
     ap.add_argument('--json')
+    ap.add_argument('--hfov-deg', type=float, help='camera that fed the detector (default: from detections.json, else 80)')
     a = ap.parse_args()
     gt = load_gt()
-    D = json.load(open(os.path.join(a.run, 'detection', 'detections.json')))['detections']
+    DJ = json.load(open(os.path.join(a.run, 'detection', 'detections.json')))
+    D = DJ['detections']
+    V.use_camera_hfov(math.radians(a.hfov_deg) if a.hfov_deg else DJ.get('camera_hfov_rad', V.CAM_HFOV))
+    print(f'camera HFOV {math.degrees(V.CAM_HFOV):.2f} deg', file=sys.stderr)
     track = Track(os.path.join(a.run, 'pose_audit_track.csv'))
     S = C = None
     if not a.no_los:
@@ -145,7 +149,7 @@ def main():
     def prec_at(th):
         sel = [r for r in rows if r['confidence'] >= th]
         return (len(sel), sum(r['tp_location'] for r in sel), sum(r['tp_location_and_class'] for r in sel))
-    summ = {'run': os.path.basename(os.path.normpath(a.run)), 'rules': {'rmin_m': a.rmin, 'rmax_m': a.rmax, 'line_of_sight': not a.no_los,
+    summ = {'run': os.path.basename(os.path.normpath(a.run)), 'rules': {'rmin_m': a.rmin, 'rmax_m': a.rmax, 'line_of_sight': not a.no_los, 'camera_hfov_deg': round(math.degrees(V.CAM_HFOV), 2),
             'tp': 'box contains the projected centre of >= 1 usable ground-truth defect', 'tp_class': 'and detector family == defect family'},
             'boxes': n, 'tp_location': tp, 'tp_location_and_class': tpc, 'false_positives_location': n - tp,
             'precision_location': None if not n else round(tp / n, 4), 'precision_location_and_class': None if not n else round(tpc / n, 4),

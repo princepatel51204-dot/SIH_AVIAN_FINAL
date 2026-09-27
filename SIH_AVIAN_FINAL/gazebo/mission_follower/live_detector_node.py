@@ -70,6 +70,10 @@ class LiveDetector(Node):
         # demo throttle: run inference at most this often (wall clock); 0 = as fast as it can. Frames
         # that arrive sooner are dropped, never queued, exactly like frames that arrive while busy.
         self.declare_parameter('max_hz', 0.0)
+        # which camera feeds the detector: /camera/inspect/image_raw is the 16 deg inspection camera (default in
+        # launch_mission.sh), /camera/image_raw the 80 deg wide camera. Recorded in detections.json for scoring.
+        self.declare_parameter('image_topic', '/camera/image_raw')
+        self.declare_parameter('camera_hfov_rad', 1.3962634)
         self.declare_parameter('home_world_z', 0.24)
         self.declare_parameter('origin_lat_deg', 47.397971057728974)
         out_dir = self.get_parameter('out_dir').value
@@ -114,7 +118,9 @@ class LiveDetector(Node):
 
         self.latest = None       # (stamp_sim_s, np.ndarray HxWx3 uint8)
         self.lock = threading.Lock()
-        self.create_subscription(Image, '/camera/image_raw', self.on_img, qos_profile_sensor_data)
+        self.image_topic = self.get_parameter('image_topic').value
+        self.camera_hfov = float(self.get_parameter('camera_hfov_rad').value)
+        self.create_subscription(Image, self.image_topic, self.on_img, qos_profile_sensor_data)
 
         self.ann_pub = self.create_publisher(Image, '/detection/image_annotated', 10)
         # Additive, visualisation-only: one JSON message per processed frame that
@@ -132,7 +138,7 @@ class LiveDetector(Node):
         self.create_timer(0.05, self.tick)   # poll for a new frame at 20 Hz; only infers when one exists
         self.create_timer(5.0, self.write)
         self.get_logger().info(f'live detector up: model {self.model_name} @ {self.score_thresh}, '
-                               f'torch_threads {self.get_parameter("torch_threads").value}')
+                               f'torch_threads {self.get_parameter("torch_threads").value}, image {self.image_topic}')
 
     # ---------------- model ----------------
     def _load_model(self):
@@ -284,10 +290,12 @@ class LiveDetector(Node):
     # ---------------- output ----------------
     def write(self):
         json.dump({'model': self.model_name, 'weights': os.path.relpath(self.weights_path, ROOT),
-                   'score_thresh': self.score_thresh, 'n_detections': len(self.detections),
+                   'score_thresh': self.score_thresh, 'image_topic': self.image_topic,
+                   'camera_hfov_rad': self.camera_hfov, 'n_detections': len(self.detections),
                    'detections': self.detections}, open(os.path.join(self.out_dir, 'detections.json'), 'w'), indent=1)
         n = len(self.infer_times)
         stats = {
+            'image_topic': self.image_topic, 'camera_hfov_rad': self.camera_hfov,
             'frames_processed': self.frames_processed,
             'max_hz_throttle': None if not self.min_period else round(1.0 / self.min_period, 3),
             'frames_dropped_by_throttle': self.frames_throttled,

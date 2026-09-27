@@ -19,7 +19,8 @@ import covlib as C  # noqa: E402
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('run'); ap.add_argument('--json'); a = ap.parse_args()
     S = C.Solids(); track = E.Track(os.path.join(a.run, 'pose_audit_track.csv'))
-    D = json.load(open(os.path.join(a.run, 'detection', 'detections.json')))['detections']
+    DJ = json.load(open(os.path.join(a.run, 'detection', 'detections.json'))); D = DJ['detections']
+    E.V.use_camera_hfov(DJ.get('camera_hfov_rad', E.V.CAM_HFOV))   # the camera that fed the detector
 
     def first_hit(o, d, tmax=60, step=0.1):
         ts = np.arange(0.3, tmax, step); pts = o + ts[:, None] * d

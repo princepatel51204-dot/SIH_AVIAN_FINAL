@@ -18,6 +18,9 @@
 #   env AVIAN_RVIZ=1    ...and open RViz on viz/avian_viz.rviz (needs AVIAN_VIZ=1)
 #   env AVIAN_AIM_TARGET=false   do not aim the gimbal from target_m (old fixed camera)
 #   env AVIAN_DETECT=0  skip the live detector
+#   env AVIAN_DETECT_CAM=narrow|wide   camera that feeds the detector (default narrow: the 16 deg
+#                       inspect_camera on the gimbal; wide = the 80 deg front_camera, the pre-27-Sep setup).
+#                       Both are always bridged and recorded (camera/ = wide, inspect/ = narrow).
 #   env AVIAN_GZ_GUI=1  also open the Gazebo GUI window on the running server (default 0 = headless)
 #   env AVIAN_FOLLOWER_ARGS / AVIAN_DETECT_ARGS / AVIAN_MAP_ARGS   extra "-p name:=value ..." for the
 #                       follower, the live detector and the map node (demo looping, throttles)
@@ -166,6 +169,11 @@ cat > "${BRIDGE_YAML}" <<EOF
   ros_type_name: "sensor_msgs/msg/Image"
   gz_type_name: "gz.msgs.Image"
   direction: GZ_TO_ROS
+- ros_topic_name: "/camera/inspect/image_raw"
+  gz_topic_name: "${PFX}/gimbal_cam_link/sensor/inspect_camera/image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
 - ros_topic_name: "/mission/gimbal_cmd"
   gz_topic_name: "/model/${M}/joint/gimbal_pitch_joint/0/cmd_pos"
   ros_type_name: "std_msgs/msg/Float64"
@@ -192,17 +200,25 @@ python3 "${GZDIR}/gate2_explore/contact_counter_node.py" "${OUT}/contact_summary
 
 echo "=== [4/7] camera recorder (whole flight) ==="
 python3 "${HERE}/camera_recorder_node.py" "${OUT}/camera" > "${LOGDIR}/camera.log" 2>&1 &
+python3 "${HERE}/camera_recorder_node.py" "${OUT}/inspect" /camera/inspect/image_raw sih_inspect_recorder \
+  > "${LOGDIR}/inspect_camera.log" 2>&1 &
 
 echo "=== [5/7] pose audit (simulator truth, logging only; never feeds navigation) ==="
 python3 "${HERE}/pose_audit_node.py" "${OUT}/pose_audit.json" "${W}" "${M}" \
   > "${LOGDIR}/pose_audit.log" 2>&1 &
 
 AVIAN_DETECT="${AVIAN_DETECT:-1}"
+AVIAN_DETECT_CAM="${AVIAN_DETECT_CAM:-narrow}"
+if [ "${AVIAN_DETECT_CAM}" = "wide" ]; then
+  DET_CAM_ARGS="-p image_topic:=/camera/image_raw -p camera_hfov_rad:=1.3962634"
+else
+  DET_CAM_ARGS="-p image_topic:=/camera/inspect/image_raw -p camera_hfov_rad:=0.2792527"
+fi
 AVIAN_VENV_PY="${HOME}/avian_rev_c/.venv/bin/python3"
 if [ "${AVIAN_DETECT}" = "1" ] && [ -x "${AVIAN_VENV_PY}" ]; then
-  echo "=== [6/7] live crack detector (real trained weights, per-frame inference) ==="
+  echo "=== [6/7] live crack detector (real trained weights, per-frame inference; ${AVIAN_DETECT_CAM} camera) ==="
   "${AVIAN_VENV_PY}" "${HERE}/live_detector_node.py" --ros-args \
-    -p use_sim_time:=true -p out_dir:="${OUT}/detection" -p plan:="${PLAN}" ${AVIAN_DETECT_ARGS:-} \
+    -p use_sim_time:=true -p out_dir:="${OUT}/detection" -p plan:="${PLAN}" ${DET_CAM_ARGS} ${AVIAN_DETECT_ARGS:-} \
     > "${LOGDIR}/live_detector.log" 2>&1 &
 else
   echo "=== [6/7] live crack detector SKIPPED (AVIAN_DETECT=${AVIAN_DETECT}, venv found: $([ -x "${AVIAN_VENV_PY}" ] && echo yes || echo no)) ==="
