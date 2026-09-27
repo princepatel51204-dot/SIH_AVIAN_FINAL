@@ -1,0 +1,24 @@
+{
+  "team": {
+    "name": "TRINETRA",
+    "portal_name": "@TRINETRA",
+    "team_id": "129300",
+    "institute": "Charotar University of Science & Technology, Anand",
+    "members": [
+      {"name": "Prince Harshadbhai Patel", "role": "Team Leader"},
+      {"name": "Devanshi Sandip Patel", "role": "Member"},
+      {"name": "Kavan Shah", "role": "Member"},
+      {"name": "Pratham Shah", "role": "Member"},
+      {"name": "Anjana Nihal Amitbhai", "role": "Member"},
+      {"name": "Dev Nileshbhai Patel", "role": "Member"}
+    ]
+  },
+  "problem_statement": {
+    "id": "SIH26201",
+    "title": "Student Innovation-There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.",
+    "organization": "AICTE",
+    "department": "Ministry of Education's Innovation Cell (MIC)",
+    "technology_bucket": "Robotics and Drones",
+    "category": "Software"
+  }
+}
