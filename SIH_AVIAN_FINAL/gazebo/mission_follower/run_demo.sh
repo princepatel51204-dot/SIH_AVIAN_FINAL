@@ -19,8 +19,11 @@
 #   --plan FILE     plan JSON (default mission/gazebo_demo_rp04.json: road pier RP04 rings 2-3, cut from the
 #                   columns plan by gazebo/coverage_v5/make_columns_demo_plan.py)
 #   --no-decals     plain flat-sphere defects (default: textured decals on RP03/RP04, AVIAN_DECALS=1,
-#                   visual-only; the detector fires in-loop on the RP04 exposed-rebar decal -- a pipeline
-#                   demonstration, NOT detection-accuracy evidence)
+#                   visual-only; the detector fires in-loop on RP03/RP04 decals -- a pipeline
+#                   demonstration, NOT detection-accuracy evidence. Which decal fires depends on
+#                   AVIAN_DETECT_CAM (launch_mission.sh default: narrow, the 16 deg inspect camera --
+#                   measured aimnarrow_rp0304: mostly a spall decal; AVIAN_DETECT_CAM=wide, the pre-27-Sep
+#                   80 deg feed used in the R1-R3 rehearsals below: the exposed-rebar decal)
 #   --name NAME     results directory name under results/ (default demo_<time>)
 #
 # Ctrl-C: the drone flies home over the route it already flew and lands, then everything is stopped.

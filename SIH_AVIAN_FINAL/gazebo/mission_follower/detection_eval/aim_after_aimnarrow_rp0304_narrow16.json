@@ -1,0 +1,116 @@
+{
+ "run": "aimnarrow_rp0304",
+ "plan": "mission/gazebo_columns_demo_plan.json",
+ "camera": "narrow",
+ "hfov_deg": 16.0,
+ "vfov_deg": 12.03,
+ "hz": 10.0,
+ "columns": "all",
+ "by_leg_type": {
+  "ring": {
+   "samples": 2127,
+   "az_err_deg": {
+    "mean": 6.33,
+    "p95": 16.63,
+    "max": 61.73
+   },
+   "el_err_deg": {
+    "mean": 18.56,
+    "p95": 34.11,
+    "max": 40.26
+   },
+   "column_in_fov_pct": 75.3,
+   "column_outside_fov_pct": 24.7
+  },
+  "link": {
+   "samples": 211,
+   "az_err_deg": {
+    "mean": 3.17,
+    "p95": 9.38,
+    "max": 12.11
+   },
+   "el_err_deg": {
+    "mean": 34.24,
+    "p95": 38.72,
+    "max": 41.1
+   },
+   "column_in_fov_pct": 96.7,
+   "column_outside_fov_pct": 3.3
+  },
+  "transit": {
+   "samples": 210,
+   "az_err_deg": {
+    "mean": 17.24,
+    "p95": 147.43,
+    "max": 178.24
+   },
+   "el_err_deg": {
+    "mean": 33.02,
+    "p95": 34.63,
+    "max": 34.76
+   },
+   "column_in_fov_pct": 31.9,
+   "column_outside_fov_pct": 68.1
+  },
+  "vertical": {
+   "samples": 167,
+   "az_err_deg": {
+    "mean": 0.89,
+    "p95": 1.52,
+    "max": 1.64
+   },
+   "el_err_deg": {
+    "mean": 17.23,
+    "p95": 23.54,
+    "max": 40.16
+   },
+   "column_in_fov_pct": 98.8,
+   "column_outside_fov_pct": 1.2
+  },
+  "dwell": {
+   "samples": 181,
+   "az_err_deg": {
+    "mean": 0.74,
+    "p95": 1.89,
+    "max": 2.18
+   },
+   "el_err_deg": {
+    "mean": 23.9,
+    "p95": 40.01,
+    "max": 40.31
+   },
+   "column_in_fov_pct": 91.7,
+   "column_outside_fov_pct": 8.3
+  }
+ },
+ "ring_mid_transit_only": {
+  "samples": 1266,
+  "az_err_deg": {
+   "mean": 8.71,
+   "p95": 35.25,
+   "max": 61.73
+  },
+  "el_err_deg": {
+   "mean": 18.8,
+   "p95": 34.48,
+   "max": 36.74
+  },
+  "column_in_fov_pct": 62.1,
+  "column_outside_fov_pct": 37.9
+ },
+ "all_orbit_legs": {
+  "samples": 2475,
+  "az_err_deg": {
+   "mean": 5.55,
+   "p95": 14.73,
+   "max": 61.73
+  },
+  "el_err_deg": {
+   "mean": 18.86,
+   "p95": 34.59,
+   "max": 40.31
+  },
+  "column_in_fov_pct": 78.1,
+  "column_outside_fov_pct": 21.9
+ }
+}

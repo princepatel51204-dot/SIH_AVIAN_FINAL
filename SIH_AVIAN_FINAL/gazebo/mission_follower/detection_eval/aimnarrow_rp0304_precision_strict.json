@@ -1,0 +1,445 @@
+{
+ "summary": {
+  "run": "aimnarrow_rp0304",
+  "rules": {
+   "rmin_m": 3.5,
+   "rmax_m": 10.0,
+   "line_of_sight": true,
+   "camera_hfov_deg": 16.0,
+   "tp": "box contains the projected centre of >= 1 usable ground-truth defect",
+   "tp_class": "and detector family == defect family"
+  },
+  "boxes": 22,
+  "tp_location": 18,
+  "tp_location_and_class": 18,
+  "false_positives_location": 4,
+  "precision_location": 0.8182,
+  "precision_location_and_class": 0.8182,
+  "confidence": {
+   "min": 0.674,
+   "max": 0.973
+  },
+  "precision_vs_confidence_floor": {
+   "0.65": {
+    "boxes": 22,
+    "tp_location": 18,
+    "tp_class": 18
+   },
+   "0.75": {
+    "boxes": 18,
+    "tp_location": 16,
+    "tp_class": 16
+   },
+   "0.85": {
+    "boxes": 5,
+    "tp_location": 4,
+    "tp_class": 4
+   },
+   "0.9": {
+    "boxes": 1,
+    "tp_location": 1,
+    "tp_class": 1
+   },
+   "0.95": {
+    "boxes": 1,
+    "tp_location": 1,
+    "tp_class": 1
+   }
+  },
+  "boxes_by_waypoint": [
+   [
+    "RP04_R2_10",
+    17
+   ],
+   [
+    "RP04_R1_05_D1",
+    3
+   ],
+   [
+    "RP04_R2_01",
+    1
+   ],
+   [
+    "RP04_R2_07",
+    1
+   ]
+  ],
+  "tp_boxes_by_defect": [
+   [
+    "DEFECT_SPALL_011",
+    18
+   ]
+  ],
+  "max_audit_time_gap_s": 0.028
+ },
+ "boxes": [
+  {
+   "waypoint": "RP04_R1_05_D1",
+   "sim_time_s": 281.4,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7303,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R1_05_D1",
+   "sim_time_s": 281.6,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7533,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.84
+    }
+   ],
+   "audit_time_gap_s": 0.016
+  },
+  {
+   "waypoint": "RP04_R1_05_D1",
+   "sim_time_s": 281.8,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7607,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.85
+    }
+   ],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "RP04_R2_01",
+   "sim_time_s": 282.0,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8306,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.86
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_07",
+   "sim_time_s": 311.8,
+   "class": "SPALL_DELAM",
+   "confidence": 0.6742,
+   "usable_defects_in_frame": 0,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 324.4,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8949,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 4.28
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 324.6,
+   "class": "SPALL_DELAM",
+   "confidence": 0.9725,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 4.17
+    }
+   ],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 324.8,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8633,
+   "usable_defects_in_frame": 1,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 325.0,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7933,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.95
+    }
+   ],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 325.2,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7675,
+   "usable_defects_in_frame": 1,
+   "tp_location": false,
+   "tp_location_and_class": false,
+   "defects_in_box": [],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 325.6,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7876,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.78
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 325.8,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8172,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.77
+    }
+   ],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 326.2,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7501,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.8
+    }
+   ],
+   "audit_time_gap_s": 0.028
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 326.4,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7194,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.83
+    }
+   ],
+   "audit_time_gap_s": 0.004
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 326.6,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7265,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.87
+    }
+   ],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 326.8,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8769,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.9
+    }
+   ],
+   "audit_time_gap_s": 0.024
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 327.0,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8668,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.93
+    }
+   ],
+   "audit_time_gap_s": 0.008
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 327.2,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8297,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.96
+    }
+   ],
+   "audit_time_gap_s": 0.012
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 327.4,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8488,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.98
+    }
+   ],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 327.6,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7974,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 3.99
+    }
+   ],
+   "audit_time_gap_s": 0.0
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 327.8,
+   "class": "SPALL_DELAM",
+   "confidence": 0.7681,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 4.0
+    }
+   ],
+   "audit_time_gap_s": 0.02
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "sim_time_s": 328.0,
+   "class": "SPALL_DELAM",
+   "confidence": 0.8286,
+   "usable_defects_in_frame": 1,
+   "tp_location": true,
+   "tp_location_and_class": true,
+   "defects_in_box": [
+    {
+     "id": "DEFECT_SPALL_011",
+     "type": "SPALL",
+     "family": "SPALL_DELAM",
+     "range_m": 4.0
+    }
+   ],
+   "audit_time_gap_s": 0.016
+  }
+ ]
+}

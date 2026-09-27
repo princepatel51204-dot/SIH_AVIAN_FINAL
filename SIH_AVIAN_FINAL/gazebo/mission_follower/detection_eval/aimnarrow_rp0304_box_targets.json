@@ -1,0 +1,164 @@
+{
+ "run": "aimnarrow_rp0304",
+ "boxes": 22,
+ "box_centre_on": {
+  "BR_PIER": 21,
+  "ST_FLOORBEAM": 1
+ },
+ "rows": [
+  {
+   "waypoint": "RP04_R1_05_D1",
+   "confidence": 0.7303,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R1_05_D1",
+   "confidence": 0.7533,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R1_05_D1",
+   "confidence": 0.7607,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R2_01",
+   "confidence": 0.8306,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R2_07",
+   "confidence": 0.6742,
+   "class": "SPALL_DELAM",
+   "solid": "ST_FLOORBEAM_01",
+   "range_m": 17.3
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.8949,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 4.0
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.9725,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 4.0
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.8633,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.8
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.7933,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.8
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.7675,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.7
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.7876,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.7
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.8172,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.6
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.7501,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.7
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.7194,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.7
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.7265,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.8
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.8769,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.8
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.8668,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.8297,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.8488,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.7974,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.7681,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  },
+  {
+   "waypoint": "RP04_R2_10",
+   "confidence": 0.8286,
+   "class": "SPALL_DELAM",
+   "solid": "BR_PIER_COL_004_1",
+   "range_m": 3.9
+  }
+ ]
+}

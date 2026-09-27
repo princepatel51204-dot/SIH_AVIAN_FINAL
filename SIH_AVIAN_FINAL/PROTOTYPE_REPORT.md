@@ -16,7 +16,7 @@ Written 2026-09-27. Every number below is copied from the file named next to it.
 | Live 3D map in RViz (from the drone's own sensors) | DONE | 0.25 m voxel map, 261,517 voxels on an 8-waypoint flight; map node ~0.46–0.49 of one core | `viz/evidence/map_viz_stats_aim_after.json`, rehearsal load files |
 | Detector (Blender benchmark) | PARTIAL | headline v2 at 0.65: MISSION-VAL F1 0.1818; MISSION-TEST unseen-defect recall 1 of 3, all-defect recall 5 of 20, 0.08 false positives / 100 tiles | `mission/coverage_score_mission_v3.json` |
 | Detector on real photos | NOT DONE | 0 of 500 real crack photos detected, 0 of 500 clean photos flagged | `detection/AVIAN_real_photo_eval_v2_FINAL.json` |
-| Detection in Gazebo | NOT USABLE AS EVIDENCE | full_pass_05: 0 of 87 boxes on a real defect, recall 0 of 444 sightings; textured decals: 1 of 10 converted defects fires | `gazebo/mission_follower/detection_eval/PHASE1_VERDICT.md` |
+| Detection in Gazebo | NOT USABLE AS EVIDENCE | full_pass_05: 0 of 87 boxes on a real defect, recall 0 of 444 sightings; textured decals: 1 of 10 converted defects fires; flown with continuous aim + 16 deg camera (aimnarrow_rp0304): recall off zero for the first time (2 of 55 sightings, 3.6 %) but precision fell (33/32/29 -> 22/18/18) and the column is still outside the 16 deg frame 24.7 % of ring time (pitch, not yaw, is now the limit) | `gazebo/mission_follower/detection_eval/PHASE1_VERDICT.md` |
 | Inspection film (Blender) | DONE | 82.6 s, 8 beats, 1,337 detector records on the final frames, 1,011 drawn; per-beat median confidence 0.726–0.989 | `scene/film/detection_log.json`, `media/avian_inspection_film.mp4` |
 | Dashboard | DONE | builds from committed files only; 8/8 stat tiles verified against their source; no "pending"; both videos play (82.6 s, 47.9 s, 1920x1080) | `dashboard/build_dashboard.py`, `dashboard/index.html` |
 | Three-window demo | DONE, slow | works from cold start (3 runs, 0 contacts, detector fires in-loop on the RP04 rebar decal, best 0.89) but the simulation runs at 0.31x real time with all three windows | `gazebo/mission_follower/demo_evidence/` |
@@ -31,7 +31,8 @@ Written 2026-09-27. Every number below is copied from the file named next to it.
 **Gazebo — pipeline only, not evidence.** Full verdict: `gazebo/mission_follower/detection_eval/PHASE1_VERDICT.md`.
 - full_pass_05: **0 of 87** boxes contained a usable ground-truth defect; 77 box centres on bank-vegetation props, 10 on the road surface; recall 0 of 444 defect sightings in the waypoint snapshots.
 - columns_full: 61 of 233 boxes on a defect, all on two dark marker spheres; precision falls with confidence (0 of 56 at >= 0.90); recall 2 of 107 sightings (1.9 %).
-- Textured decals (rendered from the Blender twin, 10 defects on RP03/RP04): the single-decal test fired on 1 of 9 frames (rebar, 0.798 at 3.5 m); in flight the detector fired only on the exposed-rebar decal (33 boxes, 32 on it; 1 of 14 defects in view detected; snapshot recall 0 of 55). The textures themselves score 0.96–0.998 as images: the Gazebo camera's 80 deg field of view makes defects about four times smaller than the detector's training imagery.
+- Textured decals (rendered from the Blender twin, 10 defects on RP03/RP04): the single-decal test fired on 1 of 9 frames (rebar, 0.798 at 3.5 m); in flight (wide 80 deg camera, fixed yaw at waypoints only) the detector fired only on the exposed-rebar decal (33 boxes, 32 on it; 1 of 14 defects in view detected; snapshot recall 0 of 55). The textures themselves score 0.96–0.998 as images: the Gazebo camera's 80 deg field of view makes defects about four times smaller than the detector's training imagery.
+- **Flown fix (2026-09-27, `aimnarrow_rp0304`): continuous column-aim yaw (`3f7317d`) + a 16 deg inspection camera co-located on the gimbal (`16424ef`), same RP03/RP04 plan.** Orbit aim improved (ring column-in-frame 62.1 % → 75.3 %; link 35.9 % → 96.7 %) but the target — the column staying in frame through the whole ring — was **not met**: still out of frame 24.7 % of ring time. Root cause, measured: the fix only tracks yaw continuously; gimbal *pitch* is still set once per leg, so elevation error is unchanged (~18.5 deg mean, before and after, to two decimal places) and now exceeds the narrow camera's 12.03 deg vertical FOV. Detection: 22 boxes (81.8 % precision, down from 33/97.0 %), all true positives moved to a different, previously-undetected defect (a spall, mostly from one dwell waypoint firing repeatedly). Snapshot recall on the same 55-sighting basis moved off zero for the first time: 0 → 2 of 55 (3.6 %). Second camera costs ~3 % real-time factor (0.446 → 0.433). Full numbers and root cause: `gazebo/mission_follower/detection_eval/PHASE1_VERDICT.md` (Phase 2 section).
 
 ## 3. Three-window demo
 
@@ -51,7 +52,9 @@ gazebo/mission_follower/demo_rviz.sh
 What it does: PX4 + Gazebo (GUI camera following the drone), sensed-only follower flying road pier RP04 rings 2–3
 (`mission/gazebo_demo_rp04.json`, cut from the columns plan and verified: min airframe clearance 3.57 m, all route pieces flat or vertical,
 camera axis on a column at 22 of 22 viewpoints), textured decals on RP03/RP04 (`--no-decals` turns them off), live detector in the camera window,
-voxel map / scans / trajectory / drone in RViz. The follower ping-pongs the plan until the 7-minute window ends, then flies home over the flown
+voxel map / scans / trajectory / drone in RViz. As of the 2026-09-27 fixes, `launch_mission.sh` defaults to continuous column-aim yaw and feeds the
+detector from the 16 deg inspection camera (`AVIAN_DETECT_CAM=wide` restores the pre-27-Sep 80 deg feed used in the R1–R3 rehearsals below); the demo
+window in `demo_camera.sh` (`/detection/image_annotated`) follows whichever camera is feeding the detector automatically, no change needed there. The follower ping-pongs the plan until the 7-minute window ends, then flies home over the flown
 route and lands; Ctrl-C does the same early, a second Ctrl-C lands in place. `run_demo.sh` wraps everything in systemd-inhibit.
 
 Rehearsals (all from a cold start with 0 leftover processes; evidence in `gazebo/mission_follower/demo_evidence/`):
@@ -89,7 +92,9 @@ a full run is ~14 min wall (≈35 s start-up, ≈2.5 min transit to RP04, 7-min 
 Tonight and this morning, oldest first — `83fed75` Stage 1 doc fix · `1a90605` detection baseline tooling · `0b407c8` decal tooling · `bd314a0` column flight analysis ·
 `d50d852` full_pass_05 snapshot recall · `4cec336` decals + AVIAN_DECALS switch + RP03/RP04 cut · `5adce75` the other session's dashboard work, preserved unchanged ·
 `c46b42b` + `d4786d5` dashboard: autonomy chart, column section, gallery, detection caveat · `f06ce9c` Phase 1 verdict · `21adb47` + `680c290` dashboard decal result ·
-`4e0bb52` RP04 demo cut and rehearsal driver · `601bb5f` rehearsal-1 fixes · `3c75f80` rehearsal evidence · plus this report's commit.
+`4e0bb52` RP04 demo cut and rehearsal driver · `601bb5f` rehearsal-1 fixes · `3c75f80` rehearsal evidence · `f1fa8f3` this report's first commit ·
+`3f7317d` continuous column aim (not yet flown at the time) + orbit-aim script + narrow-FOV decal test · `16424ef` 16 deg inspection camera + before-aim numbers ·
+plus the flown result and this update (aimnarrow_rp0304, Phase 2 verdict, this report).
 Earlier in the series: `80c7a0b` nearest-column aiming, `86b12d1` look-up dwells, `a0c561c` live map + RViz + gimbal aiming (two sessions' work).
 
 ## 6. Rule checks
@@ -98,7 +103,9 @@ Earlier in the series: `80c7a0b` nearest-column aiming, `86b12d1` look-up dwells
 - full_pass_05 (68d71d6) was only read, never modified. No detection threshold was lowered; no box was drawn by hand or dropped.
 
 ## 7. The single most valuable thing left to do
-Give the simulated drone a narrow-field zoom inspection camera (about 9 deg, matching the detector's training imagery) and re-run the decal test. It is
-the one change that could turn Gazebo detection from a pipeline demonstration into evidence; everything measured here says the wide 80 deg camera, not the
-texture, is what stops the detector firing. Retraining the detector on real imagery is the other big gap (0 of 500 real crack photos).
+The narrow-field inspection camera (16 deg) and continuous yaw aim were built and flown (Section 2, `aimnarrow_rp0304`): they moved recall off zero for
+the first time but did not turn Gazebo detection into evidence. The measured reason is now known: only **yaw** is tracked continuously; gimbal **pitch**
+is still set once per leg, so elevation error is unchanged (~18.5 deg mean) and now exceeds the narrow camera's 12 deg vertical FOV — pitch, not yaw, is
+the remaining limit on how much of the flight frames a defect at all. Tracking pitch continuously the same way yaw now is, is the next concrete step.
+Retraining the detector on real imagery remains the other big gap (0 of 500 real crack photos).
 
