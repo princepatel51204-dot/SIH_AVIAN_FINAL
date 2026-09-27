@@ -53,8 +53,18 @@ What it does: PX4 + Gazebo (GUI camera following the drone), sensed-only followe
 (`mission/gazebo_demo_rp04.json`, cut from the columns plan and verified: min airframe clearance 3.57 m, all route pieces flat or vertical,
 camera axis on a column at 22 of 22 viewpoints), textured decals on RP03/RP04 (`--no-decals` turns them off), live detector in the camera window,
 voxel map / scans / trajectory / drone in RViz. As of the 2026-09-27 fixes, `launch_mission.sh` defaults to continuous column-aim yaw and feeds the
-detector from the 16 deg inspection camera (`AVIAN_DETECT_CAM=wide` restores the pre-27-Sep 80 deg feed used in the R1–R3 rehearsals below); the demo
-window in `demo_camera.sh` (`/detection/image_annotated`) follows whichever camera is feeding the detector automatically, no change needed there. The follower ping-pongs the plan until the 7-minute window ends, then flies home over the flown
+detector from the 16 deg inspection camera (`AVIAN_DETECT_CAM=wide` restores the pre-27-Sep 80 deg feed used in the R1–R3 rehearsals below).
+
+**Camera display (2026-09-27, second update, display only — flight/aiming/detector/safety constants untouched):** the 16 deg camera makes a poor demo
+window (an unrecognisable zoomed patch of concrete). `demo_camera.sh` now starts `viz/wide_box_reproject_node.py`, which redraws the detector's real
+narrow-camera boxes — geometrically reprojected, never re-run or re-scored — onto the natural 80 deg feed, and shows `/detection/image_annotated_wide`
+instead. The reprojection is exact, not approximate: `front_camera` and `inspect_camera` sit at the identical pose in `gimbal_cam_link` (zero baseline),
+so a narrow-pixel ray is valid for the wide camera too and the mapping is a closed-form scale-about-centre transform. `detection_eval/verify_wide_reprojection.py`
+checks this closed form against the codebase's own ray-projection method (0.000000 px difference) and against a real ground-truth defect projected
+directly into the wide camera at the true recorded pose from `aimnarrow_rp0304` — the reprojected box lands on it
+(`detection_eval/frames_aim_after/wide_reprojection_check.png`). Both camera feeds are still recorded (unchanged bridges in `launch_mission.sh`), the
+detector still scores on the narrow feed only (unchanged `live_detector_node.py`, so precision/recall stay comparable to the baseline above), and
+nothing about the flight or aiming changed. The follower ping-pongs the plan until the 7-minute window ends, then flies home over the flown
 route and lands; Ctrl-C does the same early, a second Ctrl-C lands in place. `run_demo.sh` wraps everything in systemd-inhibit.
 
 Rehearsals (all from a cold start with 0 leftover processes; evidence in `gazebo/mission_follower/demo_evidence/`):
