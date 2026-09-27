@@ -1,5 +1,7 @@
 # Overnight autonomous run — running report
 
+> Superseded: the consolidated report is PROTOTYPE_REPORT.md (2026-09-27 morning). This file is the overnight log.
+
 (Started 2026-09-27 ~00:30. Numbers below each trace to a file named next to them. Updated as phases finish.)
 
 ## Decisions made on the user's behalf (and why)
