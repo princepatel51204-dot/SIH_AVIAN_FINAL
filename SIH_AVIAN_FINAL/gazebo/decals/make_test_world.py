@@ -2,11 +2,11 @@
 """Minimal Gazebo world to test the detector on ONE decal (feasibility test; not the mission world).
 
 A large concrete-grey wall (normal +x), one decal quad on it carrying a rendered defect texture, a
-sun, and N static cameras at given distances in front of the decal (640x480, HFOV 1.3962634,
+sun, and N static cameras at given distances in front of the decal (640x480, HFOV --hfov, default 1.3962634,
 clip 0.05-300: the mission's gimbal camera). Cameras publish /decal_cam_<d> (d in cm).
 
 Usage: make_test_world.py <texture.png> <decal_width_m> <out.sdf> [--dists 3.5,4.5,6.0] [--wall-rgb 0.55,0.55,0.55]
-                          [--sun-dir -1,0.2,-0.4] [--decal thin_box|plane]
+                          [--sun-dir -1,0.2,-0.4] [--decal thin_box|plane] [--hfov RAD]
 """
 import argparse, os
 
@@ -17,6 +17,7 @@ ap.add_argument('--wall-rgb', default='0.55,0.55,0.55')
 ap.add_argument('--sun-dir', default='-1,0.2,-0.4')
 ap.add_argument('--decal', default='thin_box', choices=['thin_box', 'plane'])
 ap.add_argument('--ambient', default='0.4,0.4,0.4')
+ap.add_argument('--hfov', type=float, default=1.3962634, help='camera horizontal FOV (rad); 1.3962634 = the gimbal camera')
 a = ap.parse_args()
 tex = os.path.abspath(a.texture)
 wr = a.wall_rgb.replace(',', ' ')
@@ -28,7 +29,7 @@ for d in [float(x) for x in a.dists.split(',')]:
     cams += f'''
     <model name="decal_cam_{int(round(d*100))}"><static>true</static><pose>{d + 0.1} 0 0 0 0 3.14159265</pose>
       <link name="l"><sensor name="cam" type="camera"><always_on>1</always_on><update_rate>5</update_rate><topic>decal_cam_{int(round(d*100))}</topic>
-        <camera><horizontal_fov>1.3962634</horizontal_fov><image><width>640</width><height>480</height><format>R8G8B8</format></image>
+        <camera><horizontal_fov>{a.hfov}</horizontal_fov><image><width>640</width><height>480</height><format>R8G8B8</format></image>
           <clip><near>0.05</near><far>300</far></clip></camera></sensor></link></model>'''
 sdf = f'''<?xml version="1.0"?>
 <sdf version="1.9"><world name="decal_test">

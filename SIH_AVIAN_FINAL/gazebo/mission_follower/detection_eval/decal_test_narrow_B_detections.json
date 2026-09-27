@@ -1,0 +1,38 @@
+{
+ "decal_cam_350.png": [
+  {
+   "family": "SPALL_DELAM",
+   "score": 0.9857,
+   "bbox": [
+    169.9,
+    49.0,
+    481.7,
+    387.3
+   ]
+  }
+ ],
+ "decal_cam_450.png": [
+  {
+   "family": "SPALL_DELAM",
+   "score": 0.9927,
+   "bbox": [
+    206.3,
+    89.8,
+    433.6,
+    354.7
+   ]
+  }
+ ],
+ "decal_cam_600.png": [
+  {
+   "family": "SPALL_DELAM",
+   "score": 0.9852,
+   "bbox": [
+    229.0,
+    129.7,
+    414.5,
+    328.2
+   ]
+  }
+ ]
+}

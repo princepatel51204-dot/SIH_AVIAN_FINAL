@@ -155,6 +155,11 @@ class MissionFollower(Node):
         # target_m (the 150-waypoint plan) get their pitch computed from that
         # target; false reproduces the old fixed-camera behaviour.
         self.declare_parameter('aim_from_target', True)
+        # Continuous column aim: on orbit legs (both ends on the same column in the plan) yaw tracks the
+        # column axis (the plan's target_m) on every tick instead of turning to the NEXT viewpoint's heading.
+        # Aiming only: velocity setpoints are unchanged, and the LiDAR ring and range cones sense 360 deg /
+        # vertically whatever the heading, so this never changes what the safety layer sees or does.
+        self.declare_parameter('continuous_aim', True)
         # Demo looping (default OFF = the unchanged single pass). The plan's
         # waypoints are flown forward then backward (ping-pong) using the plan's
         # own route pieces reversed, so nothing new is ever flown. 0 = off,
@@ -174,6 +179,8 @@ class MissionFollower(Node):
         self.home = np.array([hg[0], hg[1], self.get_parameter('home_world_z').value])
         self.do_brake = self.get_parameter('brake_test').value
         self.aim_from_target = self.get_parameter('aim_from_target').value
+        self.continuous_aim = self.get_parameter('continuous_aim').value
+        self.last_reached_wp = None
         # Geodesy correction (found in full_pass_03's audit): Gazebo's GNSS
         # turns world metres into lat/lon on the WGS84 ellipsoid, PX4's local
         # projection turns lat/lon back into metres on a sphere of radius
@@ -577,9 +584,18 @@ class MissionFollower(Node):
         L['min_range'] = min(L['min_range'], dmin)
         if np.linalg.norm(v) < 0.9 * np.linalg.norm(v_des) - 0.05:
             L['limited_ticks'] += 1
-        # yaw: face travel while far, the waypoint heading when close
+        # yaw: on orbit legs track the column continuously; otherwise face travel while far, the
+        # waypoint heading when close
         vxy = math.hypot(v_des[0], v_des[1])
-        if L['yaw_ned'] is not None and rem < 8.0:
+        aim_pts = L.get('aim_xy') or []
+        if aim_pts:
+            here = self.world_from_ned(p)
+            tx, ty = min(aim_pts, key=lambda q: math.hypot(q[0] - here[0], q[1] - here[1]))
+            if math.hypot(tx - here[0], ty - here[1]) > 0.5:
+                yaw = self.yaw_toward(wrap(math.pi / 2 - math.atan2(ty - here[1], tx - here[0])))
+            else:
+                yaw = self.yaw_toward(L['yaw_ned'] if L['yaw_ned'] is not None else self.pos.heading)
+        elif L['yaw_ned'] is not None and rem < 8.0:
             yaw = self.yaw_toward(L['yaw_ned'])
         elif vxy > 0.5:
             yaw = self.yaw_toward(math.atan2(v_des[1], v_des[0]))
@@ -729,6 +745,8 @@ class MissionFollower(Node):
             return
         # MISSION waypoint
         wp = self.wps[self.i]
+        if res == 'reached':
+            self.last_reached_wp = wp
         err = float(np.linalg.norm(p_world - np.array(wp['position_m'])))
         rec = {
             'waypoint_id': wp['waypoint_id'], 'result': res, 'reached': res == 'reached',
@@ -738,6 +756,7 @@ class MissionFollower(Node):
             'heading_target_enu_rad': wp['heading_rad'],
             'gimbal_pitch_rad': wp.get('gimbal_pitch_rad'),
             'gimbal_source': L.get('gimbal_src'),
+            'continuous_aim': bool(L.get('aim_xy')),
             'gimbal_cmd_pitch_up_rad': None if self.gimbal_cmd is None else round(-self.gimbal_cmd, 4),
             'heading_ekf_enu_rad': round(wrap(math.pi / 2 - self.pos.heading), 4),
             'leg_time_s': round(self.t() - L['t0'], 2),
@@ -866,6 +885,11 @@ class MissionFollower(Node):
         self.start_leg(wp['waypoint_id'], route, wp['position_m'], wp['heading_rad'], gimbal_pitch=gp)
         self.leg['aim_target'] = tgt
         self.leg['gimbal_src'] = src
+        prev = self.last_reached_wp
+        if (self.continuous_aim and wp.get('column_id') and wp.get('target_m') is not None and prev is not None
+                and prev.get('column_id') == wp['column_id'] and prev.get('target_m') is not None):
+            # both ends of this leg inspect the same column: aim at whichever end's column axis is nearer
+            self.leg['aim_xy'] = [tuple(prev['target_m'][:2]), tuple(wp['target_m'][:2])]
         if self.phase != 'MISSION':
             self.set_phase('MISSION')
 
