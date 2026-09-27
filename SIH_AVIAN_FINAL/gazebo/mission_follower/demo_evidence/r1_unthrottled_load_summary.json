@@ -1,0 +1,98 @@
+{
+ "seconds_sampled": 298.0,
+ "summary_skips_first_s": 20.0,
+ "thermal_abort": false,
+ "pkg_temp_c": {
+  "mean": 84.41,
+  "p95": 89.05,
+  "max": 95.0,
+  "n": 140
+ },
+ "cpu_mhz": {
+  "mean": 1898.12,
+  "p95": 2783.05,
+  "max": 2889.0,
+  "n": 140
+ },
+ "rtf": null,
+ "total_cpu_pct_of_16_cores": {
+  "mean": 58.43,
+  "p95": 61.91,
+  "max": 65.3,
+  "n": 140
+ },
+ "per_group_cpu_pct_of_one_core": {
+  "gz_server": {
+   "mean": 170.12,
+   "p95": 181.82,
+   "max": 189.0,
+   "n": 140
+  },
+  "gz_gui": {
+   "mean": 147.9,
+   "p95": 161.01,
+   "max": 164.3,
+   "n": 140
+  },
+  "px4": {
+   "mean": 19.42,
+   "p95": 21.7,
+   "max": 22.5,
+   "n": 140
+  },
+  "xrce_agent": {
+   "mean": 3.78,
+   "p95": 4.6,
+   "max": 5.1,
+   "n": 140
+  },
+  "ros_gz_bridge": {
+   "mean": 13.36,
+   "p95": 14.5,
+   "max": 15.3,
+   "n": 140
+  },
+  "follower": {
+   "mean": 30.62,
+   "p95": 34.0,
+   "max": 35.5,
+   "n": 140
+  },
+  "detector": {
+   "mean": 297.4,
+   "p95": 360.42,
+   "max": 384.4,
+   "n": 140
+  },
+  "map_localizer": {
+   "mean": 45.99,
+   "p95": 50.8,
+   "max": 55.9,
+   "n": 140
+  },
+  "robot_state_pub": {
+   "mean": 2.53,
+   "p95": 3.0,
+   "max": 3.4,
+   "n": 140
+  },
+  "rviz2": {
+   "mean": 30.83,
+   "p95": 35.0,
+   "max": 37.2,
+   "n": 140
+  },
+  "camera_window": {
+   "mean": 0.5,
+   "p95": 1.0,
+   "max": 1.0,
+   "n": 140
+  },
+  "recorders_audit": {
+   "mean": 14.99,
+   "p95": 17.0,
+   "max": 18.5,
+   "n": 140
+  }
+ }
+}

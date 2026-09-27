@@ -1,0 +1,19 @@
+{
+ "mission_time_sim_s": 180.7,
+ "mission_time_wall_s": 621.1,
+ "rtf": 0.291,
+ "reached": 3,
+ "waypoints_in_plan": 22,
+ "contacts": 0,
+ "detector": {
+  "frames_processed": 1944,
+  "max_hz_throttle": null,
+  "frames_dropped_by_throttle": 0,
+  "n_detections": 0,
+  "mean_inference_s": 0.2218,
+  "p95_inference_s": 0.2804,
+  "achieved_hz": 4.508,
+  "wall_elapsed_s": 639.0,
+  "note": "achieved_hz is 1/mean(per-frame inference wall time), measured on this run on this CPU-only machine while Gazebo/PX4 were also running; this node always processes the newest available camera frame and drops any that arrived while busy, so it never queues stale frames -- the reported Hz is the true sustained detection rate, not the raw camera rate."
+ }
+}
