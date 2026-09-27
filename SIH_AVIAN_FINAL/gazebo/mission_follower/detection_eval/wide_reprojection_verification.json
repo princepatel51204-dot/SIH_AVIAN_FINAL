@@ -1,0 +1,27 @@
+{
+ "run": "aimnarrow_rp0304",
+ "frame_id": 1420,
+ "sim_time_s": 324.4,
+ "confidence": 0.8949,
+ "narrow_box_px": [
+  295.28,
+  152.92,
+  423.1,
+  334.5
+ ],
+ "reprojected_wide_box_px": [
+  315.86,
+  225.41,
+  337.27,
+  255.83
+ ],
+ "closed_form_vs_ray_method_px_diff": 0.0,
+ "ground_truth_defect": "DEFECT_SPALL_011",
+ "ground_truth_projected_wide_px": [
+  335.44,
+  246.47
+ ],
+ "ground_truth_range_m": 4.276,
+ "reprojected_box_centre_vs_ground_truth_px": 10.63,
+ "ground_truth_inside_reprojected_box": true
+}

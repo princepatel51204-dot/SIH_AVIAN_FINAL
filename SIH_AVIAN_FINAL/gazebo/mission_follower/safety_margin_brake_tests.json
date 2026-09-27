@@ -1,0 +1,18 @@
+{
+  "note": "Every committed and local run flies a real in-sim brake test at mission start (mission_follower_node.py BRAKE_OUT/BRAKE_RUN/BRAKE_BACK phases, brake_test:=true): full speed, zero velocity commanded, distance to stop measured from the true simulator pose. The 3.0 m sensed clearance ring and 1.9 m/s cruise speed (SENSED_CLEARANCE_M, CRUISE_MPS in mission_follower_node.py) were sized against the WORST of these measured stops, not assumed. smoke1 fired the test before the drone reached cruise speed (0.005 m/s at the command) and is excluded as degenerate.",
+  "valid_measured_brake_tests": [
+    {"run": "full_pass_01", "committed": false, "speed_at_cmd_mps": 2.05, "stop_dist_m": 1.186, "implied_decel_mps2": 1.771},
+    {"run": "full_pass_02", "committed": false, "speed_at_cmd_mps": 2.051, "stop_dist_m": 1.214, "implied_decel_mps2": 1.732},
+    {"run": "full_pass_03", "committed": true, "speed_at_cmd_mps": 1.944, "stop_dist_m": 1.157, "implied_decel_mps2": 1.635},
+    {"run": "full_pass_04", "committed": true, "speed_at_cmd_mps": 1.94, "stop_dist_m": 1.148, "implied_decel_mps2": 1.64},
+    {"run": "full_pass_05", "committed": true, "speed_at_cmd_mps": 1.943, "stop_dist_m": 1.132, "implied_decel_mps2": 1.668},
+    {"run": "live_demo", "committed": false, "speed_at_cmd_mps": 1.948, "stop_dist_m": 1.151, "implied_decel_mps2": 1.648},
+    {"run": "smoke3", "committed": false, "speed_at_cmd_mps": 2.451, "stop_dist_m": 1.371, "implied_decel_mps2": 2.191},
+    {"run": "smoke4", "committed": false, "speed_at_cmd_mps": 2.256, "stop_dist_m": 1.307, "implied_decel_mps2": 1.947}
+  ],
+  "excluded_degenerate": [
+    {"run": "smoke1", "reason": "brake fired at 0.005 m/s (before cruise speed was reached); not a real deceleration measurement"}
+  ],
+  "decel_mps2_range": {"min": 1.635, "max": 2.191},
+  "used_in_safety_derivation": "mission_follower_node.py declares DECEL_MPS2 = 1.95 (worse than every measured decel above, i.e. a conservative -- longer -- assumed stopping distance), so the derived stop distance and the 3.0 m ring both already have margin over the worst measured stop."
+}

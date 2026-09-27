@@ -116,9 +116,23 @@ def main():
     v_gt = CY - FX_WIDE * v[2] / v[0]
     print(f'DEFECT_SPALL_011 ground truth, projected DIRECTLY into the wide camera at the true '
           f'pose at t={ts}s: ({u_gt:.1f}, {v_gt:.1f}), range {v[0]:.2f} m')
-    print(f'reprojected detector-box centre vs ground truth: {math.hypot(u_scale - u_gt, v_scale - v_gt):.1f} px '
+    box_vs_gt_px = math.hypot(u_scale - u_gt, v_scale - v_gt)
+    print(f'reprojected detector-box centre vs ground truth: {box_vs_gt_px:.1f} px '
           '(nonzero: the detector\'s own box is not point-precise on the defect centre -- expected -- '
           'this is not reprojection error)')
+    gt_inside_box = (min(x0w, x1w) <= u_gt <= max(x0w, x1w)) and (min(y0w, y1w) <= v_gt <= max(y0w, y1w))
+
+    json.dump({
+        'run': 'aimnarrow_rp0304', 'frame_id': pick['frame_id'], 'sim_time_s': ts, 'confidence': pick['confidence'],
+        'narrow_box_px': [x0, y0, x1, y1],
+        'reprojected_wide_box_px': [round(x0w, 2), round(y0w, 2), round(x1w, 2), round(y1w, 2)],
+        'closed_form_vs_ray_method_px_diff': round(math.hypot(u_scale - u_ray, v_scale - v_ray), 6),
+        'ground_truth_defect': 'DEFECT_SPALL_011',
+        'ground_truth_projected_wide_px': [round(u_gt, 2), round(v_gt, 2)],
+        'ground_truth_range_m': round(float(v[0]), 3),
+        'reprojected_box_centre_vs_ground_truth_px': round(box_vs_gt_px, 2),
+        'ground_truth_inside_reprojected_box': bool(gt_inside_box),
+    }, open(os.path.join(HERE, 'wide_reprojection_verification.json'), 'w'), indent=1)
 
     fr = [(float(r['stamp_s']), int(r['frame'])) for r in csv.DictReader(open(f'{RUN}/camera/frames.csv'))]
     fs = [x[0] for x in fr]

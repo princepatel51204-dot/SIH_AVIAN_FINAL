@@ -2,7 +2,7 @@
 """Demo display only: draw the live detector's real boxes on the natural WIDE camera view.
 
 The detector runs on the 16 deg inspect_camera (launch_mission.sh default, AVIAN_DETECT_CAM=narrow)
-because that is what makes it fire at all (14/15 frames vs 1/15 on the wide camera -- see
+because that is what makes it fire at all (14/15 frames vs 0/6 on the wide camera -- see
 detection_eval/PHASE1_VERDICT.md). But a 16 deg view makes a poor demo window: it shows an
 unrecognisable patch of concrete with no context. This node does NOT change the detector, the
 camera that feeds it, the flight, or the aiming -- it only redraws, for DISPLAY, the same real

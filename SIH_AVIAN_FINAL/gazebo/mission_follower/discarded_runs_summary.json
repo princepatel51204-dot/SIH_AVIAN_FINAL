@@ -1,0 +1,18 @@
+{
+  "note": "full_pass_01 and full_pass_02 are NOT committed (results/ is gitignored except for the runs that completed and were scored: full_pass_03/04/05). This file is the tracked, committed summary of why they were discarded -- extracted from their local mission_log.json and follower.log, which never left this machine.",
+  "full_pass_01": {
+    "outcome": "discarded, not scored",
+    "waypoint_records_before_stop": 120,
+    "cause": "rclpy.executors RCLError: 'failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called.'",
+    "source": "results/full_pass_01/logs/follower.log, results/full_pass_01/mission_log.json (local only, not committed)",
+    "brake_test_measured_before_stop": {"speed_at_cmd_mps": 2.05, "stop_dist_m": 1.186, "implied_decel_mps2": 1.771}
+  },
+  "full_pass_02": {
+    "outcome": "discarded, not scored",
+    "waypoint_records_before_stop": 26,
+    "cause": "rclpy.executors.ExternalShutdownException (process killed/interrupted mid-run)",
+    "source": "results/full_pass_02/logs/follower.log, results/full_pass_02/mission_log.json (local only, not committed)",
+    "brake_test_measured_before_stop": {"speed_at_cmd_mps": 2.051, "stop_dist_m": 1.214, "implied_decel_mps2": 1.732}
+  },
+  "what_replaced_them": "full_pass_03 (commit daec5a9) was the first pass to run to completion (148/150 reached) and is committed; full_pass_04 and full_pass_05 followed. No number from full_pass_01 or 02 appears anywhere else on this dashboard or in PROTOTYPE_REPORT.md."
+}

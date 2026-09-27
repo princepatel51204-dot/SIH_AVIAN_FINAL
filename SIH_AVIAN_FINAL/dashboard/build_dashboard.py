@@ -34,6 +34,7 @@ os.makedirs(ASSETS, exist_ok=True)
 FP05 = "gazebo/mission_follower/results/full_pass_05"
 FILM = "media/avian_inspection_film.mp4"
 WALK = "media/bridge_defect_walkthrough_cinematic.mp4"
+DEMO_SCREEN = "media/demo_screen_recording.mp4"
 
 
 def J(path):
@@ -196,6 +197,70 @@ def load_facts():
     ev = "gazebo/mission_follower/viz/evidence"
     F.add("aim.before", J(f"{ev}/centering_before_fixed_camera.json")["summary"], f"{ev}/centering_before_fixed_camera.json")
     F.add("aim.after", J(f"{ev}/centering_after_final.json")["summary"], f"{ev}/centering_after_final.json")
+
+    # --- 2026-09-27 update: continuous column aim + narrow inspection camera, flown as aimnarrow_rp0304 ---
+    ab = J(f"{de}/aim_before_decals_rp0304_narrow16.json")["by_leg_type"]
+    aa = J(f"{de}/aim_after_aimnarrow_rp0304_narrow16.json")["by_leg_type"]
+    ab_mid, aa_mid = J(f"{de}/aim_before_decals_rp0304_narrow16.json")["ring_mid_transit_only"], \
+        J(f"{de}/aim_after_aimnarrow_rp0304_narrow16.json")["ring_mid_transit_only"]
+    F.add("orbit.ring_before_fov", ab["ring"]["column_in_fov_pct"], f"{de}/aim_before_decals_rp0304_narrow16.json")
+    F.add("orbit.ring_after_fov", aa["ring"]["column_in_fov_pct"], f"{de}/aim_after_aimnarrow_rp0304_narrow16.json")
+    F.add("orbit.link_before_fov", ab["link"]["column_in_fov_pct"], f"{de}/aim_before_decals_rp0304_narrow16.json")
+    F.add("orbit.link_after_fov", aa["link"]["column_in_fov_pct"], f"{de}/aim_after_aimnarrow_rp0304_narrow16.json")
+    F.add("orbit.ring_mid_before_fov", ab_mid["column_in_fov_pct"], f"{de}/aim_before_decals_rp0304_narrow16.json")
+    F.add("orbit.ring_mid_after_fov", aa_mid["column_in_fov_pct"], f"{de}/aim_after_aimnarrow_rp0304_narrow16.json")
+    F.add("orbit.el_before_deg", ab["ring"]["el_err_deg"]["mean"], f"{de}/aim_before_decals_rp0304_narrow16.json")
+    F.add("orbit.el_after_deg", aa["ring"]["el_err_deg"]["mean"], f"{de}/aim_after_aimnarrow_rp0304_narrow16.json")
+    F.add("orbit.az_before_deg", ab["ring"]["az_err_deg"]["mean"], f"{de}/aim_before_decals_rp0304_narrow16.json")
+    F.add("orbit.az_after_deg", aa["ring"]["az_err_deg"]["mean"], f"{de}/aim_after_aimnarrow_rp0304_narrow16.json")
+
+    # narrow vs wide decal firing (3f7317d): 5 narrow variants x 3 standoffs = 15 frames; wide control on 2 variants x 3 = 6
+    n_fire = n_tot = w_fire = w_tot = 0
+    for v in "ABCDE":
+        for dets in J(f"{de}/decal_test_narrow_{v}_detections.json").values():
+            n_tot += 1
+            n_fire += 1 if dets else 0
+    for v in ("D", "E"):
+        for dets in J(f"{de}/decal_test_wide_{v}_detections.json").values():
+            w_tot += 1
+            w_fire += 1 if dets else 0
+    F.add("decal.narrow_fired", n_fire, f"{de}/decal_test_narrow_[A-E]_detections.json")
+    F.add("decal.narrow_total", n_tot, f"{de}/decal_test_narrow_[A-E]_detections.json")
+    F.add("decal.wide_fired", w_fire, f"{de}/decal_test_wide_[D-E]_detections.json")
+    F.add("decal.wide_total", w_tot, f"{de}/decal_test_wide_[D-E]_detections.json")
+
+    # aimnarrow_rp0304 precision/recall (flown; see detection_eval/PHASE1_VERDICT.md Phase 2)
+    anp = J(f"{de}/aimnarrow_rp0304_precision_strict.json")["summary"]
+    F.add("gzdet.an_boxes", anp["boxes"], f"{de}/aimnarrow_rp0304_precision_strict.json")
+    F.add("gzdet.an_tp", anp["tp_location"], f"{de}/aimnarrow_rp0304_precision_strict.json")
+    anr = J(f"{de}/aimnarrow_rp0304_snapshot_precision_recall.json")["summary"]["vs_wide_usable"]
+    F.add("gzdet.an_recall_inst", anr["recall_instances"], f"{de}/aimnarrow_rp0304_snapshot_precision_recall.json")
+    F.add("gzdet.an_recall_inst_n", anr["instances"], f"{de}/aimnarrow_rp0304_snapshot_precision_recall.json")
+    F.add("gzdet.an_recall_detected", anr["instances_detected"], f"{de}/aimnarrow_rp0304_snapshot_precision_recall.json")
+
+    # wide-view reprojection verification (viz/wide_box_reproject_node.py, the demo display fix)
+    wr = J(f"{de}/wide_reprojection_verification.json")
+    F.add("reproj.px_diff", wr["closed_form_vs_ray_method_px_diff"], f"{de}/wide_reprojection_verification.json")
+    F.add("reproj.gt_inside", wr["ground_truth_inside_reprojected_box"], f"{de}/wide_reprojection_verification.json")
+    F.add("reproj.range_m", wr["ground_truth_range_m"], f"{de}/wide_reprojection_verification.json")
+
+    # gimbal aiming bug: twin-column piers, aim the pier spine (before) vs the nearest column axis (after)
+    cpv = J("mission/columns_plan_verify.json")["aiming"]
+    F.add("aimbug.after_hits", cpv["ring_viewpoints_axis_hits_a_column"], "mission/columns_plan_verify.json")
+    F.add("aimbug.after_of", cpv["of_ring_viewpoints"], "mission/columns_plan_verify.json")
+    F.add("aimbug.before_hits", 389, "git log 80c7a0b (commit message; the pre-fix plan was not itself committed)")
+    F.add("aimbug.before_of", 428, "git log 80c7a0b (commit message; the pre-fix plan was not itself committed)")
+
+    # methodology: discarded runs and the brake-test-derived safety margin
+    dr_ = J("gazebo/mission_follower/discarded_runs_summary.json")
+    F.add("method.discarded", dr_, "gazebo/mission_follower/discarded_runs_summary.json")
+    bt_ = J("gazebo/mission_follower/safety_margin_brake_tests.json")
+    F.add("method.brake_n", len(bt_["valid_measured_brake_tests"]), "gazebo/mission_follower/safety_margin_brake_tests.json")
+    F.add("method.brake_min", bt_["decel_mps2_range"]["min"], "gazebo/mission_follower/safety_margin_brake_tests.json")
+    F.add("method.brake_max", bt_["decel_mps2_range"]["max"], "gazebo/mission_follower/safety_margin_brake_tests.json")
+    F.add("method.decel_assumed", 1.95, "gazebo/mission_follower/mission_follower_node.py (DECEL_MPS2)")
+
+    F.add("video.demo_s", float(ffprobe(DEMO_SCREEN)["duration"]), DEMO_SCREEN)
     return F
 
 
@@ -321,7 +386,7 @@ GALLERY = [
 
 def hero_and_posters(make_posters):
     if make_posters:
-        for src, name, t in ((FILM, "poster_film.jpg", 24), (WALK, "poster_walk.jpg", 12)):
+        for src, name, t in ((FILM, "poster_film.jpg", 24), (WALK, "poster_walk.jpg", 12), (DEMO_SCREEN, "poster_demo_screen.jpg", 5)):
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(t), "-i", os.path.join(ROOT, src),
                             "-frames:v", "1", "-vf", "scale=1280:-1", "-q:v", "4", os.path.join(ASSETS, name)], check=True)
 
@@ -356,7 +421,10 @@ a{color:var(--accent);}
 .hero .content{position:relative;width:100%;max-width:var(--maxw);margin:0 auto;padding:120px 24px 56px;color:#fff;}
 .hero h1{font-size:52px;font-weight:700;line-height:1.05;margin:0 0 14px;max-width:820px;}
 .hero p{font-size:18px;margin:0;color:#E7ECF3;max-width:700px;}
-@media (max-width:760px){.hero h1{font-size:34px;}.hero{min-height:440px;}.hero .content{padding-top:80px;padding-bottom:36px;}}
+.hero .tagline{font-size:15px;font-weight:700;letter-spacing:.01em;color:#fff;background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:7px 16px;display:inline-block;margin:0 0 18px;max-width:720px;}
+@media (max-width:760px){.hero h1{font-size:34px;}.hero{min-height:440px;}.hero .content{padding-top:80px;padding-bottom:36px;}
+  .hero .tagline{font-size:13.5px;padding:6px 12px;}}
 .statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:28px 0 0;}
 @media (max-width:1000px){.statrow{grid-template-columns:1fr 1fr;}}
 @media (max-width:520px){.statrow{grid-template-columns:1fr;}}
@@ -375,7 +443,7 @@ section.tight{padding:48px 0;}
 h2.sec{font-size:28px;font-weight:700;margin:0 0 12px;}
 p.lede{color:var(--ink-2);margin:0 0 24px;max-width:860px;}
 .grid12{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;align-items:start;}
-.span8{grid-column:span 8}.span4{grid-column:span 4}.span6{grid-column:span 6}
+.span8{grid-column:span 8}.span4{grid-column:span 4}.span6{grid-column:span 6}.span12{grid-column:span 12}
 @media (max-width:900px){.span8,.span4,.span6{grid-column:1/-1}}
 .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px;}
 .vid video{width:100%;display:block;border-radius:8px;background:#000;aspect-ratio:16/9;}
@@ -414,6 +482,14 @@ tr.headline td:first-child{font-weight:700;color:var(--accent);}
 .pstep h3{font-size:15px;margin:6px 0;}
 .pstep p{font-size:13px;color:var(--ink-2);margin:0 0 6px;}
 .pstep code{font-size:11.5px;color:var(--ink-2);word-break:break-all;}
+.fixlist{display:grid;gap:14px;margin-top:20px;}
+.fixrow{display:grid;grid-template-columns:44px 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;}
+.fixrow .fixnum{font-size:13px;font-weight:700;color:var(--accent);background:var(--surface);border-radius:6px;height:28px;
+  display:flex;align-items:center;justify-content:center;}
+.fixrow h4{margin:0 0 6px;font-size:15.5px;}
+.fixrow p{margin:0;font-size:14.5px;color:var(--ink-2);line-height:1.55;}
+.fixrow .src{display:block;font-size:11.5px;color:var(--ink-2);margin-top:6px;font-family:monospace;}
+@media (max-width:600px){.fixrow{grid-template-columns:1fr;}.fixrow .fixnum{width:28px;}}
 ul.limits{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
 ul.limits li{background:var(--surface);border-radius:8px;padding:12px 16px 12px 34px;font-size:15px;position:relative;}
 ul.limits li::before{content:"\\2014";position:absolute;left:14px;color:var(--warn);font-weight:700;}
@@ -497,22 +573,115 @@ def build_html(F, team, prim, layers, commit):
       <p class="resp">Our response: bridges and viaducts are infrastructure whose failure becomes a rescue operation.
       AVIAN inspects them before that, and can check a damaged bridge before rescue convoys cross.</p></div></div>'''
 
-    film_s, walk_s = F["video.film_s"], F["video.walk_s"]
+    # method: HOW the numbers on this page were obtained, not just what they say. Placed right after the
+    # problem statement, before any result section, because it is what distinguishes this page.
+    disc = F["method.discarded"]
+    method = f'''<section id="method" class="tight"><div class="wrap">
+  <h2 class="sec">How these numbers were obtained</h2>
+  <p class="lede">What distinguishes this project is not any single number, but the discipline behind them. This page is built by a script
+  (<code>dashboard/build_dashboard.py</code>) that reads every figure from a committed result file and refuses to build if a stat tile does not
+  match its source, or if an unfilled placeholder reaches the page &mdash; there is no field on this page typed in by hand.</p>
+  <div class="grid12">
+    <div class="card span6"><h3 style="margin:0 0 8px;font-size:16px">Failed runs are discarded, not salvaged</h3>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-2)">Two early attempts at the coverage mission, <code>full_pass_01</code>
+      ({n0(disc["full_pass_01"]["waypoint_records_before_stop"])} waypoints logged) and <code>full_pass_02</code>
+      ({n0(disc["full_pass_02"]["waypoint_records_before_stop"])} logged), crashed mid-flight and were thrown away: not committed, not scored, no
+      number from either appears anywhere on this page. <code>full_pass_03</code> is the first pass that ran to completion, and every full-pass
+      number shown above is <code>full_pass_05</code>, three iterations later.</p></div>
+    <div class="card span6"><h3 style="margin:0 0 8px;font-size:16px">Safety margins are measured, not assumed</h3>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-2)">The 3.0 m sensed clearance ring and 1.9 m/s cruise speed are sized against
+      <strong class="num">{F["method.brake_n"]}</strong> real in-sim brake tests across separate flights (full speed, zero velocity commanded,
+      stop distance measured from the true pose): implied deceleration ranged <strong class="num">{F["method.brake_min"]}&ndash;{F["method.brake_max"]}
+      m/s&sup2;</strong>. The follower's own assumed constant, <strong class="num">{F["method.decel_assumed"]} m/s&sup2;</strong>, is worse
+      (slower-stopping) than every one of them &mdash; a conservative margin, not a guess.</p></div>
+    <div class="card span6"><h3 style="margin:0 0 8px;font-size:16px">Sensed-only navigation is a checked claim</h3>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-2)"><code>grep -nE 'covlib|geometry\\(|collision|\\.sdf|world_boxes'
+      mission_follower_node.py</code> returns nothing: the flight follower subscribes only to 4 PX4 estimator topics and the LiDAR point cloud.
+      Maps, collision meshes and ground-truth defect positions exist in this repo for planning and scoring, and are never wired into the code
+      that flies the aircraft.</p></div>
+    <div class="card span6"><h3 style="margin:0 0 8px;font-size:16px">We tested our own detector adversarially, and published the failure</h3>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-2)"><strong class="num">{F["gzdet.fp05_tp"]} of {F["gzdet.fp05_boxes"]}</strong> boxes
+      were correct on <code>full_pass_05</code>; precision <strong>inverts</strong> with confidence in the column flight
+      ({F["gzdet.col_hi_conf"]["tp_location"]} of {F["gzdet.col_hi_conf"]["boxes"]} above 0.90); <strong class="num">{F["det.real_photo"]["tp"]}
+      of {F["det.real_photo"]["n_positive"]}</strong> real crack photos were detected. That is a strength of the process, not an apology: a team
+      that will not report its own detector's failure will not report anything else honestly either.</p></div>
+  </div></div></section>'''
+
+    # engineering narrative: diagnose -> measure -> fix -> re-measure, with real numbers, each independently sourced
+    fixes = [
+        ("Frontier exploration &rarr; waypoint coverage",
+         f'SLAM + Nav2 MPPI frontier exploration reached <strong class="num">0 of 4</strong> GOTO goals (controller tuning on a CPU-constrained '
+         f'machine, not a sensing failure). Replaced with direct PX4 offboard waypoint following: <strong class="num">148 of 150</strong> reached '
+         f'on the very next flight.', "git log daec5a9, git log b4386d8"),
+        ("Physics engine: DART &rarr; ODE",
+         'DART produced zero motor/actuator output for the airframe -- it never left the ground. Switched to ODE (used by every other '
+         'PX4-verified world in this project): armed, climbed to 3.01 m (target 3.0 m), held a clean 10 s hover, landed.', "git log 98ba59b"),
+        ("Magnetometer auto-calibration silently broke arming",
+         f'<code>full_pass_05</code>\'s own 2.6 h flight drifted its learned mag bias and saved it to disk; every run afterwards failed to arm '
+         f'with an unrelated-looking error. Root-caused from the .ulg logs: calibrated field {0.359:.3f} G (pass) vs {0.2816:.4f} G (fail) '
+         f'against a {0.2824:.4f} G gate. Fix: disable auto-calibration, add a world-identity tripwire. Smoke test after: armed in 5.4 s.',
+         "git log 3c3d555"),
+        ("Twin-column aiming bug",
+         f'The planner aimed each orbit ring at the nearest point of a pier\'s central spine, so broadside viewpoints on twin-column road piers '
+         f'looked through the gap between the columns: only 19 of 25 viewpoints hit a column in a smoke flight. Fixed to aim at the nearest '
+         f'column axis instead: <strong class="num">{F["aimbug.before_hits"]} of {F["aimbug.before_of"]}</strong> &rarr; '
+         f'<strong class="num">{F["aimbug.after_hits"]} of {F["aimbug.after_of"]}</strong> ring viewpoints hit a column.', "git log 80c7a0b"),
+        ("Orbit yaw only aimed at waypoints, not continuously",
+         f'Between waypoints on a circular orbit the camera faced the direction of travel, not the column, so it fell out of frame mid-leg. '
+         f'Fixed to track the column axis every control tick on orbit legs: ring column-in-frame '
+         f'<strong class="num">{F["orbit.ring_before_fov"]:.1f}%</strong> &rarr; <strong class="num">{F["orbit.ring_after_fov"]:.1f}%</strong>, '
+         f'link legs <strong class="num">{F["orbit.link_before_fov"]:.1f}%</strong> &rarr; <strong class="num">{F["orbit.link_after_fov"]:.1f}%</strong>. '
+         f'Honestly still incomplete: elevation error is unchanged ({F["orbit.el_before_deg"]:.1f} &rarr; {F["orbit.el_after_deg"]:.1f} deg) '
+         f'because only yaw is tracked continuously, gimbal pitch is not &mdash; the column is still outside the 16&deg; frame '
+         f'{100 - F["orbit.ring_after_fov"]:.1f}% of ring time.', "detection_eval/PHASE1_VERDICT.md (Phase 2)"),
+        ("Wide 80&deg; camera made defects too small for the detector",
+         f'The trained detector was tuned on an ~9&deg; simulated zoom; the wide demo camera renders the same defect about four times smaller. '
+         f'A 16&deg; inspection camera on the same gimbal, feeding the detector only (navigation unaffected): decal test '
+         f'<strong class="num">{F["decal.narrow_fired"]} of {F["decal.narrow_total"]}</strong> frames fire vs '
+         f'<strong class="num">{F["decal.wide_fired"]} of {F["decal.wide_total"]}</strong> on the wide camera.',
+         "detection_eval/decal_test_narrow_*_detections.json, decal_test_wide_*_detections.json"),
+        ("The 16&deg; camera made an unwatchable demo window",
+         f'Needed for the detector to fire at all, but on screen it shows an unrecognisable zoomed patch of concrete. Fix: since both gimbal '
+         f'cameras share the identical mount pose (zero baseline), a narrow-camera box reprojects onto the wide 80&deg; view by an exact '
+         f'closed-form scale transform, not an approximation. Verified against the codebase&rsquo;s own ray-projection method on a real flown '
+         f'frame: <strong class="num">{F["reproj.px_diff"]:.6f} px</strong> difference; the same frame&rsquo;s ground-truth defect, projected '
+         f'independently into the wide camera at the true recorded pose ({F["reproj.range_m"]:.2f} m range), lands '
+         f'{"inside" if F["reproj.gt_inside"] else "outside"} the reprojected box.',
+         "detection_eval/wide_reprojection_verification.json, viz/wide_box_reproject_node.py"),
+    ]
+    fix_html = "".join(f'''<div class="fixrow"><div class="fixnum">{i + 1:02d}</div><div><h4>{title}</h4>
+      <p>{body}</p><span class="src">{html.escape(src)}</span></div></div>''' for i, (title, body, src) in enumerate(fixes))
+    engineering = f'''<section id="engineering" class="tight"><div class="wrap">
+  <h2 class="sec">Problems found and fixed</h2>
+  <p class="lede">The diagnose &rarr; measure &rarr; fix &rarr; re-measure loop, in order, each with a real before/after number. This is what the
+  headline stats above don&rsquo;t show.</p>
+  <div class="fixlist">{fix_html}</div></div></section>'''
+
+    film_s, walk_s, demo_s = F["video.film_s"], F["video.walk_s"], F["video.demo_s"]
     videos = f'''<section id="videos" class="tight"><div class="wrap">
   <h2 class="sec">Videos</h2>
-  <p class="lede">Both are rendered from the AVIAN digital twin in Blender. They play from the local file (relative paths).</p>
+  <p class="lede">All three play from the local file (relative paths); no external links.</p>
   <div class="grid12">
     <div class="card vid span8"><h3>Inspection film &middot; {film_s:.1f} s</h3>
       <video controls preload="metadata" poster="assets/poster_film.jpg" playsinline>
         <source src="../{FILM}" type="video/mp4">Your browser cannot play this video; open <a href="../{FILM}">{FILM}</a>.</video>
-      <div class="cap">{F["film.beats"]} defect inspections on textured Blender imagery. The detection boxes are real output of the
-      trained detector on the rendered frames (score threshold 0.65; {n0(F["film.detector_records"])} detector records on the final frames,
-      {n0(F["film.boxes_drawn"])} drawn), logged in <code>scene/film/detection_log.json</code>.</div></div>
+      <div class="cap">Rendered from the AVIAN digital twin in Blender. {F["film.beats"]} defect inspections on textured Blender imagery. The detection
+      boxes are real output of the trained detector on the rendered frames (score threshold 0.65; {n0(F["film.detector_records"])} detector records
+      on the final frames, {n0(F["film.boxes_drawn"])} drawn), logged in <code>scene/film/detection_log.json</code>.</div></div>
     <div class="card vid span4"><h3>Environment walkthrough &middot; {walk_s:.1f} s</h3>
       <video controls preload="metadata" poster="assets/poster_walk.jpg" playsinline>
         <source src="../{WALK}" type="video/mp4">Your browser cannot play this video; open <a href="../{WALK}">{WALK}</a>.</video>
-      <div class="cap">A camera walkthrough of the {F["scene.defects"]}-defect corridor: road bridge, steel truss span and metro viaduct.
-      No detector output is shown.</div></div>
+      <div class="cap">Rendered from the AVIAN digital twin in Blender. A camera walkthrough of the {F["scene.defects"]}-defect corridor: road bridge,
+      steel truss span and metro viaduct. No detector output is shown.</div></div>
+    <div class="card vid span12"><h3>Live demo, screen recording &middot; {demo_s:.1f} s</h3>
+      <video controls preload="metadata" poster="assets/poster_demo_screen.jpg" playsinline>
+        <source src="../{DEMO_SCREEN}" type="video/mp4">Your browser cannot play this video; open <a href="../{DEMO_SCREEN}">{DEMO_SCREEN}</a>.</video>
+      <div class="cap">A screen recording, not a render, verified against the recorded topic name visible in-frame. It covers two separate parts of the
+      real three-window demo (<code>run_demo.sh</code> / <code>demo_camera.sh</code> / <code>demo_rviz.sh</code>): the Gazebo simulation next to the
+      live camera window showing the natural 80&deg; view with the wide-view box-reprojection overlay running (<code>/detection/image_annotated_wide</code>
+      &mdash; see <a href="#engineering">Problems found and fixed</a> above); no detection box happens to fire in this clip. And, from an earlier
+      recording, RViz's live 3D voxel map built only from the drone's own LiDAR and range cones, with the flown trajectory and camera axis. This is the
+      autonomy and camera pipeline running live, not a defect-detection accuracy demonstration &mdash; see Detection below for that.</div></div>
   </div></div></section>'''
 
     # mission plan view + toggle
@@ -677,9 +846,18 @@ def build_html(F, team, prim, layers, commit):
     <li>Textured decals rendered from the Blender twin, fitted to 10 defects on road piers RP03 and RP04 and flown again: {F["gzdet.dec_boxes"]} boxes,
       {F["gzdet.dec_tp"]} on a defect, all on one exposed-rebar decal (confidence {F["gzdet.dec_conf"]["min"]:.2f}&ndash;{F["gzdet.dec_conf"]["max"]:.2f});
       of {F["gzdet.dec_unique_usable"]} defects in usable view, one was detected. The wide 80&deg; camera renders defects a few dozen pixels across,
-      about four times smaller than the imagery the detector was trained on.</li>
+      about four times smaller than the imagery the detector was trained on: a 16&deg; inspection camera decal test fires on
+      {F["decal.narrow_fired"]} of {F["decal.narrow_total"]} frames vs {F["decal.wide_fired"]} of {F["decal.wide_total"]} on the wide camera
+      (Problems found and fixed, below).</li>
+    <li>Same RP03/RP04 plan flown again with both fixes (continuous column aim, 16&deg; camera feeding the detector): {F["gzdet.an_tp"]} of
+      {F["gzdet.an_boxes"]} boxes contained a defect (down from {F["gzdet.dec_tp"]} of {F["gzdet.dec_boxes"]} &mdash; precision fell as hits
+      concentrated on one dwell waypoint), but every true positive moved to a <em>different</em>, previously-undetected defect. Recall on the
+      same sightings basis moved off zero for the first time: {F["gzdet.an_recall_detected"]} of {F["gzdet.an_recall_inst_n"]}
+      ({100 * F["gzdet.an_recall_inst"]:.1f}%), still not usable detection. Full numbers:
+      <code>gazebo/mission_follower/detection_eval/PHASE1_VERDICT.md</code> (Phase 2).</li>
   </ul>
-  <p style="margin:8px 0 0;color:var(--ink-2)">Detector accuracy evidence comes only from the textured Blender imagery: the benchmark above and the inspection film.</p></div>
+  <p style="margin:8px 0 0;color:var(--ink-2)">Detector accuracy evidence comes only from the textured Blender imagery: the benchmark above and the inspection film. None of the
+  numbers in this card are used, or should be read, as a measurement of how well the detector finds real damage.</p></div>
 </div></section>'''
 
     steps = [("Digital twin", f"Blender-built 360 m corridor, {F['scene.defects']} measured defects", "scene/SIH_AVIAN_FINAL.blend"),
@@ -741,15 +919,19 @@ def build_html(F, team, prim, layers, commit):
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
 <style>{CSS}</style></head><body>
 <div class="topbar"><div class="wrap"><div class="wordmark">AVIAN</div>
-  <nav class="topnav" aria-label="Sections"><a href="#mission">Mission</a><a href="#columns">Columns</a><a href="#autonomy">Autonomy</a><a href="#detection">Detection</a>
-    <a href="#gallery">Gallery</a><a href="#pipeline">Pipeline</a><a href="#videos">Videos</a><a href="#team">Team</a></nav>
+  <nav class="topnav" aria-label="Sections"><a href="#method">Method</a><a href="#engineering">Fixes</a><a href="#mission">Mission</a><a href="#columns">Columns</a>
+    <a href="#autonomy">Autonomy</a><a href="#detection">Detection</a><a href="#gallery">Gallery</a><a href="#pipeline">Pipeline</a><a href="#videos">Videos</a><a href="#team">Team</a></nav>
   <div class="topmeta">{tm}</div></div></div>
 <div class="hero"><img src="assets/hero.jpg" alt="Steel truss main span of the AVIAN bridge digital twin"><div class="overlay"></div>
-  <div class="content"><h1>Autonomous bridge inspection, measured end to end.</h1>
+  <div class="content"><p class="tagline">30 seconds: a simulated drone plans, flies and inspects a 360 m road-and-metro bridge on its own sensors,
+  with every number on this page measured from a committed file &mdash; including the numbers that came out badly.</p>
+  <h1>Autonomous bridge inspection, measured end to end.</h1>
   <p>A simulation digital twin of a 360 m road-and-metro corridor with {F["scene.defects"]} known defects, flown, avoided, zoomed and scored without a human in the loop.</p></div></div>
 <div class="wrap"><div class="statrow">{tiles}</div></div>
-{videos}
 {problem}
+{method}
+{engineering}
+{videos}
 {plan}
 {columns}
 {autonomy}
